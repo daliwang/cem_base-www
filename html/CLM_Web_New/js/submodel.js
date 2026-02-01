@@ -4,7 +4,7 @@ $( "#btn2" ).click(function() {
 
 	
 $.ajax({
-                        url: "http://cem-base.ornl.gov/cgi-bin/submodel_structure.py",
+                        url: "/cgi-bin/submodel_structure.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':$('#txtarea1').val()+'___'+$('#combobox1').val()},

@@ -11,7 +11,7 @@ $( "#call_variable_btn1" ).click(function() {
                     
                     $.ajax({
 
-                        url: "http://cem-base.ornl.gov/cgi-bin/call_variable_query.py",
+                        url: "/cgi-bin/call_variable_query.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':$('#call_variable_txtbox1').val()+'___'+$('#call_variable_combobox1').val()},

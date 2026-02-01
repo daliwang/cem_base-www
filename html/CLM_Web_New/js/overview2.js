@@ -4,7 +4,7 @@ $( "#Overview_btn2" ).click(function() {
 
 		
 	$.ajax({
-           		url: "http://cem-base.ornl.gov/cgi-bin/overview_structure.py",
+           		url: "/cgi-bin/overview_structure.py",
                 type: "get",
                 datatype:"json",
                 data: {'key1':$('#Overview_txtbox2').val()+'___'+$('#Overview_combobox2').val()},

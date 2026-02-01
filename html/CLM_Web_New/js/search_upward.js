@@ -6,7 +6,7 @@ $( "#variable_call_btn1" ).click(function() {
          
                     $.ajax({
 
-                        url: "http://cem-base.ornl.gov/cgi-bin/variable_call_query.py",
+                        url: "/cgi-bin/variable_call_query.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':$('#variable_call_txtbox1').val()+'___'+$('#variable_call_combobox1').val()},

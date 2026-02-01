@@ -17,7 +17,7 @@ $(function()
                         $('#Overview_combobox2').val('CLM_45_68');
                         
                         $.ajax({
-                        url: "http://cem-base.ornl.gov/cgi-bin/overview_structure.py",
+                        url: "/cgi-bin/overview_structure.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':'clm_drv()___CLM_45_10'},
@@ -222,7 +222,7 @@ $(function()
                     }); //end of Ajax
                     
                         $.ajax({
-                url: "http://cem-base.ornl.gov/cgi-bin/overview_structure.py",
+                url: "/cgi-bin/overview_structure.py",
                 type: "get",
                 datatype:"json",
                 data: {'key1':'clm_drv()___CLM_45_68'},
@@ -562,7 +562,7 @@ $(function()
                var table1_data;
                $.ajax({
 
-                        url: "http://cem-base.ornl.gov/cgi-bin/call_variable_query.py",
+                        url: "/cgi-bin/call_variable_query.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':'CanopyFluxes()___CLM_45_10'},
@@ -735,7 +735,7 @@ $(function()
                     
                     $.ajax({
 
-                        url: "http://cem-base.ornl.gov/cgi-bin/variable_call_query.py",
+                        url: "/cgi-bin/variable_call_query.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':'rootfr[pps%]___CLM_45_68'},
@@ -943,7 +943,7 @@ $(function()
 
                
                $.ajax({
-                        url: "http://cem-base.ornl.gov/cgi-bin/submodel_structure.py",
+                        url: "/cgi-bin/submodel_structure.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':'CanopyFluxes()\nPhotosynthesis()\nFrictionVelocity()\nMoninObukIni()\nQSat()\nFractionation()\n___CLM_45_10'},

@@ -22,7 +22,7 @@ function page_onload()
             
             
             $.ajax({
-                        url: "http://cem-base.ornl.gov/cgi-bin/Visitor_Info.py",
+                        url: "/cgi-bin/Visitor_Info.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':ip_info},
@@ -84,7 +84,7 @@ function page_onload()
                 
                 
                          $.ajax({
-                        url: "http://cem-base.ornl.gov/cgi-bin-bk/Visitor_Info.py",
+                        url: "/cgi-bin/Visitor_Info.py",
                         type: "get",
                         datatype:"json",
                         data: {'key1':ip_info},
