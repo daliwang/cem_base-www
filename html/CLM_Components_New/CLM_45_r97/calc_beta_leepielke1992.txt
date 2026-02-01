@@ -1,0 +1,7 @@
+sub_in, bounds, waterstate_inst, num_nolakec, soilbeta, filter_nolakec, soilstate_inst
+sub_out, soilbeta
+global_ro, h2osoi_liq, frac_h2osfc, frac_sno, watfc, h2osoi_ice, watsat
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,14 @@
+sub_param, setdata:6, ci:4, gi:2, ltype:1, pi:5, li:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_column, add_landunit, subgrid_get_gcellinfo, add_patch
+readParams,
+integer , intent(in)    :: ltype             ! landunit type
+integer , intent(in)    :: gi                ! gridcell index
+integer , intent(inout) :: li                ! landunit index
+integer , intent(inout) :: ci                ! column index
+integer , intent(inout) :: pi                ! patch index
+logical , intent(in)    :: setdata           ! set info or just compute

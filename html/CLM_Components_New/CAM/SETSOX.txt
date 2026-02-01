@@ -1,0 +1,7 @@
+sub_in, mbar, invariants, cldfrc, cldnum, pdel, qin, qcw, press, dtime, ncol, lchnk, xhnm, lwc, loffset, tfld
+sub_out
+global_ro, xlwc, xso4c, xnh4c, xno3c, so4_fact
+global_wo
+global_mod
+global_non, sox_cldaero_create_obj
+calls, outfld, sox_cldaero_update, sox_cldaero_destroy_obj

@@ -1,0 +1,15 @@
+sub_in, filter_methc, jwt, num_methc, ubc, lake, sat, dtime_ch4, lbc
+sub_out
+global_ro, clm3%g%l%c%cps%cellorg, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%cps%watsat, clm3%g%gch4%c_atm, clm3%g%l%c%cch4%o2_aere_depth_unsat, clm3%g%l%c%gridcell, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cps%bsw, clm3%g%l%c%cch4%ch4_prod_depth_unsat, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%ces%t_h2osfc
+global_wo
+global_mod, clm3%g%l%c%cch4%ch4_ebul_total_unsat, clm3%g%l%c%cps%pps_a%grnd_ch4_cond, clm3%g%l%c%cch4%ch4_surf_diff_unsat, clm3%g%l%c%cch4%ch4_ebul_depth_unsat, clm3%g%l%c%cch4%conc_ch4_unsat, clm3%g%l%c%cch4%ch4_oxid_depth_unsat, clm3%g%l%c%cch4%ch4_surf_ebul_unsat, clm3%g%l%c%cch4%o2stress_unsat, clm3%g%l%c%cch4%ch4_aere_depth_unsat, clm3%g%l%c%cch4%ch4_surf_aere_unsat, clm3%g%l%c%cch4%conc_o2_unsat, clm3%g%l%c%cch4%o2_oxid_depth_unsat, clm3%g%l%c%cch4%o2_decomp_depth_unsat, clm3%g%l%c%cch4%ch4stress_unsat
+global_non, clm3%g%l%c%cch4%ch4_surf_diff_sat, clm3%g%l%c%cch4%ch4_surf_aere_sat, clm3%g%l%c%cch4%o2_oxid_depth_sat, clm3%g%l%c%cws%lake_icefrac, clm3%g%l%c%cch4%co2_decomp_depth_unsat, clm3%g%l%c%cch4%conc_o2_sat, clm3%g%l%c%cch4%ch4_surf_ebul_sat, clm3%g%l%c%cch4%o2_aere_depth_sat, clm3%g%l%c%cch4%ch4_aere_depth_sat, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%z, clm3%g%l%c%cch4%ch4_oxid_depth_sat, clm3%g%l%c%cch4%o2_decomp_depth_sat, clm3%g%l%c%cch4%o2stress_sat, clm3%g%l%c%cch4%conc_ch4_sat, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%cps%zi, clm3%g%l%c%cch4%ch4_ebul_depth_sat, clm3%g%l%c%cch4%ch4_ebul_total_sat, clm3%g%l%c%cch4%ch4stress_sat, clm3%g%l%c%cch4%ch4_prod_depth_sat, clm3%g%l%c%cch4%co2_decomp_depth_sat, clm_a2l%forc_pbot
+calls, Tridiagonal, endrun
+
+Tree height: 20
+4+, endrun, 
+16-, Tridiagonal, 
+17-, Tridiagonal, 
+18-, endrun, 
+3+, endrun, endrun, 
+2+, endrun, 

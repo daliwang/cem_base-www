@@ -1,0 +1,7 @@
+sub_in, f, x, psistar, ncol, xin, fxdot, fdot, fxdd
+sub_out, psistar, fxdd, fxdot
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

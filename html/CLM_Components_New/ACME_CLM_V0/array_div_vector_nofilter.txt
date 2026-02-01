@@ -1,0 +1,7 @@
+sub_in, arr1d_in, which_dim, arr2d_inout
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_assert

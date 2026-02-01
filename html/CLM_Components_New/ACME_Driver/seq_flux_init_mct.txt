@@ -1,0 +1,8 @@
+sub_in, fractions, comp
+sub_out
+global_ro, data
+global_wo
+global_mod
+global_non, component_get_dom_cx, component_get_gsmap_cx
+calls, mct_gGrid_exportRAttr
+calls_ln, mct_gGrid_exportRAttr@202, mct_gGrid_exportRAttr@200, mct_gGrid_exportRAttr@201

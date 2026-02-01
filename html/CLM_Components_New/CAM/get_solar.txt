@@ -1,0 +1,7 @@
+sub_in, qrs_mlt, lchnk, ncol
+sub_out, qrs_mlt
+global_ro
+global_wo
+global_mod
+global_non
+calls

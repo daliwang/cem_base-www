@@ -1,0 +1,31 @@
+sub_param, atm2lnd_vars:12, bounds:1, num_urbanc:6, num_snowc:8, soil_water_retention_curve:20, temperature_vars:15, filter_hydrologyc:5, filter_snowc:9, tracerflux_vars:22, energyflux_vars:14, soilstate_vars:13, filter_nosnowc:11, betrtracer_vars:21, waterstate_vars:17, tracerstate_vars:23, waterflux_vars:16, filter_urbanc:7, aerosol_vars:19, num_nosnowc:10, soilhydrology_vars:18, num_nolakec:2, filter_nolakec:3, num_hydrologyc:4
+sub_out, aerosol_vars
+global_ro| col%snl, snl, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| col%landunit, landunit, NONE| soilstate_vars%bsw_col, bsw, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| soilstate_vars%sucsat_col, sucsat, NONE| col%itype, ctype, NONE| soilstate_vars%watsat_col, watsat, NONE
+global_wo| soilstate_vars%soilpsi_col, soilpsi, NONE| waterstate_vars%sno_liq_top_col, sno_liq_top, NONE| waterstate_vars%h2osoi_icevol_col, h2osoi_icevol, NONE| waterstate_vars%h2osoi_liqvol_col, h2osoi_liqvol, NONE| temperature_vars%t_grnd_u_col, t_grnd_u, NONE| temperature_vars%t_grnd_r_col, t_grnd_r, NONE| waterstate_vars%wf2_col, wf2, NONE| waterstate_vars%snw_rds_col, snw_rds, NONE| waterstate_vars%snw_rds_top_col, snw_rds_top, NONE| soilstate_vars%eff_porosity_col, eff_porosity, NONE| temperature_vars%dTdz_top_col, dTdz_top, NONE| waterstate_vars%h2osno_top_col, h2osno_top, NONE| waterstate_vars%wf_col, wf, NONE| temperature_vars%snot_top_col, snot_top, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| waterstate_vars%air_vol_col, air_vol, NONE| waterstate_vars%snowdp_col, snowdp, NONE
+global_mod| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| temperature_vars%t_soi17cm_col, tsoi17, NONE| waterstate_vars%snow_persistence_col, snow_persistence, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterstate_vars%snowice_col, snowice, NONE| waterstate_vars%h2osoi_liqice_10cm_col, h2osoi_liqice_10cm, NONE| waterstate_vars%snowliq_col, snowliq, NONE| col%zi, zi, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| col%z, z, NONE| temperature_vars%t_soi10cm_col, t_soi_10cm, NONE| col%dz, dz, NONE
+global_non| soilstate_vars%smp_l_col, smp_l, NONE| soilstate_vars%smpmin_col, smpmin, NONE| waterstate_vars%begwb_col, begwb, NONE
+calls, Infiltration, calc_smp_l, calc_dew_sub_flux, SurfaceRunoff, WaterTable, CLMVICMap, DivideSnowLayers, BuildSnowFilter, SnowCompaction, SoilWater, DrainageVSFM, SnowWater, pre_diagnose_soilcol_water_flux, CombineSnowLayers, diagnose_advect_water_flux
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_nolakec          ! number of column non-lake points in column filter
+integer                  , intent(in)    :: filter_nolakec(:)    ! column filter for non-lake points
+integer                  , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                  , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                  , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                  , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+integer                  , intent(inout) :: num_snowc            ! number of column snow points
+integer                  , intent(inout) :: filter_snowc(:)      ! column filter for snow points
+integer                  , intent(inout) :: num_nosnowc          ! number of column non-snow points
+integer                  , intent(inout) :: filter_nosnowc(:)    ! column filter for non-snow points
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(energyflux_type)    , intent(in)    :: energyflux_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(aerosol_type)       , intent(inout) :: aerosol_vars
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+class(soil_water_retention_curve_type), intent(in) :: soil_water_retention_curve
+type(betrtracer_type)     , intent(in)    :: betrtracer_vars                    ! betr configuration information
+type(tracerflux_type)     , intent(inout) :: tracerflux_vars                    ! tracer flux
+type(tracerstate_type)    , intent(inout) :: tracerstate_vars                   ! tracer state variables data structure

@@ -1,0 +1,10 @@
+sub_param, bounds, geds_local
+sub_out, geds_local
+global_ro, grc%latdeg, grc%londeg
+global_wo, currentSite%lat, udata%currentindex, currentSite%lon, currentSite%clmgcell
+global_mod
+global_non, currentSite, store_fs, currentSite
+calls, zero_site
+readParams,
+type(bounds_type),              intent(in) :: bounds
+type(gridcell_edstate_type), intent(inout) :: geds_local( bounds%begg: )

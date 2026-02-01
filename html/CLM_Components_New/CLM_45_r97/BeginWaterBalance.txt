@@ -1,0 +1,7 @@
+sub_in, soilhydrology_inst, num_hydrologyc, filter_lakec, bounds, filter_nolakec, num_nolakec, waterstate_inst, filter_hydrologyc, num_lakec
+sub_out
+global_ro, h2osoi_ice, h2osoi_liq, h2ocan_col, h2osno, h2osfc, zwt, zi
+global_wo
+global_mod, begwb, wa
+global_non, waterstate_inst%h2ocan_patch
+calls, p2c

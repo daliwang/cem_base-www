@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch%fuel_mef, currentPatch%fuel_eff_moist, >currentSite%oldest_patch;, currentPatch%effect_wspeed, currentPatch%fuel_sav, currentPatch%fuel_bulkd
+global_wo, currentPatch%ROS_back
+global_mod, currentPatch%sum_fuel, currentPatch%ROS_front
+global_non, currentPatch%younger
+calls

@@ -1,0 +1,7 @@
+sub_in, pbuf2d
+sub_out
+global_ro
+global_wo
+global_mod, qqcw
+global_non
+calls, modal_aero_deposition_init, initaermodes_setspecptrs, modal_aero_calcsize_init, modal_aero_newnuc_init, modal_aero_coag_init, rad_cnst_get_mode_props, modal_aero_rename_init, modal_aero_gasaerexch_init, endrun, initaermodes_set_cnstnamecw, rad_cnst_get_info, rad_cnst_get_aer_props

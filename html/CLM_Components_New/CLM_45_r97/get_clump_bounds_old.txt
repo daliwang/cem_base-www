@@ -1,0 +1,7 @@
+sub_in, endg, endl, begc, begl, begg, endc, begp, n, endp, endCohort, begCohort
+sub_out, begl, endg, begc, endl, endCohort, begCohort, endp, endc, begp, begg
+global_ro
+global_wo
+global_mod
+global_non
+calls

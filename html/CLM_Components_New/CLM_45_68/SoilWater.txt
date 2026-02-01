@@ -1,0 +1,10 @@
+sub_in, num_urbanc, num_hydrologyc, bounds, filter_urbanc, filter_hydrologyc
+sub_out
+global_ro, cps%dz, cws%zwt, cps%smpmin, cps%z, pwf_a%qflx_tran_veg, cps%sucsat, cps%fracice, col%npfts, cws%h2osoi_vol, pft%wtcol, pwf%qflx_tran_veg, cws%h2osoi_ice, cps%watsat, cwf%qflx_infl, cps%zi, pps%rootr, cps%bsw, cps%hksat, col%pfti, ces%t_soisno
+global_wo, cws%smp_l, cws%hk_l
+global_mod, cps%rootr_column, cws%qcharge, cws%h2osoi_liq, cwf%qflx_deficit, cps%icefrac
+global_non, cps%eff_porosity, cps%hkdepth, col%itype
+calls, Tridiagonal
+
+Tree height: 4
+1-, Tridiagonal, 

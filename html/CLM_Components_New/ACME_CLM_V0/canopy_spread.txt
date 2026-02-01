@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, %canopy_layer, currentCohort%shorter, currentPatch%tallest, currentSite%oldest_patch, currentPatch%younger
+global_wo
+global_mod, !currentPatch%spread, %spread, %c_area
+global_non
+calls

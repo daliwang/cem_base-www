@@ -1,0 +1,7 @@
+sub_in, comm, send_bl, recv_bl
+sub_out, send_bl, recv_bl
+global_ro
+global_wo
+global_mod
+global_non
+calls

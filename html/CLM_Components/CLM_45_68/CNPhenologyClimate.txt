@@ -1,0 +1,7 @@
+sub_in, num_soilp, num_pcropp, filter_pcropp, filter_soilp
+sub_out
+global_ro, gdd0, gdd10, gdd8, t_ref2m
+global_wo
+global_mod, gdd820, gdd020, tempavg_t2m, gdd1020
+global_non
+calls, get_curr_date

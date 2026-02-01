@@ -1,0 +1,7 @@
+sub_in, bounds, LNDID, gsMap_lnd, mpicom_lnd
+sub_out
+global_ro, ldomain%ni, bounds%endg, ldomain%nj, ldecomp%gdc2glo, bounds%begg
+global_wo
+global_mod
+global_non
+calls, mct_gsMap_init

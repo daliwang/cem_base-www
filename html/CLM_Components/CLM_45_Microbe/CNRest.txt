@@ -1,0 +1,7 @@
+sub_in, flag, ncid
+sub_out
+global_ro
+global_wo, rc14_atm
+global_mod, deadcrootc_storage, grainc, grainc_xfer, livecrootc, prod10c, seedc, decomp_cpools_vr, leafc_storage, livestemc_xfer, deadstemc_storage, woodc, frootc, deadcrootc, livestemc_storage, gresp_storage, gresp_xfer, prod100c, totcolc, deadstemc_xfer, dispvegc, frootc_xfer, grainc_storage, livecrootc_storage, totlitc, leafc_xfer, totvegc, deadstemc, leafc, storvegc, livecrootc_xfer, cpool, pft_ctrunc, deadcrootc_xfer, totpftc, present, frootc_storage, livestemc, xsmrpool
+global_non, g, p, c, pcs, decomp_npools_vr, decomp_cpools_vr, pc13s, l
+calls, ncd_io, get_proc_bounds, cnrest_addfld_decomp, ncd_defvar, endrun

@@ -1,0 +1,7 @@
+sub_in, dlf, zdu, landfrac, rliq, pflx, mcon, cme, pbuf, state, ptend, ztodt
+sub_out, dlf, pflx, zdu, rliq, mcon, cme
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init, pbuf_get_field, outfld, zm_conv_tend

@@ -1,0 +1,7 @@
+sub_in, ps, q3, lat, u3, divm2, dpsl, hadv, qm2, pdelm2dry, omga, qminus, divm1, pdeldry, vm2, qfcst, vortm1, etamid, ztodt, t3, tm2, u3m1, q3m1, alpha, psm2, v3m1, um2, v3, vortm2, t3m1, div, vort, psm1, dpsm, pdelm1dry, beta, nlon
+sub_out, pdelm1dry, qfcst, v3m1, vortm1, t3, t3m1, ps, divm1, q3, u3m1, q3m1, pdeldry, psm1
+global_ro
+global_wo
+global_mod
+global_non
+calls, omcalc, plevs0, outfld, qneg3

@@ -1,0 +1,7 @@
+sub_in, sigdp, pkdim, sig, kdp, pmap, kdpmap, nlon
+sub_out, kdp
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,17 @@
+sub_param, numf, zi, zwt, soilstate_vars, filter, bounds, waterstate_vars, temperature_vars, jwt
+sub_out, jwt, zwt
+global_ro, soilstate_vars%watsat_col, temperature_vars%t_soisno_col, waterstate_vars%h2osoi_vol_col
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)      , intent(in)   :: bounds
+integer                , intent(in)   :: numf                ! number of column soil points in column filter
+integer                , intent(in)   :: filter(:)           ! column filter for soil points
+type(soilstate_type)   , intent(in)   :: soilstate_vars
+type(waterstate_type)  , intent(in)   :: waterstate_vars
+type(temperature_type) , intent(in)   :: temperature_vars
+real(r8)               , intent(in)   :: zi(bounds%begc: , 0: )
+real(r8)               , intent(inout):: zwt( bounds%begc: ) ! water table depth (-) [col]
+integer                , intent(inout):: jwt(bounds%begc: )

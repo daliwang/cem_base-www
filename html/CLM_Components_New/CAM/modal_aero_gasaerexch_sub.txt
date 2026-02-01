@@ -1,0 +1,7 @@
+sub_in, pdel, deltat, pmid, loffset, dgncur_a, qqcw, ncol, lchnk, q, dqqcwdt_other, t, nstep, dqdt_other, dgncur_awet
+sub_out, q, qqcw
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, modal_aero_rename_sub, gas_aer_uptkrates, cnst_get_ind, modal_aero_soaexch, endrun

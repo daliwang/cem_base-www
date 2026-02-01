@@ -1,0 +1,11 @@
+sub_param, check_finidat_pct_consistency:3, check_finidat_year_consistency:2, check_finidat_fsurdat_consistency:1
+sub_out, check_finidat_pct_consistency, check_finidat_year_consistency, check_finidat_fsurdat_consistency
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, find_nlgroup_name, shr_mpi_bcast, relavu
+readParams,restFile_read_consistency_nl
+logical, intent(out) :: check_finidat_fsurdat_consistency
+logical, intent(out) :: check_finidat_year_consistency
+logical, intent(out) :: check_finidat_pct_consistency

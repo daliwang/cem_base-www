@@ -1,0 +1,19 @@
+sub_param, num_urbanc, solarabs_vars, num_urbanl, num_urbanp, bounds, surfalb_vars, filter_urbanl, urbanparams_vars, filter_urbanc, filter_urbanp, waterstate_vars
+sub_out
+global_ro, urbanparams_vars%alb_improad_dir, urbanparams_vars%alb_improad_dif, lun%coli, urbanparams_vars%alb_roof_dir, col%landunit, pft%landunit, col%itype, pft%column, lun%gridcell, urbanparams_vars%alb_perroad_dif, surfalb_vars%coszen_col, waterstate_vars%frac_sno_col, urbanparams_vars%alb_roof_dif, urbanparams_vars%alb_perroad_dir
+global_wo, surfalb_vars%albd_patch, solarabs_vars%sabs_roof_dir_lun, surfalb_vars%fabd_patch, solarabs_vars%sabs_improad_dif_lun, surfalb_vars%ftdd_patch, surfalb_vars%fabi_sha_patch, surfalb_vars%fabd_sha_patch, surfalb_vars%fabi_sun_patch, surfalb_vars%albi_patch, surfalb_vars%fabd_sun_patch, solarabs_vars%sabs_sunwall_dir_lun, solarabs_vars%sabs_shadewall_dif_lun, solarabs_vars%sabs_perroad_dif_lun, solarabs_vars%sabs_sunwall_dif_lun, solarabs_vars%sabs_roof_dif_lun, solarabs_vars%sabs_improad_dir_lun, surfalb_vars%ftid_patch, surfalb_vars%fabi_patch, surfalb_vars%ftii_patch, solarabs_vars%sabs_shadewall_dir_lun, solarabs_vars%sabs_perroad_dir_lun
+global_mod, surfalb_vars%albgri_col, surfalb_vars%albgrd_col
+global_non, lun%canyon_hwr, urbanparams_vars%alb_wall_dir, bounds%endl, lun%wtroad_perv, urbanparams_vars%alb_wall_dif, bounds%begl
+calls, incident_diffuse, SnowAlbedo, incident_direct, net_solar
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_urbanl       ! number of urban landunits in clump
+integer                , intent(in)    :: filter_urbanl(:) ! urban landunit filter
+integer                , intent(in)    :: num_urbanc       ! number of urban columns in clump
+integer                , intent(in)    :: filter_urbanc(:) ! urban column filter
+integer                , intent(in)    :: num_urbanp       ! number of urban patches in clump
+integer                , intent(in)    :: filter_urbanp(:) ! urban pft filter
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(urbanparams_type) , intent(inout) :: urbanparams_vars
+type(solarabs_type)    , intent(inout) :: solarabs_vars
+type(surfalb_type)     , intent(inout) :: surfalb_vars

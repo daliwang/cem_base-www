@@ -1,0 +1,13 @@
+sub_param, num_soilc, filter_soilc, c14_carbonstate_vars, num_soilp, filter_soilp
+sub_out
+global_ro, decomp_cascade_con%spinup_factor
+global_wo
+global_mod, c14_carbonstate_vars%deadstemc_patch, c14_carbonstate_vars%deadstemc_storage_patch, c14_carbonstate_vars%decomp_cpools_vr_col, c14_carbonstate_vars%gresp_storage_patch, c14_carbonstate_vars%livecrootc_storage_patch, c14_carbonstate_vars%frootc_patch, c14_carbonstate_vars%deadcrootc_patch, c14_carbonstate_vars%leafc_patch, c14_carbonstate_vars%livestemc_patch, c14_carbonstate_vars%leafc_storage_patch, c14_carbonstate_vars%leafc_xfer_patch, c14_carbonstate_vars%frootc_storage_patch, c14_carbonstate_vars%livecrootc_xfer_patch, c14_carbonstate_vars%livecrootc_patch, c14_carbonstate_vars%deadcrootc_xfer_patch, c14_carbonstate_vars%livestemc_xfer_patch, c14_carbonstate_vars%gresp_xfer_patch, c14_carbonstate_vars%xsmrpool_patch, c14_carbonstate_vars%livestemc_storage_patch, c14_carbonstate_vars%ctrunc_patch, c14_carbonstate_vars%frootc_xfer_patch, c14_carbonstate_vars%deadcrootc_storage_patch, c14_carbonstate_vars%deadstemc_xfer_patch, c14_carbonstate_vars%seedc_col, c14_carbonstate_vars%cpool_patch
+global_non
+calls
+readParams,
+integer                , intent(in)    :: num_soilc       ! number of soil columns filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(carbonstate_type) , intent(inout) :: c14_carbonstate_vars

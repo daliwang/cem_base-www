@@ -1,0 +1,7 @@
+sub_in, dlnes_mbdT, T_k, foftk, fdT, rs, p_t, rsdT, de_mbdT, es_mb
+sub_out, rs, es_mb, de_mbdT, fdT, dlnes_mbdT, foftk, rsdT
+global_ro
+global_wo
+global_mod
+global_non
+calls

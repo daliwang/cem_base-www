@@ -1,0 +1,17 @@
+sub_in, num_soilp, num_lakec, filter_lakec, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cws%zwt, a2l_not_downscaled_gcell%forc_pbot, cch4%ch4_oxid_depth_sat, cps%frac_h2osfc, clm_l2a%flux_ch4, cws%zwt_perched, cwf%qflx_surf, gch4%nem, cps%zi, cch4%ch4_surf_aere_sat, pps%rootfr, cps%zwt0, cps%dz, cch4%ch4_prod_depth_sat, gch4%ch4prodg, col%gridcell, cch4%conc_o2_sat, bounds%begg, pft%column, clm_a2l%forc_pco2, a2l_not_downscaled_gcell%forc_t, gch4%ch4co2f, cch4%ch4_surf_diff_unsat, pft%wtcol, cch4%ch4_prod_depth_unsat, cch4%conc_ch4_unsat, pps%grnd_ch4_cond, cch4%ch4_oxid_depth_unsat, cch4%ch4_surf_ebul_sat, cps%p3, cch4%ch4_surf_diff_sat, cch4%ch4_surf_ebul_unsat, cch4%ch4_surf_aere_unsat, cps%f0, clm_a2l%forc_po2, pft%itype
+global_wo, cch4%ch4_prod_depth_lake, gch4%c_atm, cch4%zwt_ch4_unsat, cch4%conc_o2_lake, cch4%ch4_surf_diff_lake, cch4%conc_ch4_lake, cch4%ch4_oxid_depth_lake, cch4%ch4_surf_ebul_lake
+global_mod, cch4%finundated_lag, cch4%fsat_bef, cch4%layer_sat_lag, cch4%conc_ch4_sat, cch4%totcolch4, cws%finundated, clm_a2l%forc_pch4, cch4%ch4_dfsat_flux, cch4%lake_soilc, cch4%qflx_surf_lag
+global_non, cps%z, bounds%begc, bounds%begp, bounds%endc, grc%latdeg, pps_a%grnd_ch4_cond, bounds%endp, pps_a%rootfr, bounds%endg
+calls, c2g, get_jwt, ch4annualupdate, ch4_aere, p2c, ch4_oxid, ch4_ebul, ch4_tran, endrun, ch4_prod
+
+Tree height: 9
+1-, ch4annualupdate, 
+2+, endrun, p2c, 
+3+, p2c, 
+4+, get_jwt, 
+5-, ch4_prod, ch4_oxid, ch4_aere, ch4_ebul, ch4_tran, c2g, c2g, c2g, c2g, 
+6+, ch4_prod, ch4_oxid, ch4_aere, ch4_ebul, ch4_tran, 
+7+, endrun, 
+8+, endrun, 

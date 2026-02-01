@@ -1,0 +1,8 @@
+sub_param, this
+sub_out
+global_ro
+global_wo, this%sbc_ps, this%vg_n, this%sbc_pu, this%w_d, this%w_c, this%sat_func_type, this%sbc_b3, this%sbc_b2, this%sat_res, this%alpha, this%vg_m, this%bc_lambda, this%relperm_func_type
+global_mod
+global_non
+calls
+readParams,

@@ -1,0 +1,11 @@
+sub_param, rscal, nr, reaction_rates
+sub_out, reaction_rates
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,readParams
+integer , intent(in)    :: nr
+real(r8), intent(in)    :: rscal(1:nr)
+real(r8), intent(inout) :: reaction_rates(1:nr)

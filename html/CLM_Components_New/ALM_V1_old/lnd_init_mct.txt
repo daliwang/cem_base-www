@@ -1,0 +1,12 @@
+sub_param, l2x_l:4, NLFilename:5, x2l_l:3, cdata_l:2, EClock:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, initialize2, seq_timemgr_EClockGetData, shr_file_getLogLevel, clm_varctl_set, spmd_init, seq_infodata_PutData, shr_file_getLogUnit, set_nextsw_cday, seq_infodata_GetData, endrun, initialize1, seq_cdata_setptrs, lnd_SetgsMap_mct, memmon_reset_addr, memmon_dump_fort, mct_aVect_zero, set_timemgr_init, shr_file_setLogLevel, lnd_domain_mct, shr_file_setIO, clm_cpl_indices_set, lnd_export, mct_aVect_init, shr_file_setLogUnit, initialize3, control_setNL
+readParams,
+type(ESMF_Clock),           intent(inout) :: EClock           ! Input synchronization clock
+type(seq_cdata),            intent(inout) :: cdata_l          ! Input land-model driver data
+type(mct_aVect),            intent(inout) :: x2l_l, l2x_l     ! land model import and export states
+character(len=*), optional, intent(in)    :: NLFilename       ! Namelist filename to read

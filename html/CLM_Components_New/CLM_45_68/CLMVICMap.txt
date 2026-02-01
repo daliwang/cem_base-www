@@ -1,0 +1,9 @@
+sub_in, filter, numf, bounds
+sub_out
+global_ro, cps%max_moist, cps%porosity, cws%h2osoi_liq, cws%h2osoi_vol, cps%vic_clm_fract, cps%depth, cws%h2osoi_ice
+global_wo
+global_mod, cws%ice, cws%moist_vol, cws%moist
+global_non, cps%dz, cps%z, cps%zi
+calls
+
+Tree height: 1

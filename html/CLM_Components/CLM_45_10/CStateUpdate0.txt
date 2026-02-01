@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, isotope
+sub_out
+global_ro, psnshade_to_cpool, psnsun_to_cpool
+global_wo
+global_mod, cpool
+global_non, pcf, pc14f, pc13f, pcs, pc13s, pc14s
+calls, endrun

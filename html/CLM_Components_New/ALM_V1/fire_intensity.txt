@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %ROS_front, currentPatch%younger;, currentSite%oldest_patch;, %TFC_ROS, currentSite%acc_NI
+global_wo, %FD, !currentPatch%FD, %FI
+global_mod, %fire
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer :: currentSite

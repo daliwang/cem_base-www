@@ -1,0 +1,7 @@
+sub_in, ncol, dep_dry_tend, dep_dry, tv, dt, vlc_dry, pdel, pmid, q
+sub_out, dep_dry_tend, dep_dry
+global_ro
+global_wo
+global_mod
+global_non
+calls

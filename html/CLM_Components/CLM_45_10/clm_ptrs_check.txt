@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, lunf, colf, coli, landunit, gridcell, column, pftf, pfti, luni
+global_wo
+global_mod
+global_non, g, c, p, l
+calls, get_proc_bounds, endrun

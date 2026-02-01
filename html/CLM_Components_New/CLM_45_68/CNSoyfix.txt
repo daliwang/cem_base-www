@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, pps%gddmaturity, pft%column, cps%fpg, pps%gddplant, pepv%plant_ndemand, cns%sminn, cps%wf, pft%itype
+global_wo
+global_mod, pnf%soyfixn
+global_non, cnf%soyfixn_to_sminn, pps%croplive
+calls, p2c
+
+Tree height: 9
+5-, p2c, 

@@ -1,0 +1,7 @@
+sub_in, sw_nonhygro_asm, sw_nonhygro_ssa, lw_ext, sw_nonhygro_scat, num_to_mass_aer, r_sw_ext, dispersion_aer, hygro_aer, density_aer, sw_hygro_ext, r_sw_scat, dryrad_aer, refindex_aer_sw, aer_idx, list_idx, sw_nonhygro_ext, opticstype, r_lw_abs, aername, refindex_aer_lw, sw_hygro_asm, r_sw_ascat, sw_nonhygro_ascat, lw_hygro_ext, mu, sw_hygro_ssa
+sub_out
+global_ro, aer
+global_wo
+global_mod
+global_non, aerosollist
+calls, endrun

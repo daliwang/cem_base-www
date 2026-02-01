@@ -1,0 +1,7 @@
+sub_in, state, ccn, pbuf, cs
+sub_out, ccn
+global_ro, tair
+global_wo
+global_mod
+global_non
+calls, loadaer

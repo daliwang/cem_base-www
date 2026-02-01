@@ -1,0 +1,7 @@
+sub_in, mw_dry, mmr, ncol, lchunk
+sub_out, mmr
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, outfld

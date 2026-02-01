@@ -1,0 +1,7 @@
+sub_in, o2scol, noscol, n2cc, etfphot_ms93, o3scol, jno, nlev
+sub_out, jno
+global_ro
+global_wo
+global_mod
+global_non
+calls

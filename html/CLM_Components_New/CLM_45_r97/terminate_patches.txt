@@ -1,0 +1,7 @@
+sub_in, cs_pnt
+sub_out
+global_ro, area, currentPatch
+global_wo
+global_mod
+global_non, cs_pnt
+calls, fuse_2_patches

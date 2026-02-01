@@ -1,0 +1,7 @@
+sub_in, nc
+sub_out
+global_ro, itype
+global_wo
+global_mod
+global_non
+calls, get_clump_bounds

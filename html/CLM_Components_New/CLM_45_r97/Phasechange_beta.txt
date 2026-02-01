@@ -1,0 +1,7 @@
+sub_in, num_nolakec, filter_nolakec, dhsdT, energyflux_inst, bounds, temperature_inst, waterstate_inst, soilstate_inst, waterflux_inst
+sub_out
+global_ro, bsw, watsat, frac_h2osfc, fact, frac_sno_eff, dz, snl, sucsat
+global_wo, eflx_snomelt_u, qflx_snow_melt, eflx_snomelt_r
+global_mod, qflx_snofrz_col, qflx_glcice, imelt, qflx_snomelt, qflx_glcice_melt, xmf, h2osno, t_soisno, h2osoi_liq, h2osoi_ice, eflx_snomelt, qflx_snofrz_lyr, snow_depth
+global_non, waterstate_inst%frac_sno_col
+calls, t_stopf, t_startf

@@ -1,0 +1,7 @@
+sub_in, gi, nurban_tbd, npatches, nlake, glcmask, nglacier_mec, nurban_hd, nurban_md, nlunits, nglacier, ncohorts, ncrop, nwetland, ncols, nveg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

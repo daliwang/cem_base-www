@@ -1,0 +1,11 @@
+sub_param, iflag, fulpath, locfn
+sub_out, locfn
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+character(len=*), intent(in)  :: fulpath !Archival or permanent disk full pathname
+character(len=*), intent(out) :: locfn   !output local file name
+integer,          intent(in)  :: iflag   !0=>abort if file not found 1=>do not abort

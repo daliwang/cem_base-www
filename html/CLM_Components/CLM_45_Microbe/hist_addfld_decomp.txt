@@ -1,0 +1,7 @@
+sub_in, ptr_col, long_name, type2d, fname, default, avgflag, units, ptr_pft
+sub_out, ptr_col, ptr_pft
+global_ro, ptr_col, ptr_pft
+global_wo
+global_mod
+global_non
+calls, hist_addfld1d, hist_addfld2d, endrun

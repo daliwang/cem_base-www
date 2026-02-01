@@ -1,0 +1,7 @@
+sub_in, jlasts, mq, kfirsts, qin, klasts, klastr, ilastr, jlastr, qout, modc, ifirstr, comm, jfirstr, jfirsts, mend, send_bl, kfirstr, recv_bl, ilasts, ifirsts, mbeg
+sub_out, qout
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_WAITALL, t_startf, MPI_COMM_SIZE, MPI_COMM_RANK, t_stopf, MPI_WAIT

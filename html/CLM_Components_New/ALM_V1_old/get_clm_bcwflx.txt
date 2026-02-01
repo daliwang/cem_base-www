@@ -1,0 +1,12 @@
+sub_param, bounds:2, num_soilc:3, filter_soilc:4, clm_bgc_data:1
+sub_out
+global_ro| clm_bgc_data%qflx_evap_soi_col, qflx_evap_soil, NONE| col%gridcell, cgridcell, NONE| clm_bgc_data%rootfr_col, rootfr, NONE| clm_bgc_data%qflx_ev_h2osfc_col, qflx_ev_h2osfc, NONE| clm_bgc_data%hksat_col, hksat, NONE| bounds%begg, begg, NONE| clm_bgc_data%frac_h2osfc_col, frac_h2osfc, NONE| lun%itype, ltype, NONE| clm_bgc_data%qflx_top_soil_col, qflx_top_soil, NONE| clm_bgc_data%frac_sno_eff_col, frac_sno, NONE| clm_bgc_data%htvp_col, htvp, NONE| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| clm_pf_idata%pressure_reference, pressure_reference, NONE| clm_bgc_data%watsat_col, watsat, NONE| col%wtgcell, wtgcell, NONE| clm_bgc_data%qflx_tran_veg_col, qflx_tran_veg, NONE| clm_bgc_data%t_grnd_col, t_grnd, NONE| col%landunit, clandunit, NONE
+global_wo
+global_mod
+global_non| clm_bgc_data%forc_pbot_not_downscaled_grc, forc_pbot, NONE| pft%wtgcell, pwtgcell, NONE| clm_bgc_data%qflx_sub_snow_col, qflx_subl_snow, NONE| col%zi, zi, NONE| col%pfti, pfti, NONE| col%dz, dz, NONE| pft%wtcol, pwtcol, NONE| clm_bgc_data%bsw_col, bsw, NONE| clm_bgc_data%sucsat_col, sucsat, NONE| clm_bgc_data%h2osoi_ice_col, h2osoi_ice, NONE| clm_bgc_data%h2osoi_liq_col, h2osoi_liq, NONE
+calls, VecRestoreArrayF90, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in)  :: bounds
+integer, intent(in) :: num_soilc                 ! number of column non-lake points in column filter
+integer, intent(in) :: filter_soilc(:)           ! column filter for non-lake points
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

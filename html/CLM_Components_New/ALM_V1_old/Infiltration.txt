@@ -1,0 +1,19 @@
+sub_param, bounds:1, waterflux_vars:10, filter_urbanc:5, soilhydrology_vars:7, soilstate_vars:8, num_urbanc:4, energyflux_vars:6, waterstate_vars:11, filter_hydrologyc:3, num_hydrologyc:2, temperature_vars:9
+sub_out
+global_ro| soilhydrology_vars%max_infil_col, max_infil, NONE| soilstate_vars%hksat_col, hksat, NONE| soilhydrology_vars%i_0_col, i_0, NONE| waterflux_vars%qflx_top_soil_col, qflx_top_soil, NONE| soilhydrology_vars%fsat_col, fsat, NONE| waterflux_vars%qflx_ev_h2osfc_col, qflx_ev_h2osfc, NONE| soilhydrology_vars%ice_col, ice, NONE| col%topo_slope, topo_slope, NONE| soilstate_vars%watsat_col, watsat, NONE| waterflux_vars%qflx_ev_soil_col, qflx_ev_soil, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| col%dz, dz, NONE| waterstate_vars%frac_sno_eff_col, frac_sno, NONE| soilhydrology_vars%h2osfc_thresh_col, h2osfc_thresh, NONE| waterflux_vars%qflx_evap_grnd_col, qflx_evap_grnd, NONE| soilhydrology_vars%b_infil_col, b_infil, NONE| soilhydrology_vars%max_moist_col, max_moist, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| col%snl, snl, NONE| soilhydrology_vars%moist_col, moist, NONE
+global_wo| soilstate_vars%eff_porosity_col, eff_porosity, NONE
+global_mod| waterflux_vars%qflx_surf_col, qflx_surf, NONE| waterflux_vars%qflx_infl_col, qflx_infl, NONE| waterflux_vars%qflx_gross_infl_soil_col, qflx_gross_infl_soil, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE| waterflux_vars%qflx_gross_evap_soil_col, qflx_gross_evap_soil, NONE| soilhydrology_vars%icefrac_col, icefrac, NONE| waterflux_vars%qflx_h2osfc_surf_col, qflx_h2osfc_surf, NONE
+global_non| soilhydrology_vars%fcov_col, fcov, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| soilhydrology_vars%zwt_col, zwt, NONE| waterflux_vars%qflx_evap_soi_col, qflx_evap_soi, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| soilhydrology_vars%frost_table_col, frost_table, NONE| soilstate_vars%bsw_col, bsw, NONE| soilstate_vars%sucsat_col, sucsat, NONE| soilhydrology_vars%zwt_perched_col, zwt_perched, NONE| soilhydrology_vars%h2osfcflag, h2osfcflag, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| waterstate_vars%h2osno_col, h2osno, NONE| soilstate_vars%smpmin_col, smpmin, NONE
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                  , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                  , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                  , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+type(energyflux_type)    , intent(in)    :: energyflux_vars
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars

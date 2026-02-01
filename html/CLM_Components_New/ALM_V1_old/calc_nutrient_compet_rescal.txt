@@ -1,0 +1,19 @@
+sub_param, dtime:5, smin_nh4_vr:10, bounds:1, k_nit:7, decomp_nh4_immob:8, ubj:2, filter_soilc:4, plant_ndemand:9, centurybgc_vars:6, num_soilc:3, nh4_compet:11
+sub_out, nh4_compet
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)     , intent(in) :: bounds                                      ! bounds
+integer               , intent(in) :: ubj
+integer               , intent(in) :: num_soilc                                   ! number of columns in column filter
+integer               , intent(in) :: filter_soilc(:)                             ! column filter
+type(centurybgc_type) , intent(in) :: centurybgc_vars
+real(r8)              , intent(in) :: dtime
+real(r8)              , intent(in) :: k_nit(bounds%begc: , 1: )
+real(r8)              , intent(in) :: decomp_nh4_immob(bounds%begc: , 1: )
+real(r8)              , intent(in) :: plant_ndemand(bounds%begc: , 1: )
+real(r8)              , intent(in) :: smin_nh4_vr(bounds%begc: , 1: )
+real(r8)              , intent(inout):: nh4_compet(bounds%begc:bounds%endc,1:ubj) !

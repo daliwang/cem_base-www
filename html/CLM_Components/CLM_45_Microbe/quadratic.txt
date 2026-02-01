@@ -1,0 +1,7 @@
+sub_in, a, c, b, r2, r1
+sub_out, r2, r1
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

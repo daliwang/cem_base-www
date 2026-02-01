@@ -1,0 +1,10 @@
+sub_param, soilhydrology_vars, sandcol, claycol, om_fraccol, c
+sub_out
+global_ro, soilhydrology_vars%vic_clm_fract_col, soilhydrology_vars%depth_col
+global_wo, soilhydrology_vars%phi_s_col, soilhydrology_vars%max_moist_col, soilhydrology_vars%ksat_col, soilhydrology_vars%c_param_col
+global_mod, soilhydrology_vars%porosity_col, soilhydrology_vars%expt_col
+global_non
+calls
+readParams,
+integer                  , intent(in)    :: c               ! column index
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars

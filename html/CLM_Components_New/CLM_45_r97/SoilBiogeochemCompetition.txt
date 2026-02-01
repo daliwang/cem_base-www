@@ -1,0 +1,7 @@
+sub_in, filter_soilc, bounds, num_soilc, soilbiogeochem_nitrogenstate_inst, soilbiogeochem_state_inst, soilbiogeochem_nitrogenflux_inst
+sub_out
+global_ro, smin_no3_vr, nfixation_prof, pot_f_nit_vr, pot_f_denit_vr, n2_n2o_ratio_denit_vr, plant_ndemand, smin_nh4_vr, sminn_vr, potential_immob_vr
+global_wo, fpg, fpi, sminn_to_denit_excess_vr, f_n2o_denit_vr, f_n2o_nit_vr, fpi_vr
+global_mod, f_nit_vr, sminn_to_plant, actual_immob_vr, smin_nh4_to_plant_vr, actual_immob_nh4_vr, actual_immob, smin_no3_to_plant_vr, sminn_to_plant_vr, actual_immob_no3_vr, f_denit_vr, potential_immob, supplement_to_sminn_vr
+global_non
+calls

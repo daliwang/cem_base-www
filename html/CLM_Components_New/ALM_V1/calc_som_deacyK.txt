@@ -1,0 +1,21 @@
+sub_param, numf, carbonflux_vars, centurybgc_vars, tracercoeff_vars, jtops, k_decay, betrtracer_vars, lbj, dtime, bounds, ubj, filter, tracerstate_vars, nom_pools
+sub_out, k_decay
+global_ro, carbonflux_vars%w_scalar_col, CNDecompBgcParamsInst%k_decay_som3, CNDecompBgcParamsInst%k_decay_som1, CNDecompBgcParamsInst%k_decay_lit1, CNDecompBgcParamsInst%k_decay_cwd, CNDecompBgcParamsInst%k_decay_lit3, CNDecompBgcParamsInst%k_decay_lit2, carbonflux_vars%t_scalar_col, CNDecompBgcParamsInst%k_decay_som2, centurybgc_vars%depth_scalar_col, carbonflux_vars%o_scalar_col
+global_wo
+global_mod
+global_non, centurybgc_vars%lit2, centurybgc_vars%som2, centurybgc_vars%som3, centurybgc_vars%lit3, centurybgc_vars%cwd, centurybgc_vars%som1, centurybgc_vars%lit1
+calls
+readParams,
+integer                , intent(in)    :: nom_pools
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: lbj, ubj
+integer                , intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer                , intent(in)    :: numf
+integer                , intent(in)    :: filter(:)
+real(r8)               , intent(in)    :: dtime
+type(betrtracer_type)  , intent(in)    :: betrtracer_vars                    ! betr configuration information
+type(centurybgc_type)  , intent(in)    :: centurybgc_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(tracercoeff_type) , intent(in)    :: tracercoeff_vars
+type(tracerstate_type) , intent(inout) :: tracerstate_vars
+real(r8)               , intent(out)   :: k_decay(nom_pools, bounds%begc:bounds%endc, lbj:ubj)

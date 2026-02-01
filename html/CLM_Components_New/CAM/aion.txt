@@ -1,0 +1,7 @@
+sub_in, so, ncol, si, do_aurora
+sub_out, so
+global_ro
+global_wo
+global_mod
+global_non
+calls

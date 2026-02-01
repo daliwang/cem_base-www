@@ -1,0 +1,7 @@
+sub_in, lni, lnj, amask
+sub_out
+global_ro
+global_wo, procinfo%endl, procinfo%endp, procinfo%ncols, procinfo%endCohort, procinfo%begl, procinfo%begp, procinfo%endc, procinfo%begc, procinfo%nlunits, procinfo%begCohort, procinfo%nCohorts, procinfo%npfts
+global_mod, procinfo%nclumps, procinfo%cid, procinfo%begg, %begg, %ncells, procinfo%ncells, ldecomp%gdc2glo, %endg, procinfo%endg
+global_non
+calls, endrun, get_proc_bounds, shr_sys_flush, mct_gsMap_init

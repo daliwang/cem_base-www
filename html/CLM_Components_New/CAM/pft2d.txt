@@ -1,0 +1,7 @@
+sub_in, damp, q1, p, s, jp, q2, im
+sub_out, q1, p
+global_ro
+global_wo
+global_mod
+global_non
+calls, fftrans

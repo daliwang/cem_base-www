@@ -1,0 +1,16 @@
+sub_param, num_soilc:3, dz_top:5, tracerboundarycond_vars:8, bounds:2, filter_soilc:4, this:1, waterflux_vars:7, betrtracer_vars:6
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(bgc_reaction_type)      , intent(in) :: this                       !
+type(bounds_type)             , intent(in) :: bounds                     !
+integer                       , intent(in) :: num_soilc                  ! number of columns in column filter
+integer                       , intent(in) :: filter_soilc(:)            ! column filter
+type(betrtracer_type)         , intent(in) :: betrtracer_vars            !
+real(r8)                      , intent(in) :: dz_top( : )                !
+type(waterflux_type)          , intent(in) :: waterflux_vars             !
+type(tracerboundarycond_type) , intent(inout) :: tracerboundarycond_vars !

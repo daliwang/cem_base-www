@@ -1,0 +1,8 @@
+sub_in, samegrid_al, samegrid_ro, infodata, rof_c2_ocn, samegrid_ao
+sub_out
+global_ro, prep_lnd_get_mapper_Sa2l, data, prep_glc_get_mapper_SFl2g, prep_ocn_get_mapper_Fa2o, prep_ice_get_mapper_SFo2i
+global_wo
+global_mod, rAttr
+global_non, component_get_gsmap_cx, component_get_dom_cx, component_get_gsmap_cx, component_get_dom_cx
+calls, seq_infodata_GetData, seq_map_readdata, seq_map_map
+calls_ln, seq_map_map@848, seq_map_map@863, seq_map_readdata@853, seq_map_map@811, seq_map_readdata@818, seq_map_readdata@837, seq_map_map@829, seq_infodata_GetData@796

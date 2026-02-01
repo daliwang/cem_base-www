@@ -1,0 +1,11 @@
+sub_param, c_new, c_template, temperature_vars
+sub_out
+global_ro
+global_wo
+global_mod, temperature_vars%t_soisno_col
+global_non
+calls
+readParams,
+integer, intent(in) :: c_new      ! index of newly-active column
+integer, intent(in) :: c_template ! index of column to use as a template
+type(temperature_type), intent(inout) :: temperature_vars

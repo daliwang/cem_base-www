@@ -1,0 +1,7 @@
+sub_in, htend, sfliq, wvtend, icetend, pint, cldliq, sfice, pmid, pvliq, cloud, liqtend, t, cldice, ncol, pdel, dtime, pvice
+sub_out, wvtend, sfice, sfliq, htend, liqtend, icetend
+global_ro
+global_wo
+global_mod
+global_non
+calls, getflx

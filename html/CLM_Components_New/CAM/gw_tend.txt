@@ -1,0 +1,7 @@
+sub_in, dt, ptend, pbuf, cam_in, state, sgh
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, gw_cm_src, gw_drag_prof, gw_beres_src, gw_spec_outflds, momentum_energy_conservation, gw_prof, physics_ptend_init, gw_oro_src, outfld

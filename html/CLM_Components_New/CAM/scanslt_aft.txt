@@ -1,0 +1,7 @@
+sub_in, grfv2, grfv1, grt1, grfu1, fftbufs, grfu2, fftbufn, grt2, irow, grlps2, nlon_fft, grq1, grlps1, grq2
+sub_out, grq1, grfv2, grfv1, grlps1, grt1, grq2, grt2, grlps2, grfu1, grfu2
+global_ro
+global_wo
+global_mod
+global_non
+calls

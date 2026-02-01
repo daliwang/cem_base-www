@@ -1,0 +1,7 @@
+sub_in, lchnk, ngrdcol, field_sc, field
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_field_avg_shr, subcol_field_get_firstsubcol

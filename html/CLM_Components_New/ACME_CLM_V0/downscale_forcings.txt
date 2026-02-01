@@ -1,0 +1,7 @@
+sub_in, atm2lnd_vars, filter_do_smb_c, bounds, num_do_smb_c
+sub_out
+global_ro, atm2lnd_vars%forc_t_not_downscaled_grc, atm2lnd_vars%forc_hgt_grc, atm2lnd_vars%forc_rho_not_downscaled_grc, atm2lnd_vars%forc_th_not_downscaled_grc, col%landunit, atm2lnd_vars%forc_pbot_not_downscaled_grc, ldomain%topo, atm2lnd_vars%forc_q_not_downscaled_grc, col%gridcell, col%glc_topo, atm2lnd_vars%forc_rain_not_downscaled_grc, atm2lnd_vars%forc_snow_not_downscaled_grc
+global_wo, atm2lnd_vars%forc_rho_downscaled_col, atm2lnd_vars%forc_pbot_downscaled_col, atm2lnd_vars%forc_q_downscaled_col, atm2lnd_vars%forc_th_downscaled_col, atm2lnd_vars%forc_t_downscaled_col
+global_mod, atm2lnd_vars%forc_rain_downscaled_col, atm2lnd_vars%forc_snow_downscaled_col
+global_non
+calls, check_downscale_consistency, Qsat, downscale_longwave

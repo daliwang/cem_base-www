@@ -1,0 +1,7 @@
+sub_in, hmn, pmn, x1, ix
+sub_out, hmn, pmn
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, xvalue, tlist, xlist, nparam, tvalue
+sub_out, tlist, xlist, tvalue
+global_ro
+global_wo
+global_mod
+global_non
+calls, clubb_debug

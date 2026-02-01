@@ -1,0 +1,11 @@
+sub_param, endg, begg, pcturb, caller
+sub_out
+global_ro, urbinp%cv_wall, urbinp%alb_wall_dif, urbinp%t_building_min, urbinp%em_roof, urbinp%alb_perroad_dif, urbinp%wtroad_perv, urbinp%alb_roof_dif, urbinp%thick_wall, urbinp%tk_roof, urbinp%nlev_improad, urbinp%alb_roof_dir, urbinp%alb_wall_dir, urbinp%ht_roof, urbinp%alb_perroad_dir, urbinp%tk_wall, urbinp%wtlunit_roof, urbinp%alb_improad_dir, urbinp%em_improad, urbinp%thick_roof, urbinp%t_building_max, urbinp%wind_hgt_canyon, urbinp%em_wall, urbinp%em_perroad, urbinp%alb_improad_dif, urbinp%cv_roof
+global_wo, urbinp%canyon_hwr
+global_mod
+global_non
+calls, endrun
+readParams,
+integer         , intent(in) :: begg, endg           ! beg & end grid cell indices
+real(r8)        , intent(in) :: pcturb(begg:,:)      ! % urban
+character(len=*), intent(in) :: caller               ! identifier of caller, for more meaningful error messages

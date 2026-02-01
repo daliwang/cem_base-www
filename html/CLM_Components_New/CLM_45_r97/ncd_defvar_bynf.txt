@@ -1,0 +1,7 @@
+sub_in, flag_meanings, ncid, cell_method, imissing_value, ndims, varname, long_name, units, flag_values, varid, xtype, nvalid_range, dimid, comment, fill_value, ifill_value, missing_value
+sub_out, varid
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_putatt, shr_sys_abort

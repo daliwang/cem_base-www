@@ -1,0 +1,24 @@
+sub_param, c13_carbonflux_vars:12, filter_soilc:3, num_soilp:4, plantsoilnutrientflux_vars:16, filter_soilp:5, nitrogenflux_vars:15, num_soilc:2, cnstate_vars:9, crop_vars:7, nitrogenstate_vars:14, canopystate_vars:8, carbonflux_vars:11, carbonstate_vars:10, bounds:1, photosyns_vars:6, c14_carbonflux_vars:13
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, calc_plant_nitrogen_demand
+readParams,readCNAllocBetrParams
+type(bounds_type)        , intent(in)           :: bounds                     !
+integer                  , intent(in)           :: num_soilc                  ! number of soil columns in filter
+integer                  , intent(in)           :: filter_soilc(:)            ! filter for soil columns
+integer                  , intent(in)           :: num_soilp                  ! number of soil patches in filter
+integer                  , intent(in)           :: filter_soilp(:)            ! filter for soil patches
+type(photosyns_type)     , intent(in)           :: photosyns_vars             !
+type(crop_type)          , intent(in)           :: crop_vars                  !
+type(canopystate_type)   , intent(in)           :: canopystate_vars           !
+type(carbonstate_type)   , intent(in)           :: carbonstate_vars           !
+type(cnstate_type)       , intent(inout)        :: cnstate_vars               !
+type(carbonflux_type)    , intent(inout)        :: carbonflux_vars            !
+type(carbonflux_type)    , intent(inout)        :: c13_carbonflux_vars        !
+type(carbonflux_type)    , intent(inout)        :: c14_carbonflux_vars        !
+type(nitrogenstate_type) , intent(inout)        :: nitrogenstate_vars         !
+type(nitrogenflux_type)  , intent(inout)        :: nitrogenflux_vars          !
+type(plantsoilnutrientflux_type), intent(inout) :: plantsoilnutrientflux_vars !

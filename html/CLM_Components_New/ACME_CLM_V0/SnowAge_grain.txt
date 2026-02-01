@@ -1,0 +1,7 @@
+sub_in, filter_nosnowc, waterflux_vars, num_nosnowc, bounds, waterstate_vars, filter_snowc, num_snowc, temperature_vars
+sub_out
+global_ro, col%dz, col%snl, waterstate_vars%h2osoi_ice_col, waterstate_vars%frac_sno_eff_col, waterflux_vars%qflx_snow_grnd_col, waterflux_vars%qflx_snwcp_ice_col, temperature_vars%t_soisno_col, waterstate_vars%do_capsnow_col, waterstate_vars%h2osno_col, waterstate_vars%h2osoi_liq_col, waterflux_vars%qflx_snofrz_lyr_col
+global_wo, temperature_vars%dTdz_top_col, temperature_vars%snot_top_col, waterstate_vars%snw_rds_top_col, waterstate_vars%sno_liq_top_col
+global_mod, waterstate_vars%snw_rds_col
+global_non, temperature_vars%t_grnd_col
+calls

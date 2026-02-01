@@ -1,0 +1,7 @@
+sub_in, dp, rp
+sub_out
+global_ro, currentCohort
+global_wo
+global_mod
+global_non, rp%tallest, dp%older, dp%younger, rp%shortest, currentCohort, storesmallcohort, currentCohort, dp%younger, rp, dp%older, currentCohort%taller, currentCohort, storebigcohort
+calls, patch_pft_size_profile, insert_cohort

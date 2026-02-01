@@ -1,0 +1,11 @@
+sub_param, wtcol, ptype, my_ci
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_patch
+readParams,
+integer  , intent(in)    :: my_ci   ! column index on which this patch should be placed
+integer  , intent(in)    :: ptype   ! patch type
+real(r8) , intent(in)    :: wtcol   ! weight of the patch relative to the column

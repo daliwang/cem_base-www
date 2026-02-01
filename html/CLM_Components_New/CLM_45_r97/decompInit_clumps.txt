@@ -1,0 +1,7 @@
+sub_in, lnj, lni, lns, glcmask
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, mpi_allreduce, subgrid_get_gcellinfo, endrun

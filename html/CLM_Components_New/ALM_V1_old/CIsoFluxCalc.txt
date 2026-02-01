@@ -1,0 +1,17 @@
+sub_param, num:5, isotope:9, ctot_flux:2, ciso_flux:1, ctot_state:4, diag:8, filter:6, ciso_state:3, frax_c13:7
+sub_out, ciso_flux
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+real(r8)         , intent(inout), pointer :: ciso_flux(:)  ! isoC flux
+real(r8)         , intent(in)   , pointer :: ctot_flux(:)  ! totC flux
+real(r8)         , intent(in)   , pointer :: ciso_state(:) ! isoC state, upstream pool
+real(r8)         , intent(in)   , pointer :: ctot_state(:) ! totC state, upstream pool
+real(r8)         , intent(in)             :: frax_c13      ! fractionation factor (1 = no fractionation) for C13
+integer          , intent(in)             :: num           ! number of filter members
+integer          , intent(in)             :: filter(:)     ! filter indices
+integer          , intent(in)             :: diag          ! 0=no diagnostics, 1=print diagnostics
+character(len=*) , intent(in)             :: isotope       ! 'c13' or 'c14'

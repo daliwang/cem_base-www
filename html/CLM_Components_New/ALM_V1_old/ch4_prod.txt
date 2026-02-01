@@ -1,0 +1,22 @@
+sub_param, filter_methp:5, num_methc:2, carbonflux_vars:12, sat:7, num_methp:4, ch4_vars:14, lake:8, temperature_vars:10, jwt:6, soilstate_vars:9, waterstate_vars:11, bounds:1, nitrogenflux_vars:13, filter_methc:3
+sub_out
+global_ro| col%gridcell, gridcell, NONE| carbonflux_vars%o_scalar_col, o_scalar, NONE| ch4_vars%finundated_col, finundated, NONE| soilstate_vars%rootfr_col, rootfr_col, NONE| carbonflux_vars%hr_vr_col, hr_vr, NONE| carbonflux_vars%fphr_col, fphr, NONE| ch4_vars%layer_sat_lag_col, layer_sat_lag, NONE| ch4_vars%finundated_lag_col, finundated_lag, NONE| col%dz, dz, NONE| ch4_vars%conc_o2_unsat_col, conc_o2, NONE| ch4_vars%conc_o2_sat_col, conc_o2, NONE| carbonflux_vars%somhr_col, somhr, NONE| carbonflux_vars%rr_patch, rr, NONE| ch4_vars%annavg_finrw_col, annavg_finrw, NONE| ch4_vars%lake_soilc_col, lake_soilc, NONE| ch4_vars%pH_col, pH, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| carbonflux_vars%lithr_col, lithr, NONE| soilstate_vars%rootfr_patch, rootfr, NONE| pft%column, column, NONE| pft%wtcol, wtcol, NONE| col%zi, zi, NONE| nitrogenflux_vars%pot_f_nit_vr_col, pot_f_nit_vr, NONE| carbonflux_vars%rr_col, col_rr, NONE
+global_wo| ch4_vars%ch4_prod_depth_unsat_col, ch4_prod_depth, NONE| ch4_vars%ch4_prod_depth_sat_col, ch4_prod_depth, NONE
+global_mod| ch4_vars%sif_col, sif, NONE| ch4_vars%o2_decomp_depth_sat_col, o2_decomp_depth, NONE| ch4_vars%o2_decomp_depth_unsat_col, o2_decomp_depth, NONE
+global_non| ch4_vars%co2_decomp_depth_sat_col, co2_decomp_depth, NONE| ch4_vars%co2_decomp_depth_unsat_col, co2_decomp_depth, NONE| col%z, z, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| soilstate_vars%watsat_col, watsat, NONE
+calls, endrun
+readParams,readCH4Params
+type(bounds_type)       , intent(in)    :: bounds
+integer                 , intent(in)    :: num_methc           ! number of column soil points in column filter
+integer                 , intent(in)    :: filter_methc(:)     ! column filter for soil points
+integer                 , intent(in)    :: num_methp           ! number of soil points in pft filter
+integer                 , intent(in)    :: filter_methp(:)     ! patch filter for soil points
+integer                 , intent(in)    :: jwt( bounds%begc: ) ! index of the soil layer right above the water table (-) [col]
+integer                 , intent(in)    :: sat                 ! 0 = unsaturated; 1 = saturated
+logical                 , intent(in)    :: lake                ! function called with lake filter
+type(soilstate_type)    , intent(inout) :: soilstate_vars
+type(temperature_type)  , intent(in)    :: temperature_vars
+type(waterstate_type)   , intent(in)    :: waterstate_vars
+type(carbonflux_type)   , intent(in)    :: carbonflux_vars
+type(nitrogenflux_type) , intent(in)    :: nitrogenflux_vars
+type(ch4_type)          , intent(inout) :: ch4_vars

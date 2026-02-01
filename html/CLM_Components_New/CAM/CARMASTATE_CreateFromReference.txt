@@ -1,0 +1,7 @@
+sub_in, zc, pl, igridh, dy, zl, p, igridv, time, qh2so4, qh2o, t, NZ, yc, rc, carma_ptr, dx, relhum, xc, lon, cstate, lat, dtime
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non, carma_ptr
+calls, vaporp_h2o_murphy2005, supersat, setupckern, CARMASTATE_Allocate, setupvf, setupbdif, rhopart, setupatm, setupgkern, setupgrow, setupnuc

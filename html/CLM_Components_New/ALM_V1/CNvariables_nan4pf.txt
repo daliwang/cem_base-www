@@ -1,0 +1,13 @@
+sub_param, filter_soilc, carbonflux_vars, num_soilc, nitrogenflux_vars, bounds
+sub_out
+global_ro
+global_wo, nitrogenflux_vars%decomp_cascade_ntransfer_vr_col, carbonflux_vars%decomp_cascade_hr_vr_col, carbonflux_vars%decomp_cascade_ctransfer_vr_col
+global_mod
+global_non
+calls
+readParams,readCNDecompParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc          ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)    ! filter for soil columns
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars

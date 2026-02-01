@@ -1,0 +1,7 @@
+sub_in, ncol, col_delta, col_dens, vmr, pdel
+sub_out, col_dens
+global_ro
+global_wo
+global_mod
+global_non
+calls

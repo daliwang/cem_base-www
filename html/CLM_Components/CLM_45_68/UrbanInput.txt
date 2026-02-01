@@ -1,0 +1,7 @@
+sub_in, begg, mode, endg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_inqdlen, getfil, ncd_pio_closefile, ncd_pio_openfile, ncd_inqdid, ncd_inqfdims, endrun

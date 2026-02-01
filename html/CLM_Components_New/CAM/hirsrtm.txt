@@ -1,0 +1,7 @@
+sub_in, rmix, ncol, tt, oro, britemp, lchnk, pp, tb_ir, o3mix, co2mmr, ts
+sub_out, britemp, tb_ir
+global_ro
+global_wo
+global_mod
+global_non
+calls, lookup

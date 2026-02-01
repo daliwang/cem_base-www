@@ -1,0 +1,7 @@
+sub_in, bounds, geds_local
+sub_out, geds_local
+global_ro, grc%londeg, grc%latdeg
+global_wo, udata%currentindex, currentSite%lon, currentSite%lat, currentSite%clmgcell
+global_mod
+global_non, currentSite, currentSite, store_fs
+calls, zero_site

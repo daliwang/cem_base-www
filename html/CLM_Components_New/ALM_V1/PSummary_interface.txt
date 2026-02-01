@@ -1,0 +1,11 @@
+sub_param, num_soilc, bounds, this, filter_soilc
+sub_out
+global_ro, this%harvest_p_to_litr_lig_p_col, this%phenology_p_to_litr_lig_p_col, this%dwt_frootp_to_litr_lig_p_col, this%dwt_deadcrootp_to_cwdp_col, this%gap_mortality_p_to_litr_cel_p_col, this%gap_mortality_p_to_cwdp_col, this%gap_mortality_p_to_litr_lig_p_col, this%dwt_frootp_to_litr_met_p_col, this%gap_mortality_p_to_litr_met_p_col, this%harvest_p_to_litr_cel_p_col, this%dwt_livecrootp_to_cwdp_col, this%dwt_frootp_to_litr_cel_p_col, this%phenology_p_to_litr_met_p_col, this%harvest_p_to_cwdp_col, this%harvest_p_to_litr_met_p_col, this%phenology_p_to_litr_cel_p_col
+global_wo
+global_mod, this%externalp_to_decomp_delta_col, this%sminp_net_transport_delta_col, this%externalp_to_decomp_ppools_col, this%sminp_net_transport_vr_col
+global_non
+calls
+readParams,
+type(bounds_type) ,  intent(in) :: bounds
+integer,             intent(in) :: num_soilc       ! number of soil columns in filter
+integer,             intent(in) :: filter_soilc(:) ! filter for soil columns

@@ -1,0 +1,7 @@
+sub_in, efield_hflux_file, efield_lflux_file, efield_wei96_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, read_acoef, prep_pnm, prep_fk, index_quiet, ReadCoef, constants

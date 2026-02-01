@@ -1,0 +1,15 @@
+sub_param, do_check_sums_equal_1, conversion_factor, varname, this, dim1name, data_shape, dyn_file
+sub_out
+global_ro
+global_wo
+global_mod, this%do_check_sums_equal_1, this%conversion_factor, this%varname, this%dim1name, this%data_shape
+global_non, dyn_file
+calls
+readParams,read_data_if_needed_interface
+class(dyn_var_type) , intent(inout)      :: this              ! this object
+type(dyn_file_type) , target, intent(in) :: dyn_file          ! file containing this variable
+character(len=*)    , intent(in)         :: varname           ! variable name on file
+character(len=*)    , intent(in)         :: dim1name          ! dim1name on file
+real(r8)            , intent(in)         :: conversion_factor ! data are DIVIDED by conversion_factor immediately after reading them
+logical, intent(in) :: do_check_sums_equal_1
+integer, intent(in) :: data_shape(:)

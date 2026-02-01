@@ -1,0 +1,7 @@
+sub_in, T0, T, f, ql_sc, qi_sc, muQ0, ql_dc, qv0, a_dc, al_st, qc_nc0, fice, qcst_crit, fice0, a_sc, snowh, qi_dc, landfrac, qc_nc, p, ai_st, qi0, ql0, fg
+sub_out, al_st, qc_nc, fice, fg, f
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat_water, astG_PDF_single, astG_RHU_single

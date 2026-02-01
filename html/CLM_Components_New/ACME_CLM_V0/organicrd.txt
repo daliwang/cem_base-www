@@ -1,0 +1,7 @@
+sub_in, organic
+sub_out, organic
+global_ro, ldomain%nj, ldomain%ns, ldomain%ni
+global_wo
+global_mod
+global_non
+calls, endrun, ncd_io, ncd_pio_openfile, getfil, ncd_inqfdims

@@ -1,0 +1,13 @@
+sub_param, bounds:1, parr:3, p2c_scale_type:5, carr:4, num2d:2
+sub_out, carr
+global_ro| pft%column, column, NONE| pft%wtcol, wtcol, NONE
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type) , intent(in)  :: bounds
+integer           , intent(in)  :: num2d                     ! size of second dimension
+real(r8)          , intent(in)  :: parr( bounds%begp: , 1: ) ! patch array
+real(r8)          , intent(out) :: carr( bounds%begc: , 1: ) ! column array
+character(len=*)  , intent(in)  :: p2c_scale_type     ! scale type

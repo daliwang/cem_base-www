@@ -1,0 +1,7 @@
+sub_in, ievp2elem, rc, rlh_nuc, inucproc, ielemto, ielemfrom, igas, carma
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAELEMENT_Get

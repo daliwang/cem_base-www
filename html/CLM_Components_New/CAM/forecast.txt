@@ -1,0 +1,7 @@
+sub_in, qfcst, v3m2, nlon, t3m1, psm1, cwava, v3m1, hwxal, q3, q3m2, qminus, hw3bl, t2, ztodt, fv, hw2bl, u3m1, hwxbl, etamid, u3, hw3al, t3, psm2, lat, u3m2, q3m1, t3m2, ps, hw2al, v3, fu
+sub_out, fu, hw3bl, hw2bl, fv, q3, hwxal, v3, hw2al, hwxbl, qfcst, hw3al, t3, u3
+global_ro
+global_wo
+global_mod
+global_non
+calls, pdelb0, qmassd, xqmass, outfld, plevs0

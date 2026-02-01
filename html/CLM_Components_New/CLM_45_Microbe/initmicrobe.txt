@@ -1,0 +1,10 @@
+sub_in, arbinit
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, initTimeConst_microbe, makearbinit_microbe
+
+Tree height: 1
+0 , initTimeConst_microbe, makearbinit_microbe, 

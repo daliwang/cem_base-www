@@ -1,0 +1,10 @@
+sub_param, bounds:1, geds_local:2
+sub_out
+global_ro
+global_wo| geds_local%dstatus, dstatus, NONE| geds_local%leafondate, leafondate, NONE| geds_local%old_stock, old_stock, NONE| geds_local%dleafoffdate, dleafoffdate, NONE| geds_local%frac_burnt, frac_burnt, NONE| geds_local%dleafondate, dleafondate, NONE| geds_local%status, status, NONE| geds_local%ncd, ncd, NONE| geds_local%water_memory, water_memory, NONE| geds_local%leafoffdate, leafoffdate, NONE| geds_local%gdd, gdd, NONE
+global_mod| geds_local%acc_NI, acc_NI, NONE
+global_non| geds_local, currentSite, NONE
+calls
+readParams,
+type(bounds_type),                      intent(in) :: bounds  ! clump bounds
+type(gridcell_edstate_type), target, intent(inout) :: geds_local( bounds%begg: )

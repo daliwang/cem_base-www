@@ -1,0 +1,10 @@
+sub_param, this:1, num_conds:4, cond_type:2, cond_names:5, cond_type_to_exclude:3
+sub_out, cond_names, num_conds
+global_ro| cur_goveq%next, cur_goveq, NONE| this%goveqns, cur_goveq, NONE
+global_wo
+global_mod
+global_non
+calls, cur_goveq%NumConditions, endrun, cur_goveq%GetConditionNames
+readParams,
+PetscInt, intent(in)            :: cond_type
+PetscInt, intent(in)            :: cond_type_to_exclude

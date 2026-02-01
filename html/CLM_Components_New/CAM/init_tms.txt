@@ -1,0 +1,7 @@
+sub_in, kind, gravit_in, errstring, karman_in, rair_in, oro_in, z0fac_in
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

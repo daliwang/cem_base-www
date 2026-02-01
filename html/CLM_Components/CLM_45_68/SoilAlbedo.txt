@@ -1,0 +1,7 @@
+sub_in, albsnd, filter_nourbanc, coszen, bounds, albsni, num_nourbanc
+sub_out
+global_ro, t_grnd, isoicol, h2osoi_vol, snl
+global_wo, albsoi
+global_mod, albsod
+global_non, albgri, lake_icefrac, albgrd
+calls, shr_assert

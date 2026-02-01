@@ -1,0 +1,7 @@
+sub_in, ngrdcol, field_sc, field, lchnk, docheck
+sub_out, field
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_get_nsubcol, endrun

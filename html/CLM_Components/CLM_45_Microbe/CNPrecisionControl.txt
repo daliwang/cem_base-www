@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, itype
+global_wo
+global_mod, col_ctrunc_vr, frootn, npool, grainc, grainn, frootc, pft_ntrunc, pft_ctrunc, leafc_storage, leafc_xfer, deadcrootn, frootc_xfer, cpool, leafc, livecrootn, deadstemc, livecrootc, livecrootc_xfer, leafn_xfer, deadcrootc_xfer, deadcrootc_xfer, frootc, leafn_storage, leafc, deadstemc_storage, deadcrootc, frootc, gresp_storage, frootc_xfer, col_ctrunc_vr, livestemn_storage, frootc_xfer, decomp_cpools_vr, deadstemn_storage, livestemn_xfer, retransn, leafc_storage, decomp_npools_vr, deadcrootc_storage, frootc_storage, livecrootc_xfer, gresp_xfer, gresp_storage, cpool, livecrootc, smin_nh4_vr, pft_ctrunc, deadstemc_storage, cpool, livestemc, frootc_storage, livestemc_storage, livestemn, deadstemc, deadcrootc_storage, frootc_storage, leafc_xfer, livestemc_storage, col_ctrunc_vr, livestemc_xfer, frootn_storage, deadstemc_xfer, leafn, deadstemc_storage, grainc_xfer, col_ntrunc_vr, livestemc, livecrootc, deadcrootn_storage, livecrootn_storage, smin_no3_vr, decomp_cpools_vr, gresp_storage, grainn_storage, livestemc_xfer, deadcrootc, deadstemn_xfer, livecrootn_xfer, decomp_cpools_vr, livestemc, livecrootc_xfer, frootn_xfer, deadcrootn_xfer, deadstemn, gresp_xfer, livestemc_storage, livestemc_xfer, gresp_xfer, deadstemc_xfer, grainn_xfer, deadstemc_xfer, grainc_storage, livecrootc_storage, deadcrootc, livecrootc_storage, leafc_xfer, deadstemc, leafc_storage, leafc, deadcrootc_xfer, pft_ctrunc, deadcrootc_storage, xsmrpool, livecrootc_storage
+global_non
+calls

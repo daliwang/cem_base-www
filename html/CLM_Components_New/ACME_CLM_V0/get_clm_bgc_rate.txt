@@ -1,0 +1,7 @@
+sub_in, num_soilc, bounds, filter_soilc
+sub_out
+global_ro, ccf%col_plantc_to_litr_met_c, ccf%col_plantc_to_litr_cel_c, cnf%fert_to_sminn, cnf%supplement_to_sminn_vr, ccf%col_plantc_to_litr_lig_c, bounds%begg, cnf%soyfixn_to_sminn, col%gridcell, cnf%col_plantn_to_litr_lig_n, cps%nfixation_prof, cnf%col_plantn_to_litr_cel_n, ccf%col_plantc_to_cwdc, cnf%nfix_to_sminn, cnf%col_plant_ndemand_vr, cps%ndep_prof, cnf%ndep_to_sminn, cnf%col_plantn_to_litr_met_n
+global_wo
+global_mod
+global_non, cns%sminn_vr, cns%smin_nh4_vr, cns%smin_no3_vr, cnf%col_plantn_to_cwdn
+calls, VecRestoreArrayF90, VecGetArrayF90

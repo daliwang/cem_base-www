@@ -1,0 +1,7 @@
+sub_in, mss_cnc_aer_in, h2osno_liq, flg_slr_in, coszen, albout, snw_rds, ubc, num_nourbanc, albsfc, filter_nourbanc, flg_snw_ice, lbc, h2osno_ice, flx_abs
+sub_out, albout, flx_abs
+global_ro, gridcell, snl, londeg, latdeg, h2osno, itype, landunit
+global_wo
+global_mod
+global_non, frac_sno_eff
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, hdimids, pbuf2d, cam_out, File
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, chem_init_restart, pio_seterrorhandling, get_horiz_grid_dim_d, init_prescribed_ozone_restart, init_prescribed_ghg_restart, pbuf_init_restart, init_prescribed_aero_restart, subcol_init_restart, init_prescribed_volcaero_restart

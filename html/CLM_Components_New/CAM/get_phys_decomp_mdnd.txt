@@ -1,0 +1,7 @@
+sub_in, fdim, ldim, column, iodesc, mdim, dtype, fileorder_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, get_phys_ldof, get_column_ldof
+calls, get_horiz_grid_dim_d, t_stopf, find_iodesc, t_startf, pio_initdecomp

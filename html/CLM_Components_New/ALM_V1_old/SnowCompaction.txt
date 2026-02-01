@@ -1,0 +1,13 @@
+sub_param, filter_snowc:3, num_snowc:2, temperature_vars:4, waterstate_vars:5, bounds:1
+sub_out
+global_ro| lun%itype, ltype, NONE| waterstate_vars%frac_sno_eff_col, frac_sno, NONE| waterstate_vars%int_snow_col, int_snow, NONE| col%snl, snl, NONE| temperature_vars%imelt_col, imelt, NONE| col%landunit, landunit, NONE| waterstate_vars%swe_old_col, swe_old, NONE| waterstate_vars%frac_iceold_col, frac_iceold, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| col%n_melt, n_melt, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE
+global_wo
+global_mod| col%dz, dz, NONE
+global_non| waterstate_vars%snow_depth_col, snow_depth, NONE
+calls
+readParams,
+type(bounds_type)      , intent(in) :: bounds
+integer                , intent(in) :: num_snowc       ! number of column snow points in column filter
+integer                , intent(in) :: filter_snowc(:) ! column filter for snow points
+type(temperature_type) , intent(in) :: temperature_vars
+type(waterstate_type)  , intent(in) :: waterstate_vars

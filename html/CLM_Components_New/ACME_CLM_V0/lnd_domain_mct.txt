@@ -1,0 +1,7 @@
+sub_in, bounds, dom_l, lsize, gsMap_l
+sub_out
+global_ro, ldomain%lonc, ldomain%mask, ldomain%frac, bounds%begg, ldomain%latc, ldomain%area
+global_wo
+global_mod
+global_non
+calls, mct_gsMap_orderedPoints, mct_gGrid_init, mct_gGrid_importIAttr, mct_gGrid_importRAttr, mct_gGrid_importRattr

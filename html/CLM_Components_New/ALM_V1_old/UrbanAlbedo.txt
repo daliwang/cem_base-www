@@ -1,0 +1,19 @@
+sub_param, solarabs_vars:10, num_urbanp:6, num_urbanc:4, bounds:1, filter_urbanc:5, filter_urbanl:3, num_urbanl:2, filter_urbanp:7, waterstate_vars:8, surfalb_vars:11, urbanparams_vars:9
+sub_out
+global_ro| urbanparams_vars%alb_perroad_dir, alb_perroad_dir, NONE| urbanparams_vars%alb_perroad_dif, alb_perroad_dif, NONE| pft%column, column, NONE| col%itype, ctype, NONE| surfalb_vars%coszen_col, coszen_col, NONE| urbanparams_vars%alb_roof_dir, alb_roof_dir, NONE| urbanparams_vars%alb_improad_dif, alb_improad_dif, NONE| urbanparams_vars%alb_roof_dif, alb_roof_dif, NONE| urbanparams_vars%alb_improad_dir, alb_improad_dir, NONE| lun%coli, coli, NONE| lun%gridcell, gridcell, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| pft%landunit, landunit, NONE| col%landunit, landunit, NONE
+global_wo| surfalb_vars%fabd_sun_patch, fabd_sun, NONE| surfalb_vars%fabd_patch, fabd, NONE| solarabs_vars%sabs_shadewall_dif_lun, sabs_shadewall_dif, NONE| surfalb_vars%fabd_sha_patch, fabd_sha, NONE| surfalb_vars%albi_patch, albi, NONE| solarabs_vars%sabs_improad_dir_lun, sabs_improad_dir, NONE| surfalb_vars%albd_patch, albd, NONE| solarabs_vars%sabs_sunwall_dir_lun, sabs_sunwall_dir, NONE| solarabs_vars%sabs_sunwall_dif_lun, sabs_sunwall_dif, NONE| solarabs_vars%sabs_roof_dir_lun, sabs_roof_dir, NONE| surfalb_vars%fabi_sun_patch, fabi_sun, NONE| surfalb_vars%ftdd_patch, ftdd, NONE| solarabs_vars%sabs_roof_dif_lun, sabs_roof_dif, NONE| surfalb_vars%ftid_patch, ftid, NONE| solarabs_vars%sabs_improad_dif_lun, sabs_improad_dif, NONE| surfalb_vars%ftii_patch, ftii, NONE| solarabs_vars%sabs_perroad_dif_lun, sabs_perroad_dif, NONE| solarabs_vars%sabs_shadewall_dir_lun, sabs_shadewall_dir, NONE| surfalb_vars%fabi_sha_patch, fabi_sha, NONE| surfalb_vars%fabi_patch, fabi, NONE| solarabs_vars%sabs_perroad_dir_lun, sabs_perroad_dir, NONE
+global_mod| surfalb_vars%albgrd_col, albgrd, NONE| surfalb_vars%albgri_col, albgri, NONE
+global_non| bounds%endl, endl, NONE| lun%wtroad_perv, wtroad_perv, NONE| urbanparams_vars%alb_wall_dif, alb_wall_dif, NONE| urbanparams_vars%alb_wall_dir, alb_wall_dir, NONE| lun%canyon_hwr, canyon_hwr, NONE| bounds%begl, begl, NONE
+calls, incident_direct, SnowAlbedo, net_solar, incident_diffuse
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_urbanl       ! number of urban landunits in clump
+integer                , intent(in)    :: filter_urbanl(:) ! urban landunit filter
+integer                , intent(in)    :: num_urbanc       ! number of urban columns in clump
+integer                , intent(in)    :: filter_urbanc(:) ! urban column filter
+integer                , intent(in)    :: num_urbanp       ! number of urban patches in clump
+integer                , intent(in)    :: filter_urbanp(:) ! urban pft filter
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(urbanparams_type) , intent(inout) :: urbanparams_vars
+type(solarabs_type)    , intent(inout) :: solarabs_vars
+type(surfalb_type)     , intent(inout) :: surfalb_vars

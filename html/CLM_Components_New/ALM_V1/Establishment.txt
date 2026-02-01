@@ -1,0 +1,13 @@
+sub_param, bounds, carbonstate_vars, dgvs_vars, carbonflux_vars, atm2lnd_vars
+sub_out
+global_ro, dgv_ecophyscon%tcmin, ecophyscon%woody, carbonflux_vars%annsum_npp_patch, pft%landunit, dgv_ecophyscon%reinickerp, dgvs_vars%tmomin20_patch, carbonstate_vars%deadstemc_patch, atm2lnd_vars%prec365_patch, ecophyscon%dsladlai, dgvs_vars%agdd20_patch, dgv_ecophyscon%allom1, pft%itype, dgv_ecophyscon%gddmin, ecophyscon%slatop, dgv_ecophyscon%twmax, dgv_ecophyscon%crownarea_max, pft%gridcell, ecophyscon%dwood, dgv_ecophyscon%tcmax, carbonflux_vars%annsum_litfall_patch, dgvs_vars%agddtw_patch
+global_wo, dgvs_vars%heatstress_patch, dgvs_vars%greffic_patch
+global_mod, dgvs_vars%pftmayexist_patch, dgvs_vars%nind_patch, dgvs_vars%present_patch, dgvs_vars%crownarea_patch, dgvs_vars%fpcgrid_patch, carbonstate_vars%leafcmax_patch
+global_non
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(carbonstate_type) , intent(inout) :: carbonstate_vars
+type(dgvs_type)        , intent(inout) :: dgvs_vars

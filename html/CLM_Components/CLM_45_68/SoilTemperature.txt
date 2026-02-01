@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, xmf_h2osfc, fact, num_urbanl, bounds, num_nolakec, c_h2osfc, filter_urbanl, xmf
+sub_out, c_h2osfc, xmf_h2osfc, fact
+global_ro, htvp, urbpoi, h2osfc, sabg, cgrnd, wtcol, sabg_soil, emg, landunit, npfts, dlrad, qflx_ev_soil, eflx_sh_h2osfc, eflx_traffic, itype, eflx_sh_snow, t_building_min, sabg_snow, itype, eflx_bot, frac_h2osfc, snl, frac_veg_nosno, eflx_sh_grnd, eflx_sh_soil, z, zi, qflx_ev_snow, wtlunit_roof, eflx_heat_from_ac, qflx_tran_veg, landunit, qflx_ev_h2osfc, eflx_lwrad_net, gridcell, frac_sno_eff, dz, t_building_max, forc_lwrad, tssbef, active, qflx_evap_soi, eflx_wasteheat, sabg_lyr, pfti
+global_wo, eflx_fgr12, eflx_fgr, eflx_anthro, sabg_chk, eflx_urban_ac, eflx_urban_heat
+global_mod, t_grnd, eflx_building_heat, t_soisno, dgnetdT, eflx_wasteheat_pft, eflx_heat_from_ac_pft, eflx_gnet, t_h2osfc, hc_soisno, eflx_traffic_pft, t_building, hc_soi
+global_non, snow_depth, begc, h2osno, canyon_hwr, h2osoi_liq, h2osoi_ice, t_h2osfc_bef, frac_sno, endc
+calls, Phasechange_beta, PhaseChangeH2osfc, BandDiagonal, t_startf, shr_assert, t_stopf, SoilThermProp

@@ -1,0 +1,7 @@
+sub_in, fx, bind, C, c_ptr_to_object, nelemd, xs, name='test_id'
+sub_out, fx
+global_ro
+global_wo
+global_mod
+global_non
+calls

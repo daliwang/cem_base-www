@@ -1,0 +1,7 @@
+sub_in, srf_emis_specifier, emis_type, emis_fixed_tod, emis_cycle_yr, emis_fixed_ymd
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, getfil, cam_pio_openfile, endrun, pio_closefile, trcdata_init

@@ -1,0 +1,7 @@
+sub_in, Ns, T, ww, Nis, Nid
+sub_out, Nid, Nis
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,9 @@
+sub_param, clock
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, chkrc, ESMF_ClockSet, ESMF_ClockGet
+readParams,
+type(ESMF_Clock), intent(inout) :: clock

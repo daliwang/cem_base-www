@@ -1,0 +1,7 @@
+sub_in, iceopt_out, premit_out, premib_out, rhminl_adj_land_out, rhminl_out, rhminh_out, icecrit_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

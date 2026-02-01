@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro| grc%lat, lat, NONE
+global_wo| grc%max_dayl, max_dayl, NONE| col%dz, dz, NONE| col%zii, zii, NONE
+global_mod
+global_non| col%dz, data2dptr, NONE
+calls, restFile_read, getfil, SnowAge_init, init_subgrid_weights_mod, SatellitePhenologyInit, canopystate_vars%initAccBuffer, allocFilters, restFile_write, clm_inst_biogeochem, init_decompcascade_bgc, reweight_wrapup, readPrivateParameters, t_startf, canopystate_vars%initAccVars, InitDaylength, hist_htapes_build, lnd2glc_vars%update_lnd2glc, readSharedParameters, endrun, restFile_close, dgvs_vars%initAccVars, SnowOptics_init, betr_initialize, htapes_fieldlist, pdep_init, initInterp, dynSubgrid_init, CNEcosystemDynInit, timemgr_restart_io, timemgr_restart, get_proc_bounds, clm_bgc_data%Init, init_decompcascade_cn, interpMonthlyVeg, ndep_interp, init_decomp_cascade_constants, ndep_init, CNEcosystemDynBetrInit, dgvs_vars%initAccBuffer, shr_orb_decl, temperature_vars%initAccBuffer, crop_vars%initAccBuffer, get_curr_date, atm2lnd_vars%initAccVars, timemgr_init, lnd2atm_minimal, restFile_getfile, temperature_vars%initAccVars, t_stopf, hist_addfld2d, ed_init, print_accum_fields, crop_vars%initAccVars, pdep_interp, readAnnualVegetation, clm_pf_interface_init, get_clump_bounds, atm2lnd_vars%initAccBuffer, hist_addfld1d, clm_inst_biogeophys, restFile_open, bgc_reaction%init_betr_alm_bgc_coupler
+readParams,

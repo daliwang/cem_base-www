@@ -1,0 +1,7 @@
+sub_in, algorithm, tropZ, tropT, tropP, pstate, tropLev
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, tropopause_hybridstobie, tropopause_twmo, tropopause_stobie, endrun, tropopause_analytic, tropopause_wmo, tropopause_climate

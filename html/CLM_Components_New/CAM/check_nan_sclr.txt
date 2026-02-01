@@ -1,0 +1,7 @@
+sub_in, err_code, operation, varname, var
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls

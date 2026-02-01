@@ -1,0 +1,7 @@
+sub_in, idyb, delta2, delta1, recons, idxb, idxa, swap, f, invy, centroid, idya, invx
+sub_out, recons
+global_ro
+global_wo
+global_mod
+global_non
+calls

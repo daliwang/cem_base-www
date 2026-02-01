@@ -1,0 +1,7 @@
+sub_in, soilstate_vars, waterstate_vars, temperature_vars, currentPatch
+sub_out
+global_ro
+global_wo, currentPatch%dcwd_AG_dt, currentPatch%cwd_bg_out, currentPatch%CWD_AG_in, currentPatch%dleaf_litter_dt, currentPatch%dseed_dt, currentPatch%CWD_AG_out, currentPatch%droot_litter_dt, currentPatch%dcwd_BG_dt, currentPatch%cwd_bg_in
+global_mod, currentPatch%cwd_BG_out, currentPatch%root_litter_in, currentPatch%seed_decay, currentPatch%root_litter_out, currentPatch%seeds_in, currentPatch%cwd_BG_in, currentPatch%cwd_AG_out, currentPatch%seed_germination, currentPatch%cwd_AG_in, currentPatch%leaf_litter_in, currentPatch%leaf_litter_out
+global_non
+calls, seed_germination, cwd_input, seed_decay, seeds_in, cwd_out

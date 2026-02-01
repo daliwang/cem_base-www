@@ -1,0 +1,11 @@
+sub_param, betrtracer_vars, c, this, jj
+sub_out
+global_ro, betrtracer_vars%volatileid, betrtracer_vars%is_volatile, this%tracer_flx_ebu_col, this%tracer_flx_leaching_col
+global_wo
+global_mod
+global_non, betrtracer_vars%ntracers, betrtracer_vars%ngwmobile_tracers, betrtracer_vars%nvolatile_tracers, betrtracer_vars%tracernames
+calls
+readParams,
+type(BeTRTracer_Type)  , intent(in)  :: betrtracer_vars
+integer                , intent(in)  :: c     ! column index
+integer                , intent(in)  :: jj

@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, name
+global_wo, actflag
+global_mod, listentry
+global_non
+calls, list_index, endrun, bld_outfld_hash_tbls, bld_htapefld_indices, inifld, column_init

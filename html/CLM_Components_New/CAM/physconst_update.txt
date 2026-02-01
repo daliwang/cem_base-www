@@ -1,0 +1,7 @@
+sub_in, mmr, cnst_mw_h, cnst_mw_o2, lchnk, ixo2, ixh, t, cnst_mw_o, ixo, ncnst, ncol, cnst_mw_n
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

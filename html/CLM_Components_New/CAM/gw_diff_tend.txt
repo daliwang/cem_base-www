@@ -1,0 +1,7 @@
+sub_in, dq, dt, ktop, decomp, pver, kbot, q, ncol
+sub_out, dq
+global_ro
+global_wo
+global_mod
+global_non
+calls, vd_lu_solve

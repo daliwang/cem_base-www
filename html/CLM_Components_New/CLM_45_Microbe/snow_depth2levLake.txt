@@ -1,0 +1,9 @@
+sub_in, arbinit, lbc, ubc
+sub_out
+global_ro, clm3%g%l%c%landunit, clm3%g%l%c%cps%snow_depth, clm3%g%l%lakpoi
+global_wo, clm3%g%l%c%cps%z
+global_mod, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%zi
+global_non, clm3%g%l%c%cws%lake_icefrac
+calls
+
+Tree height: 12

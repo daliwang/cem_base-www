@@ -1,0 +1,7 @@
+sub_in, filter_hydrologyc, filter_snowc, num_soilp, filter_soilp, filter_urbanc, bounds, num_soilc, num_nolakec, filter_nosnowc, num_snowc, num_hydrologyc, num_nosnowc, filter_soilc, filter_nolakec, num_urbanc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotran_not_available, step_thc_clm_pf

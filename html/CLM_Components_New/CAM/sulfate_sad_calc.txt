@@ -1,0 +1,7 @@
+sub_in, hno3_gas, h2so4m, is_chem, hno3_cond, ncol, lchnk, sad_sulfate, hno3_avail, h2o_avail, flag, temp, mask, sad_sage, m, press, r_g_sulfate, radius_sulfate
+sub_out, h2so4m, hno3_gas, hno3_cond, sad_sulfate, r_g_sulfate, radius_sulfate
+global_ro
+global_wo
+global_mod
+global_non
+calls, sad2h2so4, equil

@@ -1,0 +1,7 @@
+sub_in, flag, bounds, ncid
+sub_out
+global_ro, data=col%glc_topo, data=pft%wtgcell, data=col%wtgcell, data=lun%wtgcell, data=col%snl, bounds%begc:bounds%endc, data=pft%wtlunit, data=col%wtlunit, data=pft%wtcol
+global_wo
+global_mod, col%zi, col%dz, col%z
+global_non
+calls, restartvar, save_old_weights

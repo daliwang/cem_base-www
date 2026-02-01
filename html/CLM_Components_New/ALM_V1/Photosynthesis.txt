@@ -1,0 +1,27 @@
+sub_param, nitrogenstate_vars, esat_tv, btran, surfalb_vars, phosphorusstate_vars, oair, fn, cair, eair, solarabs_vars, photosyns_vars, dayl_factor, bounds, rb, canopystate_vars, temperature_vars, phase, atm2lnd_vars, filterp
+sub_out
+global_ro, ecophyscon%lmrse, ecophyscon%s_vc, ecophyscon%kcha, ecophyscon%flnr, photosyns_vars%gs_mol_patch, ecophyscon%tpuhd, pft%itype, ecophyscon%cpha, pft%column, ecophyscon%vcmaxha, ecophyscon%koha, canopystate_vars%laisha_z_patch, canopystate_vars%laisun_z_patch, ecophyscon%jmaxha, surfalb_vars%vcmaxcintsun_patch, surfalb_vars%vcmaxcintsha_patch, ecophyscon%jmaxhd, temperature_vars%thm_patch, ecophyscon%lmrha, nitrogenstate_vars%leafn_patch, temperature_vars%t_a10_patch, ecophyscon%fnr, phosphorusstate_vars%leafp_patch, surfalb_vars%nrad_patch, temperature_vars%t_veg_patch, ecophyscon%lmrhd, solarabs_vars%parsun_z_patch, solarabs_vars%parsha_z_patch, ecophyscon%c3psn, ecophyscon%fnitr, ecophyscon%vcmaxhd, ecophyscon%tpuha, ecophyscon%leafcn, ecophyscon%slatop, ecophyscon%i_vc, surfalb_vars%tlai_z_patch, atm2lnd_vars%forc_pbot_downscaled_col
+global_wo, photosyns_vars%cp_patch, photosyns_vars%alphapsnsha_patch, photosyns_vars%alphapsnsun_patch, photosyns_vars%rssha_patch, photosyns_vars%rssun_patch, photosyns_vars%kc_patch, photosyns_vars%psnsun_wc_patch, photosyns_vars%psnsha_wc_patch, photosyns_vars%psnsun_wp_patch, photosyns_vars%psnsha_wp_patch, photosyns_vars%psnsun_patch, photosyns_vars%psnsha_patch, photosyns_vars%rh_leaf_patch, photosyns_vars%tpu_z_patch, photosyns_vars%lmrsun_patch, photosyns_vars%lmrsha_patch, photosyns_vars%kp_z_patch, photosyns_vars%psnsun_wj_patch, photosyns_vars%psnsha_wj_patch, photosyns_vars%ko_patch
+global_mod, photosyns_vars%cisun_z_patch, photosyns_vars%cisha_z_patch, ecophyscon%theta_cj, photosyns_vars%theta_cj_patch, photosyns_vars%ap_patch, photosyns_vars%c3flag_patch, photosyns_vars%bbb_patch, photosyns_vars%mbb_patch, ecophyscon%bbbopt, photosyns_vars%ac_patch, photosyns_vars%an_patch, ecophyscon%qe, photosyns_vars%qe_patch, ecophyscon%act25, photosyns_vars%vcmax_z_patch, ecophyscon%mbbopt, photosyns_vars%gb_mol_patch, photosyns_vars%aj_patch, photosyns_vars%rssun_z_patch, photosyns_vars%rssha_z_patch, photosyns_vars%ag_patch, photosyns_vars%lmrsun_z_patch, photosyns_vars%lmrsha_z_patch, photosyns_vars%psnsha_z_patch, photosyns_vars%psnsun_z_patch
+global_non, nitrogenstate_vars%leafn_xfer_patch, phosphorusstate_vars%leafp_storage_patch, nitrogenstate_vars%leafn_storage_patch, phosphorusstate_vars%leafp_xfer_patch
+calls, endrun, hybrid, quadratic
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: fn                             ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                    ! patch filter
+real(r8)               , intent(in)    :: esat_tv( bounds%begp: )        ! saturation vapor pressure at t_veg (Pa) [pft]
+real(r8)               , intent(in)    :: eair( bounds%begp: )           ! vapor pressure of canopy air (Pa) [pft]
+real(r8)               , intent(in)    :: oair( bounds%begp: )           ! Atmospheric O2 partial pressure (Pa) [pft]
+real(r8)               , intent(in)    :: cair( bounds%begp: )           ! Atmospheric CO2 partial pressure (Pa) [pft]
+real(r8)               , intent(in)    :: rb( bounds%begp: )             ! boundary layer resistance (s/m) [pft]
+real(r8)               , intent(in)    :: btran( bounds%begp: )          ! transpiration wetness factor (0 to 1) [pft]
+real(r8)               , intent(in)    :: dayl_factor( bounds%begp: )    ! scalar (0-1) for daylength
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(surfalb_type)     , intent(in)    :: surfalb_vars
+type(solarabs_type)    , intent(in)    :: solarabs_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars
+type(nitrogenstate_type)  , intent(inout) :: nitrogenstate_vars
+type(phosphorusstate_type), intent(inout) :: phosphorusstate_vars
+character(len=*)       , intent(in)    :: phase                          ! 'sun' or 'sha'

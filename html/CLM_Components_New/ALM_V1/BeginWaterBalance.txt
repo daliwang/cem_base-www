@@ -1,0 +1,17 @@
+sub_param, waterstate_vars, filter_lakec, filter_nolakec, num_nolakec, num_lakec, num_hydrologyc, bounds, filter_hydrologyc, soilhydrology_vars
+sub_out
+global_ro, waterstate_vars%h2osoi_ice_col, soilhydrology_vars%zwt_col, waterstate_vars%h2osfc_col, col%zi, waterstate_vars%h2osno_col, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2ocan_col
+global_wo
+global_mod, waterstate_vars%begwb_col, soilhydrology_vars%wa_col
+global_non, waterstate_vars%h2ocan_patch
+calls, p2c
+readParams,
+type(bounds_type)         , intent(in)    :: bounds
+integer                   , intent(in)    :: num_nolakec          ! number of column non-lake points in column filter
+integer                   , intent(in)    :: filter_nolakec(:)    ! column filter for non-lake points
+integer                   , intent(in)    :: num_lakec            ! number of column non-lake points in column filter
+integer                   , intent(in)    :: filter_lakec(:)      ! column filter for non-lake points
+integer                   , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                   , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+type(soilhydrology_type)  , intent(inout) :: soilhydrology_vars
+type(waterstate_type)     , intent(inout) :: waterstate_vars

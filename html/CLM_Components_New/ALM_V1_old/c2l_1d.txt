@@ -1,0 +1,12 @@
+sub_param, larr:3, c2l_scale_type:4, bounds:1, carr:2
+sub_out, larr
+global_ro| col%wtlunit, wtlunit, NONE| col%landunit, landunit, NONE| lun%canyon_hwr, canyon_hwr, NONE
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in)  :: carr( bounds%begc: )  ! input column array
+real(r8), intent(out) :: larr( bounds%begl: )  ! output landunit array
+character(len=*), intent(in) :: c2l_scale_type ! scale factor type for averaging

@@ -1,0 +1,7 @@
+sub_in, dgnumlo, hygro_aer, sw_nonhygro_ext, r_lw_abs, r_sw_scat, opticstype, refindex_aer_sw, prefr, rhdeliques, ncoef, sw_hygro_ssa, sw_hygro_asm, num_to_mass_aer, dgnumhi, sw_nonhygro_scat, dgnum, rhcrystal, sw_nonhygro_ssa, aername, refindex_aer_lw, prefi, refitablw, mu, sourcefile, lw_abs, r_sw_ext, density_aer, refrtablw, dryrad_aer, extpsw, abspsw, r_sw_ascat, refrtabsw, sigmag, sw_nonhygro_ascat, refitabsw, absplw, sw_nonhygro_asm, asmpsw, dispersion_aer, lw_hygro_abs, sw_hygro_ext, id
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

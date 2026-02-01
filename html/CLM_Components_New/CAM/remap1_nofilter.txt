@@ -1,0 +1,7 @@
+sub_in, dp2, nx, dp1, qsize, Qdp
+sub_out, Qdp
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,8 @@
+sub_in, EClock, export_state, comp, rc, import_state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+calls_ln

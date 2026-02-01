@@ -1,0 +1,7 @@
+sub_in, cycflag, fact1, fact2, np1, str, cdayplus, cdayminus, cday
+sub_out, fact1, fact2
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

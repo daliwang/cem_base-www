@@ -1,0 +1,16 @@
+sub_param, numf:3, ubj:2, bounds:1, filter:4, eff_por:8, watsat:5, denice:7, h2osoi_ice:6
+sub_out, eff_por
+global_ro| col%dz, dz, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds                          ! bounds
+integer           , intent(in)    :: ubj                             ! lbinning level indices
+integer           , intent(in)    :: numf                            ! filter dimension
+integer           , intent(in)    :: filter(:)                       ! filter
+real(r8)          , intent(in)    :: watsat( bounds%begc: , 1: )     ! soil porosity
+real(r8)          , intent(in)    :: h2osoi_ice( bounds%begc: , 1: ) ! ice water content, kg H2o/m2
+real(r8)          , intent(in)    :: denice                          ! ice density, kg/m3
+real(r8)          , intent(inout) :: eff_por( bounds%begc: ,1: )     ! effective porosity

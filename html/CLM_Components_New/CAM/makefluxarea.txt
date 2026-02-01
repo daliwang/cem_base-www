@@ -1,0 +1,7 @@
+sub_in, xdep2, fluxsign2, twofluxareas, l_yflux, fluxsign1, ydep, ydep2, xdep, zeroflux
+sub_out, twofluxareas, fluxsign2, fluxsign1, zeroflux
+global_ro
+global_wo
+global_mod
+global_non
+calls, rotate_then_translate, translate_then_rotate

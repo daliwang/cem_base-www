@@ -1,0 +1,7 @@
+sub_in, t2, phism, etamid, tl, ed1, dpsl, pdel, u3m1, qm, urhs, lnpssld, prhs, dpslon, tm, ql, vrhs, nlon, etadot, div, prhssld, t3, pmid, phisl, fu, omga, ps, coriol, dpsm, dpslat, fv, ztodt, phis, rpmid, u3, v3m1, trhs, tarrsld, q3, v3, rcoslat, ktoop, coslat, t3m1, logps, parrsld
+sub_out, t2, fv, dpslat, u3m1, v3m1, lnpssld, urhs, prhs, dpslon, vrhs, trhs, tarrsld, etadot, ktoop, prhssld, t3m1, parrsld, fu
+global_ro
+global_wo
+global_mod
+global_non
+calls

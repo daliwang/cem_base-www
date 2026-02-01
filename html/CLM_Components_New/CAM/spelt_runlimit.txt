@@ -1,0 +1,7 @@
+sub_in, hybrid, spelt, tstep, nete, elem, deriv, tl, nets
+sub_out, spelt
+global_ro
+global_wo
+global_mod
+global_non
+calls, ghost_exchangeV, check_departurecell, cip_coeff, cell_search, t_startf, ghostVunpackR, t_stopf, spelt_dep_from_gll, get_contravelocities, ghostVpack2d, ghostVunpack2d, ghostVpackR

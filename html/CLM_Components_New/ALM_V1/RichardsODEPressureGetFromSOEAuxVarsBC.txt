@@ -1,0 +1,10 @@
+sub_param, this, soe_avars
+sub_out
+global_ro, this%boundary_conditions%first, cur_cond%next, %condition_value
+global_wo
+global_mod, this%aux_vars_bc
+global_non, cur_cond%conn_set
+calls, endrun
+readParams,
+class(goveqn_richards_ode_pressure_type), intent(inout)    :: this
+type(sysofeqns_vsfm_auxvar_type), dimension(:), intent(in) :: soe_avars

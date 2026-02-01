@@ -1,0 +1,7 @@
+sub_in, jt, lchnk, du, il2g, ql, qd, il1g, dsdt, q, mu, qhat, evp, su, qu, dp, dsubcld, rl, shat, cu, md, sd, mx, dl, msg, qs, cp, dqdt
+sub_out, dsdt, dl, dqdt
+global_ro
+global_wo
+global_mod
+global_non
+calls

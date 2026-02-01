@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, clm3%g%l%c%p%pcs%livecrootc_xfer, p%pc14f%m_deadcrootc_xfer_to_litter, p%pc14f%m_frootc_xfer_to_litter, clm3%g%l%c%p%pcs%deadcrootc, clm3%g%l%c%p%pcs%livestemc, clm3%g%l%c%p%pcs%deadstemc_storage, clm3%g%l%c%p%pcs%frootc_storage, clm3%g%l%c%p%pcs%leafc_xfer, p%pc14f%m_livestemc_xfer_to_litter, p%pc14f%m_deadstemc_storage_to_litter, clm3%g%l%c%p%pcs%deadstemc, p%pc14f%m_deadcrootc_storage_to_litter, p%pc14f%m_deadcrootc_to_litter, p%pc14f%m_livecrootc_xfer_to_litter, clm3%g%l%c%p%pcs%livecrootc, clm3%g%l%c%p%pcs%livestemc_storage, p%pc14f%m_livecrootc_to_litter, clm3%g%l%c%p%pcs%leafc_storage, clm3%g%l%c%p%pcs%gresp_xfer, clm3%g%l%c%p%pcs%deadcrootc_storage, p%pc14f%m_deadstemc_xfer_to_litter, p%pc14f%m_gresp_xfer_to_litter, clm3%g%l%c%p%pcs%frootc_xfer, clm3%g%l%c%p%pcs%gresp_storage, clm3%g%l%c%p%pcs%livecrootc_storage, p%pc14f%m_frootc_storage_to_litter, clm3%g%l%c%p%pcs%frootc, clm3%g%l%c%p%pcs%deadcrootc_xfer, clm3%g%l%c%p%pcs%livestemc_xfer, p%pc14f%m_livecrootc_storage_to_litter, clm3%g%l%c%p%pcs%leafc, p%pc14f%m_leafc_to_litter, p%pc14f%m_livestemc_storage_to_litter, p%pc14f%m_leafc_xfer_to_litter, p%pc14f%m_deadstemc_to_litter, p%pc14f%m_frootc_to_litter, p%pc14f%m_livestemc_to_litter, clm3%g%l%c%p%pcs%deadstemc_xfer, p%pc14f%m_leafc_storage_to_litter, p%pc14f%m_gresp_storage_to_litter
+global_wo
+global_mod
+global_non, p%pc14s, p%pc14f, clm3%g%l%c%p, p%pc13f, p%pc13s
+calls, CNCIsoGapPftToColumn, CIsoFluxCalc, endrun
+
+Tree height: 1
+0 , endrun, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CNCIsoGapPftToColumn, 

@@ -1,0 +1,8 @@
+sub_in, cdf64, clobber, filename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling, shr_sys_abort, shr_mpi_bcast, seq_comm_setptrs
+calls_ln, shr_sys_abort@210, pio_seterrorhandling@191, shr_mpi_bcast@179, pio_seterrorhandling@193, seq_comm_setptrs@174

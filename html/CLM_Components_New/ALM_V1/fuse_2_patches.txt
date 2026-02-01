@@ -1,0 +1,10 @@
+sub_param, dp, rp
+sub_out
+global_ro, nextc, dp%shortest
+global_wo
+global_mod, rp%fuel_sav, dp%fuel_sav, dp%seed_bank, rp%seed_bank, rp%fuel_bulkd, dp%fuel_bulkd, dp%age, rp%age, dp%leaf_litter, rp%leaf_litter, dp%fuel_mef, rp%fuel_mef, dp%fuel_frac, rp%fuel_frac, rp%seeds_in, dp%seeds_in, dp%fuel_eff_moist, rp%fuel_eff_moist, rp%seed_decay, dp%seed_decay, rp%fd, dp%fd, dp%cwd_ag, rp%cwd_ag, rp%seed_germination, dp%seed_germination, rp%ros_front, dp%ros_front, rp%nf, dp%nf, dp%fi, rp%fi, rp%tau_l, dp%tau_l, rp%burnt_frac_litter, dp%burnt_frac_litter, dp%area, rp%area, dp%effect_wspeed, rp%effect_wspeed, dp%tfc_ros, rp%tfc_ros, dp%ros_back, rp%ros_back, rp%frac_burnt, dp%frac_burnt, rp%ab, dp%ab, dp%root_litter, rp%root_litter, rp%sum_fuel, dp%sum_fuel, dp%cwd_bg, rp%cwd_bg, rp%sh, dp%sh, dp%btran_ft, rp%btran_ft, rp%livegrass, dp%livegrass
+global_non, currentCohort%taller, rp%tallest, rp%shortest, udata%storebigcohort, currentCohort, currentCohort, dp%older, dp%younger, dp%younger, udata%storesmallcohort, currentCohort, dp%older, rp
+calls, patch_pft_size_profile, insert_cohort
+readParams,
+type (patch),  intent(inout), pointer  :: dp ! Donor Patch
+type (patch),  intent(inout), pointer  :: rp ! Recipient Patch

@@ -1,0 +1,7 @@
+sub_in, filter_methc, num_methp, jwt, num_methc, bounds, lake, sat, filter_methp
+sub_out
+global_ro, rr, rr, wtcol, finundated, column, o_scalar, hr_vr, rootfr, itype, lake_soilc, pot_f_nit_vr, zi, pH, layer_sat_lag, conc_o2_sat, conc_o2_unsat, somhr, fphr, t_soisno, dz, annavg_finrw, finundated_lag, rootfr, gridcell, lithr
+global_wo, ch4_prod_depth_unsat, ch4_prod_depth_sat
+global_mod, sif, o2_decomp_depth_sat, o2_decomp_depth_unsat
+global_non, co2_decomp_depth_sat, co2_decomp_depth_unsat, h2osoi_vol, latdeg, watsat, z
+calls, shr_assert, endrun

@@ -1,0 +1,7 @@
+sub_in, cnveg_nitrogenflux_inst, waterflux_inst, soilbiogeochem_nitrogenflux_inst, num_soilc, waterstate_inst, bounds, filter_soilc, cnveg_nitrogenstate_inst, soilbiogeochem_nitrogenstate_inst, filter_soilp, num_soilp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, t_startf, NstateUpdate3, SoilBiogeochemNLeaching

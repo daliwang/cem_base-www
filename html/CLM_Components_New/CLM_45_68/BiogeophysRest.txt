@@ -1,0 +1,42 @@
+sub_in, flag, ncid, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, restartvar, ncd_inqvdlen, ncd_defvar, get_proc_global, endrun
+
+Tree height: 56
+1-, get_proc_global, restartvar, restartvar, restartvar, 
+2+, ncd_io, 
+3-, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, 
+4+, restartvar, 
+7+, endrun, 
+6+, restartvar, 
+8+, restartvar, 
+10+, restartvar, 
+12+, restartvar, 
+14+, restartvar, 
+16+, restartvar, 
+18+, restartvar, 
+19+, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, 
+21+, restartvar, 
+23+, restartvar, 
+25+, restartvar, 
+27+, restartvar, restartvar, restartvar, restartvar, restartvar, 
+29+, restartvar, 
+31+, restartvar, restartvar, restartvar, restartvar, restartvar, 
+33+, restartvar, 
+35+, restartvar, 
+37+, restartvar, 
+39+, restartvar, 
+41+, restartvar, 
+43+, restartvar, 
+45+, restartvar, 
+47+, restartvar, 
+49+, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, 
+51-, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, restartvar, 
+52+, restartvar, 
+51+, restartvar, ncd_inqvdlen, 
+50+, endrun, ncd_inqvdlen, 
+1+, ncd_defvar, 

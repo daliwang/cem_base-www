@@ -1,0 +1,12 @@
+sub_param, lb:2, caller:4, name:3, arr:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+integer         , intent(in) :: lb           ! lower bound of the first dimension of arr
+real(r8)        , intent(in) :: arr(lb:,:)   ! array to check
+character(len=*), intent(in) :: name         ! name of array
+character(len=*), intent(in) :: caller       ! identifier of caller, for more meaningful error messages

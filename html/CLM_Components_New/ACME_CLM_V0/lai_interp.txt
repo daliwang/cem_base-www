@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, bounds
+sub_out
+global_ro, sdat_lai%avs, %rAttr, pft%gridcell, pft%itype
+global_wo, canopystate_vars%tlai_patch
+global_mod
+global_non
+calls, shr_strdata_advance, get_curr_date

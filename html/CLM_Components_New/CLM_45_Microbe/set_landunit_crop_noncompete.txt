@@ -1,0 +1,10 @@
+sub_in, setdata, ltype, gi, nw
+sub_out, ci, li, pi
+global_ro
+global_wo, clm3%g%l%c%wtlunit, clm3%g%l%c%gridcell, clm3%g%l%c%p%wtcol, clm3%g%l%ifspecial, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%wtlunit, clm3%g%l%urbpoi, clm3%g%l%lakpoi, clm3%g%l%c%p%column, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%wtgcell, clm3%g%l%wtgcell, clm3%g%l%c%itype, clm3%g%l%c%p%landunit, clm3%g%l%c%p%wtgcell, clm3%g%l%c%p%mxy, clm3%g%l%gridcell, clm3%g%l%c%p%itype
+global_mod
+global_non, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, subgrid_get_gcellinfo
+
+Tree height: 5
+0 , subgrid_get_gcellinfo, 

@@ -1,0 +1,7 @@
+sub_in, tau_w_f, tau, ncol, tau_w, dei, iciwpth, tau_w_g
+sub_out, tau_w, tau_w_g, tau, tau_w_f
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp_finish, lininterp, lininterp_init

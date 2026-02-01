@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, nband, dhsdT, num_nolakec, bmatrix_soil, fact, frac_sno_eff, bounds, tk_h2osfc, dz_h2osfc, tk
+sub_out, bmatrix_soil
+global_ro, col%landunit, col%z
+global_wo
+global_mod
+global_non
+calls

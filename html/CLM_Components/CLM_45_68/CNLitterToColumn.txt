@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, froot_prof, wtcol, npfts, grainc_to_food, fr_fcel, lf_flig, itype, lf_fcel, fr_flab, frootc_to_litter, grainn_to_food, frootn_to_litter, leaf_prof, fr_flig, leafc_to_litter, livestemc_to_litter, lf_flab, livestemn_to_litter, leafn_to_litter, pfti
+global_wo
+global_mod, phenology_c_to_litr_met_c, phenology_n_to_litr_cel_n, phenology_c_to_litr_lig_c, phenology_n_to_litr_met_n, phenology_c_to_litr_cel_c, phenology_n_to_litr_lig_n
+global_non, active
+calls

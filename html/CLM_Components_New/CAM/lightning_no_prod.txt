@@ -1,0 +1,7 @@
+sub_in, pbuf2d, state, cam_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_rlat_all_p, outfld, get_wght_all_p, pbuf_get_field, shr_reprosum_calc

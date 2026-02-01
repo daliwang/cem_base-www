@@ -1,0 +1,7 @@
+sub_in, bounds, carr, l2g_scale_type, num2d, garr, c2l_scale_type
+sub_out, garr
+global_ro, col%gridcell, col%wtgcell, lun%canyon_hwr, col%landunit
+global_wo
+global_mod
+global_non
+calls, build_scale_l2g, endrun

@@ -1,0 +1,7 @@
+sub_in, state, pbuf2d, cam_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, advance_trcdata, aerodep_flx_set

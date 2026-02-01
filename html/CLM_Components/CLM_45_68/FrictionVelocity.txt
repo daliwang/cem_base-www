@@ -1,0 +1,7 @@
+sub_in, ur, fm, ustar, landunit_index, um, filtern, displa, ubn, z0h, temp2, fn, iter, temp1, lbn, z0m, temp12m, temp22m, obu, z0q
+sub_out, temp22m, fm, ustar, temp1, temp12m, temp2
+global_ro, forc_hgt_t_pft, forc_hgt_q_pft, forc_hgt_u_pft, pftf, pfti
+global_wo, u10, va, u10_clm, vds, fv
+global_mod
+global_non
+calls, shr_assert

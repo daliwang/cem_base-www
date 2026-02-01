@@ -1,0 +1,9 @@
+sub_param, EClock, import_state, rc, comp, export_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, esmfshr_util_StateArrayDestroy, ESMF_Finalize, final
+readParams,
+integer, intent(out) :: rc              ! Return code

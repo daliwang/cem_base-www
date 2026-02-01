@@ -1,0 +1,12 @@
+sub_param, clm_bgc_data:1, filter_soilc:4, num_soilc:3, bounds:2
+sub_out
+global_ro| clm_bgc_data%watsat_col, watsat_col, NONE| col%gridcell, gridcell, NONE| col%dz, dz, NONE| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| bounds%begg, begg, NONE
+global_wo
+global_mod| clm_bgc_data%h2osoi_ice_col, h2osoi_ice_col, NONE| clm_bgc_data%h2osoi_vol_col, h2osoi_vol_col, NONE| clm_bgc_data%h2osoi_liq_col, h2osoi_liq_col, NONE
+global_non| col%wtgcell, wtgcell, NONE
+calls, VecRestoreArrayF90, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type), intent(in) :: bounds
+integer, intent(in) :: num_soilc        ! number of column soil points in column filter
+integer, intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

@@ -1,0 +1,7 @@
+sub_in, lchnk, field_name, pbuf, flds, ncol, data
+sub_out, data
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field

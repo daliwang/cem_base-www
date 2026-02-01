@@ -1,0 +1,7 @@
+sub_in, hvcoord, nete, tl, elem, dt, hybrid, advance_name, nets
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, prim_energy_halftimes, preq_robert3, prim_advance_exp, TimeLevel_update, prim_printstate, abortmp, ApplyColumnModel, prim_diag_scalars, prim_advance_si

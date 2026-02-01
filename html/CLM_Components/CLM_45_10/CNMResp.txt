@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, frootn, woody, grainn, lmrsun, column, laisha, t_ref2m, itype, t_soisno, livecrootn, lmrsha, rootfr, laisun, frac_veg_nosno, livestemn
+global_wo, livestem_mr, grain_mr, livecroot_mr, leaf_mr
+global_mod, froot_mr
+global_non, leafn, landunit, itype, croplive, landunit
+calls

@@ -1,0 +1,7 @@
+sub_in, cp_pnt
+sub_out
+global_ro, %pft, currentPatch%shortest, currentCohort%taller, %bdead, %n, cp_pnt%area
+global_wo
+global_mod, cp_pnt%pft_agb_profile
+global_non, cp_pnt
+calls

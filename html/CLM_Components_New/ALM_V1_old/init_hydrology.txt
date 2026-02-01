@@ -1,0 +1,9 @@
+sub_param, NLFilename:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_pedof, init_soil_stress, init_soilwater_movement, init_rootprof
+readParams,
+character(len=*), intent(IN) :: NLFilename ! Namelist filename

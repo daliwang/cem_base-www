@@ -1,0 +1,7 @@
+sub_in, patchptr
+sub_out
+global_ro, currentCohort%shorter, currentPatch%tallest, nextnextc, nextc%shorter, currentPatch%tallest, patchptr%NCL_p
+global_wo
+global_mod, %resp_acc, %root_md, %n, %bdead, %bl, %npp_acc, %bsw, %br, %gpp_acc, %storage_flux, %laimemory, %npp, %gpp, %seed_prod, %balive, %fire_mort, %leaf_md, %leaf_litter, %b, %bstore, %year_net_uptake, %carbon_balance, %canopy_trim, %md, %dbh, %resp, %hite, %dmort
+global_non, nextc%shorter, nextc%taller, nextnextc, nextc%taller, patchptr
+calls, sort_cohorts

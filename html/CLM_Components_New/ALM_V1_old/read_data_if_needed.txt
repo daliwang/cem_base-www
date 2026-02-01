@@ -1,0 +1,9 @@
+sub_param, this:1
+sub_out
+global_ro| %get_time_index_lower, get_time_index_lower, NONE
+global_wo| this%time_index_lower, time_index_lower, NONE
+global_mod
+global_non| this%get_dyn_file, dyn_file, NONE
+calls, this%read_variable
+readParams,read_data_if_needed
+class(dyn_var_time_uninterp_type), intent(inout) :: this   ! this object

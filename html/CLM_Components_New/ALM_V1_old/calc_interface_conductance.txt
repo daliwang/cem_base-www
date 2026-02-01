@@ -1,0 +1,16 @@
+sub_param, numfl:5, lbj:2, bulkdiffus:7, dz:8, bounds:1, ubj:3, hmconductance:9, filter:6, jtop:4
+sub_out, hmconductance
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),  intent(in) :: bounds                              !bounds
+integer,     intent(in)        :: lbj, ubj                            ! lbinning and ubing level indices
+integer,     intent(in)        :: jtop(bounds%begc: )                 ! index of upper boundary, which could be variable
+integer,     intent(in)        :: numfl                               ! length of the filter
+integer,     intent(in)        :: filter(:)                           ! the actual filter
+real(r8),    intent(in)        :: bulkdiffus(bounds%begc: ,lbj: )     !weighted bulk diffusivity for dual-phase diffusion
+real(r8),    intent(in)        :: dz(bounds%begc: , lbj: )
+real(r8), intent(inout)        :: hmconductance(bounds%begc: , lbj: ) !weighted bulk conductance

@@ -1,0 +1,7 @@
+sub_in, list_idx, gasnames, ngas, nmodes, naero, aernames, use_data_o3
+sub_out, naero, nmodes, gasnames, ngas, aernames, use_data_o3
+global_ro, gas, aer, numaerosols, ngas, nmodes
+global_wo
+global_mod
+global_non, gaslist, aerosollist, ma_list
+calls, endrun

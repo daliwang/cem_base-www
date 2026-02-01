@@ -1,0 +1,7 @@
+sub_in, mdimid, File, boundsdim, dimonly, mdimind
+sub_out, mdimid
+global_ro
+global_wo
+global_mod
+global_non
+calls, handle_pio_error, endrun

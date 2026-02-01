@@ -1,0 +1,11 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_pio_openfile, getfil, ncd_pio_closefile
+
+Tree height: 4
+1+, getfil, ncd_pio_openfile, 
+2+, ncd_io, ncd_io, ncd_io, ncd_pio_closefile, 

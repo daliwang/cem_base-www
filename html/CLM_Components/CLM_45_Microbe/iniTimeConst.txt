@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, thick_wall, lat, landunit, gridcell, column, itype, itype, itype, gridcell, thick_roof
+global_wo, watopt, dsmax, gdp_lf, zwt0, mss_frc_cly_vld, rootfr_road_perv, max_moist, watdry, isoicol, efisop, csol, hksat_min, phi_s, cellorg, cellclay, watfc, soilpH_unsat, clayfrac, f0, expt, lakedepth, sandfrac, porosity, max_dayl, hkdepth, tksatu, z, b_infil, etal, tkdry, lakefetch, n_melt, wtfact, smpmin, gwc_thr, abm_lf, rresis, peatf_lf, dewmx, cellsand, rootfr, p3, Wsvic, soilpH_sat, ksat, ds
+global_mod, zi, bsw, bd, pH, topo_slope, dz, topo_std, h2osfc_thresh, tkmg, depth, watsat, hksat, micro_sigma, sucsat
+global_non
+calls, SnowAge_init, initCLMVICMap, ncd_io, CNiniSpecial, SnowOptics_init, ncd_pio_closefile, get_proc_global, get_proc_bounds, ncd_pio_openfile, shr_scam_getCloseLatLon, ncd_inqdlen, organicrd, getfil, init_decompcascade, initSoilParVIC, endrun

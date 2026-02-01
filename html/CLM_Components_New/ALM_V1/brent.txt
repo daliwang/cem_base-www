@@ -1,0 +1,22 @@
+sub_param, f1, gs_mol, x1, atm2lnd_vars, par_z, photosyns_vars, rh_can, tol, gb_mol, x, f2, cair, ic, je, x2, lmr_z, oair, iv, ip
+sub_out, x
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, ci_func
+readParams,
+real(r8), intent(out) :: x                ! indepedent variable of the single value function ci_func(x)
+real(r8), intent(in) :: x1, x2, f1, f2    ! minimum and maximum of the variable domain to search for the solution ci_func(x1) = f1, ci_func(x2)=f2
+real(r8), intent(in) :: tol               ! the error tolerance
+real(r8), intent(in) :: lmr_z             ! canopy layer: leaf maintenance respiration rate (umol CO2/m**2/s)
+real(r8), intent(in) :: par_z             ! par absorbed per unit lai for canopy layer (w/m**2)
+real(r8), intent(in) :: gb_mol            ! leaf boundary layer conductance (umol H2O/m**2/s)
+real(r8), intent(in) :: je                ! electron transport rate (umol electrons/m**2/s)
+real(r8), intent(in) :: cair              ! Atmospheric CO2 partial pressure (Pa)
+real(r8), intent(in) :: oair              ! Atmospheric O2 partial pressure (Pa)
+real(r8), intent(in) :: rh_can            ! inside canopy relative humidity
+integer,  intent(in) :: ip, iv, ic        ! pft, c3/c4, and column index
+real(r8), intent(out) :: gs_mol           ! leaf stomatal conductance (umol H2O/m**2/s)
+type(atm2lnd_type)  , intent(in)    :: atm2lnd_vars
+type(photosyns_type), intent(inout) :: photosyns_vars

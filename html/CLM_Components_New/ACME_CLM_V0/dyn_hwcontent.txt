@@ -1,0 +1,7 @@
+sub_in, gcell_liq, soilhydrology_vars, soilstate_vars, lakestate_vars, waterstate_vars, urbanparams_vars, gcell_ice, gcell_heat, bounds, temperature_vars
+sub_out, gcell_heat, gcell_ice, gcell_liq
+global_ro, waterstate_vars%h2osno_col, col%dz, urbanparams_vars%cv_improad, lun%colf, lun%coli, col%wtgcell, temperature_vars%t_lake_col, urbanparams_vars%cv_wall, lakestate_vars%lake_icefrac_col, waterstate_vars%h2ocan_patch, temperature_vars%t_soisno_col, soilstate_vars%watsat_col, waterstate_vars%h2osno_col, urbanparams_vars%cv_roof, waterstate_vars%h2osoi_liq_col, col%snl, waterstate_vars%h2osoi_ice_col, pft%wtcol, soilstate_vars%csol_col, col%dz_lake, urbanparams_vars%nlev_improad, soilhydrology_vars%wa_col, lun%gridcell
+global_wo
+global_mod
+global_non
+calls

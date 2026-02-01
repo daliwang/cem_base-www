@@ -1,0 +1,7 @@
+sub_in, imissing_value, missing_value, data, flag, varname, comment, ncid, units, readvar, dim2name, xtype, flag_values, flag_meanings, upperb2, ifill_value, dim1name, switchdim, interpinic_flag, lowerb2, nvalid_range, fill_value, long_name
+sub_out
+global_ro, vardesc%varid
+global_wo
+global_mod
+global_non
+calls, ncd_defvar, ncd_putatt, ncd_io, shr_sys_abort

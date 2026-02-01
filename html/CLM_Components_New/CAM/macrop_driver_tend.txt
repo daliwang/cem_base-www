@@ -1,0 +1,7 @@
+sub_in, snowh, det_ice, det_s, zdu, cmfmc2, ocnfrac, ts, dlf, pbuf, sst, ptend, landfrac, cmfmc, state, dlf2, dtime
+sub_out, det_s, det_ice
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, cldfrc, phys_getopts, endrun, physics_ptend_init, physics_ptend_sum, t_startf, pbuf_get_field, physics_state_copy, mmacro_pcond, cldfrc_fice, t_stopf, physics_state_dealloc, physics_update

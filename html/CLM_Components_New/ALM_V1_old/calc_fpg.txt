@@ -1,0 +1,14 @@
+sub_param, plant_totn_demand_flx:4, filter_soilc:3, plant_nbuffer:5, bounds:1, fpg:6, num_soilc:2
+sub_out, plant_nbuffer, fpg
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc                                      ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)                                ! filter for soil columns
+real(r8)                 , intent(inout) :: plant_totn_demand_flx(bounds%begc:bounds%endc) !
+real(r8)                 , intent(inout) :: plant_nbuffer(bounds%begc:bounds%endc)         !
+real(r8)                 , intent(inout) :: fpg(bounds%begc:bounds%endc)                   !

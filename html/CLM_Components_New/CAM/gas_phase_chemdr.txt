@@ -1,0 +1,7 @@
+sub_in, ts, icefrac, drydepflx, vfld, pbuf, latmapback, imozart, qtend, tfld, calday, pint, ncldwtr, pdel, precc, fsds, pmid, zm, q, ps, snowhland, xactive_prates, ncol, phis, chem_name, ufld, cldw, asdir, zi, ocnfrac, precl, lchnk, troplev, cflx, delt, ghg_chem
+sub_out, cflx, qtend, drydepflx
+global_ro
+global_wo
+global_mod
+global_non
+calls, chm_diags, t_stopf, O1D_to_2OH_adj, sulf_interp, negtrc, phtadj, get_ref_date, flbc_set, get_lat_all_p, het_diags, lin_strat_chem_solve, exp_sol, mmr2vmr, setext, set_mean_mass, aero_model_gasaerexch, set_short_lived_species, ratecon_sfstrat, strato_sad_set, mmr2vmri, qsat, t_startf, adjrxt, vmr2mmr, setrxt, ghg_chem_set_flbc, xactive_photo, zenith, set_soilw, charge_balance, get_rlat_all_p, table_photo, get_short_lived_species, setcol, set_fstrat_vals, setinv, sad_strat_calc, pbuf_get_field, imp_sol, set_ub_col, outfld, rate_diags_calc, drydep, shr_orb_decl, ghg_chem_set_rates, get_rlon_all_p, sethet, h2o_to_vmr, usrrxt, set_fstrat_h2o, get_lon_all_p, strat_aer_settling

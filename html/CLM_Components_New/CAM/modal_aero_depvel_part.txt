@@ -1,0 +1,7 @@
+sub_in, fv, vlc_dry, ncol, pmid, vlc_trb, density_part, radius_part, moment, sig_part, t, lchnk, vlc_grv, ram1
+sub_out, vlc_dry, vlc_trb, vlc_grv
+global_ro
+global_wo
+global_mod
+global_non
+calls

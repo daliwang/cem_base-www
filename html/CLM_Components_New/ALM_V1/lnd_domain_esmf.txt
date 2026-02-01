@@ -1,0 +1,10 @@
+sub_param, bounds, dom
+sub_out
+global_ro, ldomain%latc, ldomain%lonc, bounds%begg, ldomain%frac, ldomain%area, ldomain%mask
+global_wo
+global_mod
+global_non
+calls, ESMF_Finalize, ESMF_ArrayGet
+readParams,
+type(bounds_type) , intent(in)    :: bounds ! bounds
+type(ESMF_Array)  , intent(inout) :: dom    ! CLM domain data

@@ -1,0 +1,8 @@
+sub_param, new_cond:2, list:1
+sub_out
+global_ro
+global_wo| new_cond%id, id, NONE
+global_mod| list%num_condition_list, num_condition_list, NONE
+global_non| new_cond, list%last, NONE| new_cond, list%first, NONE| new_cond, list%last%next, NONE
+calls
+readParams,

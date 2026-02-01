@@ -1,0 +1,7 @@
+sub_in, tcg, qnm, plh2o, ncol, tint4, lwupcgs, plh2ob, plco2, piln, tnm, s2c, tlayr, tplnke, co2mmr, w, pnm, pmln, tint, tlayr4, wb, tplnka
+sub_out, w, tplnka, plh2ob, plco2, tplnke, tlayr, wb, tint4, tint, tcg, s2c, plh2o, tlayr4
+global_ro
+global_wo
+global_mod
+global_non
+calls

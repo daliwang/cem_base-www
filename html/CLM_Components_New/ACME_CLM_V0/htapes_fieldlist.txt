@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, %field%name, %hlist, %nflds
+global_wo
+global_mod
+global_non
+calls, list_index, htape_addfld, masterlist_change_timeavg, endrun, shr_sys_flush

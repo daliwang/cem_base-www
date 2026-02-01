@@ -1,0 +1,7 @@
+sub_in, ielem, mmr, nmr, ibin, r_wet, vf, numberDensity, vd, dtpart, surface, nucleationRate, sedimentationflux, cstate, rc, rhop_wet
+sub_out, vd, rc, sedimentationflux, surface, mmr
+global_ro
+global_wo
+global_mod
+global_non
+calls

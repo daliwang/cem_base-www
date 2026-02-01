@@ -1,0 +1,14 @@
+sub_param, dydt:6, dtime:2, nprimvars:4, ystate:1, time:3, nstvars:5
+sub_out
+global_ro| centurybgc_vars%lid_n2o, lid_n2o, NONE| Extra_inst%conv_f, conv_f, NONE| centurybgc_vars%lid_n2, lid_n2, NONE| 1:Extra_inst%nr, nr, NONE| centurybgc_vars%primvarid, primvarid, NONE| centurybgc_vars%lid_ch4, lid_ch4, NONE| centurybgc_vars%lid_o2, lid_o2, NONE| centurybgc_vars%lid_ar, lid_ar, NONE| centurybgc_vars%lid_co2, lid_co2, NONE| Extra_inst%scal_f, scal_f, NONE| Extra_inst%k_decay, k_decay, NONE| Extra_inst%conc_f, conc_f, NONE
+global_wo
+global_mod
+global_non
+calls, apply_nutrient_down_regulation, calc_dtrend_som_bgc, calc_cascade_matrix
+readParams,readParams
+integer,  intent(in)  :: nstvars
+integer,  intent(in)  :: nprimvars
+real(r8), intent(in)  :: dtime
+real(r8), intent(in)  :: time
+real(r8), intent(in)  :: ystate(nstvars)
+real(r8), intent(out) :: dydt(nstvars)

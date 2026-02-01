@@ -1,0 +1,7 @@
+sub_in, CLWX, TM, QTDIS, HSTAR, CFX, QT, MOLMASS, QM, PR
+sub_out, QTDIS
+global_ro
+global_wo
+global_mod
+global_non
+calls

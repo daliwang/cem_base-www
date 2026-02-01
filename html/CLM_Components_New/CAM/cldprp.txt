@@ -1,0 +1,7 @@
+sub_in, rl, shat, s, cu, md, ed, evp, z, jd, su, v, qu, rprd, t, landfrac, pflx, mx, msg, cmeg, j0, cp, jlcl, sd, zf, eu, jb, limcnv, hsat, ql, qd, u, jt, qst, lel, rd, lchnk, il2g, du, mu, grav, mc, q, p, hmn
+sub_out, sd, jlcl, hmn, eu, pflx, mu, cmeg, j0, mc, evp, jt, jd, su, qst, qu, du, rprd, hsat, ql, cu, md, ed, qd
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat_hPa

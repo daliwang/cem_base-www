@@ -1,0 +1,20 @@
+sub_param, carbonstate_vars, carbonflux_vars, filter_pcropp, nitrogenstate_vars, cnstate_vars, num_soilc, filter_soilc, crop_vars, num_pcropp, nitrogenflux_vars, phosphorusflux_vars, phosphorusstate_vars
+sub_out
+global_ro, nitrogenflux_vars%npool_to_leafn_patch, ecophyscon%convfact, phosphorusstate_vars%grainp_patch, nitrogenstate_vars%grainn_patch, carbonstate_vars%grainc_patch, carbonstate_vars%livestemc_patch, cnstate_vars%offset_flag_patch, phosphorusstate_vars%leafp_patch, carbonstate_vars%leafc_patch, phosphorusflux_vars%ppool_to_leafp_patch, phosphorusflux_vars%ppool_to_grainp_patch, carbonflux_vars%cpool_to_grainc_patch, pft%itype, phosphorusstate_vars%livestemp_patch, carbonflux_vars%cpool_to_livestemc_patch, nitrogenflux_vars%npool_to_grainn_patch, phosphorusflux_vars%ppool_to_livestemp_patch, nitrogenstate_vars%leafn_patch, carbonflux_vars%cpool_to_leafc_patch, nitrogenflux_vars%npool_to_livestemn_patch, ecophyscon%fyield, cnstate_vars%offset_counter_patch, nitrogenstate_vars%livestemn_patch, ecophyscon%presharv
+global_wo, nitrogenflux_vars%hrv_grainn_to_prod1n_patch, nitrogenflux_vars%hrv_leafn_to_prod1n_patch, carbonflux_vars%hrv_grainc_to_prod1c_patch, phosphorusflux_vars%hrv_leafp_to_prod1p_patch, phosphorusflux_vars%hrv_grainp_to_prod1p_patch, phosphorusflux_vars%hrv_livestemp_to_prod1p_patch, nitrogenflux_vars%hrv_livestemn_to_prod1n_patch, carbonflux_vars%hrv_livestemc_to_prod1c_patch, carbonflux_vars%hrv_leafc_to_prod1c_patch
+global_mod, crop_vars%dmyield_patch, crop_vars%crpyld_patch
+global_non
+calls, CNCropHarvestPftToColumn
+readParams,readCNPhenolParams
+integer, intent(in) :: num_pcropp       ! number of prog crop pfts in filter
+integer, intent(in) :: filter_pcropp(:) ! filter for prognostic crop pfts
+integer, intent(in) :: num_soilc        ! number of soil columns in filter
+integer, intent(in) :: filter_soilc(:)  ! soil column filter
+type(crop_type)         , intent(inout) :: crop_vars
+type(cnstate_type)      , intent(inout) :: cnstate_vars
+type(carbonstate_type)  , intent(in)    :: carbonstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type), intent(in)    :: nitrogenstate_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type),intent(inout):: phosphorusstate_vars
+type(phosphorusflux_type), intent(inout):: phosphorusflux_vars

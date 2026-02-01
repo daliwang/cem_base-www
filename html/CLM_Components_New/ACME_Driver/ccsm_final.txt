@@ -1,0 +1,8 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_timemgr_EClockGetData, shr_mpi_max, component_final, t_barrierf, shr_mpi_min, t_prf, t_finalizef, t_startf, t_stopf, shr_mem_getusage, shr_pio_finalize
+calls_ln, component_final@3638, t_prf@3682, component_final@3630, shr_pio_finalize@3650, component_final@3640, seq_timemgr_EClockGetData@3625, component_final@3635, t_finalizef@3684, shr_mpi_max@3653, t_prf@3679, t_barrierf@3622, t_startf@3623, component_final@3642, component_final@3633, component_final@3637, shr_mpi_max@3655, component_final@3643, component_final@3629, t_stopf@3677, shr_mpi_min@3652, component_final@3632, component_final@3641, component_final@3639, shr_mem_getusage@3626, component_final@3634, component_final@3631, shr_mpi_min@3654, seq_timemgr_EClockGetData@3658

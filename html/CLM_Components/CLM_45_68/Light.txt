@@ -1,0 +1,7 @@
+sub_in, filter_natvegp, num_natvegp, bounds
+sub_out
+global_ro, deadstemc, itype, woody, tree, leafcmax, crownarea_max, allom1, dwood, reinickerp, gridcell, dsladlai, slatop
+global_wo
+global_mod, nind, fpcgrid, crownarea
+global_non
+calls

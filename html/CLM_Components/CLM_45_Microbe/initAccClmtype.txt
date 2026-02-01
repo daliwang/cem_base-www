@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, gdd10, t_ref2m_max_inst_u, gddtsoi, fsd240, fsi240, t_ref2m_max_inst, gdd8, prec365, t_ref2m_max_inst_r, a5tmin, prec60, gdd0, t_mo, gddplant, t_veg24, a10tmin, t10, t_ref2m_min_inst, t_ref2m_min_u, prec10, agddtw, fsi24, t_ref2m_min_inst_u, elai_p, fsd24, t_ref2m_min_inst_r, t_ref2m_max_r, agdd, t_veg240, t_ref2m_max_u, t_ref2m_min_r, fsun24, t_ref2m_min, t_ref2m_max, fsun240
+global_mod
+global_non
+calls, get_proc_bounds, extract_accum_field, endrun

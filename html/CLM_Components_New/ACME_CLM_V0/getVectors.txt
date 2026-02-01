@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, waterstate_vars, nitrogenstate_vars, carbonstate_vars, carbonflux_vars, this, geds_local, EDbio_vars, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%createPatchCohortStructure, this%printDataInfoLL, clm_ed_link, this%convertCohortVectorToList, ed_update_sites, this%printIoInfoLL, ed_init_sites, this%printDataInfoVector

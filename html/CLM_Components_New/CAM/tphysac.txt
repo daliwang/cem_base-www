@@ -1,0 +1,7 @@
+sub_in, sgh, fsds, cam_out, pbuf, ztodt, sgh30, tend, cam_in, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, tracers_timestep_tend, carma_timestep_tend, gw_tend, rayleigh_friction_tend, t_stopf, physics_update, charge_fix, carma_emission_tend, chem_timestep_tend, flux_avg_run, physics_state_check, clybry_fam_set, pbuf_get_field, qbo_relax, aoa_tracers_timestep_tend, check_energy_chng, ionos_intr, chem_emissions, endrun, phys_getopts, aero_model_drydep, vertical_diffusion_tend, physics_dme_adjust, mspd_intr, pbuf_set_field, t_startf, clubb_surface, check_tracers_init, cnst_get_ind, check_tracers_chng, diag_phys_tend_writeout, qneg4, iondrag_calc

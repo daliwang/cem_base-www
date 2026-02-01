@@ -1,0 +1,7 @@
+sub_in, last, result, fx, limit, inf, iwork, fx_vars, epsrel, work, abserr, lenw, epsabs, bound, ier, neval
+sub_out, last, result, abserr, ier, neval
+global_ro
+global_wo
+global_mod
+global_non
+calls, dqagie

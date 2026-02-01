@@ -1,0 +1,7 @@
+sub_in, vap_pres, Tc_3, humidex
+sub_out, humidex
+global_ro
+global_wo
+global_mod
+global_non
+calls

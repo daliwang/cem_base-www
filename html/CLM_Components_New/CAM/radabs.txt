@@ -1,0 +1,7 @@
+sub_in, abplnk2, uco221, uco213, uco223, piln, uco212, absnxt, lchnk, ucfc12, plos, odap_aer, plco2, plh2ob, uptype, h2otr, abplnk1, plh2o, bn2o0, tcg, uch4, ncol, uco222, aer_trn_ttl, tplnka, un2o0, un2o1, bn2o1, pmln, tint, wb, abstot, co2mmr, co2eml, plol, pnm, co2t, pbr, ucfc11, bch4, uco211, w, s2c, co2em, tlayr
+sub_out, absnxt, abstot
+global_ro
+global_wo
+global_mod
+global_non
+calls, trcab, trcabn, qsat_water

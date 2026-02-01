@@ -1,0 +1,8 @@
+sub_in, do_l2x, frac_l, lnd, do_x2l
+sub_out
+global_ro, rAttr, component_get_x2c_cx, data, component_get_c2x_cx
+global_wo
+global_mod
+global_non, component_get_dom_cx
+calls
+calls_ln

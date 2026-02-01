@@ -1,0 +1,13 @@
+sub_param, num_soilc:3, clm_bgc_data:1, bounds:2, filter_soilc:4, temperature_vars:5
+sub_out
+global_ro| clm_bgc_data%t_soisno_col, t_soisno_col, NONE
+global_wo| temperature_vars%t_soisno_col, t_soisno, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)                   , intent(in)    :: bounds
+integer                             , intent(in)    :: num_soilc        ! number of column soil points in column filter
+integer                             , intent(in)    :: filter_soilc(:)  ! column filter for soil points
+type(temperature_type)              , intent(inout) :: temperature_vars
+type(clm_bgc_interface_data_type)   , intent(in)    :: clm_bgc_data

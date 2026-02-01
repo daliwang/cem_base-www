@@ -1,0 +1,7 @@
+sub_in, site_in
+sub_out
+global_ro, frac_burnt, area, currentCohort, currentPatch
+global_wo, disturbance_rate
+global_mod, c_area, dmort, disturbance_rates
+global_non, currentPatch
+calls

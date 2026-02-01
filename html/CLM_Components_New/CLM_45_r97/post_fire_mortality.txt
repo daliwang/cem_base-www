@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, pft, cfa, currentCohort, currentPatch, cambial_mort
+global_wo, fire_mort
+global_mod, crownfire_mort
+global_non
+calls

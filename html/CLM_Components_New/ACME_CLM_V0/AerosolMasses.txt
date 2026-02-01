@@ -1,0 +1,7 @@
+sub_in, num_on, filter_off, bounds, aerosol_vars, waterflux_vars, filter_on, waterstate_vars, num_off
+sub_out
+global_ro, waterstate_vars%do_capsnow_col, col%snl, waterstate_vars%h2osoi_liq_col, waterflux_vars%qflx_snwcp_ice_col, waterstate_vars%h2osoi_ice_col
+global_wo, aerosol_vars%mss_cnc_dst2_col, aerosol_vars%mss_cnc_dst1_col, waterstate_vars%snw_rds_col, aerosol_vars%mss_cnc_dst3_col, aerosol_vars%mss_oc_top_col, aerosol_vars%mss_cnc_dst4_col, aerosol_vars%mss_bc_top_col, aerosol_vars%mss_cnc_ocphi_col, aerosol_vars%mss_cnc_bcphi_col, waterstate_vars%h2osno_top_col, aerosol_vars%mss_cnc_bcpho_col, aerosol_vars%mss_cnc_ocpho_col, aerosol_vars%mss_dst_top_col
+global_mod, aerosol_vars%mss_bc_col_col, aerosol_vars%mss_ocpho_col, aerosol_vars%mss_ocphi_col, aerosol_vars%mss_bcphi_col, aerosol_vars%mss_bctot_col, aerosol_vars%mss_dsttot_col, aerosol_vars%mss_dst_col_col, aerosol_vars%mss_dst2_col, aerosol_vars%mss_dst4_col, aerosol_vars%mss_oc_col_col, aerosol_vars%mss_dst3_col, aerosol_vars%mss_bcpho_col, aerosol_vars%mss_dst1_col, aerosol_vars%mss_octot_col
+global_non
+calls

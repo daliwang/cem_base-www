@@ -1,0 +1,16 @@
+sub_param, num_soilc, bounds, canopystate_vars, soilstate_vars, cnstate_vars, filter_soilc, num_soilp, filter_soilp
+sub_out
+global_ro, col%pfti, pft%itype, pft%column, pft%wtcol, canopystate_vars%altmax_lastyear_indx_col, soilstate_vars%rootfr_patch
+global_wo
+global_mod, cnstate_vars%ndep_prof_col, cnstate_vars%pdep_prof_col, cnstate_vars%froot_prof_patch, cnstate_vars%stem_prof_patch, cnstate_vars%nfixation_prof_col, cnstate_vars%croot_prof_patch, cnstate_vars%leaf_prof_patch
+global_non, bounds%endc, bounds%begp, bounds%endp, bounds%begc
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars

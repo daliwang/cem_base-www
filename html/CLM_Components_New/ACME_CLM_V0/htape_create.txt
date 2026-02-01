@@ -1,0 +1,7 @@
+sub_in, histrest, t
+sub_out
+global_ro, %ncprec
+global_wo
+global_mod
+global_non
+calls, ncd_putatt, ncd_defdim, htape_add_ltype_metadata, , getdatetime, shr_sys_flush, ncd_pio_createfile, htape_add_cft_metadata, get_proc_global

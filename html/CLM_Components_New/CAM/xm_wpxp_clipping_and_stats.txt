@@ -1,0 +1,7 @@
+sub_in, wp2, xm_threshold, l_implemented, wm_zt, rho_ds_zm, high_lev_effect, rcond, err_code, xm, xp2, rho_ds_zt, xm_tol, invrs_rho_ds_zt, dt, solve_type, xm_forcing, wpxp, low_lev_effect, invrs_rho_ds_zm, solution, xp2_threshold
+sub_out, xm, err_code, wpxp
+global_ro
+global_wo
+global_mod
+global_non
+calls, xm_correction_wpxp_cl, fill_holes_driver, monotonic_turbulent_flux_limit, stat_end_update, stat_modify, stat_update_var, stat_update_var_pt, stat_begin_update, pos_definite_adj, stat_end_update_pt, clip_covar

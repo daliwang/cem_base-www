@@ -1,0 +1,7 @@
+sub_in, filter_natvegp, carbonstate_vars, dgvs_vars, bounds, num_natvegp
+sub_out
+global_ro, carbonstate_vars%leafcmax_patch, ecophyscon%tree, ecophyscon%woody, pft%gridcell, ecophyscon%slatop, carbonstate_vars%deadstemc_patch, pft%itype, dgv_ecophyscon%allom1, dgv_ecophyscon%reinickerp, ecophyscon%dwood, dgv_ecophyscon%crownarea_max, ecophyscon%dsladlai
+global_wo
+global_mod, dgvs_vars%fpcgrid_patch, dgvs_vars%nind_patch, dgvs_vars%crownarea_patch
+global_non
+calls

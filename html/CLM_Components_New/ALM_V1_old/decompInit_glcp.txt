@@ -1,0 +1,9 @@
+sub_param, lni:2, glcmask:4, lns:1, lnj:3
+sub_out
+global_ro| %begp, begp, NONE| procinfo%begp, begp, NONE| %ncells, ncells, NONE| procinfo%ncells, ncells, NONE| procinfo%begCohort, begCohort, NONE| %begCohort, begCohort, NONE| %endCohort, endCohort, NONE| procinfo%endCohort, endCohort, NONE| %nCohorts, nCohorts, NONE| procinfo%nCohorts, nCohorts, NONE| procinfo%ncols, ncols, NONE| %ncols, ncols, NONE| procinfo%endl, endl, NONE| %endl, endl, NONE| %nlunits, nlunits, NONE| procinfo%nlunits, nlunits, NONE| procinfo%npfts, npfts, NONE| %npfts, npfts, NONE| %endc, endc, NONE| procinfo%endc, endc, NONE| %begg, begg, NONE| procinfo%begg, begg, NONE| pft%gridcell, gridcell, NONE| col%gridcell, gridcell, NONE| coh%gridcell, gridcell, NONE| %endp, endp, NONE| procinfo%endp, endp, NONE| procinfo%begc, begc, NONE| %begc, begc, NONE| procinfo%nclumps, nclumps, NONE| %endg, endg, NONE| procinfo%endg, endg, NONE| procinfo%cid, cid, NONE| %begl, begl, NONE| procinfo%begl, begl, NONE
+global_wo
+global_mod
+global_non
+calls, gather_data_to_master, mpi_barrier, mct_gsMap_init, to, scatter_data_from_master, shr_sys_flush, get_proc_global, subgrid_get_gcellinfo, get_proc_bounds, endrun
+readParams,
+integer , intent(in) :: lns,lni,lnj ! land domain global size

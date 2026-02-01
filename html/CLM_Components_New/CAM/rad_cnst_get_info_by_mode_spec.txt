@@ -1,0 +1,7 @@
+sub_in, spec_name_cw, list_idx, s_idx, spec_name, m_idx, spec_type
+sub_out, spec_name_cw, spec_type, spec_name
+global_ro, idx, nmodes
+global_wo
+global_mod
+global_non, ma_list
+calls, endrun

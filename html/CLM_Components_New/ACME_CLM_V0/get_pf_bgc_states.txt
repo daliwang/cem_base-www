@@ -1,0 +1,7 @@
+sub_in, num_soilc, bounds, filter_soilc
+sub_out
+global_ro, bounds%begg, col%gridcell, decomp_cascade_con%initial_cn_ratio
+global_wo, cns%decomp_npools_vr, cns%sminn_vr
+global_mod, cns%smin_nh4_vr, cns%smin_no3_vr, ccs%decomp_cpools_vr, cns%smin_nh4sorb_vr
+global_non
+calls, VecRestoreArrayF90, VecGetArrayF90

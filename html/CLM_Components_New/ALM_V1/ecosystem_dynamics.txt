@@ -1,0 +1,13 @@
+sub_param, waterstate_vars, temperature_vars, atm2lnd_vars, site_in, soilstate_vars
+sub_out
+global_ro, currentPatch%younger, site_in%oldest_patch
+global_wo
+global_mod
+global_non
+calls, fuse_cohorts, phenology, disturbance_rates, total_balance_check, sort_cohorts, recruitment, terminate_cohorts, spawn_patches, integrate_state_variables, fuse_patches, fire_model, terminate_patches
+readParams,
+type(site)             , intent(inout), pointer :: site_in
+type(atm2lnd_type)     , intent(in)             :: atm2lnd_vars
+type(soilstate_type)   , intent(in)             :: soilstate_vars
+type(temperature_type) , intent(in)             :: temperature_vars
+type(waterstate_type)  , intent(in)             :: waterstate_vars

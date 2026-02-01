@@ -1,0 +1,28 @@
+sub_param, bounds, topbc_type, condc_toplay, lbj, trc_concflx_air, ntrcs, bot_flux, filter, botbc_type, dz, numfl, ubj, trcin_mobile, Rfactor, hmconductance, source, condc_botlay, jtop, dtracer, dtime, update_col
+sub_out, condc_toplay
+global_ro
+global_wo
+global_mod
+global_non
+calls, DiffusTransp_gw_tridiag, Tridiagonal
+readParams,
+type(bounds_type) , intent(in)    :: bounds                                   !bounds
+integer           , intent(in)    :: lbj, ubj                                 ! lbinning and ubing level indices
+integer           , intent(in)    :: jtop(bounds%begc: )                      ! index of upper boundary, which could be variable
+integer           , intent(in)    :: numfl                                    ! length of the filter
+integer           , intent(in)    :: filter(:)                                ! the actual filter
+integer           , intent(in)    :: ntrcs
+real(r8)          , intent(in)    :: Rfactor(bounds%begc: , lbj:  )           !conversion parameter from the given tracer phase to bulk mobile phase
+real(r8)          , intent(in)    :: hmconductance(bounds%begc: , lbj: )      !weighted bulk tracer conductances
+real(r8)          , intent(in)    :: dz(bounds%begc: , lbj: )                 !node thickness
+real(r8)          , intent(in)    :: dtime(bounds%begc: )                     !time step
+real(r8)          , intent(in)    :: condc_toplay(bounds%begc: )              !top layer conductance
+integer           , intent(in)    :: topbc_type                               !type of top boundary condtion: 1, concentration, 2 flux
+integer , optional, intent(in)    :: botbc_type
+real(r8), optional, intent(in)    :: condc_botlay(bounds%begc: )
+logical           , intent(in)    :: update_col(bounds%begc: )                !logical switch indicating if the column is for active update
+real(r8)          , intent(in)    :: trcin_mobile(bounds%begc: , lbj: ,1: )   ! incoming mobile tracer concentration
+real(r8)          , intent(in)    :: source(bounds%begc: , lbj: , 1: )        !chemical sources [mol/m3]
+real(r8)          , intent(in)    :: bot_flux(bounds%begc: , 1: , 1: )        !flux at the bottom boundary
+real(r8)          , intent(in)    :: trc_concflx_air(bounds%begc: , 1: , 1: ) !atmospheric tracer concentration (topbc_type=1) or flux (topbc_type=2)
+real(r8)          , intent(inout) :: dtracer(bounds%begc: , lbj: , 1: )       !change of tracer concentration during the time step

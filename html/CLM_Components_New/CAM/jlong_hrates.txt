@@ -1,0 +1,7 @@
+sub_in, cparg, sza_in, colo3_in, kbot, qrl_col, mw, o3_vmr, nlev, p_in, o2_vmr, t_in, alb_in
+sub_out, qrl_col
+global_ro
+global_wo
+global_mod
+global_non
+calls, interpolate_rsf, alloc_err

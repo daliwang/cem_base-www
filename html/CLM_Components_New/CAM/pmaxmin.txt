@@ -1,0 +1,7 @@
+sub_in, a, commun, pmax, qname, jm, fac, im, pmin
+sub_out, pmax, pmin
+global_ro
+global_wo
+global_mod
+global_non
+calls, parcollective

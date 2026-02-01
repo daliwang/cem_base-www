@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, decomp_cascade_con%spinup_factor
+global_wo
+global_mod, pc14s%livecrootc_storage, pc14s%deadstemc_xfer, pc14s%deadcrootc_xfer, pc14s%livecrootc_xfer, pc14s%frootc_xfer, cc14s%seedc, pc14s%deadcrootc, pc14s%leafc_storage, pc14s%leafc, pc14s%deadstemc, pc14s%livestemc, pc14s%pft_ctrunc, pc14s%livestemc_xfer, pc14s%livecrootc, pc14s%xsmrpool, pc14s%frootc_storage, pc14s%livestemc_storage, pc14s%gresp_storage, pc14s%cpool, pc14s%gresp_xfer, pc14s%deadstemc_storage, pc14s%leafc_xfer, cc14s%decomp_cpools_vr, pc14s%deadcrootc_storage, pc14s%frootc
+global_non
+calls
+
+Tree height: 2

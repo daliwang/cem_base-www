@@ -1,0 +1,7 @@
+sub_in, phis, phisl, phis_hires, phi_out, phism
+sub_out, phis, phisl, phi_out, phism
+global_ro
+global_wo
+global_mod
+global_non
+calls, hordif1, fft991

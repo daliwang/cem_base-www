@@ -1,0 +1,16 @@
+sub_param, waterstate_vars:3, EDbio_vars:5, carbonflux_vars:8, bounds:1, carbonstate_vars:6, nitrogenstate_vars:7, geds_local:2, canopystate_vars:4
+sub_out
+global_ro| %br, br, NONE| %balive, balive, NONE| %tallest, tallest, NONE| ecophyscon%leafcn, leafcn, NONE| col%pfti, pfti, NONE| %pft, pft, NONE| col%gridcell, gridcell, NONE| %area, area, NONE| %bsw, bsw, NONE| pft%column, column, NONE| currentPatch%younger, currentPatch, NONE| currentSite%oldest_patch, currentPatch, NONE| %hite, hite, NONE| %bdead, bdead, NONE| %bstore, bstore, NONE
+global_wo| EDpft%ED_bareground, ED_bareground, NONE| canopystate_vars%tsai_patch, tsai, NONE| %livestemn, livestemn, NONE| canopystate_vars%tlai_patch, tlai, NONE| canopystate_vars%esai_patch, esai, NONE| %lai, lai, NONE| geds_local%clmcolumn, clmcolumn, NONE| %patchno, patchno, NONE| %livecrootn, livecrootn, NONE| canopystate_vars%hbot_patch, hbot, NONE| canopystate_vars%elai_patch, elai, NONE| EDpft%ED_patch, ED_patch, NONE| %b, b, NONE
+global_mod| %clm_pno, clm_pno, NONE| %total_canopy_area, total_canopy_area, NONE| EDpft%wtED, wtED, NONE| %c_area, c_area, NONE| %treelai, treelai, NONE| currentCohort%taller, currentCohort, NONE| currentPatch%shortest, currentCohort, NONE| canopystate_vars%htop_patch, htop, NONE| %total_tree_area, total_tree_area, NONE| %bare_frac_area, bare_frac_area, NONE
+global_non| geds_local, currentSite, NONE
+calls, root_fraction, update_ed_history_variables, clm_indices, clm_leaf_area_profile
+readParams,
+type(bounds_type)           , intent(in)            :: bounds  ! clump bounds
+type(gridcell_edstate_type) , intent(inout), target :: geds_local( bounds%begg: )
+type(waterstate_type)       , intent(inout)         :: waterstate_vars
+type(canopystate_type)      , intent(inout)         :: canopystate_vars
+type(EDbio_type)            , intent(inout)         :: EDbio_vars
+type(carbonstate_type)      , intent(inout)         :: carbonstate_vars
+type(nitrogenstate_type)    , intent(inout)         :: nitrogenstate_vars
+type(carbonflux_type)       , intent(inout)         :: carbonflux_vars

@@ -1,0 +1,7 @@
+sub_in, ncol, lchnk, cam_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_srf_drydep, set_srf_wetdep, set_fluxes

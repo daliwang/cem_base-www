@@ -1,0 +1,7 @@
+sub_in, temperature_inst, cnveg_state_inst, num_pcropp, num_soilp, filter_pcropp, filter_soilp
+sub_out
+global_ro, gdd10, gdd0, t_ref2m, gdd8
+global_wo
+global_mod, gdd020, tempavg_t2m, gdd820, gdd1020
+global_non
+calls, get_curr_date

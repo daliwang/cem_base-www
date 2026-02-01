@@ -1,0 +1,9 @@
+sub_param, glcmask, lns, lni, lnj
+sub_out
+global_ro, %nlunits, procinfo%nlunits, procinfo%ncells, %ncells, procinfo%npfts, %npfts, %begg, procinfo%begg, procinfo%cid, procinfo%begl, %begl, procinfo%begCohort, %begCohort, coh%gridcell, pft%gridcell, col%gridcell, %endl, procinfo%endl, %endCohort, procinfo%endCohort, procinfo%endp, %endp, procinfo%nclumps, %nCohorts, procinfo%nCohorts, %ncols, procinfo%ncols, %begp, procinfo%begp, %endg, procinfo%endg, procinfo%begc, %begc, procinfo%endc, %endc
+global_wo
+global_mod
+global_non
+calls, subgrid_get_gcellinfo, to, shr_sys_flush, scatter_data_from_master, get_proc_bounds, mpi_barrier, get_proc_global, mct_gsMap_init, endrun, gather_data_to_master
+readParams,
+integer , intent(in) :: lns,lni,lnj ! land domain global size

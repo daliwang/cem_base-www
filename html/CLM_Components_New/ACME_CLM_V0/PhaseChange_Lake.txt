@@ -1,0 +1,7 @@
+sub_in, cv_lake, energyflux_vars, lakestate_vars, temperature_vars, num_lakec, waterstate_vars, lhabs, cv, bounds, waterflux_vars, filter_lakec
+sub_out, cv, cv_lake, lhabs
+global_ro, col%dz_lake, col%snl
+global_wo, energyflux_vars%eflx_snomelt_col, temperature_vars%imelt_col
+global_mod, waterstate_vars%h2osoi_liq_col, waterflux_vars%qflx_snomelt_col, waterstate_vars%snow_depth_col, waterstate_vars%h2osno_col, temperature_vars%t_lake_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_snofrz_col, waterflux_vars%qflx_snow_melt_col, lakestate_vars%lake_icefrac_col, waterflux_vars%qflx_snofrz_lyr_col, temperature_vars%t_soisno_col
+global_non, col%dz
+calls

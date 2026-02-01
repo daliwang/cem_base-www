@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, bounds
+sub_out, ed_allsites_inst
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_patches, set_site_properties, zero_site

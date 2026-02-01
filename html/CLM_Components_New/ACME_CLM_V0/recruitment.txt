@@ -1,0 +1,7 @@
+sub_in, currentPatch, t
+sub_out
+global_ro, EDecophyscon%sapwood_ratio, currentPatch%seed_germination, currentPatch%siteptr%status, currentPatch%area, currentPatch%siteptr%dstatus, EDecophyscon%cushion, ecophyscon%froot_leaf, udata%deltat, EDecophyscon%hgt_min
+global_wo, dc%pft, dc%canopy_trim, dc%dbh, dc%laimemory, dc%n
+global_mod, dc%hite, dc%balive, dc%bstore, dc%bdead
+global_non
+calls, sort_cohorts, zero_cohort, fuse_cohorts, create_cohort

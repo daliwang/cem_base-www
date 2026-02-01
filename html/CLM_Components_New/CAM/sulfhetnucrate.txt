@@ -1,0 +1,7 @@
+sub_in, cstate, beta1, igroup, carma, beta2, nucrate, rstar, h2o, iz, ftry, nucbin, h2so4, rc
+sub_out, nucrate
+global_ro
+global_wo
+global_mod
+global_non
+calls

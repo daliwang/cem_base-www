@@ -1,0 +1,14 @@
+sub_param, plantsoilnutrientflux_vars:6, bounds:1, root_prof_col:5, num_soilc:3, ubj:2, filter_soilc:4
+sub_out
+global_ro| plantsoilnutrientflux_vars%plant_frootsc_col, plant_frootsc_col, NONE
+global_wo| plantsoilnutrientflux_vars%plant_frootsc_vr_col, plant_frootsc_vr, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)                , intent(in)    :: bounds                                        ! bounds
+integer                          , intent(in)    :: ubj
+integer                          , intent(in)    :: num_soilc                                     ! number of columns in column filter
+integer                          , intent(in)    :: filter_soilc(:)                               ! column filter
+real(r8)                         , intent(in)    :: root_prof_col(bounds%begc:bounds%endc, 1:ubj) !
+type(plantsoilnutrientflux_type) , intent(inout) :: plantsoilnutrientflux_vars

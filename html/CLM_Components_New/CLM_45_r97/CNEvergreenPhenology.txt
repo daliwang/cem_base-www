@@ -1,0 +1,7 @@
+sub_in, cnveg_state_inst, num_soilp, filter_soilp
+sub_out
+global_ro, leaf_long, evergreen, ivt
+global_wo, bglfr, bgtr, lgsf
+global_mod
+global_non
+calls

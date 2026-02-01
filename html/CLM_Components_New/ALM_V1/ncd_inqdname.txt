@@ -1,0 +1,11 @@
+sub_param, ncid, dname, dimid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(file_desc_t), intent(in) :: ncid      ! netcdf file id
+integer           , intent(in) :: dimid     ! dimension id
+character(len=*)  , intent(out):: dname     ! dimension name

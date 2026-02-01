@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| pft%column, column, NONE| col%landunit, landunit, NONE
+global_wo| col%active, active, NONE| lun%active, active, NONE| pft%active, active, NONE
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds  ! bounds

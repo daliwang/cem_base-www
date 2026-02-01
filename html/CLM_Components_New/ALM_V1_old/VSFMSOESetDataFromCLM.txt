@@ -1,0 +1,9 @@
+sub_param, soe_auxvar_id:4, soe_auxvar_type:2, data_1d:5, var_type:3, this:1
+sub_out
+global_ro| this%soe_auxvars_ss_ncells, soe_auxvars_ss_ncells, NONE| this%soe_auxvars_bc_ncells, soe_auxvars_bc_ncells, NONE| this%soe_auxvars_ss_offset, soe_auxvars_ss_offset, NONE| this%num_auxvars_in, num_auxvars_in, NONE| this%soe_auxvars_bc_offset, soe_auxvars_bc_offset, NONE
+global_wo
+global_mod
+global_non
+calls, endrun, this%aux_vars_ss, this%aux_vars_bc, this%aux_vars_in
+readParams,
+PetscInt, intent(in)                       :: var_type

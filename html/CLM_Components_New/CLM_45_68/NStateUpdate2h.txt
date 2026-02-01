@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, pnf%hrv_deadcrootn_xfer_to_litter, pnf%hrv_livestemn_storage_to_litter, pnf%hrv_retransn_to_litter, pnf%hrv_livestemn_xfer_to_litter, pnf%hrv_deadstemn_to_prod10n, cnf%harvest_n_to_litr_lig_n, pnf%hrv_deadcrootn_storage_to_litter, pnf%hrv_livestemn_to_litter, pnf%hrv_livecrootn_storage_to_litter, pnf%hrv_leafn_xfer_to_litter, pnf%hrv_deadcrootn_to_litter, pnf%hrv_deadstemn_xfer_to_litter, pnf%hrv_livecrootn_xfer_to_litter, pnf%hrv_deadstemn_storage_to_litter, cnf%harvest_n_to_litr_met_n, cnf%harvest_n_to_cwdn, pnf%hrv_leafn_to_litter, pnf%hrv_deadstemn_to_prod100n, pnf%hrv_frootn_to_litter, pnf%hrv_frootn_storage_to_litter, pnf%hrv_frootn_xfer_to_litter, pnf%hrv_leafn_storage_to_litter, cnf%harvest_n_to_litr_cel_n, pnf%hrv_livecrootn_to_litter
+global_wo
+global_mod, pns%livecrootn, pns%leafn_xfer, pns%deadstemn_xfer, pns%livecrootn_xfer, cns%decomp_npools_vr, pns%livestemn_xfer, pns%deadcrootn_storage, pns%frootn_xfer, pns%deadcrootn, pns%frootn_storage, pns%deadstemn, pns%leafn_storage, pns%leafn, pns%frootn, pns%retransn, pns%deadcrootn_xfer, pns%deadstemn_storage, pns%livecrootn_storage, pns%livestemn, pns%livestemn_storage
+global_non
+calls
+
+Tree height: 1

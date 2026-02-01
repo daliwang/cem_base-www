@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CLM_Web</title>
+  
+
+  <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/d3.min.js"></script>
+  <script src="js/jquery.tablesorter.min.js"></script>
+  <script src="js/page_onload.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <link rel="stylesheet" href="css/layout.css">
+
+<body onload="page_onload()">
+	
+<div class="whole">
+	
+	<div class="header">
+		<h1 id="p_title">A Visual Analytic System for Understanding</h1>
+		<h2 id="CLM">CLM</h2>
+		<h3 id="clm">COMMUNITY LAND MODEL</h3>
+	</div>
+	<!-- end of header-->
+	
+	<div id="tabs" class="main_tab">
+		
+		<!-- Initialize the function and variable list of all CLM versions-->
+		<script src="js/CLM_function_variable_Tags.js"></script>
+
+  		<ul>
+    		<li><a href="#tabs-1">Project Scope</a></li>
+    		<li><a href="#tabs-2">CLM Overview</a></li>
+    		<li><a href="#tabs-4">Functions / Variables</a></li>
+    		<li><a href="#tabs-3">Submodel Structure</a></li>
+    		<li><a href="#tabs-5">Publications</a></li>
+    		<li><a href="#tabs-6">About</a></li>
+  		</ul>
+  		
+  			
+		<div id="tabs-1">
+			
+			<div id="tab1_section1">
+				
+				<div id="tab1_section1_top">
+					
+					<br><br>
+					<p class="project_para1">TEAM</p>
+					<br>
+					<p class="project_para2">
+					Dali Wang (ESD/CCSI)<br>
+					Yang Xu (UTK)<br>
+					Jens Domke (TUD/ZIH)<br>
+					Joseph Schuchart (TUD/ZIH)<br>
+					Tomislav Janjusic (NCCS)<br>
+					Frank Winkler (OLCF)<br>
+					Peter Thornton (ESD/CCSI)<br>
+					Anthony King (ESD/CCSI)<br>
+					Lianhong Gu (ESD/CCSI)<br>
+					Chad Steed (CESD/CCSI)<br>
+					Wei Ding (NCCS)<br>
+					Pete Eby (ITSD/CCSI)<br>
+					Nick Forrington (OLCF)<br>
+					Shujiang Kang (ESD/CCSI)<br>
+					Wei Wu (UTK)<br>
+					Zhou Yao (UTK) 
+					
+					</p>
+					
+					
+				</div>
+				
+			</div>
+			
+			<div id="tab1_section2">
+				
+				<div id="tab1_section2_top">
+					<p class="scope_para1">This system is designed as</p><br>
+					<p class="scope_para2">
+						A Platform to Better Understand CLM Internal Process and Interactions
+					    <br><br><br>
+					    A Testbed to Support Modular CLM Design
+					    <br><br><br>
+					    An Interface for Cloud-based CLM Functional Testing
+					    <br><br><br>
+				     	A Prototype Software Analysis System for Legacy Environmental Codes
+					</p>
+					
+					<br><br>
+					<p class="scope_para3">Acknowledgement</p>
+					
+					<p class="scope_para4">
+						The majority of this research was funded by the U.S. Department of Energy
+						(DOE), office of Science, Biological and Environmental Research (BER)
+						through variety of projects, including Terristrial Ecosystem Sciencies
+						(http://tes-sfa.ornl.gov <http://tes-sfa.ornl.gov/>), Climate Science for
+						Sustainable Energy Future (http://climate.llnl.gov/cssef/index.html),
+						Accelerated Climate Modeling for Energy, and other seed money. We also
+						would like to express our appreciation to the Department of Geography at
+						the University of Tennessee, Knoxville, Vampir team
+						(https://www.vampir.eu/history) and Distributed Debugging Tool team
+						(http://www.allinea.com/products/ddt) at Allinea. This Research used
+						resources of the Oak Ridge Leadership Computing Facility, located in the
+						National Center for Computational Science at Oak Ridge National
+						Laboratory, which is supported by the Office of Science of the Department
+						of Energy under Contract DE-AC05-00OR22725. Oak Ridge National Laboratory
+						is managed by UT-Battelle LLC for the Department of Energy under contract
+						DE-AC05-00OR22725.
+					</p>
+					
+					
+				</div>
+				
+				<div id="tab1_section2_bot">
+				</div>
+				
+			</div>
+    		
+  		</div>
+  		<!-- end of tab1-->
+  		
+ 		<div id="tabs-2">
+ 			
+ 			<div id="tab2_section1">
+						
+						
+						<script src="js/Overview_auto_complete.js"></script>					
+						<div id="tab2_section1_top">
+							<br>
+							<p style="font-weight: bold;color:white;font-size:20px;font-family:serif;margin-bottom: 10px;">View 1</p>
+							<br><br>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom: 10px;">Choose CLM Version</p>
+							<select id="Overview_combobox1" placeholder="Select Version...">
+				        		<option>ACME_CLM_V0</option>
+				        		<option>CLM_45_10</option>
+				        		<option>CLM_45_68</option>
+				        		<option>CLM_45_Microbe</option>
+				        		<option>CLM_45_r97</option>
+			        		</select>
+			        		<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">Search Function Name</p>
+			        		<input type="text" value="clm_drv()" placeholder="search subroutine name" id="Overview_txtbox1" />	
+							<input type="button" value="Generate Graph" id="Overview_btn1" />
+													
+							<script>
+				
+								$("#Overview_combobox1").change(function(){
+							
+									if(this.value=="CLM_45_10")
+										{	
+											$("#Overview_txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_10);
+										}
+									else if(this.value=="CLM_45_68")
+										{	
+											$("#Overview_txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_68);
+										}
+									else if(this.value=="CLM_45_Microbe")
+										{	
+											$("#Overview_txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_Microbe);
+										}
+									else if(this.value=="ACME_CLM_V0")
+										{	
+											$("#Overview_txtbox1").autocomplete('option','source',SubroutineTags_ACME_CLM_V0);
+										}
+									else if(this.value=="CLM_45_r97")
+										{	
+											$("#Overview_txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_r97);
+										}
+
+							
+									}
+								);
+						     </script>
+						</div>
+						
+						<div id="tab2_section1_top_instructions">
+							
+							<p class="overview_para1">By choosing a function name (e.g., clm_drv) from a CLM version (e.g., CLM_45_10),
+							one can explore the <span style="color:orange;font-weight: bold;">3-tier call tree</span> with the selected 
+							function being the root node. If any node on the third tier is <span style="color:#7FFF00;font-weight: bold;">
+							green</span>, it means the node has called other functions and can be further visualized using another call 
+							tree provided by <span style="color:orange;font-weight: bold;">View 2</span> below.
+
+							</p>
+							
+						</div>
+						
+												
+						<div id="tab2_section1_top_legend" class="overview1_legend">
+						</div>
+						
+						<div id="tab2_section1_middle">
+							
+							<br>
+							<p style="font-weight: bold;color:white;font-size:20px;font-family:serif;margin-bottom: 10px;">View 2</p>
+							<br><br>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom: 10px;">Choose CLM Version</p>
+							<select id="Overview_combobox2" placeholder="Select Version...">
+				        		<option>ACME_CLM_V0</option>
+				        		<option>CLM_45_10</option>
+				        		<option>CLM_45_68</option>
+				        		<option>CLM_45_Microbe</option>
+				        		<option>CLM_45_r97</option>
+			        		</select>
+			        		<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">Search Function Name</p>
+			        		<input type="text" value="clm_drv()" placeholder="search subroutine name" id="Overview_txtbox2" />	
+							<input type="button" value="Generate Graph" id="Overview_btn2" />
+							 
+							 
+							<script>
+				
+								$("#Overview_combobox2").change(function(){
+							
+									if(this.value=="CLM_45_10")
+										{	
+											$("#Overview_txtbox2").autocomplete('option','source',SubroutineTags_CLM_45_10);
+										}
+									else if(this.value=="CLM_45_68")
+										{	
+											$("#Overview_txtbox2").autocomplete('option','source',SubroutineTags_CLM_45_68);
+										}
+									else if(this.value=="CLM_45_Microbe")
+										{	
+											$("#Overview_txtbox2").autocomplete('option','source',SubroutineTags_CLM_45_Microbe);
+										}
+									else if(this.value=="ACME_CLM_V0")
+										{	
+											$("#Overview_txtbox2").autocomplete('option','source',SubroutineTags_ACME_CLM_V0);
+										}
+								    else if(this.value=="CLM_45_r97")
+										{	
+											$("#Overview_txtbox2").autocomplete('option','source',SubroutineTags_CLM_45_r97);
+										}
+							
+									}
+								);
+						     </script>		
+						</div>					 						 
+						
+						<div id="tab2_section1_middle_instructions">
+							
+							<p class="overview_para2">This view has the same functionalities as <span style="color:orange;font-weight: bold;">
+							View 1</span>. The purpose of providing two views is to allow users to: (1) explore call tree structures at 
+							different depths in one CLM version; (2) compare call tree structures of the same function between two different
+							CLM versions.
+
+							</p>
+							
+						</div>
+												
+						<div id="tab2_section1_middle_legend" class="overview2_legend">
+							
+						</div>
+
+    		</div>
+    		
+    		<div id="tab2_section2">
+    			
+    			<div id="tab2_section2_top" class="overview_plot1">
+    				
+    				<link rel="stylesheet" href="css/D3_overview.css">
+    				<script src="js/overview1.js"></script>
+    			</div>
+    			
+    			<div id="tab2_section2_bot" class="overview_plot2">
+    				
+    				<link rel="stylesheet" href="css/D3_overview.css">
+    				<script src="js/overview2.js"></script>
+    			</div>
+    			
+    		</div>
+
+  		</div>
+  		<!-- end of tab2-->
+		
+  		
+  		<div id="tabs-4">
+
+  			<div id="tab4_section1">
+
+  					<div id="tab4_section1_relative">
+  					
+  					<div id="tab4_section1_top">
+  							
+  							<script src="js/search_downward_autocomplete.js"></script>	
+							<br>
+							<p style="font-weight: bold;color:white;font-size:20px;font-family:Times New Roman;margin-bottom: 10px;">Search Downward</p>
+							<br><br>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom: 10px;">Choose CLM Version</p>
+							<select id="call_variable_combobox1" placeholder="Select Version...">
+				        		<option>ACME_CLM_V0</option>
+				        		<option>CLM_45_10</option>
+				        		<option>CLM_45_68</option>
+				        		<option>CLM_45_Microbe</option>
+				        		<option>CLM_45_r97</option>
+			        		</select>
+			        		<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">Search Function Name</p>
+			        		<input type="text" value="CanopyFluxes()" placeholder="search" id="call_variable_txtbox1" />	
+							<input type="button" value="Generate Table" id="call_variable_btn1" />
+							
+							<script>
+				
+								$("#call_variable_combobox1").change(function(){
+							
+									if(this.value=="CLM_45_10")
+										{	
+											$("#call_variable_txtbox1").autocomplete('option','source',CallTags_CLM_45_10);
+										}
+									else if(this.value=="CLM_45_68")
+										{	
+											$("#call_variable_txtbox1").autocomplete('option','source',CallTags_CLM_45_68);
+										}
+									else if(this.value=="CLM_45_Microbe")
+										{	
+											$("#call_variable_txtbox1").autocomplete('option','source',CallTags_CLM_45_Microbe);
+										}
+									else if(this.value=="ACME_CLM_V0")
+										{	
+											$("#call_variable_txtbox1").autocomplete('option','source',CallTags_ACME_CLM_V0);
+										}
+									else if(this.value=="CLM_45_r97")
+										{	
+											$("#call_variable_txtbox1").autocomplete('option','source',CallTags_CLM_45_r97);
+										}
+							
+									}
+								);
+						     </script>
+  					
+  					
+  				</div>
+  				
+  				<div id="tab4_section1_top_instructions">
+  					
+  							<p class="function_variable_para1">By choosing a 
+  							<span style="color:#3399CC;font-weight: bold;font-style: italic;">function</span> 
+  							name from a CLM version, the table on the right panel
+  							will return all the 
+  							<span style="color:yellow;font-weight: bold;font-style: italic;">variables and functions</span>
+  							that have been used in the selected function. 
+  							The type of each variable is also shown. For example, 
+  							<span style="color:orange;font-weight: bold;font-style: italic;">Subroutine-in</span> variables are the ones 
+  							identified in the subroutine's signature. 
+  							<span style="color:orange;font-weight: bold;font-style: italic;">Subroutine-out</span> are a subset that was 
+  							identified to be written to. 
+  							<span style="color:orange;font-weight: bold;font-style: italic;">Global</span> variables are the ones found 
+  							in the source-code line that adheres to the general pointer assignment syntax.
+  							<br><br>
+  							The number of functions as well as the number of variables for each type is summarized on top of the table.<br><br>
+  							<span style="font-family: Helvetica; font-style:italic; font-size: 13px;">Tips: Click the head to sort the table</span>.
+							</p>
+							
+  					
+  				</div>
+  				
+  				<div id="tab4_section1_bot" style="text-align: center;">
+  					
+  							<script src="js/search_upward_autocomplete.js"></script>	
+							<br>
+							<p style="font-weight: bold;color:white;font-size:20px;font-family:Times New Roman;margin-bottom: 10px;">Search Upward</p>
+							<br><br>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom: 10px;">Choose CLM Version</p>
+							<select id="variable_call_combobox1" placeholder="Select Version...">
+				        		<option>ACME_CLM_V0</option>
+				        		<option>CLM_45_10</option>
+				        		<option>CLM_45_68</option>
+				        		<option>CLM_45_Microbe</option>
+				        		<option>CLM_45_r97</option>
+			        		</select>
+			        		<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">Search Function / Variable Name</p>
+			        		<input type="text" value="rootfr[]" placeholder="search" id="variable_call_txtbox1";/>	
+							<input type="button" value="Generate Table" id="variable_call_btn1" />
+							<br>
+							<form action="" style="margin-top: 10px;">
+								<input type="radio" name="upward_search" value="function" id="radio_f"><span style="color:white;font-family:Arial, Times New Roman; font-weight:bold;font-size: 15px;">Function</span>
+								<input type="radio" name="upward_search" value="variable" id="radio_v" checked="checked"><span style="color:white;font-family:Arial, Times New Roman;font-weight: bold;font-size: 15px;">Variable</span> 
+							</form>
+							
+							<script>
+				
+								$("#variable_call_combobox1").change(function(){
+							
+									if(this.value=="CLM_45_10")
+										{	
+											var current=$('input:radio[name=upward_search]:checked' ).val();
+											if(current=='function') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_10);}
+											else {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_10);}
+											
+										}
+									else if(this.value=="CLM_45_68")
+										{	
+											var current=$('input:radio[name=upward_search]:checked' ).val();
+											if(current=='function') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_68);}
+											else {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_68);}
+										}
+									else if(this.value=="CLM_45_Microbe")
+										{	
+											var current=$('input:radio[name=upward_search]:checked' ).val();
+											if(current=='function') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_Microbe);}
+											else {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_Microbe);}
+										}
+									else if(this.value=="ACME_CLM_V0")
+										{	
+											var current=$('input:radio[name=upward_search]:checked' ).val();
+											if(current=='function') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_ACME_CLM_V0);}
+											else {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_ACME_CLM_V0);}
+										}
+									else if(this.value=="CLM_45_r97")
+										{	
+											var current=$('input:radio[name=upward_search]:checked' ).val();
+											if(current=='function') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_r97);}
+											else {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_r97);}
+										}
+							
+									}
+								);
+								
+								$('input:radio[name=upward_search]').change(function(){
+									
+									
+									if(this.value=='function')
+									{
+										var version=$("#variable_call_combobox1").val();
+										if(version=='CLM_45_10') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_10);}
+										else if(version=='CLM_45_68') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_68);}
+										else if(version=='CLM_45_Microbe') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_Microbe);}
+										else if(version=='ACME_CLM_V0') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_ACME_CLM_V0);}
+										else if(version=='CLM_45_r97') {$("#variable_call_txtbox1").autocomplete('option','source',CallTags_CLM_45_r97);}
+									}
+									
+									if(this.value=='variable')
+									{
+										var version=$("#variable_call_combobox1").val();
+										if(version=='CLM_45_10') {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_10);}
+										else if(version=='CLM_45_68') {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_68);}
+										else if (version=='CLM_45_Microbe') {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_Microbe);}
+										else if(version=='ACME_CLM_V0') {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_ACME_CLM_V0);}
+										else if(version=='CLM_45_r97') {$("#variable_call_txtbox1").autocomplete('option','source',VariableTags_CLM_45_r97);}
+									}
+									
+								});
+								
+						     </script>
+  					
+  					
+  				</div>
+  				
+  				<div id="tab4_section1_bot_instructions">
+  					
+  							<p class="function_variable_para2">By choosing a 
+  							<span style="color:#3399CC;font-weight: bold;font-style: italic;">variable / function</span> 
+  							from a CLM version, the table on the right panel will return all the 
+  							<span style="color:yellow;font-weight: bold;font-style: italic;">functions</span>
+  						    that have called the selected variable / function.<br><br>
+  							If a <span style="color:orange;font-weight: bold;font-style: italic;">variable</span> is selected, 
+  							the type of the variable in each of the functions in the table will be shown. 
+  							If a <span style="color:orange;font-weight: bold;font-style: italic;">function</span> is selected, 
+  							the type will simply be "Function Call".
+							</p>
+  					
+  				</div>
+  				
+  				<div id="tab4_section1_bot_whitespace">
+  				</div>
+  					
+  				</div>
+  				
+  			</div>
+  			
+  			<div id="tab4_section2">
+
+  				<div id="tab4_section2_top">
+  					
+  					
+  					
+  					<div id="tab4_section2_top_legend" class="tab4_table1_legend">
+  					
+  					</div>
+  					
+  					<div id="tab4_section2_top_table">
+  						
+  						
+  						<div id="table1_containter">
+  						
+							<div id="table1">
+
+  									
+									
+  				
+  						
+  							</div>
+  						
+  					    </div>
+  					
+  					</div>
+  					
+  					<script src="js/search_downward.js"></script>
+
+  						
+  						
+  				</div>
+  				
+  				<div id="tab4_section2_bot">
+  					
+  					<div id="tab4_section2_bot_legend" class="tab4_table2_legend">
+  					
+  					</div>
+  					
+  					<div id="tab4_section2_bot_table">
+  						
+  						<div id="table2_containter">
+  						
+							<div id="table2">
+								
+									
+  				
+  						
+  							</div>
+  						
+  					    </div>
+  					
+  					</div>
+  					
+  					<div id="tab4_section2_bot_whitespace">
+  					</div>
+  					
+  					<script src="js/search_upward.js"></script>
+  					
+  				</div>
+  					
+  			</div>
+
+  				
+  			</div>
+  			<!-- end of tab4-->
+  			
+  			<div id="tabs-3">
+    		    		
+    		<div id="tab3_section1">
+						
+						<div id="tab3_section1_top">
+							<script src="js/submodel_auto_complete.js"></script>
+							<br>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom: 10px;">Choose CLM Version</p>
+							<select id="combobox1" placeholder="Select Version...">
+				        		<option>ACME_CLM_V0</option>
+				        		<option>CLM_45_10</option>
+				        		<option>CLM_45_68</option>
+				        		<option>CLM_45_Microbe</option>
+				        		<option>CLM_45_r97</option>
+			        		</select>
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">Search Subroutine Name</p>	
+							<input type="button" value="  Add   " id="btn1" />
+							<input type="text" value="" placeholder="search subroutine name" id="txtbox1" />
+							<p style="font-weight: bold;color:white;font-size:15px;font-family:Arial;margin-bottom:10px;margin-top:10px;">List of Subroutines</p>	
+							<textarea id="txtarea1" rows="10" cols="2"></textarea>
+							<input type="button" value="Generate Graph" id="btn2" />
+							<input type="button" value="Clear List" id="btn3" />
+							
+						</div>
+						
+						<div id="tab3_section1_middle">
+							
+							<p class="submodel_para1">Visualizing the structure of CLM submodels facilitates the understanding of 
+				  			CLM components at the micro level. By choosing a particular CLM version, 
+					  		users can search the subroutine name in the textbox (e.g., Photosynthesis) and add all
+					 		the ones they want to investigate into the list. By clicking <span style="color:orange;font-weight: bold;">Generate Graph</span>, a 
+					 		graph structure that summarizes the interrelationships among all related function calls and variables will be presented.
+					 		Users can also explore
+					 		the type of a variable by hovering the mouse over a certain node. The group id of a variable indicates whether
+					 		its type belongs to <span style="color:green;font-weight: bold;">Subroutine Explicit</span>, <span style="color:blue;font-weight: bold;">Global</span> or 
+					 		<span style="color:red;font-weight: bold;">Subroutine Explicit & Global</span> in the modeling context. <br><br>
+					 		To view all possible cateogories of CLM variables, please click
+					 		<a href="others/CLM_Group.pdf" style="color: yellow; font-weight:bold;">Here</a>.<br><br>
+					 		<span style="font-family: Helvetica; font-style:italic; font-size: 13px;">Tips: Drag to move the graph. Scroll the mouse to Zoom in/out</span>.</p>
+
+						</div>
+						
+												
+						<div id="tab3_section1_bot" class="submodel_legend">
+
+						</div>
+						
+						
+    		</div>
+    		
+    		<div id="tab3_section2" class="submodel_plot">
+					
+				  	<script>
+				  		$( "#btn1" ).click(function() {
+  			
+  							var t=$("#txtbox1").val();
+							$("#txtarea1").val($("#txtarea1").val()+t+'\r');
+							$("#txtbox1").val('');
+						});
+						
+						$( "#btn3" ).click(function() {
+							
+							$("#txtarea1").val("");
+
+						});
+					
+						$("#txtbox1").autocomplete({
+							select:function(event, ui)
+							{
+								$("#txtarea1").val($("#txtarea1").val()+ui.item.value+'\r');
+								$("#txtbox1").val('');
+								return false;
+							}
+						});
+						
+												
+						$("#combobox1").change(function(){
+							
+							if(this.value=="CLM_45_10")
+								{	
+									$("#txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_10);
+								}
+							else if(this.value=="CLM_45_68")
+								{	
+									$("#txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_68);
+								}
+							else if(this.value=="CLM_45_Microbe")
+								{	
+									$("#txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_Microbe);
+								}
+							else if(this.value=="ACME_CLM_V0")
+								{	
+									$("#txtbox1").autocomplete('option','source',SubroutineTags_ACME_CLM_V0);
+								}
+							
+							else if(this.value=="CLM_45_r97")
+								{	
+									$("#txtbox1").autocomplete('option','source',SubroutineTags_CLM_45_r97);
+								}
+							
+						}
+						);
+
+				    </script>	
+				  <link rel="stylesheet" href="css/D3_submodel.css">
+				  <script src="js/submodel.js"></script>
+
+				 
+    		</div>
+  		</div>
+		<!-- end of tab3-->
+
+  		
+  		<div id="tabs-5">
+  			
+  			<div id="tab5_section1">
+  				
+  				<br><br><br><br>
+  				
+  				<p class="publication_year">
+  					2014
+  				</p><br>
+
+  				<p class="publication">
+	  				Yang Xu, Dali Wang, Tomislav Janjusic, Xiaofeng Xu, A Web-based 
+	  				Visual Analytic System for Understanding the Structure of Community Land 
+	  				Model, The 2014 International Conference on Software Engineering Research 
+	  				and Practice,  July 21-24, 2014, Las Vegas, Nevada, USA.<br>
+  				</p><br>
+  				
+  				<p class="publication">
+	  				Xuan Shi, Dali Wang, Processing NOAA Observation Data Over Hybrid 
+	  				Computer Systems for Comparative Climate Change Analysis, The 2014 
+	  				International Conference on Parallel and Distributed Processing 
+	  				Techniques and Applications, July 21-24, 2014, Las Vegas, Nevada, USA.
+  				</p><br>
+  				
+  				<p class="publication">
+	  				Tomislav Janjusic, Christos Kartsaklis, Dali Wang, Scalability 
+	  				Analysis of Gleipnir: A Memory Tracing and Profiling Tool on Titan, Cray 
+	  				User Group, May, 2014, Switzerland.
+  				</p><br>
+  				
+  				<p class="publication">
+	  				Dali Wang, Yang Xu, Software Engineering for Scientific 
+	  				Application: Effort Report on The Community Land Model within the Earth 
+	  				System Modeling Framework, In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. 
+	  				(Eds.), Proceedings of the 7th International Congress on Environmental 
+	  				Modelling and Software, June 15-19, 2014, San Diego, California, USA.				
+  				</p><br>
+  					
+  				<p class="publication">
+	  				Dali Wang, Joseph Schuchart, Tomislav Janjusic, Frank Winkler and 
+	  				Yang Xu, Toward Better Understanding of the Community Land Model within 
+	  				the Earth System Modeling Framework, International Conference on 
+	  				Computational Science, Cairns, Australia, 2014, Procedia of Computer 
+	  				Science, Volume 29, 2014, Pages 1515­1524, 10.1016/j.procs.2014.05.137.
+  				</p><br>
+  				
+  				<p class="publication">
+	  				Dali Wang, Yang Xu, Peter Thornton, Anthony King, Lianghong Gu, 
+	  				Chad Steed, Joseph Schuchart, A Functional Testing Platform for the 
+	  				Community Land Model, Environmental Modeling and Software, 2014, Volume 
+	  				55, Pages 25-31, 10.1016/j.envsoft.2014.01.015.
+  				</p><br>
+  				
+  				<p class="publication_year">
+  					2013
+  				</p><br>
+  				
+  				<p class="publication">
+  					Dali Wang, Yang Xu, Peter Thornton, Anthony King, Chad Steed, A 
+  					Pilot Study on Functional Testing for the Community Land Model, 
+  					Proceedings of Computational Data Analytics Workshop, October 8-9, 2013, 
+  					Oak Ridge TN.
+  				</p><br>
+  					
+  				<p class="publication">
+  					Dali Wang, Jens Domke, Jiafu Mao, Xiaoying Shi, Daniel Ricciuto,  A 
+  					Scalable Framework for the Global Offline Community Land Model Ensemble 
+  					Simulation, International Journal of Computational Science and 
+  					Engineering, 2013 (in press).
+  				</p><br>
+  					
+  				<p class="publication">
+  					Dali Wang, Ziliang Zhao, Shih-Lung Shaw, Gerald Ragghianti, Yaxing 
+  					Wei, Building a high performance ArcGIS cluster and its application to 
+  					climate data processing, Geocomputation, 2013.
+  				</p><br>
+  					
+  				<p class="publication">
+  					Chad Steed, Daniel Ricciuto, Galen Shipman, Brian Smith, Peter 
+  					Thornton, Dali Wang, Dean Williams, Big Data Visual Analytics for Earth 
+  					System Simulation Analysis, Computer and geosciences, Volume 61, December 
+  					2013, Pages 71­82, (Best Paper Award, 2014) 
+  					dx.doi.org/10.1016/j.cageo.2013.07.025.
+  				</p><br>
+  				
+  				<p class="publication">
+  					Wei Ding, ChungHsing Hsu, Oscar Hernandez, Barbara Chapman, and Richard 
+  					Graham. Selected journal paper "KLONOS: Similaritybased planning tool 
+  					support for porting scientific applications". Concurrency and 
+  					Computation: Practice and Experience, Volume 25, Issue 8, pages 
+  					1072-1088, 10 June 2013.
+  				</p><br>
+  				
+  				<p class="publication_year">
+  					2012
+  				</p><br>
+  				
+  				<p class="publication">
+  					Jens Domke, Dali Wang, Runtime Tracing of the Community Earth System 
+  					Model: Feasibility Study and Benefits, 12th Workshop on Tools for Program 
+  					Development and Analysis in Computational Science, Omaha, Nebraska, June 
+  					2012, procedia CS 9: pp1950-1958, 2012.
+  				</p><br>
+  				
+  				<p class="publication_year">
+  					2011
+  				</p><br>
+  				
+  				<p class="publication">
+  					 Dali Wang, Wilfred Post, Bruce Wilson, Climate Change Modeling: 
+  					 Computational Opportunities and Challenges, IEEE Computing in Science and 
+  					 Engineering, Volume 13, Issue 5, pp. 36-42, 2011.
+  				</p><br>
+  				
+  				<p class="publication">
+  					Dali Wang, Daniel Ricciuto, Wilfred Post, Michael Berry, Terrestrial 
+  					Ecosystem Carbon Modeling (invited), Encyclopedia for Parallel Computing, 
+  					Editor, David A Padua, Springer, 2011, DOI 10.1007/978-0-387-09776-4 , 
+  					2034-2039.
+  				</p><br>
+  					
+  				<p class="publication">
+  					Janjusic T, Kavi KM, and Potter B, Gleipnir: A Memory Analysis 
+  					Tool, Procedia Computer Science, 2011 (4), 2058­2067.
+  				</p><br>
+  					
+  					
+  			</div>
+  			
+  		</div>
+  		<!-- end of tab5-->
+  		
+  		<div id="tabs-6">
+  			
+  			<div id="tab6_section1">
+  				<div id="tab6_section1_top">
+  				</div>
+  				
+  				<div id="tab6_section1_bot" class="map">
+  				</div>
+  			</div>
+  			
+  		</div>
+  		<!-- end of tab6-->
+		
+    	<script src="js/Tabs_Initialization.js"></script>
+
+  	</div>
+  	<!-- end of main tab-->
+
+
+</div>
+<!-- end of whole-->
+ 
+</body>
+</head>
+</html>

@@ -1,0 +1,7 @@
+sub_in, fn_h2osfc, tk_h2osfc, dz_h2osfc, rt, hs_h2osfc, t_h2osfc, filter_nolakec, t_soisno, dhsdT, num_nolakec, dtime, c_h2osfc, bounds
+sub_out, fn_h2osfc, rt
+global_ro, col%z
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, filter_snowc, num_snowc, bounds, atm2lnd_inst, aerosol_inst
+sub_out
+global_ro, snl, forc_aer
+global_wo, flx_bc_dep_wet, flx_oc_dep_wet, flx_oc_dep, flx_bc_dep_dry, flx_bc_dep, flx_dst_dep, flx_oc_dep_dry
+global_mod, flx_oc_dep_pho, mss_bcpho, flx_dst_dep_wet2, flx_oc_dep_phi, flx_dst_dep_wet4, flx_dst_dep_dry1, flx_bc_dep_phi, mss_dst2, mss_dst3, flx_dst_dep_wet1, mss_dst1, mss_dst4, mss_ocphi, flx_dst_dep_wet3, mss_ocpho, flx_dst_dep_dry3, flx_dst_dep_dry2, mss_bcphi, flx_bc_dep_pho, flx_dst_dep_dry4
+global_non
+calls

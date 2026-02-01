@@ -1,0 +1,13 @@
+sub_param, plant_minn_passive_yield_flx_col:6, filter_soilc:4, num_soilc:3, bounds:2, this:1, plant_minn_active_yield_flx_col:5
+sub_out
+global_ro
+global_wo
+global_mod| this%plant_nbuffer_col, plant_nbuffer_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+real(r8)          , intent(in) :: plant_minn_active_yield_flx_col(bounds%begc:bounds%endc)
+real(r8)          , intent(in) :: plant_minn_passive_yield_flx_col(bounds%begc:bounds%endc)

@@ -1,0 +1,10 @@
+sub_in, num_urbanc, ind, coszen, bounds, filter_urbanc
+sub_out, albsn_roof, albsn_improad, albsn_perroad
+global_ro, col%itype
+global_wo
+global_mod
+global_non, cws%h2osno
+calls, shr_assert
+
+Tree height: 7
+0 , shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, 

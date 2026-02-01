@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, leafcn, cpool_to_leafc, offset_flag, grainc, cpool_to_frootc, itype, cpool_to_grainc, lflitcn, livewdcn, frootc, cpool_to_livestemc, graincn, frootcn, leafc, offset_counter, livestemc
+global_wo, leafn_to_retransn, grainn_to_food, frootn_to_litter, livestemn_to_litter
+global_mod, prev_frootc_to_litter, frootc_to_litter, grainc_to_food, leafc_to_litter, livestemc_to_litter, prev_leafc_to_litter, leafn_to_litter
+global_non
+calls

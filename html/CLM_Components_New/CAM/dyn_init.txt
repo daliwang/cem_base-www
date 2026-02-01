@@ -1,0 +1,7 @@
+sub_in, file, nlfilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, hycoef_init, add_default, addfld, spmd_readnl, spmdinit_dyn, dyn_sld_readnl

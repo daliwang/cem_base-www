@@ -1,0 +1,7 @@
+sub_in, zm, sgh, tend_level, pmid, ncol, xv, ubm, tau, src_level, ubi, pint, yv, v, c, dpm, u, t, nm
+sub_out, tend_level, c, ubi, ubm, src_level
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_unit_vector

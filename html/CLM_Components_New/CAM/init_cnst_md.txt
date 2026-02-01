@@ -1,0 +1,7 @@
+sub_in, q, gcid, rev_in
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, setsmoothtr

@@ -1,0 +1,7 @@
+sub_in, filter_soilp, carbonstate_vars, isotope, num_soilc, filter_soilc, num_soilp, isotopeflux_vars, isotopestate_vars, cnstate_vars, carbonflux_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNCIsoHarvestPftToColumn, CIsoFluxCalc

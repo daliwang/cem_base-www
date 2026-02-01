@@ -1,0 +1,7 @@
+sub_in, tl, hvcoord, nete, nsubstep, nets, elem, hybrid
+sub_out, elem
+global_ro, PEner
+global_wo
+global_mod
+global_non
+calls, wrap_repro_sum, abortmp

@@ -1,0 +1,7 @@
+sub_in, xferrate, a_soa_in, g_soa_in, a_poa_in, ntot_soamode, niter_max, temp, a_soa_tend, dtfull, g_soa_tend, niter, pres
+sub_out, g_soa_tend, a_soa_tend, niter
+global_ro
+global_wo
+global_mod
+global_non
+calls

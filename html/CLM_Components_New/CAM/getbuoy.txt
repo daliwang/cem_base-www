@@ -1,0 +1,7 @@
+sub_in, pbot, thvutop, plfc, cin, thv0top, thv0bot, thvubot, ptop
+sub_out, plfc, cin
+global_ro
+global_wo
+global_mod
+global_non
+calls

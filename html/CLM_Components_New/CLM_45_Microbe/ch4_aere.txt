@@ -1,0 +1,9 @@
+sub_in, filter_methc, num_methp, jwt, num_methc, ubc, lake, lbp, sat, lbc, filter_methp, ubp
+sub_out
+global_ro, clm3%g%l%c%p%pps%elai, clm3%g%l%c%p%column, clm3%g%l%c%cps%z, clm3%g%l%c%p%pepv%annsum_npp, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%p%pcs%frootc, clm3%g%l%c%p%pps%grnd_ch4_cond, clm3%g%l%c%cch4%conc_ch4_unsat, clm3%g%l%c%cps%watsat, clm3%g%l%c%cch4%conc_o2_unsat, clm3%g%l%c%p%pps%rootfr, clm3%g%gch4%c_atm, clm3%g%l%c%gridcell, clm3%g%l%c%p%wtcol, clm3%g%l%c%cch4%ch4_prod_depth_unsat, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%p%pps%rootr, clm3%g%l%c%p%pcf%annavg_bgnpp, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%p%pcf%annavg_agnpp, clm3%g%l%c%p%itype
+global_wo
+global_mod, clm3%g%l%c%cch4%o2_aere_depth_unsat, clm3%g%l%c%cch4%ch4_tran_depth_unsat, clm3%g%l%c%cch4%ch4_aere_depth_unsat
+global_non, clm3%g%l%c%cch4%ch4_oxid_depth_sat, clm3%g%l%c%cch4%co2_aere_depth_sat, clm3%g%l%c%cch4%co2_aere_depth_unsat, clm3%g%l%c%cch4%conc_ch4_sat, clm3%g%l%c%cch4%ch4_oxid_depth_unsat, clm3%g%l%c%cch4%conc_o2_sat, clm3%g%l%c%cch4%o2_aere_depth_sat, clm3%g%l%c%cch4%ch4_aere_depth_sat, clm3%g%l%c%cch4%ch4_prod_depth_sat, clm3%g%l%c%cch4%ch4_tran_depth_sat, clm3%g%l%c%p%pps%canopy_cond
+calls
+
+Tree height: 4

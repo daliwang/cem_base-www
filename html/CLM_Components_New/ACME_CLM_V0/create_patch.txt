@@ -1,0 +1,7 @@
+sub_in, spread_local, seed_bank_local, currentSite, new_patch, cwd_ag_local, root_litter_local, age, cwd_bg_local, areap, leaf_litter_local
+sub_out
+global_ro
+global_wo, new_patch%ed_laisun_z, new_patch%cwd_ag_in, new_patch%fabd, new_patch%tr_soil_dif, new_patch%cwd_bg_in, new_patch%frac_burnt, new_patch%fabd_sun_z, new_patch%spread, new_patch%tr_soil_dir, new_patch%cwd_bg, new_patch%ed_laisha_z, new_patch%total_tree_area, new_patch%leaf_litter, new_patch%NCL_p, new_patch%ed_parsun_z, new_patch%fabi_sun_z, new_patch%f_sun, new_patch%area, new_patch%tr_soil_dir_dif, new_patch%fabd_sha_z, new_patch%fabi, new_patch%ed_parsha_z, new_patch%cwd_ag, new_patch%root_litter, new_patch%fabi_sha_z, new_patch%seed_bank
+global_mod, new_patch%age
+global_non, null, null, currentSite, null, null, null
+calls, zero_patch

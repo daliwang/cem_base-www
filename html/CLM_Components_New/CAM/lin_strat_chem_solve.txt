@@ -1,0 +1,7 @@
+sub_in, o3_vmr, delta_t, pmid, sza, temp, rlats, o3col, lchnk, ltrop, ncol
+sub_out, o3_vmr
+global_ro, linoz_dPmL_dO3, linoz_o3col_clim, linoz_dPmL_dO3col, linoz_dPmL_dT, linoz_PmL_clim, linoz_o3_clim, linoz_t_clim, linoz_cariolle_psc
+global_wo
+global_mod
+global_non, mwdry, gravit
+calls, outfld

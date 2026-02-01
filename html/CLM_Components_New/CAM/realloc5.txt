@@ -1,0 +1,7 @@
+sub_in, difftblat, hw1lat, hw3bl, hw3al, tmass, engy2blat, difftalat, hwxal, engy1lat, hwxbl, hw2al, engy2alat, hw2bl
+sub_out, engy1lat, hwxal, tmass, engy2blat, difftalat, hw3bl, hw3al, difftblat, hw1lat, hw2bl, hw2al, engy2alat, hwxbl
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpialltoallint, altalltoallv, mpiallgatherv

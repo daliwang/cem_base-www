@@ -1,0 +1,7 @@
+sub_in, filter, lbc, numf, ubc
+sub_out
+global_ro, vic_clm_fract, h2osoi_vol, max_moist, porosity, depth, h2osoi_ice, h2osoi_liq
+global_wo
+global_mod, moist_vol, moist, ice
+global_non, zi, dz, z
+calls

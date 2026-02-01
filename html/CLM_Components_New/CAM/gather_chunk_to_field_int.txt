@@ -1,0 +1,7 @@
+sub_in, hdim1d, globalfield, fdim, localchunks, mdim, ldim
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, fc_gathervint, endrun, t_barrierf

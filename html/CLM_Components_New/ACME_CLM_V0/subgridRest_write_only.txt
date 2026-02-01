@@ -1,0 +1,7 @@
+sub_in, flag, bounds, ncid
+sub_out
+global_ro, col%glc_topo, data=grc%latdeg, grc%latdeg, ldomain%ni, data=pft%itype, lun%itype, data=lun%itype, col%itype, data=col%itype, ldecomp%gdc2glo, data=grc%londeg, grc%londeg, col%landunit, pft%landunit, pft%gridcell, lun%gridcell, col%gridcell, pft%column
+global_wo
+global_mod
+global_non
+calls, restartvar

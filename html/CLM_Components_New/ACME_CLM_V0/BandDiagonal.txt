@@ -1,0 +1,7 @@
+sub_in, r, u, jbot, b, filter, numf, nband, jtop, ubj, bounds, lbj
+sub_out, u
+global_ro
+global_wo
+global_mod
+global_non
+calls, dgbsv

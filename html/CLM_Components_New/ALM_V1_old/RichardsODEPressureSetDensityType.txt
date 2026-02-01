@@ -1,0 +1,8 @@
+sub_param, density_type:2, this:1
+sub_out, density_type
+global_ro| this%boundary_conditions%first, cur_cond, NONE| cur_cond%next, cur_cond, NONE| this%source_sinks%first, cur_cond, NONE
+global_wo| this%aux_vars_bc, aux_vars_bc, NONE| this%aux_vars_in, aux_vars_in, NONE| this%aux_vars_ss, aux_vars_ss, NONE
+global_mod
+global_non
+calls, endrun
+readParams,

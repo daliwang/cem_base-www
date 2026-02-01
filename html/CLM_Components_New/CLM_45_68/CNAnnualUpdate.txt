@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro
+global_wo, pepv%annmax_retransn, pepv%annsum_potential_gpp, pepv%annsum_litfall
+global_mod, pepv%tempavg_t2m, pepv%tempsum_litfall, pepv%tempsum_npp, cps%annsum_counter, pepv%annavg_t2m, pepv%annsum_npp, pepv%tempmax_retransn, pepv%tempsum_potential_gpp
+global_non, cps%cannavg_t2m, pft%column, cps%cannsum_npp
+calls, p2c
+
+Tree height: 4
+2+, p2c, p2c, 

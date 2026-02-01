@@ -1,0 +1,11 @@
+sub_in, num_urbanc, filter_nosnowc, num_snowc, filter_nolakec, filter_snowc, bounds, filter_urbanc, num_nolakec, num_hydrologyc, num_nosnowc, filter_hydrologyc
+sub_out
+global_ro, cps%smpmin, cps%frac_h2osfc, cps%snl, lun%itype, cps%snow_depth, cps%frac_sno_eff, pwf_a%qflx_snwcp_ice, cps%sucsat, col%landunit, cps%watsat, ces%t_h2osfc, cps%bsw, col%itype
+global_wo, ces%t_grnd_u, cps%mss_cnc_dst1, ces%t_grnd_r, cps%mss_cnc_ocphi, cps%mss_cnc_ocpho, cps%mss_oc_top, cps%wf2, cps%mss_bc_top, cps%snw_rds, cps%mss_cnc_bcphi, cps%snowdp, cps%mss_cnc_dst4, cps%mss_cnc_dst2, cps%dTdz_top, cps%h2osno_top, cps%snot_top, cps%sno_liq_top, cps%mss_dst_top, cps%soilpsi, cps%snw_rds_top, cps%mss_cnc_bcpho, ces%t_grnd, cps%mss_cnc_dst3, cps%wf
+global_mod, cps%dz, cps%mss_dst2, cps%z, cps%mss_dst4, cps%mss_dst3, cps%mss_dst_col, cps%mss_bc_col, cps%mss_oc_col, cws%h2osoi_vol, cws%snowice, cps%mss_bctot, ces%t_soi_10cm, cps%mss_bcphi, cws%h2osoi_ice, cps%mss_dsttot, cps%mss_dst1, cws%smp_l, cps%mss_ocpho, cps%zi, ces%tsoi17, cws%h2osoi_liq, cws%h2osoi_liqice_10cm, cws%snowliq, cps%mss_bcpho, ces%t_soisno, cps%mss_ocphi, cps%mss_octot
+global_non, cws%zwt, col%gridcell, cws%wa, cps%frac_sno, clm_a2l%forc_flood, cwf%qflx_glcice, cwf%qflx_runoff_u, pwf_a%qflx_evap_tot, cwf%qflx_h2osfc_surf, pwf_a%qflx_evap_soi, cwf%qflx_runoff_r, cwbal%endwb, cwf%qflx_drain, cwf%qflx_surf, cwf%qflx_qrgwl, cws%hk_l, cwf%qflx_drain_perched, cwf%qflx_infl, cws%h2osno, cwf%qflx_runoff, cws%qcharge, cwf%qflx_rsub_sat, cwbal%begwb, cws%h2osfc, cws%fcov, cws%fsat, cwf%qflx_glcice_frz, pws_a%h2ocan
+calls, CombineSnowLayers, DivideSnowLayers, Infiltration, CLMVICMap, SnowWater, BuildSnowFilter, SurfaceRunoff, SoilWater, WaterTable, SnowCompaction
+
+Tree height: 4
+0 , BuildSnowFilter, SnowWater, SurfaceRunoff, Infiltration, SoilWater, WaterTable, SnowCompaction, CombineSnowLayers, DivideSnowLayers, BuildSnowFilter, 
+1+, CLMVICMap, CLMVICMap, 

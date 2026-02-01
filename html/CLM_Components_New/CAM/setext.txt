@@ -1,0 +1,7 @@
+sub_in, tfld, ncol, mbar, zmid, extfrc, rlats, pmid, zint_rel, lchnk, pbuf, cldtop, calday, o2mmr, zint_abs, rlons, ommr
+sub_out, extfrc
+global_ro
+global_wo
+global_mod
+global_non
+calls, extfrc_set, airpl_set, aurora, get_srcs_data, outfld, spe_prod

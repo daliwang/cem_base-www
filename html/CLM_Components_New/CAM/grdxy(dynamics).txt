@@ -1,0 +1,7 @@
+sub_in, coslam, w, sinlam, phi, lam, dlam
+sub_out, phi, lam, coslam, sinlam, dlam
+global_ro
+global_wo
+global_mod
+global_non
+calls, gauaw

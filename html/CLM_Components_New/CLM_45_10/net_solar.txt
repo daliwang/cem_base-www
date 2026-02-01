@@ -1,0 +1,11 @@
+sub_in, coszen, canyon_hwr, sref_perroad_dif, ubl, alb_improad_dir, alb_wall_dif, num_urbanl, alb_roof_dir, sref_perroad_dir, sdir_sunwall, filter_urbanl, sref_improad_dir, sdif_shadewall, sdif_road, sdif, sdir_road, sdir_shadewall, alb_roof_dif, sref_improad_dif, sdif_sunwall, lbl, alb_improad_dif, alb_perroad_dir, alb_wall_dir, sdir, alb_perroad_dif, wtroad_perv
+sub_out, sref_roof_dif, sref_shadewall_dif, sref_roof_dir, sref_shadewall_dir, sref_sunwall_dir, sref_sunwall_dif
+global_ro, clm3%g%l%lps%vf_sr, clm3%g%l%lps%sabs_perroad_dif, clm3%g%l%lps%vf_ww, clm3%g%l%lps%sabs_improad_dif, clm3%g%l%lps%sabs_perroad_dir, clm3%g%l%lps%vf_wr, clm3%g%l%lps%vf_rw, clm3%g%l%lps%vf_sw, clm3%g%l%lps%sabs_improad_dir
+global_wo, clm3%g%l%lps%sabs_roof_dif, clm3%g%l%lps%sabs_roof_dir
+global_mod, clm3%g%l%lps%sabs_sunwall_dif, clm3%g%l%lps%sabs_sunwall_dir, clm3%g%l%lps%sabs_shadewall_dif, clm3%g%l%lps%sabs_shadewall_dir
+global_non
+calls, endrun
+
+Tree height: 21
+15+, endrun, 
+20+, endrun, endrun, 

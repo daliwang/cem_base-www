@@ -1,0 +1,7 @@
+sub_in, tau_w_g, tau_w, tau_w_f, tau, pbuf, state
+sub_out, tau, tau_w_f, tau_w, tau_w_g
+global_ro
+global_wo
+global_mod
+global_non
+calls, gam_liquid_sw, pbuf_get_field

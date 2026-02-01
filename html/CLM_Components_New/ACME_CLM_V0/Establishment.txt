@@ -1,0 +1,7 @@
+sub_in, carbonstate_vars, carbonflux_vars, atm2lnd_vars, dgvs_vars, bounds
+sub_out
+global_ro, pft%gridcell, dgv_ecophyscon%gddmin, dgv_ecophyscon%tcmin, carbonflux_vars%annsum_npp_patch, pft%itype, dgvs_vars%agddtw_patch, ecophyscon%slatop, ecophyscon%woody, carbonstate_vars%deadstemc_patch, dgv_ecophyscon%twmax, dgvs_vars%tmomin20_patch, atm2lnd_vars%prec365_patch, dgv_ecophyscon%allom1, pft%landunit, ecophyscon%dsladlai, carbonflux_vars%annsum_litfall_patch, dgv_ecophyscon%tcmax, dgv_ecophyscon%reinickerp, ecophyscon%dwood, dgvs_vars%agdd20_patch, dgv_ecophyscon%crownarea_max
+global_wo, dgvs_vars%greffic_patch, dgvs_vars%heatstress_patch
+global_mod, carbonstate_vars%leafcmax_patch, dgvs_vars%present_patch, dgvs_vars%fpcgrid_patch, dgvs_vars%pftmayexist_patch, dgvs_vars%nind_patch, dgvs_vars%crownarea_patch
+global_non
+calls, endrun

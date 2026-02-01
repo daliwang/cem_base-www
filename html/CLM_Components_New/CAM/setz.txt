@@ -1,0 +1,7 @@
+sub_in, pht_tag, tlev, adjcoe, zen, c, cz
+sub_out, adjcoe
+global_ro
+global_wo
+global_mod
+global_non
+calls, calcoe, endrun

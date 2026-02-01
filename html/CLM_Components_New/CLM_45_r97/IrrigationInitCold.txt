@@ -1,0 +1,7 @@
+sub_in, bounds, soil_water_retention_curve, soilstate_inst, this
+sub_out
+global_ro, bsw, sucsat, smpso
+global_wo
+global_mod
+global_non
+calls, soil_water_retention_curve%soil_suction_inverse

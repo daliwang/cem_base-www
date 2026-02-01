@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, cnstate_vars
+sub_out
+global_ro, ecophyscon%leaf_long, ecophyscon%evergreen, pft%itype
+global_wo, cnstate_vars%bglfr_patch, cnstate_vars%lgsf_patch, cnstate_vars%bgtr_patch
+global_mod
+global_non
+calls

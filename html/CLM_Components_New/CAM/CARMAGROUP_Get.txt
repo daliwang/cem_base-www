@@ -1,0 +1,7 @@
+sub_in, rc, refidx, vol, rprat, ishape, irhswcomp, rmin, qext, ifallrtn, rrat, rmass, name, is_cloud, do_drydep, is_fractal, ncore, is_sulfate, ienconc, rlow, rup, eshape, r, nmon, do_wetdep, imiertn, icorelem, carma, do_vtran, dr, df, maxbin, cnsttype, rmrat, igroup, dpc_threshold, solfac, do_mie, irhswell, neutral_volfrc, ssa, is_ice, rmassmin, rmon, falpha, asym, arat, shortname, dm, scavcoef
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

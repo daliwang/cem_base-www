@@ -1,0 +1,7 @@
+sub_in, ncol, lchnk, cflx, soil_erod, dust_flux_in
+sub_out, cflx, soil_erod
+global_ro
+global_wo
+global_mod
+global_non
+calls

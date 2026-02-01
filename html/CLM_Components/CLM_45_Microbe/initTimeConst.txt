@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit, h2osoi_ice, cellorg, cellclay, itype, cellsand, gridcell, h2osoi_liq
+global_wo, zi, watopt, tkdry, watdry, csol, watfc, h2osoi_vol, tksatu, z
+global_mod, bsw, dz, tkmg, dz_lake, lakedepth, z_lake, watsat, hksat, sucsat
+global_non
+calls, get_proc_bounds, get_proc_global, endrun

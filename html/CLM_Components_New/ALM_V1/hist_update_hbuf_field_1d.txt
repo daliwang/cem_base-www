@@ -1,0 +1,11 @@
+sub_param, t, f, bounds
+sub_out
+global_ro, %field%hpindex, %field%type1d, %field%p2c_scale_type, %hlist, %field%end1d, %field%l2g_scale_type, %field%c2l_scale_type, %field%beg1d, clmptr_rs, %field%type1d_out, %avgflag
+global_wo
+global_mod, >lun%active, col%active, pft%active, tape, tape
+global_non
+calls, endrun, p2g, c2g, l2g
+readParams,
+integer, intent(in) :: t            ! tape index
+integer, intent(in) :: f            ! field index
+type(bounds_type), intent(in) :: bounds

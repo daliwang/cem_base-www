@@ -1,0 +1,7 @@
+sub_in, g, waterstate_vars, temperature_vars
+sub_out
+global_ro, waterstate_vars%h2osoi_vol_col, gridCellEdState%clm_pno, udata%time_period, temperature_vars%t_veg24_patch, gridCellEdState%clmcolumn
+global_wo, gridCellEdState%gdd, gridCellEdState%dstatus
+global_mod, gridCellEdState%ncd, gridCellEdState%dleafoffdate, gridCellEdState%water_memory, gridCellEdState%last_n_days, gridCellEdState%dleafondate, gridCellEdState%status, gridCellEdState%leafondate, gridCellEdState%leafoffdate
+global_non, gridCellEdState, temperature_vars%gdd0_patch
+calls, phenology_leafonoff

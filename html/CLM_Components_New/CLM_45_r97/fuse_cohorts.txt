@@ -1,0 +1,7 @@
+sub_in, patchptr
+sub_out
+global_ro, currentCohort, nextc, NCL_p
+global_wo
+global_mod, dmort, seed_prod, year_net_uptake, leaf_md, npp, bdead, dbh, n, gpp, balive, bl, bsw, b, md, npp_acc, laimemory, fire_mort, carbon_balance, bstore, storage_flux, root_md, canopy_trim, gpp_acc, br, resp, hite, resp_acc, leaf_litter
+global_non, patchptr, nextc%taller, nextnextc, nextc%taller, nextc%shorter
+calls, sort_cohorts

@@ -1,0 +1,9 @@
+sub_param, patchptr:1
+sub_out
+global_ro| %bstore, bstore, NONE| %br, br, NONE| %pft, pft, NONE| %bl, bl, NONE| %n, n, NONE| %bsw, bsw, NONE| %bdead, bdead, NONE| patchptr%area, area, NONE| currentPatch%tallest, currentCohort, NONE| nextc, currentCohort, NONE
+global_wo
+global_mod| patchptr%leaf_litter, leaf_litter, NONE| patchptr%CWD_BG, CWD_BG, NONE| patchptr%root_litter, root_litter, NONE| patchptr%CWD_AG, CWD_AG, NONE
+global_non| currentCohort%shorter, currentCohort%taller%shorter, NONE| patchptr, currentPatch, NONE| currentCohort%shorter, currentPatch%tallest, NONE| currentCohort%shorter, nextc, NONE| currentCohort%taller, currentPatch%shortest, NONE| currentCohort%taller, currentCohort%shorter%taller, NONE
+calls
+readParams,
+type (patch)  , pointer, intent(inout) :: patchptr

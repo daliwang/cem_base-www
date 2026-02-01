@@ -1,0 +1,9 @@
+sub_in, no_update, filter_h2osfc, lbc, ubc, num_h2osfc
+sub_out, frac_h2osfc
+global_ro, clm3%g%l%c%cps%micro_sigma, clm3%g%l%itype, clm3%g%l%c%cws%h2osno, clm3%g%l%c%landunit
+global_wo, clm3%g%l%c%cps%frac_sno_eff
+global_mod, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cws%h2osoi_liq
+global_non, clm3%g%l%c%cps%topo_ndx, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%topo_slope
+calls
+
+Tree height: 5

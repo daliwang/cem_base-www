@@ -1,0 +1,9 @@
+sub_param, this:1, bounds:2
+sub_out
+global_ro
+global_wo| this%tsrf_grc, tsrf_grc, NONE| this%topo_grc, topo_grc, NONE| this%qice_grc, qice_grc, NONE
+global_mod
+global_non| this%topo_grc, data2dptr, NONE| this%qice_grc, data2dptr, NONE| this%tsrf_grc, data2dptr, NONE
+calls, hist_addfld2d
+readParams,
+type(bounds_type), intent(in) :: bounds

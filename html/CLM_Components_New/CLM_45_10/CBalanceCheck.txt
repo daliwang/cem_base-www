@@ -1,0 +1,10 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%l%c%ccbal%begcb, clm3%g%l%c%ccs%totcolc, clm3%g%l%c%ccf%dwt_closs, clm3%g%l%c%ccf%pcf_a%gpp, clm3%g%l%c%ccf%er, clm3%g%l%c%ccf%product_closs, clm3%g%l%c%ccf%som_c_leached, clm3%g%l%c%ccf%col_fire_closs, clm3%g%l%c%ccf%pcf_a%hrv_xsmrpool_to_atm
+global_wo
+global_mod, clm3%g%l%c%ccbal%errcb, clm3%g%l%c%ccbal%endcb, clm3%g%l%c%ccf%col_coutputs, clm3%g%l%c%ccf%col_cinputs
+global_non
+calls, endrun
+
+Tree height: 2
+1+, endrun, 

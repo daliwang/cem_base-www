@@ -1,0 +1,7 @@
+sub_in, jt, zi, lengath, lchnk, zm, du, pblh, qh, maxg, jctop, ql, ideep, paph, heat, prec, mu, ncol, rliq, jcbot, dp, landfrac, dsubcld, t, rprd, dpp, mcon, cme, cape, pap, ed, md, tpert, geos, zdu, delt, eu, qtnd, pflx, dlf
+sub_out, du, dp, dsubcld, rprd, lengath, jcbot, md, ed, ql, maxg, mcon, jctop, cme, heat, zdu, eu, ideep, rliq, dlf, prec, qtnd, pflx, mu
+global_ro
+global_wo
+global_mod
+global_non
+calls, closure, buoyan, buoyan_dilute, q1q2_pjr, cldprp

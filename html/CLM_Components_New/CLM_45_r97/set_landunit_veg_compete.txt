@@ -1,0 +1,7 @@
+sub_in, ci, pi, gi, ltype, setdata, li
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_landunit, add_column, subgrid_get_gcellinfo, add_patch

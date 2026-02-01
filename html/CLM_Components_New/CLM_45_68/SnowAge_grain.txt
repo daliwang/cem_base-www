@@ -1,0 +1,9 @@
+sub_in, filter_nosnowc, num_snowc, filter_snowc, bounds, num_nosnowc
+sub_out
+global_ro, cps%dz, pwf_a%qflx_snow_grnd, cws%h2osno, cws%h2osoi_liq, cps%frac_sno_eff, cps%snl, ces%t_soisno, cws%h2osoi_ice, cwf%qflx_snofrz_lyr, pwf_a%qflx_snwcp_ice
+global_wo, cps%snw_rds_top, cps%snot_top, cps%sno_liq_top, cps%dTdz_top
+global_mod, cps%snw_rds
+global_non, ces%t_grnd
+calls
+
+Tree height: 2

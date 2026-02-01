@@ -1,0 +1,7 @@
+sub_in, QTDIS, QTRAIN, CLWX, QM, RRAIN, DTSCAV, QT, CFX
+sub_out, QTRAIN
+global_ro
+global_wo
+global_mod
+global_non
+calls

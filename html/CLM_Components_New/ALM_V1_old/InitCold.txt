@@ -1,0 +1,9 @@
+sub_param, this:1, bounds:2
+sub_out
+global_ro| bounds%endg, endg, NONE| bounds%begg, begg, NONE| ldomain%glcmask, glcmask, NONE
+global_wo| this%hflx_grc, hflx_grc, NONE| this%topo_grc, topo_grc, NONE| this%frac_grc, frac_grc, NONE| this%icemask_grc, icemask_grc, NONE| this%icemask_coupled_fluxes_grc, icemask_coupled_fluxes_grc, NONE
+global_mod
+global_non
+calls, this%update_glc2lnd_dyn_runoff_routing
+readParams,
+type(bounds_type), intent(in) :: bounds

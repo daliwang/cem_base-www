@@ -1,0 +1,16 @@
+sub_param, filter_soilc:3, soilstate_vars:6, num_soilp:4, filter_soilp:5, num_soilc:2, bounds:1, cnstate_vars:8, canopystate_vars:7
+sub_out
+global_ro| pft%wtcol, wtcol, NONE| pft%column, column, NONE| canopystate_vars%altmax_lastyear_indx_col, altmax_lastyear_indx, NONE| col%pfti, pfti, NONE| soilstate_vars%rootfr_patch, rootfr, NONE| pft%itype, itype, NONE
+global_wo
+global_mod| cnstate_vars%pdep_prof_col, pdep_prof, NONE| cnstate_vars%nfixation_prof_col, nfixation_prof, NONE| cnstate_vars%stem_prof_patch, stem_prof, NONE| cnstate_vars%leaf_prof_patch, leaf_prof, NONE| cnstate_vars%croot_prof_patch, croot_prof, NONE| cnstate_vars%ndep_prof_col, ndep_prof, NONE| cnstate_vars%froot_prof_patch, froot_prof, NONE
+global_non| bounds%begc, begc, NONE| bounds%endc, endc, NONE| bounds%endp, endp, NONE| bounds%begp, begp, NONE
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars

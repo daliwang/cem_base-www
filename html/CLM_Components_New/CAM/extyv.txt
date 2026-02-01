@@ -1,0 +1,7 @@
+sub_in, ub, pkcnst, pkdim, vb, sinlam, coslam
+sub_out, ub, vb
+global_ro
+global_wo
+global_mod
+global_non
+calls

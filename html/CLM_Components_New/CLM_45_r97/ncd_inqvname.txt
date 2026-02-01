@@ -1,0 +1,7 @@
+sub_in, varid, vname, vardesc, ncid
+sub_out, vname
+global_ro
+global_wo
+global_mod
+global_non
+calls

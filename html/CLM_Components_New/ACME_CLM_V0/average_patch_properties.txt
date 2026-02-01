@@ -1,0 +1,7 @@
+sub_in, patch_site_areadis, currentPatch, newPatch
+sub_out, patch_site_areadis
+global_ro, currentPatch%area, newPatch%area, currentPatch%disturbance_rate
+global_wo
+global_mod, currentPatch%spread, newPatch%spread, newPatch%cwd_bg, currentPatch%cwd_bg, newPatch%cwd_ag, currentPatch%cwd_ag, newPatch%root_litter, currentPatch%root_litter, currentPatch%leaf_litter, newPatch%leaf_litter, currentPatch%seed_bank, newPatch%seed_bank
+global_non
+calls

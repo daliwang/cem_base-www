@@ -1,0 +1,7 @@
+sub_in, filter_lakec, filter_nolakec, ubc, num_nolakec, num_lakec, lbp, lbc, ubp
+sub_out
+global_ro, itype, glc_topo, frac_veg_nosno_alb, h2osno, active, landunit, h2osoi_liq, gridcell, snl, h2osoi_ice
+global_wo, forc_t, eflx_bot, frac_iceold, forc_rho, forc_th, frac_veg_nosno, forc_pbot, do_capsnow, forc_q, h2osno_old, qflx_glcice
+global_mod
+global_non, landunit
+calls, Qsat

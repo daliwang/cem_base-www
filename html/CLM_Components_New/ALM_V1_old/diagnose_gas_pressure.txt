@@ -1,0 +1,15 @@
+sub_param, ubj:3, tracercoeff_vars:7, tracerstate_vars:8, bounds:1, lbj:2, betrtracer_vars:6, filter_soilc:5, num_soilc:4
+sub_out
+global_ro| betrtracer_vars%volatileid, volatileid, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| betrtracer_vars%is_h2o, is_h2o, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile_col, NONE| tracercoeff_vars%henrycef_col, henrycef_col, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| betrtracer_vars%is_isotope, is_isotope, NONE| tracercoeff_vars%aqu2bulkcef_mobile_col, aqu2bulkcef_mobile_col, NONE| betrtracer_vars%groupid, groupid, NONE
+global_wo
+global_mod| tracerstate_vars%tracer_P_gas_frac_col, tracer_P_gas_frac_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: num_soilc        ! number of columns in column filter_soilc
+integer,                intent(in)    :: filter_soilc(:)  ! column filter_soilc
+type(betrtracer_type),  intent(in)    :: betrtracer_vars  ! tracer info data structure
+type(tracercoeff_type), intent(in)    :: tracercoeff_vars ! tracer phase conversion coefficients
+type(tracerstate_type), intent(inout) :: tracerstate_vars ! tracer state variables data structure

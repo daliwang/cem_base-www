@@ -1,0 +1,7 @@
+sub_in, rair_in, vk_in, cpair_in, zvir_in, g_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

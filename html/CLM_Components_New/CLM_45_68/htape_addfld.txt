@@ -1,0 +1,14 @@
+sub_in, avgflag, f, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, get_proc_global, endrun
+
+Tree height: 7
+0 , get_proc_bounds, get_proc_global, 
+5-, endrun, 
+6-, endrun, 
+2+, endrun, 
+1+, endrun, 

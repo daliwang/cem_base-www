@@ -1,0 +1,14 @@
+sub_in, ubg, ubc, num_nourbanc, lbg, filter_nourbanc, lbp, filter_nourbanp, num_nourbanp, lbc, nextsw_cday, ubp, declinp1
+sub_out
+global_ro, clm3%g%l%c%p%pps%tsai, pftcon%taus, clm3%g%l%c%cps%snw_rds, clm3%g%l%c%p%pps%elai, clm3%g%l%c%p%column, clm3%g%l%c%cps%mss_cnc_bcpho, clm3%g%l%c%cws%h2osoi_liq, clm3%g%lon, clm3%g%l%c%cps%mss_cnc_dst2, clm3%g%l%c%cps%mss_cnc_ocphi, clm3%g%l%c%gridcell, clm3%g%l%c%cps%mss_cnc_dst4, clm3%g%l%c%p%gridcell, clm3%g%l%c%cps%mss_cnc_dst3, clm3%g%lat, clm3%g%l%c%cps%mss_cnc_dst1, clm3%g%l%c%p%pps%esai, clm3%g%l%c%p%pps%tlai, clm3%g%l%c%cps%mss_cnc_ocpho, pftcon%taul, clm3%g%l%itype, clm3%g%l%c%cps%mss_cnc_bcphi, clm3%g%l%c%cps%frac_sno, pftcon%rhol, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%p%itype, pftcon%rhos
+global_wo, clm3%g%l%c%p%pps%fabd_sun, clm3%g%l%c%p%pps%ftdd, clm3%g%l%c%cps%albgrd_dst, clm3%g%l%c%cps%albgrd_oc, clm3%g%l%c%cps%albgri_pur, clm3%g%l%c%p%pps%fabi_sha_z, clm3%g%l%c%p%pps%ftii, clm3%g%l%c%cps%albgrd_bc, clm3%g%l%c%p%pps%fabd, clm3%g%l%c%cps%flx_absiv, clm3%g%l%c%p%pps%ftid, clm3%g%l%c%p%pps%albd, clm3%g%l%c%cps%albgri_bc, clm3%g%l%c%cps%albgrd_pur, clm3%g%l%c%cps%decl, clm3%g%l%c%p%pps%albi, clm3%g%l%c%cps%albgri_dst, clm3%g%l%c%p%pps%fabi_sha, clm3%g%l%c%cps%albsnd_hst, clm3%g%l%c%p%pps%fsun_z, clm3%g%l%c%p%pps%fabi_sun_z, clm3%g%l%c%cps%flx_absdv, clm3%g%l%c%p%pps%fabd_sha, clm3%g%l%c%cps%flx_absdn, clm3%g%l%c%p%pps%fabd_sun_z, clm3%g%l%c%p%pps%fabi, clm3%g%l%c%cps%albgri_oc, clm3%g%l%c%cps%albsni_hst, clm3%g%l%c%p%pps%fabi_sun, clm3%g%l%c%p%pps%fabd_sha_z, clm3%g%l%c%p%pps%vcmaxcintsun, clm3%g%l%c%cps%flx_absin
+global_mod, clm3%g%l%c%cps%albsod, clm3%g%l%c%cps%albgri, clm3%g%l%c%cps%albsoi, clm3%g%l%c%cps%albgrd, clm3%g%l%c%p%pps%tlai_z, clm3%g%l%c%p%pps%vcmaxcintsha, clm3%g%l%c%p%pps%ncan, clm3%g%l%c%p%pps%nrad, clm3%g%l%c%p%pps%tsai_z, clm3%g%l%c%cps%coszen
+global_non, clm3%g%l%c%p%landunit, clm3%g%l%c%p%active, clm3%g%l%c%cws%h2osno
+calls, SoilAlbedo, TwoStream, SNICAR_RT, endrun
+
+Tree height: 5
+0 , SoilAlbedo, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, 
+2-, TwoStream, 
+2+, endrun, 
+3+, endrun, 
+1+, SNICAR_RT, SNICAR_RT, 

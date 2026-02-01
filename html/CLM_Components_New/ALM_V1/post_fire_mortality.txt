@@ -1,0 +1,9 @@
+sub_param, site_in
+sub_out
+global_ro, %pft, currentPatch%tallest, currentCohort%shorter, %cfa, %cambial_mort, EDecophyscon%crown_kill, site_in%oldest_patch, currentPatch%younger
+global_wo, %fire_mort
+global_mod, %crownfire_mort
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: site_in

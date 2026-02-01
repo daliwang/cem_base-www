@@ -1,0 +1,7 @@
+sub_in, num_vegsol, bounds, surfalb_vars, coszen, filter_vegsol
+sub_out
+global_ro, currentPatch%younger, gridCellEdState, EDpft%ED_patch, surfalb_vars%albgrd_col, pft%gridcell, gridCellEdState%elai_profile, ecophyscon%rhol, gridCellEdState%canopy_area_profile, gridCellEdState%esai_profile, ecophyscon%taul, ecophyscon%xl, gridCellEdState%clmgcell, gridCellEdState%nrad, surfalb_vars%nrad_patch, surfalb_vars%albgri_col, pft%column
+global_wo, gridCellEdState%fabi_sha_z, surfalb_vars%fabi_sha_z_patch, surfalb_vars%ftdd_patch, surfalb_vars%fabd_sun_z_patch, gridCellEdState%fabd_sun_z, gridCellEdState%fabd_sha_z, surfalb_vars%fabd_sha_z_patch, surfalb_vars%ftii_patch, gridCellEdState%tr_soil_dif, gridCellEdState%fabi_sun_z, surfalb_vars%fabi_sun_z_patch, surfalb_vars%ftid_patch, gridCellEdState%present
+global_mod, surfalb_vars%albi_patch, gridCellEdState%sabs_dif, surfalb_vars%fabd_patch, gridCellEdState%fabd, gridCellEdState%f_sun, gridCellEdState%tr_soil_dir, surfalb_vars%albd_patch, gridCellEdState%sabs_dir, gridCellEdState%fabi, surfalb_vars%fabi_patch, gridCellEdState%tr_soil_dir_dif
+global_non, ecophyscon%taus, surfalb_vars%fabi_sun_patch, surfalb_vars%vcmaxcintsun_patch, surfalb_vars%fabd_sun_patch, surfalb_vars%fsun_z_patch, surfalb_vars%fabi_sha_patch, surfalb_vars%fabd_sha_patch, surfalb_vars%vcmaxcintsha_patch, ecophyscon%rhos
+calls

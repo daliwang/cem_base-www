@@ -1,0 +1,11 @@
+sub_in, num_urbanc, num_urbanp, num_nourbanl, num_urbanl, filter_nourbanl, bounds, filter_urbanc, filter_urbanp, filter_urbanl
+sub_out
+global_ro, pps%albd, cps%frac_sno, pps%albi, lun%gridcell, pft%gridcell, urban_params%em_improad, pft%column, clm_a2l%forc_solad, clm_a2l%forc_solai, urban_params%em_roof, a2l_not_downscaled_gcell%forc_lwrad, lun%wtroad_perv, col%itype, ces%t_grnd, urban_params%em_perroad, pft%landunit
+global_wo, pef%fsds_nir_d_ln, pef%fsds_vis_i_ln, pef%fsr_vis_d_ln, pef%fsds_vis_d, pef%eflx_lwrad_net_u, pef%eflx_lwrad_net, pef%fsds_vis_i, pef%fsr, pef%fsds_nir_i, pef%parveg_ln, pef%fsds_nir_d, pef%fsa_u, pef%eflx_lwrad_out, pef%fsds_vis_d_ln, pef%fsr_nir_d_ln
+global_mod, lps%sabs_sunwall_dif, pef%fsr_vis_d, lps%sabs_shadewall_dir, lps%sabs_improad_dir, lps%sabs_sunwall_dir, pef%fsa, pef%sabg, lps%sabs_roof_dir, lps%sabs_shadewall_dif, pef%fsr_nir_i, lps%sabs_improad_dif, pef%fsr_vis_i, pef%sabv, lps%sabs_roof_dif, lps%sabs_perroad_dir, lps%sabs_perroad_dif, pef%fsr_nir_d
+global_non, lun%coli, grc%londeg, lun%colf, urban_params%em_wall, lun%canyon_hwr, clm_a2l%forc_solar, bounds%begl, lun%pfti, bounds%endl, lun%pftf, pes%t_ref2m
+calls, get_curr_date, net_longwave
+
+Tree height: 10
+4-, get_curr_date, 
+5+, net_longwave, 

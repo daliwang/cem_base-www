@@ -1,0 +1,7 @@
+sub_in, nc_id, phys_prop
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, nonhygro_optics_init, modal_optics_init, hygroscopic_optics_init, zero_optics_init, volcanic_radius_optics_init, insoluble_optics_init, hygro_optics_init, volcanic_optics_init, endrun

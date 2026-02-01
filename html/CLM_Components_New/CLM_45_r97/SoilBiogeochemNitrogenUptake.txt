@@ -1,0 +1,7 @@
+sub_in, bounds, sminn_vr, filter_soilc, nuptake_prof, nlevdecomp, dzsoi_decomp, num_soilc, nfixation_prof
+sub_out, nuptake_prof
+global_ro
+global_wo
+global_mod
+global_non
+calls

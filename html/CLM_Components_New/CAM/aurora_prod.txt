@@ -1,0 +1,7 @@
+sub_in, ncol, rlons, pmid, qo2p, o2, qn2p, qop, mbar, calday, tn, pbuf, rlats, o1, lchnk, qnp
+sub_out, qop, qnp, qn2p, qo2p
+global_ro
+global_wo
+global_mod
+global_non
+calls, aurora_heat, sunloc, aurora_ions, aurora_cusp, outfld

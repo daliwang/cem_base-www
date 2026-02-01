@@ -1,0 +1,16 @@
+sub_in, flag, ncid
+sub_out
+global_ro, clm3%g%l%itype, clm3%g%londeg, clm3%g%l%c%gridcell, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%landunit, clm3%g%latdeg, clm3%g%l%gridcell
+global_wo
+global_mod
+global_non, clm3%g, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, ncd_io, get_proc_bounds, get_curr_date, ncd_defvar
+
+Tree height: 9
+0 , get_proc_bounds, 
+8+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, 
+7+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 
+6+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 
+5+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 
+4+, get_curr_date, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 
+3+, ncd_defvar, ncd_defvar, 

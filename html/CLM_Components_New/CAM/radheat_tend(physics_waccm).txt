@@ -1,0 +1,7 @@
+sub_in, pbuf, flnt, flns, state, qrs, asdir, fsns, net_flx, qrl, ptend, fsnt
+sub_out, net_flx
+global_ro
+global_wo
+global_mod
+global_non
+calls, merge_qrl, t_startf, nlte_tend, waccm_hrates, t_stopf, get_solar, get_tidal_coeffs, merge_qrs, physics_ptend_init, outfld

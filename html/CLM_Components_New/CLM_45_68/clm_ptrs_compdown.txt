@@ -1,0 +1,12 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+
+Tree height: 3
+1-, endrun, 
+1+, endrun, 
+2+, endrun, endrun, endrun, 

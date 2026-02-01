@@ -1,0 +1,13 @@
+sub_param, waterstate_vars, bounds, filter, numf, soilhydrology_vars
+sub_out
+global_ro, soilhydrology_vars%max_moist_col, soilhydrology_vars%vic_clm_fract_col, soilhydrology_vars%depth_col, waterstate_vars%h2osoi_vol_col, waterstate_vars%h2osoi_ice_col, soilhydrology_vars%porosity_col, waterstate_vars%h2osoi_liq_col
+global_wo
+global_mod, soilhydrology_vars%ice_col, soilhydrology_vars%moist_vol_col, soilhydrology_vars%moist_col
+global_non, col%z, col%dz, col%zi
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: numf      ! number of column soil points in column filter
+integer                  , intent(in)    :: filter(:) ! column filter for soil points
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars

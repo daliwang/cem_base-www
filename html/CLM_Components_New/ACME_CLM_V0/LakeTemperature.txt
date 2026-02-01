@@ -1,0 +1,7 @@
+sub_in, num_lakec, filter_lakep, waterstate_vars, soilstate_vars, energyflux_vars, solarabs_vars, temperature_vars, lakestate_vars, num_lakep, waterflux_vars, filter_lakec, ch4_vars, bounds
+sub_out
+global_ro, waterstate_vars%h2osoi_ice_col, col%snl, solarabs_vars%fsr_nir_i_patch, col%z_lake, lakestate_vars%ks_col, solarabs_vars%fsds_nir_i_patch, lakestate_vars%etal_col, solarabs_vars%fsds_nir_d_patch, lakestate_vars%ws_col, col%lakedepth, solarabs_vars%fsr_nir_d_patch, col%dz, waterstate_vars%h2osoi_liq_col, solarabs_vars%sabg_lyr_patch, lakestate_vars%lake_raw_col, solarabs_vars%sabg_patch, col%dz_lake, pft%column, waterstate_vars%h2osno_col, temperature_vars%t_grnd_col, col%z
+global_wo, waterstate_vars%frac_iceold_col, lakestate_vars%savedtke1_col, waterflux_vars%qflx_snofrz_col
+global_mod, energyflux_vars%eflx_gnet_patch, energyflux_vars%eflx_sh_tot_patch, energyflux_vars%errsoi_col, temperature_vars%t_lake_col, lakestate_vars%lake_icefrac_col, ch4_vars%grnd_ch4_cond_col, energyflux_vars%eflx_soil_grnd_patch, temperature_vars%hc_soisno_col, energyflux_vars%eflx_sh_grnd_patch, lakestate_vars%betaprime_col, temperature_vars%t_soisno_col, lakestate_vars%lakeresist_col, temperature_vars%hc_soi_col, lakestate_vars%lake_icethick_col
+global_non
+calls, Tridiagonal, SoilThermProp_Lake, PhaseChange_Lake

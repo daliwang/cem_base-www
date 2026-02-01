@@ -1,0 +1,7 @@
+sub_in, err_code, xp2_threshold, high_lev_effect, xm_tol, xm_old, dt, wm_zt, solve_type, low_lev_effect, wpxp, rho_ds_zm, invrs_rho_ds_zt, xm_forcing, rho_ds_zt, xm, l_implemented, xp2, invrs_rho_ds_zm
+sub_out, wpxp, err_code, xm
+global_ro
+global_wo
+global_mod
+global_non
+calls, mfl_xm_rhs, stat_begin_update, mfl_xm_lhs, stat_update_var, mfl_xm_solve, stat_end_update

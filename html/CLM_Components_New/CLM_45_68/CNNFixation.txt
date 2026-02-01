@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, cps%col_lag_npp, cps%cannsum_npp
+global_wo, cnf%nfix_to_sminn
+global_mod
+global_non
+calls
+
+Tree height: 3

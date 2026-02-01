@@ -1,0 +1,7 @@
+sub_in, index_beg, index_end
+sub_out, index_beg, index_end
+global_ro
+global_wo
+global_mod
+global_non
+calls

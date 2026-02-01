@@ -1,0 +1,27 @@
+sub_param, solarabs_vars:14, dayl_factor:10, phosphorusstate_vars:18, oair:6, temperature_vars:12, cair:7, eair:5, phase:19, nitrogenstate_vars:17, fn:2, rb:8, atm2lnd_vars:11, bounds:1, canopystate_vars:15, btran:9, filterp:3, esat_tv:4, photosyns_vars:16, surfalb_vars:13
+sub_out
+global_ro| pft%column, column, NONE| ecophyscon%flnr, flnr, NONE| canopystate_vars%laisun_z_patch, lai_z, NONE| canopystate_vars%laisha_z_patch, lai_z, NONE| solarabs_vars%parsha_z_patch, par_z, NONE| solarabs_vars%parsun_z_patch, par_z, NONE| ecophyscon%lmrse, lmrse, NONE| ecophyscon%jmaxha, jmaxha, NONE| ecophyscon%vcmaxha, vcmaxha, NONE| ecophyscon%vcmaxhd, vcmaxhd, NONE| ecophyscon%c3psn, c3psn, NONE| pft%itype, itype, NONE| surfalb_vars%nrad_patch, nrad, NONE| ecophyscon%tpuhd, tpuhd, NONE| ecophyscon%cpha, cpha, NONE| phosphorusstate_vars%leafp_patch, leafp, NONE| ecophyscon%tpuha, tpuha, NONE| photosyns_vars%gs_mol_patch, gs_mol, NONE| ecophyscon%leafcn, leafcn, NONE| ecophyscon%koha, koha, NONE| ecophyscon%i_vc, i_vcmax, NONE| ecophyscon%s_vc, s_vcmax, NONE| ecophyscon%jmaxhd, jmaxhd, NONE| ecophyscon%fnr, fnr, NONE| surfalb_vars%tlai_z_patch, tlai_z, NONE| temperature_vars%thm_patch, tgcm, NONE| ecophyscon%fnitr, fnitr, NONE| ecophyscon%lmrha, lmrha, NONE| temperature_vars%t_veg_patch, t_veg, NONE| ecophyscon%kcha, kcha, NONE| ecophyscon%slatop, slatop, NONE| surfalb_vars%vcmaxcintsha_patch, vcmaxcint, NONE| surfalb_vars%vcmaxcintsun_patch, vcmaxcint, NONE| ecophyscon%lmrhd, lmrhd, NONE| nitrogenstate_vars%leafn_patch, leafn, NONE| temperature_vars%t_a10_patch, t10, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE
+global_wo| photosyns_vars%kc_patch, kc, NONE| photosyns_vars%psnsha_wp_patch, psn_wp, NONE| photosyns_vars%psnsun_wp_patch, psn_wp, NONE| photosyns_vars%psnsha_patch, psn, NONE| photosyns_vars%psnsun_patch, psn, NONE| photosyns_vars%rssun_patch, rs, NONE| photosyns_vars%rssha_patch, rs, NONE| photosyns_vars%lmrsun_patch, lmr, NONE| photosyns_vars%lmrsha_patch, lmr, NONE| photosyns_vars%ko_patch, ko, NONE| photosyns_vars%alphapsnsun_patch, alphapsn, NONE| photosyns_vars%alphapsnsha_patch, alphapsn, NONE| photosyns_vars%rh_leaf_patch, rh_leaf, NONE| photosyns_vars%kp_z_patch, kp_z, NONE| photosyns_vars%psnsha_wc_patch, psn_wc, NONE| photosyns_vars%psnsun_wc_patch, psn_wc, NONE| photosyns_vars%cp_patch, cp, NONE| photosyns_vars%tpu_z_patch, tpu_z, NONE| photosyns_vars%psnsun_wj_patch, psn_wj, NONE| photosyns_vars%psnsha_wj_patch, psn_wj, NONE
+global_mod| photosyns_vars%an_patch, an, NONE| photosyns_vars%aj_patch, aj, NONE| photosyns_vars%theta_cj_patch, theta_cj, NONE| ecophyscon%theta_cj, theta_cj, NONE| photosyns_vars%cisha_z_patch, ci_z, NONE| photosyns_vars%cisun_z_patch, ci_z, NONE| photosyns_vars%ac_patch, ac, NONE| photosyns_vars%gb_mol_patch, gb_mol, NONE| photosyns_vars%mbb_patch, mbb, NONE| photosyns_vars%rssun_z_patch, rs_z, NONE| photosyns_vars%rssha_z_patch, rs_z, NONE| photosyns_vars%c3flag_patch, c3flag, NONE| photosyns_vars%ap_patch, ap, NONE| ecophyscon%mbbopt, mbbopt, NONE| photosyns_vars%vcmax_z_patch, vcmax_z, NONE| ecophyscon%qe, qe, NONE| photosyns_vars%qe_patch, qe, NONE| ecophyscon%bbbopt, bbbopt, NONE| photosyns_vars%lmrsun_z_patch, lmr_z, NONE| photosyns_vars%lmrsha_z_patch, lmr_z, NONE| photosyns_vars%ag_patch, ag, NONE| photosyns_vars%psnsun_z_patch, psn_z, NONE| photosyns_vars%psnsha_z_patch, psn_z, NONE| ecophyscon%act25, act25, NONE| photosyns_vars%bbb_patch, bbb, NONE
+global_non| nitrogenstate_vars%leafn_xfer_patch, leafn_xfer, NONE| phosphorusstate_vars%leafp_xfer_patch, leafp_xfer, NONE| nitrogenstate_vars%leafn_storage_patch, leafn_storage, NONE| phosphorusstate_vars%leafp_storage_patch, leafp_storage, NONE
+calls, hybrid, endrun, quadratic
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: fn                             ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                    ! patch filter
+real(r8)               , intent(in)    :: esat_tv( bounds%begp: )        ! saturation vapor pressure at t_veg (Pa) [pft]
+real(r8)               , intent(in)    :: eair( bounds%begp: )           ! vapor pressure of canopy air (Pa) [pft]
+real(r8)               , intent(in)    :: oair( bounds%begp: )           ! Atmospheric O2 partial pressure (Pa) [pft]
+real(r8)               , intent(in)    :: cair( bounds%begp: )           ! Atmospheric CO2 partial pressure (Pa) [pft]
+real(r8)               , intent(in)    :: rb( bounds%begp: )             ! boundary layer resistance (s/m) [pft]
+real(r8)               , intent(in)    :: btran( bounds%begp: )          ! transpiration wetness factor (0 to 1) [pft]
+real(r8)               , intent(in)    :: dayl_factor( bounds%begp: )    ! scalar (0-1) for daylength
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(surfalb_type)     , intent(in)    :: surfalb_vars
+type(solarabs_type)    , intent(in)    :: solarabs_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars
+type(nitrogenstate_type)  , intent(inout) :: nitrogenstate_vars
+type(phosphorusstate_type), intent(inout) :: phosphorusstate_vars
+character(len=*)       , intent(in)    :: phase                          ! 'sun' or 'sha'

@@ -1,0 +1,7 @@
+sub_in, il2, iu3, Nnite, iu1, iu2, IdxDay, il1, Nday, Array, il3, IdxNite
+sub_out, Array
+global_ro
+global_wo
+global_mod
+global_non
+calls

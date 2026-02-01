@@ -1,0 +1,12 @@
+sub_param, mpicom_lnd, LNDID, bounds, gsMap_lnd
+sub_out
+global_ro, ldomain%nj, ldecomp%gdc2glo, bounds%endg, bounds%begg, ldomain%ni
+global_wo
+global_mod
+global_non
+calls, mct_gsMap_init
+readParams,
+type(bounds_type) , intent(in)  :: bounds     ! bounds
+integer           , intent(in)  :: mpicom_lnd ! MPI communicator for the clm land model
+integer           , intent(in)  :: LNDID      ! Land model identifyer number
+type(mct_gsMap)   , intent(out) :: gsMap_lnd  ! Resulting MCT GS map for the land model

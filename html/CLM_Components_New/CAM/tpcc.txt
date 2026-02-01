@@ -1,0 +1,7 @@
+sub_in, ng_d, al, iord, a6, jord, jm, fx, cry, ar, dm, ffsl, im, crx, q, ng_c, jlast, qtmp, ymass, jfirst, va, fy, cose
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, ycc, xtpv

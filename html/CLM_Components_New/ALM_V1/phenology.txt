@@ -1,0 +1,11 @@
+sub_param, temperature_vars, waterstate_vars, g
+sub_out
+global_ro, waterstate_vars%h2osoi_vol_col, gridCellEdState%clmcolumn, udata%time_period, temperature_vars%t_veg24_patch, gridCellEdState%clm_pno
+global_wo, gridCellEdState%dstatus, gridCellEdState%gdd
+global_mod, gridCellEdState%status, gridCellEdState%ncd, gridCellEdState%last_n_days, gridCellEdState%leafondate, gridCellEdState%dleafondate, gridCellEdState%dleafoffdate, gridCellEdState%water_memory, gridCellEdState%leafoffdate
+global_non, gridCellEdState, temperature_vars%gdd0_patch
+calls, phenology_leafonoff
+readParams,
+integer                , intent(in) :: g         !grid point
+type(temperature_type) , intent(in) :: temperature_vars
+type(waterstate_type)  , intent(in) :: waterstate_vars

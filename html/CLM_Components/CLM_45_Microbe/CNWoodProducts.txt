@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, hrv_deadstemn_to_prod100n, dwt_prod10c_gain, dwt_prod10n_gain, hrv_deadstemn_to_prod10n, hrv_deadstemc_to_prod100c, dwt_prod100n_gain, hrv_deadstemc_to_prod10c, dwt_prod100c_gain
+global_wo
+global_mod, prod10n_loss, prod10c_loss, prod10n, prod100n_loss, prod100c, prod100n, prod10c, prod100c_loss
+global_non, c
+calls

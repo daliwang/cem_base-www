@@ -1,0 +1,10 @@
+sub_in, filter_vegsol, coszen, rho, tau, num_vegsol, bounds
+sub_out
+global_ro, pps%nrad, cps%albgri, pftcon%xl, cps%albgrd, pps%fwet, pps%tlai_z, pps%elai, pps%tsai_z, pes%t_veg, pps%esai
+global_wo
+global_mod, pps%albd, pps%fabd_sun, pps%vcmaxcintsun, pps%fabi_sun, pps%ftid, pps%vcmaxcintsha, pps%fabi_sha, pps%fabi_sun_z, pps%albi, pps%fabd, pps%fabi, pps%fsun_z, pps%fabi_sha_z, pps%ftdd, pps%fabd_sun_z, pps%ftii, pps%fabd_sha, pps%fabd_sha_z
+global_non
+calls, shr_assert
+
+Tree height: 6
+0 , shr_assert, shr_assert, shr_assert, 

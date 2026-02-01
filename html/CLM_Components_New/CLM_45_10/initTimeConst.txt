@@ -1,0 +1,11 @@
+sub_in
+sub_out
+global_ro, clm3%g%l%c%gridcell, clm3%g%l%c%cps%cellsand, clm3%g%l%c%cps%cellorg, clm3%g%l%c%cps%cellclay, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cws%h2osoi_ice
+global_wo, clm3%g%l%c%cps%tksatu, clm3%g%l%c%cps%watopt, clm3%g%l%c%cps%csol, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cps%z, clm3%g%l%c%cps%tkdry, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%watdry, clm3%g%l%c%cps%watfc
+global_mod, clm3%g%l%c%cps%tkmg, clm3%g%l%c%cps%z_lake, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%lakedepth, clm3%g%l%c%cps%dz_lake, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%hksat
+global_non
+calls, get_proc_bounds, get_proc_global, endrun
+
+Tree height: 7
+1+, get_proc_bounds, get_proc_global, 
+6-, endrun, 

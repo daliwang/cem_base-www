@@ -1,0 +1,7 @@
+sub_in, xl_in, alpha_in, xk_in, Qsca, df_in, rmon, rc, xv, xn_in, ang, nb_in, carma, gfac, Qext
+sub_out, rc, gfac
+global_ro
+global_wo
+global_mod
+global_non
+calls, cmie

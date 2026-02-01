@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch
+global_wo
+global_mod
+global_non
+calls, canopy_structure, terminate_cohorts, trim_canopy, canopy_spread, ed_total_balance_check

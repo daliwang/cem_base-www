@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, waterstate_vars, numf, filter
+sub_out
+global_ro, canopystate_vars%dewmx_patch, canopystate_vars%esai_patch, waterstate_vars%h2ocan_patch, canopystate_vars%elai_patch, canopystate_vars%frac_veg_nosno_patch
+global_wo, waterstate_vars%fdry_patch
+global_mod, waterstate_vars%fwet_patch
+global_non
+calls

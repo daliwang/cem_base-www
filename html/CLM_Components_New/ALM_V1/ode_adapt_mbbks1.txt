@@ -1,0 +1,14 @@
+sub_param, dt, y, nprimeq, odefun, y0, t, neq
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_tscal, mbbks, odefun
+readParams,
+real(r8), intent(in)  :: y0(neq)  ! state variable at previous time step
+real(r8), intent(in)  :: t        ! time stamp
+real(r8), intent(in)  :: dt       ! time stepping
+integer,  intent(in)  :: nprimeq  !
+integer,  intent(in)  :: neq      ! number of equations
+real(r8), intent(out) :: y(neq)   ! updated state variable

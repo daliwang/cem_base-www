@@ -1,0 +1,7 @@
+sub_in, local_max, min_phi, local_min, cell_value, value
+sub_out, min_phi
+global_ro
+global_wo
+global_mod
+global_non
+calls

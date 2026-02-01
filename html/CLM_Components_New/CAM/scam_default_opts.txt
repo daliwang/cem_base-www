@@ -1,0 +1,7 @@
+sub_in, iopfile_out, scmlon_out, scm_clubb_iop_name_out, scm_relaxation_out, single_column_out, scm_crm_mode_out, scm_iop_srf_prop_out, scm_diurnal_avg_out, scmlat_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

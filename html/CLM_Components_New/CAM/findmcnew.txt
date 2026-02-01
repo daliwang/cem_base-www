@@ -1,0 +1,7 @@
+sub_in, fice, fsaut, precab, k, psacio, coef, pracwo, cwm, cldm, t, p, snowh, cldmax, lchnk, snowab, ncol, psacwo, fwaut, fracw, fsaci, fsacw, seaicef
+sub_out, fsaut, psacwo, psacio, fracw, pracwo, coef, fwaut, fsacw, fsaci
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_rlat_all_p

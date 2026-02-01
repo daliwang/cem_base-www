@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro, pft%itype, pft%gridcell, pft%landunit
+global_wo, pft%wtcol
+global_mod
+global_non
+calls, wtpatch%get_current_data, dynpft_file%time_info%set_current_year_get_year
+readParams,dynpft_read_consistency_nl
+type(bounds_type), intent(in) :: bounds  ! proc-level bounds

@@ -1,0 +1,12 @@
+sub_param, currentPatch:1, waterstate_vars:4, soilstate_vars:3, temperature_vars:2
+sub_out
+global_ro| currentPatch%leaf_litter, leaf_litter, NONE| currentPatch%clm_pno, clm_pno, NONE| udata%deltat!kgC, deltat!kgC, NONE| currentPatch%btran_ft, btran_ft, NONE| currentPatch%root_litter, root_litter, NONE| %clmcolumn, clmcolumn, NONE| currentPatch%cwd_ag, cwd_ag, NONE| currentPatch%cwd_bg, cwd_bg, NONE| currentPatch%area, area, NONE| waterstate_vars%h2osoi_vol_col, h2osoi, NONE| soilstate_vars%watsat_col, watsat, NONE
+global_wo
+global_mod| currentPatch%leaf_litter_out, leaf_litter_out, NONE| currentPatch%cwd_ag_out, cwd_ag_out, NONE| currentPatch%cwd_bg_out, cwd_bg_out, NONE| %flux_out, flux_out, NONE| currentPatch%root_litter_out, root_litter_out, NONE
+global_non| currentPatch%siteptr, currentSite, NONE| temperature_vars%t_veg24_patch, t_veg24, NONE
+calls
+readParams,
+type(patch)            , intent(inout), pointer :: currentPatch
+type(temperature_type) , intent(in)             :: temperature_vars
+type(soilstate_type)   , intent(in)             :: soilstate_vars
+type(waterstate_type)  , intent(in)             :: waterstate_vars

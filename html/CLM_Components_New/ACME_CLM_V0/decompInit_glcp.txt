@@ -1,0 +1,7 @@
+sub_in, lns, lnj, glcmask, lni
+sub_out
+global_ro, procinfo%begl, %begl, procinfo%begg, %begg, procinfo%nclumps, %endCohort, procinfo%endCohort, %endp, procinfo%endp, %endl, procinfo%endl, procinfo%ncols, %ncols, pft%gridcell, col%gridcell, coh%gridcell, %endg, procinfo%endg, procinfo%ncells, %ncells, procinfo%cid, %nCohorts, procinfo%nCohorts, procinfo%npfts, %npfts, %begCohort, procinfo%begCohort, %nlunits, procinfo%nlunits, %begp, procinfo%begp, procinfo%endc, %endc, procinfo%begc, %begc
+global_wo
+global_mod
+global_non
+calls, mpi_barrier, gather_data_to_master, endrun, mct_gsMap_init, shr_sys_flush, scatter_data_from_master, to, get_proc_bounds, get_proc_global, subgrid_get_gcellinfo

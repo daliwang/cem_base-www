@@ -1,0 +1,7 @@
+sub_in, recvtype, sendtype, steps, nprocs, sendbuf, dests, mytid, recvwin, recvcnts, msgtag, sdispls, rbuf_siz, sendcnts, rdispls, desttype, sbuf_siz, recvbuf, pdispls, comm, option
+sub_out, recvbuf
+global_ro
+global_wo
+global_mod
+global_non
+calls, swapm, mpi_alltoallv, mpi_put, t_startf, endrun, mpi_sendrecv, t_stopf, mpi_win_fence, sync_images

@@ -1,0 +1,9 @@
+sub_param, site_in:1
+sub_out
+global_ro| %cfa, cfa, NONE| site_in%oldest_patch, currentPatch, NONE| currentPatch%younger, currentPatch, NONE| %pft, pft, NONE| EDecophyscon%crown_kill, crown_kill, NONE| currentPatch%tallest, currentCohort, NONE| currentCohort%shorter, currentCohort, NONE| %cambial_mort, cambial_mort, NONE
+global_wo| %fire_mort, fire_mort, NONE
+global_mod| %crownfire_mort, crownfire_mort, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: site_in

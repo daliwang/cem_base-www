@@ -1,0 +1,12 @@
+sub_param, bounds, nlevgrnd, nlevsoi, rootfr
+sub_out, rootfr
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds                     ! bounds
+integer,           intent(in) :: nlevsoi                    ! number of hydactive layers
+integer,           intent(in) :: nlevgrnd                   ! number of soil layers
+real(r8),          intent(out):: rootfr(bounds%begp: , 1: ) !

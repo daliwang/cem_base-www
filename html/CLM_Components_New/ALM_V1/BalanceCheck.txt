@@ -1,0 +1,18 @@
+sub_param, canopystate_vars, waterflux_vars, num_do_smb_c, energyflux_vars, atm2lnd_vars, filter_do_smb_c, solarabs_vars, glc2lnd_vars, waterstate_vars, bounds
+sub_out
+global_ro, waterflux_vars%qflx_glcice_frz_col, waterstate_vars%h2osno_old_col, col%itype=, lun%itype=, waterstate_vars%h2osno_col, waterflux_vars%qflx_snow_h2osfc_col, surfalb_vars%albd_patch, atm2lnd_vars%forc_solai_grc, waterflux_vars%qflx_h2osfc_to_ice_col, atm2lnd_vars%forc_solad_grc, waterstate_vars%frac_sno_col, waterstate_vars%do_capsnow_col, waterstate_vars%endwb_col, energyflux_vars%eflx_soil_grnd_patch, canopystate_vars%elai_patch, solarabs_vars%fsa_patch, waterflux_vars%qflx_sl_top_soil_col, waterflux_vars%qflx_h2osfc_surf_col, waterflux_vars%qflx_drain_perched_col, waterflux_vars%qflx_snow_melt_col, waterflux_vars%qflx_dew_grnd_col, canopystate_vars%esai_patch, surfalb_vars%ftid_patch, surfalb_vars%fabi_patch, waterflux_vars%qflx_dew_snow_col, waterflux_vars%qflx_surf_col, energyflux_vars%errsoi_col, waterflux_vars%qflx_irrig_col, energyflux_vars%eflx_lwrad_out_patch, solarabs_vars%sabg_soil_patch, col%snl, waterflux_vars%qflx_sub_snow_col, waterstate_vars%frac_sno_eff_col, energyflux_vars%eflx_traffic_patch, solarabs_vars%sabv_patch, waterflux_vars%qflx_glcice_melt_col, energyflux_vars%eflx_sh_tot_patch, solarabs_vars%sabg_snow_patch, col%itype, lun%itype, solarabs_vars%sabg_patch, waterflux_vars%qflx_prec_grnd_col, waterflux_vars%qflx_qrgwl_col, pft%column, glc2lnd_vars%glc_dyn_runoff_routing_grc, solarabs_vars%sabg_chk_patch, waterflux_vars%qflx_snwcp_liq_col, waterflux_vars%qflx_snwcp_ice_col, atm2lnd_vars%forc_lwrad_downscaled_col, surfalb_vars%ftdd_patch, surfalb_vars%fabd_patch, waterflux_vars%qflx_drain_col, surfalb_vars%ftii_patch, waterflux_vars%qflx_evap_grnd_col, atm2lnd_vars%forc_rain_downscaled_col, waterflux_vars%qflx_floodc_col, surfalb_vars%albi_patch, waterflux_vars%qflx_rain_grnd_col, energyflux_vars%eflx_lh_tot_patch, pft%landunit, col%landunit, waterflux_vars%qflx_top_soil_col, solarabs_vars%fsr_patch, waterflux_vars%qflx_evap_tot_col, energyflux_vars%eflx_lwrad_net_patch, energyflux_vars%eflx_wasteheat_patch, col%gridcell, pft%gridcell, waterstate_vars%begwb_col, atm2lnd_vars%forc_snow_downscaled_col, waterflux_vars%qflx_snow_grnd_col, energyflux_vars%eflx_heat_from_ac_patch
+global_wo, energyflux_vars%netrad_patch
+global_mod, waterstate_vars%errh2osno_col, energyflux_vars%errsol_patch, energyflux_vars%errseb_patch, energyflux_vars%errlon_patch, waterstate_vars%errh2o_col, waterflux_vars%snow_sinks_col, waterflux_vars%snow_sources_col
+global_non, waterflux_vars%qflx_liq_dynbal_grc, waterflux_vars%qflx_runoff_col, waterflux_vars%qflx_evap_soi_col, waterflux_vars%qflx_glcice_col, waterflux_vars%qflx_ice_dynbal_grc, atm2lnd_vars%volr_grc, energyflux_vars%eflx_dynbal_grc
+calls, endrun
+readParams,
+type(bounds_type)     , intent(in)    :: bounds
+integer               , intent(in)    :: num_do_smb_c        ! number of columns in filter_do_smb_c
+integer               , intent(in)    :: filter_do_smb_c (:) ! column filter for points where SMB calculations are done
+type(atm2lnd_type)    , intent(in)    :: atm2lnd_vars
+type(glc2lnd_type)    , intent(in)    :: glc2lnd_vars
+type(solarabs_type)   , intent(in)    :: solarabs_vars
+type(waterflux_type)  , intent(inout) :: waterflux_vars
+type(waterstate_type) , intent(inout) :: waterstate_vars
+type(energyflux_type) , intent(inout) :: energyflux_vars
+type(canopystate_type), intent(inout) :: canopystate_vars

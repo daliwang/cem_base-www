@@ -1,0 +1,15 @@
+sub_param, waterflux_vars, num_hydrologyc, num_urbanc, h2osoi_liq, bounds, filter_hydrologyc, filter_urbanc
+sub_out
+global_ro
+global_wo
+global_mod, waterflux_vars%qflx_drain_vr_col
+global_non
+calls
+readParams,
+type(bounds_type)       , intent(in)    :: bounds               ! bounds
+integer                 , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                 , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                 , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                 , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+type(waterflux_type)    , intent(inout) :: waterflux_vars
+real(r8)                , intent(in)    :: h2osoi_liq(bounds%begc: , 1: )  !mm H2O/m2 eqv. kg H2O/m2

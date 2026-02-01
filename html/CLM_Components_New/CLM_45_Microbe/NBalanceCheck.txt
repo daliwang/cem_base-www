@@ -1,0 +1,10 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%l%c%cnf%smin_no3_runoff, clm3%g%l%c%cnf%f_n2o_nit, clm3%g%l%c%cnf%col_fire_nloss, clm3%g%l%c%cnf%som_n_leached, clm3%g%l%c%cnf%denit, clm3%g%l%c%cnf%sminn_leached, clm3%g%l%c%cnf%nfix_to_sminn, clm3%g%l%c%cnf%smin_no3_leached, clm3%g%l%c%cnf%supplement_to_sminn, clm3%g%l%c%cnf%product_nloss, clm3%g%l%c%cns%totcoln, clm3%g%l%c%cnf%ndep_to_sminn, clm3%g%l%c%cnbal%begnb, clm3%g%l%c%cnf%dwt_nloss
+global_wo
+global_mod, clm3%g%l%c%cnf%col_noutputs, clm3%g%l%c%cnbal%errnb, clm3%g%l%c%cnf%col_ninputs, clm3%g%l%c%cnbal%endnb
+global_non, clm3%g%l%c%cnf%fert_to_sminn, clm3%g%l%c%cnf%soyfixn_to_sminn
+calls, endrun
+
+Tree height: 3
+2+, endrun, 

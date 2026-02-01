@@ -1,0 +1,7 @@
+sub_in, m_cnst, ncid_ini, fieldname, dyn_in, grid, ncid_topo
+sub_out
+global_ro
+global_wo
+global_mod, phisxy, psxy, tracer, t3xy
+global_non, dyn_in%v3s, dyn_in%u3s
+calls, tracers_init_cnst, aoa_tracers_init_cnst, carma_init_cnst, random_seed, par_xsum, endrun, random_number, get_horiz_grid_dim_d, get_block_gcol_d, stratiform_init_cnst, chem_init_cnst, microp_driver_init_cnst, co2_init_cnst

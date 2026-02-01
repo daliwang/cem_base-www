@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, rad_aer_diag_init, list_init2, physprop_init, init_mode_comps, rad_gas_diag_init, endrun

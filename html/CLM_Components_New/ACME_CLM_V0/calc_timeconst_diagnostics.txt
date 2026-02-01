@@ -1,0 +1,7 @@
+sub_in, this, bounds
+sub_out
+global_ro, ldomain%lonc
+global_wo, this%gris_mask_grc, this%gris_area_grc, this%aais_mask_grc, this%aais_area_grc
+global_mod, ldomain%latc
+global_non
+calls

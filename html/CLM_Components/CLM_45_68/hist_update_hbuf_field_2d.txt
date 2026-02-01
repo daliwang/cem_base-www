@@ -1,0 +1,7 @@
+sub_in, num2d, bounds, f, t
+sub_out
+global_ro, clmptr_ra
+global_wo
+global_mod, active, tape, tape
+global_non
+calls, c2g, l2g, p2g, shr_assert, endrun, hist_set_snow_field_2d

@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, pft, currentCohort, dbh, tau_l
+global_wo, cambial_mort
+global_mod, currentPatch
+global_non
+calls

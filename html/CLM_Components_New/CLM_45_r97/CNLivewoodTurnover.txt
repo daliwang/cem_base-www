@@ -1,0 +1,7 @@
+sub_in, cnveg_carbonflux_inst, cnveg_nitrogenstate_inst, filter_soilp, cnveg_carbonstate_inst, cnveg_nitrogenflux_inst, num_soilp
+sub_out
+global_ro, livewdcn, livestemc, ivt, livecrootc, woody, deadwdcn
+global_wo, livecrootn_to_retransn, livecrootc_to_deadcrootc, livestemc_to_deadstemc, livestemn_to_retransn
+global_mod, livecrootn_to_deadcrootn, livestemn_to_deadstemn
+global_non, cnveg_nitrogenstate_inst%livestemn_patch, cnveg_nitrogenstate_inst%livecrootn_patch
+calls

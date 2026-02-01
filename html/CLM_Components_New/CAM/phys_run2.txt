@@ -1,0 +1,7 @@
+sub_in, cam_in, phys_state, cam_out, pbuf2d, ztodt, phys_tend
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, pbuf_get_chunk
+calls, diag_surf, pbuf_deallocate, lightning_no_prod, get_met_srf2, t_barrierf, t_startf, diag_deallocate, t_stopf, carma_accumulate_stats, pbuf_update_tim_idx, tphysac, gmean_mass, t_adj_detailf

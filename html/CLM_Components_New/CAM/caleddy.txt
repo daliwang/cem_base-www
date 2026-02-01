@@ -1,0 +1,7 @@
+sub_in, kvh_in, bprod, chs, ebrk, ncvfin_f, web_CL, u, ustar, n2, cms, kbase_o, pcols, sfuh, pver, cmu, pblhp, rrho, s2, sprod, slv, qrlin, wsedl, kvm_in, sh_a, ipbl, pi, n2ht_CL, kbase_mg, tpert, wet_CL, slslope, lwp_CL, minpblh, kpblh, chu, wpert, sm_a, qflx, z, sl, wstar_CL, jt2slv_CL, ktop_f, zi, qt, sm_aw, evhc_CL, ri, wstarent, shflx, leng, jtbu_CL, v, gh_a, ncvfin_o, wbrk, pblh, wcap, kbase_f, shcl, turbtype, tkes, n2hb_CL, ghcl, ktop_o, radinvfrac_CL, tke, kvh, kvf, smcl, ncvfin_mg, sflh, ktop_mg, kvm, radf_CL, wstar3fact_CL, ql, cld, qpert, opt_depth_CL, ricl, jbbu_CL, qtslope, ncol, ri_a, lbrk
+sub_out, ktop_o, n2hb_CL, ghcl, tke, radinvfrac_CL, kvh, ncvfin_mg, smcl, sh_a, n2ht_CL, ipbl, ktop_mg, wet_CL, tpert, radf_CL, kbase_mg, kvm, lwp_CL, wstar3fact_CL, kpblh, sm_a, wpert, ricl, opt_depth_CL, qpert, jbbu_CL, lbrk, ri_a, wstar_CL, bprod, ncvfin_f, web_CL, ebrk, jt2slv_CL, ktop_f, sm_aw, evhc_CL, kbase_o, jtbu_CL, leng, ncvfin_o, gh_a, wbrk, pblhp, pblh, wcap, sprod, shcl, kbase_f, tkes, turbtype
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, exacol, zisocl

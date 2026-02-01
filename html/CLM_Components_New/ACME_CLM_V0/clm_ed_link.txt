@@ -1,0 +1,7 @@
+sub_in, bounds, waterstate_vars, canopystate_vars, carbonstate_vars, nitrogenstate_vars, EDbio_vars, geds_local, carbonflux_vars
+sub_out
+global_ro, %hite, col%gridcell, %pft, %bsw, %bstore, %br, %bdead, currentSite%oldest_patch, currentPatch%younger, ecophyscon%leafcn, pft%column, %tallest, %balive, %area, col%pfti
+global_wo, canopystate_vars%esai_patch, geds_local%clmcolumn, EDpft%ED_bareground, %livecrootn, canopystate_vars%hbot_patch, %livestemn, %patchno, %lai, canopystate_vars%tsai_patch, canopystate_vars%elai_patch, %b, EDpft%ED_patch, canopystate_vars%tlai_patch
+global_mod, EDpft%wtED, canopystate_vars%htop_patch, %total_canopy_area, %bare_frac_area, %treelai, %c_area, currentPatch%shortest, currentCohort%taller, %clm_pno, %total_tree_area
+global_non, geds_local
+calls, clm_leaf_area_profile, clm_indices, update_ed_history_variables, root_fraction

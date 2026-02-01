@@ -1,0 +1,11 @@
+sub_param, filterc:3, numfc:2, colarr:5, lev:1, pftarr:4
+sub_out, colarr
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer , intent(in)  :: lev
+integer , intent(in)  :: numfc
+integer , intent(in)  :: filterc(numfc)

@@ -1,0 +1,7 @@
+sub_in, waterflux_inst, bounds, dhsdT, urbanparams_inst, filter_nolakec, hs_h2osfc, num_nolakec, sabg_lyr_col, hs_top, hs_top_snow, hs_soil, waterstate_inst, temperature_inst, solarabs_inst, energyflux_inst, canopystate_inst, atm2lnd_inst
+sub_out, hs_h2osfc, dhsdT, hs_soil, hs_top_snow, hs_top, sabg_lyr_col
+global_ro, eflx_sh_soil, frac_veg_nosno, sabg_lyr, sabg_snow, eflx_sh_grnd, emg, t_h2osfc, htvp, qflx_ev_h2osfc, qflx_ev_snow, cgrnd, eflx_traffic, t_grnd, eflx_sh_snow, eflx_wasteheat, eflx_sh_h2osfc, sabg_soil, forc_lwrad, sabg, frac_sno_eff, t_soisno, qflx_tran_veg, snl, qflx_ev_soil, eflx_lwrad_net, qflx_evap_soi, dlrad, eflx_heat_from_ac
+global_wo, eflx_anthro, sabg_chk
+global_mod, eflx_gnet, dgnetdT, eflx_traffic_patch, eflx_heat_from_ac_patch, eflx_wasteheat_patch
+global_non, col%z, bounds%endc, bounds%begc
+calls

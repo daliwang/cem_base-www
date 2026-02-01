@@ -1,0 +1,65 @@
+group_id,group_item,label
+1,7,Function Calls
+2,1,Subroutine_in
+3,2,Subroutine_out
+4,3,Global_ro
+5,4,Global_wo
+6,5,Global_mod
+7,6,Global_non
+8,1 2,Subroutine_in Subroutine_out
+9,1 3,Subroutine_in Global_ro
+10,1 4,Subroutine_in Global_wo
+11,1 5,Subroutine_in Global_mod
+12,1 6,Subroutine_in Global_non
+13,2 3,Subroutine_out Global_ro
+14,2 4,Subroutine_out Global_wo
+15,2 5,Subroutine_out Global_mod
+16,2 6,Subroutine_out Global_non
+17,3 4,Global_ro Global_wo
+18,3 5,Global_ro Global_mod
+19,3 6,Global_ro Global_non
+20,4 5,Global_wo Global_mod
+21,4 6,Global_wo Global_non
+22,5 6,Global_mod Global_non
+23,1 2 3,Subroutine_in Subroutine_out Global_ro
+24,1 2 4,Subroutine_in Subroutine_out Global_wo
+25,1 2 5,Subroutine_in Subroutine_out Global_mod
+26,1 2 6,Subroutine_in Subroutine_out Global_non
+27,1 3 4,Subroutine_in Global_ro Global_wo
+28,1 3 5,Subroutine_in Global_ro Global_mod
+29,1 3 6,Subroutine_in Global_ro Global_non
+30,1 4 5,Subroutine_in Global_wo Global_mod
+31,1 4 6,Subroutine_in Global_wo Global_non
+32,1 5 6,Subroutine_in Global_mod Global_non
+33,2 3 4,Subroutine_out Global_ro Global_wo
+34,2 3 5,Subroutine_out Global_ro Global_mod
+35,2 3 6,Subroutine_out Global_ro Global_non
+36,2 4 5,Subroutine_out Global_wo Global_mod
+37,2 4 6,Subroutine_out Global_wo Global_non
+38,2 5 6,Subroutine_out Global_mod Global_non
+39,3 4 5,Global_ro Global_wo Global_mod
+40,3 4 6,Global_ro Global_wo Global_non
+41,3 5 6,Global_ro Global_mod Global_non
+42,4 5 6,Global_wo Global_mod Global_non
+43,1 2 3 4,Subroutine_in Subroutine_out Global_ro Global_wo
+44,1 2 3 5,Subroutine_in Subroutine_out Global_ro Global_mod
+45,1 2 3 6,Subroutine_in Subroutine_out Global_ro Global_non
+46,1 2 4 5,Subroutine_in Subroutine_out Global_wo Global_mod
+47,1 2 4 6,Subroutine_in Subroutine_out Global_wo Global_non
+48,1 2 5 6,Subroutine_in Subroutine_out Global_mod Global_non
+49,1 3 4 5,Subroutine_in Global_ro Global_wo Global_mod
+50,1 3 4 6,Subroutine_in Global_ro Global_wo Global_non
+51,1 3 5 6,Subroutine_in Global_ro Global_mod Global_non
+52,1 4 5 6,Subroutine_in Global_wo Global_mod Global_non
+53,2 3 4 5,Subroutine_out Global_ro Global_wo Global_mod
+54,2 3 4 6,Subroutine_out Global_ro Global_wo Global_non
+55,2 3 5 6,Subroutine_out Global_ro Global_mod Global_non
+56,2 4 5 6,Subroutine_out Global_wo Global_mod Global_non
+57,3 4 5 6,Global_ro Global_wo Global_mod Global_non
+58,1 2 3 4 5,Subroutine_in Subroutine_out Global_ro Global_wo Global_mod
+59,1 2 3 4 6,Subroutine_in Subroutine_out Global_ro Global_wo Global_non
+60,1 2 3 5 6,Subroutine_in Subroutine_out Global_ro Global_mod Global_non
+61,1 2 4 5 6,Subroutine_in Subroutine_out Global_wo Global_mod Global_non
+62,1 3 4 5 6,Subroutine_in Global_ro Global_wo Global_mod Global_non
+63,2 3 4 5 6,Subroutine_out Global_ro Global_wo Global_mod Global_non
+64,1 2 3 4 5 6,Subroutine_in Subroutine_out Global_ro Global_wo Global_mod Global_non

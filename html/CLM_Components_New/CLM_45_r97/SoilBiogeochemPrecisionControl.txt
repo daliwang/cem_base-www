@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_carbonstate_inst, c13_soilbiogeochem_carbonstate_inst, c14_soilbiogeochem_carbonstate_inst, num_soilc, filter_soilc, soilbiogeochem_nitrogenstate_inst
+sub_out
+global_ro
+global_wo, smin_nh4_vr_col, smin_no3_vr_col
+global_mod, decomp_cpools_vr_col, decomp_npools_vr_col, ntrunc_vr_col, ctrunc_vr_col
+global_non, soilbiogeochem_carbonstate_inst, c14_soilbiogeochem_carbonstate_inst, soilbiogeochem_nitrogenstate_inst, c13_soilbiogeochem_carbonstate_inst
+calls

@@ -1,0 +1,7 @@
+sub_in, iend, totuflux, taut, plankbnd, totdflux, ncbands, nlayers, taucloud, pz, istart, fracs, planklay, totuclfl, semiss, htr, iout, fnetc, planklev, fnet, pwvcm, htrc, cldfrac, totdclfl
+sub_out, htrc, totdclfl, fnetc, fnet, htr, totuflux, totuclfl, totdflux
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, dyn_in
+sub_out
+global_ro
+global_wo, elem
+global_mod
+global_non, dyn_in%fvm
+calls, write_grid_mapping, prim_init2, prim_set_mass, nctopo_util_driver

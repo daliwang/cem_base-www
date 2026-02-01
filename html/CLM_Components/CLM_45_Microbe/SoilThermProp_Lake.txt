@@ -1,0 +1,7 @@
+sub_in, cv, filter_lakec, ubc, num_lakec, tktopsoillay, lbc, tk
+sub_out, cv, tk
+global_ro, csol, watsat, snl, h2osoi_liq, tksatu, z, zi, tkdry, h2osoi_ice, dz, t_soisno, tkmg
+global_wo
+global_mod
+global_non
+calls

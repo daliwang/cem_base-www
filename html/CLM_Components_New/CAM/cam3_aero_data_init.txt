@@ -1,0 +1,7 @@
+sub_in, phys_state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, shr_scam_GetCloseLatLon, mpibcast, endrun, getfil, scatter_field_to_chunk, boundarydata_init, handle_ncerr, t_startf

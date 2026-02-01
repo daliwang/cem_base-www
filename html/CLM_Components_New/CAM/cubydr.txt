@@ -1,0 +1,7 @@
+sub_in, wdy, nlon, jcen, fyt, jdp, fyb, pf, fint
+sub_out, fyt, fyb
+global_ro
+global_wo
+global_mod
+global_non
+calls, whenieq, endrun

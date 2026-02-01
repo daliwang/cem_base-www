@@ -1,0 +1,19 @@
+sub_param, filter_soilp, num_nolakec, filter_nolakec, num_soilp, waterflux_vars, canopystate_vars, bounds, num_nolakep, waterstate_vars, energyflux_vars, filter_nolakep
+sub_out
+global_ro, waterstate_vars%h2osno_col, canopystate_vars%frac_veg_nosno_alb_patch, waterstate_vars%h2osoi_liq_col, col%snl, waterstate_vars%h2osoi_ice_col, col%landunit
+global_wo, photosyns_vars%cisha_z_patch, energyflux_vars%eflx_bot_col, waterstate_vars%h2osno_old_col, waterflux_vars%qflx_glcice_col, photosyns_vars%cisun_z_patch, waterstate_vars%frac_iceold_col, waterstate_vars%do_capsnow_col, canopystate_vars%frac_veg_nosno_patch
+global_mod
+global_non, canopystate_vars%elai_patch, canopystate_vars%esai_patch
+calls
+readParams,
+type(bounds_type)     , intent(in)    :: bounds
+integer               , intent(in)    :: num_nolakec       ! number of non-lake points in column filter
+integer               , intent(in)    :: filter_nolakec(:) ! column filter for non-lake points
+integer               , intent(in)    :: num_nolakep       ! number of non-lake points in patch filter
+integer               , intent(in)    :: filter_nolakep(:) ! patch filter for non-lake points
+integer               , intent(in)    :: num_soilp         ! number of soil points in patch filter
+integer               , intent(in)    :: filter_soilp(:)   ! patch filter for soil points
+type(canopystate_type), intent(inout) :: canopystate_vars
+type(waterstate_type) , intent(inout) :: waterstate_vars
+type(waterflux_type)  , intent(inout) :: waterflux_vars
+type(energyflux_type) , intent(inout) :: energyflux_vars

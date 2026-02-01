@@ -1,0 +1,10 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%lat, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%gridcell
+global_wo, clm3%g%l%c%cps%altmax_lastyear_indx, clm3%g%l%c%cps%altmax_lastyear
+global_mod, clm3%g%l%c%cps%altmax, clm3%g%l%c%cps%alt, clm3%g%l%c%cps%altmax_indx, clm3%g%l%c%cps%alt_indx
+global_non
+calls, get_curr_date
+
+Tree height: 3
+0 , get_curr_date, 

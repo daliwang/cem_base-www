@@ -1,0 +1,7 @@
+sub_in, rhcrit, cldfrc, icol, state, rc, cam_in, carma, cstate
+sub_out, rhcrit, rc, cldfrc
+global_ro
+global_wo
+global_mod
+global_non
+calls

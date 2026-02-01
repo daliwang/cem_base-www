@@ -1,0 +1,7 @@
+sub_in, bounds, this
+sub_out
+global_ro, col%itype, this%topo_grc, col%landunit, col%gridcell
+global_wo, col%glc_topo
+global_mod
+global_non
+calls

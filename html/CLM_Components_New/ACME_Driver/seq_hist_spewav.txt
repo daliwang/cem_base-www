@@ -1,0 +1,8 @@
+sub_in, nx, aname, gsmap, av, ny, flds, nt, write_now, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_io_write, mct_aVect_init, seq_io_wopen, seq_infodata_GetData, shr_sys_abort, seq_infodata_getData, seq_io_close, mct_aVect_clean, mct_aVect_zero, mct_aVect_copy, seq_comm_getdata
+calls_ln, seq_comm_getdata@1219, mct_aVect_init@1320, seq_io_write@1332, mct_aVect_zero@1259, seq_comm_getdata@1218, seq_io_wopen@1299, mct_aVect_copy@1349, seq_io_write@1328, seq_io_close@1375, shr_sys_abort@1314, seq_io_write@1350, seq_io_write@1354, mct_aVect_init@1258, mct_aVect_copy@1339, mct_aVect_zero@1321, seq_io_wopen@1301, mct_aVect_clean@1361, shr_sys_abort@1251, seq_infodata_getData@1221, mct_aVect_zero@1369, seq_io_write@1344, seq_infodata_GetData@1290, seq_io_write@1340

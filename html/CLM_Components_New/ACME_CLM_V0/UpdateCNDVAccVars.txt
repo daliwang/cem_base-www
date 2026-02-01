@@ -1,0 +1,7 @@
+sub_in, this, temperature_vars, bounds
+sub_out
+global_ro, dgv_ecophyscon%twmax, temperature_vars%t_a10_patch, temperature_vars%t_ref2m_patch
+global_wo
+global_mod
+global_non
+calls, endrun, get_curr_date, extract_accum_field, update_accum_field

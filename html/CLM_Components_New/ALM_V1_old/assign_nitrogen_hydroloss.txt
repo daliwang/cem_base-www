@@ -1,0 +1,14 @@
+sub_param, filter_soilc:3, betrtracer_vars:6, num_soilc:2, tracerflux_vars:4, bounds:1, nitrogenflux_vars:5
+sub_out
+global_ro| tracerflux_vars%tracer_flx_totleached_col, tracer_flx_totleached_col, NONE| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE| tracerflux_vars%tracer_flx_surfrun_col, tracer_flx_surfrun_col, NONE
+global_wo| nitrogenflux_vars%smin_no3_runoff_col, smin_no3_runoff_col, NONE| nitrogenflux_vars%smin_no3_leached_col, smin_no3_leached_col, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)       , intent(in)    :: bounds            ! bounds
+integer                 , intent(in)    :: num_soilc         ! number of columns in column filter
+integer                 , intent(in)    :: filter_soilc(:)   ! column filter
+type(tracerflux_type)   , intent(in)    :: tracerflux_vars
+type(betrtracer_type)   , intent(in)    :: betrtracer_vars   ! betr configuration information
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars !

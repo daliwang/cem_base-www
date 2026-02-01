@@ -1,0 +1,10 @@
+sub_param, bounds:1
+sub_out
+global_ro| pft%wtlunit, wtlunit, NONE| pft%landunit, landunit, NONE
+global_wo
+global_mod
+global_non
+calls, endrun, check_weights
+readParams,subgridRest_write_and_read
+type(bounds_type), intent(in)    :: bounds ! bounds
+type(bounds_type), intent(in)    :: bounds ! bounds

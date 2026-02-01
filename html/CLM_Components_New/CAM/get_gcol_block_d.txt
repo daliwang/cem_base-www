@@ -1,0 +1,7 @@
+sub_in, cnt, bcid, gcol, localblockid, blockid
+sub_out, bcid, blockid
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

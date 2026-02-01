@@ -1,0 +1,7 @@
+sub_in, scmlon_in, scmlat_in, nlfilename_in, single_column_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, prescribed_ozone_readnl, radiation_defaultopts, scam_setopts, phys_grid_defaultopts, preset, aoa_tracers_readnl, cam3_aero_data_readnl, radiation_setopts, rad_cnst_readnl, check_energy_defaultopts, endrun, modal_aer_opt_readnl, prescribed_ghg_readnl, aircraft_emit_readnl, vd_readnl, physconst_readnl, radiation_printopts, uwshcu_readnl, ref_pres_readnl, chem_readnl, chem_surfvals_readnl, wv_sat_readnl, diag_readnl, subcol_readnl, prescribed_volcaero_readnl, carma_readnl, radheat_readnl, phys_grid_setopts, zmconv_readnl, phys_ctl_readnl, hkconv_readnl, cam3_ozone_data_readnl, metdata_readnl, iondrag_readnl, qbo_readnl, aerodep_flx_readnl, restart_defaultopts, restart_printopts, restart_setopts, macrop_driver_readnl, phys_debug_readnl, gw_drag_readnl, rad_data_readnl, scam_default_opts, find_group_name, co2_cycle_readnl, cospsimulator_intr_readnl, distnl, freeunit, sat_hist_readnl, cldfrc_readnl, check_energy_setopts, spmd_utils_readnl, cldwat_readnl, cld_sediment_readnl, solar_data_readnl, microp_aero_readnl, prescribed_aero_readnl, tropopause_readnl, microp_driver_readnl

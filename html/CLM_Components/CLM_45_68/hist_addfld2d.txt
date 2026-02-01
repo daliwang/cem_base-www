@@ -1,0 +1,7 @@
+sub_in, set_urb, ptr_col, long_name, type2d, fname, set_lake, avgflag, no_snow_behavior, c2l_scale_type, ptr_pft, set_spec, set_nolake, p2c_scale_type, set_nourb, ptr_atm, default, ptr_gcell, ptr_lnd, l2g_scale_type, ptr_lunit, type1d_out, units
+sub_out, no_snow_behavior
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, masterlist_make_active, masterlist_addfld, endrun

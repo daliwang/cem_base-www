@@ -1,0 +1,7 @@
+sub_in, data, dimid, dsize, fid, dname
+sub_out, dimid, dsize
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling, endrun

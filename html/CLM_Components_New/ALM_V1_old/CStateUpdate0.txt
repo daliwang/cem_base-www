@@ -1,0 +1,12 @@
+sub_param, filter_soilp:2, carbonflux_vars:3, carbonstate_vars:4, num_soilp:1
+sub_out
+global_ro| carbonflux_vars%psnsun_to_cpool_patch, psnsun_to_cpool_patch, NONE| carbonflux_vars%psnshade_to_cpool_patch, psnshade_to_cpool_patch, NONE
+global_wo
+global_mod| carbonstate_vars%cpool_patch, cpool_patch, NONE
+global_non| carbonstate_vars, cs, NONE| carbonflux_vars, cf, NONE
+calls
+readParams,
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(carbonstate_type) , intent(inout) :: carbonstate_vars

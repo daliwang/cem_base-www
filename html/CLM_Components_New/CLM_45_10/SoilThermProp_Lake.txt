@@ -1,0 +1,9 @@
+sub_in, filter_lakec, ubc, num_lakec, tktopsoillay, lbc
+sub_out, cv, tk
+global_ro, clm3%g%l%c%cps%z, clm3%g%l%c%cps%tkmg, clm3%g%l%c%cps%tkdry, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%tksatu, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%csol, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice
+global_wo
+global_mod
+global_non
+calls
+
+Tree height: 5

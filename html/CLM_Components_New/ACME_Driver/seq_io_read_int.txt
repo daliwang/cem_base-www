@@ -1,0 +1,8 @@
+sub_in, idata, dname, filename
+sub_out, idata
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_io_read_int1d
+calls_ln, seq_io_read_int1d@1937

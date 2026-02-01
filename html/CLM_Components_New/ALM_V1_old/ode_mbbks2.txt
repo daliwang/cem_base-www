@@ -1,0 +1,14 @@
+sub_param, y0:2, neq:4, t:5, odefun:1, nprimeq:3, y:7, dt:6
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mbbks, odefun
+readParams,
+integer,  intent(in)  :: nprimeq
+integer,  intent(in)  :: neq
+real(r8), intent(in)  :: y0(neq)
+real(r8), intent(in)  :: t
+real(r8), intent(in)  :: dt
+real(r8), intent(out) :: y(neq)

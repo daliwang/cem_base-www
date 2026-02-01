@@ -1,0 +1,7 @@
+sub_in, ngrdcol, subcol_scheme_in, ptend_sc, lchnk, ptend
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init, subcol_ptend_avg_tstcp, subcol_ptend_avg_shr

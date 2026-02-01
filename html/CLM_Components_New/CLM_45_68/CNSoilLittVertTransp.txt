@@ -1,0 +1,11 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cps%altmax, ccf%decomp_cpools_sourcesink, decomp_cascade_con%spinup_factor, cps%altmax_lastyear
+global_wo
+global_mod, cps%som_adv_coef, ccf%decomp_cpools_transport_tendency, cps%som_diffus_coef, ccs%decomp_cpools_vr
+global_non, cc14f%decomp_cpools_transport_tendency, cnf%decomp_npools_sourcesink, cc13f%decomp_cpools_transport_tendency, cc14f%decomp_cpools_sourcesink, cc14s%decomp_cpools_vr, cc13s%decomp_cpools_vr, cc13f%decomp_cpools_sourcesink, cns%decomp_npools_vr, cnf%decomp_npools_transport_tendency
+calls, Tridiagonal, endrun
+
+Tree height: 5
+1-, endrun, 
+2+, Tridiagonal, 

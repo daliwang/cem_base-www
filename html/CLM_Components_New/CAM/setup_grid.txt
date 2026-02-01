@@ -1,0 +1,7 @@
+sub_in, zm_init, nzmax, begin_height, sfc_elevation, l_implemented, grid_type, thermodynamic_heights, end_height, deltaz, momentum_heights, zm_top
+sub_out, end_height, begin_height
+global_ro
+global_wo
+global_mod
+global_non
+calls, setup_grid_heights

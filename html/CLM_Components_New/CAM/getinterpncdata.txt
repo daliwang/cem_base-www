@@ -1,0 +1,7 @@
+sub_in, outData, have_surfdat, STATUS, camlat, camlon, surfdat, npress, ps, press, TimeIdx, NCID, fill_ends, varName
+sub_out, outData, surfdat, STATUS
+global_ro
+global_wo
+global_mod
+global_non
+calls, interplevs, shr_scam_GetCloseLatLon

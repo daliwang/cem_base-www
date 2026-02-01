@@ -1,0 +1,16 @@
+sub_param, dzsoi:5, num_soilc:3, filter_soilc:4, plant_totn_demand_flx_col:6, nuptake_prof:7, bounds:1, plant_demand_vr:8, nlevdecomp:2
+sub_out, plant_demand_vr
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds
+integer           , intent(in)    :: nlevdecomp                                               ! number of vertical layers
+integer           , intent(in)    :: num_soilc                                                ! number of soil columns in filter
+integer           , intent(in)    :: filter_soilc(:)                                          ! filter for soil columns
+real(r8)          , intent(in)    :: dzsoi(bounds%begc:bounds%endc,1:nlevdecomp)              ! layer thickness
+real(r8)          , intent(in)    :: plant_totn_demand_flx_col(bounds%begc:bounds%endc)
+real(r8)          , intent(in)    :: nuptake_prof(bounds%begc:bounds%endc, 1:nlevdecomp)
+real(r8)          , intent(inout) :: plant_demand_vr(1,bounds%begc:bounds%endc, 1:nlevdecomp) !mol N/m3/s

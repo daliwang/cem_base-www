@@ -1,0 +1,7 @@
+sub_in, wc, xs, tlev, airlev, wl, nw, jlabel
+sub_out, xs
+global_ro
+global_wo
+global_mod
+global_non
+calls

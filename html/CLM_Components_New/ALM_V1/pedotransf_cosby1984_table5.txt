@@ -1,0 +1,14 @@
+sub_param, bsw, clay, watsat, sucsat, xksat, sand
+sub_out, watsat, bsw, xksat, sucsat
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: sand   !% sand
+real(r8), intent(in) :: clay   !% clay
+real(r8), intent(out):: watsat !v/v saturate moisture
+real(r8), intent(out):: bsw    !b shape parameter
+real(r8), intent(out):: sucsat !mm, soil matric potential
+real(r8), intent(out):: xksat  !mm/s, saturated hydraulic conductivity

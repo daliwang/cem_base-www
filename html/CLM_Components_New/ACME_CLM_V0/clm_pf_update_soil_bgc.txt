@@ -1,0 +1,7 @@
+sub_in, bounds, num_soilc, filter_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotran_not_available, get_pf_soil_bgc

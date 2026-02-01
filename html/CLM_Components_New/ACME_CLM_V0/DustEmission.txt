@@ -1,0 +1,7 @@
+sub_in, frictionvel_vars, canopystate_vars, atm2lnd_vars, filter_nolakep, num_nolakep, dust_vars, soilstate_vars, waterstate_vars, bounds
+sub_out
+global_ro, pft%column, pft%wtlunit, canopystate_vars%tlai_patch, soilstate_vars%gwc_thr_col, waterstate_vars%frac_sno_col, frictionvel_vars%u10_patch, canopystate_vars%tsai_patch, atm2lnd_vars%forc_rho_downscaled_col, pft%landunit, soilstate_vars%watsat_col, soilstate_vars%mss_frc_cly_vld_col, waterstate_vars%h2osoi_liq_col, pft%gridcell, waterstate_vars%h2osoi_ice_col, dust_vars%mbl_bsn_fct_col, waterstate_vars%h2osoi_vol_col, frictionvel_vars%fv_patch
+global_wo
+global_mod, dust_vars%flx_mss_vrt_dst_tot_patch, dust_vars%flx_mss_vrt_dst_patch
+global_non
+calls, endrun

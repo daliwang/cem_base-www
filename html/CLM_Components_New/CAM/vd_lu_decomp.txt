@@ -1,0 +1,7 @@
+sub_in, tmpi, kv, pver, cc_top, ncol, rpdel, ntop, decomp, gravit, pcols, ztodt, nbot, cpairv, ksrf
+sub_out, decomp
+global_ro
+global_wo
+global_mod
+global_non
+calls

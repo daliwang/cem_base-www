@@ -1,0 +1,7 @@
+sub_in, hitem, fdims, nfils, ldims, ncols, File, owners
+sub_out
+global_ro, mdims, numlev, sat_iosystem
+global_wo
+global_mod
+global_non, hitem%field
+calls, pio_initdecomp, pio_setframe, t_stopf, pio_freedecomp, pio_write_darray, t_startf

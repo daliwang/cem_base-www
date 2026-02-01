@@ -1,0 +1,7 @@
+sub_in, QTRTOP, QT, HSTAR, QTWASH, QTEVAP, DTSCAV, QM, PR, TM, BOXF, RWASH
+sub_out, QTEVAP, QTWASH
+global_ro
+global_wo
+global_mod
+global_non
+calls

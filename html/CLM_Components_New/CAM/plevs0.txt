@@ -1,0 +1,7 @@
+sub_in, nver, pint, ncold, pdel, pmid, ncol, ps
+sub_out, pint, pdel, pmid
+global_ro
+global_wo
+global_mod
+global_non
+calls

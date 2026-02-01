@@ -1,0 +1,7 @@
+sub_in, temperature_vars, filter_vegsol, bounds, surfalb_vars, waterstate_vars, rho, num_vegsol, canopystate_vars, tau, coszen
+sub_out
+global_ro, canopystate_vars%esai_patch, pft%column, pft%itype, waterstate_vars%fwet_patch, canopystate_vars%elai_patch, surfalb_vars%albgri_col, surfalb_vars%nrad_patch, temperature_vars%t_veg_patch, surfalb_vars%tsai_z_patch, surfalb_vars%tlai_z_patch, surfalb_vars%albgrd_col, ecophyscon%xl
+global_wo
+global_mod, surfalb_vars%fabi_sha_z_patch, surfalb_vars%fabd_sha_z_patch, surfalb_vars%vcmaxcintsun_patch, surfalb_vars%fabd_sha_patch, surfalb_vars%fabi_sun_z_patch, surfalb_vars%fabi_patch, surfalb_vars%albi_patch, surfalb_vars%fabd_sun_z_patch, surfalb_vars%vcmaxcintsha_patch, surfalb_vars%ftid_patch, surfalb_vars%ftdd_patch, surfalb_vars%albd_patch, surfalb_vars%fabi_sha_patch, surfalb_vars%fabd_patch, surfalb_vars%fsun_z_patch, surfalb_vars%fabd_sun_patch, surfalb_vars%ftii_patch, surfalb_vars%fabi_sun_patch
+global_non
+calls

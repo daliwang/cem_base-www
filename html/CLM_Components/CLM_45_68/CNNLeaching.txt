@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, dz, qflx_surf, qflx_drain, h2osoi_liq, sminn_vr, smin_no3_vr
+global_wo
+global_mod, sminn_leached_vr, smin_no3_runoff_vr
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, lbc, ubc
+sub_out
+global_ro, forc_ndep, gridcell
+global_wo, ndep_to_sminn
+global_mod
+global_non
+calls

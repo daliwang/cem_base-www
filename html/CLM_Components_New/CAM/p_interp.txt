@@ -1,0 +1,7 @@
+sub_in, ncol, o2_exo_col, lchnk, ptop, o3_exo_col
+sub_out, o3_exo_col, o2_exo_col
+global_ro
+global_wo
+global_mod
+global_non
+calls

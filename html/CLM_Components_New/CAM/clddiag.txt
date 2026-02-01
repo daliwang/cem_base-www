@@ -1,0 +1,7 @@
+sub_in, evapc, t, cldcu, evapr, prain, rain, cldvst, cme, cldvcu, pmid, cldt, cmfdqr, cldst, pdel, cldv, ncol
+sub_out, rain, cldvst, cldvcu, cldv
+global_ro
+global_wo
+global_mod
+global_non
+calls

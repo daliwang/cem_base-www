@@ -1,0 +1,7 @@
+sub_in, jgc, fbout, vxr, phib, iterdp, lammp, lam, wb, hadv, sigh, dphib, nlon, dt, dsig, lbasdz, fxr, dsigh, adv_state, nlonex, ra, lbassd, pmap, jcen, uxr, uxl, kdpmpf, phimp, lbasiy, sig, lbasdy, fxl, kdpmph, sigmp, vxl
+sub_out, hadv
+global_ro
+global_wo
+global_mod
+global_non
+calls, herzin, sphdep, cubzdr, hrintp, limdz, vrtdep

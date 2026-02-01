@@ -1,0 +1,7 @@
+sub_in, md, ed, fracis, ncnst, dsubcld, dp, nstep, dqdt, mx, eu, il1g, il2g, du, jt, lchnk, doconvtran, mu, dpdry, q, ideep
+sub_out, dqdt
+global_ro
+global_wo
+global_mod
+global_non
+calls

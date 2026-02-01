@@ -1,0 +1,18 @@
+sub_param, jtops, betrtracer_vars, lbj, t_soisno, numf, bunsencef_col, henrycef_col, smp_l, ubj, bounds, filter
+sub_out, bunsencef_col
+global_ro, betrtracer_vars%ngwmobile_tracer_groups, betrtracer_vars%volatilegroupid, betrtracer_vars%is_h2o, betrtracer_vars%tracer_group_memid, betrtracer_vars%is_volatile
+global_wo
+global_mod
+global_non
+calls, calc_rhovap
+readParams,
+type(bounds_type),      intent(in) :: bounds                                    ! bounds
+integer,                intent(in) :: lbj, ubj                                  ! lower and upper bounds, make sure they are > 0
+integer,                intent(in) :: jtops(bounds%begc: )                      ! top label of each column
+integer,                intent(in) :: numf                                      ! number of columns in column filter
+integer,                intent(in) :: filter(:)                                 ! column filter
+real(r8),               intent(in) :: t_soisno(bounds%begc: ,  lbj: )           !soil temperature, K
+real(r8),               intent(in) :: smp_l(bounds%begc: , lbj: )               !soil matric pressure, mm
+type(betrtracer_type),  intent(in) :: betrtracer_vars                           ! betr configuration information
+real(r8),               intent(in) :: henrycef_col(bounds%begc: , lbj: ,  1: )  !henry's constant
+real(r8),            intent(inout) :: bunsencef_col(bounds%begc: , lbj: , 1: )  !returning variable

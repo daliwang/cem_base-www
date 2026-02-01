@@ -1,0 +1,7 @@
+sub_in, fv, t2, ztodt, etamid, cwava, fu
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, grcalca, spegrd_aft, shift_time_indices, prepGRcalc, t_barrierf, tfilt_massfixrun, grcalcs, realloc5, spegrd_ift, t_startf, spegrd_bft, forecast

@@ -1,0 +1,8 @@
+sub_in, comp, seq_flds_c2x_fluxes, samegrid
+sub_out, comp
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_avect_vecmult, seq_domain_areafactinit, seq_map_map
+calls_ln, seq_domain_areafactinit@901, seq_map_map@912, seq_map_map@893, mct_avect_vecmult@907

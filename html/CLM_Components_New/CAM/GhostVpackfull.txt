@@ -1,0 +1,7 @@
+sub_in, nc, nc2, v, edge, nc1, kptr, vlyr, desc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

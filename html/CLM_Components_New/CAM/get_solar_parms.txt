@@ -1,0 +1,7 @@
+sub_in, ap_s, hp_s, f107a_s, kp_s, f107_s
+sub_out, f107_s, hp_s, f107a_s, kp_s, ap_s
+global_ro
+global_wo
+global_mod
+global_non
+calls

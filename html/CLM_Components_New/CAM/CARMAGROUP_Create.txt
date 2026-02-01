@@ -1,0 +1,7 @@
+sub_in, eshape, do_wetdep, is_sulfate, is_fractal, do_drydep, is_cloud, name, ifallrtn, irhswcomp, ishape, rmin, refidx, rc, scavcoef, shortname, falpha, rmon, neutral_volfrc, rmassmin, is_ice, dpc_threshold, solfac, do_mie, irhswell, igroup, cnsttype, rmrat, do_vtran, df, maxbin, carma, imiertn
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

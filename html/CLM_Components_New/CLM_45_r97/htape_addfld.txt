@@ -1,0 +1,7 @@
+sub_in, avgflag, t, f
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, get_proc_bounds, get_proc_global

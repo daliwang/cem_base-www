@@ -1,0 +1,7 @@
+sub_in, export_state, comp, EClock, rc, import_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_barrierf, clm_drv, ESMF_ArrayGet, ESMF_StateGet, lnd_import, get_proc_bounds, shr_file_getLogUnit, memmon_dump_fort, get_curr_date, t_startf, shr_file_setLogUnit, ESMF_AttributeGet, shr_file_getLogLevel, shr_file_setLogLevel, shr_orb_decl, update_rad_dtime, endrun, t_stopf, advance_timestep, memmon_reset_addr, set_nextsw_cday, seq_timemgr_EclockGetData, seq_timemgr_EClockGetData, lnd_export

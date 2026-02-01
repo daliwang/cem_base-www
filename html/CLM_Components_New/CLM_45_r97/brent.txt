@@ -1,0 +1,7 @@
+sub_in, oair, rh_can, photosyns_inst, x2, atm2lnd_inst, f2, gs_mol, x1, iv, par_z, tol, f1, ip, lmr_z, ic, cair, x, je, gb_mol
+sub_out, x
+global_ro
+global_wo
+global_mod
+global_non
+calls, ci_func, endrun

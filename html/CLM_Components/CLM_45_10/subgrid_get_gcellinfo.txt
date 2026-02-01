@@ -1,0 +1,7 @@
+sub_in, nveg, ncrop, wtveg, wtlake, npfts, wtcrop, glcmask, wtwetland, nlake, wturban_hd, nurban_md, nw, nglacier, wturban_md, wtglacier, ncols, wtglacier_mec, nglacier_mec, nwetland, nurban_tbd, wturban_tbd, nurban_hd, nlunits
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

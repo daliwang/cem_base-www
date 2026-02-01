@@ -1,0 +1,7 @@
+sub_in, sigw, fm, tair, wdiab, fluxn, wmaxf, na, nmode, hygro, wbar, wminf, fluxm, volume, flux_fullact, fn, rhoair
+sub_out, fn, flux_fullact, fluxm, fm, fluxn
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, qsat, maxsat

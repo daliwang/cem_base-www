@@ -1,0 +1,7 @@
+sub_in, cldliq, landm, ncol, pdel, icefrac, pvliq, snowh, pmid, cloud, pvice, ocnfrac, t, landfrac, cldice
+sub_out, pvice, pvliq
+global_ro
+global_wo
+global_mod
+global_non
+calls, reitab, reltab

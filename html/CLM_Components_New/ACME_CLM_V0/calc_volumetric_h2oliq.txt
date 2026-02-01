@@ -1,0 +1,7 @@
+sub_in, bounds, numf, h2osoi_liq, lbj, ubj, jtop, denh2o, filter, eff_porosity, vol_liq
+sub_out, vol_liq
+global_ro, col%dz
+global_wo
+global_mod
+global_non
+calls

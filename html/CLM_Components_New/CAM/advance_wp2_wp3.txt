@@ -1,0 +1,7 @@
+sub_in, wp3, wp2, Skw_zt, wp2_zt, dt, wm_zm, invrs_rho_ds_zm, err_code, um, mixt_frac, tau_zt, rho_ds_zm, wp3_on_wp2, a3, Kh_zm, wm_zt, wpthvp, tau_zm, sigma_sqd_w, wp2thvp, vpwp, wp3_zm, a3_zt, up2, sfc_elevation, invrs_rho_ds_zt, upwp, vp2, thv_ds_zm, rho_ds_zt, thv_ds_zt, vm, Kh_zt, Skw_zm
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var, wp23_solve

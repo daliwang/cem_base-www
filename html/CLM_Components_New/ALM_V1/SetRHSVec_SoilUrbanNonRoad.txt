@@ -1,0 +1,22 @@
+sub_param, fact, filter_nolakec, fn, c_h2osfc, sabg_lyr_col, hs_soil, t_soisno, bounds, dhsdT, hs_top_snow, rt, num_nolakec, hs_top, fn_h2osfc
+sub_out, rt
+global_ro, col%landunit
+global_wo
+global_mod
+global_non, col%z
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds                                     ! bounds
+integer , intent(in)  :: num_nolakec                                        ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                                  ! column filter for non-lake points
+real(r8), intent(in)  :: hs_top_snow(bounds%begc: )                         ! heat flux on top snow layer [W/m2]
+real(r8), intent(in)  :: hs_soil(bounds%begc: )                             ! heat flux on soil [W/m2]
+real(r8), intent(in)  :: hs_top(bounds%begc: )                              ! net energy flux into surface layer (col) [W/m2]
+real(r8), intent(in)  :: dhsdT(bounds%begc: )                               ! temperature derivative of "hs" [col]
+real(r8), intent(in)  :: sabg_lyr_col(bounds%begc:, -nlevsno+1: )           ! absorbed solar radiation (col,lyr) [W/m2]
+real(r8), intent(in)  :: fact( bounds%begc: , -nlevsno+1: )                 ! used in computing tridiagonal matrix [col, lev]
+real(r8), intent(in)  :: fn (bounds%begc: ,-nlevsno+1: )                    ! heat diffusion through the layer interface [W/m2]
+real(r8), intent(in)  :: fn_h2osfc (bounds%begc: )                          ! heat diffusion through standing-water/soil interface [W/m2]
+real(r8), intent(in)  :: c_h2osfc( bounds%begc: )                           ! heat capacity of surface water [col]
+real(r8), intent(in)  :: t_soisno(bounds%begc:, -nlevsno+1:)                ! soil temperature (Kelvin)
+real(r8), intent(inout) :: rt(bounds%begc: ,1: )                            ! rhs vector entries

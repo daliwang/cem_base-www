@@ -1,0 +1,10 @@
+sub_param, mass_thc, cmass
+sub_out, cmass
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), dimension(:), intent(inout) :: cmass
+real(r8), intent(in)                  :: mass_thc

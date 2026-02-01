@@ -1,0 +1,7 @@
+sub_in, nutrient_competition_method
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, readSoilBiogeochemDecompBgcParams, readSoilBiogeochemLittVertTranspParams, readSoilBiogeochemPotentialParams, readSoilBiogeochemNLeachingParams, readSoilBiogeochemDecompParams, readCNGapMortParams, ncd_inqdlen, ncd_pio_openfile, CNParamsReadShared, readCH4Params, getfil, readSoilBiogeochemDecompCnParams, readCNPhenolParams, nutrient_competition_method%readParams, ncd_inqdid, ncd_pio_closefile, readSoilBiogeochemNitrifDenitrifParams, SFParamsRead, readSoilBiogeochemCompetitionParams, readCNMRespParams, EDParamsRead, EDParamsReadShared

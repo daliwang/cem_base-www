@@ -1,0 +1,8 @@
+sub_in, mode, EClock
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_timemgr_EClockGetData, shr_sys_abort
+calls_ln, shr_sys_abort@350, seq_timemgr_EClockGetData@297, shr_sys_abort@293

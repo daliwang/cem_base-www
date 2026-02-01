@@ -1,0 +1,32 @@
+sub_param, ct, dz, at, botbc_type, ubj, trcin_mobile, numfl, jtop, source_only, condc_botlay, source, rt, hmconductance, Rfactor, bot_concflx, update_col, dtime, lbj, condc_toplay, bounds, topbc_type, ntrcs, trc_concflx_air, bt, filter
+sub_out, ct, at, bt, rt
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),  intent(in) :: bounds                           ! bounds
+integer,  intent(in) :: lbj, ubj                                   ! lbinning and ubing level indices
+integer,  intent(in) :: jtop(bounds%begc: )                        ! index of upper boundary, which could be variable
+integer,  intent(in) :: numfl                                      ! length of the filter
+integer,  intent(in) :: filter(:)                                  ! the actual filter
+integer,  intent(in) :: ntrcs
+real(r8), intent(in) :: Rfactor(bounds%begc: , lbj: )              ! conversion parameter from the given tracer phase to bulk mobile phase
+real(r8), intent(in) :: hmconductance(bounds%begc: , lbj: )        ! weighted bulk tracer conductances
+real(r8), intent(in) :: dz(bounds%begc: , lbj: )                   ! node thickness
+real(r8), intent(in) :: dtime(bounds%begc: )                       ! time step
+real(r8), intent(in) :: condc_toplay(bounds%begc: )                ! top layer conductance
+integer,  intent(in) :: topbc_type                                 ! type of top boundary condtion: 1, concentration, 2 flux
+real(r8), intent(in) :: bot_concflx    (bounds%begc: , 1: , 1: )   ! flux or concentration at the bottom boundary
+real(r8), intent(in) :: trc_concflx_air(bounds%begc: , 1: , 1: )   ! atmospheric tracer concentration (topbc_type=1) or flux (topbc_type=2)
+real(r8), intent(in) :: trcin_mobile   (bounds%begc: , lbj: , 1: ) ! incoming mobile tracer concentration
+real(r8), intent(in) :: source         (bounds%begc: , lbj: , 1: ) ! chemical sources [mol/m3]
+logical,  intent(in) :: source_only                                ! if .true. only update the source array rt, used for explicit solver
+logical,  intent(in) :: update_col(bounds%begc: )                  ! logical switch indicating if the column is for active update
+real(r8), intent(out):: rt(bounds%begc: ,lbj: , 1: )               ! tridiagonal matrix element r
+real(r8), optional,intent(inout):: at(bounds%begc: , lbj: )        ! tridiagonal matrix element a
+real(r8), optional,intent(inout):: bt(bounds%begc: , lbj: )        ! tridiagonal matrix element b
+real(r8), optional,intent(inout):: ct(bounds%begc: , lbj: )        ! tridiagonal matrix element c
+integer,  optional,intent(in)   :: botbc_type                      ! type of bottom boundary condition
+real(r8), optional,intent(in)   :: condc_botlay(bounds%begc: )     !conductance at bottom layer

@@ -1,0 +1,7 @@
+sub_in, df2, dq, a4, i2, i1, dp, d4, dm, km
+sub_out, a4
+global_ro
+global_wo
+global_mod
+global_non
+calls

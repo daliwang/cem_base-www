@@ -1,0 +1,9 @@
+sub_param, currentPatch:1
+sub_out
+global_ro| col%zi, zi, NONE| currentPatch%clm_pno, clm_pno, NONE| pft%column, pcolumn, NONE
+global_wo| currentPatch%rootfr_ft, rootfr_ft, NONE
+global_mod
+global_non
+calls
+readParams,
+type(patch),intent(inout), pointer :: currentPatch

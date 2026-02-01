@@ -1,0 +1,9 @@
+sub_in, p
+sub_out
+global_ro, pps%tlai, cps%snow_depth, pes%t_ref2m_max, pft%column, pes%t_ref2m_min, pes%t_ref2m
+global_wo, pps%gddmaturity, pps%huigrain
+global_mod, pps%hdidx, pps%vf, pps%cumvd
+global_non, pps%croplive
+calls
+
+Tree height: 8

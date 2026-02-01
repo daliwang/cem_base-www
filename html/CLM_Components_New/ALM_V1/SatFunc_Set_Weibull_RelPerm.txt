@@ -1,0 +1,11 @@
+sub_param, c, d, satParams
+sub_out
+global_ro
+global_wo, satParams%relperm_func_type, satParams%w_c, satParams%w_d
+global_mod
+global_non
+calls
+readParams,
+type(saturation_params_type) , intent(inout) :: satParams
+PetscReal                    , intent(in)    :: d
+PetscReal                    , intent(in)    :: c

@@ -1,0 +1,7 @@
+sub_in, cp_target, new_patch_target, patch_site_areadis
+sub_out, patch_site_areadis
+global_ro, cp_target%burnt_frac_litter, %n, cp_target%disturbance_rate, %br, new_patch_target%area, cp_target%area, %bstore, %fire_mort, %bsw, %pft, currentCohort%taller, new_patch%shortest, currentPatch%shortest, %bdead
+global_wo
+global_mod, %bl, cp_target%cwd_ag, new_patch_target%cwd_ag, %flux_out, cp_target%root_litter, new_patch_target%root_litter, %cwd_ag_burned, new_patch_target%leaf_litter, cp_target%leaf_litter, %balive, %cfa, %leaf_litter_burned, %c_area, new_patch_target%cwd_bg, cp_target%cwd_bg
+global_non, new_patch_target, currentPatch%siteptr, cp_target
+calls

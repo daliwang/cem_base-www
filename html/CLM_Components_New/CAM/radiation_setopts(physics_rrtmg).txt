@@ -1,0 +1,7 @@
+sub_in, nhtfrq, iradae_in, iradsw_in, irad_always_in, iradlw_in, spectralflux_in, dtime
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

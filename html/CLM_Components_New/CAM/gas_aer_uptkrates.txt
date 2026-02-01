@@ -1,0 +1,7 @@
+sub_in, q, ncol, uptkrate, t, dgncur_awet, pmid, loffset
+sub_out, uptkrate
+global_ro
+global_wo
+global_mod
+global_non
+calls

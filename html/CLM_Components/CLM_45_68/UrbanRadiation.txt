@@ -1,0 +1,7 @@
+sub_in, num_urbanc, num_urbanp, num_nourbanl, num_urbanl, filter_nourbanl, bounds, filter_urbanc, filter_urbanp, filter_urbanl
+sub_out
+global_ro, t_grnd, em_perroad, em_improad, coli, column, em_roof, itype, colf, forc_solad, gridcell, landunit, gridcell, albd, forc_solai, albi, forc_lwrad, frac_sno
+global_wo, fsa_u, fsr, fsds_nir_d_ln, fsds_vis_i_ln, eflx_lwrad_out, fsds_nir_d, eflx_lwrad_net, fsr_nir_d_ln, fsds_nir_i, fsds_vis_i, fsr_vis_d_ln, fsds_vis_d, parveg_ln, fsds_vis_d_ln, eflx_lwrad_net_u
+global_mod, sabg, sabs_perroad_dif, sabs_sunwall_dif, fsa, fsr_vis_i, sabs_roof_dir, sabs_sunwall_dir, fsr_nir_d, sabv, sabs_shadewall_dif, sabs_improad_dif, sabs_perroad_dir, sabs_roof_dif, fsr_vis_d, sabs_shadewall_dir, sabs_improad_dir, fsr_nir_i
+global_non, londeg, forc_solar, canyon_hwr, em_wall, wtroad_perv, begl, endl, t_ref2m, pfti, pftf
+calls, get_curr_date, net_longwave

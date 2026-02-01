@@ -1,0 +1,10 @@
+sub_param, begc:2, vsfm_mpp:1, soilstate_vars:4, endc:3
+sub_out
+global_ro| %satParams, satParams, NONE| col%gridcell, gridcell, NONE| soilstate_vars%watsat_col, watsat, NONE| cur_goveq%next, cur_goveq, NONE| vsfm_soe%goveqns, cur_goveq, NONE| %id_dn, id_dn, NONE| goveq_richards_ode_pres%boundary_conditions%first, cur_cond, NONE| cur_cond%next, cur_cond, NONE| goveq_richards_ode_pres%source_sinks%first, cur_cond, NONE| %porParams, porParams, NONE| soilstate_vars%sucsat_col, sucsat, NONE| col%landunit, landunit, NONE| %por, por, NONE| soilstate_vars%hksat_col, hksat, NONE| soilstate_vars%bsw_col, bsw, NONE| %perm, perm, NONE
+global_wo| goveq_richards_ode_pres%aux_vars_bc, ode_aux_vars_bc, NONE| goveq_richards_ode_pres%aux_vars_ss, ode_aux_vars_ss, NONE
+global_mod| goveq_richards_ode_pres%aux_vars_in, ode_aux_vars_in, NONE
+global_non| soilstate_vars%smpmin_col, smpmin, NONE| cur_cond%conn_set, cur_conn_set, NONE| soilstate_vars%rootr_col, rootr_col, NONE| soilstate_vars%hk_l_col, hk_l, NONE| vsfm_mpp%sysofeqns, vsfm_soe, NONE| soilstate_vars%eff_porosity_col, eff_porosity, NONE| soilstate_vars%smp_l_col, smp_l, NONE| soilstate_vars%rootr_patch, rootr_pft, NONE| cur_goveq, goveq_richards_ode_pres, NONE
+calls, SatFunc_Set_SBC_bz3, endrun, SatFunc_Set_BC, PorosityFunctionSetConstantModel, SatFunc_Set_SBC_bz2, SatFunc_Set_VG
+readParams,
+integer, intent(in)                               :: begc,endc
+type(soilstate_type) , intent(in)                 :: soilstate_vars

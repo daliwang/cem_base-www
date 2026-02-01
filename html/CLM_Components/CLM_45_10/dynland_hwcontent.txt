@@ -1,0 +1,7 @@
+sub_in, gcell_heat, begg, gcell_ice, gcell_liq, endg
+sub_out, gcell_heat, gcell_ice, gcell_liq
+global_ro, lake_icefrac, cv_roof, wtgcell, dz_lake, coli, csol, wtcol, h2osoi_ice, watsat, wa, t_lake, pftf, luni, lunf, itype, t_soisno, dz, cv_wall, h2osno, h2ocan, colf, itype, active, nlev_improad, snl, h2osoi_liq, cv_improad, pfti
+global_wo
+global_mod
+global_non, itype, g, p, c, l
+calls

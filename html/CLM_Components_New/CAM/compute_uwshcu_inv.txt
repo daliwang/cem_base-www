@@ -1,0 +1,7 @@
+sub_in, p0_inv, rliq, precip, ql0_inv, cufrc_inv, pblh, sten_inv, u0_inv, ps0_inv, lchnk, qcu_inv, mkx, trten_inv, vten_inv, cnb_inv, flxsnow1_inv, concldfrct_inv, dt, cush, slflx_inv, zs0_inv, umf_inv, flxprc1_inv, qrten_inv, snow, tr0_inv, mix, dp0_inv, cnt_inv, qvten_inv, qv0_inv, ncnst, qsten_inv, dpdry0_inv, cldfrct_inv, iend, t0_inv, qlten_inv, tke_inv, qiten_inv, uten_inv, qiu_inv, evapc_inv, z0_inv, s0_inv, qtflx_inv, qlu_inv, qc_inv, cbmf, qi0_inv, v0_inv
+sub_out, qvten_inv, cnt_inv, qc_inv, qlu_inv, qtflx_inv, qrten_inv, evapc_inv, flxprc1_inv, umf_inv, qiu_inv, slflx_inv, uten_inv, qiten_inv, qlten_inv, flxsnow1_inv, cnb_inv, trten_inv, vten_inv, qcu_inv, sten_inv, cufrc_inv, qsten_inv
+global_ro
+global_wo
+global_mod
+global_non
+calls, compute_uwshcu

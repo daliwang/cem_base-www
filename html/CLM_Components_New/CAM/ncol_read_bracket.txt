@@ -1,0 +1,7 @@
+sub_in, start, ncol, count, cid, columnmap
+sub_out, start, count
+global_ro
+global_wo
+global_mod
+global_non
+calls

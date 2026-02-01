@@ -1,0 +1,7 @@
+sub_in, dust_vars, bounds, frictionvel_vars, atm2lnd_vars
+sub_out
+global_ro, pft%column, atm2lnd_vars%forc_rho_downscaled_col, frictionvel_vars%ram1_patch, frictionvel_vars%fv_patch, atm2lnd_vars%forc_t_downscaled_col, pft%gridcell
+global_wo, dust_vars%vlc_trb_2_patch, dust_vars%vlc_trb_3_patch, dust_vars%vlc_trb_4_patch, dust_vars%vlc_trb_1_patch
+global_mod, dust_vars%vlc_trb_patch
+global_non, atm2lnd_vars%forc_pbot_downscaled_col
+calls

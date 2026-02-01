@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_nitrogenstate_inst, soilbiogeochem_state_inst, num_soilc, filter_soilc, soilbiogeochem_nitrogenflux_inst
+sub_out
+global_ro, soyfixn_to_sminn_col, nfix_to_sminn_col, decomp_cascade_sminn_flux_vr_col, smin_nh4_to_plant_vr_col, cascade_receiver_pool, decomp_cascade_ntransfer_vr_col, f_nit_vr_col, ndep_to_sminn_col, fert_to_sminn_col, smin_no3_to_plant_vr_col, f_denit_vr_col, gross_nmin_vr_col, sminn_to_plant_vr_col, actual_immob_no3_vr_col, cascade_donor_pool, sminn_to_denit_excess_vr_col, supplement_to_sminn_vr_col, nfixation_prof, actual_immob_nh4_vr_col, ndep_prof, sminn_to_denit_decomp_cascade_vr_col
+global_wo
+global_mod, smin_nh4_vr_col, sminn_vr_col, smin_no3_vr_col, decomp_npools_sourcesink_col
+global_non, soilbiogeochem_nitrogenstate_inst, soilbiogeochem_nitrogenflux_inst
+calls

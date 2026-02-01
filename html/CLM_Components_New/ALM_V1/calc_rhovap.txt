@@ -1,0 +1,16 @@
+sub_param, smp_l, num_soilc, t_soisno, lbj, jtops, filter_soilc, bounds, rho_vap, ubj
+sub_out, rho_vap
+global_ro
+global_wo
+global_mod
+global_non
+calls, rhoSat
+readParams,
+type(bounds_type),      intent(in) :: bounds                           ! bounds
+integer,                intent(in) :: lbj, ubj                         ! lower and upper bounds, make sure they are > 0
+integer,                intent(in) :: jtops(bounds%begc: )             ! top label of each column
+integer,                intent(in) :: num_soilc                        ! number of soil filters
+integer,                intent(in) :: filter_soilc(:)                  ! filter
+real(r8),               intent(in) :: t_soisno(bounds%begc: , lbj: )   !soil temperature, K
+real(r8),               intent(in) :: smp_l(bounds%begc: , lbj: )      !liquid soil matric potential, mm
+real(r8),               intent(inout):: rho_vap(bounds%begc: , lbj: )  !actual vapor pressure, kg/m3

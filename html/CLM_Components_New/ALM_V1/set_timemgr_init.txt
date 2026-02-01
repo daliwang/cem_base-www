@@ -1,0 +1,19 @@
+sub_param, calendar_in, dtime_in, start_ymd_in, ref_tod_in, stop_ymd_in, perpetual_run_in, perpetual_ymd_in, start_tod_in, nelapse_in, stop_tod_in, ref_ymd_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+character(len=*), optional, intent(IN) :: calendar_in       ! Calendar type
+integer         , optional, intent(IN) :: nelapse_in        ! Number of step (or days) to advance
+integer         , optional, intent(IN) :: start_ymd_in      ! Start date       (YYYYMMDD)
+integer         , optional, intent(IN) :: start_tod_in      ! Start time of day (sec)
+integer         , optional, intent(IN) :: ref_ymd_in        ! Reference date   (YYYYMMDD)
+integer         , optional, intent(IN) :: ref_tod_in        ! Reference time of day (sec)
+integer         , optional, intent(IN) :: stop_ymd_in       ! Stop date        (YYYYMMDD)
+integer         , optional, intent(IN) :: stop_tod_in       ! Stop time of day (sec)
+logical         , optional, intent(IN) :: perpetual_run_in  ! If in perpetual mode or not
+integer         , optional, intent(IN) :: perpetual_ymd_in  ! Perpetual date   (YYYYMMDD)
+integer         , optional, intent(IN) :: dtime_in          ! Time-step (sec)

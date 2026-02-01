@@ -1,0 +1,7 @@
+sub_in, rhs_multiplier, elem, hybrid, DSSopt, hvcoord, nets, nete, dt, deriv, np1_qdp, n0_qdp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, unpack_qdp1<<<griddim, euler_step_kernel1<<<griddim, edgeVpack, limiter2d_zero_kernel<<<griddim, bndry_exchangeV, euler_hypervis_kernel_last<<<griddim, edgeVunpack, pack_exchange_unpack_stage, t_startf

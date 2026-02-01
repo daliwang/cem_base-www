@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, treesai, currentPatch, currentCohort, pft
+global_wo, year_net_uptake, nv
+global_mod, treelai, leaf_cost, laimemory, canopy_trim
+global_non
+calls

@@ -1,0 +1,10 @@
+sub_param, file, path
+sub_out, path
+global_ro
+global_wo
+global_mod
+global_non
+calls, restFile_read_pfile, getfil, endrun
+readParams,restFile_read
+character(len=*), intent(out) :: file  ! name of netcdf restart file
+character(len=*), intent(out) :: path  ! full pathname of netcdf restart file

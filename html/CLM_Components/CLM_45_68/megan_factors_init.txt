@@ -1,0 +1,7 @@
+sub_in, filename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_closefile, ncd_pio_openfile, enter_hash_data, ncd_inqdlen, getfil, bld_hash_table_indices

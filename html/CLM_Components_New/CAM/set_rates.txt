@@ -1,0 +1,7 @@
+sub_in, ncol, rxt_rates, sol
+sub_out, rxt_rates
+global_ro
+global_wo
+global_mod
+global_non
+calls

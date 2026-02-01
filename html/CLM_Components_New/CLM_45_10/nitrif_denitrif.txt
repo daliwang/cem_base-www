@@ -1,0 +1,9 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%l%c%cps%bd, clm3%g%l%c%cns%smin_nh4_vr, clm3%g%l%c%cps%cellorg, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cch4%o2_decomp_depth_sat, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%watsat, clm3%g%l%c%cch4%conc_o2_unsat, clm3%g%l%c%cps%watfc, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%sucsat, clm3%g%l%c%ccf%t_scalar, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cch4%conc_o2_sat, clm3%g%l%c%ccf%phr_vr, clm3%g%l%c%cws%finundated, clm3%g%l%c%ccf%w_scalar, clm3%g%l%c%cch4%o2_decomp_depth_unsat, clm3%g%l%c%cps%soilpsi, clm3%g%l%c%cns%smin_no3_vr
+global_wo, clm3%g%l%c%cnf%pot_f_denit_vr, clm3%g%l%c%cnf%n2_n2o_ratio_denit_vr
+global_mod, clm3%g%l%c%cnf%r_psi, clm3%g%l%c%cnf%wfps_vr, clm3%g%l%c%cnf%f_denit_base_vr, clm3%g%l%c%cnf%k_nitr_ph_vr, clm3%g%l%c%cnf%diffus, clm3%g%l%c%cnf%k_nitr_t_vr, clm3%g%l%c%cnf%k_nitr_vr, clm3%g%l%c%cnf%ratio_no3_co2, clm3%g%l%c%cnf%k_nitr_h2o_vr, clm3%g%l%c%cnf%fr_WFPS, clm3%g%l%c%cnf%soil_bulkdensity, clm3%g%l%c%cnf%smin_no3_massdens_vr, clm3%g%l%c%cnf%anaerobic_frac, clm3%g%l%c%cnf%ratio_k1, clm3%g%l%c%cnf%fmax_denit_nitrate_vr, clm3%g%l%c%cnf%pot_f_nit_vr, clm3%g%l%c%cnf%soil_co2_prod, clm3%g%l%c%cnf%fmax_denit_carbonsubstrate_vr
+global_non
+calls
+
+Tree height: 3

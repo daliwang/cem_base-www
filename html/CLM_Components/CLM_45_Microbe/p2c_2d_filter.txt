@@ -1,0 +1,7 @@
+sub_in, pftarr, colarr, lev, numfc, filterc
+sub_out, colarr
+global_ro, wtcol, active, pftf, pfti
+global_wo
+global_mod
+global_non, npfts
+calls

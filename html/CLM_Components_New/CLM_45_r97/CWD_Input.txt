@@ -1,0 +1,7 @@
+sub_in, currentPatch
+sub_out
+global_ro, n, bsw, br, bstore, leaf_litter, bl, root_md, pft, currentCohort, bdead, woody_turnover, leaf_md, dndt
+global_wo
+global_mod
+global_non
+calls

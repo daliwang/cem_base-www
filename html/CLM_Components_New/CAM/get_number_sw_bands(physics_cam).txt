@@ -1,0 +1,7 @@
+sub_in, number_of_bands
+sub_out, number_of_bands
+global_ro
+global_wo
+global_mod
+global_non
+calls

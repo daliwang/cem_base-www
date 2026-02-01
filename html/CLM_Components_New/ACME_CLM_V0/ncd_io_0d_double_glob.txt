@@ -1,0 +1,7 @@
+sub_in, posNOTonfile, varname, flag, readvar, data, nt, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, ncd_inqvid, scam_field_offsets

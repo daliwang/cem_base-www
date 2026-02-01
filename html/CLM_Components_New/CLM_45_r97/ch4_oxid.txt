@@ -1,0 +1,7 @@
+sub_in, temperature_inst, jwt, lake, bounds, filter_methc, soilstate_inst, sat, num_methc, waterstate_inst, ch4_inst
+sub_out
+global_ro, conc_ch4, t_soisno, h2osoi_vol, smp_l, conc_o2, watsat
+global_wo, o2_oxid_depth
+global_mod, ch4_oxid_depth
+global_non, ch4_inst%co2_oxid_depth_unsat_col, ch4_inst%co2_oxid_depth_sat_col, ch4_inst%o2_decomp_depth_unsat_col, ch4_inst%o2_decomp_depth_sat_col
+calls

@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, ubc, num_nolakec, lbp, num_nolakep, filter_nolakep, lbc, ubp
+sub_out
+global_ro, t_grnd, qflx_snow_melt, landunit, irrig_rate, column, itype, forc_t, itype, frac_h2osfc, frac_veg_nosno, n_melt, elai, landunit, gridcell, do_capsnow, forc_snow, forc_flood, h2ocan_loss, dewmx, esai, forc_rain, gridcell, qflx_snow_grnd
+global_wo, mss_dsttot, mss_dst_top, qflx_snwcp_ice, mss_ocpho, swe_old, mss_dst1, mss_ocphi, frac_iceold, mss_bcphi, mss_oc_col, qflx_prec_grnd, mss_bcpho, qflx_snow_grnd, z, zi, qflx_floodc, mss_bctot, mss_oc_top, mss_dst_col, snw_rds, qflx_rain_grnd, mss_bc_col, frac_sno_eff, qflx_snwcp_liq, qflx_snow_h2osfc, t_soisno, mss_dst4, mss_dst2, mss_bc_top, mss_octot, mss_dst3
+global_mod, snow_depth, dz, h2osno, int_snow, n_irrig_steps_left, h2ocan, h2osoi_ice, qflx_irrig, h2osoi_liq, snl, qflx_prec_intr, frac_sno
+global_non, npfts, h2osfc, fwet, fdry, pfti
+calls, FracH2oSfc, FracWet, p2c

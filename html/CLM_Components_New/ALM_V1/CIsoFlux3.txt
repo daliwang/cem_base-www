@@ -1,0 +1,18 @@
+sub_param, isotopestate_vars, isotope, carbonflux_vars, num_soilp, carbonstate_vars, num_soilc, filter_soilc, filter_soilp, isotopeflux_vars, cnstate_vars
+sub_out
+global_ro, isotopeflux_vars%m_deadstemc_to_litter_fire_patch, pft%wtcol, cnstate_vars%stem_prof_patch, isotopeflux_vars%m_deadcrootc_to_litter_fire_patch, cnstate_vars%croot_prof_patch, carbonstate_vars%decomp_cpools_vr_col, isotopestate_vars%decomp_cpools_vr_col, col%pfti
+global_wo
+global_mod, isotopeflux_vars%fire_mortality_c_to_cwdc_col, isotopeflux_vars%m_decomp_cpools_to_fire_vr_col, carbonflux_vars%m_decomp_cpools_to_fire_vr_col
+global_non
+calls, CIsoFluxCalc
+readParams,
+integer                , intent(in)    :: num_soilc       ! number of soil columns filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(carbonstate_type) , intent(in)    :: carbonstate_vars
+type(carbonflux_type)  , intent(inout) :: isotopeflux_vars
+type(carbonstate_type) , intent(in)    :: isotopestate_vars
+character(len=*)       , intent(in)    :: isotope         ! 'c13' or 'c14'

@@ -1,0 +1,7 @@
+sub_in, rhs, solve_type, err_code, xapxbp, lhs, nrhs
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var_pt, tridag_solvex, tridag_solve

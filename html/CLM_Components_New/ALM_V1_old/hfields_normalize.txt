@@ -1,0 +1,9 @@
+sub_param, t:1
+sub_out
+global_ro| %field%num2d, num2d, NONE| %avgflag, avgflag, NONE| tape, nacs, NONE| %hlist, hlist, NONE| %field%end1d_out, end1d_out, NONE| %field%beg1d_out, beg1d_out, NONE
+global_wo
+global_mod| tape, hbuf, NONE
+global_non
+calls
+readParams,
+integer, intent(in) :: t       ! tape index

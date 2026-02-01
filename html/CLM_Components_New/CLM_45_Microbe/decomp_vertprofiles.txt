@@ -1,0 +1,10 @@
+sub_in, filter_soilp, filter_soilc, ubc, num_soilp, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro, clm3%g%l%c%npfts, clm3%g%l%c%p%wtcol, clm3%g%l%c%p%active, clm3%g%l%c%p%itype, clm3%g%l%c%cps%altmax_lastyear_indx, clm3%g%l%c%pfti, clm3%g%l%c%p%column, clm3%g%l%c%p%pps%rootfr
+global_wo
+global_mod, clm3%g%l%c%p%pps%stem_prof, clm3%g%l%c%p%pps%leaf_prof, clm3%g%l%c%p%pps%croot_prof, clm3%g%l%c%cps%nfixation_prof, clm3%g%l%c%p%pps%froot_prof, clm3%g%l%c%cps%ndep_prof
+global_non
+calls, endrun
+
+Tree height: 4
+1+, endrun, endrun, 

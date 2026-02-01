@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, wrap_get_var_realx, wrap_inq_dimlen, wrap_inq_varid, CARMA_CreateRefTFile, addfld, carma_getT, endrun, CARMA_InitializeModel, wrap_close, add_default, CARMAELEMENT_Get, mpi_bcast, CARMAGROUP_Get, wrap_open, getfil, CARMA_Get, wrap_inq_dimid

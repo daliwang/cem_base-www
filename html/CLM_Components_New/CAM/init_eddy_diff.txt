@@ -1,0 +1,7 @@
+sub_in, rairx, latvapx, zvirx, cpairx, gravx, vkx, eddy_leng_max, nbot_eddy, laticex, pver, eddy_max_bot_pressure, eddy_lbulk_max, ntop_eddy, kind
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, addfld

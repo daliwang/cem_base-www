@@ -1,0 +1,7 @@
+sub_in, ubg, ubc, lbg, lbp, num_nolakep, filter_nolakep, lbc, ubp
+sub_out
+global_ro, t_grnd, psnsun_wc, alphapsnsun, psnsun, watsat, psnsha_wp, fdry, column, sabv, forc_po2, itype, thm, psnsun_wp, rssha, max_dayl, forc_th, psnsha, snl, h2osoi_liq, fwet, forc_q, dqgdT, forc_u, elai, qg_soil, rssun, forc_pco2, sucsat, z0mg, qg_snow, h2osoi_vol, t_soisno, dleaf, forc_v, forc_lwrad, esai, alphapsnsha, forc_rho, rootfr, psnsha_wj, rc14_atm, htvp, altmax_indx, bsw, altmax_lastyear_indx, londeg, emg, qg, t_h2osfc, decl, htop, snow_depth, forc_hgt_u_pft, frac_h2osfc, frac_veg_nosno, laisun, psnsun_wj, forc_pbot, smpso, thv, lat, landunit, gridcell, psnsha_wc, h2osoi_ice, laisha, forc_pc13o2, dz, smpsc, emv, qg_h2osfc, frac_sno_eff, soilbeta
+global_wo, cgrnd, psnsun, rb1, ulrad, dlrad, qflx_ev_soil, eflx_sh_h2osfc, rh_ref2m_r, fpsn_wp, eflx_sh_snow, taux, vpdal, psnsha, fpsn_wj, eflx_sh_grnd, eflx_sh_soil, qflx_ev_snow, canopy_cond, psnsha, qflx_ev_h2osfc, t_ref2m_r, fpsn, psnsun, tauy, grnd_ch4_cond, n_irrig_steps_left, qflx_evap_soi, rhal, fpsn_wc
+global_mod, eflx_sh_veg, rc13_psnsun, z0qv, z0hv, rc13_psnsha, btran2, qflx_tran_veg, btran, rc13_canair, irrig_rate, cgrnds, q_ref2m, displa, qflx_evap_veg, t_ref2m, rresis, t_veg, dt_veg, z0mv, rootr, ram1, h2ocan, cgrndl, rh_ref2m, rhaf
+global_non, watopt, watdry
+calls, QSat, FrictionVelocity, t_startf, get_prev_date, t_stopf, Photosynthesis, Fractionation, MoninObukIni, endrun

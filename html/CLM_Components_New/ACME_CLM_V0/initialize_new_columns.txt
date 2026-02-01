@@ -1,0 +1,7 @@
+sub_in, bounds, cactive_prior, temperature_vars
+sub_out
+global_ro, bounds%begc:bounds%endc
+global_wo
+global_mod
+global_non
+calls, copy_state, GetGlobalWrite

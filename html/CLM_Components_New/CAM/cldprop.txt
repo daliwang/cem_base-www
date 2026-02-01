@@ -1,0 +1,7 @@
+sub_in, tauc, taucloud, dge, ncbands, rei, clwp, inflag, iceflag, cldfrac, liqflag, nlayers, ciwp, rel
+sub_out, ncbands, taucloud
+global_ro
+global_wo
+global_mod
+global_non
+calls

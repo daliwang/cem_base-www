@@ -1,0 +1,7 @@
+sub_in, num_hydrologyc, filter_hydrologyc, bounds
+sub_out
+global_ro, cwf%qflx_snow_h2osfc, ces%forc_t, cwf%qflx_top_soil, cwf%qflx_floodc
+global_wo, cwf%qflx_infl, cwf%qflx_surf
+global_mod
+global_non
+calls, VecGetArrayF90, VecRestoreArrayF90

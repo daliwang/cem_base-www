@@ -1,0 +1,7 @@
+sub_in, al, a6, iord, iuw, fx, ar, dm, isave, ffsl, im, mfx, iue, p, c
+sub_out, fx, a6, al, isave, ar
+global_ro
+global_wo
+global_mod
+global_non
+calls, huynh, lmppm

@@ -1,0 +1,7 @@
+sub_in, init
+sub_out
+global_ro, qflx_runoffg, qflx_snwcp_iceg, nem, eflx_sh_totg
+global_wo
+global_mod
+global_non, p, c, g, l
+calls, c2g, get_proc_bounds, p2g

@@ -1,0 +1,15 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, htape_addfld, list_index, shr_sys_flush, endrun
+
+Tree height: 8
+2+, endrun, list_index, 
+5+, endrun, shr_sys_flush, endrun, endrun, 
+6+, endrun, shr_sys_flush, 
+4+, list_index, 
+5+, htape_addfld, 
+3+, endrun, htape_addfld, 

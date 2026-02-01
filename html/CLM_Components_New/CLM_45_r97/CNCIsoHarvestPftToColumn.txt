@@ -1,0 +1,7 @@
+sub_in, filter_soilc, num_soilc, iso_cnveg_carbonflux_inst, soilbiogeochem_state_inst
+sub_out
+global_ro, croot_prof, hrv_leafc_xfer_to_litter, hrv_livecrootc_storage_to_litter, hrv_leafc_storage_to_litter, froot_prof, hrv_livestemc_xfer_to_litter, leaf_prof, hrv_frootc_storage_to_litter, hrv_gresp_xfer_to_litter, hrv_deadcrootc_xfer_to_litter, hrv_livecrootc_to_litter, lf_flab, stem_prof, fr_flig, hrv_gresp_storage_to_litter, hrv_deadstemc_storage_to_litter, hrv_deadcrootc_storage_to_litter, hrv_livecrootc_xfer_to_litter, lf_flig, ivt, phrv_deadstemc_to_prod10c, wtcol, hrv_deadstemc_xfer_to_litter, hrv_livestemc_to_litter, hrv_frootc_to_litter, hrv_leafc_to_litter, fr_flab, phrv_deadstemc_to_prod100c, lf_fcel, hrv_livestemc_storage_to_litter, fr_fcel, hrv_deadcrootc_to_litter, hrv_frootc_xfer_to_litter
+global_wo
+global_mod, chrv_deadstemc_to_prod10c, harvest_c_to_cwdc, harvest_c_to_litr_lig_c, harvest_c_to_litr_cel_c, harvest_c_to_litr_met_c, chrv_deadstemc_to_prod100c
+global_non
+calls

@@ -1,0 +1,9 @@
+sub_param, bounds_proc:1
+sub_out
+global_ro| col%landunit, landunit, NONE| col%gridcell, gridcell, NONE
+global_wo
+global_mod
+global_non
+calls, atm2lnd_vars%Init, soilstate_vars%init, aerosol_vars%Init, SurfaceAlbedoInitTimeConst, EDecophysconInit, glc2lnd_vars%Init, photosyns_vars%Init, lakestate_vars%Init, ch4_vars%Init, ecophysconInit, chemstate_vars%Init, surfalb_vars%Init, frictionvel_vars%Init, cnstate_vars%Init, shr_scam_getCloseLatLon, lnd2glc_vars%Init, waterflux_vars%init, lnd2atm_vars%Init, dust_vars%Init, glc_diagnostics_vars%Init, urbanparams_vars%Init, getfil, canopystate_vars%init, energyflux_vars%init, waterstate_vars%init, soilorderconInit, LakeConInit, solarabs_vars%Init, surfrad_vars%Init, temperature_vars%init, soilhydrology_vars%Init, initVertical
+readParams,
+type(bounds_type), intent(in) :: bounds_proc

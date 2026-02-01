@@ -1,0 +1,10 @@
+sub_param, n, bounds
+sub_out
+global_ro, procinfo%cid
+global_wo, bounds%clump_index, bounds%level
+global_mod, bounds%begc, %begc, bounds%endt, %endt, %begCohort, bounds%begCohort, %begl, bounds%begl, %endc, bounds%endc, %begp, bounds%begp, bounds%endp, %endp, %begt, bounds%begt, %endCohort, bounds%endCohort, %endg, bounds%endg, bounds%endl, %endl, bounds%begg, %begg
+global_non
+calls, shr_sys_abort
+readParams,
+integer, intent(in)  :: n                ! processor clump index
+type(bounds_type), intent(out) :: bounds ! clump bounds

@@ -1,0 +1,12 @@
+sub_param, flag:3, rdate:4, bounds:1, ncid:2
+sub_out
+global_ro| bounds%endc, endc, NONE| %field%hpindex, hpindex, NONE| bounds%begc, begc, NONE| bounds%endp, endp, NONE| vardesc%varid, varid, NONE| bounds%begg, begg, NONE| %avgflag, avgflag, NONE| %field%units, units, NONE| bounds%endg, endg, NONE| bounds%endl, endl, NONE| %field%p2c_scale_type, p2c_scale_type, NONE| bounds%begl, begl, NONE| %hlist, hlist, NONE| bounds%begp, begp, NONE| %field%c2l_scale_type, c2l_scale_type, NONE| %field%l2g_scale_type, l2g_scale_type, NONE
+global_wo
+global_mod| tape, hbuf, NONE| %field%type2d, type2d, NONE| %field%num2d, num2d, NONE| %field%type1d_out, type1d_out, NONE| tape, nacs, NONE| %field%name, name, NONE| %field%beg1d_out, beg1d_out, NONE| %field%end1d_out, end1d_out, NONE| %field%type1d, type1d, NONE| %field%long_name, long_name, NONE
+global_non
+calls, ncd_inqdlen, ncd_io, htape_create, strip_null, get_proc_global, ncd_pio_closefile, ncd_inqvid, ncd_pio_openfile, getfil, ncd_defdim, endrun, ncd_defvar, ncd_enddef
+readParams,
+type(bounds_type), intent(in)    :: bounds
+type(file_desc_t), intent(inout) :: ncid     ! netcdf file
+character(len=*) , intent(in)    :: flag     !'read' or 'write'
+character(len=*) , intent(in), optional :: rdate    ! restart file time stamp for name

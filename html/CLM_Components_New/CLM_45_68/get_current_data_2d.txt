@@ -1,0 +1,10 @@
+sub_in, this
+sub_out, cur_data
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%read_data_if_needed, shr_assert
+
+Tree height: 1
+0 , shr_assert, shr_assert, this%read_data_if_needed, 

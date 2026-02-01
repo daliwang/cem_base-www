@@ -1,0 +1,7 @@
+sub_in, q3, phys_state, phys_tend, flx_net, fv, fu, t2
+sub_out, t2, flx_net, fv, q3, fu
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, transpose_chunk_to_block, get_lon_all_p, chunk_to_block_send_pters, t_startf, t_barrierf, chunk_to_block_recv_pters, get_lat_all_p, endrun

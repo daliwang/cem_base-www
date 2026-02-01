@@ -1,0 +1,7 @@
+sub_in, nitrogenflux_vars, atm2lnd_vars, bounds
+sub_out
+global_ro, col%gridcell, atm2lnd_vars%forc_ndep_grc
+global_wo, nitrogenflux_vars%ndep_to_sminn_col
+global_mod
+global_non
+calls

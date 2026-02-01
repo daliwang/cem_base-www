@@ -1,0 +1,7 @@
+sub_in, cp_p
+sub_out
+global_ro
+global_wo, seeds_in, fabi_sun_z, root_litter, fuel_eff_moist, present, fabi_sha_z, f_sun, disturbance_rates, leaf_litter, fi, nf, ros_back, btran_ft, sabs_dir, gpp, seed_germination, fuel_sav, tr_soil_dir_dif, dseed_dt, burnt_frac_litter, age, total_canopy_area, seed_bank, seed_decay, fabd_sha_z, disturbance_rate, sabs_dif, ncan, fuel_mef, fabd, frac_burnt, cwd_bg, fabd_sun_z, esai_profile, ed_laisun_z, ed_parsha_z, effect_wspeed, cwd_ag, bare_frac_area, psn_z, ed_parsun_z, patchno, fuel_bulkd, tau_l, ed_laisha_z, tr_soil_dir, lai, pft_agb_profile, tfc_ros, elai_profile, fd, tsai_profile, fab, fuel_frac, tlai_profile, clm_pno, tr_soil_dif, ros_front, nrad, fabi, canopy_layer_lai, npp, canopy_area_profile, ab, sh, canopy_area
+global_mod, sum_fuel, spread, area
+global_non, null, null, null, cp_p, null, null
+calls

@@ -1,0 +1,8 @@
+sub_in, AVS, wdata, pre, nt, use_float, nx, tavg, whead, fillval, dname, filename, ny, gsmap
+sub_out
+global_ro, dimid3, dimid2, dimid4
+global_wo
+global_mod
+global_non
+calls, mct_string_clean, pio_initdecomp, seq_flds_lookup, pio_freedecomp, mct_gsmap_OrderedPoints, pio_setframe, pio_write_darray, seq_comm_setptrs, shr_sys_abort, mct_aVect_getRList
+calls_ln, shr_sys_abort@641, seq_comm_setptrs@618, mct_aVect_getRList@670, mct_string_clean@717, seq_flds_lookup@674, pio_write_darray@734, mct_gsmap_OrderedPoints@697, mct_aVect_getRList@715, mct_string_clean@672, pio_setframe@725, pio_initdecomp@707, pio_initdecomp@710, shr_sys_abort@630, pio_freedecomp@738

@@ -1,0 +1,7 @@
+sub_in, prior_weights, bounds
+sub_out
+global_ro
+global_wo, lfpftd
+global_mod, frootn, npool, deadcrootc_storage, frootn_storage, leafn, deadcrootn_storage, livecrootn_storage, livecrootc, pft_ntrunc, leafc_storage, deadcrootn, livestemc_xfer, livecrootn, livecrootn_xfer, deadstemn_xfer, leafn_xfer, leafn_storage, deadstemc_storage, frootn_xfer, deadcrootn_xfer, deadstemn, frootc, deadcrootc, livestemc_storage, gresp_storage, gresp_xfer, livestemn_storage, deadstemc_xfer, retransn, deadstemn_storage, frootc_xfer, livestemn_xfer, livecrootc_storage, leafc_xfer, deadstemc, leafc, livecrootc_xfer, cpool, pft_ctrunc, deadcrootc_xfer, frootc_storage, livestemc, xsmrpool, livestemn, prod100_c13flux, prod100_nflux, prod100_c14flux, dwt_livecrootn_to_litter, dwt_frootc14_to_litter, dwt_frootn_to_litter, dwt_deadcrootc14_to_litter, dwt_deadcrootc13_to_litter, dwt_frootc13_to_litter, dwt_deadcrootn_to_litter, dwt_livecrootc13_to_litter, dwt_livecrootc14_to_litter, conv_c14flux, conv_nflux, conv_c13flux, prod10_c13flux, prod10_nflux, prod10_c14flux
+global_non
+calls, endrun

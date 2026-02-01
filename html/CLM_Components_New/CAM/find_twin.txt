@@ -1,0 +1,7 @@
+sub_in, twingcol_f, gcol, smp, proc_smp_mapx
+sub_out, twingcol_f
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_gcol_block_d

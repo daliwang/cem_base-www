@@ -1,0 +1,18 @@
+sub_param, nitrogenflux_vars:7, bounds:2, this:1, carbonstate_vars:5, tracerstate_vars:8, filter_soilc:4, nitrogenstate_vars:6, betrtracer_vars:10, tracerflux_vars:9, num_soilc:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,readParams
+class(bgc_reaction_mock_run_type) , intent(in)    :: this               !
+type(bounds_type)                 , intent(in)    :: bounds             ! bounds
+integer                           , intent(in)    :: num_soilc          ! number of columns in column filter
+integer                           , intent(in)    :: filter_soilc(:)    ! column filter
+type(betrtracer_type)             , intent(in)    :: betrtracer_vars    ! betr configuration information
+type(tracerstate_type)            , intent(in)    :: tracerstate_vars   !
+type(tracerflux_type)             , intent(in)    :: tracerflux_vars    !
+type(carbonstate_type)            , intent(inout) :: carbonstate_vars   !
+type(nitrogenflux_type)           , intent(inout) :: nitrogenflux_vars  !
+type(nitrogenstate_type)          , intent(inout) :: nitrogenstate_vars !

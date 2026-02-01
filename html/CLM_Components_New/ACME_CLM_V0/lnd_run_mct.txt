@@ -1,0 +1,7 @@
+sub_in, EClock, l2x_l, cdata_l, x2l_l
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_file_setLogUnit, shr_file_getLogLevel, seq_cdata_setptrs, set_nextsw_cday, seq_timemgr_EClockGetData, clm_drv, t_stopf, shr_orb_decl, memmon_reset_addr, seq_timemgr_EclockGetData, advance_timestep, t_startf, t_barrierf, get_proc_bounds, seq_infodata_GetData, memmon_dump_fort, shr_file_setLogLevel, endrun, update_rad_dtime, shr_file_getLogUnit, work, lnd_export, get_curr_date, lnd_import

@@ -1,0 +1,7 @@
+sub_in, x2a, sec_spec, yr_spec, mon_spec, day_spec, a2x
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_closefile, pio_write_darray, ESMF_ArrayGet, esmfshr_util_ArrayGetSize, pio_initdecomp, pio_freedecomp, cam_pio_createfile, esmfshr_util_ArrayGetName

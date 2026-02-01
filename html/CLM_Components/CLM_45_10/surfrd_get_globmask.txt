@@ -1,0 +1,7 @@
+sub_in, filename, nj, ni, mask
+sub_out, mask
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_pio_openfile, ncd_inqfdims, getfil, ncd_pio_closefile, endrun

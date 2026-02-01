@@ -1,0 +1,17 @@
+sub_param, albsn_roof, waterstate_vars, filter_urbanc, albsn_perroad, bounds, coszen, ind, albsn_improad, num_urbanc
+sub_out, albsn_improad, albsn_roof, albsn_perroad
+global_ro, waterstate_vars%h2osno_col, col%landunit
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in) :: num_urbanc                          ! number of urban columns in clump
+integer , intent(in) :: filter_urbanc(:)                    ! urban column filter
+integer , intent(in) :: ind                                 ! 0=direct beam, 1=diffuse radiation
+real(r8), intent(in) :: coszen        ( bounds%begl: )      ! cosine solar zenith angle [landunit]
+real(r8), intent(out):: albsn_roof    ( bounds%begl: , 1: ) ! roof snow albedo by waveband [landunit, numrad]
+real(r8), intent(out):: albsn_improad ( bounds%begl: , 1: ) ! impervious road snow albedo by waveband [landunit, numrad]
+real(r8), intent(out):: albsn_perroad ( bounds%begl: , 1: ) ! pervious road snow albedo by waveband [landunit, numrad]
+type(waterstate_type), intent(in) :: waterstate_vars

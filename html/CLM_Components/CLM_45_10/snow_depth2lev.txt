@@ -1,0 +1,7 @@
+sub_in, lbc, ubc
+sub_out
+global_ro, lakpoi, landunit, snow_depth
+global_wo, z
+global_mod, zi, dz, snl
+global_non
+calls

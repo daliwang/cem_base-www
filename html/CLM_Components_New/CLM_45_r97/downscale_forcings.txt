@@ -1,0 +1,7 @@
+sub_in, filter_do_smb_c, bounds, atm2lnd_inst, num_do_smb_c
+sub_out
+global_ro, forc_pbot_g, forc_rho_g, forc_rain_g, forc_snow_g, forc_t_g, forc_th_g, forc_q_g
+global_wo, forc_q_c, forc_rho_c, forc_th_c, forc_t_c, forc_pbot_c
+global_mod, forc_rain_c, forc_snow_c
+global_non
+calls, downscale_longwave, Qsat, check_downscale_consistency

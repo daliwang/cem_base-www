@@ -1,0 +1,7 @@
+sub_in, bounds, nitrogenstate_vars, filter_soilc, num_soilc, nitrogenflux_vars
+sub_out
+global_ro, nitrogenflux_vars%nfix_to_sminn_col, nitrogenflux_vars%smin_no3_leached_col, nitrogenflux_vars%dwt_nloss_col, nitrogenflux_vars%smin_no3_runoff_col, nitrogenflux_vars%fire_nloss_col, nitrogenflux_vars%supplement_to_sminn_col, nitrogenflux_vars%ndep_to_sminn_col, grc%latdeg, col%gridcell, grc%londeg, nitrogenflux_vars%denit_col, nitrogenflux_vars%f_n2o_nit_col, nitrogenstate_vars%begnb_col, nitrogenflux_vars%som_n_leached_col, nitrogenstate_vars%totcoln_col, nitrogenflux_vars%sminn_leached_col, nitrogenflux_vars%product_nloss_col
+global_wo
+global_mod, nitrogenflux_vars%ninputs_col, nitrogenflux_vars%noutputs_col, nitrogenstate_vars%endnb_col, nitrogenstate_vars%errnb_col
+global_non, nitrogenflux_vars%soyfixn_to_sminn_col, nitrogenflux_vars%fert_to_sminn_col
+calls, endrun

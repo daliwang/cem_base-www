@@ -1,0 +1,8 @@
+sub_in, fractions_i, infodata, ice, fractions_o, fractions_a
+sub_out
+global_ro, data, rAttr
+global_wo
+global_mod
+global_non, prep_atm_get_mapper_Fi2a, component_get_c2x_cx, prep_ocn_get_mapper_SFi2o, component_get_dom_cx
+calls, mct_aVect_copy, seq_infodata_getData, seq_frac_check, seq_map_map
+calls_ln, mct_aVect_copy@523, seq_infodata_getData@514, seq_frac_check@537, seq_map_map@542, seq_map_map@535, seq_frac_check@566, seq_frac_check@531

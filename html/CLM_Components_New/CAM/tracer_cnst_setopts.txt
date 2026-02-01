@@ -1,0 +1,7 @@
+sub_in, tracer_cnst_type_in, tracer_cnst_file_in, tracer_cnst_fixed_ymd_in, tracer_cnst_datapath_in, tracer_cnst_specifier_in, tracer_cnst_rmfile_in, tracer_cnst_cycle_yr_in, tracer_cnst_fixed_tod_in, tracer_cnst_filelist_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, advance_trcdata, endrun, outfld

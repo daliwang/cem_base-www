@@ -1,0 +1,17 @@
+sub_param, carbonflux_vars, carbonstate_vars, nitrogenstate_vars, num_soilp, cnstate_vars, phosphorusflux_vars, phosphorusstate_vars, filter_soilp, nitrogenflux_vars
+sub_out
+global_ro, cnstate_vars%bglfr_patch, ecophyscon%lflitcn, nitrogenstate_vars%leafn_patch, pft%itype, ecophyscon%lflitcp, ecophyscon%frootcn, ecophyscon%leafcp, carbonstate_vars%frootc_patch, ecophyscon%frootcp, phosphorusstate_vars%frootp_patch, carbonstate_vars%leafc_patch, phosphorusstate_vars%leafp_patch, nitrogenstate_vars%frootn_patch, ecophyscon%leafcn
+global_wo, nitrogenflux_vars%leafn_to_retransn_patch, nitrogenflux_vars%frootn_to_litter_patch, phosphorusflux_vars%frootp_to_litter_patch, phosphorusflux_vars%leafp_to_retransp_patch
+global_mod, carbonflux_vars%leafc_to_litter_patch, phosphorusflux_vars%leafp_to_litter_patch, carbonflux_vars%frootc_to_litter_patch, nitrogenflux_vars%leafn_to_litter_patch
+global_non
+calls
+readParams,readCNPhenolParams
+integer                 , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                 , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type)      , intent(in)    :: cnstate_vars
+type(carbonstate_type)  , intent(in)    :: carbonstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars
+type(nitrogenstate_type)  , intent(in)    :: nitrogenstate_vars
+type(phosphorusstate_type), intent(in)    :: phosphorusstate_vars

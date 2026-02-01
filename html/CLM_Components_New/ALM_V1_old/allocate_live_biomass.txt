@@ -1,0 +1,9 @@
+sub_param, cc_p:1
+sub_out
+global_ro| ecophyscon%froot_leaf, froot_leaf, NONE| currentcohort%balive, balive, NONE| cc_p%balive, balive, NONE| currentcohort%pft, pft, NONE| EDecophyscon%sapwood_ratio, sapwood_ratio, NONE| currentcohort%hite, hite, NONE| cc_p%bdead, bdead, NONE
+global_wo| cc_p%b, b, NONE| currentcohort%status_coh, status_coh, NONE| currentcohort%bl, bl, NONE
+global_mod| currentcohort%laimemory, laimemory, NONE| currentcohort%bsw, bsw, NONE| currentcohort%br, br, NONE
+global_non| cc_p, currentCohort, NONE
+calls
+readParams,
+type (cohort), intent(inout), target  :: cc_p

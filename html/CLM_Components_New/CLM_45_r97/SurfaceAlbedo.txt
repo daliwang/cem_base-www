@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, declinp1, filter_urbanc, temperature_inst, num_nourbanp, filter_nourbanp, num_nourbanc, lakestate_inst, num_urbanp, aerosol_inst, waterstate_inst, surfalb_inst, filter_urbanp, num_urbanc, nextsw_cday, filter_nourbanc, canopystate_inst, bounds
+sub_out
+global_ro, mss_cnc_ocpho, mss_cnc_bcpho, taus, elai, tlai, h2osno, rhol, mss_cnc_dst4, tsai, frac_sno, h2osoi_liq, h2osoi_ice, rhos, snw_rds, mss_cnc_dst2, mss_cnc_bcphi, mss_cnc_ocphi, mss_cnc_dst1, taul, esai, mss_cnc_dst3
+global_wo, albgri_bc, albsnd_hst, fabd_sun, ftii, albi, fabi, fabd_sha, albsni_hst, fabd_sha_z, fsun_z, fabi_sun, fabd, albd, ftid, albgri_pur, albgri_oc, flx_absdv, fabi_sha, vcmaxcintsun, flx_absiv, albgrd_pur, ftdd, flx_absin, albgrd_dst, fabd_sun_z, fabi_sha_z, albgrd_oc, albgrd_bc, flx_absdn, fabi_sun_z, albgri_dst
+global_mod, albsoi, vcmaxcintsha, nrad, coszen_col, tsai_z, albgri, tlai_z, albgrd, albsod, ncan
+global_non
+calls, ED_Norman_Radiation, SoilAlbedo, SNICAR_RT, TwoStream, endrun

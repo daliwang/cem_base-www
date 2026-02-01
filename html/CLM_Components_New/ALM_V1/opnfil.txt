@@ -1,0 +1,11 @@
+sub_param, form, iun, locfn
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+character(len=*), intent(in):: locfn  !file name
+integer, intent(in):: iun             !fortran unit number
+character(len=1), intent(in):: form   !file format: u = unformatted, f = formatted

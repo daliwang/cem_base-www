@@ -1,0 +1,7 @@
+sub_in, rc, prec_str, dlf, rliq, cam_in, tnd_qsnow, state, snow_str, carma, tnd_nsnow, icol, cstate, dt
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

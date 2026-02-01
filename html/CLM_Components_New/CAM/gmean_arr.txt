@@ -1,0 +1,7 @@
+sub_in, nflds, arr, arr_gmean
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, gmean_fixed_repro, t_startf, gmean_float_repro, t_stopf

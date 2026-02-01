@@ -1,0 +1,7 @@
+sub_in, p, cnveg_state_inst, temperature_inst, canopystate_inst, waterstate_inst
+sub_out
+global_ro, snow_depth, t_ref2m_max, t_ref2m_min, t_ref2m
+global_wo, huigrain, gddmaturity
+global_mod, vf, cumvd, hdidx
+global_non, canopystate_inst%tlai_patch
+calls

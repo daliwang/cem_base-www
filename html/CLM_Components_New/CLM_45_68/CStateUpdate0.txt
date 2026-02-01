@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, isotope
+sub_out
+global_ro, pcisof%psnsun_to_cpool, pcisof%psnshade_to_cpool
+global_wo
+global_mod, pcisos%cpool
+global_non, pcf, pc14f, pcs, pc14s, pc13s, pc13f
+calls, endrun
+
+Tree height: 1
+0 , endrun, 

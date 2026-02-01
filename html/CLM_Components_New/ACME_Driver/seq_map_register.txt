@@ -1,0 +1,8 @@
+sub_in, comp, export_state, import_state, petlist
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_GridCompSetServices
+calls_ln, ESMF_GridCompSetServices@82

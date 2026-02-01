@@ -1,0 +1,7 @@
+sub_in, lam, phidp, uxr, lbasiy, idp, vxr, ra, uxl, jgc, nlonex, phib, iterdp, locgeo, lamdp, dt, nlon, jdp, vb, jcen, ub, phimp, vxl, lammp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, trajmp, lagyin, herxin, trjmps, bandij, g2spos, s2gvel, endrun, trjgl

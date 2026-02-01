@@ -1,0 +1,7 @@
+sub_in, cosp, jlast, va, xfx, jfirst, fy, ffsl, im, q, crx, yfx, ng, iord, jm, jord, id, cry, fx
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, xtpv, ytp

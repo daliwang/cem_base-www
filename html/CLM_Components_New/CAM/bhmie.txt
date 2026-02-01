@@ -1,0 +1,7 @@
+sub_in, Qext, x, s2, s1, carma, rc, nang, Qback, gfac, refrel, Qsca
+sub_out, gfac, s2, Qback, Qext, Qsca, s1
+global_ro
+global_wo
+global_mod
+global_non
+calls

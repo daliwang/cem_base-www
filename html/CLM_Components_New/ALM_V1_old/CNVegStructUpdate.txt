@@ -1,0 +1,16 @@
+sub_param, canopystate_vars:8, carbonstate_vars:7, dgvs_vars:5, num_soilp:1, waterstate_vars:3, frictionvel_vars:4, cnstate_vars:6, filter_soilp:2
+sub_out
+global_ro| ecophyscon%slatop, slatop, NONE| ecophyscon%displar, displar, NONE| ecophyscon%z0mr, z0mr, NONE| frictionvel_vars%forc_hgt_u_patch, forc_hgt_u_patch, NONE| dgvs_vars%nind_patch, nind, NONE| pft%itype, ivt, NONE| dgv_ecophyscon%allom2, allom2, NONE| carbonstate_vars%leafc_patch, leafc, NONE| dgvs_vars%fpcgrid_patch, fpcgrid, NONE| pft%gridcell, gridcell, NONE| pft%column, column, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| ecophyscon%dwood, dwood, NONE| ecophyscon%woody, woody, NONE| dgv_ecophyscon%allom3, allom3, NONE| cnstate_vars%farea_burned_col, farea_burned, NONE| carbonstate_vars%deadstemc_patch, deadstemc, NONE| cnstate_vars%harvdate_patch, harvdate, NONE| ecophyscon%dsladlai, dsladlai, NONE
+global_wo| canopystate_vars%frac_veg_nosno_alb_patch, frac_veg_nosno_alb, NONE
+global_mod| cnstate_vars%htmx_patch, htmx, NONE| canopystate_vars%hbot_patch, hbot, NONE| canopystate_vars%tlai_patch, tlai, NONE| canopystate_vars%htop_patch, htop, NONE| canopystate_vars%elai_patch, elai, NONE| canopystate_vars%esai_patch, esai, NONE| canopystate_vars%tsai_patch, tsai, NONE| cnstate_vars%peaklai_patch, peaklai, NONE
+global_non
+calls
+readParams,
+integer                , intent(in)    :: num_soilp       ! number of column soil points in pft filter
+integer                , intent(in)    :: filter_soilp(:) ! patch filter for soil points
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(frictionvel_type) , intent(in)    :: frictionvel_vars
+type(dgvs_type)        , intent(in)    :: dgvs_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars
+type(carbonstate_type) , intent(in)    :: carbonstate_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars

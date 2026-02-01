@@ -1,0 +1,7 @@
+sub_in, Lscale_max_in, sclr_dim_in, ts_nudge_in, edsclr_dim_in, , hydromet_dim_in, T0_in, sclr_tol_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

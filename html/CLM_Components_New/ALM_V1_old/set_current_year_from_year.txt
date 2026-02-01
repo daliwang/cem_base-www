@@ -1,0 +1,10 @@
+sub_param, cur_year:2, this:1
+sub_out
+global_ro| this%years, years, NONE| this%nyears, nyears, NONE
+global_wo| this%time_index_lower, time_index_lower, NONE
+global_mod| this%time_index_upper, time_index_upper, NONE
+global_non
+calls, endrun
+readParams,
+class(time_info_type), intent(inout) :: this      ! this object
+integer, intent(in)                  :: cur_year  ! current model year

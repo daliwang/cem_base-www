@@ -1,0 +1,12 @@
+sub_param, include_inactive, icemask_grc, bounds, this_filter
+sub_out, this_filter
+global_ro, col%gridcell, bounds%clump_index, pft%landunit, col%landunit
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds
+type(clumpfilter) , intent(inout) :: this_filter(:)              ! the group of filters to set
+logical           , intent(in)    :: include_inactive            ! whether inactive points should be included in the filters
+real(r8)          , intent(in)    :: icemask_grc( bounds%begg: ) ! ice sheet grid coverage mask [gridcell]

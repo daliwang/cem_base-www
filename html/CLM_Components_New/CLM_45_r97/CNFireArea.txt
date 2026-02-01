@@ -1,0 +1,7 @@
+sub_in, cnveg_state_inst, filter_soilp, soilhydrology_inst, t_soi17cm_col, filter_soilc, decomp_cpools_vr_col, energyflux_inst, num_soilc, totlitc_col, num_soilp, waterstate_inst, cnveg_carbonstate_inst, bounds, atm2lnd_inst
+sub_out
+global_ro, forc_wind, leafc, livecrootc_xfer, fsat, leafc_col, deadcrootc, gdp_lf, lfpftd, fd_pft, forc_rh, wf2, decomp_cpools_vr, livecrootc_storage, forc_t, forc_snow, frootc_xfer, wf, deadcrootc_xfer, leafc_storage, frootc, livecrootc, abm_lf, totvegc_col, deadcrootc_storage, leafc_xfer, forc_rain, frootc_storage, btran2, totlitc, is_cwd, tsoi17, fsr_pft, peatf_lf
+global_wo, burndate, fbac
+global_mod, trotr2_col, fuelc_crop, baf_crop, fsr_col, nfire, fd_col, trotr1_col, dtrotr_col, farea_burned, fbac1, fuelc, lpop_col, lgdp1_col, lfc, wtlf, rootc_col, lfwt, baf_peatf, cropf_col, lgdp_col
+global_non, atm2lnd_inst%prec60_patch, cnveg_carbonstate_inst%totvegc_patch, atm2lnd_inst%prec10_patch
+calls, p2c, get_curr_date

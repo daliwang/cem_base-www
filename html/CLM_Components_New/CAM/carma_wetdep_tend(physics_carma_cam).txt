@@ -1,0 +1,7 @@
+sub_in, pbuf, dlf, dt, ptend, state, cam_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, endrun, CARMA_WetDeposition, physics_ptend_init, wetdepa_v2, get_rlat_all_p, clddiag, get_lon_all_p, get_lat_all_p, wetdepa_v1, pbuf_get_field, CARMAGROUP_Get, CARMAELEMENT_Get, outfld

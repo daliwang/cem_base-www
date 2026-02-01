@@ -1,0 +1,8 @@
+sub_in, pre, dname, filename, AV, gsmap
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_aVect_getRList, pio_read_darray, pio_closefile, pio_freedecomp, mct_gsmap_OrderedPoints, pio_seterrorhandling, pio_initdecomp, mct_string_clean, shr_sys_abort, shr_mpi_bcast, seq_comm_setptrs
+calls_ln, mct_string_clean@1511, pio_seterrorhandling@1517, seq_comm_setptrs@1489, mct_aVect_getRList@1509, shr_sys_abort@1533, shr_mpi_bcast@1496, mct_gsmap_OrderedPoints@1490, pio_freedecomp@1557, pio_seterrorhandling@1544, pio_initdecomp@1535, pio_seterrorhandling@1500, shr_sys_abort@1505, pio_read_darray@1538, pio_closefile@1558, pio_seterrorhandling@1502

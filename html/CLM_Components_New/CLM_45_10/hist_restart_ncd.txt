@@ -1,0 +1,23 @@
+sub_in, flag, ncid, rdate
+sub_out
+global_ro
+global_wo
+global_mod, tape(t)%hlist(f)%nacs, tape(t)%hlist(f)%hbuf
+global_non
+calls, ncd_io, ncd_defdim, ncd_pio_closefile, get_proc_global, ncd_pio_openfile, get_proc_bounds, ncd_inqvid, ncd_enddef, ncd_inqdlen, getfil, ncd_defvar, htape_create, strip_null, endrun
+
+Tree height: 9
+3+, ncd_inqdlen, ncd_io, ncd_io, strip_null, strip_null, get_proc_bounds, get_proc_global, getfil, ncd_pio_openfile, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_inqvid, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, strip_null, strip_null, strip_null, strip_null, strip_null, strip_null, strip_null, strip_null, strip_null, strip_null, endrun, endrun, 
+5+, ncd_pio_closefile, 
+7-, ncd_io, ncd_io, 
+7+, ncd_io, ncd_io, 
+4+, ncd_inqdlen, endrun, ncd_pio_openfile, ncd_pio_closefile, 
+6-, ncd_io, ncd_io, 
+6+, ncd_io, ncd_io, 
+2+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, 
+1+, ncd_defdim, ncd_defdim, ncd_defvar, ncd_defvar, get_proc_global, htape_create, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_enddef, 
+2+, endrun, 
+4-, ncd_defvar, ncd_defvar, 
+4+, ncd_defvar, ncd_defvar, 
+4-, ncd_defvar, ncd_defvar, 
+4+, ncd_defvar, ncd_defvar, 

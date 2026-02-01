@@ -1,0 +1,12 @@
+sub_param, indx:2, n:4, d:3, a:1
+sub_out, a, d, indx
+global_ro
+global_wo
+global_mod
+global_non
+calls, swap
+readParams,
+real(r8), intent(inout) :: a(n,n)
+integer   , intent(out) :: indx(n)
+real(r8)  , intent(out) :: d(n)
+integer  ,  intent(in)  :: n

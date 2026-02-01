@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit, nind, gridcell, fpcgrid, mxy, ifspecial
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_enddef, get_curr_date, ncd_defdim, getdatetime, shr_sys_getenv, ncd_defvar, ncd_pio_closefile, get_proc_bounds, get_curr_time, ncd_putatt, get_ref_date, ncd_pio_createfile

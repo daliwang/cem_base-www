@@ -1,0 +1,10 @@
+sub_param, this, c, betrtracer_vars
+sub_out
+global_ro, this%tracer_flx_surfrun_col, this%tracer_flx_tparchm_col, betrtracer_vars%ngwmobile_tracers, this%tracer_flx_ebu_col, this%tracer_flx_h2osfc_snow_residual_col, this%tracer_flx_drain_col, this%tracer_flx_vtrans_col, betrtracer_vars%volatileid, betrtracer_vars%is_volatile, this%tracer_flx_dif_col, this%tracer_flx_dew_grnd_col, this%tracer_flx_sub_snow_col, this%tracer_flx_leaching_col, this%tracer_flx_dew_snow_col, betrtracer_vars%ntracers
+global_wo
+global_mod, this%tracer_flx_netpro_col, this%tracer_flx_infl_col, this%tracer_flx_surfemi_col, this%tracer_flx_netphyloss_col
+global_non, betrtracer_vars%tracernames, betrtracer_vars%nvolatile_tracers
+calls
+readParams,
+type(BeTRTracer_Type)  , intent(in)  :: betrtracer_vars
+integer                , intent(in)  :: c     ! column index

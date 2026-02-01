@@ -1,0 +1,10 @@
+sub_param, endc:3, soilhydrology_vars:4, begc:2, vsfm_mpp:1
+sub_out
+global_ro| cur_goveq%z, z, NONE| col%landunit, landunit, NONE| cur_goveq%next, cur_goveq, NONE| vsfm_soe%goveqns, cur_goveq, NONE| soilhydrology_vars%zwt_col, zwt_col, NONE| col%gridcell, gridcell, NONE
+global_wo
+global_mod
+global_non| cur_goveq, goveq_richards_ode_pres, NONE| vsfm_mpp%sysofeqns, vsfm_soe, NONE
+calls, VecCopy, DMCompositeGetEntriesArray, DMCompositeGetNumberDM, VecGetArrayF90, VecRestoreArrayF90, DMCompositeRestoreAccessArray, DMCompositeGetAccessArray, endrun
+readParams,
+integer, intent(in)                               :: begc,endc
+type(soilhydrology_type), intent(in)              :: soilhydrology_vars

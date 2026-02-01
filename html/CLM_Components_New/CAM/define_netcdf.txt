@@ -1,0 +1,7 @@
+sub_in, TimeDimId, ncid, AltVarId, month, AltDimId, day, iz, year, LatVarId, LongDimId, nlon, time, TimeVarId, LatDimId, LongVarId, nlat
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, format_date

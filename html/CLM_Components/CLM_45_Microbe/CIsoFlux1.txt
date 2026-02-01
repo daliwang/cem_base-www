@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, decomp_cpools_vr, cascade_donor_pool
+global_wo
+global_mod, decomp_cascade_ctransfer_vr, decomp_cascade_hr_vr
+global_non, cc14f, cc13f, c, p, pc14f, pc13f, pc13s, pc14s, cc13s, cc14s
+calls, CNCIsoLitterToColumn, CIsoFluxCalc, endrun

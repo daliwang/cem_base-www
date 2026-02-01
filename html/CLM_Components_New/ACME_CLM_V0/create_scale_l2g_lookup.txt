@@ -1,0 +1,7 @@
+sub_in, l2g_scale_type, scale_lookup
+sub_out, scale_lookup
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

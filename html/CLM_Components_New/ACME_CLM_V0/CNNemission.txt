@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, temperature_vars, filter_soilc, soilstate_vars, bounds, nitrogenstate_vars, num_soilc, nitrogenflux_vars
+sub_out
+global_ro, waterstate_vars%h2osoi_vol_col, soilstate_vars%bsw_col, temperature_vars%t_soisno_col, soilstate_vars%bd_col, soilstate_vars%watsat_col, nitrogenstate_vars%smin_no3_vr_col, nitrogenstate_vars%smin_nh4_vr_col, nitrogenflux_vars%gross_nmin_vr_col
+global_wo, nitrogenflux_vars%r_ngas_decomp_vr_col
+global_mod, nitrogenflux_vars%f_ngas_nitri_vr_col, nitrogenflux_vars%pot_f_denit_vr_col
+global_non, nitrogenstate_vars%sminn_vr_col, col%dz, waterstate_vars%h2osoi_liq_col
+calls, CNNitrification

@@ -1,0 +1,7 @@
+sub_in, import_state, EClock, comp, rc, export_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, cam_final, esmfshr_util_StateArrayDestroy

@@ -1,0 +1,7 @@
+sub_in, geds_local, bounds
+sub_out
+global_ro, currentSite%oldest_patch, currentPatch%younger
+global_wo
+global_mod
+global_non, geds_local
+calls, canopy_spread, terminate_cohorts, trim_canopy, total_balance_check, canopy_structure

@@ -1,0 +1,7 @@
+sub_in, fldv, varidu, decomp_type, data_type, numlev, fldu, varidv, File
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

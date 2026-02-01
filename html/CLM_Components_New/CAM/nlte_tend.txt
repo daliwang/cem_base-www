@@ -1,0 +1,7 @@
+sub_in, qrlf, state, pbuf
+sub_out, qrlf
+global_ro, xo2mmr, xhmmr, xommr
+global_wo
+global_mod
+global_non, state%q, state%q, o3mrg, n2mmr
+calls, get_cnst, merge_o3, nlte_fomichev_calc, nocooling, rad_cnst_get_gas, outfld

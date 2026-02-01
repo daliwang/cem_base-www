@@ -1,0 +1,7 @@
+sub_in, numpft, EDpftvarcon_inst
+sub_out
+global_ro
+global_wo
+global_mod, EDPftvarcon_inst%sapwood_ratio, EDecophyscon%sapwood_ratio, EDecophyscon%initd, EDPftvarcon_inst%initd, EDPftvarcon_inst%seed_rain, EDecophyscon%seed_rain, EDecophyscon%hgt_min, EDPftvarcon_inst%hgt_min, EDPftvarcon_inst%freezetol, EDecophyscon%freezetol, EDPftvarcon_inst%max_dbh, EDecophyscon%max_dbh, EDPftvarcon_inst%wood_density, EDecophyscon%wood_density, EDPftvarcon_inst%leafwatermax, EDecophyscon%leafwatermax, EDPftvarcon_inst%seed_alloc, EDecophyscon%seed_alloc, EDecophyscon%bb_slope, EDPftvarcon_inst%bb_slope, EDecophyscon%root_long, EDPftvarcon_inst%root_long, EDecophyscon%leaf_stor_priority, EDPftvarcon_inst%leaf_stor_priority, EDPftvarcon_inst%rootresist, EDecophyscon%rootresist, EDPftvarcon_inst%soilbeta, EDecophyscon%soilbeta, EDPftvarcon_inst%sd_mort, EDecophyscon%sd_mort, EDecophyscon%crown_kill, EDPftvarcon_inst%crown_kill, EDecophyscon%cushion, EDPftvarcon_inst%cushion, EDecophyscon%crown, EDPftvarcon_inst%crown, EDecophyscon%alpha_stem, EDPftvarcon_inst%alpha_stem, EDecophyscon%clone_alloc, EDPftvarcon_inst%clone_alloc, EDecophyscon%bark_scaler, EDPftvarcon_inst%bark_scaler
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, rateloge, radius_cluster, cnum_h2so4, newnuc_method_flagaa, so4vol, ratenucl, newnuc_method_flagaa2, cnum_nh3, cnum_tot
+sub_out, cnum_nh3, cnum_tot, rateloge, radius_cluster, cnum_h2so4, newnuc_method_flagaa2, ratenucl
+global_ro
+global_wo
+global_mod
+global_non
+calls

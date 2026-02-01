@@ -1,0 +1,7 @@
+sub_in, this, geds_local, bounds
+sub_out
+global_ro, currentPatch%shortest, currentCohort%taller, currentPatch%younger, currentSite%oldest_patch, bounds%begg
+global_wo
+global_mod
+global_non, geds_local
+calls

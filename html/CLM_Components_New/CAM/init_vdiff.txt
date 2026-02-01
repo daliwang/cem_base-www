@@ -1,0 +1,7 @@
+sub_in, rair_in, gravit_in, do_iss_in, kind, errstring, iulog_in
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

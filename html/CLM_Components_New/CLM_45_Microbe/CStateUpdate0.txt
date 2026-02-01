@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, isotope
+sub_out
+global_ro, pcisof%psnsun_to_cpool, pcisof%psnshade_to_cpool
+global_wo
+global_mod, pcisos%cpool
+global_non, clm3%g%l%c%p%pcf, clm3%g%l%c%p%pc14f, clm3%g%l%c%p%pc13f, clm3%g%l%c%p%pc14s, clm3%g%l%c%p%pcs, clm3%g%l%c%p%pc13s
+calls, endrun
+
+Tree height: 1
+0 , endrun, 

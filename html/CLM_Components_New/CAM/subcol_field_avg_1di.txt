@@ -1,0 +1,7 @@
+sub_in, field_sc, lchnk, field, subcol_scheme_in, ngrdcol
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_field_avg_shr, endrun, subcol_field_avg_tstcp

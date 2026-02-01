@@ -1,0 +1,27 @@
+sub_param, displa:5, z0q:8, ubn:2, lbn:1, z0h:7, obu:9, temp1:14, temp12m:16, ur:11, temp2:15, filtern:4, um:12, fn:3, ustar:13, fm:18, z0m:6, temp22m:17, iter:10, frictionvel_vars:19, landunit_index:20
+sub_out, temp22m, temp2, temp1, fm, ustar, temp12m
+global_ro| frictionvel_vars%forc_hgt_q_patch, forc_hgt_q_patch, NONE| frictionvel_vars%forc_hgt_t_patch, forc_hgt_t_patch, NONE| lun%pfti, pfti, NONE| lun%gridcell, gridcell, NONE| pft%gridcell, gridcell, NONE| frictionvel_vars%forc_hgt_u_patch, forc_hgt_u_patch, NONE| lun%pftf, pftf, NONE
+global_wo| frictionvel_vars%fv_patch, fv, NONE| frictionvel_vars%vds_patch, vds, NONE| frictionvel_vars%u10_clm_patch, u10_clm, NONE| frictionvel_vars%va_patch, va, NONE| frictionvel_vars%u10_patch, u10, NONE
+global_mod
+global_non
+calls
+readParams,
+integer  , intent(in)    :: lbn, ubn                 ! pft/landunit array bounds
+integer  , intent(in)    :: fn                       ! number of filtered pft/landunit elements
+integer  , intent(in)    :: filtern(fn)              ! pft/landunit filter
+real(r8) , intent(in)    :: displa  ( lbn: )         ! displacement height (m) [lbn:ubn]
+real(r8) , intent(in)    :: z0m     ( lbn: )         ! roughness length over vegetation, momentum [m] [lbn:ubn]
+real(r8) , intent(in)    :: z0h     ( lbn: )         ! roughness length over vegetation, sensible heat [m] [lbn:ubn]
+real(r8) , intent(in)    :: z0q     ( lbn: )         ! roughness length over vegetation, latent heat [m] [lbn:ubn]
+real(r8) , intent(in)    :: obu     ( lbn: )         ! monin-obukhov length (m) [lbn:ubn]
+integer  , intent(in)    :: iter                     ! iteration number
+real(r8) , intent(in)    :: ur      ( lbn: )         ! wind speed at reference height [m/s] [lbn:ubn]
+real(r8) , intent(in)    :: um      ( lbn: )         ! wind speed including the stablity effect [m/s] [lbn:ubn]
+real(r8) , intent(out)   :: ustar   ( lbn: )         ! friction velocity [m/s] [lbn:ubn]
+real(r8) , intent(out)   :: temp1   ( lbn: )         ! relation for potential temperature profile [lbn:ubn]
+real(r8) , intent(out)   :: temp12m ( lbn: )         ! relation for potential temperature profile applied at 2-m [lbn:ubn]
+real(r8) , intent(out)   :: temp2   ( lbn: )         ! relation for specific humidity profile [lbn:ubn]
+real(r8) , intent(out)   :: temp22m ( lbn: )         ! relation for specific humidity profile applied at 2-m [lbn:ubn]
+real(r8) , intent(inout) :: fm      ( lbn: )         ! diagnose 10m wind (DUST only) [lbn:ubn]
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+logical  , intent(in), optional :: landunit_index   ! optional argument that defines landunit or pft level

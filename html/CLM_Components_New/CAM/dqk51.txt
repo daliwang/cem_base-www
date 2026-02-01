@@ -1,0 +1,7 @@
+sub_in, abserr, fx, result, fx_vars, ier, b, resabs, resasc, a
+sub_out, abserr, resabs, resasc, result
+global_ro
+global_wo
+global_mod
+global_non
+calls, sd1mach

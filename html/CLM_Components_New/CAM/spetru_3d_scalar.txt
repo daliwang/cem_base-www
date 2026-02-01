@@ -1,0 +1,7 @@
+sub_in, x3, dl, dm
+sub_out, x3, dl, dm
+global_ro
+global_wo
+global_mod
+global_non
+calls, fft991

@@ -1,0 +1,7 @@
+sub_in, Tc_7, rh, hi
+sub_out, hi
+global_ro
+global_wo
+global_mod
+global_non
+calls

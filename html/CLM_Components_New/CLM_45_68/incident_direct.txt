@@ -1,0 +1,12 @@
+sub_in, zen, coszen, sdir, num_urbanl, bounds, canyon_hwr, filter_urbanl
+sub_out, sdir_road, sdir_sunwall, sdir_shadewall
+global_ro
+global_wo
+global_mod
+global_non, perform
+calls, shr_assert, endrun
+
+Tree height: 4
+0 , shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, 
+2+, endrun, 
+3+, endrun, endrun, 

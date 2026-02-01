@@ -1,0 +1,9 @@
+sub_in, pftarr, lev, numfc, filterc
+sub_out, colarr
+global_ro, clm3%g%l%c%p%active, clm3%g%l%c%p%wtcol
+global_wo
+global_mod
+global_non, clm3%g%l%c%npfts, clm3%g%l%c%pftf, clm3%g%l%c%pfti
+calls
+
+Tree height: 2

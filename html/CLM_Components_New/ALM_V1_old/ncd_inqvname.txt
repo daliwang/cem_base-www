@@ -1,0 +1,12 @@
+sub_param, ncid:1, varid:2, vname:3, vardesc:4
+sub_out, vname
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(file_desc_t), intent(in)   :: ncid      ! netcdf file id
+integer           , intent(in)   :: varid     ! variable id
+character(len=*)  , intent(out)  :: vname     ! variable vname
+type(Var_desc_t)  , intent(inout):: vardesc   ! variable descriptor

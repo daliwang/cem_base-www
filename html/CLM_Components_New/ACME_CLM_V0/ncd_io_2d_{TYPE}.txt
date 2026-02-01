@@ -1,0 +1,7 @@
+sub_in, cnvrtnan2fill, nt, lowerb2, ncid, varname, readvar, data, switchdim, flag, upperb2, dim1name
+sub_out, data
+global_ro
+global_wo
+global_mod
+global_non, iodesc_list
+calls, scam_field_offsets, pio_setframe, ncd_getiodesc, shr_sys_abort, pio_write_darray, pio_read_darray, ncd_inqvid

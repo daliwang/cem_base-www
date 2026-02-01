@@ -1,0 +1,7 @@
+sub_in, modes, nl_in
+sub_out, nl_in
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_mode_type, check_specie_type, endrun, parse_error

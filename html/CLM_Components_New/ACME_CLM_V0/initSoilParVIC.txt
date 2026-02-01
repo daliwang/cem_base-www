@@ -1,0 +1,7 @@
+sub_in, soilhydrology_vars, c, claycol, sandcol, om_fraccol
+sub_out
+global_ro, soilhydrology_vars%vic_clm_fract_col, soilhydrology_vars%depth_col
+global_wo, soilhydrology_vars%ksat_col, soilhydrology_vars%max_moist_col, soilhydrology_vars%c_param_col, soilhydrology_vars%phi_s_col
+global_mod, soilhydrology_vars%porosity_col, soilhydrology_vars%expt_col
+global_non
+calls

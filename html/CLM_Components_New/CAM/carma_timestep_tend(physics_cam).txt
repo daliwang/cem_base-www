@@ -1,0 +1,7 @@
+sub_in, obklen, snow_sed, state, cam_out, dlf, cam_in, rliq, pbuf, ustar, prec_sed, snow_str, ptend, dt, prec_str
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init

@@ -1,0 +1,8 @@
+sub_in, idata, wdata, filename, dname, whead
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_comm_setptrs, seq_flds_lookup
+calls_ln, seq_flds_lookup@1020, seq_comm_setptrs@1017

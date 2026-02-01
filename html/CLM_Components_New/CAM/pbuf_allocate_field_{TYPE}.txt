@@ -1,0 +1,7 @@
+sub_in, pbuf2d, dtype, index
+sub_out
+global_ro, dimsizes
+global_wo
+global_mod
+global_non
+calls, endrun, buffer_field_allocate

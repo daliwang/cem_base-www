@@ -1,0 +1,7 @@
+sub_in, pbuf2d, phys_tend, phys_state
+sub_out, phys_state
+global_ro
+global_wo
+global_mod
+global_non, pbuf_get_chunk
+calls, check_energy_timestep_init, gmean, shr_vmath_log, set_wet_to_dry, geopotential_t, set_state_pdry

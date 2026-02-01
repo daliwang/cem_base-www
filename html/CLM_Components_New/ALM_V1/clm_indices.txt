@@ -1,0 +1,10 @@
+sub_param, bounds, geds_local
+sub_out
+global_ro, col%gridcell, col%landunit
+global_wo
+global_mod, geds_local%istheresoil
+global_non, geds_local
+calls
+readParams,
+type(bounds_type),                   intent(in)    :: bounds  ! clump bounds
+type(gridcell_edstate_type), target, intent(inout) :: geds_local( bounds%begg: )

@@ -1,0 +1,9 @@
+sub_param, csite:1
+sub_out
+global_ro| tpp%older, tpp, NONE| currentSite%youngest_patch, tpp, NONE| %pft_agb_profile, pft_agb_profile, NONE| currentSite%youngest_patch, currentPatch, NONE| tmpptr, currentPatch, NONE| currentPatch%older, currentPatch, NONE| null, currentPatch, NONE
+global_wo
+global_mod
+global_non| currentPatch%older, tmpptr, NONE| csite, currentSite, NONE
+calls, sort_cohorts, patch_pft_size_profile, fuse_cohorts, fuse_2_patches
+readParams,
+type(site), target, intent(inout)  :: csite

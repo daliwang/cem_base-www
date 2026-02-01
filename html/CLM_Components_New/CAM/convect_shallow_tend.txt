@@ -1,0 +1,7 @@
+sub_in, rliq, cmfmc, qc, ztodt, rliq2, ptend_all, state, qc2, cmfmc2, pbuf
+sub_out, qc, rliq, cmfmc, qc2, cmfmc2, rliq2
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_sum, physics_update, cnst_get_ind, pbuf_set_field, physics_state_dealloc, zm_conv_evap, outfld, physics_ptend_dealloc, physics_state_copy, cmfmca, physics_ptend_init, qsat, compute_uwshcu_inv, pbuf_get_field

@@ -1,0 +1,25 @@
+sub_param, soilstate_vars:12, filter_nourbanl:3, num_urbanc:6, atm2lnd_vars:10, num_nourbanl:2, temperature_vars:13, waterflux_vars:17, filter_urbanp:9, num_urbanl:4, filter_urbanl:5, waterstate_vars:14, urbanparams_vars:11, num_urbanp:8, bounds:1, frictionvel_vars:15, filter_urbanc:7, energyflux_vars:16
+sub_out, frictionvel_vars
+global_ro| col%itype, ctype, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| pft%gridcell, gridcell, NONE| lun%gridcell, gridcell, NONE| atm2lnd_vars%forc_rho_not_downscaled_grc, forc_rho, NONE| pft%column, column, NONE| lun%wtroad_perv, wtroad_perv, NONE| col%landunit, landunit, NONE| pft%landunit, landunit, NONE| lun%ht_roof, ht_roof, NONE| lun%wtlunit_roof, wtlunit_roof, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| lun%z_0_town, z_0_town, NONE| waterstate_vars%qg_col, qg, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| atm2lnd_vars%forc_th_not_downscaled_grc, forc_th, NONE| waterstate_vars%dqgdT_col, dqgdT, NONE| grc%londeg, londeg, NONE| atm2lnd_vars%forc_q_not_downscaled_grc, forc_q, NONE| atm2lnd_vars%forc_v_grc, forc_v, NONE| atm2lnd_vars%forc_u_grc, forc_u, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| :lun%pftf, pftf, NONE| energyflux_vars%htvp_col, htvp, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| frictionvel_vars%forc_hgt_t_patch, forc_hgt_t_patch, NONE| urbanparams_vars%eflx_traffic_factor, eflx_traffic_factor, NONE| energyflux_vars%eflx_urban_heat_col, eflx_urban_heat, NONE| frictionvel_vars%forc_hgt_u_patch, forc_hgt_u_patch, NONE| lun%z_d_town, z_d_town, NONE| soilstate_vars%soilalpha_u_col, soilalpha_u, NONE| atm2lnd_vars%forc_t_not_downscaled_grc, forc_t, NONE| energyflux_vars%eflx_urban_ac_col, eflx_urban_ac, NONE| soilstate_vars%rootr_road_perv_col, rootr_road_perv, NONE| lun%canyon_hwr, canyon_hwr, NONE| lun%pfti, pfti, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| urbanparams_vars%wind_hgt_canyon, wind_hgt_canyon, NONE
+global_wo| energyflux_vars%eflx_heat_from_ac_lun, eflx_heat_from_ac, NONE| soilstate_vars%rootr_patch, rootr, NONE| energyflux_vars%eflx_sh_tot_u_patch, eflx_sh_tot_u, NONE| waterflux_vars%qflx_evap_veg_patch, qflx_evap_veg, NONE| energyflux_vars%dlrad_patch, dlrad, NONE| energyflux_vars%cgrnd_patch, cgrnd, NONE| temperature_vars%t_ref2m_u_patch, t_ref2m_u, NONE| frictionvel_vars%ram1_patch, ram1, NONE| energyflux_vars%eflx_traffic_lun, eflx_traffic, NONE| temperature_vars%t_building_lun, t_building, NONE| temperature_vars%t_ref2m_patch, t_ref2m, NONE| temperature_vars%t_veg_patch, t_veg, NONE| waterflux_vars%qflx_evap_soi_patch, qflx_evap_soi, NONE| energyflux_vars%tauy_patch, tauy, NONE| energyflux_vars%taux_patch, taux, NONE| waterstate_vars%rh_ref2m_u_patch, rh_ref2m_u, NONE| energyflux_vars%ulrad_patch, ulrad, NONE| energyflux_vars%eflx_sh_soil_patch, eflx_sh_soil, NONE| energyflux_vars%eflx_sh_h2osfc_patch, eflx_sh_h2osfc, NONE| energyflux_vars%eflx_sh_snow_patch, eflx_sh_snow, NONE
+global_mod| energyflux_vars%eflx_sh_tot_patch, eflx_sh_tot, NONE| energyflux_vars%cgrnds_patch, cgrnds, NONE| energyflux_vars%cgrndl_patch, cgrndl, NONE| temperature_vars%taf_lun, taf, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE| waterflux_vars%qflx_tran_veg_patch, qflx_tran_veg, NONE| waterstate_vars%qaf_lun, qaf, NONE| energyflux_vars%eflx_wasteheat_lun, eflx_wasteheat, NONE| waterstate_vars%q_ref2m_patch, q_ref2m, NONE| waterstate_vars%rh_ref2m_patch, rh_ref2m, NONE
+global_non| bounds%endl, endl, NONE| col%snl, snl, NONE| waterflux_vars%qflx_evap_tot_patch, qflx_evap_tot, NONE| bounds%begl, begl, NONE| atm2lnd_vars%forc_pbot_not_downscaled_grc, forc_pbot, NONE| waterstate_vars%h2osno_col, h2osno, NONE
+calls, QSat, endrun, get_curr_date, FrictionVelocity, MoninObukIni
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nourbanl       ! number of non-urban landunits in clump
+integer                , intent(in)    :: filter_nourbanl(:) ! non-urban landunit filter
+integer                , intent(in)    :: num_urbanl         ! number of urban landunits in clump
+integer                , intent(in)    :: filter_urbanl(:)   ! urban landunit filter
+integer                , intent(in)    :: num_urbanc         ! number of urban columns in clump
+integer                , intent(in)    :: filter_urbanc(:)   ! urban column filter
+integer                , intent(in)    :: num_urbanp         ! number of urban patches in clump
+integer                , intent(in)    :: filter_urbanp(:)   ! urban pft filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(urbanparams_type) , intent(in)    :: urbanparams_vars
+type(soilstate_type)   , intent(inout) :: soilstate_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars

@@ -1,0 +1,11 @@
+sub_param, l2g_scale_type:2, scale_l2g:3, bounds:1
+sub_out, scale_l2g
+global_ro| lun%itype, itype, NONE
+global_wo
+global_mod
+global_non
+calls, create_scale_l2g_lookup
+readParams,
+type(bounds_type), intent(in) :: bounds
+character(len=*), intent(in)  :: l2g_scale_type            ! scale factor type for averaging
+real(r8)        , intent(out) :: scale_l2g( bounds%begl: ) ! scale factor

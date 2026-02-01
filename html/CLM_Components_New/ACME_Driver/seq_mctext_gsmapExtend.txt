@@ -1,0 +1,8 @@
+sub_in, mpicomo, gsmapo, gsmapi, mpicomi, compido
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_gsmap_init, shr_sys_abort, mpi_comm_group, mct_gsmap_bcast, mpi_group_translate_ranks, mpi_barrier, shr_sys_flush, mpi_comm_size, mpi_allreduce, mpi_comm_rank, shr_mpi_chkerr
+calls_ln, mpi_comm_rank@488, mct_gsmap_init@535, mct_gsmap_bcast@549, shr_mpi_chkerr@494, shr_sys_flush@577, shr_mpi_chkerr@496, mpi_comm_size@497, mpi_comm_rank@558, shr_mpi_chkerr@510, shr_mpi_chkerr@545, mpi_comm_rank@570, mpi_allreduce@544, mpi_group_translate_ranks@509, shr_mpi_chkerr@489, shr_sys_flush@554, mpi_comm_group@491, mpi_barrier@582, mpi_barrier@555, shr_sys_flush@565, shr_mpi_chkerr@492, shr_sys_abort@515, mpi_comm_size@495, shr_sys_flush@581, mpi_comm_group@493, shr_mpi_chkerr@498

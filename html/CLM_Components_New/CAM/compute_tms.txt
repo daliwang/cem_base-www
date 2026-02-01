@@ -1,0 +1,7 @@
+sub_in, pver, t, sgh, v, exner, pcols, tauy, pmid, ksrf, u, zm, landfrac, ncol, taux
+sub_out, tauy, ksrf, taux
+global_ro
+global_wo
+global_mod
+global_non
+calls

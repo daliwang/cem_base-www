@@ -1,0 +1,7 @@
+sub_in, ubl, ubg, filter_lakec, filter_soilp, lbl, filter_soilc, ubc, lbg, num_soilp, num_lakec, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro, latdeg, active, zwt0, column, ch4_prod_depth_sat, forc_po2, rootfr, itype, f0, forc_t, ch4_surf_diff_sat, frac_h2osfc, forc_pbot, z, zi, ch4_oxid_depth_sat, ch4_surf_aere_unsat, ch4_surf_aere_sat, forc_pco2, ch4_surf_diff_unsat, zwt, conc_o2_sat, conc_ch4_unsat, dz, ch4_surf_ebul_sat, qflx_surf, ch4_surf_ebul_unsat, rootfr, gridcell, p3, zwt_perched
+global_wo, zwt_ch4_unsat, conc_ch4_lake, ch4_prod_depth_lake, conc_o2_lake, ch4_surf_diff_lake, ch4_surf_ebul_lake, c_atm
+global_mod, ch4_dfsat_flux, layer_sat_lag, fsat_bef, totcolch4, finundated_lag, lake_soilc, forc_pch4, conc_ch4_sat, qflx_surf_lag, finundated
+global_non, ch4prodg, wtcol, grnd_ch4_cond, ch4co2f, nem, grnd_ch4_cond, flux_ch4
+calls, c2g, get_jwt, ch4annualupdate, ch4_aere, p2c, ch4_oxid, ch4_ebul, ch4_tran, endrun, ch4_prod

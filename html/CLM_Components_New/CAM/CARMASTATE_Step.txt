@@ -1,0 +1,7 @@
+sub_in, cstate, ocnfv, rhcrit, rc, icefv, cldfrc, lndfrac, lndfv, icefrac, ocnfrac, iceram, ocnram, lndram
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, setupckern, supersat, setupbdif, setupvf, rhopart, setupgkern, setupgrow, step, setupvdry, setupnuc

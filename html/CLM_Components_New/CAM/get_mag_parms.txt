@@ -1,0 +1,7 @@
+sub_in, hpower, ctpoten, bz, by
+sub_out, by, ctpoten, bz
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_solar_parms

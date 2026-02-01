@@ -1,0 +1,7 @@
+sub_in, cp_pnt
+sub_out
+global_ro, cp_pnt%area, currentPatch%tallest, currentCohort%shorter, %pft, %seed_prod, currentSite%oldest_patch, cp_pnt, currentPatch%younger, %n, EDecophyscon%seed_rain
+global_wo
+global_mod, cp_pnt%seeds_in
+global_non, currentPatch%siteptr
+calls

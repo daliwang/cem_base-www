@@ -1,0 +1,25 @@
+sub_param, num_soilc:2, filter_soilc:3, phosphorusflux_vars:17, waterstate_vars:9, canopystate_vars:6, nitrogenstate_vars:14, num_soilp:4, bounds:1, carbonflux_vars:13, soilstate_vars:7, nitrogenflux_vars:15, carbonstate_vars:12, phosphorusstate_vars:16, ch4_vars:11, temperature_vars:8, cnstate_vars:10, filter_soilp:5
+sub_out
+global_ro| cnstate_vars%pathfrac_decomp_cascade_col, pathfrac_decomp_cascade, NONE| decomp_cascade_con%is_cwd, is_cwd, NONE| decomp_cascade_con%floating_cn_ratio_decomp_pools, floating_cn_ratio_decomp_pools, NONE| nitrogenstate_vars%decomp_npools_vr_col, decomp_npools_vr, NONE| cnstate_vars%fpi_vr_col, fpi_vr, NONE| cnstate_vars%fpi_p_vr_col, fpi_p_vr, NONE| cnstate_vars%rf_decomp_cascade_col, rf_decomp_cascade, NONE| decomp_cascade_con%cascade_receiver_pool, cascade_receiver_pool, NONE| decomp_cascade_con%initial_cp_ratio, initial_cp_ratio, NONE| decomp_cascade_con%cascade_donor_pool, cascade_donor_pool, NONE| phosphorusstate_vars%decomp_ppools_vr_col, decomp_ppools_vr, NONE| decomp_cascade_con%initial_cn_ratio, initial_cn_ratio, NONE| carbonflux_vars%decomp_k_col, decomp_k, NONE| carbonflux_vars%w_scalar_col, w_scalar, NONE| carbonstate_vars%decomp_cpools_vr_col, decomp_cpools_vr, NONE| decomp_cascade_con%floating_cp_ratio_decomp_pools, floating_cp_ratio_decomp_pools, NONE
+global_wo| phosphorusflux_vars%decomp_cascade_ptransfer_vr_col, decomp_cascade_ptransfer_vr, NONE| nitrogenflux_vars%decomp_cascade_sminn_flux_vr_col, decomp_cascade_sminn_flux_vr, NONE| phosphorusflux_vars%decomp_cascade_sminp_flux_vr_col, decomp_cascade_sminp_flux_vr, NONE| nitrogenflux_vars%potential_immob_vr_col, potential_immob_vr, NONE| nitrogenflux_vars%sminn_to_denit_decomp_cascade_vr_col, sminn_to_denit_decomp_cascade_vr, NONE| phosphorusflux_vars%potential_immob_p_vr_col, potential_immob_p_vr, NONE| carbonflux_vars%decomp_cascade_ctransfer_vr_col, decomp_cascade_ctransfer_vr, NONE| nitrogenflux_vars%decomp_cascade_ntransfer_vr_col, decomp_cascade_ntransfer_vr, NONE| carbonflux_vars%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr, NONE
+global_mod| phosphorusflux_vars%soil_p_immob_flux_vr, soil_p_immob_flux_vr, NONE| nitrogenflux_vars%soil_n_grossmin_flux, soil_n_grossmin_flux, NONE| phosphorusflux_vars%net_pmin_vr_col, net_pmin_vr, NONE| nitrogenflux_vars%soil_n_immob_flux_vr, soil_n_immob_flux_vr, NONE| nitrogenflux_vars%soil_n_immob_flux, soil_n_immob_flux, NONE| phosphorusflux_vars%gross_pmin_vr_col, gross_pmin_vr, NONE| nitrogenflux_vars%net_nmin_vr_col, net_nmin_vr, NONE| phosphorusflux_vars%pmpf_decomp_cascade, pmpf_decomp_cascade, NONE| carbonflux_vars%fphr_col, fphr, NONE| phosphorusflux_vars%soil_p_immob_flux, soil_p_immob_flux, NONE| phosphorusflux_vars%soil_p_grossmin_flux, soil_p_grossmin_flux, NONE| carbonflux_vars%phr_vr_col, phr_vr, NONE| nitrogenflux_vars%gross_nmin_vr_col, gross_nmin_vr, NONE| nitrogenflux_vars%pmnf_decomp_cascade, pmnf_decomp_cascade, NONE
+global_non| phosphorusflux_vars%actual_immob_p_vr_col, actual_immob_p_vr, NONE| nitrogenflux_vars%actual_immob_vr_col, actual_immob_vr, NONE| nitrogenflux_vars%net_nmin_col, net_nmin, NONE| nitrogenflux_vars%gross_nmin_col, gross_nmin, NONE| phosphorusflux_vars%net_pmin_col, net_pmin, NONE| phosphorusflux_vars%gross_pmin_col, gross_pmin, NONE
+calls, nitrif_denitrif, decomp_rate_constants_bgc, decomp_rate_constants_cn, CNAllocation2_ResolveNPLimit, t_startf, t_stopf
+readParams,readCNDecompParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc          ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)    ! filter for soil columns
+integer                  , intent(in)    :: num_soilp          ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)    ! filter for soil patches
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(ch4_type)           , intent(in)    :: ch4_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

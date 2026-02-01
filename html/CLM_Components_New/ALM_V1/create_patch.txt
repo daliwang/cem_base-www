@@ -1,0 +1,18 @@
+sub_param, new_patch, areap, cwd_ag_local, age, cwd_bg_local, seed_bank_local, root_litter_local, currentSite, leaf_litter_local, spread_local
+sub_out
+global_ro
+global_wo, new_patch%frac_burnt, new_patch%fabd_sun_z, new_patch%root_litter, new_patch%ed_parsun_z, new_patch%cwd_bg_in, new_patch%cwd_bg, new_patch%fabi, new_patch%total_tree_area, new_patch%ed_parsha_z, new_patch%NCL_p, new_patch%area, new_patch%tr_soil_dif, new_patch%tr_soil_dir_dif, new_patch%fabi_sun_z, new_patch%tr_soil_dir, new_patch%f_sun, new_patch%spread, new_patch%fabd, new_patch%cwd_ag, new_patch%ed_laisun_z, new_patch%cwd_ag_in, new_patch%seed_bank, new_patch%fabi_sha_z, new_patch%ed_laisha_z, new_patch%leaf_litter, new_patch%fabd_sha_z
+global_mod, new_patch%age
+global_non, null, null, null, null, currentSite, null
+calls, zero_patch
+readParams,
+type(site),  target, intent(inout) :: currentSite
+type(patch), target, intent(inout) :: new_patch
+real(r8), intent(in) :: age                 ! notional age of this patch in years
+real(r8), intent(in) :: areap               ! initial area of this patch in m2.
+real(r8), intent(in) :: cwd_ag_local(:)     ! initial value of above ground coarse woody debris. KgC/m2
+real(r8), intent(in) :: cwd_bg_local(:)     ! initial value of below ground coarse woody debris. KgC/m2
+real(r8), intent(in) :: root_litter_local(:)! initial value of root litter. KgC/m2
+real(r8), intent(in) :: leaf_litter_local(:)! initial value of leaf litter. KgC/m2
+real(r8), intent(in) :: spread_local(:)     ! initial value of canopy spread parameter.no units
+real(r8), intent(in) :: seed_bank_local(:)  ! initial value of seed bank. KgC/m2

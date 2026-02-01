@@ -1,0 +1,7 @@
+sub_in, num_urbanc, num_hydrologyc, bounds, filter_urbanc, filter_hydrologyc
+sub_out
+global_ro, bsw, zi, wtcol, smpmin, npfts, h2osoi_ice, watsat, sucsat, zwt, fracice, h2osoi_vol, t_soisno, dz, qflx_infl, active, rootr, hksat, z, pfti
+global_wo, smp_l, hk_l
+global_mod, qflx_deficit, qcharge, rootr_column, h2osoi_liq, icefrac
+global_non, itype, hkdepth, eff_porosity
+calls, Tridiagonal

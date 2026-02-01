@@ -1,0 +1,12 @@
+sub_param, clm_bgc_data, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, clm_bgc_data%watsat_col, clm_bgc_data%frac_h2osfc_col, clm_bgc_data%htvp_col, col%landunit, clm_bgc_data%qflx_ev_h2osfc_col, clm_bgc_data%rootfr_col, lun%itype, clm_pf_idata%nzclm_mapped, col%gridcell, clm_bgc_data%frac_sno_eff_col, clm_bgc_data%hksat_col, col%wtgcell, clm_bgc_data%t_grnd_col, clm_bgc_data%qflx_tran_veg_col, clm_pf_idata%pressure_reference, bounds%begg, clm_bgc_data%qflx_evap_soi_col, clm_bgc_data%qflx_top_soil_col
+global_wo
+global_mod
+global_non, pft%wtgcell, clm_bgc_data%h2osoi_ice_col, col%pfti, clm_bgc_data%qflx_sub_snow_col, clm_bgc_data%forc_pbot_not_downscaled_grc, clm_bgc_data%h2osoi_liq_col, col%zi, clm_bgc_data%sucsat_col, clm_bgc_data%bsw_col, col%dz, pft%wtcol
+calls, VecGetArrayF90, VecRestoreArrayF90
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in)  :: bounds
+integer, intent(in) :: num_soilc                 ! number of column non-lake points in column filter
+integer, intent(in) :: filter_soilc(:)           ! column filter for non-lake points
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

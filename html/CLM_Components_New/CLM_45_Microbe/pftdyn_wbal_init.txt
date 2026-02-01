@@ -1,0 +1,9 @@
+sub_in, begc, endc
+sub_out
+global_ro
+global_wo, clm3%g%l%c%cwf%h2ocan_loss
+global_mod
+global_non, clm3%g%l%c
+calls
+
+Tree height: 1

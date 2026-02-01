@@ -1,0 +1,7 @@
+sub_in, state, rc, cstate, cldfrc, carma, cam_in, icol, rhcrit
+sub_out, cldfrc, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAELEMENT_Get, aist_single, CARMA_Get, CARMASTATE_GetDetrain, astG_RHU_single, CARMASTATE_GetBin, supersat_nocldf, CARMAGROUP_Get, astG_PDF_single

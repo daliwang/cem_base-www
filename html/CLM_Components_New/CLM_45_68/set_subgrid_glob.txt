@@ -1,0 +1,14 @@
+sub_in, beg, subgrid, dimname, ncid, end
+sub_out, active
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io
+
+Tree height: 6
+5+, ncd_io, ncd_io, ncd_io, ncd_io, 
+4+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, 
+5+, ncd_io, 
+3+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, 
+4+, ncd_io, 

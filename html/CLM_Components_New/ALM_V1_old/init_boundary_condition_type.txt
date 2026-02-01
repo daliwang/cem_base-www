@@ -1,0 +1,12 @@
+sub_param, bounds:2, tracerboundarycond_vars:4, betrtracer_vars:3, this:1
+sub_out
+global_ro
+global_wo| tracerboundarycond_vars%topbc_type, topbc_type, NONE
+global_mod
+global_non
+calls
+readParams,
+class(bgc_reaction_mock_run_type), intent(in) :: this
+type(BeTRtracer_type ),            intent(in) :: betrtracer_vars
+type(bounds_type),                 intent(in) :: bounds
+type(tracerboundarycond_type),     intent(in) :: tracerboundarycond_vars

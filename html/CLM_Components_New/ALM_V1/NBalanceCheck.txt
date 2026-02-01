@@ -1,0 +1,13 @@
+sub_param, filter_soilc, nitrogenflux_vars, num_soilc, bounds, nitrogenstate_vars
+sub_out
+global_ro, nitrogenflux_vars%sminn_leached_col, nitrogenstate_vars%totcoln_col, nitrogenflux_vars%nfix_to_sminn_col, nitrogenflux_vars%dwt_nloss_col, nitrogenflux_vars%som_n_leached_col, nitrogenflux_vars%smin_no3_runoff_col, nitrogenflux_vars%fire_nloss_col, nitrogenflux_vars%no3_net_transport_delta_col, grc%londeg, nitrogenflux_vars%supplement_to_sminn_col, nitrogenflux_vars%f_n2o_nit_col, col%gridcell, nitrogenflux_vars%denit_col, grc%latdeg, nitrogenflux_vars%product_nloss_col, nitrogenflux_vars%soyfixn_to_sminn_col, nitrogenflux_vars%fert_to_sminn_col, nitrogenstate_vars%begnb_col, nitrogenflux_vars%externaln_to_decomp_delta_col, nitrogenflux_vars%ndep_to_sminn_col, nitrogenflux_vars%smin_no3_leached_col
+global_wo
+global_mod, nitrogenstate_vars%errnb_col, nitrogenflux_vars%noutputs_col, nitrogenflux_vars%ninputs_col, nitrogenstate_vars%endnb_col
+global_non
+calls, endrun
+readParams,
+type(bounds_type)         , intent(in)    :: bounds
+integer                   , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                   , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars

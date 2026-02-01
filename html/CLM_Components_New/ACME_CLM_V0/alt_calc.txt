@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, num_soilc, filter_soilc, temperature_vars
+sub_out
+global_ro, temperature_vars%t_soisno_col, col%gridcell
+global_wo, canopystate_vars%altmax_lastyear_indx_col, canopystate_vars%altmax_lastyear_col
+global_mod, canopystate_vars%alt_indx_col, canopystate_vars%altmax_indx_col, canopystate_vars%alt_col, canopystate_vars%altmax_col
+global_non
+calls, get_curr_date

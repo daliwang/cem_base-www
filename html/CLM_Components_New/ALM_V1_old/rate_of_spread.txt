@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| currentPatch%fuel_sav, fuel_sav, NONE| currentPatch%fuel_eff_moist, fuel_eff_moist, NONE| >currentSite%oldest_patch;, oldest_patch;, NONE| currentPatch%fuel_bulkd, fuel_bulkd, NONE| currentPatch%effect_wspeed, effect_wspeed, NONE| currentPatch%fuel_mef, fuel_mef, NONE
+global_wo| currentPatch%ROS_back, ROS_back, NONE
+global_mod| currentPatch%sum_fuel, sum_fuel, NONE| currentPatch%ROS_front, ROS_front, NONE
+global_non| currentPatch%younger, currentPatch, NONE
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer :: currentSite

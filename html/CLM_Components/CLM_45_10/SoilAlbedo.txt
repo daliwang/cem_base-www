@@ -1,0 +1,7 @@
+sub_in, coszen, ubc, albsni, num_nourbanc, albsnd, filter_nourbanc, lbc
+sub_out
+global_ro, t_grnd, isoicol, landunit, itype, snl, h2osoi_vol
+global_wo, albsoi
+global_mod, albsod
+global_non, albgri, lake_icefrac, albgrd
+calls

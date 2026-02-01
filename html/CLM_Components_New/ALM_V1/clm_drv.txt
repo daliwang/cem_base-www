@@ -1,0 +1,15 @@
+sub_param, declin, nextsw_cday, rdate, rstwr, declinp1, doalb, nlend
+sub_out
+global_ro, waterstate_vars%snow_depth_col, col%landunit
+global_wo, waterstate_vars%frac_sno_col
+global_mod
+global_non
+calls, get_curr_date, CNEcosystemDynNoLeaching1, BeginWaterBalance, nitrogenflux_vars%SetValues, PBalanceCheck, clm_pf_run, ndep_interp, get_clump_bounds, UpdateDaylength, hist_update_hbuf, alt_calc, CNDVHist, BeginCBalance, c13_carbonflux_vars%ZeroDWT, dgvs_vars%UpdateCNDVAccVars, run_betr_one_step_with_drainage, carbonflux_vars%ZeroDWT, setFilters, CNFluxStateBetrSummary, get_proc_bounds, EDbio_vars%SetValues, UrbanFluxes, decomp_vertprofiles, DustEmission, dynSubgrid_driver, cnstate_vars%CropRestIncYear, ch4, NBalanceCheck, temperature_vars%UpdateAccVars, nitrogenflux_vars%ZeroDWT, HydrologyDrainage, get_curr_time_string, CNEcosystemDynNoLeaching2, LakeHydrology, begin_betr_tracer_massbalance, write_diagnostic, VOCEmission, SnowAge_grain, clm_pf_write_restart, mpi_barrier, c14_carbonflux_vars%ZeroDWT, BeginNBalance, AerosolMasses, CNEcosystemDynBetrVeg, run_betr_one_step_without_drainage, LakeTemperature, HydrologyNoDrainage, get_clm_bgc_data, CanopyFluxes, CNEcosystemDynLeaching, CNEcosystemDynBetrSummary, BareGroundFluxes, CNVegStructUpdate, LakeFluxes, SurfaceRadiation, lnd2atm, phosphorusstate_vars%ZeroDWT, downscale_forcings, clm_bgc_run, interpMonthlyVeg, bgc_reaction%betr_alm_flux_statevar_feedback, pdep_interp, BalanceCheck, update_bgc_data_pf2clm, restFile_write, clm_ed_link, atm2lnd_vars%UpdateAccVars, crop_vars%UpdateAccVars, phosphorusflux_vars%ZeroDWT, c13_carbonflux_vars%SetValues, depvel_compute, lnd2glc_vars%update_lnd2glc, t_stopf, hist_htapes_wrapup, clm_drv_patch2col, SoilTemperature, canopystate_vars%UpdateAccVars, CNDVDriver, SatellitePhenology, update_bgc_data_clm2clm, CanopyHydrology, shr_sys_flush, nitrogenstate_vars%ZeroDWT, bgc_reaction%init_betr_alm_bgc_coupler, carbonstate_vars%ZeroDWT, DustDryDep, SoilFluxes, BeginPBalance, CanopyTemperature, waterflux_vars%Reset, c14_carbonflux_vars%SetValues, carbonflux_vars%SetValues, UrbanAlbedo, edmodel, t_startf, CNFireInterp, SurfaceAlbedo, betr_tracer_massbalance_check, CNAnnualUpdate, UrbanRadiation, CBalanceCheck, get_ref_date, clm_drv_init
+readParams,
+logical ,        intent(in) :: doalb       ! true if time for surface albedo calc
+real(r8),        intent(in) :: nextsw_cday ! calendar day for nstep+1
+real(r8),        intent(in) :: declinp1    ! declination angle for next time step
+real(r8),        intent(in) :: declin      ! declination angle for current time step
+logical,         intent(in) :: rstwr       ! true => write restart file this step
+logical,         intent(in) :: nlend       ! true => end of run on this step
+character(len=*),intent(in) :: rdate       ! restart file time stamp for name

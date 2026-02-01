@@ -1,0 +1,7 @@
+sub_in, ubg, filter_nolakec, ubc, num_nolakec, lbg, num_nolakep, lbp, filter_nolakep, lbc, ubp
+sub_out
+global_ro, watopt, bsw, z_d_town, rootfr_road_perv, watdry, landunit, forc_hgt_t, npfts, htop, t_h2osfc, watsat, column, watfc, itype, itype, itype, z0mr, forc_t, forc_th, frac_h2osfc, frac_veg_nosno, snl, h2osoi_liq, forc_q, elai, smpmin, z_0_town, landunit, h2osoi_ice, forc_hgt_u, frac_sno_eff, sucsat, forc_hgt_q, dz, t_soisno, displar, active, esai, frac_sno, pfti
+global_wo, qflx_evap_tot, t_grnd, z0hg, z0qv, z0hv, cgrnd, zii, emg, cgrnds, qflx_evap_veg, t_h2osfc_bef, eflx_lh_tot_u, eflx_sh_tot_r, thm, forc_hgt_q_pft, forc_hgt_u_pft, cgrndl, eflx_sh_tot_u, eflx_sh_veg, soilalpha_u, thv, eflx_lh_tot, qflx_tran_veg, eflx_lh_tot_r, z0qg, beta, soilalpha, tssbef, emv, eflx_sh_tot, soilbeta
+global_mod, htvp, z0mg, qg_snow, z0mv, rootr_road_perv, z0m, forc_hgt_t_pft, qg, qg_soil, qg_h2osfc, displa, dqgdT
+global_non, gridcell, h2osfc, gridcell, forc_pbot, h2osno, forc_v, forc_u
+calls, QSat

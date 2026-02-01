@@ -1,0 +1,10 @@
+sub_param, declin, bounds
+sub_out
+global_ro, grc%lat
+global_wo, grc%prev_dayl
+global_mod, grc%dayl
+global_non, bounds%endg, bounds%begg
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in) :: declin            ! solar declination angle (radians)

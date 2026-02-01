@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, lun%itype, pft%column, lun%gridcell, col%landunit, pft%landunit
+global_wo, grc%landunit_indices, lun%npfts, col%npfts, lun%ncolumns
+global_mod, lun%colf, lun%pftf, col%pftf, lun%pfti, col%pfti, lun%coli
+global_non
+calls, endrun

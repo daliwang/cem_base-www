@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, nyg=ldomain%nj, nxg=ldomain%ni
+global_wo
+global_mod
+global_non
+calls, find_nlgroup_name, clm_domain_mct, endrun, shr_strdata_create, relavu, shr_mpi_bcast, shr_strdata_print

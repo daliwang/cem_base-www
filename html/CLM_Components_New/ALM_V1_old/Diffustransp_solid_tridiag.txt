@@ -1,0 +1,24 @@
+sub_param, ct:16, source:12, numfl:5, dtime_col:10, ntrcs:7, lbj:2, update_col:13, lbn:4, bounds:1, at:14, trcin:8, bt:15, dz:11, rt:17, filter:6, hmconductance:9, ubj:3
+sub_out, at, ct, bt, rt
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),  intent(in) :: bounds                              !bounds
+integer  , intent(in)          :: lbj, ubj                            ! lbinning and ubing level indices
+integer  , intent(in)          :: lbn(bounds%begc: )                  !indices of top boundary
+integer  , intent(in)          :: numfl                               !filter dimension
+integer  , intent(in)          :: filter(:)                           !filter
+integer  , intent(in)          :: ntrcs
+real(r8) , intent(in)          :: trcin(bounds%begc: , lbj: ,1: )     !tracer concentration [mol/m3]
+real(r8) , intent(in)          :: hmconductance(bounds%begc: , lbj: ) !weighted conductance
+real(r8) , intent(in)          :: dtime_col(bounds%begc: )            !model time step
+real(r8) , intent(in)          :: dz(bounds%begc: , lbj: )            !layer thickness
+real(r8) , intent(in)          :: source(bounds%begc: , lbj: ,1: )    !chemical sources [mol/m3]
+logical  , intent(in)          :: update_col(bounds%begc: )           !logical switch indicating if the column is for active update
+real(r8) , intent(out)         :: at(bounds%begc: , lbj: )            !returning tridiagonal a matrix
+real(r8) , intent(out)         :: bt(bounds%begc: , lbj: )            !returning tridiagonal b matrix
+real(r8) , intent(out)         :: ct(bounds%begc: , lbj: )            !returning tridiagonal c matrix
+real(r8) , intent(out)         :: rt(bounds%begc: , lbj: ,1: )        !returning tridiagonal r matrix

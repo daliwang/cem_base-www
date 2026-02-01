@@ -1,0 +1,7 @@
+sub_in, state, vaerosol, naerosol, m, hygro, pbuf, cs, phase, k, istop, istart
+sub_out, naerosol, hygro, vaerosol
+global_ro
+global_wo
+global_mod
+global_non
+calls, rad_cnst_get_aer_mmr, endrun, rad_cnst_get_aer_props, rad_cnst_get_mode_num

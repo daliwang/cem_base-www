@@ -1,0 +1,7 @@
+sub_in, ni, ncid, nj, ns, isgrid2d
+sub_out, nj, ni, isgrid2d, ns
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, pio_seterrorhandling

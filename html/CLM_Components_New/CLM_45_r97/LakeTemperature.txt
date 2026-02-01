@@ -1,0 +1,7 @@
+sub_in, num_lakec, lakestate_inst, solarabs_inst, bounds, energyflux_inst, soilstate_inst, filter_lakep, temperature_inst, num_lakep, ch4_inst, filter_lakec, waterstate_inst, waterflux_inst
+sub_out
+global_ro, sabg_lyr, h2osoi_ice, h2osno, t_grnd, fsds_nir_d, dz_lake, h2osoi_liq, z, snl, fsds_nir_i, ws, ks, etal, sabg, z_lake, fsr_nir_d, lakedepth, fsr_nir_i, dz, lake_raw
+global_wo, frac_iceold, qflx_snofrz_col, savedtke1
+global_mod, hc_soi, lake_icethick, beta, eflx_sh_grnd, eflx_gnet, grnd_ch4_cond, t_lake, eflx_soil_grnd, lake_icefrac, eflx_sh_tot, lakeresist, hc_soisno, errsoi, t_soisno
+global_non
+calls, SoilThermProp_Lake, Tridiagonal, PhaseChange_Lake

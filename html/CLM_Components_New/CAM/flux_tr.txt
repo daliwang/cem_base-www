@@ -1,0 +1,7 @@
+sub_in, flux, ncol, landfrac, lchnk, m
+sub_out, flux
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

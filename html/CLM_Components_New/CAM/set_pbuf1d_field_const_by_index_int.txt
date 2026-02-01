@@ -1,0 +1,7 @@
+sub_in, kount, col_type, start, const, pbuf, index
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, buffer_set_field

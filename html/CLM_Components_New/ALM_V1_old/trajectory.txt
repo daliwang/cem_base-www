@@ -1,0 +1,13 @@
+sub_param, dt:2, neq:4, dxdt:5, ti:3, y0:1
+sub_out, dxdt
+global_ro
+global_wo
+global_mod
+global_non
+calls, Lagrange_interp
+readParams,
+real(r8), intent(in)  :: y0(neq)
+real(r8), intent(in)  :: dt
+real(r8), intent(in)  :: ti
+integer,  intent(in)  :: neq
+real(r8), intent(out) :: dxdt(neq)

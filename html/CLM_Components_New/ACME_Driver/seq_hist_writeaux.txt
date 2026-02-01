@@ -1,0 +1,8 @@
+sub_in, nx, aname, ny, EClock_d, flds, nt, flow, yr_offset, comp, write_now, infodata, dname
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_gsmap_cx, component_get_dom_cx
+calls, seq_infodata_getData, seq_io_close, mct_aVect_clean, mct_aVect_zero, mct_aVect_copy, seq_comm_getdata, shr_cal_date2ymd, seq_timemgr_EClockGetData, seq_io_write, mct_aVect_init, seq_infodata_GetData, seq_io_wopen, shr_sys_abort
+calls_ln, seq_io_write@1132, seq_io_close@1158, seq_io_wopen@1073, seq_io_write@1109, seq_io_write@1105, shr_cal_date2ymd@1055, mct_aVect_init@1097, seq_io_write@1122, shr_sys_abort@1091, mct_aVect_clean@1143, mct_aVect_zero@1019, mct_aVect_zero@1151, mct_aVect_init@1018, seq_io_write@1136, seq_timemgr_EClockGetData@991, seq_infodata_GetData@1054, seq_io_wopen@1075, seq_comm_getdata@968, seq_io_write@1115, shr_sys_abort@1012, seq_infodata_getData@973, mct_aVect_copy@1121, mct_aVect_zero@1098, seq_io_write@1126, mct_aVect_copy@1131, seq_comm_getdata@970

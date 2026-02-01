@@ -1,0 +1,10 @@
+sub_in, filter_nolakec, lbc, ubc, num_nolakec
+sub_out
+global_ro, clm3%g%l%c%p%pws%h2ocan
+global_wo
+global_mod
+global_non, clm3%g%l%c%cwf%pwf_a%qflx_ev_soil, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_liq, clm3%g%l%c%cwf%pwf_a%qflx_evap_tot, clm3%g%l%c%cwf%pwf_a%qflx_sub_snow, clm3%g%l%c%p%pwf%qflx_evap_grnd, clm3%g%l%c%cwf%pwf_a%qflx_tran_veg, clm3%g%l%c%p%pwf%qflx_rain_grnd, clm3%g%l%c%p%pwf%qflx_snwcp_liq, clm3%g%l%c%cws%pws_a%h2ocan, clm3%g%l%c%p%pwf%qflx_snow_grnd, clm3%g%l%c%cwf%pwf_a%qflx_evap_soi, clm3%g%l%c%cwf%pwf_a%qflx_ev_h2osfc, clm3%g%l%c%p%pwf%qflx_dew_snow, clm3%g%l%c%p%pwf%qflx_ev_soil, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_ice, clm3%g%l%c%p%pwf%qflx_dew_grnd, clm3%g%l%c%cwf%pwf_a%qflx_prec_grnd, clm3%g%l%c%p%pwf%qflx_ev_h2osfc, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%p%pwf%qflx_sub_snow, clm3%g%l%c%cwf%pwf_a%qflx_evap_grnd, clm3%g%l%c%p%pwf%qflx_ev_snow, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%c%p%pwf%qflx_snwcp_ice, clm3%g%l%c%p%pwf%qflx_prec_grnd, clm3%g%l%c%cwf%pwf_a%qflx_rain_grnd, clm3%g%l%c%p%pwf%qflx_evap_tot, clm3%g%l%c%cwf%pwf_a%qflx_snow_grnd, clm3%g%l%c%cwf%pwf_a%qflx_dew_snow, clm3%g%l%c%cwf%pwf_a%qflx_dew_grnd, clm3%g%l%c%cwf%pwf_a%qflx_ev_snow
+calls, p2c
+
+Tree height: 1
+0 , p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, p2c, 

@@ -1,0 +1,7 @@
+sub_in, filter_soilc, cnstate_vars, nitrogenstate_vars, carbonflux_vars, nitrogenflux_vars, num_soilc
+sub_out
+global_ro, carbonflux_vars%lag_npp_col, nitrogenstate_vars%sminn_vr_col, cnstate_vars%nfixation_prof_col, carbonflux_vars%annsum_npp_col
+global_wo
+global_mod, nitrogenflux_vars%nfix_to_sminn_col
+global_non
+calls

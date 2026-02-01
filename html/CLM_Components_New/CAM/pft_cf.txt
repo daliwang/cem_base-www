@@ -1,0 +1,7 @@
+sub_in, js2g0, im, sc, se, jm, cosp, dc, cose, ycrit, jn1g1, de, jn2g0
+sub_out, dc, se, sc, de
+global_ro
+global_wo
+global_mod
+global_non
+calls

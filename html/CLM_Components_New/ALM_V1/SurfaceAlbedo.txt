@@ -1,0 +1,25 @@
+sub_param, num_nourbanc, lakestate_vars, aerosol_vars, num_nourbanp, filter_nourbanp, filter_urbanp, temperature_vars, declinp1, nextsw_cday, filter_nourbanc, canopystate_vars, bounds, surfalb_vars, waterstate_vars, filter_urbanc, num_urbanc, num_urbanp
+sub_out
+global_ro, aerosol_vars%mss_cnc_bcphi_col, aerosol_vars%mss_cnc_dst3_col, aerosol_vars%mss_cnc_dst2_col, waterstate_vars%h2osoi_liq_col, pft%itype, canopystate_vars%tsai_patch, pft%column, canopystate_vars%elai_patch, aerosol_vars%mss_cnc_ocphi_col, waterstate_vars%frac_sno_col, ecophyscon%rhol, grc%lat, col%gridcell, pft%gridcell, canopystate_vars%esai_patch, bounds%begc:bounds%endc, ecophyscon%rhos, canopystate_vars%tlai_patch, waterstate_vars%h2osno_col, ecophyscon%taul, aerosol_vars%mss_cnc_dst1_col, waterstate_vars%snw_rds_col, aerosol_vars%mss_cnc_bcpho_col, aerosol_vars%mss_cnc_ocpho_col, aerosol_vars%mss_cnc_dst4_col, grc%lon, ecophyscon%taus, waterstate_vars%h2osoi_ice_col
+global_wo, surfalb_vars%albgrd_pur_col, surfalb_vars%albgrd_dst_col, gridCellEdState%fabd_sun_z, surfalb_vars%fabd_sun_z_patch, surfalb_vars%albgri_bc_col, gridCellEdState%fabd_sha_z, surfalb_vars%fabd_sha_z_patch, surfalb_vars%ftii_patch, gridCellEdState%fabd, surfalb_vars%fabd_patch, surfalb_vars%ftid_patch, surfalb_vars%fabi_sha_z_patch, gridCellEdState%fabi_sha_z, surfalb_vars%ftdd_patch, surfalb_vars%albgrd_oc_col, surfalb_vars%flx_absin_col, gridCellEdState%f_sun, surfalb_vars%vcmaxcintsun_patch, surfalb_vars%albgrd_bc_col, surfalb_vars%fsun_z_patch, surfalb_vars%albgri_pur_col, surfalb_vars%fabi_sha_patch, surfalb_vars%fabi_sun_z_patch, gridCellEdState%fabi_sun_z, surfalb_vars%albi_patch, surfalb_vars%albsni_hst_col, surfalb_vars%flx_absdv_col, surfalb_vars%fabd_sha_patch, surfalb_vars%albgri_oc_col, surfalb_vars%albgri_dst_col, surfalb_vars%albsnd_hst_col, surfalb_vars%fabd_sun_patch, surfalb_vars%albd_patch, surfalb_vars%flx_absdn_col, surfalb_vars%fabi_sun_patch, surfalb_vars%flx_absiv_col, surfalb_vars%fabi_patch, gridCellEdState%fabi
+global_mod, surfalb_vars%tlai_z_patch, surfalb_vars%albsoi_col, surfalb_vars%nrad_patch, surfalb_vars%ncan_patch, surfalb_vars%albgri_col, surfalb_vars%albgrd_col, surfalb_vars%tsai_z_patch, surfalb_vars%albsod_col, surfalb_vars%coszen_col, surfalb_vars%vcmaxcintsha_patch
+global_non, currentPatch%younger, gridCellEdState
+calls, SoilAlbedo, SNICAR_RT, endrun, TwoStream, ED_Norman_Radiation
+readParams,
+type(bounds_type), intent(in) :: bounds    ! bounds
+integer , intent(in) :: num_nourbanc       ! number of columns in non-urban filter
+integer , intent(in) :: filter_nourbanc(:) ! column filter for non-urban points
+integer                , intent(in)    :: num_nourbanp       ! number of patches in non-urban filter
+integer                , intent(in)    :: filter_nourbanp(:) ! patch filter for non-urban points
+integer                , intent(in)    :: num_urbanc         ! number of columns in urban filter
+integer                , intent(in)    :: filter_urbanc(:)   ! column filter for urban points
+integer                , intent(in)    :: num_urbanp         ! number of patches in urban filter
+integer                , intent(in)    :: filter_urbanp(:)   ! patch filter for rban points
+real(r8), intent(in) :: nextsw_cday        ! calendar day at Greenwich (1.00, ..., days/year)
+real(r8), intent(in) :: declinp1           ! declination angle (radians) for next time step
+type(aerosol_type)     , intent(in)    :: aerosol_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(lakestate_type)   , intent(in)    :: lakestate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(surfalb_type)     , intent(inout) :: surfalb_vars

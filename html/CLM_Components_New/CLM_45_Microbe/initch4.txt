@@ -1,0 +1,10 @@
+sub_in, arbinit
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, makearbinit_ch4, initTimeConst_ch4
+
+Tree height: 1
+0 , initTimeConst_ch4, makearbinit_ch4, 

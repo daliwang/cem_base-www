@@ -1,0 +1,7 @@
+sub_in, state, diagnosticindex, tau_w_f, tau_w, tau, tau_w_g, pbuf
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, slingo_liq_optics_sw

@@ -1,0 +1,7 @@
+sub_in, lam, phipr, phidp, sigpr, lvert, nlon, locgeo, vpr, upr, wmp, phi, ump, lamdp, lampr, dt, jcen, vmp, ra
+sub_out, vmp, upr, lampr, phipr, vpr, ump
+global_ro
+global_wo
+global_mod
+global_non
+calls

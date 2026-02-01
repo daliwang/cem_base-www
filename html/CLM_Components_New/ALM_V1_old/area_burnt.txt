@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| %ROS_back, ROS_back, NONE| %nf, nf, NONE| %area, area, NONE| ldomain%area, area, NONE| currentSite%clmgcell, clmgcell, NONE| currentSite%oldest_patch;, currentPatch, NONE| currentPatch%younger;, currentPatch, NONE| %FD, FD, NONE| %ROS_front, ROS_front, NONE
+global_wo| %NF, NF, NONE
+global_mod| !currentPatch%ab, ab, NONE| %ab, ab, NONE| %AB, AB, NONE| %frac_burnt, frac_burnt, NONE| currentSite%frac_burnt, frac_burnt, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(inout), pointer :: currentSite

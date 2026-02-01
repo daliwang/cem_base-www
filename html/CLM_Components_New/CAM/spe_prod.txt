@@ -1,0 +1,7 @@
+sub_in, noxprod, lchnk, pmid, hoxprod, ncol, zmid
+sub_out, noxprod, hoxprod
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_ionpairs_profile

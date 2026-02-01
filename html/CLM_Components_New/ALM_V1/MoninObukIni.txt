@@ -1,0 +1,15 @@
+sub_param, zldis, ur, um, dthv, z0m, thv, obu
+sub_out, obu, um
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in)  :: ur    ! wind speed at reference height [m/s]
+real(r8), intent(in)  :: thv   ! virtual potential temperature (kelvin)
+real(r8), intent(in)  :: dthv  ! diff of vir. poten. temp. between ref. height and surface
+real(r8), intent(in)  :: zldis ! reference height "minus" zero displacement heght [m]
+real(r8), intent(in)  :: z0m   ! roughness length, momentum [m]
+real(r8), intent(out) :: um    ! wind speed including the stability effect [m/s]
+real(r8), intent(out) :: obu   ! monin-obukhov length (m)

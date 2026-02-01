@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, %hlist, %field%num2d
+global_wo
+global_mod
+global_non
+calls, hist_update_hbuf_field_2d, hist_update_hbuf_field_1d

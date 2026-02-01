@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, thk, decomp_k, snw_rds, m_decomp_cpools_to_fire_vr, h2osoi_ice, decomp_cascade_ntransfer_vr, decomp_cascade_sminn_flux_vr, decomp_cpools_vr, decomp_npools_vr, decomp_cascade_ctransfer_vr, dz, t_soisno, decomp_cpools_transport_tendency, bw, m_decomp_npools_to_fire_vr, snow_layer_unity, h2osoi_liq, decomp_npools_transport_tendency, sminn_to_denit_decomp_cascade_vr, decomp_cascade_hr_vr, sabg_lyr, index, name, shr_megan_linkedlist, next_megcomp, decomp_npools_1m, m_decomp_npools_to_fire, decomp_cpools_1m, decomp_cascade_ctransfer, decomp_cpools_leached, decomp_cascade_sminn_flux, m_decomp_cpools_to_fire, decomp_cascade_ntransfer, decomp_npools_leached, decomp_cpools, decomp_cascade_hr, sminn_to_denit_decomp_cascade, decomp_npools
+global_wo
+global_mod
+global_non
+calls, hist_addfld2d, hist_addfld1d, hist_printflds, hist_addfld_decomp

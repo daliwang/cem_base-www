@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| nxg=ldomain%ni, ni, NONE| nyg=ldomain%nj, nj, NONE
+global_wo
+global_mod
+global_non
+calls, clm_domain_mct, find_nlgroup_name, shr_mpi_bcast, endrun, relavu, shr_strdata_create, shr_strdata_print, hist_addfld1d
+readParams,
+type(bounds_type), intent(in) :: bounds

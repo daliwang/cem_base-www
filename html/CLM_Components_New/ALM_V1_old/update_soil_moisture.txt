@@ -1,0 +1,13 @@
+sub_param, clm_bgc_data:1, bounds:2, num_soilc:3, waterstate_vars:5, filter_soilc:4
+sub_out
+global_ro
+global_wo
+global_mod| clm_bgc_data%h2osoi_liq_col, h2osoi_liq_col, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq_col, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice_col, NONE| clm_bgc_data%h2osoi_ice_col, h2osoi_ice_col, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol_col, NONE| clm_bgc_data%h2osoi_vol_col, h2osoi_vol_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer, intent(in) :: num_soilc        ! number of column soil points in column filter
+integer, intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(waterstate_type), intent(inout) :: waterstate_vars
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

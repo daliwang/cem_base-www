@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch%younger;, currentSite%oldest_patch;, %ROS_front, %TFC_ROS, currentSite%acc_NI
+global_wo, !currentPatch%FD, %FD, %FI
+global_mod, %fire
+global_non
+calls

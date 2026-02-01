@@ -1,0 +1,17 @@
+sub_param, bounds, canyon_hwr, sdif_road, num_urbanl, sdif, filter_urbanl, urbanparams_vars, sdif_sunwall, sdif_shadewall
+sub_out, sdif_road, sdif_shadewall, sdif_sunwall
+global_ro, urbanparams_vars%vf_sr, urbanparams_vars%vf_sw
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type)     , intent(in)  :: bounds
+integer               , intent(in)  :: num_urbanl                           ! number of urban landunits
+integer               , intent(in)  :: filter_urbanl(:)                     ! urban landunit filter
+real(r8)              , intent(in)  :: canyon_hwr     ( bounds%begl: )      ! ratio of building height to street width [landunit]
+real(r8)              , intent(in)  :: sdif           ( bounds%begl: , 1: ) ! diffuse solar radiation incident on horizontal surface [landunit, numrad]
+real(r8)              , intent(out) :: sdif_road      ( bounds%begl: , 1: ) ! diffuse solar radiation incident on road [landunit, numrad]
+real(r8)              , intent(out) :: sdif_sunwall   ( bounds%begl: , 1: ) ! diffuse solar radiation (per unit wall area) incident on sunlit wall [landunit, numrad]
+real(r8)              , intent(out) :: sdif_shadewall ( bounds%begl: , 1: ) ! diffuse solar radiation (per unit wall area) incident on shaded wall [landunit, numrad]
+type(urbanparams_type), intent(in)  :: urbanparams_vars

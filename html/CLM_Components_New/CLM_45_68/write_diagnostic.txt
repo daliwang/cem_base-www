@@ -1,0 +1,19 @@
+sub_in, nstep, wrtdia
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, shr_log_errMsg, write
+calls, get_proc_bounds, t_barrierf, mpi_send, get_proc_global, shr_sys_flush, mpi_recv, mpi_reduce, endrun
+
+Tree height: 5
+0 , get_proc_bounds, get_proc_global, 
+2+, shr_sys_flush, 
+1+, t_barrierf, 
+2-, mpi_reduce, 
+3+, endrun, 
+2+, shr_sys_flush, 
+3-, mpi_send, 
+4+, endrun, 
+3+, mpi_recv, 
+4+, endrun, 

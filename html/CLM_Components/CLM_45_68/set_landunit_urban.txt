@@ -1,0 +1,7 @@
+sub_in, ci, gi, setdata, li, pi, ltype
+sub_out, ci, li, pi
+global_ro
+global_wo
+global_mod
+global_non
+calls, subgrid_get_gcellinfo, endrun

@@ -1,0 +1,7 @@
+sub_in, Lsize, q, comm, Gsize, istart
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_ALLGATHER

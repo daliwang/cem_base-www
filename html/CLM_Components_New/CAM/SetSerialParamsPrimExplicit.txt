@@ -1,0 +1,7 @@
+sub_in, found, machine, microsec, np, nlev
+sub_out, microsec
+global_ro
+global_wo
+global_mod
+global_non
+calls

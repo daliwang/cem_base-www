@@ -1,0 +1,7 @@
+sub_in, fn, rt, bounds, t_soisno, t_h2osfc, sabg_lyr_col, fact, num_nolakec, hs_top_snow, hs_top, dhsdT, filter_nolakec
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, bounds%endc, bounds%begc
+calls, SetRHSVec_SnowUrbanRoad, SetRHSVec_SnowUrbanNonRoad

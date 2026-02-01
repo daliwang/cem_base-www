@@ -1,0 +1,7 @@
+sub_in, pbuf, tau_w_f, list_idx, tau_w, nnite, state, tau_w_g, tau, idxnite
+sub_out, tau_w_g, tau, tau_w_f, tau_w
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, get_hygro_rad_props, qsat, rad_cnst_get_info, get_volcanic_rad_props, get_nonhygro_rad_props, modal_aero_sw, aer_vis_diag_out, rad_cnst_get_aer_mmr, get_volcanic_radius_rad_props, rad_cnst_get_aer_props

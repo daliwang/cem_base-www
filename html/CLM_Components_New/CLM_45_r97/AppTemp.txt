@@ -1,0 +1,7 @@
+sub_in, Tc_1, app_temp, vap_pres, u10_m
+sub_out, app_temp
+global_ro
+global_wo
+global_mod
+global_non
+calls

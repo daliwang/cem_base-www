@@ -1,0 +1,7 @@
+sub_in, dgvs_inst, bounds
+sub_out
+global_ro, fpcgrid, nind
+global_wo
+global_mod
+global_non
+calls, ncd_pio_closefile, getdatetime, get_curr_date, shr_sys_getenv, ncd_defvar, ncd_pio_createfile, get_ref_date, ncd_io, ncd_enddef, get_curr_time, ncd_putatt, ncd_defdim

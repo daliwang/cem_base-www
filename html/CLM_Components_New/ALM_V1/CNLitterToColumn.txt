@@ -1,0 +1,14 @@
+sub_param, filter_soilc, cnstate_vars, num_soilc, nitrogenflux_vars, phosphorusflux_vars, carbonflux_vars
+sub_out
+global_ro, nitrogenflux_vars%leafn_to_litter_patch, cnstate_vars%froot_prof_patch, phosphorusflux_vars%frootp_to_litter_patch, cnstate_vars%leaf_prof_patch, pft%itype, carbonflux_vars%livestemc_to_litter_patch, ecophyscon%fr_fcel, phosphorusflux_vars%leafp_to_litter_patch, pft%wtcol, ecophyscon%lf_flab, ecophyscon%lf_flig, ecophyscon%fr_flig, carbonflux_vars%frootc_to_litter_patch, phosphorusflux_vars%livestemp_to_litter_patch, col%pfti, nitrogenflux_vars%livestemn_to_litter_patch, nitrogenflux_vars%frootn_to_litter_patch, ecophyscon%lf_fcel, carbonflux_vars%leafc_to_litter_patch, ecophyscon%fr_flab
+global_wo
+global_mod, nitrogenflux_vars%phenology_n_to_litr_cel_n_col, nitrogenflux_vars%phenology_n_to_litr_met_n_col, nitrogenflux_vars%phenology_n_to_litr_lig_n_col, phosphorusflux_vars%phenology_p_to_litr_lig_p_col, carbonflux_vars%phenology_c_to_litr_met_c_col, carbonflux_vars%phenology_c_to_litr_lig_c_col, phosphorusflux_vars%phenology_p_to_litr_met_p_col, carbonflux_vars%phenology_c_to_litr_cel_c_col, phosphorusflux_vars%phenology_p_to_litr_cel_p_col
+global_non
+calls
+readParams,readCNPhenolParams
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)      , intent(in)    :: cnstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars

@@ -1,0 +1,7 @@
+sub_in, num_nolakec, waterstate_inst, filter_nolakec, filter_soilp, canopystate_inst, filter_nolakep, num_nolakep, bounds, energyflux_inst, num_soilp, waterflux_inst
+sub_out
+global_ro, h2osoi_ice, h2osoi_liq, h2osno, frac_veg_nosno_alb, snl
+global_wo, do_capsnow, qflx_glcice, cisha_z, h2osno_old, eflx_bot, cisun_z, frac_veg_nosno, frac_iceold
+global_mod
+global_non, canopystate_inst%esai_patch, canopystate_inst%elai_patch
+calls

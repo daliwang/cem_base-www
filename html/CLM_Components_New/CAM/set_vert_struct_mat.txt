@@ -1,0 +1,7 @@
+sub_in, refstate, dt, hvcoord, masterproc
+sub_out
+global_ro, Href, hypi, hypd, Tref, Cref
+global_wo, Lambda
+global_mod, Emat, Pvec, RTref, Emat_inv, Amat_inv, Amat, Tmat
+global_non, hvcoord%hybi
+calls, abortmp, dgetri, dgetrf

@@ -1,0 +1,9 @@
+sub_param, import_state, EClock, rc, export_state, comp
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_Finalize, ESMF_ArrayGet, spmd_init, clm_cpl_indices_set, shr_file_getLogUnit, initialize3, lnd_export, shr_file_setLogLevel, shr_file_setIO, set_nextsw_cday, ESMF_AttributeAdd, initialize1, ESMF_VMGetCurrent, set_timemgr_init, get_proc_bounds, initialize2, ESMF_AttributeSet, shr_file_setLogUnit, ESMF_StateAdd, memmon_dump_fort, memmon_reset_addr, shr_file_getLogLevel, ESMF_ArraySpecSet, MPI_Comm_dup, ESMF_AttributeGet, clm_varctl_set, ESMF_VMGet, control_setNL, endrun, lnd_domain_esmf, seq_timemgr_EClockGetData
+readParams,
+integer, intent(out)         :: rc              ! Return code

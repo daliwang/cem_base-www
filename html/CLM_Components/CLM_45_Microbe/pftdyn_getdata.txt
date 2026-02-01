@@ -1,0 +1,7 @@
+sub_in, begg, pft0, pctpft, endg, maxpft, ntime
+sub_out, pctpft
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, endrun

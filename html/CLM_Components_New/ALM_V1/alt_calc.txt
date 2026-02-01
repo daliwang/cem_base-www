@@ -1,0 +1,12 @@
+sub_param, filter_soilc, canopystate_vars, temperature_vars, num_soilc
+sub_out
+global_ro, col%gridcell, temperature_vars%t_soisno_col
+global_wo, canopystate_vars%altmax_lastyear_col, canopystate_vars%altmax_lastyear_indx_col
+global_mod, canopystate_vars%alt_indx_col, canopystate_vars%altmax_col, canopystate_vars%alt_col, canopystate_vars%altmax_indx_col
+global_non
+calls, get_curr_date
+readParams,
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(temperature_type) , intent(in)    :: temperature_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars

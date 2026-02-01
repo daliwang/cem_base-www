@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, dtime, num_nolakec, fact, bounds, tk, fn, temperature_vars, cv, energyflux_vars
+sub_out, fn, fact
+global_ro, col%landunit, energyflux_vars%eflx_bot_col, col%z, col%zi, col%dz, temperature_vars%t_soisno_col, temperature_vars%t_building_lun
+global_wo
+global_mod
+global_non
+calls

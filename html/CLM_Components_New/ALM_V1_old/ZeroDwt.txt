@@ -1,0 +1,9 @@
+sub_param, bounds:2, this:1
+sub_out
+global_ro
+global_wo| this%totvegp_patch, totvegp_patch, NONE| this%dispvegp_patch, dispvegp_patch, NONE| this%totpftp_patch, totpftp_patch, NONE| this%storvegp_patch, storvegp_patch, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in)  :: bounds

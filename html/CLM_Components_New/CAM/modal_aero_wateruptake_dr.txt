@@ -1,0 +1,7 @@
+sub_in, dgnumwet_m, state, pbuf, dgnumdry_m, qaerwat_m, list_idx_in, wetdens_m
+sub_out
+global_ro, h2ommr, dgncur_a
+global_wo
+global_mod
+global_non, qaerwat, state%pmid, dgncur_awet, state%t, wetdens
+calls, rad_cnst_get_aer_props, rad_cnst_get_mode_props, modal_aero_wateruptake_sub, pbuf_get_field, rad_cnst_get_aer_mmr, qsat_water, outfld, rad_cnst_get_info, endrun

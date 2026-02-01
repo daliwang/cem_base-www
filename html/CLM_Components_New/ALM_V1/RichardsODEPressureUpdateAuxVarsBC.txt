@@ -1,0 +1,8 @@
+sub_param, this
+sub_out
+global_ro, this%aux_vars_in, this%boundary_conditions%first, cur_cond%next, %id_dn, %pressure, %value
+global_wo, this%aux_vars_bc
+global_mod
+global_non, cur_cond%conn_set
+calls, endrun, this%aux_vars_bc
+readParams,

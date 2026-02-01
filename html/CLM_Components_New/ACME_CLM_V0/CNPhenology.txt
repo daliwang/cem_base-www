@@ -1,0 +1,7 @@
+sub_in, nitrogenstate_vars, filter_soilc, soilstate_vars, crop_vars, nitrogenflux_vars, carbonstate_vars, doalb, num_soilp, filter_pcropp, carbonflux_vars, num_soilc, filter_soilp, cnstate_vars, temperature_vars, dgvs_vars, waterstate_vars, canopystate_vars, num_pcropp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNOffsetLitterfall, CNLivewoodTurnover, CNOnsetGrowth, CNPhenologyClimate, CNEvergreenPhenology, CNSeasonDecidPhenology, CropPhenology, CNBackgroundLitterfall, CNLitterToColumn, CNStressDecidPhenology

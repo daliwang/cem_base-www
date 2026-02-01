@@ -1,0 +1,7 @@
+sub_in, ptype, pi, ci, wtcol
+sub_out, pi
+global_ro
+global_wo, pft%itype, pft%column, pft%mxy
+global_mod, pft%wtcol, pft%landunit, col%landunit, col%gridcell, pft%gridcell
+global_non
+calls

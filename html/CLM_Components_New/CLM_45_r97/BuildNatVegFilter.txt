@@ -1,0 +1,7 @@
+sub_in, num_natvegp, bounds, dgvs_inst, filter_natvegp
+sub_out, num_natvegp, filter_natvegp
+global_ro
+global_wo
+global_mod
+global_non
+calls

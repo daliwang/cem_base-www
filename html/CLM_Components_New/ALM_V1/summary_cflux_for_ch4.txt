@@ -1,0 +1,13 @@
+sub_param, num_soilp, this, filter_soilp, bounds, num_soilc, filter_soilc
+sub_out
+global_ro, this%deadcrootc_xfer_to_deadcrootc_patch, this%deadstemc_xfer_to_deadstemc_patch, this%cpool_to_deadcrootc_patch, this%cpool_to_leafc_patch, decomp_cascade_con%is_litter, this%frootc_xfer_to_frootc_patch, decomp_cascade_con%is_soil, this%livestemc_xfer_to_livestemc_patch, this%cpool_to_grainc_patch, this%cpool_to_deadstemc_patch, this%grainc_xfer_to_grainc_patch, this%livecrootc_xfer_to_livecrootc_patch, this%decomp_cascade_hr_vr_col, this%leafc_xfer_to_leafc_patch, this%cpool_to_livecrootc_patch, this%cpool_to_livestemc_patch, this%cpool_to_frootc_patch
+global_wo, this%bgnpp_patch
+global_mod, this%somhr_col, this%hr_vr_col, this%lithr_col, this%agnpp_patch, this%decomp_cascade_hr_col
+global_non
+calls
+readParams,
+type(bounds_type), intent(in)  :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches

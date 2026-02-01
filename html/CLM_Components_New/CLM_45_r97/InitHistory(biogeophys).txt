@@ -1,0 +1,7 @@
+sub_in, bounds, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, this%snw_rds_col, this%h2osoi_ice_col, this%h2osoi_liq_col, this%snow_layer_unity_col, this%bw_col
+calls, hist_addfld2d, hist_addfld1d

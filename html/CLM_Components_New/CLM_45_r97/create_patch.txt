@@ -1,0 +1,7 @@
+sub_in, cwd_ag_local, spread_local, leaf_litter_local, areap, root_litter_local, age, cwd_bg_local, new_patch, seed_bank_local, currentSite
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, null, null, null, currentSite, null, null
+calls, zero_patch

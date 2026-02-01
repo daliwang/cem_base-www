@@ -1,0 +1,21 @@
+sub_param, waterstate_vars:12, dhsdT:6, tk:7, fact:9, bmatrix:13, tk_h2osfc:8, dz_h2osfc:11, bounds:1, filter_nolakec:3, dtime:4, num_nolakec:2, nband:5, c_h2osfc:10
+sub_out
+global_ro
+global_wo
+global_mod
+global_non| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| bounds%begc, begc, NONE| col%z, z, NONE| bounds%endc, endc, NONE
+calls, SetMatrix_Snow, SetMatrix_Snow_Soil, AssembleMatrixFromSubmatrices, SetMatrix_StandingSurfaceWater, SetMatrix_Soil, SetMatrix_StandingSurfaceWater_Soil, SetMatrix_Soil_Snow, SetMatrix_Soil_StandingSurfaceWater
+readParams,
+type(bounds_type), intent(in) :: bounds                                    ! bounds
+integer , intent(in)  :: num_nolakec                                       ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                                 ! column filter for non-lake points
+real(r8), intent(in)  :: dtime                                             ! land model time step (sec)
+integer , intent(in)  :: nband                                             ! number of bands of the tridigonal matrix
+real(r8), intent(in)  :: dhsdT(bounds%begc: )                              ! temperature derivative of "hs" [col]
+real(r8), intent(in)  :: tk(bounds%begc: ,-nlevsno+1: )                    ! thermal conductivity [W/(m K)]
+real(r8), intent(in)  :: tk_h2osfc(bounds%begc: )                          ! thermal conductivity [W/(m K)]
+real(r8), intent(in)  :: fact( bounds%begc: , -nlevsno+1: )                ! used in computing tridiagonal matrix [col, lev]
+real(r8), intent(in)  :: c_h2osfc( bounds%begc: )                          ! heat capacity of surface water [col]
+real(r8), intent(in)  :: dz_h2osfc(bounds%begc: )                          ! Thickness of standing water [m]
+real(r8), intent(out) :: bmatrix(bounds%begc: , 1:,-nlevsno: )             ! matrix for numerical solution of temperature
+type(waterstate_type), intent(in) :: waterstate_vars

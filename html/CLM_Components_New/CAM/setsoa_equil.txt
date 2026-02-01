@@ -1,0 +1,7 @@
+sub_in, lchnk, vmr, ncol, tfld, dt, xhnm, reaction_rates, pbuf
+sub_out, vmr
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, pbuf_get_field

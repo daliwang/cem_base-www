@@ -1,0 +1,7 @@
+sub_in, hybrid, nete, nets, elem
+sub_out
+global_ro, spheremv
+global_wo
+global_mod
+global_non
+calls, make_C0, derivinit, make_C0_vector

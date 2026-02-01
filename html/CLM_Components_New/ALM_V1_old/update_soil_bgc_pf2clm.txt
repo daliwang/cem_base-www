@@ -1,0 +1,12 @@
+sub_param, bounds:2, num_soilc:3, filter_soilc:4, clm_bgc_data:1
+sub_out
+global_ro| clm_pf_idata%nlclm_sub, nlclm_sub, FLEXIBLE_POOLS| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| bounds%begg, begg, NONE| clm_bgc_data%decomp_npools_vr_col, decomp_npools_vr, NONE| clm_bgc_data%decomp_cpools_vr_col, decomp_cpools_vr, NONE| clm_bgc_data%initial_cn_ratio, initial_cn_ratio, NONE| clm_pf_idata%N_molecular_weight, N_molecular_weight, NONE| clm_pf_idata%C_molecular_weight, C_molecular_weight, ndef_FLEXIBLE_POOLS| col%wtgcell, wtgcell, NONE| col%gridcell, gridcell, NONE
+global_wo| clm_bgc_data%potential_immob_vr_col, potential_immob_vr, NONE| clm_bgc_data%sminn_to_plant_vr_col, sminn_to_plant_vr, NONE| clm_bgc_data%actual_immob_vr_col, actual_immob_vr, NONE| clm_bgc_data%sminn_vr_col, sminn_vr, NONE| clm_bgc_data%gross_nmin_vr_col, gross_nmin_vr, NONE
+global_mod| clm_bgc_data%smin_nh4_vr_col, smin_nh4_vr, NONE| clm_bgc_data%smin_no3_to_plant_vr_col, smin_no3_to_plant_vr, NONE| clm_bgc_data%decomp_cpools_sourcesink_col, decomp_cpools_delta_vr, NONE| clm_bgc_data%smin_nh4_to_plant_vr_col, smin_nh4_to_plant_vr, NONE| clm_bgc_data%smin_no3_vr_col, smin_no3_vr, NONE| clm_bgc_data%decomp_npools_sourcesink_col, decomp_npools_delta_vr, NONE| clm_bgc_data%smin_nh4sorb_vr_col, smin_nh4sorb_vr, NONE
+global_non
+calls, update_bgc_gaslosses_pf2clm, VecRestoreArrayReadF90, VecRestoreArrayF90, VecGetArrayReadF90
+readParams,clm_pf_readnl
+type(bounds_type)        , intent(in) :: bounds
+integer                  , intent(in) :: num_soilc         ! number of soil columns in filter
+integer                  , intent(in) :: filter_soilc(:)   ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

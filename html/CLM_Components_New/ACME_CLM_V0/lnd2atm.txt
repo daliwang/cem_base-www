@@ -1,0 +1,7 @@
+sub_in, bounds, solarabs_vars, lnd2atm_vars, temperature_vars, dust_vars, waterstate_vars, surfalb_vars, waterflux_vars, drydepvel_vars, ch4_vars, carbonflux_vars, vocemis_vars, atm2lnd_vars, energyflux_vars, frictionvel_vars
+sub_out
+global_ro, atm2lnd_vars%volr_grc, grc%area, waterflux_vars%qflx_ice_dynbal_grc, lnd2atm_vars%nem_grc, waterflux_vars%qflx_liq_dynbal_grc, energyflux_vars%eflx_dynbal_grc
+global_wo
+global_mod, lnd2atm_vars%eflx_sh_tot_grc, lnd2atm_vars%nee_grc, waterstate_vars%tws_grc, lnd2atm_vars%qflx_rofice_grc, lnd2atm_vars%qflx_rofliq_grc
+global_non
+calls, lnd2atm_minimal, c2g, p2g

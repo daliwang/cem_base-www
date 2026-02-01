@@ -1,0 +1,15 @@
+sub_param, waterstate_vars:4, drydepvel_vars:7, frictionvel_vars:5, atm2lnd_vars:2, bounds:1, photosyns_vars:6, canopystate_vars:3
+sub_out
+global_ro| grc%latdeg, latdeg, NONE| atm2lnd_vars%forc_solad_grc, forc_solad, NONE| pft%landunit, landunit, NONE| atm2lnd_vars%forc_q_downscaled_col, forc_q, NONE| canopystate_vars%mlaidiff_patch, mlaidiff, NONE| photosyns_vars%rssha_patch, rssha, NONE| atm2lnd_vars%forc_rain_downscaled_col, forc_rain, NONE| canopystate_vars%fsun_patch, fsun, NONE| atm2lnd_vars%forc_t_downscaled_col, forc_t, NONE| frictionvel_vars%rb1_patch, rb1, NONE| canopystate_vars%annlai_patch, annlai, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| pft%gridcell, gridcell, NONE| bounds%begp, begp, NONE| frictionvel_vars%vds_patch, vds, NONE| bounds%endp, endp, NONE| pft%column, column, NONE| frictionvel_vars%ram1_patch, ram1, NONE| grc%londeg, londeg, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_psrf, NONE| photosyns_vars%rssun_patch, rssun, NONE| canopystate_vars%elai_patch, elai, NONE| pft%itype, itype, NONE
+global_wo| drydepvel_vars%velocity_patch, velocity, NONE
+global_mod
+global_non| waterstate_vars%snow_depth_col, snow_depth, NONE| atm2lnd_vars%forc_solai_grc, forc_solai, NONE
+calls, endrun, seq_drydep_setHCoeff
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(frictionvel_type) , intent(in)    :: frictionvel_vars
+type(photosyns_type)   , intent(in)    :: photosyns_vars
+type(drydepvel_type)   , intent(inout) :: drydepvel_vars

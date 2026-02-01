@@ -1,0 +1,7 @@
+sub_in, bounds, lnd2glc_inst, l2x, lnd2atm_inst
+sub_out, l2x
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, EClock, cdata_o, x2o_o, o2x_o
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

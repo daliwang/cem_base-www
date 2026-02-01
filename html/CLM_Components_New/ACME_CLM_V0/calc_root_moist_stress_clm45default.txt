@@ -1,0 +1,7 @@
+sub_in, energyflux_vars, filterp, waterstate_vars, temperature_vars, bounds, soilstate_vars, fn, nlevgrnd, rootfr_unf, soil_water_retention_curve
+sub_out
+global_ro, waterstate_vars%h2osoi_liqvol_col, ecophyscon%smpso, soilstate_vars%watsat_col, ecophyscon%smpsc, temperature_vars%t_soisno_col, waterstate_vars%h2osoi_vol_col, pft%itype, soilstate_vars%bsw_col, soilstate_vars%eff_porosity_col, soilstate_vars%rootfr_patch, soilstate_vars%sucsat_col, pft%landunit, pft%column
+global_wo
+global_mod, energyflux_vars%rresis_patch, energyflux_vars%btran_patch, energyflux_vars%btran2_patch, soilstate_vars%rootr_patch
+global_non
+calls, soil_water_retention_curve%soil_suction

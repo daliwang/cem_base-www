@@ -1,0 +1,9 @@
+sub_in, num_snowc, filter_snowc, lbc, ubc
+sub_out
+global_ro, clm3%g%l%c%cps%imelt, clm3%g%l%c%cws%int_snow, clm3%g%l%c%cps%frac_iceold, clm3%g%l%c%landunit, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cws%swe_old, clm3%g%l%c%cps%n_melt, clm3%g%l%c%ces%t_soisno, clm3%g%l%itype, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%frac_sno_eff
+global_wo
+global_mod, clm3%g%l%c%cps%dz
+global_non, clm3%g%l%c%cps%snow_depth
+calls
+
+Tree height: 7

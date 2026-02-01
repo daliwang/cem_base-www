@@ -1,0 +1,7 @@
+sub_in, name, standard_name, values, bounds, positive, units, vlen, long_name, bounds_name
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_hist_coord, endrun

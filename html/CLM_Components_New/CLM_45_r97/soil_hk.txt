@@ -1,0 +1,7 @@
+sub_in, s, dhkds, this, hksat, bsw, hk, imped
+sub_out, dhkds, hk
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, canyon_hwr, sdif_road, num_urbanl, sdif_sunwall, sdif_shadewall, urbanparams_vars, bounds, filter_urbanl, sdif
+sub_out, sdif_sunwall, sdif_shadewall, sdif_road
+global_ro, urbanparams_vars%vf_sw, urbanparams_vars%vf_sr
+global_wo
+global_mod
+global_non
+calls, endrun

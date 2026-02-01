@@ -1,0 +1,7 @@
+sub_in, rc, cstate, waterMass, rainSurface, carma, waterNumber
+sub_out, rc, waterMass, waterNumber, rainSurface
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMASTATE_GetBin, CARMASTATE_GetDetrain

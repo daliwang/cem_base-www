@@ -1,0 +1,12 @@
+sub_param, iter:2, x0:1, func:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(inout) :: x0           !solution's initial guess
+integer,  intent(out) :: iter
+real(r8), intent(in)  :: x
+real(r8), intent(out) :: f

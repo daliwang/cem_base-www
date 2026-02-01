@@ -1,0 +1,13 @@
+sub_param, waterstate_vars, bounds, tracerstate_vars, betrtracer_vars, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(bgc_reaction_type)          , intent(in)    :: this
+type(bounds_type)                 , intent(in)    :: bounds
+type(BeTRTracer_Type)             , intent(in)    :: betrtracer_vars
+type(waterstate_type)             , intent(in)    :: waterstate_vars
+type(tracerstate_type)            , intent(inout) :: tracerstate_vars

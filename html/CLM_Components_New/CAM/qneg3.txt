@@ -1,0 +1,7 @@
+sub_in, qmin, lconst_end, lver, idx, ncold, subnam, lconst_beg, ncol, q
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls

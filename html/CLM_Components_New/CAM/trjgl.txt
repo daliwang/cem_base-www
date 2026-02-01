@@ -1,0 +1,7 @@
+sub_in, lampr, lam, phicen, phipr, nlon, phip, lamp, finc
+sub_out, phip, lamp
+global_ro
+global_wo
+global_mod
+global_non
+calls

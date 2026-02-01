@@ -1,0 +1,9 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, shr_kind_r8
+calls
+
+Tree height: 5

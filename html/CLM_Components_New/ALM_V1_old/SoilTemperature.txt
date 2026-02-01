@@ -1,0 +1,22 @@
+sub_param, solarabs_vars:11, soilstate_vars:12, bounds:1, urbanparams_vars:7, num_nolakec:4, filter_nolakec:5, waterstate_vars:9, energyflux_vars:13, waterflux_vars:10, atm2lnd_vars:6, canopystate_vars:8, num_urbanl:2, temperature_vars:14, filter_urbanl:3
+sub_out
+global_ro| col%zi, zi, NONE| col%z, z, NONE| urbanparams_vars%t_building_max, t_building_max, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| col%landunit, landunit, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| temperature_vars%t_ssbef_col, tssbef, NONE| urbanparams_vars%t_building_min, t_building_min, NONE| col%snl, snl, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE
+global_wo| energyflux_vars%eflx_fgr12_col, eflx_fgr12, NONE| temperature_vars%xmf_h2osfc_col, xmf_h2osfc, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| temperature_vars%c_h2osfc_col, c_h2osfc, NONE| energyflux_vars%eflx_urban_heat_col, eflx_urban_heat, NONE| energyflux_vars%eflx_fgr_col, eflx_fgr, NONE| energyflux_vars%eflx_urban_ac_col, eflx_urban_ac, NONE
+global_mod| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| temperature_vars%t_building_lun, t_building, NONE| energyflux_vars%eflx_building_heat_col, eflx_building_heat, NONE| temperature_vars%hc_soi_col, hc_soi, NONE| temperature_vars%hc_soisno_col, hc_soisno, NONE
+global_non| energyflux_vars%eflx_traffic_lun, eflx_traffic, NONE| energyflux_vars%dlrad_patch, dlrad, NONE| bounds%endc, endc, NONE| energyflux_vars%eflx_heat_from_ac_lun, eflx_heat_from_ac, NONE| energyflux_vars%htvp_col, htvp, NONE| energyflux_vars%eflx_gnet_patch, eflx_gnet, NONE| waterflux_vars%qflx_tran_veg_patch, qflx_tran_veg, NONE| energyflux_vars%eflx_lwrad_net_patch, eflx_lwrad_net, NONE| waterflux_vars%qflx_ev_snow_patch, qflx_ev_snow, NONE| waterflux_vars%qflx_ev_soil_patch, qflx_ev_soil, NONE| energyflux_vars%eflx_wasteheat_lun, eflx_wasteheat, NONE| energyflux_vars%eflx_traffic_patch, eflx_traffic_patch, NONE| energyflux_vars%eflx_sh_h2osfc_patch, eflx_sh_h2osfc, NONE| energyflux_vars%eflx_anthro_patch, eflx_anthro, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| energyflux_vars%cgrnd_patch, cgrnd, NONE| atm2lnd_vars%forc_lwrad_downscaled_col, forc_lwrad, NONE| waterflux_vars%qflx_ev_h2osfc_patch, qflx_ev_h2osfc, NONE| energyflux_vars%dgnetdT_patch, dgnetdT, NONE| solarabs_vars%sabg_soil_patch, sabg_soil, NONE| solarabs_vars%sabg_snow_patch, sabg_snow, NONE| col%dz, dz, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| temperature_vars%xmf_col, xmf, NONE| energyflux_vars%eflx_sh_soil_patch, eflx_sh_soil, NONE| energyflux_vars%eflx_sh_snow_patch, eflx_sh_snow, NONE| bounds%begc, begc, NONE| energyflux_vars%eflx_bot_col, eflx_bot, NONE| waterflux_vars%qflx_evap_soi_patch, qflx_evap_soi, NONE| energyflux_vars%eflx_heat_from_ac_patch, eflx_heat_from_ac_patch, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE| solarabs_vars%sabg_patch, sabg, NONE| energyflux_vars%eflx_wasteheat_patch, eflx_wasteheat_patch, NONE| solarabs_vars%sabg_chk_patch, sabg_chk, NONE| solarabs_vars%sabg_lyr_patch, sabg_lyr, NONE| temperature_vars%fact_col, fact, NONE| temperature_vars%emg_col, emg, NONE| canopystate_vars%frac_veg_nosno_patch, frac_veg_nosno, NONE
+calls, PhaseChangeH2osfc, SoilThermProp, ComputeHeatDiffFluxAndFactor, BandDiagonal, t_startf, SetRHSVec, t_stopf, SetMatrix, ComputeGroundHeatFluxAndDeriv, Phasechange_beta
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakec                        ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_nolakec(:)                  ! column filter for non-lake points
+integer                , intent(in)    :: num_urbanl                         ! number of urban landunits in clump
+integer                , intent(in)    :: filter_urbanl(:)                   ! urban landunit filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(urbanparams_type) , intent(in)    :: urbanparams_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(soilstate_type)   , intent(inout) :: soilstate_vars
+type(solarabs_type)    , intent(inout) :: solarabs_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars

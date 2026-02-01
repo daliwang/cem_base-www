@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro, lun%itype, pft%column, pft%landunit, col%landunit, lun%gridcell
+global_wo, lun%ncolumns, lun%npfts, col%npfts, grc%landunit_indices
+global_mod, col%pfti, lun%pfti, lun%coli, lun%pftf, col%pftf, lun%colf
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds  ! bounds

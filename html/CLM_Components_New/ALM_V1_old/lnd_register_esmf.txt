@@ -1,0 +1,9 @@
+sub_param, rc:2, comp:1
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_Finalize, ESMF_GridCompSetEntryPoint
+readParams,
+integer, intent(out) :: rc    ! return status

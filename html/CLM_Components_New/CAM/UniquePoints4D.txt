@@ -1,0 +1,7 @@
+sub_in, dest, d3, src, idxUnique, d4
+sub_out, dest
+global_ro
+global_wo
+global_mod
+global_non
+calls

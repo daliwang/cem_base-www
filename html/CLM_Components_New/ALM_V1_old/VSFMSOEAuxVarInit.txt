@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%liq_sat, liq_sat, NONE| this%is_bc, is_bc, NONE| this%mass, mass, NONE| this%condition_value, condition_value, NONE| this%goveqn_id, goveqn_id, NONE| this%pressure, pressure, NONE| this%is_ss, is_ss, NONE| this%is_in, is_in, NONE| this%soil_matrix_pot, soil_matrix_pot, NONE| this%condition_id, condition_id, NONE| this%frac_liq_sat, frac_liq_sat, NONE| this%temperature, temperature, NONE| this%dxi_dtime, dxi_dtime, NONE
+global_mod
+global_non
+calls
+readParams,

@@ -1,0 +1,7 @@
+sub_in, y, yg, n, ierr, x, xg, ng
+sub_out, yg, ierr
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, cam_in, dt, ptend, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAGROUP_Get, CARMAELEMENT_Get, outfld, CARMA_EmitParticle, physics_ptend_init

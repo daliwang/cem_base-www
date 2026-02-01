@@ -1,0 +1,8 @@
+sub_param, cond:1
+sub_out
+global_ro
+global_wo| cond%units, units, NONE| cond%id, id, NONE| cond%itype, itype, NONE| cond%region_itype, region_itype, NONE| cond%ncells, ncells, NONE| cond%name, name, NONE
+global_mod
+global_non
+calls, ConnectionSetDestroy
+readParams,

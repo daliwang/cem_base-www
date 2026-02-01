@@ -1,0 +1,7 @@
+sub_in, name, field, nstep
+sub_out
+global_ro, %period, %acctype, %val, %numlev, %end1d, %beg1d
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort

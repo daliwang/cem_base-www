@@ -1,0 +1,7 @@
+sub_in, num_soilc, bounds, ch4_vars, filter_soilc, canopystate_vars, temperature_vars, carbonflux_vars, soilstate_vars
+sub_out
+global_ro, ch4_vars%finundated_col, ch4_vars%o2stress_unsat_col, col%dz, soilstate_vars%sucsat_col, temperature_vars%t_soisno_col, ch4_vars%o2stress_sat_col, canopystate_vars%alt_indx_col, soilstate_vars%soilpsi_col
+global_wo, carbonflux_vars%decomp_k_col
+global_mod, carbonflux_vars%o_scalar_col, carbonflux_vars%w_scalar_col, carbonflux_vars%t_scalar_col
+global_non
+calls, endrun

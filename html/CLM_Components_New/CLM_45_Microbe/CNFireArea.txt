@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, decomp_cascade_con%is_cwd, clm3%g%l%c%p%pcs%livecrootc_xfer, clm3%g%l%c%cps%wf, clm3%g%l%c%cps%prec10_col, clm3%g%l%c%ccs%decomp_cpools_vr, clm3%g%l%c%p%pcs%deadcrootc, clm3%g%l%c%p%pcs%totvegc, clm_a2l%forc_t, clm3%g%l%c%cws%fsat, clm3%g%l%c%wtgcell, clm3%g%l%c%p%pcs%frootc_storage, clm3%g%l%c%p%pcs%leafc_xfer, clm3%g%latdeg, clm3%g%l%c%p%pps%btran2, clm3%g%l%c%ccs%totlitc, clm3%g%l%c%gridcell, clm3%g%l%c%cps%peatf_lf, clm3%g%l%c%cps%gdp_lf, clm3%g%l%c%ccs%leafc_col, clm3%g%l%c%p%pps%prec60, clm3%g%l%c%p%pps%prec10, clm3%g%l%c%p%pcs%livecrootc, clm3%g%l%c%ccs%totvegc_col, clm3%g%l%c%p%itype, clm3%g%l%c%p%pcs%leafc_storage, clm3%g%l%c%npfts, clm3%g%l%c%p%pcs%deadcrootc_storage, clm3%g%l%c%p%pcs%frootc_xfer, clm3%g%l%c%cps%wf2, clm_a2l%forc_rh, clm3%g%l%c%p%pcs%livecrootc_storage, clm3%g%l%c%p%pcs%frootc, clm3%g%l%c%p%pcs%deadcrootc_xfer, clm3%g%l%c%p%pcs%leafc, clm_a2l%forc_wind, clm3%g%l%c%p%pps%lfpftd, clm3%g%l%c%p%wtcol, clm3%g%l%c%ces%tsoi17, clm3%g%l%c%cps%prec60_col, clm_a2l%forc_snow, clm3%g%l%c%pfti, clm3%g%l%c%cps%abm_lf, clm_a2l%forc_rain
+global_wo, clm3%g%l%c%cps%fbac, clm3%g%l%c%p%pps%burndate
+global_mod, clm3%g%l%c%cps%btran_col, clm3%g%l%c%ccs%fuelc_crop, clm3%g%l%c%cps%lfwt, clm3%g%l%c%cps%wtlf, clm3%g%l%c%cps%lpop_col, clm3%g%l%c%cps%farea_burned, clm3%g%l%c%cps%baf_peatf, clm3%g%l%c%cps%dtrotr_col, clm3%g%l%c%cps%fsr_col, clm3%g%l%c%cps%nfire, clm3%g%l%c%cps%lgdp_col, clm3%g%l%c%cps%lgdp1_col, clm3%g%l%c%cps%trotr2_col, clm3%g%l%c%cps%fbac1, clm3%g%l%c%cps%trotr1_col, clm3%g%l%c%cps%baf_crop, clm3%g%l%c%ccs%fuelc, clm3%g%l%c%ccs%rootc_col, clm3%g%l%c%cps%fd_col, clm3%g%l%c%cps%cropf_col, clm3%g%l%c%cps%lfc
+global_non, clm3%g%l%c%p%pcs%deadstemc_xfer, clm3%g%l%c%p%pcs%livestemc_xfer, clm3%g%l%c%p%pcs%livestemc_storage, clm3%g%l%c%p%pcs%livestemc, clm3%g%l%c%p%pcs%deadstemc, clm3%g%l%c%p%pcs%deadstemc_storage, clm3%g%l%c%p%column
+calls, get_curr_date, p2c
+
+Tree height: 9
+0 , p2c, p2c, p2c, p2c, get_curr_date, 

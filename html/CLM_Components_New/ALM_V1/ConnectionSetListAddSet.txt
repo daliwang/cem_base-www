@@ -1,0 +1,8 @@
+sub_param, list, new_conn_set
+sub_out
+global_ro
+global_wo, new_conn_set%id
+global_mod, list%num_connection_list
+global_non, new_conn_set, new_conn_set, new_conn_set
+calls
+readParams,

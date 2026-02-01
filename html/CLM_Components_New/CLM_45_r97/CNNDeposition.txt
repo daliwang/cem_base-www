@@ -1,0 +1,7 @@
+sub_in, bounds, atm2lnd_inst, soilbiogeochem_nitrogenflux_inst
+sub_out
+global_ro, forc_ndep
+global_wo, ndep_to_sminn
+global_mod
+global_non
+calls

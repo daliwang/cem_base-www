@@ -1,0 +1,18 @@
+sub_param, betrtracer_vars:10, numf:5, ubj:3, lbj:2, filter:6, jtops:4, aqu2equilsolidcef_col:11, dz:9, h2osoi_ice:8, t_soisno:7, bounds:1
+sub_out, aqu2equilsolidcef_col
+global_ro| betrtracer_vars%is_h2o, is_h2o, NONE| betrtracer_vars%id_trc_o18_h2o, id_trc_o18_h2o, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)         , intent(in) :: bounds  ! bounds
+integer                   , intent(in) :: lbj, ubj                                          ! lower and upper bounds, make sure they are > 0
+integer                   , intent(in) :: jtops(bounds%begc: )                              ! top label of each column
+integer                   , intent(in) :: numf                                              ! number of columns in column filter
+integer                   , intent(in) :: filter(:)                                         ! column filter
+real(r8)                  , intent(in) :: t_soisno(bounds%begc: , lbj: )
+type(betrtracer_type)     , intent(in) :: betrtracer_vars
+real(r8)                  , intent(in) :: h2osoi_ice(bounds%begc: , lbj: )
+real(r8)                  , intent(in) :: dz(bounds%begc: , lbj: )
+real(r8)                  , intent(inout) :: aqu2equilsolidcef_col(bounds%begc:bounds%endc, lbj:ubj, 1:betrtracer_vars%nsolid_equil_tracer_groups)

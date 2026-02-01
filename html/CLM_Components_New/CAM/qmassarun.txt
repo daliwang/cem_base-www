@@ -1,0 +1,7 @@
+sub_in, pdeld, q0, q3, lat, hw1lat, cwava, pdel, nlon, w
+sub_out, hw1lat
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, ielement, rc, carma
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAELEMENT_Get

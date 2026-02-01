@@ -1,0 +1,7 @@
+sub_in, attrib, ncid, value, xtype, varid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

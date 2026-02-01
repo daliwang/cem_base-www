@@ -1,0 +1,13 @@
+sub_param, vardesc, dimnum, err_code, ncid, dlen
+sub_out, err_code, dlen
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqvdids, ncd_inqvdims, ncd_inqdlen
+readParams,
+class(file_desc_t),intent(inout) :: ncid      ! netcdf file id
+type(Var_desc_t)  ,intent(inout) :: vardesc   ! variable descriptor
+integer           ,intent(in)    :: dimnum    ! dimension number to query
+integer           ,intent(out)   :: dlen      ! length of the dimension
+integer           ,intent(out)   :: err_code  ! error code (0 means no error)

@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, spinup_factor
+global_wo
+global_mod, deadcrootc_storage, deadcrootc, frootc, gresp_storage, gresp_xfer, livestemc_storage, deadstemc_xfer, frootc_xfer, livecrootc, livecrootc_storage, seedc, decomp_cpools_vr, leafc_storage, leafc_xfer, deadstemc, livestemc_xfer, leafc, livecrootc_xfer, cpool, pft_ctrunc, deadcrootc_xfer, frootc_storage, livestemc, deadstemc_storage, xsmrpool
+global_non
+calls

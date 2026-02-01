@@ -1,0 +1,7 @@
+sub_in, li, ltype, wtgcell, gi
+sub_out, li
+global_ro
+global_wo, lun%ifspecial, lun%itype, lun%lakpoi, lun%gridcell, lun%urbpoi, lun%glcmecpoi
+global_mod, lun%wtgcell
+global_non
+calls

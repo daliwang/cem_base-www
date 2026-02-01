@@ -1,0 +1,7 @@
+sub_in, filter_soilc, leaf_prof_patch, num_soilc, cnveg_nitrogenflux_inst, froot_prof_patch, cnveg_carbonflux_inst, bounds, cnveg_state_inst
+sub_out
+global_ro, ivt, livestemc_to_litter, grainc_to_food, fr_fcel, fr_flig, fr_flab, frootn_to_litter, leaf_prof, grainn_to_food, leafn_to_litter, lf_fcel, frootc_to_litter, leafc_to_litter, livestemn_to_litter, wtcol, froot_prof, lf_flig, lf_flab
+global_wo
+global_mod, phenology_c_to_litr_met_c, phenology_n_to_litr_cel_n, phenology_c_to_litr_lig_c, phenology_c_to_litr_cel_c, phenology_n_to_litr_lig_n, phenology_n_to_litr_met_n
+global_non
+calls

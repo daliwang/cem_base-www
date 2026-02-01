@@ -1,0 +1,14 @@
+sub_in, histrest, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_putatt, ncd_defdim, getdatetime, ncd_pio_createfile, get_proc_global, shr_sys_flush
+
+Tree height: 3
+0 , get_proc_global, ncd_putatt, getdatetime, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, 
+1-, ncd_pio_createfile, ncd_putatt, ncd_putatt, ncd_defdim, 
+2+, shr_sys_flush, shr_sys_flush, 
+1+, ncd_pio_createfile, ncd_putatt, ncd_putatt, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, 
+2+, shr_sys_flush, shr_sys_flush, 

@@ -1,0 +1,9 @@
+sub_param, a, b
+sub_out, a, b
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, intent(inout) :: a, b

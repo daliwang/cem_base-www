@@ -1,0 +1,7 @@
+sub_in, bounds, cws, filter_hydrologyc, cps, num_hydrologyc
+sub_out
+global_ro, cps%dz, col%gridcell, cps%watsat, bounds%begg
+global_wo, cws%qcharge
+global_mod, cws%h2osoi_vol, !cws%h2osoi_vol, cws%h2osoi_ice, cws%h2osoi_liq, !cws%h2osoi_liq
+global_non
+calls, VecGetArrayF90, VecRestoreArrayF90

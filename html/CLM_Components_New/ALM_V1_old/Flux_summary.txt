@@ -1,0 +1,10 @@
+sub_param, c:2, this:1, betrtracer_vars:3
+sub_out
+global_ro| betrtracer_vars%ntracers, ntracers, NONE| this%tracer_flx_ebu_col, tracer_flx_ebu_col, NONE| this%tracer_flx_dew_grnd_col, tracer_flx_dew_grnd_col, NONE| this%tracer_flx_vtrans_col, tracer_flx_vtrans_col, NONE| this%tracer_flx_dew_snow_col, tracer_flx_dew_snow_col, NONE| this%tracer_flx_surfrun_col, tracer_flx_surfrun_col, NONE| this%tracer_flx_h2osfc_snow_residual_col, tracer_flx_h2osfc_snow_residual_col, NONE| this%tracer_flx_tparchm_col, tracer_flx_tparchm_col, NONE| this%tracer_flx_dif_col, tracer_flx_dif_col, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| this%tracer_flx_sub_snow_col, tracer_flx_sub_snow_col, NONE| this%tracer_flx_drain_col, tracer_flx_drain_col, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| this%tracer_flx_leaching_col, tracer_flx_leaching_col, NONE| betrtracer_vars%volatileid, volatileid, NONE
+global_wo
+global_mod| this%tracer_flx_netphyloss_col, tracer_flx_netphyloss_col, NONE| this%tracer_flx_netpro_col, tracer_flx_netpro_col, NONE| this%tracer_flx_surfemi_col, tracer_flx_surfemi_col, NONE| this%tracer_flx_infl_col, tracer_flx_infl_col, NONE
+global_non| betrtracer_vars%nvolatile_tracers, nvolatile_tracers, NONE| betrtracer_vars%tracernames, tracernames, NONE
+calls
+readParams,
+type(BeTRTracer_Type)  , intent(in)  :: betrtracer_vars
+integer                , intent(in)  :: c     ! column index

@@ -1,0 +1,7 @@
+sub_in, nets, hvcoord, nt, dt2, nete, nt_qdp, edgeAdv, elem, hybrid, deriv
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_barrierf, limiter2d_zero_kernel<<<griddim, pack_qdp1<<<griddim, t_startf, hypervis_kernel2<<<griddim, euler_hypervis_kernel_last<<<griddim, pack_exchange_unpack_stage, t_stopf, hypervis_kernel1<<<griddim

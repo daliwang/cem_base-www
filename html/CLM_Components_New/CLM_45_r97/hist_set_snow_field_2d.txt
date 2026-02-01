@@ -1,0 +1,7 @@
+sub_in, no_snow_behavior, type1d, beg1d, field_in, field_out, end1d
+sub_out, field_out
+global_ro, snl
+global_wo
+global_mod
+global_non
+calls, endrun

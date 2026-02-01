@@ -1,0 +1,7 @@
+sub_in, filter, numf
+sub_out
+global_ro, frac_veg_nosno, dewmx, h2ocan, elai, esai
+global_wo, fdry
+global_mod, fwet
+global_non
+calls

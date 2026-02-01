@@ -1,0 +1,7 @@
+sub_in, slslope, ql, cld, pm, sl, ncol, qtslope, sflh, pi, sfi, zi, qt, pver, pcols, sfuh
+sub_out, sflh, sfi, sfuh
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat

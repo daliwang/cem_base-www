@@ -1,0 +1,7 @@
+sub_in, eqice, igas, eqliq, cstate, rc, wtpct, mmr, satliq, satice
+sub_out, mmr, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, vof, ncol, ndenf, vn2f, alam, aaj0, vo2f, tf, djm, dj0, aajm, uco2
+sub_out, aajm, dj0, aaj0, alam, djm
+global_ro
+global_wo
+global_mod
+global_non
+calls, a18linv

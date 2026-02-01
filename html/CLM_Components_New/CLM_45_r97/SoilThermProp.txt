@@ -1,0 +1,7 @@
+sub_in, urbanparams_inst, filter_nolakec, tk, cv, num_nolakec, tk_h2osfc, waterstate_inst, soilstate_inst, temperature_inst, bounds
+sub_out, tk_h2osfc, tk, cv
+global_ro, tk_wall, watsat, nlev_improad, h2osoi_ice, cv_roof, frac_sno, zi, t_soisno, tkdry, h2osno, tkmg, tk_roof, snl, dz, csol, cv_improad, h2osoi_liq, tk_improad, cv_wall, h2osfc, z
+global_wo
+global_mod, thk, bw
+global_non, soilstate_inst%tksatu_col
+calls, t_stopf, t_startf

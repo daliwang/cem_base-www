@@ -1,0 +1,7 @@
+sub_in, icefrac, ocnfrac, landfrac, pdel, dustmr, ncol, pmid, t, pvdust
+sub_out, pvdust
+global_ro
+global_wo
+global_mod
+global_non
+calls

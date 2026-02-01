@@ -1,0 +1,7 @@
+sub_in, kvm, th, v, ocnfrac, ustar, qflx, kvh, lchnk, z, taux, zi, cldn, eddy_scheme, shflx, t, tauy, q, tke, kvq, qpert, cgh, obklen, cgs, ncol, pblh, pmid, tpert, u, ri
+sub_out, kvq
+global_ro
+global_wo
+global_mod
+global_non
+calls, calc_obklen, austausch_atm, calc_ustar, pblintd, austausch_pbl, trbintd

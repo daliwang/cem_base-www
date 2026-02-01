@@ -1,0 +1,7 @@
+sub_in, watsat_col, rstwr, nlend, bounds, bsw_col, sucsat_col, hksat_col
+sub_out, bounds
+global_ro, %begtime, %ntimes
+global_wo
+global_mod
+global_non
+calls, hist_do_disp, htape_create, t_stopf, t_startf, get_curr_date, htape_timeconst, hfields_normalize, htape_timeconst3D, hfields_write, ncd_pio_openfile, ncd_pio_closefile, ncd_enddef, get_prev_date, shr_sys_flush, get_curr_time, hfields_zero

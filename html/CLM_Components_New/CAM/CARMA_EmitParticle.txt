@@ -1,0 +1,7 @@
+sub_in, ielem, state, icnst, tendency, rc, cam_in, surfaceFlux, ibin, dt, carma
+sub_out, rc, surfaceFlux, tendency
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAELEMENT_GET, CARMAGROUP_GET

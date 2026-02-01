@@ -1,0 +1,16 @@
+sub_in, filter_methc, jwt, num_methc, bounds, lake, sat, dtime_ch4
+sub_out
+global_ro, cps%frac_h2osfc, cws%h2osoi_vol, cps%snl, cws%h2osoi_ice, cch4%o2_aere_depth_unsat, cws%h2osfc, cps%dz, cps%cellorg, col%gridcell, gch4%c_atm, cch4%ch4_prod_depth_unsat, cps%watsat, cws%h2osoi_liq, ces%t_h2osfc, cps%bsw, ces%t_soisno, ces%t_grnd
+global_wo
+global_mod, cch4%conc_o2_unsat, cch4%ch4_ebul_total_unsat, cch4%ch4_oxid_depth_unsat, pps_a%grnd_ch4_cond, cch4%ch4_ebul_depth_unsat, cch4%o2_oxid_depth_unsat, cch4%ch4stress_unsat, cch4%ch4_surf_ebul_unsat, cch4%ch4_aere_depth_unsat, cch4%ch4_surf_aere_unsat, cch4%ch4_surf_diff_unsat, cch4%o2stress_unsat, cch4%conc_ch4_unsat, cch4%o2_decomp_depth_unsat
+global_non, cch4%co2_decomp_depth_sat, cch4%ch4_prod_depth_sat, cps%z, cch4%conc_o2_sat, cch4%ch4_oxid_depth_sat, cch4%conc_ch4_sat, cch4%o2stress_sat, cch4%ch4_ebul_depth_sat, cws%lake_icefrac, cch4%co2_decomp_depth_unsat, cch4%ch4stress_sat, cch4%o2_oxid_depth_sat, cws%h2osno, cps%zi, cch4%ch4_surf_ebul_sat, cps%snow_depth, cch4%ch4_surf_diff_sat, cch4%ch4_surf_aere_sat, cch4%o2_aere_depth_sat, cch4%ch4_aere_depth_sat, cch4%o2_decomp_depth_sat, cch4%ch4_ebul_total_sat
+calls, shr_assert, Tridiagonal, endrun
+
+Tree height: 20
+0 , shr_assert, 
+4+, endrun, 
+16-, Tridiagonal, 
+17-, Tridiagonal, 
+18-, endrun, 
+3+, endrun, endrun, 
+2+, endrun, 

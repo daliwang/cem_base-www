@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNSetPns, CNSetCnf, CNSetPps, CNSetCcs, CNSetPnf, CNSetPcf, CNSetCps, CNSetCcf, CNSetPepv, CNSetCns, CNSetPcs

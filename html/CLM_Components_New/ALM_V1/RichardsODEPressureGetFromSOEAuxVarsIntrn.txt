@@ -1,0 +1,11 @@
+sub_param, offset, soe_avars, this
+sub_out
+global_ro, %frac_liq_sat, %temperature, %pressure
+global_wo
+global_mod, this%aux_vars_in
+global_non
+calls, endrun
+readParams,
+class(goveqn_richards_ode_pressure_type), intent(inout)       :: this
+type(sysofeqns_vsfm_auxvar_type), dimension(:), intent(in)    :: soe_avars
+PetscInt, intent(in) :: offset

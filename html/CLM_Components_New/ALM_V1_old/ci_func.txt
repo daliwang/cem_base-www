@@ -1,0 +1,21 @@
+sub_param, cair:8, je:7, gb_mol:6, c:5, rh_can:12, oair:9, ci:1, par_z:11, photosyns_vars:15, iv:4, gs_mol:13, p:3, fval:2, atm2lnd_vars:14, lmr_z:10
+sub_out, gs_mol, fval
+global_ro| photosyns_vars%cp_patch, cp, NONE| photosyns_vars%tpu_z_patch, tpu_z, NONE| photosyns_vars%bbb_patch, bbb, NONE| photosyns_vars%kp_z_patch, kp_z, NONE| photosyns_vars%vcmax_z_patch, vcmax_z, NONE| photosyns_vars%ko_patch, ko, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| photosyns_vars%qe_patch, qe, NONE| photosyns_vars%theta_cj_patch, theta_cj, NONE| photosyns_vars%kc_patch, kc, NONE| photosyns_vars%mbb_patch, mbb, NONE| photosyns_vars%c3flag_patch, c3flag, NONE
+global_wo
+global_mod| photosyns_vars%ap_patch, ap, NONE| photosyns_vars%aj_patch, aj, NONE| photosyns_vars%an_patch, an, NONE| photosyns_vars%ac_patch, ac, NONE| photosyns_vars%ag_patch, ag, NONE
+global_non
+calls, quadratic
+readParams,
+real(r8)             , intent(in)    :: ci       ! intracellular leaf CO2 (Pa)
+real(r8)             , intent(in)    :: lmr_z    ! canopy layer: leaf maintenance respiration rate (umol CO2/m**2/s)
+real(r8)             , intent(in)    :: par_z    ! par absorbed per unit lai for canopy layer (w/m**2)
+real(r8)             , intent(in)    :: gb_mol   ! leaf boundary layer conductance (umol H2O/m**2/s)
+real(r8)             , intent(in)    :: je       ! electron transport rate (umol electrons/m**2/s)
+real(r8)             , intent(in)    :: cair     ! Atmospheric CO2 partial pressure (Pa)
+real(r8)             , intent(in)    :: oair     ! Atmospheric O2 partial pressure (Pa)
+real(r8)             , intent(in)    :: rh_can   ! canopy air realtive humidity
+integer              , intent(in)    :: p, iv, c ! pft, vegetation type and column indexes
+real(r8)             , intent(out)   :: fval     ! return function of the value f(ci)
+real(r8)             , intent(out)   :: gs_mol   ! leaf stomatal conductance (umol H2O/m**2/s)
+type(atm2lnd_type)   , intent(in)    :: atm2lnd_vars
+type(photosyns_type) , intent(inout) :: photosyns_vars

@@ -1,0 +1,9 @@
+sub_param, sitetar
+sub_out
+global_ro, %fire_mort, udata%storesmallcohort, nc, null, currentCohort%taller, currentPatch%shortest, %dmort, udata%deltat, null, nc, udata%storebigcohort, currentPatch%older, currentPatch%younger, currentSite%oldest_patch, currentSite%youngest_patch
+global_wo, nc%canopy_layer, %disturbance_rates, sitetar%leaf_litter_burned, sitetar%cwd_ag_burned
+global_mod, nc%n, %n, %area, %disturbance_rate
+global_non, new_patch%tallest, new_patch, null, new_patch, null, new_patch, currentPatch, new_patch%shortest, NULL, sitetar
+calls, sort_cohorts, average_patch_properties, mortality_litter_fluxes, fuse_cohorts, fire_litter_fluxes, create_patch, insert_cohort, zero_cohort, set_patchno, terminate_cohorts, check_patch_area, zero_patch, copy_cohort
+readParams,
+type (site),  intent(inout), target :: sitetar

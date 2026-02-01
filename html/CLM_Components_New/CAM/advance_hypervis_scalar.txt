@@ -1,0 +1,7 @@
+sub_in, dt2, hvcoord, nete, deriv, nt, hybrid, edgeAdv, nets, elem, nt_qdp
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non, elem, elem
+calls, biharmonic_wk_scalar, edgeVunpack, limiter2d_zero, advance_hypervis_scalar_cuda, t_stopf, bndry_exchangeV, t_startf, edgeVpack

@@ -1,0 +1,8 @@
+sub_in, EClock, export_state, comp, rc, import_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_ArrayGet, ESMF_StateGet, ESMF_StateAdd, ESMF_RoutehandleSet, ESMF_ArraySMMStore
+calls_ln, ESMF_StateGet@103, ESMF_ArrayGet@117, ESMF_ArrayGet@111, ESMF_StateAdd@145, ESMF_StateGet@97, ESMF_ArraySMMStore@130, ESMF_ArrayGet@126, ESMF_StateAdd@142, ESMF_RoutehandleSet@135, ESMF_StateGet@106, ESMF_StateGet@100, ESMF_StateAdd@138, ESMF_ArrayGet@123

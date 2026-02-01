@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, clm3%g%l%c%p%pcs%livestemc, pftcon%woody, pftcon%livewdcn, pftcon%deadwdcn, clm3%g%l%c%p%pcs%livecrootc, clm3%g%l%c%p%itype
+global_wo, clm3%g%l%c%p%pnf%livecrootn_to_retransn, clm3%g%l%c%p%pcf%livecrootc_to_deadcrootc, clm3%g%l%c%p%pcf%livestemc_to_deadstemc, clm3%g%l%c%p%pnf%livestemn_to_retransn
+global_mod, clm3%g%l%c%p%pnf%livestemn_to_deadstemn, clm3%g%l%c%p%pnf%livecrootn_to_deadcrootn
+global_non, clm3%g%l%c%p%pns%livecrootn, clm3%g%l%c%p%pns%livestemn
+calls
+
+Tree height: 2

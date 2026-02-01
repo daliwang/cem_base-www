@@ -1,0 +1,7 @@
+sub_in, endg, caller, begg, pcturb
+sub_out
+global_ro, urbinp%em_improad, urbinp%wtroad_perv, urbinp%alb_improad_dif, urbinp%thick_wall, urbinp%t_building_min, urbinp%cv_wall, urbinp%nlev_improad, urbinp%wtlunit_roof, urbinp%em_wall, urbinp%alb_improad_dir, urbinp%cv_roof, urbinp%ht_roof, urbinp%alb_perroad_dir, urbinp%wind_hgt_canyon, urbinp%alb_roof_dif, urbinp%em_perroad, urbinp%tk_roof, urbinp%t_building_max, urbinp%alb_wall_dif, urbinp%tk_wall, urbinp%alb_perroad_dif, urbinp%em_roof, urbinp%thick_roof, urbinp%alb_roof_dir, urbinp%alb_wall_dir
+global_wo, urbinp%canyon_hwr
+global_mod
+global_non
+calls, endrun

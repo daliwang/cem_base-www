@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, gw_init_beres, gw_spec_addflds, endrun, gw_front_init, lininterp, phys_getopts, gw_oro_init, gw_common_init, gw_convect_init, add_default, addfld

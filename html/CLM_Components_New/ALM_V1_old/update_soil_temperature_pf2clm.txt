@@ -1,0 +1,12 @@
+sub_param, bounds:2, num_soilc:3, filter_soilc:4, clm_bgc_data:1
+sub_out
+global_ro| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| bounds%begg, begg, NONE| col%gridcell, gridcell, NONE
+global_wo
+global_mod| clm_bgc_data%t_soisno_col, t_soisno, NONE
+global_non| col%dz, dz, NONE| col%wtgcell, wtgcell, NONE
+calls, VecGetArrayReadF90, VecRestoreArrayReadF90
+readParams,clm_pf_readnl
+type(bounds_type), intent(in) :: bounds
+integer, intent(in) :: num_soilc        ! number of column soil points in column filter
+integer, intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

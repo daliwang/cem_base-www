@@ -1,0 +1,7 @@
+sub_in, flag_xyfill, sampling_seq, avgflag, enddim1, long_name, decomp_type, begdim1, enddim3, mdimnames, fill_value, units, begdim2, begdim3, enddim2, numlev, fname
+sub_out
+global_ro, listentry
+global_wo, is_subcol, name, colperdim3, act_sometape, time_op, actflag, htapeindx
+global_mod, avgflag, enddim1, flag_xyfill, sampling_seq, units, enddim2, begdim3, begdim2, numlev, decomp_type, long_name, begdim1, fillvalue, enddim3
+global_non
+calls, endrun, get_horiz_grid_dim_d, add_entry_to_master, lookup_hist_coord_indices

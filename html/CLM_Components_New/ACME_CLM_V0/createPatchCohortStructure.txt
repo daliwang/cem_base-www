@@ -1,0 +1,7 @@
+sub_in, bounds, geds_local, this
+sub_out
+global_ro, newp%siteptr%dstatus, this%vectorLengthStart, grc%londeg, newp%siteptr%status, grc%latdeg
+global_wo, geds_local%istheresoil, geds_local%lat, dc%dbh, newp%patchno, geds_local%gdd, dc%balive, geds_local%ncd, dc%n, dc%canopy_trim, dc%laimemory, geds_local%lon, dc%bdead, dc%bstore, dc%hite, dc%canopy_layer
+global_mod
+global_non, null, geds_local, newp, null, currentSite%oldest_patch, currentSite%youngest_patch, newp, null, null, null, currentSite%youngest_patch, currentSite, newp
+calls, zero_patch, create_cohort, create_patch, zero_site

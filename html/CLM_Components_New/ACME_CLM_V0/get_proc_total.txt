@@ -1,0 +1,7 @@
+sub_in, ncells, nCohorts, npfts, nlunits, ncols, pid
+sub_out, npfts, ncols, nlunits, ncells, nCohorts
+global_ro, %nlunits, %ncols, %npfts, %nCohorts, %ncells
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, bounds, this
+sub_out
+global_ro, col%active, pft%wtcol
+global_wo, this%cactive, this%pwtcol
+global_mod
+global_non
+calls

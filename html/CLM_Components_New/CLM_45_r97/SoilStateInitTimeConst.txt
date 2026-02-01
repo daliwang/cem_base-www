@@ -1,0 +1,7 @@
+sub_in, soilstate_inst, nlfilename, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, init_vegrootfr, getfil, ncd_pio_closefile, pedotransf, ReadNL, ncd_inqdlen, organicrd, ncd_io, ncd_pio_openfile

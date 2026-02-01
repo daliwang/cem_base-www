@@ -1,0 +1,21 @@
+sub_param, waterflux_vars, num_nolakep, soilstate_vars, filter_nolakep, waterstate_vars, temperature_vars, canopystate_vars, energyflux_vars, num_nolakec, bounds, filter_nolakec, frictionvel_vars, atm2lnd_vars
+sub_out
+global_ro, pft%itype, lun%z_0_town, temperature_vars%t_soisno_col, canopystate_vars%frac_veg_nosno_patch, canopystate_vars%htop_patch, soilstate_vars%smpmin_col, atm2lnd_vars%forc_th_downscaled_col, atm2lnd_vars%forc_t_downscaled_col, pft%column, pft%landunit, col%landunit, lun%urbpoi, atm2lnd_vars%forc_hgt_t_grc, atm2lnd_vars%forc_hgt_q_grc, pft%gridcell, atm2lnd_vars%forc_q_downscaled_col, lun%z_d_town, col%dz, canopystate_vars%elai_patch, ecophyscon%z0mr, waterstate_vars%frac_sno_col, ecophyscon%displar, atm2lnd_vars%forc_hgt_u_grc, canopystate_vars%esai_patch, soilstate_vars%sucsat_col, waterstate_vars%h2osoi_ice_col, soilstate_vars%watopt_col, soilstate_vars%watsat_col, soilstate_vars%watdry_col, waterstate_vars%frac_h2osfc_col, soilstate_vars%bsw_col, waterstate_vars%h2osoi_liq_col, col%snl, soilstate_vars%rootfr_road_perv_col, temperature_vars%t_h2osfc_col, waterstate_vars%frac_sno_eff_col
+global_wo, frictionvel_vars%forc_hgt_u_patch, temperature_vars%beta_col, energyflux_vars%eflx_sh_tot_r_patch, energyflux_vars%eflx_lh_tot_r_patch, energyflux_vars%eflx_lh_tot_u_patch, temperature_vars%t_grnd_col, frictionvel_vars%z0qg_col, temperature_vars%thm_patch, waterflux_vars%qflx_tran_veg_patch, temperature_vars%thv_col, temperature_vars%emg_col, frictionvel_vars%z0hg_col, waterflux_vars%qflx_evap_veg_patch, temperature_vars%emv_patch, energyflux_vars%eflx_lh_tot_patch, frictionvel_vars%z0hv_patch, waterflux_vars%qflx_evap_tot_patch, col%zii, energyflux_vars%eflx_sh_tot_patch, temperature_vars%t_h2osfc_bef_col, frictionvel_vars%forc_hgt_q_patch, temperature_vars%t_ssbef_col, energyflux_vars%eflx_sh_tot_u_patch, energyflux_vars%cgrndl_patch, frictionvel_vars%z0qv_patch, soilstate_vars%soilalpha_u_col, soilstate_vars%soilalpha_col, energyflux_vars%cgrnd_patch, energyflux_vars%eflx_sh_veg_patch, energyflux_vars%cgrnds_patch
+global_mod, waterstate_vars%dqgdT_col, frictionvel_vars%z0m_patch, soilstate_vars%rootr_road_perv_col, frictionvel_vars%z0mg_col, waterstate_vars%qg_col, frictionvel_vars%z0mv_patch, waterstate_vars%qg_snow_col, frictionvel_vars%forc_hgt_t_patch, waterstate_vars%qg_h2osfc_col, canopystate_vars%displa_patch, energyflux_vars%htvp_col, waterstate_vars%qg_soil_col
+global_non, soilstate_vars%watfc_col, atm2lnd_vars%forc_u_grc, atm2lnd_vars%forc_pbot_downscaled_col, waterstate_vars%h2osno_col, atm2lnd_vars%forc_v_grc, waterstate_vars%h2osfc_col
+calls, calc_soilevap_stress, QSat
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakec         ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_nolakec(:)   ! column filter for non-lake points
+integer                , intent(in)    :: num_nolakep         ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_nolakep(:)   ! patch filter for non-lake points
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars
+type(soilstate_type)   , intent(inout) :: soilstate_vars
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars

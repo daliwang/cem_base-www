@@ -1,0 +1,7 @@
+sub_in, odap_aer, list_idx, pbuf, state
+sub_out, odap_aer
+global_ro
+global_wo
+global_mod
+global_non
+calls, rad_cnst_get_aer_mmr, pbuf_get_field, rad_cnst_get_aer_props, endrun, modal_aero_lw, qsat, rad_cnst_get_info

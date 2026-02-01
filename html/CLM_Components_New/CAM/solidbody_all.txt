@@ -1,0 +1,7 @@
+sub_in, dsphere2, contrauv, spelt, k, dsphere1
+sub_out, dsphere1, dsphere2, contrauv
+global_ro
+global_wo
+global_mod
+global_non
+calls, vortex_rotatedsphere, vortex_rotatedsphereback

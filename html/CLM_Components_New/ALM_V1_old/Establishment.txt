@@ -1,0 +1,13 @@
+sub_param, dgvs_vars:5, carbonstate_vars:4, carbonflux_vars:3, bounds:1, atm2lnd_vars:2
+sub_out
+global_ro| pft%gridcell, gridcell, NONE| ecophyscon%dwood, dwood, NONE| dgv_ecophyscon%twmax, twmax, NONE| carbonflux_vars%annsum_litfall_patch, annsum_litfall, NONE| ecophyscon%dsladlai, dsladlai, NONE| dgvs_vars%tmomin20_patch, tmomin20, NONE| ecophyscon%woody, woody, NONE| pft%landunit, landunit, NONE| dgv_ecophyscon%reinickerp, reinickerp, NONE| ecophyscon%slatop, slatop, NONE| pft%itype, ivt, NONE| dgv_ecophyscon%gddmin, gddmin, NONE| carbonstate_vars%deadstemc_patch, deadstemc, NONE| dgv_ecophyscon%crownarea_max, crownarea_max, NONE| atm2lnd_vars%prec365_patch, prec365, NONE| dgv_ecophyscon%tcmax, tcmax, NONE| dgv_ecophyscon%allom1, allom1, NONE| carbonflux_vars%annsum_npp_patch, annsum_npp, NONE| dgv_ecophyscon%tcmin, tcmin, NONE| dgvs_vars%agdd20_patch, agdd20, NONE| dgvs_vars%agddtw_patch, agddtw, NONE
+global_wo| dgvs_vars%greffic_patch, greffic, NONE| dgvs_vars%heatstress_patch, heatstress, NONE
+global_mod| dgvs_vars%fpcgrid_patch, fpcgrid, NONE| dgvs_vars%pftmayexist_patch, pftmayexist, NONE| carbonstate_vars%leafcmax_patch, leafcmax, NONE| dgvs_vars%crownarea_patch, crownarea, NONE| dgvs_vars%nind_patch, nind, NONE| dgvs_vars%present_patch, present, NONE
+global_non
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(carbonstate_type) , intent(inout) :: carbonstate_vars
+type(dgvs_type)        , intent(inout) :: dgvs_vars

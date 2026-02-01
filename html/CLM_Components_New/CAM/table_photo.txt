@@ -1,0 +1,7 @@
+sub_in, zint, esfact, temper, ncol, pdel, invariants, pbuf, lwc, srf_alb, pmid, clouds, zen_angle, lchnk, zmid, col_dens, photos, vmr
+sub_out, photos
+global_ro
+global_wo
+global_mod
+global_non
+calls, jshort, set_xnox_photo, cloud_mod, endrun, jeuv, jlong, pbuf_set_field

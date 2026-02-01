@@ -1,0 +1,7 @@
+sub_in, fu, vortm1, fftbuf, psm2, t2, q3m1, divm2, etadot, divm1, flx_net, vmaxt, fv, t3m2, phis, vmax, u3m2, psm1, lat, t3m1, etamid, v3m1, nlon, vcour, nlon_fft, v3m2, cwava, omga, vortm2, dpsl, u3m1, ztodt, detam, dpsm
+sub_out, vmaxt, vcour, fftbuf, vmax, fv, fu
+global_ro
+global_wo
+global_mod
+global_non
+calls, grmult, flxint, engy_te, plevs0, outfld, stats

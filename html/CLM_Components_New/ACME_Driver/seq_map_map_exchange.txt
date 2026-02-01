@@ -1,0 +1,8 @@
+sub_in, flow, dom_tmp, comp, dom_flag, string, msgtag
+sub_out
+global_ro, component_get_c2x_cx, component_get_x2c_cc, component_get_c2x_cc, component_get_x2c_cx, rearr, data, copy_only
+global_wo
+global_mod
+global_non, component_get_dom_cc, dom_tmp, component_get_dom_cx, component_get_dom_cx, component_get_dom_cc, component_get_mapper_Cc2x, component_get_mapper_Cx2c
+calls, mct_aVect_copy, mct_rearr_rearrange
+calls_ln, mct_aVect_copy@263, mct_aVect_copy@265, mct_rearr_rearrange@273, mct_rearr_rearrange@276

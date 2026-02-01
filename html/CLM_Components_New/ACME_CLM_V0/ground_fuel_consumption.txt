@@ -1,0 +1,7 @@
+sub_in, cs_pnt
+sub_out
+global_ro, %CWD_AG, %sum_fuel, %litter_moisture, %livegrass, %fuel_frac, %leaf_litter, >currentPatch%younger;
+global_wo, %tau_l, %TFC_ROS
+global_mod, cs_pnt%oldest_patch;, %burnt_frac_litter
+global_non
+calls

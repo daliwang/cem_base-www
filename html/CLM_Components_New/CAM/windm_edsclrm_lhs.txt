@@ -1,0 +1,7 @@
+sub_in, rho_ds_zm, wm_zt, l_implemented, l_imp_sfc_momentum_flux, dt, lhs, nu, wind_speed, invrs_rho_ds_zt, Kh_zm, u_star_sqd
+sub_out, lhs
+global_ro
+global_wo
+global_mod
+global_non
+calls

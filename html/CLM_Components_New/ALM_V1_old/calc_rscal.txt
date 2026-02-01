@@ -1,0 +1,13 @@
+sub_param, cascade_matrixd:4, nr:2, rscal:5, pscal:3, nprimvars:1
+sub_out, rscal
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,readParams
+integer , intent(in) :: nprimvars
+integer , intent(in) :: nr
+real(r8), intent(in) :: pscal(1:nprimvars)
+real(r8), intent(in) :: cascade_matrixd(1:nprimvars, 1:nr)
+real(r8), intent(out):: rscal(1:nr)

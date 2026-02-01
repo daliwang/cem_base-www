@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro| %nflds, nflds, NONE| %hlist, hlist, NONE| %field%name, name, NONE
+global_wo
+global_mod
+global_non
+calls, htape_addfld, list_index, masterlist_change_timeavg, endrun, shr_sys_flush
+readParams,

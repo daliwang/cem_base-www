@@ -1,0 +1,7 @@
+sub_in, lakestate_inst, num_lakec, energyflux_inst, bounds, temperature_inst, cv_lake, filter_lakec, cv, waterflux_inst, waterstate_inst, lhabs
+sub_out, lhabs, cv_lake, cv
+global_ro, snl, dz_lake
+global_wo, eflx_snomelt, imelt
+global_mod, lake_icefrac, qflx_snomelt, t_soisno, h2osoi_liq, snow_depth, h2osoi_ice, qflx_snow_melt, qflx_snofrz_lyr, t_lake, qflx_snofrz_col, h2osno
+global_non, col%dz
+calls

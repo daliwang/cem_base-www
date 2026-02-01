@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, %rAttr, sdat_hdm%avs
+global_wo
+global_mod
+global_non
+calls, shr_strdata_advance, get_curr_date

@@ -1,0 +1,7 @@
+sub_in, prec_str, madeSnow, rc, snowMass, waterMass, cstate, name, state, rliq, carma, dt, iceMass, snow_str, icol
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMASTATE_GetGas, CARMA_Get, CARMASTATE_Get

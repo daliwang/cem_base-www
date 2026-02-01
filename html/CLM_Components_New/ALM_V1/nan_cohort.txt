@@ -1,0 +1,9 @@
+sub_param, cc_p
+sub_out
+global_ro
+global_wo, cc_p%bl, cc_p%dbalivedt, cc_p%laimemory, cc_p%dbstoredt, cc_p%resp_g, cc_p%gpp, cc_p%leaf_md, cc_p%seed_prod, cc_p%gpp_clm, cc_p%hite, cc_p%cfa, cc_p%bsw, cc_p%livestemn, cc_p%woody_turnover, cc_p%froot_mr, cc_p%prom_weight, cc_p%dndt, cc_p%resp_acc, cc_p%indexnumber, cc_p%rd, cc_p%year_net_uptake, cc_p%fire_mort, cc_p%livecrootn, cc_p%resp, cc_p%b, cc_p%npp_clm, cc_p%br, cc_p%resp_m, cc_p%dhdt, cc_p%dbdeaddt, cc_p%md, cc_p%bdead, cc_p%leaf_litter, cc_p%treelai, cc_p%NV, cc_p%leaf_cost, cc_p%livecroot_mr, cc_p%canopy_trim, cc_p%dmort, cc_p%crownfire_mort, cc_p%n, cc_p%root_md, cc_p%storage_flux, cc_p%npp_acc, cc_p%cambial_mort, cc_p%carbon_balance, cc_p%livestem_mr, cc_p%gpp_acc, cc_p%excl_weight, cc_p%sai, cc_p%ddbhdt, cc_p%treesai, cc_p%c_area, cc_p%gscan, cc_p%balive, cc_p%resp_clm, cc_p%frootn, cc_p%ts_net_uptake
+global_mod, cc_p%npp, cc_p%lai, cc_p%dbh, cc_p%pft, cc_p%bstore
+global_non, null, cc_p, null, null, null
+calls
+readParams,
+type (cohort), intent(inout), target  :: cc_p

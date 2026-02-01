@@ -1,0 +1,7 @@
+sub_in, yyarr, tol, yarr, xarr, xxarr
+sub_out, yyarr
+global_ro
+global_wo
+global_mod
+global_non
+calls, mrgrnk

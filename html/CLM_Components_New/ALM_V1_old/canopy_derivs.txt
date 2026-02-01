@@ -1,0 +1,9 @@
+sub_param, currentPatch:1
+sub_out
+global_ro| currentCohort%taller, currentCohort, NONE| currentPatch%shortest, currentCohort, NONE
+global_wo
+global_mod
+global_non
+calls, Growth_Derivatives
+readParams,
+type(patch) , intent(inout), pointer :: currentPatch

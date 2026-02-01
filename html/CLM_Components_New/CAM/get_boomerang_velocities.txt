@@ -1,0 +1,7 @@
+sub_in, u, time, sphere, v
+sub_out, v, u
+global_ro
+global_wo
+global_mod
+global_non
+calls

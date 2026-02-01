@@ -1,0 +1,9 @@
+sub_param, this_filter:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_clump_bounds, endrun
+readParams,
+type(clumpfilter), intent(inout), allocatable :: this_filter(:)  ! the filter to allocate

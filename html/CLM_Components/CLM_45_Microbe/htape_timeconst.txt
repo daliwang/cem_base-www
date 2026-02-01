@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, c, l
+calls, ncd_io, getdatetime, get_curr_date, ncd_defvar, get_curr_time, get_proc_bounds, ncd_putatt, get_ref_date

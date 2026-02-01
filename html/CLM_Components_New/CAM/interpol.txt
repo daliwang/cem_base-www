@@ -1,0 +1,7 @@
+sub_in, nin, xout, yin, nout, xin, yout
+sub_out, yout
+global_ro
+global_wo
+global_mod
+global_non
+calls

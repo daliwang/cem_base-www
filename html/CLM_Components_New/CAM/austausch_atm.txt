@@ -1,0 +1,7 @@
+sub_in, s2, ncol, ri, kvf
+sub_out, kvf
+global_ro
+global_wo
+global_mod
+global_non
+calls

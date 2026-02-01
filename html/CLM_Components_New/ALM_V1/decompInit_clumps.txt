@@ -1,0 +1,9 @@
+sub_param, lns, glcmask, lnj, lni
+sub_out
+global_ro, ldecomp%gdc2glo
+global_wo
+global_mod, procinfo%begl, %begl, %endc, procinfo%endc, %begc, procinfo%begc, %begp, procinfo%begp, procinfo%npfts, %npfts, procinfo%ncols, %ncols, procinfo%nCohorts, %nCohorts, %nlunits, procinfo%nlunits, procinfo%endCohort, %endCohort, %endp, procinfo%endp, procinfo%endl, %endl, procinfo%begCohort, %begCohort
+global_non
+calls, subgrid_get_gcellinfo, get_proc_bounds, mpi_allreduce, endrun
+readParams,
+integer , intent(in) :: lns,lni,lnj ! land domain global size

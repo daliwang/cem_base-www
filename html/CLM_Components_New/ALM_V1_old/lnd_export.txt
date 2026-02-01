@@ -1,0 +1,12 @@
+sub_param, l2x:4, lnd2atm_vars:2, bounds:1, lnd2glc_vars:3
+sub_out, l2x
+global_ro| lnd2atm_vars%fsa_grc, fsa_grc, NONE| lnd2glc_vars%tsrf_grc, tsrf_grc, NONE| lnd2glc_vars%qice_grc, qice_grc, NONE| bounds%begg, begg, NONE| lnd2atm_vars%tauy_grc, tauy_grc, NONE| lnd2atm_vars%nee_grc, nee_grc, NONE| lnd2atm_vars%taux_grc, taux_grc, NONE| lnd2atm_vars%qflx_rofice_grc, qflx_rofice_grc, NONE| lnd2atm_vars%qflx_evap_tot_grc, qflx_evap_tot_grc, NONE| lnd2atm_vars%flux_ch4_grc, flux_ch4_grc, NONE| lnd2atm_vars%ddvel_grc, ddvel_grc, NONE| lnd2atm_vars%u_ref10m_grc, u_ref10m_grc, NONE| lnd2atm_vars%albi_grc, albi_grc, NONE| lnd2atm_vars%qflx_rofliq_qgwl_grc, qflx_rofliq_qgwl_grc, NONE| lnd2glc_vars%topo_grc, topo_grc, NONE| lnd2atm_vars%flxvoc_grc, flxvoc_grc, NONE| lnd2atm_vars%qflx_rofliq_qsur_grc, qflx_rofliq_qsur_grc, NONE| lnd2atm_vars%qflx_rofliq_qsub_grc, qflx_rofliq_qsub_grc, NONE| lnd2atm_vars%eflx_lwrad_out_grc, eflx_lwrad_out_grc, NONE| lnd2atm_vars%h2osno_grc, h2osno_grc, NONE| lnd2atm_vars%albd_grc, albd_grc, NONE| lnd2atm_vars%eflx_sh_tot_grc, eflx_sh_tot_grc, NONE| lnd2atm_vars%t_rad_grc, t_rad_grc, NONE| lnd2atm_vars%q_ref2m_grc, q_ref2m_grc, NONE| lnd2atm_vars%eflx_lh_tot_grc, eflx_lh_tot_grc, NONE| lnd2atm_vars%t_ref2m_grc, t_ref2m_grc, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds  ! bounds
+type(lnd2atm_type), intent(inout) :: lnd2atm_vars ! clm land to atmosphere exchange data type
+type(lnd2glc_type), intent(inout) :: lnd2glc_vars ! clm land to atmosphere exchange data type
+real(r8)          , intent(out)   :: l2x(:,:)! land to coupler export state on land grid

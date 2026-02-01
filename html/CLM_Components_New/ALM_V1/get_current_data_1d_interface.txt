@@ -1,0 +1,10 @@
+sub_param, cur_data, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,read_data_if_needed_interface
+class(dyn_var_type) , intent(inout) :: this             ! this object
+real(r8)            , intent(out)   :: cur_data(:) ! current value of data

@@ -1,0 +1,7 @@
+sub_in, fileid, cyc_ndx_beg, cyc_ndx_end, cyc_yr
+sub_out, cyc_ndx_end, cyc_ndx_beg
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_dimension, endrun

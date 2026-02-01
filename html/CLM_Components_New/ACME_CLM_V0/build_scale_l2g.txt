@@ -1,0 +1,7 @@
+sub_in, bounds, scale_l2g, l2g_scale_type
+sub_out, scale_l2g
+global_ro, lun%itype
+global_wo
+global_mod
+global_non
+calls, create_scale_l2g_lookup

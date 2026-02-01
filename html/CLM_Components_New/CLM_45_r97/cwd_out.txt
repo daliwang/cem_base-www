@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, currentPatch, soilstate_inst, temperature_inst
+sub_out
+global_ro
+global_wo
+global_mod, flux_out
+global_non, currentPatch%siteptr
+calls, fragmentation_scaler

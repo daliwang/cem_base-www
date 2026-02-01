@@ -1,0 +1,7 @@
+sub_in, tod2, tod1, ymd2, ymd1, days
+sub_out, days
+global_ro
+global_wo
+global_mod
+global_non
+calls, chkrc, ESMF_TimeIntervalGet

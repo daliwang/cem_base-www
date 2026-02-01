@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro, %field%beg1d_out, tape, %field%end1d_out, %field%units, %field%name, %hlist, %avgflag, %field%type1d_out, %field%num2d, %ntimes, %field%long_name, %field%num1d_out, %field%type2d
+global_wo
+global_mod
+global_non
+calls, hfields_1dinfo, ncd_defvar, ncd_io, endrun

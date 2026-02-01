@@ -1,0 +1,7 @@
+sub_in, point, face2, face1, ida, ide, gnom1d, xy, iref, gnom, ibaseref, except
+sub_out, point, iref, ibaseref
+global_ro
+global_wo
+global_mod
+global_non
+calls

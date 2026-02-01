@@ -1,0 +1,7 @@
+sub_in, lat, gcid
+sub_out, lat
+global_ro
+global_wo
+global_mod
+global_non
+calls

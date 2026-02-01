@@ -1,0 +1,7 @@
+sub_in, photosyns_vars, p
+sub_out
+global_ro, %ts_net_uptake, %npp_clm, currentPatch%shortest, currentCohort%taller, pft%gridcell, EDpft%ED_patch, %resp_clm, photosyns_vars%psncanopy_patch, %gpp_clm
+global_wo, photosyns_vars%fpsn_patch
+global_mod, %year_net_uptake, %resp_acc, %npp_acc, %gpp_acc
+global_non, gridCellEdState, currentPatch%younger
+calls

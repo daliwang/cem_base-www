@@ -1,0 +1,10 @@
+sub_in, filter_soilp, filter_soilc, ubc, num_soilp, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro
+global_wo, clm3%g%l%c%p%pepv%annmax_retransn, clm3%g%l%c%p%pepv%annsum_litfall, clm3%g%l%c%p%pepv%annsum_potential_gpp
+global_mod, clm3%g%l%c%p%pepv%tempsum_npp, clm3%g%l%c%p%pepv%annsum_npp, clm3%g%l%c%p%pepv%tempsum_litfall, clm3%g%l%c%p%pepv%annavg_t2m, clm3%g%l%c%cps%annsum_counter, clm3%g%l%c%p%pepv%tempsum_potential_gpp, clm3%g%l%c%p%pepv%tempmax_retransn, clm3%g%l%c%p%pepv%tempavg_t2m
+global_non, clm3%g%l%c%cps%cannavg_t2m, clm3%g%l%c%p%column, clm3%g%l%c%cps%cannsum_npp
+calls, p2c
+
+Tree height: 3
+2+, p2c, p2c, 

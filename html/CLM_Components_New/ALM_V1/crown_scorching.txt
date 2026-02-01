@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %bl, currentSite%oldest_patch;, currentPatch%younger;, >currentCohort%shorter;, %bsw, %FI, %bdead, %n
+global_wo
+global_mod, currentPatch%tallest;, %SH
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer :: currentSite

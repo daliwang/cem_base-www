@@ -1,0 +1,7 @@
+sub_in, snow_depth_input_col, t_soisno_col, bounds, h2osno_input_col, this, watsat_col
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%InitCold, this%InitHistory, this%InitAllocate

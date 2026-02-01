@@ -1,0 +1,7 @@
+sub_in, airpl_emis_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_rlon_all_p, pio_closefile, lininterp_finish, lininterp, gmean, lininterp_init, cam_pio_openfile, endrun, get_rlat_all_p, getfil

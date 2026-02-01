@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%leaf_long, pns%deadcrootn_storage, pcs%frootc_storage, pft%gridcell, pftcon%woody, pns%deadstemn_storage, pns%livecrootn_storage, pns%livestemn_storage, pcs%gresp_storage, pcs%leafc_storage, pft%column, pcs%deadstemc_storage, gps%dayl, pcs%livestemc_storage, pns%frootn_storage, pns%leafn_storage, pftcon%stress_decid, cps%soilpsi, pepv%annavg_t2m, pcs%deadcrootc_storage, ces%t_soisno, pcs%livecrootc_storage, pft%itype
+global_wo, pnf%livestemn_xfer_to_livestemn, pnf%frootn_storage_to_xfer, pnf%deadcrootn_storage_to_xfer, pcf%deadstemc_xfer_to_deadstemc, pnf%livecrootn_storage_to_xfer, pns%livecrootn_xfer, pns%deadstemn_xfer, pcf%deadstemc_storage_to_xfer, pns%livestemn_xfer, pnf%livecrootn_xfer_to_livecrootn, pns%frootn_xfer, pcs%deadcrootc_xfer, pepv%bglfr, pcs%deadstemc_xfer, pns%deadcrootn_xfer, pcf%leafc_xfer_to_leafc, pnf%livestemn_storage_to_xfer, pnf%deadstemn_storage_to_xfer, pcs%livecrootc_xfer, pepv%prev_leafc_to_litter, pnf%frootn_xfer_to_frootn, pcf%livecrootc_storage_to_xfer, pnf%deadcrootn_xfer_to_deadcrootn, pnf%deadstemn_xfer_to_deadstemn, pcf%frootc_xfer_to_frootc, pnf%leafn_xfer_to_leafn, pnf%leafn_storage_to_xfer, pcs%livestemc_xfer, pns%leafn_xfer, pcf%leafc_storage_to_xfer, pcf%deadcrootc_storage_to_xfer, pcs%leafc_xfer, pcf%gresp_storage_to_xfer, pcf%livestemc_storage_to_xfer, pcf%livestemc_xfer_to_livestemc, pcf%frootc_storage_to_xfer, pcs%frootc_xfer, pepv%prev_frootc_to_litter, pcf%deadcrootc_xfer_to_deadcrootc, pcf%livecrootc_xfer_to_livecrootc
+global_mod, pepv%onset_swi, pepv%offset_counter, pepv%onset_gddflag, pepv%onset_fdd, pepv%dormant_flag, pepv%onset_counter, pepv%days_active, pepv%onset_gdd, pepv%offset_fdd, pepv%bgtr, pepv%onset_flag, pepv%lgsf, pepv%offset_swi, pepv%offset_flag
+global_non
+calls
+
+Tree height: 11

@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, num_nolakec, filter_nolakec, bounds, soilstate_vars, soilbeta
+sub_out, soilbeta
+global_ro, waterstate_vars%frac_sno_col, col%dz, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%frac_h2osfc_col, col%landunit, soilstate_vars%watfc_col, soilstate_vars%watsat_col
+global_wo
+global_mod
+global_non
+calls

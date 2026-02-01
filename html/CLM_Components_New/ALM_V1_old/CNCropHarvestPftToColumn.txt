@@ -1,0 +1,14 @@
+sub_param, cnstate_vars:3, phosphorusflux_vars:6, filter_soilc:2, carbonflux_vars:4, num_soilc:1, nitrogenflux_vars:5
+sub_out
+global_ro| col%pfti, pfti, NONE| phosphorusflux_vars%hrv_grainp_to_prod1p_patch, phrv_grainp_to_prod1p, NONE| carbonflux_vars%hrv_leafc_to_prod1c_patch, phrv_leafc_to_prod1c, NONE| nitrogenflux_vars%hrv_livestemn_to_prod1n_patch, phrv_livestemn_to_prod1n, NONE| nitrogenflux_vars%hrv_grainn_to_prod1n_patch, phrv_grainn_to_prod1n, NONE| carbonflux_vars%hrv_livestemc_to_prod1c_patch, phrv_livestemc_to_prod1c, NONE| carbonflux_vars%hrv_grainc_to_prod1c_patch, phrv_grainc_to_prod1c, NONE| nitrogenflux_vars%hrv_leafn_to_prod1n_patch, phrv_leafn_to_prod1n, NONE| pft%wtcol, wtcol, NONE| phosphorusflux_vars%hrv_livestemp_to_prod1p_patch, phrv_livestemp_to_prod1p, NONE| phosphorusflux_vars%hrv_leafp_to_prod1p_patch, phrv_leafp_to_prod1p, NONE
+global_wo
+global_mod| nitrogenflux_vars%hrv_cropn_to_prod1n_col, chrv_cropn_to_prod1n, NONE| nitrogenflux_vars%hrv_cropn_to_prod1n_patch, phrv_cropn_to_prod1n, NONE| phosphorusflux_vars%hrv_cropp_to_prod1p_col, chrv_cropp_to_prod1p, NONE| carbonflux_vars%hrv_cropc_to_prod1c_patch, phrv_cropc_to_prod1c, NONE| carbonflux_vars%hrv_cropc_to_prod1c_col, chrv_cropc_to_prod1c, NONE| phosphorusflux_vars%hrv_cropp_to_prod1p_patch, phrv_cropp_to_prod1p, NONE
+global_non| pft%itype, ivt, NONE
+calls
+readParams,readCNPhenolParams
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type), intent(inout) :: phosphorusflux_vars
+integer, intent(in) :: num_soilc       ! number of soil columns in filter
+integer, intent(in) :: filter_soilc(:) ! soil column filter

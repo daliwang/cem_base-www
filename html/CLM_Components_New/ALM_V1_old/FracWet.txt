@@ -1,0 +1,12 @@
+sub_param, filter:2, numf:1, canopystate_vars:3, waterstate_vars:4
+sub_out
+global_ro| canopystate_vars%esai_patch, esai, NONE| waterstate_vars%h2ocan_patch, h2ocan, NONE| canopystate_vars%elai_patch, elai, NONE| canopystate_vars%frac_veg_nosno_patch, frac_veg_nosno, NONE| canopystate_vars%dewmx_patch, dewmx, NONE
+global_wo| waterstate_vars%fdry_patch, fdry, NONE
+global_mod| waterstate_vars%fwet_patch, fwet, NONE
+global_non
+calls
+readParams,CanopyHydrology_readnl
+integer                , intent(in)    :: numf                  ! number of filter non-lake points
+integer                , intent(in)    :: filter(numf)          ! patch filter for non-lake points
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars

@@ -1,0 +1,7 @@
+sub_in, LH_rvm_mc, LH_rcm_mc, LH_hydromet_mc, LH_thlm_mc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var

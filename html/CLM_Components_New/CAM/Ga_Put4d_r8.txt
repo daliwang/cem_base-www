@@ -1,0 +1,7 @@
+sub_in, k2, k1, jto, ga_s, ga_r, nqfrom, nq1, im, ito, j2, nq2, ifrom, win, i2, jfrom, km, q, jm, comm, kto, nqto, nq, i1, kfrom, j1
+sub_out, ga_s
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_ISEND, MPI_COMM_RANK

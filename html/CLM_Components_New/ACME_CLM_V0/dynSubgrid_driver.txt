@@ -1,0 +1,7 @@
+sub_in, energyflux_vars, nitrogenflux_vars, soilstate_vars, soilhydrology_vars, dgvs_vars, waterflux_vars, c13_carbonflux_vars, waterstate_vars, canopystate_vars, lakestate_vars, temperature_vars, nitrogenstate_vars, photosyns_vars, c14_carbonstate_vars, cnstate_vars, c14_carbonflux_vars, urbanparams_vars, c13_carbonstate_vars, carbonstate_vars, carbonflux_vars, bounds_proc, glc2lnd_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, initialize_new_columns, dyn_hwcontent_final, dynHarvest_interp, reweight_wrapup, dyn_cnbal_patch, set_subgrid_diagnostic_fields, glc2lnd_vars%update_glc2lnd, dyn_ED, prior_weights%set_prior_weights, dyn_hwcontent_init, update_landunit_weights, dynpft_interp, dynCNDV_interp, compute_higher_order_weights, get_clump_bounds

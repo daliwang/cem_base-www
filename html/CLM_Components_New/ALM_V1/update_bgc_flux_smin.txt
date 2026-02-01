@@ -1,0 +1,15 @@
+sub_param, nitrogenflux_vars, filter_soilc, bounds, clm_bgc_data, num_soilc, phosphorusflux_vars, cnstate_vars
+sub_out
+global_ro, clm_bgc_data%potential_immob_p_col, clm_bgc_data%sminn_to_plant_vr_col, clm_bgc_data%supplement_to_sminn_vr_col, clm_bgc_data%smin_no3_to_plant_vr_col, clm_bgc_data%sminp_to_plant_col, clm_bgc_data%actual_immob_p_vr_col, clm_bgc_data%supplement_to_sminp_vr_col, clm_bgc_data%actual_immob_no3_vr_col, clm_bgc_data%fpg_col, clm_bgc_data%gross_pmin_vr_col, clm_bgc_data%fpi_p_col, clm_bgc_data%sminp_to_plant_vr_col, clm_bgc_data%fpg_p_col, clm_bgc_data%sminn_to_denit_excess_vr_col, clm_bgc_data%net_pmin_vr_col, clm_bgc_data%actual_immob_nh4_vr_col, clm_bgc_data%net_nmin_vr_col, clm_bgc_data%actual_immob_p_col, clm_bgc_data%potential_immob_p_vr_col, clm_bgc_data%smin_nh4_to_plant_vr_col, clm_bgc_data%actual_immob_vr_col, clm_bgc_data%actual_immob_col, clm_bgc_data%potential_immob_col, clm_bgc_data%fpi_p_vr_col, clm_bgc_data%sminn_to_plant_col, clm_bgc_data%fpi_vr_col, clm_bgc_data%gross_nmin_vr_col, clm_bgc_data%potential_immob_vr_col, clm_bgc_data%fpi_col
+global_wo, phosphorusflux_vars%gross_pmin_vr_col, nitrogenflux_vars%actual_immob_col, nitrogenflux_vars%supplement_to_sminn_vr_col, nitrogenflux_vars%sminn_to_plant_col, nitrogenflux_vars%sminn_to_denit_excess_vr_col, cnstate_vars%fpi_col, phosphorusflux_vars%potential_immob_p_col, nitrogenflux_vars%actual_immob_vr_col, cnstate_vars%fpg_p_col, phosphorusflux_vars%potential_immob_p_vr_col, nitrogenflux_vars%sminn_to_plant_vr_col, nitrogenflux_vars%net_nmin_vr_col, cnstate_vars%fpi_p_vr_col, nitrogenflux_vars%smin_no3_to_plant_vr_col, nitrogenflux_vars%potential_immob_col, nitrogenflux_vars%potential_immob_vr_col, nitrogenflux_vars%actual_immob_no3_vr_col, phosphorusflux_vars%sminp_to_plant_vr_col, cnstate_vars%fpi_vr_col, phosphorusflux_vars%actual_immob_p_col, phosphorusflux_vars%supplement_to_sminp_vr_col, phosphorusflux_vars%actual_immob_p_vr_col, nitrogenflux_vars%actual_immob_nh4_vr_col, phosphorusflux_vars%net_pmin_vr_col, phosphorusflux_vars%sminp_to_plant_col, nitrogenflux_vars%smin_nh4_to_plant_vr_col, cnstate_vars%fpi_p_col, cnstate_vars%fpg_col, nitrogenflux_vars%gross_nmin_vr_col
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)                   , intent(in)    :: bounds
+integer                             , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                             , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+type(cnstate_type)                  , intent(inout) :: cnstate_vars
+type(nitrogenflux_type)             , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type)           , intent(inout) :: phosphorusflux_vars
+type(clm_bgc_interface_data_type)   , intent(in)    :: clm_bgc_data

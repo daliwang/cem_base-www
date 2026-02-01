@@ -1,0 +1,7 @@
+sub_in, filter_soilp, cnstate_vars, num_soilp
+sub_out
+global_ro
+global_wo, cnstate_vars%rc14_atm_patch
+global_mod
+global_non
+calls, get_curr_date

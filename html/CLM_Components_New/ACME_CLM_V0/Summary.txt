@@ -1,0 +1,7 @@
+sub_in, filter_soilp, num_soilp, num_soilc, bounds, filter_soilc, this
+sub_out
+global_ro, this%sminn_vr_col, this%livecrootn_xfer_patch, this%smin_nh4_vr_col, this%deadstemn_storage_patch, this%leafn_xfer_patch, this%livestemn_storage_patch, this%frootn_xfer_patch, this%seedn_col, this%totpftn_col, this%npool_patch, this%leafn_patch, this%ntrunc_vr_col, this%grainn_xfer_patch, this%prod100n_col, this%livestemn_patch, this%deadcrootn_xfer_patch, this%livecrootn_storage_patch, this%ntrunc_patch, this%deadcrootn_storage_patch, this%frootn_storage_patch, this%smin_no3_vr_col, this%leafn_storage_patch, this%deadstemn_xfer_patch, this%grainn_patch, this%livestemn_xfer_patch, this%retransn_patch, this%deadcrootn_patch, this%decomp_npools_vr_col, this%grainn_storage_patch, this%livecrootn_patch, this%totvegn_col, this%prod10n_col, this%deadstemn_patch, this%frootn_patch
+global_wo, this%totecosysn_col, this%totcoln_col, this%totpftn_patch
+global_mod, this%totlitn_1m_col, this%dispvegn_patch, this%storvegn_patch, this%cwdn_col, this%totsomn_col, this%smin_nh4_col, this%decomp_npools_1m_col, this%ntrunc_col, this%totlitn_col, this%sminn_col, this%smin_no3_col, this%totprodn_col, this%totsomn_1m_col, this%decomp_npools_col, this%totvegn_patch
+global_non
+calls, p2c

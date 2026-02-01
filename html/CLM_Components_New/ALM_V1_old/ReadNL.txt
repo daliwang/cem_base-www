@@ -1,0 +1,9 @@
+sub_param, this:1, NLFilename:2
+sub_out
+global_ro
+global_wo
+global_mod| this%h2osfcflag, h2osfcflag, NONE| this%origflag, origflag, NONE
+global_non
+calls, endrun, relavu, opnfil, find_nlgroup_name, shr_mpi_bcast
+readParams,
+character(len=*), intent(IN) :: NLFilename ! Namelist filename

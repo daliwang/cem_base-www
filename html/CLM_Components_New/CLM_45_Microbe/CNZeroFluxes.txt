@@ -1,0 +1,12 @@
+sub_in, num_filterc, num_filterp, filterc, filterp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNSetCnf, CNSetCcf, CNSetPnf, CNSetPcf
+
+Tree height: 5
+0 , CNSetCcf, 
+2+, CNSetCnf, CNSetPcf, CNSetPnf, CNSetPcf, 
+4+, CNSetPnf, 

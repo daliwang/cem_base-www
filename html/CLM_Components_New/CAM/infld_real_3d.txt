@@ -1,0 +1,7 @@
+sub_in, dim3e, dim2b, dim1e, levnam, varname, array_order_in, readvar, grid_map, lonnam, dim1b, dim3b, ncid, dim2e, latnam, field, timelevel
+sub_out, field, readvar
+global_ro, tmp3d
+global_wo
+global_mod
+global_non
+calls, get_dyn_decomp, infld_real_3dncolphys, shr_scam_getCloseLatLon, pio_setframe, pio_read_darray, endrun, get_horiz_grid_dim_d, get_phys_decomp, check_var

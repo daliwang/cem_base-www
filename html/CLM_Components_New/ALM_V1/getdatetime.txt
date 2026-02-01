@@ -1,0 +1,10 @@
+sub_param, ctime, cdate
+sub_out, cdate, ctime
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_bcast, date_and_time
+readParams,
+character(len=8), intent(out) :: cdate  !current date
+character(len=8), intent(out) :: ctime  !current time

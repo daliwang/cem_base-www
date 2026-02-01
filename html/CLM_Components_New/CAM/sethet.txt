@@ -1,0 +1,7 @@
+sub_in, nrain, het_rates, xhnm, lchnk, qin, ncol, tfld, cmfdqr, delt, phis, zmid, press, nevapr
+sub_out, het_rates
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, get_rlat_all_p

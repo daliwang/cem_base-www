@@ -1,0 +1,7 @@
+sub_in, energyflux_vars, urbanparams_vars, lakestate_vars, waterstate_vars, soilstate_vars, soilhydrology_vars, waterflux_vars, bounds, temperature_vars
+sub_out
+global_ro, waterstate_vars%ice2_grc, waterstate_vars%ice1_grc, temperature_vars%heat1_grc, waterstate_vars%liq2_grc, waterstate_vars%liq1_grc, temperature_vars%heat2_grc
+global_wo, waterflux_vars%qflx_liq_dynbal_grc, energyflux_vars%eflx_dynbal_grc, waterflux_vars%qflx_ice_dynbal_grc
+global_mod
+global_non
+calls, dyn_hwcontent

@@ -1,0 +1,7 @@
+sub_in, mbar, ncol, pbuf, lchnk, im, vmr
+sub_out
+global_ro
+global_wo
+global_mod, fldcw
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, dt, overlapp, pver, is_unact, ekkm, ekkp, overlapm, qactold, surfrate, qold, q, src, flxconv
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls

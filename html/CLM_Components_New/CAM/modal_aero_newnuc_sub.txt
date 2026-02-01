@@ -1,0 +1,7 @@
+sub_in, zm, cld, qv, pdel, del_h2so4_gasprod, pblh, q, t, deltat, nstep, ncol, pmid, loffset, lchnk, del_h2so4_aeruptk
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, mer07_veh02_nuc_mosaic_1box, outfld, qsat

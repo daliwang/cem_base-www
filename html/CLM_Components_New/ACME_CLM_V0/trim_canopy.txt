@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, ecophyscon%slatop, EDecophyscon%root_long, ecophyscon%leaf_long, currentPatch%tallest, currentCohort%shorter, %pft, %treesai, ecophyscon%froot_leaf, currentPatch%older, currentSite%youngest_patch
+global_wo, %year_net_uptake, %nv
+global_mod, %leaf_cost, %treelai, %canopy_trim, %laimemory
+global_non
+calls

@@ -1,0 +1,21 @@
+sub_param, l2g_scale_type, c2l_scale_type, units, type1d_out, avgflag, hpindex, no_snow_behavior, type1d, fname, num2d, long_name, p2c_scale_type, type2d
+sub_out
+global_ro, bounds%begp, bounds%begl, bounds%begg, bounds%endp, bounds%endc, bounds%endg, bounds%begc, bounds%endl
+global_wo
+global_mod
+global_non
+calls, endrun, get_proc_bounds, get_proc_global
+readParams,
+character(len=*), intent(in)  :: fname            ! field name
+character(len=*), intent(in)  :: type1d           ! 1d data type
+character(len=*), intent(in)  :: type1d_out       ! 1d output type
+character(len=*), intent(in)  :: type2d           ! 2d output type
+integer         , intent(in)  :: num2d            ! size of second dimension (e.g. number of vertical levels)
+character(len=*), intent(in)  :: units            ! units of field
+character(len=1), intent(in)  :: avgflag          ! time averaging flag
+character(len=*), intent(in)  :: long_name        ! long name of field
+integer         , intent(in)  :: hpindex          ! data type index for history buffer output
+character(len=*), intent(in)  :: p2c_scale_type   ! scale type for subgrid averaging of pfts to column
+character(len=*), intent(in)  :: c2l_scale_type   ! scale type for subgrid averaging of columns to landunits
+character(len=*), intent(in)  :: l2g_scale_type   ! scale type for subgrid averaging of landunits to gridcells
+integer, intent(in), optional :: no_snow_behavior ! if a multi-layer snow field, behavior to use for absent snow layers

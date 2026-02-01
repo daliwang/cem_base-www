@@ -1,0 +1,7 @@
+sub_in, ncol, pbuf, lchnk
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, iondrift, map_mag2geo, rot_efield, cal_mlt

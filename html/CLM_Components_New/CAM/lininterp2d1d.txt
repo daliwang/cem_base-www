@@ -1,0 +1,7 @@
+sub_in, n2, fldname, arrin, wgt1, m1, n1, wgt2, arrout
+sub_out, arrout
+global_ro, wgtw, wgtn, wgts, iip, wgte, jjp, iim, jjm
+global_wo
+global_mod
+global_non
+calls

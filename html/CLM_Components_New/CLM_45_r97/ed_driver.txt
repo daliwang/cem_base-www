@@ -1,0 +1,7 @@
+sub_in, temperature_inst, bounds, ed_allsites_inst, ed_phenology_inst, waterstate_inst, ed_clm_inst, atm2lnd_inst, soilstate_inst, canopystate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, ed_allsites_inst
+calls, get_ref_date, timemgr_datediff, ed_update_site, ed_ecosystem_dynamics, ed_clm_inst%ed_clm_link, get_curr_date, ed_clm_inst%SetValues

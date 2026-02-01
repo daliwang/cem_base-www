@@ -1,0 +1,7 @@
+sub_in, NLFilename, this
+sub_out
+global_ro
+global_wo
+global_mod, this%h2osfcflag, this%origflag
+global_non
+calls, endrun, find_nlgroup_name, relavu, shr_mpi_bcast, opnfil

@@ -1,0 +1,12 @@
+sub_in, filter_nolakec, num_urbanl, bounds, num_nolakec, filter_urbanl, xmf
+sub_out, c_h2osfc, xmf_h2osfc, fact
+global_ro, pwf%qflx_ev_snow, pps%frac_veg_nosno, cps%frac_h2osfc, lun%wtlunit_roof, pef%eflx_sh_h2osfc, col%npfts, pef%sabg_lyr, lef%eflx_traffic, lef%eflx_wasteheat, cps%snl, pef%eflx_sh_snow, lun%itype, cps%zi, cps%emg, cps%frac_sno_eff, pft%gridcell, cws%h2osfc, pef%eflx_lwrad_net, pwf%qflx_ev_h2osfc, pef%dlrad, cps%htvp, cps%dz, cps%z, lps%t_building_max, pef%cgrnd, pef%sabg_soil, pef%sabg, ces%tssbef, col%landunit, pef%eflx_sh_grnd, pef%sabg_snow, pef%eflx_sh_soil, lef%eflx_heat_from_ac, pft%wtcol, pwf%qflx_ev_soil, pwf%qflx_tran_veg, lps%t_building_min, cef%eflx_bot, a2l_downscaled_col%forc_lwrad, col%pfti, col%itype, pwf%qflx_evap_soi, pft%landunit
+global_wo, pef%sabg_chk, cef%eflx_fgr12, cef%eflx_urban_ac, pef%eflx_anthro, cef%eflx_urban_heat, cef%eflx_fgr
+global_mod, pef%eflx_heat_from_ac_pft, ces%hc_soi, pef%eflx_gnet, ces%hc_soisno, ces%t_h2osfc, lps%t_building, pef%eflx_wasteheat_pft, cef%eflx_building_heat, pef%dgnetdT, ces%t_soisno, pef%eflx_traffic_pft, ces%t_grnd
+global_non, shr_infnan_nan, cps%frac_sno, cws%h2osno, ces%t_h2osfc_bef, bounds%begc, cws%h2osoi_liq, bounds%endc, cps%snow_depth, lun%canyon_hwr, cws%h2osoi_ice
+calls, Phasechange_beta, PhaseChangeH2osfc, BandDiagonal, t_startf, shr_assert, t_stopf, SoilThermProp
+
+Tree height: 20
+0 , shr_assert, shr_assert, shr_assert, shr_assert, SoilThermProp, 
+12-, t_startf, BandDiagonal, t_stopf, 
+16+, PhaseChangeH2osfc, Phasechange_beta, 

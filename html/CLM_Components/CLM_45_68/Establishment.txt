@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, annsum_npp, woody, gddmin, dwood, agdd20, reinickerp, agddtw, tmomin20, tcmin, annsum_litfall, slatop, twmax, deadstemc, crownarea_max, allom1, dsladlai, tcmax, prec365
+global_wo, heatstress, greffic
+global_mod, pftmayexist, nind, fpcgrid, leafcmax, present, crownarea
+global_non
+calls, endrun

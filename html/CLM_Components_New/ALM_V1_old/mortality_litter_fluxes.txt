@@ -1,0 +1,11 @@
+sub_param, cp_target:1, new_patch_target:2, patch_site_areadis:3
+sub_out
+global_ro| %br, br, NONE| %bdead, bdead, NONE| %n, n, NONE| currentPatch%shortest, currentCohort, NONE| currentCohort%taller, currentCohort, NONE| %pft, pft, NONE| %bl, bl, NONE| %bstore, bstore, NONE| udata%deltat, deltat, NONE| %bsw, bsw, NONE| cp_target%area, area, NONE| new_patch_target%area, area, NONE
+global_wo
+global_mod| cp_target%cwd_bg, cwd_bg, NONE| new_patch_target%cwd_bg, cwd_bg, NONE| cp_target%canopy_mortality_leaf_litter, canopy_mortality_leaf_litter, NONE| cp_target%canopy_mortality_woody_litter, canopy_mortality_woody_litter, NONE| new_patch_target%leaf_litter, leaf_litter, NONE| cp_target%leaf_litter, leaf_litter, NONE| !currentCohort%dmort, dmort, NONE| %dmort, dmort, NONE| new_patch_target%cwd_ag, cwd_ag, NONE| cp_target%cwd_ag, cwd_ag, NONE| cp_target%canopy_mortality_root_litter, canopy_mortality_root_litter, NONE| new_patch_target%root_litter, root_litter, NONE| cp_target%root_litter, root_litter, NONE
+global_non| new_patch_target, new_patch, NONE| cp_target, currentPatch, NONE
+calls
+readParams,
+type(patch), intent(inout), target :: cp_target
+type(patch), intent(inout), target :: new_patch_target
+real(r8),    intent(in)            :: patch_site_areadis

@@ -1,0 +1,7 @@
+sub_in, state, rliq, landm, ts, cmfmc, cmfmc2, zdu, dlf, snowh, dlf2, dtime, sst, ocnfrac, landfrac, pbuf, icefrac, ptend_all
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cldfrc, pcond, cld_sediment_vel, physics_state_copy, physics_ptend_sum, outfld, cldefr, t_startf, physics_update, t_stopf, cldfrc_fice, physics_ptend_init, pbuf_get_field, cld_sediment_tend, physics_state_dealloc

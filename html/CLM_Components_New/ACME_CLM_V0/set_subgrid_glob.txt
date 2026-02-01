@@ -1,0 +1,7 @@
+sub_in, beg, ncid, end, dimname, subgrid, active
+sub_out, active
+global_ro
+global_wo, subgrid%coslat, subgrid%name
+global_mod, subgrid%lon, subgrid%lat
+global_non
+calls, ncd_io

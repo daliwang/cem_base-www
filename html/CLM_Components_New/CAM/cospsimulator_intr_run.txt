@@ -1,0 +1,7 @@
+sub_in, emis, cld_swtau_in, cicewp_in, cam_in, pbuf, snow_tau_in, cliqwp_in, snow_emis_in, coszrs, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, pbuf, pbuf, pbuf, pbuf, pbuf, pbuf
+calls, construct_cosp_misr, lininterp_finish, construct_cosp_isccp, construct_cosp_sgradar, pbuf_get_field, outfld, free_cosp_sglidar, construct_cosp_sglidar, free_cosp_subgrid, cosp, free_cosp_modis, free_cosp_vgrid, free_cosp_gridbox, free_cosp_lidarstats, lininterp, rad_cnst_get_gas, qsat_water, CmpDayNite, lininterp_init, free_cosp_misr, cnst_get_ind, construct_cosp_lidarstats, construct_cosp_gridbox, construct_cosp_modis, free_cosp_radarstats, construct_cosp_subgrid, construct_cosp_radarstats, construct_cosp_vgrid, ExpDayNite, free_cosp_isccp, free_cosp_sgradar

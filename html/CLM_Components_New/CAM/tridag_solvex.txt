@@ -1,0 +1,7 @@
+sub_in, solve_type, solution, ndim, supd, diag, nrhs, err_code, subd, rcond, rhs
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, sgtsvx, dgtsvx

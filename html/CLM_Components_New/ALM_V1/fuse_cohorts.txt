@@ -1,0 +1,9 @@
+sub_param, patchptr
+sub_out
+global_ro, nextnextc, nextc%shorter, currentPatch%tallest, currentPatch%tallest, currentCohort%shorter, patchptr%NCL_p
+global_wo
+global_mod, %bdead, %balive, %md, %bstore, %br, %resp, %year_net_uptake, %b, %fire_mort, %dbh, %gpp_acc, %resp_acc, %carbon_balance, %storage_flux, %npp_acc, %root_md, %hite, %bsw, %n, %seed_prod, %leaf_md, %dmort, %laimemory, %npp, %gpp, %canopy_trim, %leaf_litter, %bl
+global_non, nextc%taller, nextc%taller, nextc%shorter, nextnextc, patchptr
+calls, sort_cohorts
+readParams,
+type (patch)  , pointer, intent(inout) :: patchptr

@@ -1,0 +1,7 @@
+sub_in, NLFileName, dyn_in, dyn_out, fh
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, fvm, fvm, elem, elem
+calls, mpibcast, prim_init1, native_mapping_readnl, ref_pres_init, dyn_grid_init, spmd_readnl, set_horiz_grid_cnt_d, readnl, create_native_mapping_files, hycoef_init, pbuf_add_field

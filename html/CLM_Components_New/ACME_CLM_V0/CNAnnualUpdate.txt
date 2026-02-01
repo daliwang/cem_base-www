@@ -1,0 +1,7 @@
+sub_in, bounds, carbonflux_vars, filter_soilc, num_soilp, num_soilc, filter_soilp, cnstate_vars
+sub_out
+global_ro
+global_wo, cnstate_vars%annsum_grainc_patch, cnstate_vars%annavg_t2m_patch, cnstate_vars%annsum_potential_gpp_patch, cnstate_vars%annmax_retransn_patch, carbonflux_vars%annsum_litfall_patch, carbonflux_vars%annsum_npp_patch
+global_mod, cnstate_vars%tempmax_retransn_patch, cnstate_vars%tempavg_t2m_patch, carbonflux_vars%tempsum_litfall_patch, cnstate_vars%annsum_counter_col, cnstate_vars%tempsum_grainc_patch, carbonflux_vars%tempsum_npp_patch, cnstate_vars%tempsum_potential_gpp_patch
+global_non
+calls, p2c

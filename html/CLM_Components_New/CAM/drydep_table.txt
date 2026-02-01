@@ -1,0 +1,7 @@
+sub_in, q, icefrac, calday, tv, depvel, ncol, dflx, tsurf, zen_angle, p, lchnk, ocnfrac
+sub_out, depvel, dflx
+global_ro
+global_wo
+global_mod
+global_non
+calls, interpdvel, endrun

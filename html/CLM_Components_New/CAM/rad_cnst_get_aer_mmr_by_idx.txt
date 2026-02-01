@@ -1,0 +1,7 @@
+sub_in, mmr, aer_idx, list_idx, state, pbuf
+sub_out
+global_ro, aer
+global_wo
+global_mod
+global_non, state%q, zero_cols, aerosollist
+calls, pbuf_get_field, endrun

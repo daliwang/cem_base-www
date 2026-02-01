@@ -1,0 +1,8 @@
+sub_in, fractions_wx, fractions_gx, ocn, fractions_ox, fractions_ix, EClock_d, fractions_ax, glc, fractions_lx, rof, wav, ice, fractions_rx, lnd, atm, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, prep_ocn_get_x2oacc_ox_cnt, prep_aoflux_get_xao_ox, component_get_dom_cx, prep_ocn_get_r2x_ox, prep_aoflux_get_xao_ax, component_get_gsmap_cx, prep_atm_get_o2x_ax, prep_ocn_get_x2oacc_ox
+calls, seq_comm_getdata, shr_cal_date2ymd, seq_io_close, seq_infodata_getData, shr_sys_abort, seq_io_wopen, seq_io_enddef, seq_io_write, seq_timemgr_EClockGetData
+calls_ln, seq_io_write@288, seq_io_write@313, seq_io_write@302, seq_io_write@358, seq_io_write@367, seq_io_write@369, seq_io_write@271, seq_io_write@332, seq_io_write@304, seq_io_write@256, seq_io_write@318, seq_io_write@354, seq_io_write@254, seq_io_write@273, seq_io_write@250, seq_io_write@286, shr_cal_date2ymd@209, seq_io_write@252, shr_sys_abort@232, seq_io_write@238, seq_comm_getdata@174, seq_io_write@269, seq_infodata_getData@177, seq_io_write@341, seq_io_write@352, seq_io_write@345, seq_io_enddef@230, seq_io_write@282, seq_io_wopen@219, seq_comm_getdata@175, seq_io_write@306, seq_io_write@365, seq_io_write@242, seq_io_write@371, seq_io_write@284, seq_io_write@356, seq_io_close@376, seq_io_write@343, seq_io_write@295, seq_timemgr_EClockGetData@206, seq_io_write@327, seq_io_write@322, seq_io_write@275, seq_io_write@339

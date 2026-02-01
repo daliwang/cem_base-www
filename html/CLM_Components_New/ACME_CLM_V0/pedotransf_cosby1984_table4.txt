@@ -1,0 +1,7 @@
+sub_in, xksat, clay, watsat, bsw, sand, sucsat
+sub_out, sucsat, bsw, watsat, xksat
+global_ro
+global_wo
+global_mod
+global_non
+calls

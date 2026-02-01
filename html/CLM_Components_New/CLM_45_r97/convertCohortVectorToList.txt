@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, bounds, this
+sub_out, ed_allsites_inst
+global_ro, currentPatch, currentCohort
+global_wo, leaf_md, n, livegrass, spread, age, br, root_litter_in, resp_clm, pft, canopy_trim, leaf_litter_in, root_litter, hite, canopy_layer, leaf_litter, status_coh, root_md, bl, gpp_acc, bdead, balive, npp_acc, cwd_bg, dbh, area, bstore, cwd_ag, seed_bank, laimemory
+global_mod
+global_non
+calls, shr_sys_abort

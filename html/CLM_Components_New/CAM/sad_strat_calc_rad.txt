@@ -1,0 +1,7 @@
+sub_in, temper, pbuf, hno3_cond_in, hno3_gas_in, h2o_gas_in, ncol, m, lchnk, sad_sage, press, h2o_cond_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, sulfate_sad_calc, outfld, pbuf_get_field

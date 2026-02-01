@@ -1,0 +1,10 @@
+sub_in, par_z, je, cair, gb_mol, iv, p, ci, g, rh_can, lmr_z, oair
+sub_out, fval, gs_mol
+global_ro, clm3%g%l%c%p%ppsyns%kp_z, clm3%g%l%c%p%ppsyns%vcmax_z, clm3%g%l%c%p%ppsyns%tpu_z, clm_a2l%forc_pbot, clm3%g%l%c%p%ppsyns%c3flag, clm3%g%l%c%p%ppsyns%mbb, clm3%g%l%c%p%ppsyns%qe, clm3%g%l%c%p%ppsyns%theta_cj, clm3%g%l%c%p%ppsyns%ko, clm3%g%l%c%p%ppsyns%cp, clm3%g%l%c%p%ppsyns%bbb, clm3%g%l%c%p%ppsyns%kc
+global_wo
+global_mod, clm3%g%l%c%p%ppsyns%ac, clm3%g%l%c%p%ppsyns%aj, clm3%g%l%c%p%ppsyns%ag, clm3%g%l%c%p%ppsyns%an, clm3%g%l%c%p%ppsyns%ap
+global_non
+calls, quadratic
+
+Tree height: 2
+0 , quadratic, quadratic, quadratic, 

@@ -1,0 +1,11 @@
+sub_in, filter_nolakec, ubc, num_nolakec, lbp, num_nolakep, filter_nolakep, lbc, ubp
+sub_out
+global_ro, clm3%g%l%c%p%pps%elai, clm3%g%l%c%p%pps%dewmx, clm3%g%l%c%p%column, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%gridcell, clm3%g%l%c%cwf%qflx_snow_melt, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%pps%esai, clm_a2l%forc_flood, clm3%g%l%c%cps%n_melt, clm_a2l%forc_snow, clm3%g%l%c%cwf%h2ocan_loss, clm3%g%l%c%p%pps%frac_veg_nosno, clm3%g%l%c%cps%irrig_rate, clm3%g%l%c%cps%do_capsnow, clm3%g%l%c%ces%forc_t, clm3%g%l%itype, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cwf%pwf_a%qflx_snow_grnd, clm3%g%l%c%p%landunit, clm_a2l%forc_rain
+global_wo, clm3%g%l%c%cps%mss_dst4, clm3%g%l%c%cps%snw_rds, clm3%g%l%c%cps%mss_dst_top, clm3%g%l%c%p%pwf%qflx_snwcp_liq, clm3%g%l%c%cps%mss_oc_top, clm3%g%l%c%cps%mss_dst2, clm3%g%l%c%cps%frac_iceold, clm3%g%l%c%cps%mss_dst_col, clm3%g%l%c%cps%mss_dst3, clm3%g%l%c%cwf%qflx_floodc, clm3%g%l%c%cps%z, clm3%g%l%c%p%pwf%qflx_snwcp_ice, clm3%g%l%c%cps%mss_bcpho, clm3%g%l%c%cps%mss_oc_col, clm3%g%l%c%cwf%qflx_snow_h2osfc, clm3%g%l%c%cps%mss_bc_col, clm3%g%l%c%cws%swe_old, clm3%g%l%c%cps%mss_dsttot, clm3%g%l%c%p%pwf%qflx_rain_grnd, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%mss_dst1, clm3%g%l%c%cps%mss_bcphi, clm3%g%l%c%cps%mss_ocphi, clm3%g%l%c%cps%mss_bc_top, clm3%g%l%c%p%pwf%qflx_prec_grnd, clm3%g%l%c%cps%mss_bctot, clm3%g%l%c%cps%mss_octot, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%mss_ocpho, clm3%g%l%c%cps%frac_sno_eff
+global_mod, clm3%g%l%c%cps%n_irrig_steps_left, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%cwf%qflx_irrig, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%p%pwf%qflx_snow_grnd, clm3%g%l%c%cps%dz, clm3%g%l%c%cws%int_snow, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%p%pws%h2ocan, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%snl, clm3%g%l%c%p%pwf%qflx_prec_intr
+global_non, clm3%g%l%c%npfts, clm3%g%l%c%p%pps%fwet, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%pfti, clm3%g%l%c%p%pps%fdry
+calls, FracH2oSfc, FracWet, p2c
+
+Tree height: 8
+1-, FracWet, p2c, 
+2-, FracH2oSfc, 

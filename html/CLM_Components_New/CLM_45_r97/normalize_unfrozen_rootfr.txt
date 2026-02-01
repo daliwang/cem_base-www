@@ -1,0 +1,7 @@
+sub_in, canopystate_inst, filterp, ubj, rootfr_unf, soilstate_inst, bounds, fn, temperature_inst
+sub_out, rootfr_unf
+global_ro, altmax_indx, rootfr, t_soisno, altmax_lastyear_indx
+global_wo
+global_mod
+global_non
+calls, array_normalization

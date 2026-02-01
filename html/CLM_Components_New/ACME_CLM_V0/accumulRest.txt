@@ -1,0 +1,7 @@
+sub_in, flag, ncid
+sub_out
+global_ro, %units, %type1d, %val, %name, %end1d, vardesc%varid, %beg1d, %desc
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, ncd_io, ncd_defvar

@@ -1,0 +1,12 @@
+sub_param, bounds:2, num_soilc:3, filter_soilc:4, clm_bgc_data:1
+sub_out
+global_ro| clm_bgc_data%smin_nh4_vr_col, smin_nh4_vr, NONE| clm_bgc_data%decomp_cpools_vr_col, decomp_cpools_vr_col, NONE| clm_pf_idata%ngclm_sub, ngclm_sub, FLEXIBLE_POOLS| bounds%begg, begg, NONE| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| clm_bgc_data%decomp_npools_vr_col, decomp_npools_vr_col, NONE| clm_bgc_data%decomp_ppools_vr_col, decomp_ppools_vr_col, NONE| clm_pf_idata%C_molecular_weight, C_molecular_weight, NONE| col%gridcell, gridcell, NONE| col%wtgcell, wtgcell, NONE| clm_bgc_data%smin_no3_vr_col, smin_no3_vr, NONE| clm_pf_idata%N_molecular_weight, N_molecular_weight, NONE| clm_bgc_data%smin_nh4sorb_vr_col, smin_nh4sorb_vr, NONE
+global_wo
+global_mod
+global_non| clm_bgc_data%solutionp_vr_col, solutionp_vr, NONE| clm_bgc_data%sminp_vr_col, sminp_vr, NONE| clm_bgc_data%secondp_vr_col, secondp_vr, NONE| clm_bgc_data%occlp_vr_col, occlp_vr, NONE| clm_bgc_data%primp_vr_col, primp_vr, NONE| clm_bgc_data%labilep_vr_col, labilep_vr, NONE
+calls, VecRestoreArrayF90, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type)        , intent(in) :: bounds
+integer                  , intent(in) :: num_soilc         ! number of soil columns in filter
+integer                  , intent(in) :: filter_soilc(:)   ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

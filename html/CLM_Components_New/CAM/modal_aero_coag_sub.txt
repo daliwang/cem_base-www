@@ -1,0 +1,7 @@
+sub_in, lchnk, ncol, pmid, nstep, dgncur_awet, q, deltat_main, loffset, t, wetdens_a, dgncur_a, pdel
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, getcoags_wrapper_f, outfld, endrun

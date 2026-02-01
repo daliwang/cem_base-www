@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro
+global_wo, clm3%g%l%c%p%pepv%rc14_atm
+global_mod
+global_non
+calls, get_curr_date
+
+Tree height: 3
+1+, get_curr_date, 

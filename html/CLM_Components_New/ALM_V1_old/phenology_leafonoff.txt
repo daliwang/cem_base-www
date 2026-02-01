@@ -1,0 +1,9 @@
+sub_param, g:1
+sub_out
+global_ro| currentPatch%tallest, currentCohort, NONE| currentCohort%shorter, currentCohort, NONE| currentSite%oldest_patch, currentPatch, NONE| currentPatch%younger, currentPatch, NONE
+global_wo| %leaf_litter, leaf_litter, NONE| %status_coh, status_coh, NONE
+global_mod| %bstore, bstore, NONE| %laimemory, laimemory, NONE| %bl, bl, NONE| %balive, balive, NONE
+global_non| gridCellEdState, currentSite, NONE
+calls
+readParams,
+integer,intent(in) :: g

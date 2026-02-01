@@ -1,0 +1,11 @@
+sub_in, dhsdT, filter_nolakec, fact, ubc, num_nolakec, lbc
+sub_out, xmf
+global_ro, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%dz, clm3%g%l%itype, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%frac_sno_eff
+global_wo, clm3%g%l%c%cef%eflx_snomelt_r, clm3%g%l%c%cwf%qflx_snow_melt, clm3%g%l%c%cef%eflx_snomelt_u
+global_mod, clm3%g%l%c%cwf%qflx_glcice_melt, clm3%g%l%c%cwf%qflx_snofrz_lyr, clm3%g%l%c%cps%imelt, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%cwf%qflx_snomelt, clm3%g%l%c%cef%eflx_snomelt, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cwf%qflx_glcice, clm3%g%l%c%cwf%qflx_snofrz_col
+global_non, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%ces%tssbef
+calls, t_startf, t_stopf
+
+Tree height: 10
+0 , t_startf, 
+5-, t_stopf, 

@@ -1,0 +1,7 @@
+sub_in, engy2blat, nlon, ztodt, u3, hw3bl, div, dpsl, ps, nlon_fft, etamid, hw2al, hw3al, v3, tm, qm, dpsm, engy2alat, ql, t3m1, hwxal, lat, cwava, hwxbl, hw2bl, fftbuf, dps, phis, q3, difftblat, qfcst, tl, t3, difftalat
+sub_out, hw2al, hw3al, difftblat, qm, tm, v3, engy2alat, dpsm, ql, tl, difftalat, t3, dpsl, ps, hw2bl, u3, div, dps, hw3bl, hwxal, engy2blat, hwxbl
+global_ro
+global_wo
+global_mod
+global_non
+calls, plevs0, difcor, outfld, xqmass, engy_tdif, qmassd, engy_te, pdelb0

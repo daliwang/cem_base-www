@@ -1,0 +1,7 @@
+sub_in, maxd_asize, pblh_in, qh2so4_cur, zm_in, rh_in, nsize, isize_nuc, mw_so4a_host, qnh3_del, qnuma_del, qnh4a_del, qh2so4_avg, temp_in, dplom_sect, qnh3_cur, press_in, newnuc_method_flagaa, h2so4_uptkrate, dtnuc, qh2so4_del, dphim_sect, dens_nh4so4a, qso4a_del, ldiagaa
+sub_out, qnh3_del, qnuma_del, qnh4a_del, dens_nh4so4a, qso4a_del, isize_nuc, qh2so4_del, newnuc_method_flagaa
+global_ro, mw_nh4a, avogad
+global_wo
+global_mod
+global_non
+calls, ternary_nuc_merik2007, pbl_nuc_wang2008, binary_nuc_vehk2002

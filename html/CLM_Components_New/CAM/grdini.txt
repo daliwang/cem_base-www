@@ -1,0 +1,7 @@
+sub_in, etaint, etamid, gw, lbasiy, dphi, gravit, detai, coslam, phigs, cwava, sinlam, lbasdz, lbasiz, pmap, phi, lbassd, detam, lam, kdpmpf, lbassi, dlam, kdpmph, lbasdy
+sub_out, phigs, cwava, detai, detam, dphi
+global_ro
+global_wo
+global_mod
+global_non
+calls, basiz, basdz, basiy, vrtmap, basdy, grdxy

@@ -1,0 +1,8 @@
+sub_param, vsfm_mpp:1
+sub_out
+global_ro| cur_goveq%ncells, ncells, NONE| cur_goveq%next, cur_goveq, NONE| vsfm_soe%goveqns, cur_goveq, NONE
+global_wo
+global_mod
+global_non| vsfm_mpp%sysofeqns, vsfm_mpp%sysofeqns_ptr%ptr, NONE| vsfm_mpp%sysofeqns, vsfm_soe, NONE| cur_goveq, goveq_richards_pres, NONE
+calls, endrun, DMDACreate1d, DMSetUp, VecZeroEntries, SNESSetFromOptions, DMDestroy, SNESSetTolerances, DMCreateMatrix, SNESSetJacobian, DMDASetFieldName, SNESCreate, SNESSetFunction, DMCompositeAddDM, DMCompositeCreate, DMSetOptionsPrefix, DMCreateGlobalVector, DMSetFromOptions
+readParams,

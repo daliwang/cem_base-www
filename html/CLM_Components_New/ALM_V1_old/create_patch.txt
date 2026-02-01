@@ -1,0 +1,18 @@
+sub_param, leaf_litter_local:8, age:3, currentSite:1, areap:4, new_patch:2, seed_bank_local:10, cwd_bg_local:7, spread_local:5, root_litter_local:9, cwd_ag_local:6
+sub_out
+global_ro
+global_wo| new_patch%fabi, fabi, NONE| new_patch%frac_burnt, frac_burnt, NONE| new_patch%fabi_sha_z, fabi_sha_z, NONE| new_patch%cwd_bg, cwd_bg, NONE| new_patch%root_litter, root_litter, NONE| new_patch%fabd_sun_z, fabd_sun_z, NONE| new_patch%f_sun, f_sun, NONE| new_patch%ed_laisun_z, ed_laisun_z, NONE| new_patch%tr_soil_dir_dif, tr_soil_dir_dif, NONE| new_patch%fabd, fabd, NONE| new_patch%ed_parsun_z, ed_parsun_z, NONE| new_patch%ed_laisha_z, ed_laisha_z, NONE| new_patch%cwd_ag, cwd_ag, NONE| new_patch%cwd_ag_in, cwd_ag_in, NONE| new_patch%fabi_sun_z, fabi_sun_z, NONE| new_patch%ed_parsha_z, ed_parsha_z, NONE| new_patch%tr_soil_dif, tr_soil_dif, NONE| new_patch%leaf_litter, leaf_litter, NONE| new_patch%area, area, NONE| new_patch%NCL_p, NCL_p, NONE| new_patch%tr_soil_dir, tr_soil_dir, NONE| new_patch%spread, spread, NONE| new_patch%fabd_sha_z, fabd_sha_z, NONE| new_patch%total_tree_area, total_tree_area, NONE| new_patch%seed_bank, seed_bank, NONE| new_patch%cwd_bg_in, cwd_bg_in, NONE
+global_mod| new_patch%age, age, NONE
+global_non| null, new_patch%shortest, NONE| null, new_patch%younger, NONE| null, new_patch%older, NONE| null, new_patch%tallest, NONE| currentSite, new_patch%siteptr, NONE| null, new_patch%siteptr, NONE
+calls, zero_patch
+readParams,
+type(site),  target, intent(inout) :: currentSite
+type(patch), target, intent(inout) :: new_patch
+real(r8), intent(in) :: age                 ! notional age of this patch in years
+real(r8), intent(in) :: areap               ! initial area of this patch in m2.
+real(r8), intent(in) :: cwd_ag_local(:)     ! initial value of above ground coarse woody debris. KgC/m2
+real(r8), intent(in) :: cwd_bg_local(:)     ! initial value of below ground coarse woody debris. KgC/m2
+real(r8), intent(in) :: root_litter_local(:)! initial value of root litter. KgC/m2
+real(r8), intent(in) :: leaf_litter_local(:)! initial value of leaf litter. KgC/m2
+real(r8), intent(in) :: spread_local(:)     ! initial value of canopy spread parameter.no units
+real(r8), intent(in) :: seed_bank_local(:)  ! initial value of seed bank. KgC/m2

@@ -1,0 +1,7 @@
+sub_in, nete, hybrid, compute_diagnostics, dt, tl, elem, nets, deriv, hvcoord
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

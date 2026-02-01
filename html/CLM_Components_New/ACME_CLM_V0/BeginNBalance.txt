@@ -1,0 +1,7 @@
+sub_in, nitrogenstate_vars, bounds, num_soilc, filter_soilc
+sub_out
+global_ro, nitrogenstate_vars%totcoln_col
+global_wo, nitrogenstate_vars%begnb_col
+global_mod
+global_non
+calls

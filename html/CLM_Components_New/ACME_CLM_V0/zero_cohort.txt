@@ -1,0 +1,7 @@
+sub_in, cc_p
+sub_out
+global_ro
+global_wo, currentcohort%cfa, currentcohort%npp_clm, currentcohort%carbon_balance, cc_p%livecroot_mr, currentcohort%resp, currentcohort%md, currentcohort%leaf_md, currentcohort%ts_net_uptake, cc_p%resp_m, currentcohort%storage_flux, cc_p%livestem_mr, currentcohort%seed_prod, currentcohort%gpp, currentcohort%npp, cc_p%froot_mr, currentcohort%treesai, currentcohort%root_md, currentcohort%resp_acc, currentcohort%gpp_acc, currentcohort%gscan, currentcohort%npp_acc, currentcohort%year_net_uptake, cc_p%rd, currentcohort%dmort, cc_p%resp_g, currentcohort%leaf_litter, cc_p%fire_mort, currentcohort%resp_clm, currentcohort%gpp_clm, cc_p%status_coh, cc_p%NV
+global_mod
+global_non, cc_p
+calls

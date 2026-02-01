@@ -1,0 +1,7 @@
+sub_in, lats, mlons, lons, ldyn_ndxs, ncols, chk_ndxs, nocols, has_dyn_flds, dyn_owners, phs_dists, col_ndxs, mlats, fdyn_ndxs, phs_owners
+sub_out, dyn_owners, mlons, ldyn_ndxs, chk_ndxs, col_ndxs, mlats, phs_owners, fdyn_ndxs, phs_dists
+global_ro
+global_wo
+global_mod
+global_non
+calls, dyn_grid_get_colndx, t_stopf, find_cols, t_startf, endrun

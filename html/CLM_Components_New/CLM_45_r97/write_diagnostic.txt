@@ -1,0 +1,7 @@
+sub_in, wrtdia, nstep, bounds, lnd2atm_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_global, shr_sys_flush, t_barrierf, endrun, mpi_reduce

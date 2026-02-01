@@ -1,0 +1,7 @@
+sub_in, lq_carma, carma, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, wrap_inq_dimlen, wrap_close, CARMA_Get, wrap_open, getfil, wrap_inq_dimid, wrap_get_var_realx, mpibcast, wrap_inq_varid

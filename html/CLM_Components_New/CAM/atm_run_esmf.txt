@@ -1,0 +1,7 @@
+sub_in, rc, comp, import_state, EClock, export_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, atm_export, shr_file_setLogUnit, scam_use_iop_srf, get_curr_date, shr_file_setLogLevel, atm_import, memmon_dump_fort, ESMF_StateGet, t_startf, shr_sys_abort, shr_file_getLogUnit, cam_run4, ESMF_AttributeGet, ESMF_AttributeSet, seq_timemgr_EClockGetData, memmon_reset_addr, cam_run3, cam_run2, cam_run1, shr_file_getLogLevel, t_stopf, ESMF_ArrayGet, advance_timestep, atm_write_srfrest_esmf

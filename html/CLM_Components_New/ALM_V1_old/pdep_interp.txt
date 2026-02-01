@@ -1,0 +1,10 @@
+sub_param, atm2lnd_vars:2, bounds:1
+sub_out
+global_ro| sdat%avs, avs, NONE| %rAttr, rAttr, NONE
+global_wo| atm2lnd_vars%forc_pdep_grc, forc_pdep_grc, NONE
+global_mod
+global_non
+calls, shr_strdata_advance, get_curr_date
+readParams,
+type(bounds_type) , intent(in)    :: bounds
+type(atm2lnd_type), intent(inout) :: atm2lnd_vars

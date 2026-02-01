@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%l%c%p%pps%laisun, clm3%g%l%c%p%pcf%lmrsha, clm3%g%l%c%p%pps%laisha, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%p%column, clm3%g%l%c%p%pps%frac_veg_nosno, clm3%g%l%c%p%pns%livecrootn, clm3%g%l%c%p%pcf%lmrsun, clm3%g%l%c%p%pns%frootn, clm3%g%l%c%p%pns%livestemn, pftcon%woody, clm3%g%l%c%p%pes%t_ref2m, clm3%g%l%c%p%itype, clm3%g%l%c%p%pns%grainn, clm3%g%l%c%p%pps%rootfr
+global_wo, clm3%g%l%c%p%pcf%livecroot_mr, clm3%g%l%c%p%pcf%grain_mr, clm3%g%l%c%p%pcf%livestem_mr, clm3%g%l%c%p%pcf%leaf_mr
+global_mod, clm3%g%l%c%p%pcf%froot_mr
+global_non, clm3%g%l%c%p%landunit, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%p%pps%croplive, clm3%g%l%c%p%pns%leafn
+calls
+
+Tree height: 3

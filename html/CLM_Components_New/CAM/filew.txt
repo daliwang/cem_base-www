@@ -1,0 +1,7 @@
+sub_in, acap, cosp2, jm, q, im, tiny, jlast, ipx, jfirst
+sub_out, ipx, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, pfix

@@ -1,0 +1,7 @@
+sub_in, ztodt, tend, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init, check_energy_chng, outfld, physics_update, endrun, get_rlat_all_p

@@ -1,0 +1,11 @@
+sub_param, filter_soilc, bounds, num_soilc, this
+sub_out
+global_ro, this%phenology_c_to_litr_lig_c_col, this%dwt_deadcrootc_to_cwdc_col, this%harvest_c_to_litr_met_c_col, this%gap_mortality_c_to_litr_lig_c_col, decomp_cascade_con%is_litter, this%f_co2_soil_vr_col, this%phenology_c_to_litr_cel_c_col, this%gap_mortality_c_to_litr_cel_c_col, this%gap_mortality_c_to_cwdc_col, this%harvest_c_to_litr_cel_c_col, this%dwt_frootc_to_litr_cel_c_col, this%dwt_livecrootc_to_cwdc_col, this%dwt_frootc_to_litr_met_c_col, this%decomp_cpools_sourcesink_col, this%gap_mortality_c_to_litr_met_c_col, this%harvest_c_to_litr_lig_c_col, this%phenology_c_to_litr_met_c_col, this%harvest_c_to_cwdc_col, this%hr_vr_col, this%dwt_frootc_to_litr_lig_c_col, decomp_cascade_con%is_cwd
+global_wo, this%cwdc_hr_col
+global_mod, this%litterc_loss_col, this%cwdc_loss_col, this%externalc_to_decomp_delta_col, this%hr_col, this%externalc_to_decomp_cpools_col, this%f_co2_soil_col
+global_non, decomp_cascade_con%is_soil
+calls
+readParams,
+type(bounds_type) ,  intent(in) :: bounds
+integer,             intent(in) :: num_soilc       ! number of soil columns in filter
+integer,             intent(in) :: filter_soilc(:) ! filter for soil columns

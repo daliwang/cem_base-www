@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, woody, livecrootc, itype, livewdcn, deadwdcn, livestemc
+global_wo, livestemc_to_deadstemc, livecrootc_to_deadcrootc, livecrootn_to_retransn, livestemn_to_retransn
+global_mod, livecrootn_to_deadcrootn, livestemn_to_deadstemn
+global_non, livecrootn, livestemn
+calls

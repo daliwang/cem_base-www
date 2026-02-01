@@ -1,0 +1,7 @@
+sub_in, fcube, min_val, b, cubeboundary, max_val, a
+sub_out, min_val, max_val
+global_ro
+global_wo
+global_mod
+global_non
+calls

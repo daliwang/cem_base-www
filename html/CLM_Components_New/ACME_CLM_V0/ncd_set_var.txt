@@ -1,0 +1,7 @@
+sub_in, data, varname, data_shape, ncid
+sub_out
+global_ro, ncid%vars
+global_wo
+global_mod
+global_non
+calls, move_alloc

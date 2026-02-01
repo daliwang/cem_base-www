@@ -1,0 +1,7 @@
+sub_in, bounds, atm2lnd_vars, waterstate_vars, temperature_vars, soilstate_vars
+sub_out
+global_ro, %spnt
+global_wo, udata%time_period, udata%deltat
+global_mod
+global_non
+calls, get_curr_date, ecosystem_dynamics, get_ref_date, timemgr_datediff, ed_update_sites

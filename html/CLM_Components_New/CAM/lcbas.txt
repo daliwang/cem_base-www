@@ -1,0 +1,7 @@
+sub_in, grd, bas2, bas1
+sub_out, bas1, bas2
+global_ro
+global_wo
+global_mod
+global_non
+calls

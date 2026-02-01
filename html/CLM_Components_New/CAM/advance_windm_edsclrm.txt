@@ -1,0 +1,7 @@
+sub_in, invrs_rho_ds_zt, um, upwp, Kh_zm, wpedsclrp, fcor, vm, err_code, vg, edsclrm, wp2, edsclrm_forcing, wm_zt, um_ref, ug, rho_ds_zm, vpwp, vm_ref, um_forcing, up2, vm_forcing, l_implemented, vp2, dt
+sub_out, edsclrm, wpedsclrp, vpwp, err_code, upwp, um, vm
+global_ro
+global_wo
+global_mod
+global_non
+calls, clip_covar, windm_edsclrm_implicit_stats, windm_edsclrm_lhs, stat_end_update, compute_uv_tndcy, windm_edsclrm_solve, stat_update_var, stat_begin_update

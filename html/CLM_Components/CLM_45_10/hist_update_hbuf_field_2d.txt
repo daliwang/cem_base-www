@@ -1,0 +1,7 @@
+sub_in, num2d, endp, begc, endg, begg, begl, endl, f, endc, begp, t
+sub_out
+global_ro, active, clmptr_ra
+global_wo
+global_mod, tape, tape
+global_non
+calls, c2g, l2g, p2g, endrun

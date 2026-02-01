@@ -1,0 +1,7 @@
+sub_in, num_nolakec, bounds, filter_nolakec, filter_urbanl, num_urbanl
+sub_out
+global_ro, bounds%begg, col%gridcell
+global_wo
+global_mod, ces%t_soisno
+global_non
+calls, VecRestoreArrayF90, VecGetArrayF90

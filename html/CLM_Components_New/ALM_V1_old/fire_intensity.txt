@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| %TFC_ROS, TFC_ROS, NONE| %ROS_front, ROS_front, NONE| currentSite%acc_NI, acc_NI, NONE| currentSite%oldest_patch;, currentPatch, NONE| currentPatch%younger;, currentPatch, NONE
+global_wo| %FD, FD, NONE| !currentPatch%FD, FD, NONE| %FI, FI, NONE
+global_mod| %fire, fire, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer :: currentSite

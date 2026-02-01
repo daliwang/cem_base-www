@@ -1,0 +1,7 @@
+sub_in, nlev_out, ff_out, fname, enddim2_out, enddim3_out, begdim1_out, enddim1_out, begdim3_out, begdim2_out, fillvalue_out, tape_out, flag_xyfill_out, mdims_out, found
+sub_out, begdim1_out, enddim3_out, enddim1_out, ff_out, nlev_out, enddim2_out, found, fillvalue_out, begdim2_out, begdim3_out, flag_xyfill_out
+global_ro, tape
+global_wo
+global_mod
+global_non, tape, tape
+calls

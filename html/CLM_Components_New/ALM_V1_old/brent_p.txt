@@ -1,0 +1,16 @@
+sub_param, x2:3, f1:4, x1:2, macheps:6, x:1, pp:8, func:9, tol:7, f2:5
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: x1, x2, f1, f2    !minimum and maximum of the variable domain to search for the solution ci_func(x1) = f1, ci_func(x2)=f2
+real(r8), intent(in) :: macheps           !machine precision
+integer,  intent(in) :: pp                !index argument used by subroutine func
+real(r8), intent(in) :: tol               !the error tolerance
+real(r8), intent(out):: x                !indepedent variable of the single value function func(x)
+real(r8), intent(in)  :: x
+real(r8), intent(out) :: f
+integer,  intent(in) :: pp

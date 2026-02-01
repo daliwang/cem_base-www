@@ -1,0 +1,11 @@
+sub_param, c:2, jj:3, this:1, betrtracer_vars:4
+sub_out
+global_ro| betrtracer_vars%volatileid, volatileid, NONE| this%tracer_flx_leaching_col, tracer_flx_leaching_col, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| this%tracer_flx_ebu_col, tracer_flx_ebu_col, NONE
+global_wo
+global_mod
+global_non| betrtracer_vars%tracernames, tracernames, NONE| betrtracer_vars%ntracers, ntracers, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| betrtracer_vars%nvolatile_tracers, nvolatile_tracers, NONE
+calls
+readParams,
+type(BeTRTracer_Type)  , intent(in)  :: betrtracer_vars
+integer                , intent(in)  :: c     ! column index
+integer                , intent(in)  :: jj

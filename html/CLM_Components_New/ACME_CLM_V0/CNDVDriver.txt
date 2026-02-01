@@ -1,0 +1,7 @@
+sub_in, num_natvegp, filter_natvegp, carbonstate_vars, carbonflux_vars, kyr, dgvs_vars, bounds, atm2lnd_vars
+sub_out, num_natvegp, filter_natvegp
+global_ro, atm2lnd_vars%t_mo_min_patch, dgvs_vars%agdd_patch
+global_wo, carbonstate_vars%leafcmax_patch, atm2lnd_vars%t_mo_min_patch
+global_mod, dgvs_vars%tmomin20_patch, dgvs_vars%agdd20_patch
+global_non, carbonstate_vars%leafcmax_patch, dgvs_vars%fpcgrid_patch
+calls, Light, Establishment

@@ -1,0 +1,7 @@
+sub_in, num_nolakep, filter_nolakep, bounds
+sub_out
+global_ro, h2osoi_vol, u10, mss_frc_cly_vld, tsai, forc_rho, gwc_thr, h2osoi_liq, h2osoi_ice, tlai, watsat, mbl_bsn_fct, frac_sno, fv
+global_wo
+global_mod, flx_mss_vrt_dst, flx_mss_vrt_dst_tot
+global_non
+calls, endrun

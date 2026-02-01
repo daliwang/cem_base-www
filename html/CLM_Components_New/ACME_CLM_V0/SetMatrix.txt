@@ -1,0 +1,7 @@
+sub_in, dhsdT, nband, filter_nolakec, waterstate_vars, dtime, num_nolakec, c_h2osfc, bmatrix, fact, bounds, tk_h2osfc, dz_h2osfc, tk
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, col%z, bounds%endc, bounds%begc, waterstate_vars%frac_h2osfc_col, waterstate_vars%frac_sno_eff_col
+calls, SetMatrix_Snow_Soil, SetMatrix_Snow, AssembleMatrixFromSubmatrices, SetMatrix_Soil, SetMatrix_Soil_Snow, SetMatrix_StandingSurfaceWater_Soil, SetMatrix_Soil_StandingSurfaceWater, SetMatrix_StandingSurfaceWater

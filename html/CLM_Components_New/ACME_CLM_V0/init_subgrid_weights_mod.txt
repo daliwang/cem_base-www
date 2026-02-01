@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod, subgrid_weights_diagnostics%pct_cft, subgrid_weights_diagnostics%pct_landunit, subgrid_weights_diagnostics%pct_glc_mec, subgrid_weights_diagnostics%pct_nat_pft
+global_non
+calls, hist_addfld2d

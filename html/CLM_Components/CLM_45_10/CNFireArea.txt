@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, deadcrootc_storage, latdeg, gdp_lf, btran2, wtcol, forc_wind, npfts, livecrootc, decomp_cpools_vr, leafc_storage, itype, totvegc_col, is_cwd, forc_t, fsat, wf2, frootc, deadcrootc, abm_lf, frootc_xfer, wtgcell, forc_rh, livecrootc_storage, leafc_xfer, totlitc, forc_snow, tsoi17, prec60_col, wf, peatf_lf, leafc, prec10_col, lfpftd, livecrootc_xfer, forc_rain, gridcell, deadcrootc_xfer, frootc_storage, pfti, leafc_col
+global_wo, fbac, burndate
+global_mod, fd_col, farea_burned, fbac1, lfwt, trotr2_col, wtlf, lgdp_col, baf_crop, rootc_col, cropf_col, fsr_col, btran_col, fuelc_crop, dtrotr_col, lpop_col, baf_peatf, trotr1_col, fuelc, lfc, lgdp1_col, nfire
+global_non, totvegc, deadstemc, livestemc_xfer, livestemc_storage, prec10, deadstemc_xfer, column, livestemc, deadstemc_storage, prec60
+calls, get_curr_date, p2c

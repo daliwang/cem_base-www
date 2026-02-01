@@ -1,0 +1,15 @@
+sub_param, bounds:1, waterstate_vars:7, waterflux_vars:6, temperature_vars:5, filter_snowc:3, aerosol_vars:4, num_snowc:2
+sub_out
+global_ro| lun%urbpoi, urbpoi, NONE| col%landunit, landunit, NONE
+global_wo| waterflux_vars%qflx_snow2topsoi_col, qflx_snow2topsoi, NONE| waterstate_vars%int_snow_col, int_snow, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| col%z, z, NONE
+global_mod| aerosol_vars%mss_dst4_col, mss_dst4, NONE| col%zi, zi, NONE| aerosol_vars%mss_dst3_col, mss_dst3, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterstate_vars%snw_rds_col, snw_rds, NONE| waterflux_vars%qflx_sl_top_soil_col, qflx_sl_top_soil, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| col%dz, dz, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| aerosol_vars%mss_bcpho_col, mss_bcpho, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| waterflux_vars%mflx_snowlyr_col, mflx_snowlyr_col, NONE| aerosol_vars%mss_dst1_col, mss_dst1, NONE| waterstate_vars%h2osno_col, h2osno, NONE| aerosol_vars%mss_ocpho_col, mss_ocpho, NONE| col%snl, snl, NONE| aerosol_vars%mss_ocphi_col, mss_ocphi, NONE| aerosol_vars%mss_bcphi_col, mss_bcphi, NONE| lun%itype, ltype, NONE| aerosol_vars%mss_dst2_col, mss_dst2, NONE
+global_non
+calls, Combo
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(inout) :: num_snowc       ! number of column snow points in column filter
+integer                , intent(inout) :: filter_snowc(:) ! column filter for snow points
+type(aerosol_type)     , intent(inout) :: aerosol_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars

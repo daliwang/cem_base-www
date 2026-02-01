@@ -1,0 +1,7 @@
+sub_in, state, cmfmc2, det_s, hdtime, cam_in, sgh30, cmfmc, det_ice, pbuf, dlf, ptend_all
+sub_out, det_s, det_ice
+global_ro
+global_wo
+global_mod
+global_non
+calls, compute_tms, setup_grid, outfld, physics_update, cnst_get_ind, pbuf_get_field, read_parameters, advance_clubb_core, cleanup_grid, setup_parameters, physics_ptend_sum, aist_vector, calc_obklen, physics_ptend_init, calc_ustar, pblintd, stats_begin_timestep, physics_state_copy

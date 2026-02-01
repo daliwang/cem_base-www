@@ -1,0 +1,16 @@
+sub_param, atm2lnd_vars:4, vocemis_vars:8, canopystate_vars:5, bounds:1, temperature_vars:7, num_soilp:2, photosyns_vars:6, filter_soilp:3
+sub_out
+global_ro| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| photosyns_vars%cisun_z_patch, cisun_z, NONE| %flux_out, flux_out, NONE| canopystate_vars%elai_p_patch, elai_p, NONE| pft%column, column, NONE| canopystate_vars%fsun24_patch, fsun24, NONE| atm2lnd_vars%fsi24_patch, forc_solai24, NONE| temperature_vars%t_veg240_patch, t_veg240, NONE| atm2lnd_vars%forc_solad_grc, forc_solad, NONE| %n_megan_comps, n_megan_comps, NONE| shr_megan_linkedlist%molec_weight, molec_weight, NONE| %megan_comps, megan_comps, NONE| atm2lnd_vars%forc_solai_grc, forc_solai, NONE| pft%itype, itype, NONE| atm2lnd_vars%fsi240_patch, forc_solai240, NONE| shr_megan_linkedlist%emis_factors, emis_factors, NONE| pft%gridcell, gridcell, NONE| shr_megan_linkedlist%class_number, class_number, NONE| atm2lnd_vars%fsd240_patch, forc_solad240, NONE| canopystate_vars%elai_patch, elai, NONE| canopystate_vars%fsun240_patch, fsun240, NONE| temperature_vars%t_veg_patch, t_veg, NONE| canopystate_vars%fsun_patch, fsun, NONE| photosyns_vars%cisha_z_patch, cisha_z, NONE| temperature_vars%t_veg24_patch, t_veg24, NONE| atm2lnd_vars%fsd24_patch, forc_solad24, NONE| shr_megan_linkedlist%index, index, NONE| %ptr%index, index, NONE
+global_wo| vocemis_vars%par24a_out_patch, par24a_out, NONE| vocemis_vars%par240u_out_patch, par240u_out, NONE| vocemis_vars%gammaT_out_patch, gammaT_out, NONE| vocemis_vars%gammaL_out_patch, gammaL_out, NONE| vocemis_vars%paru_out_patch, paru_out, NONE| vocemis_vars%gammaA_out_patch, gammaA_out, NONE| vocemis_vars%topt_out_patch, topt_out, NONE| vocemis_vars%gammaC_out_patch, gammaC_out, NONE| vocemis_vars%gamma_out_patch, gamma_out, NONE| vocemis_vars%alpha_out_patch, alpha_out, NONE| vocemis_vars%gammaS_out_patch, gammaS_out, NONE| vocemis_vars%gammaP_out_patch, gammaP_out, NONE| vocemis_vars%Eopt_out_patch, Eopt_out, NONE| vocemis_vars%cp_out_patch, cp_out, NONE| vocemis_vars%para_out_patch, para_out, NONE| vocemis_vars%par240a_out_patch, par240a_out, NONE| vocemis_vars%par24u_out_patch, par24u_out, NONE
+global_mod| vocemis_vars%vocflx_patch, vocflx, NONE| vocemis_vars%vocflx_tot_patch, vocflx_tot, NONE
+global_non| soilstate_vars%sucsat_col, !sucsat, NONE| soilstate_vars%watsat_col, !watsat, NONE| col%dz, !dz, NONE| soilstate_vars%clayfrac_col, !clayfrac, NONE| soilstate_vars%bsw_col, !bsw, NONE| waterstate_vars%h2osoi_vol_col, !h2osoi_vol, NONE| shr_megan_linkedlist, meg_cmp, NONE| meg_cmp%next_megcomp, meg_cmp, NONE| waterstate_vars%h2osoi_ice_col, !h2osoi_ice, NONE| soilstate_vars%sandfrac_col, !sandfrac, NONE
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilp               ! number of columns in soil pft filter
+integer                , intent(in)    :: filter_soilp(num_soilp) ! patch filter for soil
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(photosyns_type)   , intent(in)    :: photosyns_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(vocemis_type)     , intent(inout) :: vocemis_vars

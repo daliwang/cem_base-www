@@ -1,0 +1,22 @@
+sub_param, tracercoeff_vars:13, waterflux_vars:12, ubj:3, dtime:10, zi:9, dz:8, betrtracer_vars:7, lbj:2, tracerflux_vars:15, bounds:1, tracerstate_vars:14, h2osoi_liqvol:11, jtops:4, filter_soilc:6, num_soilc:5
+sub_out
+global_ro| betrtracer_vars%ngwmobile_tracer_groups, ngwmobile_tracer_groups, NONE| betrtracer_vars%is_advective, is_advective, NONE| betrtracer_vars%vtrans_scal, vtrans_scal, NONE| bounds%begc, begc, NONE| betrtracer_vars%is_mobile, is_mobile, NONE| tracerflux_vars%tracer_flx_infl_col, tracer_flx_infl, NONE| waterflux_vars%qflx_rootsoi_col, qflx_rootsoi, NONE| waterflux_vars%qflx_adv_col, qflx_adv, NONE| bounds%endc, endc, NONE| betrtracer_vars%nmem_max, nmem_max, NONE| betrtracer_vars%tracer_group_memid, tracer_group_memid, NONE| betrtracer_vars%tracernames, tracernames, NONE| tracercoeff_vars%aqu2bulkcef_mobile_col, aqu2bulkcef_mobile_col, NONE
+global_wo
+global_mod| tracerflux_vars%tracer_flx_vtrans_col, tracer_flx_vtrans, NONE| tracerflux_vars%tracer_flx_leaching_col, tracer_flx_leaching, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile_col, NONE
+global_non| betrtracer_vars%is_h2o, is_h2o, NONE
+calls, semi_lagrange_adv_backward, calc_root_uptake_as_perfect_sink, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: lbj, ubj
+integer                , intent(in)    :: num_soilc                           ! number of columns in column filter_soilc
+integer                , intent(in)    :: jtops(bounds%begc: )
+integer                , intent(in)    :: filter_soilc(:)                     ! column filter_soilc
+type(betrtracer_type)  , intent(in)    :: betrtracer_vars
+real(r8)               , intent(in)    :: dz(bounds%begc: ,lbj: )
+real(r8)               , intent(in)    :: zi(bounds%begc: ,lbj-1: )
+real(r8)               , intent(in)    :: h2osoi_liqvol(bounds%begc: , lbj: ) !
+real(r8)               , intent(in)    :: dtime                               !model time step
+type(waterflux_type)   , intent(in)    :: waterflux_vars
+type(tracercoeff_type) , intent(in)    :: tracercoeff_vars
+type(tracerstate_type) , intent(inout) :: tracerstate_vars
+type(tracerflux_type)  , intent(inout) :: tracerflux_vars

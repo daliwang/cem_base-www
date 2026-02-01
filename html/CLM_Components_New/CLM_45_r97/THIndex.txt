@@ -1,0 +1,7 @@
+sub_in, wb_t, thic, thip, Tc_8
+sub_out, thip, thic
+global_ro
+global_wo
+global_mod
+global_non
+calls

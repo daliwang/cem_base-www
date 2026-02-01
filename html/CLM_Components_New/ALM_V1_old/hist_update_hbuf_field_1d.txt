@@ -1,0 +1,11 @@
+sub_param, t:1, bounds:3, f:2
+sub_out
+global_ro| %field%type1d, type1d, NONE| %field%p2c_scale_type, p2c_scale_type, NONE| %field%end1d, end1d, NONE| %hlist, hlist, NONE| %field%c2l_scale_type, c2l_scale_type, NONE| %field%l2g_scale_type, l2g_scale_type, NONE| %avgflag, avgflag, NONE| clmptr_rs, field, NONE| %field%hpindex, hpindex, NONE| %field%type1d_out, type1d_out, NONE| %field%beg1d, beg1d, NONE
+global_wo
+global_mod| tape, hbuf, NONE| tape, nacs, NONE| pft%active, active, NONE| >lun%active, active, NONE| col%active, active, NONE
+global_non
+calls, p2g, l2g, c2g, endrun
+readParams,
+integer, intent(in) :: t            ! tape index
+integer, intent(in) :: f            ! field index
+type(bounds_type), intent(in) :: bounds

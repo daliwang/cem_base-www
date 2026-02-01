@@ -1,0 +1,7 @@
+sub_in, name, bufptr, index
+sub_out, bufptr, index
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

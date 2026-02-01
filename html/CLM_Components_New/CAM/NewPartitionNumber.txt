@@ -1,0 +1,7 @@
+sub_in, newnum, oldnum, cnt
+sub_out, newnum
+global_ro
+global_wo
+global_mod
+global_non
+calls

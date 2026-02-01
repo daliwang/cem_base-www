@@ -1,0 +1,7 @@
+sub_in, err_code, rcond, lhs, nrhs, solution, rhs
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, band_solvex, band_solve

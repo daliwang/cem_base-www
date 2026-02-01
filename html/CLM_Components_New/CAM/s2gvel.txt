@@ -1,0 +1,7 @@
+sub_in, lamdp, nlon, vpr, cosphi, upr, vdp, phidp, lam, udp, sinphi
+sub_out, upr, vpr
+global_ro
+global_wo
+global_mod
+global_non
+calls

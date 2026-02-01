@@ -1,0 +1,12 @@
+sub_param, this, begc, soilhydrology_vars, endc, mesh_itype, waterstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%CreateFromCLMCols, endrun
+readParams,
+integer                  , intent(in) :: mesh_itype
+integer                  , intent(in) :: begc,endc
+type(waterstate_type)    , intent(in) :: waterstate_vars
+type(soilhydrology_type) , intent(in) :: soilhydrology_vars

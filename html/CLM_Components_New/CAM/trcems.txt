@@ -1,0 +1,7 @@
+sub_in, bn2o0, tco2, emplnk, uco222, uch4, ncol, uptype, ucfc12, uco221, uco223, uco213, emstrc, uco212, s2c, to3, up2, co2t, pnm, k, w, uco211, ucfc11, bch4, bn2o1, un2o0, aer_trn_ttl, th2o, un2o1
+sub_out, emstrc
+global_ro
+global_wo
+global_mod
+global_non
+calls

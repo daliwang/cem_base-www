@@ -1,0 +1,13 @@
+sub_in, domain, filename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, file
+calls, ncd_io, getfil, ncd_pio_closefile, ncd_pio_openfile, ncd_inqfdims, endrun
+
+Tree height: 4
+0 , getfil, ncd_pio_openfile, ncd_inqfdims, ncd_io, 
+1+, endrun, ncd_io, 
+2+, endrun, ncd_io, 
+3+, endrun, ncd_pio_closefile, 

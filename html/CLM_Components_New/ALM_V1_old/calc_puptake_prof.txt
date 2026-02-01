@@ -1,0 +1,14 @@
+sub_param, puptake_prof:6, phosphorusstate_vars:5, filter_soilc:3, bounds:1, num_soilc:2, cnstate_vars:4
+sub_out, puptake_prof
+global_ro| cnstate_vars%nfixation_prof_col, nfixation_prof, NONE| phosphorusstate_vars%solutionp_vr_col, solutionp_vr, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,readCNAllocParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc        ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)  ! filter for soil columns
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(phosphorusstate_type),intent(in)    :: phosphorusstate_vars
+real(r8)                 , intent(inout) :: puptake_prof(bounds%begc:bounds%endc, 1:nlevdecomp)

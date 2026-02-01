@@ -1,0 +1,7 @@
+sub_in, sigma_logr_aer, radsurf, ncol, dgnumwet, cheb, logradsurf
+sub_out, radsurf, cheb, logradsurf
+global_ro
+global_wo
+global_mod
+global_non
+calls

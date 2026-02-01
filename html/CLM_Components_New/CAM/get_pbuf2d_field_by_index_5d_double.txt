@@ -1,0 +1,7 @@
+sub_in, errcode, index, col_type, kount, start, lchnk, field, pbuf2d
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, endrun

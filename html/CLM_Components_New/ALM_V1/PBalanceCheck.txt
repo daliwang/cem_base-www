@@ -1,0 +1,13 @@
+sub_param, filter_soilc, phosphorusstate_vars, phosphorusflux_vars, num_soilc, bounds
+sub_out
+global_ro, col%gridcell, grc%londeg, phosphorusflux_vars%product_ploss_col, phosphorusstate_vars%begpb_col, phosphorusstate_vars%totcolp_col, decomp_cascade_con%cascade_receiver_pool, grc%latdeg, phosphorusflux_vars%decomp_cascade_sminp_flux_col, phosphorusflux_vars%sminp_leached_col, phosphorusflux_vars%supplement_to_sminp_col, phosphorusflux_vars%primp_to_labilep_col, phosphorusflux_vars%pinputs_col, phosphorusflux_vars%secondp_to_occlp_col, phosphorusflux_vars%dwt_ploss_col, phosphorusflux_vars%fert_p_to_sminp_col, phosphorusflux_vars%fire_ploss_col
+global_wo
+global_mod, phosphorusstate_vars%errpb_col, phosphorusstate_vars%endpb_col, phosphorusflux_vars%poutputs_col
+global_non, phosphorusflux_vars%sminp_to_plant_col, phosphorusstate_vars%sminp_col, phosphorusstate_vars%totpftp_col, phosphorusstate_vars%totsomp_col, phosphorusflux_vars%frootp_to_litter_patch, phosphorusflux_vars%leafp_to_litter_patch, phosphorusstate_vars%totlitp_col, phosphorusflux_vars, phosphorusstate_vars%cwdp_col
+calls, p2c, endrun
+readParams,
+type(bounds_type)         , intent(in)    :: bounds
+integer                   , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                   , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

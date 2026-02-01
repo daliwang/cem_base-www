@@ -1,0 +1,7 @@
+sub_in, gwut, tau, u, vtgw, xv, c, lchnk, yv, ngwv, prefix, ncol, utgw, taucd, dttke, v, dttdf
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

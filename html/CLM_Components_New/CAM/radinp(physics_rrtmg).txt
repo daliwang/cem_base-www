@@ -1,0 +1,7 @@
+sub_in, pmid, ncol, pmidrd, pint, pintrd, eccf
+sub_out, pintrd, pmidrd
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_orb_decl

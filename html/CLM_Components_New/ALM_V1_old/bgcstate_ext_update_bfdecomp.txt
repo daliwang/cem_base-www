@@ -1,0 +1,20 @@
+sub_param, nitrogenflux_vars:7, cp_ratios:13, carbonflux_vars:6, tracerflux_vars:10, bounds:1, num_soilc:4, betrtracer_vars:9, y0:11, centurybgc_vars:8, filter_soilc:5, cn_ratios:12, lbj:2, ubj:3
+sub_out, y0, cn_ratios
+global_ro| centurybgc_vars%n_loc, n_loc, NONE| nitrogenflux_vars%sminn_no3_input_vr_col, sminn_no3_input_vr, NONE| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE| decomp_cascade_con%initial_cn_ratio, initial_cn_ratio, NONE| carbonflux_vars%bgc_cpool_ext_loss_vr_col, bgc_cpool_ext_loss_vr, NONE| centurybgc_vars%c_loc, c_loc, NONE| nitrogenflux_vars%sminn_nh4_input_vr_col, sminn_nh4_input_vr, NONE| centurybgc_vars%lid_nh4, lid_nh4, NONE| betrtracer_vars%id_trc_nh3x, id_trc_nh3x, NONE| centurybgc_vars%lid_no3, lid_no3, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| centurybgc_vars%nelms, nelm, NONE| decomp_cascade_con%floating_cn_ratio_decomp_pools, floating_cn_ratio_decomp_pools, NONE| nitrogenflux_vars%bgc_npool_ext_loss_vr_col, bgc_npool_ext_loss_vr, NONE
+global_wo
+global_mod| tracerflux_vars%tracer_flx_netpro_vr_col, tracer_flx_netpro_vr, NONE
+global_non
+calls
+readParams,
+type(bounds_type)       , intent(in) :: bounds                                                                    ! bounds
+integer                 , intent(in) :: num_soilc                                                                 ! number of columns in column filter
+integer                 , intent(in) :: filter_soilc(:)                                                           ! column filter
+integer                 , intent(in) :: lbj, ubj
+type(carbonflux_type)   , intent(in) :: carbonflux_vars
+type(nitrogenflux_type) , intent(in) :: nitrogenflux_vars
+type(betrtracer_type)   , intent(in) :: betrtracer_vars                                                           ! betr configuration information
+type(centurybgc_type)   , intent(in) :: centurybgc_vars
+type(tracerflux_type)   , intent(inout) :: tracerflux_vars
+real(r8)                , intent(inout) :: y0(centurybgc_vars%nstvars, bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(inout) :: cn_ratios(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj) !
+real(r8)                , intent(inout) :: cp_ratios(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)

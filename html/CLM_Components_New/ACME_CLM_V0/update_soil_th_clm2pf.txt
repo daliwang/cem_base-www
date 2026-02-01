@@ -1,0 +1,7 @@
+sub_in, pftmode, num_hydrologyc, pfhmode, bounds, filter_hydrologyc
+sub_out
+global_ro, cps%watsat, cps%dz, cps%bsw, cps%watmin, col%gridcell, ces%t_soisno, bounds%begg, clm_pf_idata%pressure_reference, cps%sucmin, cps%sucsat, cws%h2osoi_ice
+global_wo
+global_mod, cws%h2osoi_liq
+global_non, clm_a2l%forc_pbot, cps%zi, cps%soilpsi, cws%zwt
+calls, VecGetArrayF90, VecRestoreArrayF90

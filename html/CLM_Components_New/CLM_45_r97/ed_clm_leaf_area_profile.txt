@@ -1,0 +1,7 @@
+sub_in, this, waterstate_inst, canopystate_inst, currentSite
+sub_out
+global_ro, currentCohort, frac_sno_eff, canopy_layer, snow_depth, pft, currentPatch, clm_pno, total_canopy_area, area, hite
+global_wo, frac_veg_nosno_alb, tsai, present, nrad
+global_mod, sai, tlai_profile, esai_profile, elai, tlai, lai, elai_profile, treesai, treelai, canopy_layer_lai, canopy_area_profile, esai, c_area, NV, snowdp, tsai_profile, ncan, canopy_area
+global_non
+calls

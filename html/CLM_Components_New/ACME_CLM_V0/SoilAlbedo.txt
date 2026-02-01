@@ -1,0 +1,7 @@
+sub_in, albsnd, temperature_vars, lakestate_vars, filter_nourbanc, coszen, albsni, bounds, surfalb_vars, waterstate_vars, num_nourbanc
+sub_out
+global_ro, col%snl, waterstate_vars%h2osoi_vol_col, col%landunit, temperature_vars%t_grnd_col
+global_wo, surfalb_vars%albsoi_col
+global_mod, surfalb_vars%albsod_col
+global_non, lakestate_vars%lake_icefrac_col, surfalb_vars%albgrd_col, surfalb_vars%albgri_col
+calls

@@ -1,0 +1,8 @@
+sub_in, xao_o, do_xao, do_x2o, ocn, do_o2x, frac_o
+sub_out
+global_ro, component_get_x2c_cx, component_get_c2x_cx, rAttr, data
+global_wo
+global_mod
+global_non, component_get_dom_cx
+calls, shr_sys_abort
+calls_ln, shr_sys_abort@891

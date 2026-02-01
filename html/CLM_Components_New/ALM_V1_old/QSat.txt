@@ -1,0 +1,14 @@
+sub_param, qs:5, qsdT:6, p:2, es:3, esdT:4, T:1
+sub_out, es, esdT, qs, qsdT
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in)  :: T        ! temperature (K)
+real(r8), intent(in)  :: p        ! surface atmospheric pressure (pa)
+real(r8), intent(out) :: es       ! vapor pressure (pa)
+real(r8), intent(out) :: esdT     ! d(es)/d(T)
+real(r8), intent(out) :: qs       ! humidity (kg/kg)
+real(r8), intent(out) :: qsdT     ! d(qs)/d(T)

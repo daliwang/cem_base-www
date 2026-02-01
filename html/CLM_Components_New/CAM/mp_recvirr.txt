@@ -1,0 +1,7 @@
+sub_in, send_bl, q1in, comm, modc, q1out, q2in, recv_bl, q2out
+sub_out, q1out, q2out
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_WAIT, t_stopf, t_startf, MPI_WAITALL, MPI_COMM_SIZE, MPI_COMM_RANK

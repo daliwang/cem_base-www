@@ -1,0 +1,7 @@
+sub_in, gstickl, do_drydep, do_grow, do_coag, gsticki, do_fixedinit, do_cnst_rlh, tstick, do_explised, do_pheatatm, do_pheat, maxsubsteps, do_incloud, maxretries, do_detrain, do_clearsky, do_vdiff, vf_const, dt_threshold, rc, cstick, minsubsteps, do_thermo, do_vtran, do_substep, do_print_init, carma, conmax
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, setupcoag, setupbins, CARMA_InitializeVertical, CARMA_InitializeGrowth, CARMA_InitializeThermo, CARMA_InitializeOptics

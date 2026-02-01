@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, froot_prof, fr_flab, wtcol, npfts, frootc_to_litter, fr_fcel, leaf_prof, itype, lf_flig, fr_flig, lf_fcel, leafc_to_litter, active, lf_flab, pfti
+global_wo
+global_mod, phenology_c_to_litr_lig_c, phenology_c_to_litr_met_c, phenology_c_to_litr_cel_c
+global_non, cc14f, cc13f, pc14f, pc13f
+calls, endrun

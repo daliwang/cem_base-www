@@ -1,0 +1,11 @@
+sub_in, num_urbanc, filter_nolakec, bounds, filter_urbanc, num_nolakec, num_hydrologyc, filter_hydrologyc
+sub_out
+global_ro, pwf_a%qflx_evap_tot, a2l_downscaled_col%forc_snow, cws%h2osoi_ice, lun%itype, a2l_downscaled_col%forc_rain, cwbal%begwb, cws%h2osfc, pwf_a%qflx_snwcp_ice, pws_a%h2ocan, cps%dz, col%gridcell, cws%wa, clm_a2l%forc_flood, pwf_a%qflx_irrig, col%landunit, cws%h2osno, cws%h2osoi_liq, col%itype
+global_wo, cws%h2osoi_vol, cwf%qflx_runoff_r, cws%qcharge, cws%fcov, cws%fsat, cwf%qflx_runoff_u, cwf%qflx_infl, cwf%qflx_rsub_sat
+global_mod, cwf%qflx_glcice, cwf%qflx_h2osfc_surf, cwbal%endwb, cwf%qflx_drain, cwf%qflx_surf, cwf%qflx_qrgwl, cwf%qflx_drain_perched, cwf%qflx_runoff, cwf%qflx_glcice_frz
+global_non
+calls, Drainage, CLMVICMap
+
+Tree height: 5
+0 , Drainage, 
+1+, CLMVICMap, 

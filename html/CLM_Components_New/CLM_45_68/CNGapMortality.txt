@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, pcs%leafc, pcs%gresp_xfer, pns%livecrootn, pns%livecrootn_xfer, pns%deadstemn_xfer, pns%livestemn_xfer, pns%deadcrootn_storage, pnf%m_retransn_to_litter, pns%frootn_xfer, pcs%deadcrootc_xfer, pcs%frootc_storage, pns%leafn, pns%frootn, pcs%deadstemc_xfer, pns%deadcrootn_xfer, pftcon%woody, pns%deadstemn_storage, pcs%livecrootc_xfer, pcs%livecrootc, pns%livecrootn_storage, pdgvs%heatstress, pns%livestemn_storage, pcs%gresp_storage, pcs%leafc_storage, pcs%livestemc, pcs%deadcrootc, pcs%deadstemc_storage, pdgvs%greffic, pcs%livestemc_xfer, pns%leafn_xfer, pcs%livestemc_storage, pcs%leafc_xfer, pcs%frootc, pns%frootn_storage, pns%deadcrootn, pcs%frootc_xfer, pns%deadstemn, pns%leafn_storage, pcs%deadstemc, pcs%deadcrootc_storage, pns%livestemn, pcs%livecrootc_storage, pft%itype
+global_wo, pcf%m_leafc_storage_to_litter, pnf%m_livestemn_xfer_to_litter, pcf%m_deadstemc_storage_to_litter, pnf%m_leafn_storage_to_litter, pcf%m_deadcrootc_storage_to_litter, pnf%m_deadstemn_xfer_to_litter, pcf%m_deadcrootc_xfer_to_litter, pcf%m_leafc_xfer_to_litter, pcf%m_frootc_to_litter, pcf%m_frootc_storage_to_litter, pnf%m_livestemn_storage_to_litter, pnf%m_livestemn_to_litter, pcf%m_leafc_to_litter, pnf%m_livecrootn_to_litter, pnf%m_frootn_to_litter, pcf%m_deadstemc_xfer_to_litter, pnf%m_livecrootn_storage_to_litter, pcf%m_livecrootc_storage_to_litter, pnf%m_frootn_xfer_to_litter, pnf%m_deadcrootn_storage_to_litter, pnf%m_deadstemn_to_litter, pnf%m_leafn_to_litter, pcf%m_frootc_xfer_to_litter, pcf%m_livestemc_xfer_to_litter, pcf%m_livecrootc_to_litter, pcf%m_gresp_storage_to_litter, pcf%m_livestemc_to_litter, pcf%m_deadcrootc_to_litter, pnf%m_deadcrootn_xfer_to_litter, pnf%m_livecrootn_xfer_to_litter, pcf%m_deadstemc_to_litter, pcf%m_livestemc_storage_to_litter, pcf%m_livecrootc_xfer_to_litter, pcf%m_gresp_xfer_to_litter, pnf%m_deadcrootn_to_litter, pnf%m_leafn_xfer_to_litter, pnf%m_deadstemn_storage_to_litter, pnf%m_frootn_storage_to_litter
+global_mod, pdgvs%nind
+global_non, pns%retransn
+calls, CNGapPftToColumn
+
+Tree height: 5
+1+, CNGapPftToColumn, 

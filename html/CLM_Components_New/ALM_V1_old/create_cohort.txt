@@ -1,0 +1,20 @@
+sub_param, ctrim:10, hite:3, status:9, bstore:7, pft:1, balive:5, nn:2, laimemory:8, clayer:11, dbh:4, patchptr:12, bdead:6
+sub_out
+global_ro| patchptr%area, area, NONE
+global_wo| new_cohort%n, n, NONE| new_cohort%treesai, treesai, NONE| new_cohort%status_coh, status_coh, NONE| new_cohort%canopy_layer, canopy_layer, NONE| new_cohort%indexnumber, indexnumber, NONE| new_cohort%lai, lai, NONE| new_cohort%canopy_trim, canopy_trim, NONE
+global_mod| new_cohort%laimemory, laimemory, NONE| new_cohort%dbh, dbh, NONE| new_cohort%treelai, treelai, NONE| new_cohort%bdead, bdead, NONE| new_cohort%hite, hite, NONE| udata%currentindex, currentindex, NONE| new_cohort%pft, pft, NONE| new_cohort%bstore, bstore, NONE| new_cohort%balive, balive, NONE| new_cohort%c_area, c_area, NONE
+global_non| patchptr%shortest, udata%storesmallcohort, NONE| patchptr%tallest, udata%storebigcohort, NONE| patchptr%siteptr, new_cohort%siteptr, NONE| patchptr, new_cohort%patchptr, NONE| new_cohort, patchptr%shortest, NONE| udata%storesmallcohort, patchptr%shortest, NONE| udata%storebigcohort, patchptr%tallest, NONE| new_cohort, patchptr%tallest, NONE
+calls, allocate_live_biomass, nan_cohort, insert_cohort, zero_cohort
+readParams,
+type(patch), intent(inout), pointer  :: patchptr
+integer,  intent(in)   :: pft       ! Cohort Plant Funew_cohorttional Type
+integer,  intent(in)   :: clayer    ! canopy status of cohort (1 = canopy, 2 = understorey, etc.)
+integer,  intent(in)   :: status    ! growth status of plant  (2 = leaves on , 1 = leaves off)
+real(r8), intent(in)   :: nn        ! number of individuals in cohort per 'area' (10000m2 default)
+real(r8), intent(in)   :: hite      ! height: meters
+real(r8), intent(in)   :: dbh       ! dbh: cm
+real(r8), intent(in)   :: balive    ! total living biomass: kGC per indiv
+real(r8), intent(in)   :: bdead     ! total dead biomass: kGC per indiv
+real(r8), intent(in)   :: bstore    ! stored carbon: kGC per indiv
+real(r8), intent(in)   :: laimemory ! target leaf biomass- set from previous year: kGC per indiv
+real(r8), intent(in)   :: ctrim     ! What is the fraction of the maximum leaf biomass that we are targeting? :-

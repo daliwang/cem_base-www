@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, alt_indx, t_soisno, dz, o2stress_sat, soilpsi, o2stress_unsat, finundated, sucsat
+global_wo, decomp_k
+global_mod, w_scalar, t_scalar, o_scalar
+global_non
+calls

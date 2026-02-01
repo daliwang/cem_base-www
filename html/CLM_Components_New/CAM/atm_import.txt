@@ -1,0 +1,7 @@
+sub_in, x2a, cam_in
+sub_out, cam_in
+global_ro
+global_wo
+global_mod
+global_non
+calls, co2_time_interp_ocn, co2_time_interp_fuel

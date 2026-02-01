@@ -1,0 +1,14 @@
+sub_param, fn, canopystate_vars, photosyns_vars, atm2lnd_vars, filterp, cnstate_vars
+sub_out
+global_ro, photosyns_vars%alphapsnsha_patch, photosyns_vars%psnsha_wc_patch, atm2lnd_vars%forc_pco2_grc, atm2lnd_vars%forc_pc13o2_grc, photosyns_vars%psnsun_wj_patch, photosyns_vars%psnsun_wc_patch, photosyns_vars%psnsha_wj_patch, canopystate_vars%laisun_patch, photosyns_vars%psnsun_wp_patch, photosyns_vars%psnsha_patch, canopystate_vars%laisha_patch, pft%gridcell, photosyns_vars%psnsun_patch, photosyns_vars%alphapsnsun_patch, photosyns_vars%psnsha_wp_patch, cnstate_vars%rc14_atm_patch
+global_wo, photosyns_vars%fpsn_wp_patch, photosyns_vars%fpsn_wc_patch, photosyns_vars%c13_psnsun_patch, photosyns_vars%c13_psnsha_patch, photosyns_vars%fpsn_wj_patch, photosyns_vars%fpsn_patch, photosyns_vars%c14_psnsun_patch, photosyns_vars%c14_psnsha_patch
+global_mod, photosyns_vars%rc13_psnsun_patch, photosyns_vars%rc13_psnsha_patch, photosyns_vars%rc13_canair_patch
+global_non, atm2lnd_vars%forc_po2_grc
+calls
+readParams,
+integer                , intent(in)    :: fn                             ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                    ! patch filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars

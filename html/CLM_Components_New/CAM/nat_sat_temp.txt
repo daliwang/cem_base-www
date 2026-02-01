@@ -1,0 +1,7 @@
+sub_in, tsat_nat, press, h2o_avail, hno3_total, mask, ncol
+sub_out, tsat_nat
+global_ro
+global_wo
+global_mod
+global_non
+calls

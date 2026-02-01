@@ -1,0 +1,7 @@
+sub_in, ztodt, pblh, state, landfrac, jctop, dlf, ptend_all, pflx, rliq, cme, pbuf, jcbot, mcon, zdu, tpert
+sub_out, mcon
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_update, t_startf, zm_convr, outfld, physics_ptend_sum, t_stopf, cnst_get_ind, convtran, zm_conv_evap, physics_state_dealloc, physics_ptend_dealloc, pbuf_get_field, momtran, physics_state_copy, physics_ptend_init

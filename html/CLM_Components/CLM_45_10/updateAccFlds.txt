@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, urbpoi, latdeg, elai, t10, landunit, gridcell, column, forc_solai, t_ref2m, twmax, forc_snow, t_veg, dz, t_soisno, fsun, forc_t, croplive, forc_rain, ifspecial, forc_solad, itype
+global_wo, t_mo, t_ref2m_max_r, t_ref2m_max_u, t_ref2m_min_r, t_ref2m_min_u, t_ref2m_max
+global_mod, t_ref2m_min_inst_r, t_mo_min, t_ref2m_max_inst_u, t_ref2m_max_inst, t_ref2m_min_inst, t_ref2m_min, t_ref2m_max_inst_r, t_ref2m_min_inst_u
+global_non, gdd0, vf, t_ref2m_u, gddplant, a10tmin, t_veg24, gdd10, gddtsoi, t_ref2m_r, agddtw, prec10, watsat, fsi24, elai_p, fsd24, fsd240, fsi240, agdd, t_veg240, fsun24, h2osoi_liq, gdd8, prec365, a5tmin, fsun240, prec60
+calls, get_proc_bounds, get_curr_date, update_accum_field, extract_accum_field, endrun

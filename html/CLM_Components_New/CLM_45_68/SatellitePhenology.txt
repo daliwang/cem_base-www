@@ -1,0 +1,9 @@
+sub_in, doalb, num_nolakep, filter_nolakep, bounds
+sub_out
+global_ro, cps%frac_sno, pft%column, cps%snow_depth, pft%itype
+global_wo, pps%frac_veg_nosno_alb
+global_mod, pps%htop, pps%elai, pps%tsai, pps%hbot, pps%tlai, pps%esai
+global_non
+calls
+
+Tree height: 5

@@ -1,0 +1,7 @@
+sub_in, filter_vegsol, coszen, rho, tau, num_vegsol, bounds
+sub_out
+global_ro, elai, albgrd, albgri, t_veg, tsai_z, esai, xl, tlai_z, nrad, fwet
+global_wo
+global_mod, fabd_sha_z, ftii, fabd_sun_z, fabi_sha_z, fabi_sun_z, fsun_z, fabi, albd, albi, fabd_sha, fabd_sun, fabi_sha, ftid, fabd, fabi_sun, ftdd, vcmaxcintsun, vcmaxcintsha
+global_non
+calls, shr_assert

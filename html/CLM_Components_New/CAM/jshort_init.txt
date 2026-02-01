@@ -1,0 +1,7 @@
+sub_in, xs_short_file, xs_coef_file, sht_indexer
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_crs, rebin, jno_init, xs_init

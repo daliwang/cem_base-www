@@ -1,0 +1,7 @@
+sub_in, temperature_inst, soilstate_inst, photosyns_inst, ch4_inst, waterflux_inst, frictionvel_inst, filter_noexposedvegp, waterstate_inst, humanindex_inst, energyflux_inst, bounds, num_noexposedvegp, atm2lnd_inst
+sub_out
+global_ro, h2osoi_liq, z0hg_col, qg_soil, soilbeta, forc_pbot, qg_h2osfc, zii, htvp, forc_t, thic_ref2m, swmp80_ref2m, h2osoi_ice, dqgdT, watsat, forc_rho, wb_ref2m, ept_ref2m, forc_hgt_u_patch, thv, forc_q, swmp65_ref2m, qg, appar_temp_ref2m, thip_ref2m, humidex_ref2m, thm, forc_th, teq_ref2m, forc_u, discomf_index_ref2m, dz, wbt_ref2m, beta, z0qg_col, t_h2osfc, qg_snow, forc_v, t_soisno, snl, nws_hi_ref2m, swbgt_ref2m, z0mg_col, t_grnd, discomf_index_ref2mS
+global_wo, grnd_ch4_cond, rootr, wbt_ref2m_r, ept_ref2m_r, rh_ref2m_r, rssha, appar_temp_ref2m_r, ram1, eflx_sh_tot, rssun, t_veg, eflx_sh_soil, swbgt_ref2m_r, humidex_ref2m_r, qflx_ev_snow, swmp65_ref2m_r, tauy, eflx_sh_snow, thic_ref2m_r, swmp80_ref2m_r, qflx_evap_tot, wb_ref2m_r, t_ref2m_r, nws_hi_ref2m_r, thip_ref2m_r, ulrad, qflx_ev_soil, qflx_ev_h2osfc, dlrad, btran, discomf_index_ref2mS_r, rresis, teq_ref2m_r, eflx_sh_h2osfc, cgrnd, discomf_index_ref2m_r, taux
+global_mod, cgrndl, cgrnds, eflx_sh_grnd, qflx_evap_soi, t_ref2m, q_ref2m, rh_ref2m
+global_non, bounds%endp, waterstate_inst%frac_sno_col, humanindex_inst%tc_ref2m_patch, bounds%begp, frictionvel_inst%u10_clm_patch, humanindex_inst%vap_ref2m_patch
+calls, AppTemp, KtoC, dis_coi, HeatIndex, QSat, MoninObukIni, hmdex, VaporPres, dis_coiS, Wet_BulbS, Wet_Bulb, FrictionVelocity, THIndex, swbgt, SwampCoolEff

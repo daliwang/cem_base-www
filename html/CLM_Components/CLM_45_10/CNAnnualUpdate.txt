@@ -1,0 +1,7 @@
+sub_in, filter_soilp, filter_soilc, ubc, num_soilp, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro
+global_wo, annsum_npp, annavg_t2m, annmax_retransn, annsum_potential_gpp, annsum_litfall
+global_mod, tempsum_litfall, tempsum_potential_gpp, annsum_counter, tempsum_npp, tempmax_retransn, tempavg_t2m
+global_non, cannavg_t2m, column, cannsum_npp
+calls, p2c

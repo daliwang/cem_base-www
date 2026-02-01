@@ -1,0 +1,7 @@
+sub_in, mfcc_in, k700_in, errstring
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

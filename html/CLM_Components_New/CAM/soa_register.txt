@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, sogb_ndx, soam_ndx, soab_ndx, tolo2_ndx, oc2_ndx, soa_ndx, beno2_ndx, bigalk_ndx, sogt_ndx, xylo2_ndx, toluene_ndx, sogx_ndx, c10h16_ndx, sogm_ndx, oh_ndx, isop_ndx, soat_ndx, soax_ndx, no_ndx, no3_ndx, ho2_ndx, sogi_ndx, oc1_ndx, soai_ndx
+global_mod, o3_ndx
+global_non
+calls, pbuf_add_field

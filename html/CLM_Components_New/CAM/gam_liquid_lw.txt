@@ -1,0 +1,7 @@
+sub_in, lamc, pgam, abs_od, clwptn
+sub_out, abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp, lininterp_finish, get_mu_lambda_weights

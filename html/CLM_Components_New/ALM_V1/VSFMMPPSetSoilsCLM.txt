@@ -1,0 +1,10 @@
+sub_param, endc, begc, soilstate_vars, vsfm_mpp
+sub_out
+global_ro, soilstate_vars%bsw_col, %perm, %satParams, %id_dn, %porParams, soilstate_vars%hksat_col, goveq_richards_ode_pres%boundary_conditions%first, goveq_richards_ode_pres%source_sinks%first, cur_cond%next, col%gridcell, %por, vsfm_soe%goveqns, cur_goveq%next, soilstate_vars%watsat_col, col%landunit, soilstate_vars%sucsat_col
+global_wo, goveq_richards_ode_pres%aux_vars_bc, goveq_richards_ode_pres%aux_vars_ss
+global_mod, goveq_richards_ode_pres%aux_vars_in
+global_non, cur_goveq, soilstate_vars%rootr_col, cur_cond%conn_set, vsfm_mpp%sysofeqns, soilstate_vars%smp_l_col, soilstate_vars%eff_porosity_col, soilstate_vars%smpmin_col, soilstate_vars%rootr_patch, soilstate_vars%hk_l_col
+calls, SatFunc_Set_VG, PorosityFunctionSetConstantModel, SatFunc_Set_SBC_bz2, SatFunc_Set_SBC_bz3, SatFunc_Set_BC, endrun
+readParams,
+integer, intent(in)                               :: begc,endc
+type(soilstate_type) , intent(in)                 :: soilstate_vars

@@ -1,0 +1,10 @@
+sub_param, yr, ncid
+sub_out, yr
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, shr_sys_abort
+readParams,
+type(file_desc_t) , intent(inout) :: ncid ! netcdf id for the restart file
+integer           , intent(out)   :: yr   ! year from restart file

@@ -1,0 +1,7 @@
+sub_in, np, nl, ng, nc
+sub_out, np, nl, ng, nc
+global_ro
+global_wo
+global_mod
+global_non
+calls

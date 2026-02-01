@@ -1,0 +1,7 @@
+sub_in, fy, jlast, ymass, jfirst, jm, jord, iv, q, vc, im
+sub_out, fy
+global_ro
+global_wo
+global_mod
+global_non
+calls

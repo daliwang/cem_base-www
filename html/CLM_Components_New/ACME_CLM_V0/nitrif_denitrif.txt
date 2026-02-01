@@ -1,0 +1,7 @@
+sub_in, carbonflux_vars, ch4_vars, num_soilc, filter_soilc, bounds, soilstate_vars, temperature_vars, nitrogenflux_vars, nitrogenstate_vars, waterstate_vars
+sub_out
+global_ro, soilstate_vars%bsw_col, soilstate_vars%soilpsi_col, waterstate_vars%h2osoi_vol_col, ch4_vars%conc_o2_unsat_col, soilstate_vars%sucsat_col, col%dz, ch4_vars%finundated_col, waterstate_vars%h2osoi_liq_col, ch4_vars%conc_o2_sat_col, soilstate_vars%cellorg_col, nitrogenstate_vars%smin_no3_vr_col, carbonflux_vars%phr_vr_col, soilstate_vars%bd_col, carbonflux_vars%w_scalar_col, soilstate_vars%watfc_col, temperature_vars%t_soisno_col, ch4_vars%o2_decomp_depth_unsat_col, ch4_vars%o2_decomp_depth_sat_col, soilstate_vars%watsat_col, nitrogenstate_vars%smin_nh4_vr_col, carbonflux_vars%t_scalar_col
+global_wo, nitrogenflux_vars%pot_f_denit_vr_col, nitrogenflux_vars%n2_n2o_ratio_denit_vr_col
+global_mod, nitrogenflux_vars%k_nitr_vr_col, nitrogenflux_vars%k_nitr_h2o_vr_col, nitrogenflux_vars%ratio_k1_col, nitrogenflux_vars%k_nitr_ph_vr_col, nitrogenflux_vars%diffus_col, nitrogenflux_vars%r_psi_col, nitrogenflux_vars%soil_bulkdensity_col, nitrogenflux_vars%smin_no3_massdens_vr_col, nitrogenflux_vars%soil_co2_prod_col, nitrogenflux_vars%pot_f_nit_vr_col, nitrogenflux_vars%k_nitr_t_vr_col, nitrogenflux_vars%fr_WFPS_col, nitrogenflux_vars%fmax_denit_carbonsubstrate_vr_col, nitrogenflux_vars%fmax_denit_nitrate_vr_col, nitrogenflux_vars%f_denit_base_vr_col, nitrogenflux_vars%ratio_no3_co2_col, nitrogenflux_vars%wfps_vr_col, nitrogenflux_vars%anaerobic_frac_col
+global_non
+calls

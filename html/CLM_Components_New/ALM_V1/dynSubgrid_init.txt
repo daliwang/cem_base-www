@@ -1,0 +1,10 @@
+sub_param, dgvs_vars, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, dynHarvest_init, dynCNDV_init, dynpft_init, compute_higher_order_weights
+readParams,
+type(bounds_type), intent(in)    :: bounds  ! processor-level bounds
+type(dgvs_type)  , intent(inout) :: dgvs_vars

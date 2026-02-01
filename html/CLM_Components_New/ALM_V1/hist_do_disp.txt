@@ -1,0 +1,15 @@
+sub_param, if_disphist, rstwr, if_stop, nlend, ntapes, hist_mfilt, hist_ntimes
+sub_out, if_disphist, if_stop
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in)  :: ntapes              !actual number of history tapes
+integer, intent(in)  :: hist_ntimes(ntapes) !current numbers of time samples on history tape
+integer, intent(in)  :: hist_mfilt(ntapes)  !maximum number of time samples per tape
+logical, intent(out) :: if_stop             !true => last time step of run
+logical, intent(out) :: if_disphist(ntapes) !true => save and dispose history file
+logical, intent(in)  :: rstwr
+logical, intent(in)  :: nlend

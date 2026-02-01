@@ -1,0 +1,7 @@
+sub_in, num2d, ubl, carr, lbl, ubc, larr, c2l_scale_type, lbc
+sub_out, larr
+global_ro, itype, wtlunit, active, itype, landunit, canyon_hwr
+global_wo
+global_mod
+global_non, ncolumns, coli
+calls, endrun

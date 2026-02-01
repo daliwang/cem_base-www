@@ -1,0 +1,12 @@
+sub_param, bounds, carr, p2c_scale_type, parr
+sub_out, carr
+global_ro, pft%wtcol, pft%column
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in)  :: parr( bounds%begp: )         ! patch array
+real(r8), intent(out) :: carr( bounds%begc: )         ! column array
+character(len=*), intent(in) :: p2c_scale_type ! scale type

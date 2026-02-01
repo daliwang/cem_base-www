@@ -1,0 +1,7 @@
+sub_in, perpetual_run, stop_tod, start_tod, mpicom_ocn, stop_ymd, ref_tod, calendar, ocn_out, start_ymd, perpetual_ymd, ref_ymd
+sub_out, ocn_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ocn_spmd_init, sstini, shr_sys_abort, ocn_read_inidat, cam_pio_openfile, ocn_types_alloc, sstint, ocn_alloc, mpi_bcast, getfil, ocn_read_restart, freeunit

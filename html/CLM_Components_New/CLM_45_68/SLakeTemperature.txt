@@ -1,0 +1,13 @@
+sub_in, num_lakec, filter_lakec, filter_lakep, num_lakep, bounds
+sub_out
+global_ro, pef%sabg_lyr, cps%snl, cws%h2osoi_ice, cps%lakedepth, cch4%lake_raw, pef%fsr_nir_d, cps%ws, cps%dz, cps%etal, cps%z, pft%column, pef%sabg, pef%fsds_nir_i, cps%dz_lake, pef%fsds_nir_d, cps%z_lake, pef%fsr_nir_i, cws%h2osno, cws%h2osoi_liq, cps%ks, ces%t_grnd
+global_wo, cps%frac_iceold, cwf%qflx_snofrz_col, pef%eflx_grnd_lake, cps%savedtke1
+global_mod, pef%eflx_soil_grnd, ces%hc_soi, pef%eflx_gnet, ces%hc_soisno, pps_a%grnd_ch4_cond, cebal%errsoi, cws%lake_icefrac, cws%lake_icethick, pef%eflx_sh_grnd, ces%t_soisno, pef%eflx_sh_tot, ces%t_lake
+global_non, col%gridcell, pft%gridcell
+calls, Tridiagonal, PhaseChange_Lake, SoilThermProp_Lake
+
+Tree height: 26
+5-, SoilThermProp_Lake, 
+11+, Tridiagonal, 
+12+, PhaseChange_Lake, 
+20+, SoilThermProp_Lake, 

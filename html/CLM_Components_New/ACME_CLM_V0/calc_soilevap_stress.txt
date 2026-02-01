@@ -1,0 +1,7 @@
+sub_in, bounds, filter_nolakec, waterstate_vars, num_nolakec, soilstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, soilstate_vars%soilbeta_col
+calls, endrun, calc_beta_leepielke1992

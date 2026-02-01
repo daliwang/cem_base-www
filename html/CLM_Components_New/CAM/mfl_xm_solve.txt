@@ -1,0 +1,7 @@
+sub_in, rhs, xm, solve_type, lhs, err_code
+sub_out, err_code, xm
+global_ro
+global_wo
+global_mod
+global_non
+calls, tridag_solve

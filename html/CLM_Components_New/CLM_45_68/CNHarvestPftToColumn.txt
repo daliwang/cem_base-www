@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, pcf%hrv_deadcrootc_to_litter, pcf%hrv_deadcrootc_storage_to_litter, col%npfts, pnf%hrv_livestemn_storage_to_litter, pftcon%fr_flig, pcf%hrv_livecrootc_xfer_to_litter, pftcon%lf_flab, pnf%hrv_livestemn_xfer_to_litter, pftcon%fr_flab, pnf%hrv_deadstemn_to_prod10n, pps%froot_prof, pcf%hrv_livestemc_storage_to_litter, pcf%hrv_deadstemc_xfer_to_litter, pnf%hrv_livecrootn_storage_to_litter, pcf%hrv_livestemc_xfer_to_litter, pnf%hrv_leafn_xfer_to_litter, pnf%hrv_deadcrootn_to_litter, pcf%hrv_leafc_storage_to_litter, pnf%hrv_deadstemn_xfer_to_litter, pcf%hrv_livecrootc_storage_to_litter, pps%croot_prof, pnf%hrv_leafn_to_litter, pcf%hrv_leafc_to_litter, pcf%hrv_frootc_xfer_to_litter, pnf%hrv_deadstemn_to_prod100n, pnf%hrv_frootn_to_litter, pnf%hrv_frootn_xfer_to_litter, pcf%hrv_livecrootc_to_litter, pps%leaf_prof, pnf%hrv_livecrootn_to_litter, pft%itype, pcf%hrv_gresp_storage_to_litter, pcf%hrv_deadstemc_to_prod10c, pnf%hrv_deadcrootn_xfer_to_litter, pftcon%lf_flig, pftcon%fr_fcel, pnf%hrv_retransn_to_litter, pcf%hrv_leafc_xfer_to_litter, pnf%hrv_deadcrootn_storage_to_litter, pnf%hrv_livestemn_to_litter, pftcon%lf_fcel, pnf%hrv_deadstemn_storage_to_litter, pnf%hrv_livecrootn_xfer_to_litter, pps%stem_prof, pcf%hrv_frootc_storage_to_litter, pcf%hrv_deadcrootc_xfer_to_litter, pft%wtcol, pcf%hrv_livestemc_to_litter, pcf%hrv_deadstemc_to_prod100c, pcf%hrv_frootc_to_litter, pcf%hrv_deadstemc_storage_to_litter, pnf%hrv_frootn_storage_to_litter, col%pfti, pcf%hrv_gresp_xfer_to_litter, pnf%hrv_leafn_storage_to_litter
+global_wo
+global_mod, ccf%harvest_c_to_litr_cel_c, cnf%hrv_deadstemn_to_prod100n, ccf%harvest_c_to_cwdc, ccf%hrv_deadstemc_to_prod100c, cnf%hrv_deadstemn_to_prod10n, cnf%harvest_n_to_litr_met_n, ccf%harvest_c_to_litr_met_c, ccf%harvest_c_to_litr_lig_c, cnf%harvest_n_to_litr_lig_n, cnf%harvest_n_to_cwdn, ccf%hrv_deadstemc_to_prod10c, cnf%harvest_n_to_litr_cel_n
+global_non
+calls
+
+Tree height: 3

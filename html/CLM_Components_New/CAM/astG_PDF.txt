@@ -1,0 +1,7 @@
+sub_in, Ga_out, a_out, U_in, qv_in, landfrac_in, ncol, snowh_in, p_in
+sub_out, a_out, Ga_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

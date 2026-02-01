@@ -1,0 +1,9 @@
+sub_param, cc_p
+sub_out
+global_ro
+global_wo, currentcohort%resp_acc, cc_p%froot_mr, currentcohort%cfa, currentcohort%gpp_clm, currentcohort%seed_prod, currentcohort%leaf_md, currentcohort%gpp, cc_p%resp_g, currentcohort%md, cc_p%resp_m, currentcohort%year_net_uptake, currentcohort%resp, cc_p%fire_mort, currentcohort%npp_clm, cc_p%rd, cc_p%livestem_mr, currentcohort%carbon_balance, currentcohort%npp_acc, currentcohort%storage_flux, currentcohort%root_md, cc_p%status_coh, currentcohort%npp, currentcohort%dmort, cc_p%livecroot_mr, cc_p%NV, currentcohort%leaf_litter, currentcohort%ts_net_uptake, currentcohort%resp_clm, currentcohort%gscan, currentcohort%treesai, currentcohort%gpp_acc
+global_mod
+global_non, cc_p
+calls
+readParams,
+type (cohort), intent(inout), target  :: cc_p

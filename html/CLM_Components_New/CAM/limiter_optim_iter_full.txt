@@ -1,0 +1,7 @@
+sub_in, maxp, ptens, dpmass, minp, sphweights
+sub_out, maxp, minp, ptens
+global_ro
+global_wo
+global_mod
+global_non
+calls

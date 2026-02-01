@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%lflitcn, pftcon%leafcn, clm3%g%l%c%p%pcs%frootc, clm3%g%l%c%p%pcs%leafc, clm3%g%l%c%p%pepv%bglfr, pftcon%frootcn, clm3%g%l%c%p%itype
+global_wo, clm3%g%l%c%p%pnf%leafn_to_retransn, clm3%g%l%c%p%pnf%frootn_to_litter
+global_mod, clm3%g%l%c%p%pcf%leafc_to_litter, clm3%g%l%c%p%pnf%leafn_to_litter, clm3%g%l%c%p%pcf%frootc_to_litter
+global_non
+calls
+
+Tree height: 2

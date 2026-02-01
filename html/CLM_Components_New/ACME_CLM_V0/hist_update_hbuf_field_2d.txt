@@ -1,0 +1,7 @@
+sub_in, bounds, num2d, t, f
+sub_out
+global_ro, %field%hpindex, %field%l2g_scale_type, %field%end1d, %hlist, %field%p2c_scale_type, %field%type1d, %field%type1d_out, %avgflag, clmptr_ra, %field%c2l_scale_type, %field%no_snow_behavior, %field%beg1d
+global_wo
+global_mod, col%active, pft%active, >lun%active, tape, tape
+global_non
+calls, l2g, c2g, endrun, p2g, hist_set_snow_field_2d

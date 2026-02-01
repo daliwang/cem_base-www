@@ -1,0 +1,7 @@
+sub_in, m, temp, mask, press, ncol, hno3_cond, hno3_gas, radius_nat, sad_nat, h2o_avail, hno3_avail
+sub_out, sad_nat, hno3_cond, radius_nat
+global_ro
+global_wo
+global_mod
+global_non
+calls, nat_cond

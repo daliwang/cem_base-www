@@ -1,0 +1,9 @@
+sub_param, g
+sub_out
+global_ro, currentPatch%tallest, currentCohort%shorter, currentPatch%younger, currentSite%oldest_patch
+global_wo, %status_coh, %leaf_litter
+global_mod, %laimemory, %balive, %bl, %bstore
+global_non, gridCellEdState
+calls
+readParams,
+integer,intent(in) :: g

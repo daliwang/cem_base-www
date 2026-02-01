@@ -1,0 +1,7 @@
+sub_in, num_soilc, c14_cnveg_carbonstate_inst, filter_soilc, c14_soilbiogeochem_carbonstate_inst, filter_soilp, num_soilp
+sub_out
+global_ro, spinup_factor
+global_wo
+global_mod, frootc_storage, xsmrpool, deadcrootc_xfer, deadstemc_storage, livecrootc, leafc_storage, livecrootc_storage, deadstemc, frootc_xfer, frootc, pft_ctrunc, gresp_xfer, cpool, leafc, gresp_storage, livestemc, decomp_cpools_vr, livestemc_xfer, deadcrootc, seedc, deadcrootc_storage, leafc_xfer, livecrootc_xfer, livestemc_storage, deadstemc_xfer
+global_non
+calls

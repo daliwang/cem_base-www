@@ -1,0 +1,7 @@
+sub_in, f11vmr, ch4vmr, f12vmr, n2ovmr, co2vmr
+sub_out, ch4vmr, f11vmr, f12vmr, n2ovmr, co2vmr
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_dels

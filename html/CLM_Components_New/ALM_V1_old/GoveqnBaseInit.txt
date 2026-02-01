@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%name, name, NONE| this%nvars_needed_from_other_goveqns, nvars_needed_from_other_goveqns, NONE| this%dtime, dtime, NONE| this%id_in_list, id_in_list, NONE| this%id, id, NONE
+global_mod
+global_non
+calls, ConditionListInit
+readParams,

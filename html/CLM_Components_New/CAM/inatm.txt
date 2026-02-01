@@ -1,0 +1,7 @@
+sub_in, taucmcl, inflag, cfc22vmr, tauaer, wbrodl, clwpmcl, tz, cldfmc, icld, dgesmc, pz, cfc12vmr, o2vmr, coldry, wkl, co2vmr, liqflag, iaer, semiss, h2ovmr, tavel, tbound, ch4vmr, tsfc, emis, cfc11vmr, taucmc, ccl4vmr, liqflglw, ciwpmcl, relqmcl, reicmcl, ciwpmc, pavel, iceflglw, cldfmcl, play, pwvcm, inflglw, plev, taua, tlev, n2ovmr, iplon, o3vmr, iceflag, nlay, wx, tlay, clwpmc, relqmc, reicmc
+sub_out, taucmc, inflag, ciwpmc, pavel, tz, cldfmc, wbrodl, liqflag, coldry, wkl, taua, pz, pwvcm, dgesmc, reicmc, relqmc, clwpmc, tbound, tavel, iceflag, wx, semiss
+global_ro
+global_wo
+global_mod
+global_non
+calls

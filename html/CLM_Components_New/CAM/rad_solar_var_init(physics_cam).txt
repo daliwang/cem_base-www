@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_number_sw_bands, integrate_spectrum, endrun, rebin, get_sw_spectral_boundaries

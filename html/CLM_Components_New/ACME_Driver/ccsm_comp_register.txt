@@ -1,0 +1,8 @@
+sub_in, drvcomp, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_CplCompSetEntryPoint
+calls_ln, ESMF_CplCompSetEntryPoint@3909, ESMF_CplCompSetEntryPoint@3903, ESMF_CplCompSetEntryPoint@3906

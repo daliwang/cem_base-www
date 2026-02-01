@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| col%landunit, landunit, NONE| pft%landunit, landunit, NONE| lun%gridcell, gridcell, NONE| lun%itype, itype, NONE| pft%column, column, NONE
+global_wo| grc%landunit_indices, landunit_indices, NONE| lun%ncolumns, ncolumns, NONE| lun%npfts, npfts, NONE| col%npfts, npfts, NONE
+global_mod| lun%colf, colf, NONE| lun%pftf, pftf, NONE| col%pftf, pftf, NONE| lun%pfti, pfti, NONE| col%pfti, pfti, NONE| lun%coli, coli, NONE
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds  ! bounds

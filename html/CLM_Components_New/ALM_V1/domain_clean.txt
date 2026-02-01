@@ -1,0 +1,8 @@
+sub_param, domain
+sub_out
+global_ro
+global_wo, domain%nj, domain%ns, domain%clmlevel, domain%nbeg, domain%nend, domain%topo, domain%set, domain%decomped, domain%ni
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,

@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, num_nolakec, bounds
+sub_out
+global_ro, ces%t_grnd, col%gridcell, bounds%begg, cef%eflx_bot
+global_wo
+global_mod
+global_non, col%landunit, pft%wtcol, cps%frac_sno_eff, clm_a2l%forc_pbot, cps%dz, pef%eflx_gnet, lun%itype, pef%eflx_soil_grnd, col%pfti, pft%wtgcell, cps%frac_h2osfc
+calls, VecGetArrayF90, VecRestoreArrayF90

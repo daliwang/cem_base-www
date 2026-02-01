@@ -1,0 +1,7 @@
+sub_in, tn, calday, cpair, mbar, lchnk, o1, aur_hrate, rlats, ncol, o2, rlons, pmid
+sub_out, aur_hrate
+global_ro
+global_wo
+global_mod
+global_non
+calls, aurora_cusp, total_ion_prod, sunloc, aurora_heat

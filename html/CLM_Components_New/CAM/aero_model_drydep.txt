@@ -1,0 +1,7 @@
+sub_in, ustar, dt, pbuf, state, cam_in, ptend, cam_out, obklen
+sub_out
+global_ro
+global_wo
+global_mod, fldcw
+global_non, cam_in%fv, cam_in%ocnfrac, cam_in%icefrac, cam_in%ram1, cam_in%landfrac
+calls, set_srf_drydep, set_srf_wetdep, t_startf, pbuf_get_field, calcram, d3ddflux, modal_aero_bcscavcoef_get, outfld, modal_aero_wateruptake_dr, dust_sediment_tend, wetdepa_v2, physics_ptend_init, modal_aero_calcsize_sub, wetdep_inputs_set, modal_aero_depvel_part, t_stopf

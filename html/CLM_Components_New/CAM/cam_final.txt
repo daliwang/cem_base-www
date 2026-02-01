@@ -1,0 +1,7 @@
+sub_in, cam_in, cam_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, hub2atm_deallocate, stepon_final, mpisend, cam_initfiles_close, mpirecv, phys_final, atm2hub_deallocate, shr_sys_flush

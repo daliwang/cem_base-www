@@ -1,0 +1,7 @@
+sub_in, smax, zeta, nmode, smc, eta
+sub_out, smax
+global_ro
+global_wo
+global_mod
+global_non
+calls

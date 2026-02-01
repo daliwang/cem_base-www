@@ -1,0 +1,7 @@
+sub_in, pmid, tend_level, ubi, yv, piln, dse, dttke, rdpm, ti, do_taper, ubm, lat, q, egwdffi, taucd, nm, tau, ncol, dpm, effgw, t, ni, ngwv, qtgw, dt, vtgw, pint, gwut, rhoi, ttgw, src_level, c, dttdf, utgw, kvtt, xv
+sub_out, gwut, qtgw, ttgw, vtgw, dttke, taucd, utgw, tau
+global_ro
+global_wo
+global_mod
+global_non
+calls, gw_ediff, decomp%finalize, gw_diff_tend

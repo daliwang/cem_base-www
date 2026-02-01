@@ -1,0 +1,7 @@
+sub_in, nlend, ntapes, if_disphist, hist_mfilt, if_stop, rstwr, hist_ntimes
+sub_out, if_disphist, if_stop
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, name, gcid, q
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, micro_mg_cam_init_cnst

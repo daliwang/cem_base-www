@@ -1,0 +1,7 @@
+sub_in, n2cc, euv_prates, o2cc, zkm, occ, nlev, zen
+sub_out, euv_prates
+global_ro
+global_wo
+global_mod
+global_non
+calls, slant_col, sphers

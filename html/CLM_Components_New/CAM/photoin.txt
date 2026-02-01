@@ -1,0 +1,7 @@
+sub_in, tlev, aocs2, z, tlay, esfact, albedo, xfrc, prate, o3top, aant, xlwc, o2top, acbs1, o3, along, dt_xdiag, ut, rh, nw, asal, ads, aso4, airlev, idate, zen, alat, acbs2, asoa, aocs1
+sub_out, prate, dt_xdiag
+global_ro
+global_wo
+global_mod
+global_non
+calls, rtlink, setz, setair, sphers, setozo, setcld, airmas, endrun, pchem, set_o2_xsect, setaer

@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, %bstore, %bsw, %bdead, currentSite%oldest_patch, currentPatch%younger, %br, %pft, %bl, copyc, %area, >currentCohort%shorter, copyc
+global_wo, %NCL_p, %ncl_p
+global_mod, %canopy_layer, copyc%canopy_layer, currentCohort%shorter, currentPatch%tallest, copyc%n, %n, %CWD_BG, %root_litter, copyc%c_area, %c_area, copyc%dbh, %dbh, %CWD_AG, %leaf_litter, %excl_weight, %prom_weight
+global_non, currentCohort%taller, null, currentCohort, copyc
+calls, fuse_cohorts, terminate_cohorts, copy_cohort

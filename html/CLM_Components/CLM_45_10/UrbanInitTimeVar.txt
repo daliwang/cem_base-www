@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit, itype, gridcell, landunit, itype
+global_wo, fsa_u, eflx_building_heat, t_ref2m_u, eflx_soil_grnd_u, qcharge, eflx_wasteheat_pft, eflx_heat_from_ac_pft, t_ref2m_min_u, t_building, qaf, eflx_lh_tot_u, eflx_traffic, eflx_anthro, fcov, qflx_runoff_u, t_ref2m_max_u, eflx_snomelt_u, rh_ref2m_u, fsat, eflx_urban_ac, eflx_sh_tot_u, eflx_wasteheat, taf, eflx_urban_heat, eflx_traffic_pft, t_grnd_u, eflx_lwrad_net_u
+global_mod
+global_non
+calls, get_proc_bounds

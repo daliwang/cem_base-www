@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro, tape
+global_wo
+global_mod
+global_non
+calls, ncd_io, hfields_1dinfo, ncd_defvar, endrun

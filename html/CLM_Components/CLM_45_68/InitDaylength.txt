@@ -1,0 +1,7 @@
+sub_in, declin, declinm1, bounds
+sub_out
+global_ro, lat
+global_wo, dayl, prev_dayl
+global_mod
+global_non, begg, endg
+calls

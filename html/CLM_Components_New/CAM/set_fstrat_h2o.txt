@@ -1,0 +1,7 @@
+sub_in, ncol, h2o, lchnk, calday, ltrop, pmid
+sub_out, h2o
+global_ro
+global_wo
+global_mod
+global_non
+calls

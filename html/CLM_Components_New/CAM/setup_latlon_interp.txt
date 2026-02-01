@@ -1,0 +1,7 @@
+sub_in, interpdata, elem, par
+sub_out, interpdata
+global_ro
+global_wo
+global_mod
+global_non
+calls, cube_facepoint_ne, abortmp, cube_facepoint_unstructured, MPI_Allreduce, interp_init, syncmp

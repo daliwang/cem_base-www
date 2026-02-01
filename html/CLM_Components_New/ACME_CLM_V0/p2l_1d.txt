@@ -1,0 +1,7 @@
+sub_in, c2l_scale_type, larr, p2c_scale_type, parr, bounds
+sub_out, larr
+global_ro, pft%wtlunit, lun%canyon_hwr, pft%column, col%landunit, pft%landunit
+global_wo
+global_mod
+global_non
+calls, endrun

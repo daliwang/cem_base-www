@@ -1,0 +1,7 @@
+sub_in, pdel, tend_s, t, tend_s_snwevmlt, flxprec, prdprec, cldfrc, snow, deltat, pmid, lchnk, ntsnprd, q, tend_s_snwprd, flxsnow, prec, tend_q, ntprprd, ncol
+sub_out, flxprec, tend_s_snwevmlt, ntsnprd, tend_s, tend_q, prec, ntprprd, tend_s_snwprd, snow, flxsnow
+global_ro
+global_wo
+global_mod
+global_non
+calls, cldfrc_fice, qsat

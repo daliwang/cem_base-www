@@ -1,0 +1,12 @@
+sub_param, lsz:2, gsMap_l:3, bounds:1, dom_l:4
+sub_out
+global_ro| bounds%begg, begg, NONE| ldomain%latc, latc, NONE| ldomain%mask, mask, NONE| ldomain%lonc, lonc, NONE| ldomain%area, area, NONE| ldomain%frac, frac, NONE
+global_wo
+global_mod
+global_non
+calls, mct_gGrid_init, mct_gGrid_importIAttr, mct_gsMap_orderedPoints, mct_gGrid_importRattr, mct_gGrid_importRAttr
+readParams,
+type(bounds_type), intent(in)  :: bounds  ! bounds
+integer        , intent(in)    :: lsz     ! land model domain data size
+type(mct_gsMap), intent(inout) :: gsMap_l ! Output land model MCT GS map
+type(mct_ggrid), intent(out)   :: dom_l   ! Output domain information for land model

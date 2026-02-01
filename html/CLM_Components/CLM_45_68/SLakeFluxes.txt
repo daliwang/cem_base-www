@@ -1,0 +1,7 @@
+sub_in, num_lakec, filter_lakec, filter_lakep, num_lakep, bounds
+sub_out
+global_ro, sabg, dz_lake, fsr_nir_d, forc_t, lakedepth, fsds_nir_d, forc_th, h2osoi_liq, snl, forc_pbot, forc_q, forc_u, lakefetch, h2osoi_ice, t_lake, forc_snow, dz, t_soisno, forc_v, fsds_nir_i, forc_lwrad, forc_rho, forc_rain, savedtke1, fsr_nir_i, sabg_lyr
+global_wo, ks, qflx_evap_tot, qflx_snwcp_ice, eflx_soil_grnd, t_ref2m, qflx_prec_grnd, t_veg, ram1_lake, taux, rh_ref2m, ws, eflx_lwrad_net, tauy, eflx_lh_grnd, qflx_snwcp_liq, sabg_chk, z0qg, lake_raw, eflx_gnet, z0hg
+global_mod, t_grnd, forc_hgt_q_pft, forc_hgt_u_pft, eflx_lh_tot, ram1, eflx_lwrad_out, ust_lake, qflx_evap_soi, forc_hgt_t_pft, eflx_sh_tot, q_ref2m, eflx_sh_grnd
+global_non, endp, begp, z0mg
+calls, QSat, FrictionVelocity, MoninObukIni

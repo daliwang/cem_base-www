@@ -1,0 +1,7 @@
+sub_in, delpxy, psxy, ptop, cappa, pelnxy, pexy, grid, ptxy, pkxy, zvir, tracer, pkzxy
+sub_out, delpxy, psxy, pelnxy, pexy, tracer, pkzxy, pkxy, ptxy
+global_ro
+global_wo
+global_mod
+global_non
+calls, parcollective, t_startf, shr_reprosum_calc, t_stopf

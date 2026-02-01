@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, bsw, zi, urbpoi, lakpoi, landunit, landunit, watsat, column, sucsat, itype, dz, itype, snl, ifspecial
+global_wo, mss_dsttot, snw_rds_top, qflx_snow_melt, h2osfc, t_ref2m_u, mss_ocpho, mss_cnc_bcphi, int_snow, mss_dst1, mss_ocphi, irrig_rate, mss_bcphi, t_h2osfc, t_ref2m, mss_cnc_dst3, t_veg, snow_depth, mss_bcpho, frost_table, eflx_lwrad_out, fsat, frac_h2osfc, qflx_irrig, sno_liq_top, h2ocan, mss_cnc_dst4, mss_bctot, mss_cnc_bcpho, mss_cnc_dst1, snw_rds, t_ref2m_r, mss_cnc_ocphi, mss_cnc_dst2, qflx_h2osfc_surf, zwt, mss_cnc_ocpho, tsoi17, mss_dst4, n_irrig_steps_left, mss_dst2, mss_octot, mss_dst3, h2ocan, zwt_perched
+global_mod, t_grnd, h2osoi_vol, t_soisno, h2osno, h2osoi_ice, h2osoi_liq, soilpsi, wa, t_lake
+global_non, mss_oc_col, mss_dst_top, mss_bc_col, mss_bc_top, mss_oc_top, mss_dst_col
+calls, get_proc_bounds, snow_depth2lev, perturbIC

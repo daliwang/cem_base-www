@@ -1,0 +1,7 @@
+sub_in, oldcloud, cld_abs_od, diagnosticindex, state, oldice, pbuf, oldliq
+sub_out, cld_abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, slingo_liq_get_rad_props_lw

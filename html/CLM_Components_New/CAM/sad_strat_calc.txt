@@ -1,0 +1,7 @@
+sub_in, hno3_cond, temper, pbuf, hno3_gas, m, ncol, lchnk, sad_sage, sad_strat, press, h2o_gas, radius_strat, h2o_cond
+sub_out, hno3_gas, hno3_cond, sad_strat, radius_strat
+global_ro
+global_wo
+global_mod
+global_non
+calls, sad_strat_calc_rad, nat_sad_calc, outfld, ice_sad_calc, calc_radius_lbs, sulfate_sad_calc, nat_sat_temp

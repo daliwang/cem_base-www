@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit, gridcell, itype, column
+global_wo, wtlunit
+global_mod, wtgcell, wtcol
+global_non, p, g, l
+calls, get_curr_date, pftdyn_getharvest, pftdyn_getdata, get_proc_bounds

@@ -1,0 +1,7 @@
+sub_in, cp_pnt
+sub_out
+global_ro, currentPatch, area, currentCohort, pft, seed_prod, n
+global_wo
+global_mod, seeds_in
+global_non, currentPatch%siteptr
+calls

@@ -1,0 +1,7 @@
+sub_in, jlasts, qin, klasts, kfirsts, mq, klastr, qout, jlastr, ilastr, jfirstr, comm, ifirstr, modc, mend, send_bl, jfirsts, kfirstr, mbeg, ifirsts, ilasts, recv_bl
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mp_swaptrirr, t_stopf, t_startf, mpi_irecv, MPI_RSEND, mpi_irsend, MPI_COMM_RANK, MPI_IRSEND, MPI_SEND, MPI_ISEND, mpi_isend, MPI_IRECV, mpi_send, MPI_WAIT, mpi_rsend

@@ -1,0 +1,7 @@
+sub_in, aerosol_inst, num_nosnowc, soil_water_retention_curve, filter_hydrologyc, bounds, atm2lnd_inst, filter_nolakec, temperature_inst, soilhydrology_inst, num_urbanc, waterflux_inst, num_nolakec, filter_snowc, filter_urbanc, energyflux_inst, num_snowc, num_hydrologyc, waterstate_inst, filter_nosnowc, soilstate_inst
+sub_out, aerosol_inst
+global_ro, frac_h2osfc, sucsat, snow_depth, ctype, bsw, frac_sno_eff, watsat, t_h2osfc, smpmin, snl
+global_wo, snowdp, soilpsi, t_grnd_u, h2osno_top, snw_rds, snw_rds_top, snot_top, sno_liq_top, wf, t_grnd, dTdz_top, wf2, t_grnd_r
+global_mod, h2osoi_liqice_10cm, snowice, zi, t_soisno, tsoi17, h2osoi_ice, dz, t_soi_10cm, snow_persistence, snowliq, z, h2osoi_vol, h2osoi_liq, smp_l
+global_non, waterstate_inst%begwb_col
+calls, DivideSnowLayers, WaterTable, SoilWater, BuildSnowFilter, CombineSnowLayers, SurfaceRunoff, SnowWater, SnowCompaction, CLMVICMap, Infiltration

@@ -1,0 +1,7 @@
+sub_in, stream, numbers
+sub_out, numbers
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,16 @@
+sub_param, endo, minindx, bego, endi, activei, ncido, activeo, dimname, begi, ncidi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_subgrid_dist, set_mindist, set_subgrid_glob
+readParams,
+character(len=*)  , intent(inout) :: dimname
+integer           , intent(in)    :: begi, endi
+integer           , intent(in)    :: bego, endo
+type(file_desc_t) , intent(inout) :: ncidi
+type(file_desc_t) , intent(inout) :: ncido
+logical           , intent(out)   :: activei(begi:endi)
+logical           , intent(out)   :: activeo(bego:endo)
+integer           , intent(out)   :: minindx(bego:endo)

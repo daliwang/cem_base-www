@@ -1,0 +1,26 @@
+sub_param, ch4_vars:12, filter_soilc:4, carbonstate_vars:13, filter_soilp:6, cnstate_vars:11, canopystate_vars:7, soilstate_vars:8, waterstate_vars:10, temperature_vars:9, phosphorusstate_vars:17, nitrogenflux_vars:16, num_soilc:3, nitrogenstate_vars:15, num_soilp:5, clm_bgc_data:1, carbonflux_vars:14, phosphorusflux_vars:18, bounds:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, clm_bgc_get_data, CNDecompAlloc, clm_bgc_update_data
+readParams,
+type(bounds_type)                   , intent(in)    :: bounds
+integer                             , intent(in)    :: num_soilc          ! number of soil columns in filter
+integer                             , intent(in)    :: filter_soilc(:)    ! filter for soil columns
+integer                             , intent(in)    :: num_soilp          ! number of soil patches in filter
+integer                             , intent(in)    :: filter_soilp(:)    ! filter for soil patches
+type(canopystate_type)              , intent(inout) :: canopystate_vars
+type(soilstate_type)                , intent(inout) :: soilstate_vars
+type(temperature_type)              , intent(inout) :: temperature_vars
+type(waterstate_type)               , intent(inout) :: waterstate_vars
+type(cnstate_type)                  , intent(inout) :: cnstate_vars
+type(ch4_type)                      , intent(inout) :: ch4_vars
+type(carbonstate_type)              , intent(inout) :: carbonstate_vars
+type(carbonflux_type)               , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type)            , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)             , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type)          , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)           , intent(inout) :: phosphorusflux_vars
+type(clm_bgc_interface_data_type)   , intent(inout) :: clm_bgc_data

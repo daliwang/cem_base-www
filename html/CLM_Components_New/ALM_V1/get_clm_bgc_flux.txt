@@ -1,0 +1,16 @@
+sub_param, nitrogenflux_vars, carbonflux_vars, filter_soilc, bounds, clm_bgc_data, num_soilc, phosphorusflux_vars, cnstate_vars
+sub_out
+global_ro, nitrogenflux_vars%supplement_to_sminn_vr_col, phosphorusflux_vars%sminp_net_transport_vr_col, nitrogenflux_vars%plant_ndemand_vr_col, phosphorusflux_vars%pdep_to_sminp_col, carbonflux_vars%externalc_to_decomp_cpools_col, nitrogenflux_vars%ndep_to_sminn_col, nitrogenflux_vars%soyfixn_to_sminn_col, phosphorusflux_vars%supplement_to_sminp_vr_col, cnstate_vars%ndep_prof_col, phosphorusflux_vars%externalp_to_decomp_ppools_col, phosphorusflux_vars%fert_p_to_sminp_col, cnstate_vars%nfixation_prof_col, nitrogenflux_vars%externaln_to_decomp_npools_col, phosphorusflux_vars%plant_pdemand_vr_col, nitrogenflux_vars%fert_to_sminn_col, nitrogenflux_vars%nfix_to_sminn_col, nitrogenflux_vars%no3_net_transport_vr_col
+global_wo, clm_bgc_data%externaln_to_decomp_npools_col, clm_bgc_data%sminp_net_transport_vr_col, clm_bgc_data%externalp_to_decomp_ppools_col, clm_bgc_data%externalp_to_labilep_col, clm_bgc_data%no3_net_transport_vr_col, clm_bgc_data%externalc_to_decomp_cpools_col, clm_bgc_data%externalp_to_solutionp_col, clm_bgc_data%plant_pdemand_vr_col, clm_bgc_data%externalp_to_primp_col, clm_bgc_data%externaln_to_nh4_col, clm_bgc_data%plant_ndemand_vr_col
+global_mod, phosphorusflux_vars%plant_pdemand_col, clm_bgc_data%plant_pdemand_col, clm_bgc_data%externaln_to_no3_col, nitrogenflux_vars%plant_ndemand_col, clm_bgc_data%plant_ndemand_col
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)                  , intent(in)    :: cnstate_vars
+type(carbonflux_type)               , intent(in)    :: carbonflux_vars
+type(nitrogenflux_type)             , intent(in)    :: nitrogenflux_vars
+type(phosphorusflux_type)           , intent(in)    :: phosphorusflux_vars
+type(clm_bgc_interface_data_type)   , intent(inout) :: clm_bgc_data

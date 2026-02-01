@@ -1,0 +1,7 @@
+sub_in, pmnf_decomp_cascade, p_decomp_cpool_loss, num_soilc, cn_decomp_pools, soilbiogeochem_nitrogenstate_inst, soilbiogeochem_carbonstate_inst, bounds, soilbiogeochem_carbonflux_inst, soilbiogeochem_nitrogenflux_inst, filter_soilc, soilbiogeochem_state_inst
+sub_out, pmnf_decomp_cascade, p_decomp_cpool_loss, cn_decomp_pools
+global_ro, w_scalar, phr_vr, gross_nmin_vr, decomp_cpools_vr, cascade_donor_pool, fpi_vr, floating_cn_ratio_decomp_pools, decomp_npools_vr, initial_cn_ratio, rf_decomp_cascade, cascade_receiver_pool
+global_wo, decomp_cascade_sminn_flux_vr, sminn_to_denit_decomp_cascade_vr, decomp_cascade_ctransfer_vr, decomp_cascade_hr_vr, decomp_cascade_ntransfer_vr
+global_mod, gross_nmin, fphr, net_nmin, net_nmin_vr
+global_non, soilbiogeochem_carbonflux_inst%decomp_k_col, soilbiogeochem_nitrogenflux_inst%potential_immob_vr_col, soilbiogeochem_state_inst%pathfrac_decomp_cascade_col
+calls

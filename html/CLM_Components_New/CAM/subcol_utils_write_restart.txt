@@ -1,0 +1,7 @@
+sub_in, File
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_write_darray, get_phys_decomp

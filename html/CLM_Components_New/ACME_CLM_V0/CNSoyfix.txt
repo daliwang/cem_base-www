@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilp, nitrogenflux_vars, bounds, nitrogenstate_vars, crop_vars, cnstate_vars, waterstate_vars, filter_soilc, num_soilp
+sub_out
+global_ro, nitrogenflux_vars%plant_ndemand_patch, pft%column, nitrogenstate_vars%sminn_col, cnstate_vars%gddmaturity_patch, cnstate_vars%croplive_patch, cnstate_vars%fpg_col, crop_vars%gddplant_patch, waterstate_vars%wf_col
+global_wo
+global_mod, nitrogenflux_vars%soyfixn_patch
+global_non, nitrogenflux_vars%soyfixn_to_sminn_col
+calls, p2c

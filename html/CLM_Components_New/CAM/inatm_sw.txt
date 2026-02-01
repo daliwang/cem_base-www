@@ -1,0 +1,7 @@
+sub_in, tavel, iaer, ssaaer, tz, cicewp, ssaa, asmaer, asmc, coldry, scon, ssacld, pz, rei, h2ovmr, adjes, plev, liqflgsw, nlay, iceflgsw, iplon, ssac, nlayers, ciwp, liqflag, dge, cldfr, tbound, dyofyr, tlev, reice, taua, reliq, n2ovmr, wkl, tlay, cliqwp, ch4vmr, rel, o2vmr, iceflag, asma, adjflux, tauc, co2vmr, clwp, icld, tsfc, inflgsw, cldfrac, solvar, pdp, o3vmr, taucld, pavel, tauaer, asmcld, play, inflag
+sub_out, tavel, tz, taua, ssaa, asmc, coldry, wkl, pz, rei, rel, iceflag, asma, adjflux, tauc, clwp, nlayers, ssac, solvar, cldfrac, ciwp, pdp, liqflag, dge, pavel, inflag, tbound
+global_ro
+global_wo
+global_mod
+global_non
+calls

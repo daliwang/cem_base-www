@@ -1,0 +1,7 @@
+sub_in, filter_soilp, filter_soilc, ubc, num_soilp, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro, itype, altmax_lastyear_indx, wtcol, active, rootfr, npfts, column, pfti
+global_wo
+global_mod, leaf_prof, croot_prof, nfixation_prof, froot_prof, stem_prof, ndep_prof
+global_non
+calls, endrun

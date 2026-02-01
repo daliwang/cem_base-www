@@ -1,0 +1,12 @@
+sub_in, lni, glcmask, lnj, lns
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, subgrid_get_gcellinfo, mpi_allreduce, endrun
+
+Tree height: 2
+0 , get_proc_bounds, mpi_allreduce, 
+1-, subgrid_get_gcellinfo, 
+1+, subgrid_get_gcellinfo, endrun, 

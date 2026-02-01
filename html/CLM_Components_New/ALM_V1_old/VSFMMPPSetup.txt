@@ -1,0 +1,14 @@
+sub_param, filter_hydrologyc:5, soilstate_vars:6, num_hydrologyc:4, begc:2, waterstate_vars:7, endc:3, soilhydrology_vars:8, this:1
+sub_out
+global_ro
+global_wo| this%id, id, NONE| this%nmesh, nmesh, NONE
+global_mod| this%sysofeqns%solver_type, solver_type, NONE| this%solver_type, solver_type, NONE
+global_non
+calls, VSFMMPPSetupPetscSNESSetup, this%Init, endrun, this%meshes, VSFMMPPInitialize, this%sysofeqns%Setup
+readParams,
+integer, intent(in)                  :: begc,endc
+integer, intent(in)                  :: num_hydrologyc       ! number of column soil points in column filter
+integer, intent(in)                  :: filter_hydrologyc(:) ! column filter for soil points
+type(soilstate_type) , intent(in)    :: soilstate_vars
+type(waterstate_type)  , intent(in)  :: waterstate_vars
+type(soilhydrology_type), intent(in) :: soilhydrology_vars

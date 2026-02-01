@@ -1,0 +1,7 @@
+sub_in, filter_nourbanp, num_nourbanp, bounds
+sub_out
+global_ro, fabi_sha_z, coszen, albsni_hst, fabi_sun_z, albgri_bc, flx_absiv, albgrd, ftid, snow_depth, albgri, flx_absdn, snl, albgri_oc, ftdd, tlai_z, albgri_pur, forc_solad, flx_absin, fabd_sun_z, fabd_sha_z, ftii, albsoi, elai, albgrd_dst, fsun_z, fabi, albd, albsnd_hst, forc_solai, albi, flx_absdv, albsod, fabd, albgrd_pur, albgri_dst, albgrd_oc, albgrd_bc, nrad, frac_sno
+global_wo, fsr_vis_i, fsds_nir_d_ln, fsr, fsds_sno_ni, fsr_nir_d, fsr_sno_vd, sfc_frc_aer_sno, parsun_z, fsr_sno_vi, fsds_vis_i_ln, fsun, sfc_frc_bc_sno, sfc_frc_dst_sno, fsr_sno_ni, fsds_sno_vd, sfc_frc_oc_sno, fsr_nir_d_ln, sabg_pen, fsr_vis_d_ln, fsds_sno_vi, fsr_sno_nd, parveg_ln, parsha_z, fsds_sno_nd, fsds_vis_d_ln, fsr_vis_d, fsr_nir_i
+global_mod, laisun_z, sabg, sub_surf_abs_SW, fsa, sabg_soil, fsa_r, sfc_frc_bc, sfc_frc_oc, laisha, sfc_frc_dst, sabv, sabg_snow, fsds_nir_i, fsds_vis_i, fsds_nir_d, fsds_vis_d, laisha_z, laisun, sfc_frc_aer, sabg_lyr
+global_non, fabi_sun, tsai_z, fabd_sha, esai, fabd_sun, fabi_sha
+calls, get_curr_date, endrun

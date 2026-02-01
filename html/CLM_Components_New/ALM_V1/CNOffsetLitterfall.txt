@@ -1,0 +1,17 @@
+sub_param, phosphorusflux_vars, phosphorusstate_vars, filter_soilp, nitrogenflux_vars, cnstate_vars, num_soilp, nitrogenstate_vars, carbonflux_vars, carbonstate_vars
+sub_out
+global_ro, ecophyscon%leafcn, ecophyscon%livewdcn, nitrogenstate_vars%frootn_patch, phosphorusstate_vars%leafp_patch, cnstate_vars%offset_flag_patch, carbonstate_vars%leafc_patch, phosphorusflux_vars%ppool_to_leafp_patch, ecophyscon%frootcp, carbonstate_vars%frootc_patch, carbonstate_vars%livestemc_patch, nitrogenflux_vars%npool_to_frootn_patch, ecophyscon%leafcp, nitrogenflux_vars%npool_to_leafn_patch, phosphorusstate_vars%frootp_patch, phosphorusflux_vars%ppool_to_frootp_patch, nitrogenstate_vars%livestemn_patch, cnstate_vars%offset_counter_patch, ecophyscon%presharv, nitrogenflux_vars%npool_to_livestemn_patch, carbonflux_vars%cpool_to_leafc_patch, ecophyscon%frootcn, ecophyscon%livewdcp, ecophyscon%lflitcp, phosphorusflux_vars%ppool_to_livestemp_patch, ecophyscon%lflitcn, nitrogenstate_vars%leafn_patch, pft%itype, phosphorusstate_vars%livestemp_patch, carbonflux_vars%cpool_to_livestemc_patch, carbonflux_vars%cpool_to_frootc_patch
+global_wo, nitrogenflux_vars%frootn_to_litter_patch, phosphorusflux_vars%leafp_to_retransp_patch, phosphorusflux_vars%frootp_to_litter_patch, nitrogenflux_vars%leafn_to_retransn_patch, nitrogenflux_vars%livestemn_to_litter_patch, phosphorusflux_vars%livestemp_to_litter_patch
+global_mod, nitrogenflux_vars%leafn_to_litter_patch, carbonflux_vars%prev_leafc_to_litter_patch, carbonflux_vars%livestemc_to_litter_patch, carbonflux_vars%frootc_to_litter_patch, carbonflux_vars%prev_frootc_to_litter_patch, phosphorusflux_vars%leafp_to_litter_patch, carbonflux_vars%leafc_to_litter_patch
+global_non, phosphorusflux_vars%prev_leafp_to_litter_patch, ecophyscon%graincp, phosphorusflux_vars%prev_frootp_to_litter_patch, phosphorusflux_vars%grainp_to_food_patch, nitrogenflux_vars%grainn_to_food_patch, carbonstate_vars%grainc_patch, nitrogenflux_vars%prev_leafn_to_litter_patch, carbonflux_vars%grainc_to_food_patch, carbonflux_vars%cpool_to_grainc_patch, ecophyscon%graincn, nitrogenflux_vars%prev_frootn_to_litter_patch
+calls
+readParams,readCNPhenolParams
+integer                 , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                 , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type)      , intent(inout) :: cnstate_vars
+type(carbonstate_type)  , intent(in)    :: carbonstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars
+type(nitrogenstate_type)  , intent(in)   :: nitrogenstate_vars
+type(phosphorusstate_type), intent(in)   :: phosphorusstate_vars

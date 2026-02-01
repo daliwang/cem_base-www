@@ -1,0 +1,7 @@
+sub_in, bounds, lnd2atm_vars, nstep, wrtdia
+sub_out
+global_ro, lnd2atm_vars%t_rad_grc, bounds%begg:bounds%endg
+global_wo
+global_mod
+global_non
+calls, shr_sys_flush, get_proc_global, endrun, mpi_reduce, t_barrierf

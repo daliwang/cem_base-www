@@ -1,0 +1,9 @@
+sub_param, begc:2, this:1, endc:3
+sub_out
+global_ro| col%zi, zi, NONE| col%landunit, landunit, NONE
+global_wo| this%z_p, z_p, NONE| this%ncells, ncells, NONE| this%is_active, is_active, NONE| this%orientation, orientation, NONE| this%itype, itype, NONE| this%z, z, NONE| ConnectionSetNew%dist_up, dist_up, NONE| this%z_m, z_m, NONE| ConnectionSetNew%dist_dn, dist_dn, NONE| this%vol, vol, NONE| this%name, name, NONE| this%x, x, NONE| ConnectionSetNew%area, area, NONE| this%y, y, NONE| ConnectionSetNew%dist_unitvec, dist_unitvec, NONE
+global_mod| this%dx, dx, NONE| this%nlev, nlev, NONE| this%dz, dz, NONE| col%dz, dz, NONE| ConnectionSetNew%id_up, id_up, NONE| ConnectionSetNew%id_dn, id_dn, NONE| this%dy, dy, NONE
+global_non| ConnectionSetNew, conn_set, NONE
+calls, ConnectionSetListAddSet, this%Init, endrun
+readParams,
+integer, intent(in) :: begc,endc

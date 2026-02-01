@@ -1,0 +1,10 @@
+sub_param, value, p
+sub_out, value
+global_ro, mbkks_data%aj, mbkks_data%nJ, mbkks_data%iJ
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: p
+real(r8), intent(out):: value

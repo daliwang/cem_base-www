@@ -1,0 +1,7 @@
+sub_in, energyflux_vars, waterflux_vars, temperature_vars, bounds, dhsdT, waterstate_vars, filter_nolakec, soilstate_vars, num_nolakec
+sub_out
+global_ro, col%dz, waterstate_vars%frac_sno_eff_col, soilstate_vars%sucsat_col, temperature_vars%fact_col, waterstate_vars%frac_h2osfc_col, col%landunit, soilstate_vars%bsw_col, soilstate_vars%watsat_col, col%snl
+global_wo, energyflux_vars%eflx_snomelt_u_col, waterflux_vars%qflx_snow_melt_col, energyflux_vars%eflx_snomelt_r_col
+global_mod, waterflux_vars%qflx_glcice_col, waterflux_vars%qflx_snofrz_col, waterstate_vars%snow_depth_col, temperature_vars%t_soisno_col, waterflux_vars%qflx_snofrz_lyr_col, energyflux_vars%eflx_snomelt_col, waterstate_vars%h2osno_col, waterflux_vars%qflx_snomelt_col, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_glcice_melt_col, temperature_vars%xmf_col, temperature_vars%imelt_col
+global_non, waterstate_vars%frac_sno_col
+calls, t_startf, t_stopf

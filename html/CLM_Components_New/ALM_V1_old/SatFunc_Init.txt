@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%sbc_pu, sbc_pu, NONE| this%vg_m, vg_m, NONE| this%w_d, w_d, NONE| this%sbc_ps, sbc_ps, NONE| this%w_c, w_c, NONE| this%vg_n, vg_n, NONE| this%relperm_func_type, relperm_func_type, NONE| this%sbc_b3, sbc_b3, NONE| this%sat_res, sat_res, NONE| this%sat_func_type, sat_func_type, NONE| this%bc_lambda, bc_lambda, NONE| this%alpha, alpha, NONE| this%sbc_b2, sbc_b2, NONE
+global_mod
+global_non
+calls
+readParams,

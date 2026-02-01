@@ -1,0 +1,7 @@
+sub_in, num_vegsol, num_nourbanp, filter_vegsol, coszen, ed_allsites_inst, surfalb_inst, bounds, filter_nourbanp
+sub_out
+global_ro, currentPatch, albgrd, canopy_area_profile, esai_profile, elai_profile, albgri, xl, nrad, clmgcell, rhol, taul
+global_wo, ftii, tr_soil_dif, present, fabi_sun_z, ftid, fabd_sha_z, ftdd, fabd_sun_z, fabi_sha_z
+global_mod, f_sun, fabd, fabi, sabs_dif, tr_soil_dir_dif, albi, sabs_dir, tr_soil_dir, albd
+global_non, surfalb_inst%fsun_z_patch, surfalb_inst%fabd_sun_patch, surfalb_inst%fabi_sun_patch, pftcon%rhos, surfalb_inst%fabd_sha_patch, pftcon%taus, surfalb_inst%fabi_sha_patch
+calls

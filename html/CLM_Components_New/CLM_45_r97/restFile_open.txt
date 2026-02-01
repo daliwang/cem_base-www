@@ -1,0 +1,7 @@
+sub_in, file, flag, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_pio_openfile, ncd_pio_createfile

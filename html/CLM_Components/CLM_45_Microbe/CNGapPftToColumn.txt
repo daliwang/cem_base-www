@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, m_leafn_xfer_to_litter, m_frootn_to_litter, froot_prof, m_livecrootc_storage_to_litter, stem_prof, m_deadcrootn_to_litter, m_frootc_to_litter, wtcol, m_livestemn_storage_to_litter, m_deadcrootc_xfer_to_litter, npfts, m_frootc_xfer_to_litter, m_leafn_storage_to_litter, m_deadcrootc_storage_to_litter, m_livecrootn_xfer_to_litter, m_leafc_storage_to_litter, m_deadstemn_to_litter, m_deadstemn_xfer_to_litter, fr_fcel, m_deadstemn_storage_to_litter, croot_prof, lf_flig, itype, m_livecrootn_to_litter, m_leafc_xfer_to_litter, lf_fcel, m_frootn_storage_to_litter, m_deadstemc_to_litter, m_livestemc_to_litter, m_leafc_to_litter, m_livecrootc_to_litter, m_livestemc_storage_to_litter, m_gresp_storage_to_litter, m_frootn_xfer_to_litter, m_deadstemc_xfer_to_litter, m_frootc_storage_to_litter, m_deadcrootc_to_litter, fr_flab, m_livestemc_xfer_to_litter, m_leafn_to_litter, m_livecrootc_xfer_to_litter, m_gresp_xfer_to_litter, leaf_prof, fr_flig, m_retransn_to_litter, lf_flab, active, m_deadcrootn_xfer_to_litter, m_livestemn_xfer_to_litter, m_livestemn_to_litter, m_livecrootn_storage_to_litter, m_deadcrootn_storage_to_litter, m_deadstemc_storage_to_litter, pfti
+global_wo
+global_mod, gap_mortality_c_to_litr_met_c, gap_mortality_n_to_litr_cel_n, gap_mortality_n_to_litr_lig_n, gap_mortality_n_to_cwdn, gap_mortality_n_to_litr_met_n, gap_mortality_c_to_litr_lig_c, gap_mortality_c_to_cwdc, gap_mortality_c_to_litr_cel_c
+global_non
+calls

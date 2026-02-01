@@ -1,0 +1,8 @@
+sub_param, auxvar:2, this:1
+sub_out
+global_ro
+global_wo
+global_mod| auxvar%conductance, conductance, NONE| this%conductance, conductance, NONE| auxvar%satParams%vg_n, vg_n, NONE| this%satParams%vg_n, vg_n, NONE| this%frac_liq_sat, frac_liq_sat, NONE| auxvar%frac_liq_sat, frac_liq_sat, NONE| this%satParams%vg_m, vg_m, NONE| auxvar%satParams%vg_m, vg_m, NONE| auxvar%dsat_dP, dsat_dP, NONE| this%dsat_dP, dsat_dP, NONE| this%condition_value, condition_value, NONE| auxvar%condition_value, condition_value, NONE| this%dvis_dP, dvis_dP, NONE| auxvar%dvis_dP, dvis_dP, NONE| this%vis, vis, NONE| auxvar%vis, vis, NONE| auxvar%por, por, NONE| this%por, por, NONE| this%satParams%alpha, alpha, NONE| auxvar%satParams%alpha, alpha, NONE| auxvar%satParams%sat_res, sat_res, NONE| this%satParams%sat_res, sat_res, NONE| auxvar%perm, perm, NONE| this%perm, perm, NONE| auxvar%dpor_dP, dpor_dP, NONE| this%dpor_dP, dpor_dP, NONE| this%dden_dP, dden_dP, NONE| auxvar%dden_dP, dden_dP, NONE| auxvar%satParams%bc_lambda, bc_lambda, NONE| this%satParams%bc_lambda, bc_lambda, NONE| this%pressure, pressure, NONE| auxvar%pressure, pressure, NONE| this%density_type, density_type, NONE| auxvar%density_type, density_type, NONE| this%satParams%sat_func_type, sat_func_type, NONE| auxvar%satParams%sat_func_type, sat_func_type, NONE| this%temperature, temperature, NONE| auxvar%temperature, temperature, NONE| this%pressure_prev, pressure_prev, NONE| auxvar%pressure_prev, pressure_prev, NONE| this%dkr_dP, dkr_dP, NONE| auxvar%dkr_dP, dkr_dP, NONE
+global_non
+calls, this%satParams%Copy, this%porParams%Copy
+readParams,

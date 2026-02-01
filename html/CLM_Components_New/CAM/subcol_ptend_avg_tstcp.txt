@@ -1,0 +1,7 @@
+sub_in, lchnk, ngrdcol, ptend, ptend_sc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_ptend_avg_shr, subcol_ptend_get_firstsubcol

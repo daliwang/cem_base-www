@@ -1,0 +1,7 @@
+sub_in, filter_nourbanc, mss_cnc_aer_in, albsfc, h2osno_ice, flg_slr_in, coszen, h2osno_liq, bounds, waterstate_vars, num_nourbanc, flx_abs, flg_snw_ice, snw_rds, albout
+sub_out, flx_abs, albout
+global_ro, grc%londeg, waterstate_vars%h2osno_col, lun%itype, col%gridcell, col%snl, grc%latdeg, col%landunit
+global_wo
+global_mod
+global_non, waterstate_vars%frac_sno_eff_col
+calls, endrun

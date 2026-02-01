@@ -1,0 +1,7 @@
+sub_in, geds_local, bounds
+sub_out
+global_ro
+global_wo, geds_local%dstatus, geds_local%dleafoffdate, geds_local%dleafondate, geds_local%old_stock, geds_local%frac_burnt, geds_local%ncd, geds_local%leafondate, geds_local%water_memory, geds_local%gdd, geds_local%leafoffdate, geds_local%status
+global_mod, geds_local%acc_NI
+global_non, geds_local
+calls

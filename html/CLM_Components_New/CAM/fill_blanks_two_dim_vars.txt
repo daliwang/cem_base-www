@@ -1,0 +1,7 @@
+sub_in, num_vars, two_dim_vars, other_dim
+sub_out, two_dim_vars
+global_ro
+global_wo
+global_mod
+global_non
+calls

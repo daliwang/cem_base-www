@@ -1,0 +1,7 @@
+sub_in, tl, dsphere, klev, elem, asphere, deriv, dt
+sub_out, dsphere
+global_ro
+global_wo
+global_mod
+global_non
+calls

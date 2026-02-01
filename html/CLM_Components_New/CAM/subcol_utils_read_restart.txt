@@ -1,0 +1,7 @@
+sub_in, File
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_set_nsubcol, pio_read_darray, get_phys_decomp, subcol_allocate_internal

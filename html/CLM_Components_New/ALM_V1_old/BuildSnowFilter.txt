@@ -1,0 +1,15 @@
+sub_param, bounds:1, num_nosnowc:6, filter_nolakec:3, num_snowc:4, num_nolakec:2, filter_snowc:5, filter_nosnowc:7
+sub_out, filter_nosnowc, num_nosnowc, filter_snowc, num_snowc
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)  :: bounds
+integer           , intent(in)  :: num_nolakec       ! number of column non-lake points in column filter
+integer           , intent(in)  :: filter_nolakec(:) ! column filter for non-lake points
+integer           , intent(out) :: num_snowc         ! number of column snow points in column filter
+integer           , intent(out) :: filter_snowc(:)   ! column filter for snow points
+integer           , intent(out) :: num_nosnowc       ! number of column non-snow points in column filter
+integer           , intent(out) :: filter_nosnowc(:) ! column filter for non-snow points

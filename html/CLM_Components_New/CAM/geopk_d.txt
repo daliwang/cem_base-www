@@ -1,0 +1,7 @@
+sub_in, hs, grid, ng, pt, delp, pk, pe, akap, cp, wz
+sub_out, wz, pe, pk
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_isend, mpi_allgather, mpi_wait, mpi_send, mpi_irecv

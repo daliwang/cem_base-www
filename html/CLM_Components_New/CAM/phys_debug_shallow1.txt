@@ -1,0 +1,7 @@
+sub_in, ptend, prec_cmf, kmx, rliq2, nstep, ztodt, state
+sub_out, kmx
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind

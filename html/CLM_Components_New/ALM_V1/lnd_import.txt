@@ -1,0 +1,12 @@
+sub_param, atm2lnd_vars, bounds, glc2lnd_vars, x2l
+sub_out
+global_ro, atm2lnd_vars%hdm_input, atm2lnd_vars%timelen, ldomain%lonc, ldomain%latc, atm2lnd_vars%lnfm_input, atm2lnd_vars%atm_input, !atm2lnd_vars%atm_input, atm2lnd_vars%c13o2_input, !atm2lnd_vars%add_offsets, atm2lnd_vars%add_offsets, atm2lnd_vars%aero_input, atm2lnd_vars%scale_factors, !atm2lnd_vars%scale_factors, atm2lnd_vars%co2_input, atm2lnd_vars%ndep_input, ldomain%area, bounds%begg
+global_wo, atm2lnd_vars%volr_grc, glc2lnd_vars%frac_grc, atm2lnd_vars%forc_rho_not_downscaled_grc, !atm2lnd_vars%forc_mat_grc, glc2lnd_vars%icemask_coupled_fluxes_grc, glc2lnd_vars%icemask_grc, glc2lnd_vars%topo_grc, atm2lnd_vars%forc_rain_not_downscaled_grc, atm2lnd_vars%forc_hgt_u_grc, atm2lnd_vars%forc_lnfm, atm2lnd_vars%forc_ndep_grc, atm2lnd_vars%forc_solar_grc, atm2lnd_vars%forc_snow_not_downscaled_grc, atm2lnd_vars%forc_rh_grc, atm2lnd_vars%forc_po2_grc, atm2lnd_vars%forc_aer_grc, atm2lnd_vars%forc_pc13o2_grc, atm2lnd_vars%forc_hgt_q_grc, atm2lnd_vars%metsource, atm2lnd_vars%forc_hdm, atm2lnd_vars%forc_flood_grc, !atm2lnd_vars%forc_lwrad_not_downscaled_grc, atm2lnd_vars%forc_lwrad_not_downscaled_grc, atm2lnd_vars%forc_hgt_t_grc, atm2lnd_vars%forc_pco2_grc, atm2lnd_vars%volrmch_grc, atm2lnd_vars%forc_pch4_grc, atm2lnd_vars%forc_th_not_downscaled_grc, glc2lnd_vars%hflx_grc, atm2lnd_vars%forc_wind_grc
+global_mod, atm2lnd_vars%forc_v_grc, atm2lnd_vars%startyear_met, atm2lnd_vars%timeres, atm2lnd_vars%timelen_spinup, atm2lnd_vars%endyear_met_spinup, atm2lnd_vars%var_mult, atm2lnd_vars%forc_q_not_downscaled_grc, atm2lnd_vars%var_offset, atm2lnd_vars%endyear_met_trans, atm2lnd_vars%forc_hgt_grc, atm2lnd_vars%forc_pbot_not_downscaled_grc, atm2lnd_vars%forc_solai_grc, atm2lnd_vars%forc_solad_grc, atm2lnd_vars%forc_t_not_downscaled_grc, atm2lnd_vars%npf, atm2lnd_vars%tindex, atm2lnd_vars%forc_u_grc, atm2lnd_vars%forc_vp_grc
+global_non
+calls, relavu, get_curr_date, endrun, find_nlgroup_name
+readParams,
+type(bounds_type)  , intent(in)    :: bounds   ! bounds
+real(r8)           , intent(in)    :: x2l(:,:) ! driver import state to land model
+type(atm2lnd_type) , intent(inout) :: atm2lnd_vars      ! clm internal input data type
+type(glc2lnd_type) , intent(inout) :: glc2lnd_vars      ! clm internal input data type

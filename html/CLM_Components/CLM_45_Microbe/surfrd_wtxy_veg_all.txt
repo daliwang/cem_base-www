@@ -1,0 +1,7 @@
+sub_in, ns, pftm, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, get_proc_bounds, mpi_allreduce, check_dim, endrun

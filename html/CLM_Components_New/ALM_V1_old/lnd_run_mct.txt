@@ -1,0 +1,12 @@
+sub_param, l2x_l:4, x2l_l:3, cdata_l:2, EClock:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, t_barrierf, shr_orb_decl, memmon_reset_addr, update_rad_dtime, seq_cdata_setptrs, endrun, work, shr_file_getLogUnit, set_nextsw_cday, seq_infodata_GetData, seq_timemgr_EClockGetData, shr_file_getLogLevel, t_startf, get_proc_bounds, clm_drv, lnd_import, shr_file_setLogUnit, get_curr_date, seq_timemgr_EclockGetData, lnd_export, shr_file_setLogLevel, advance_timestep, memmon_dump_fort
+readParams,
+type(ESMF_Clock) , intent(inout) :: EClock    ! Input synchronization clock from driver
+type(seq_cdata)  , intent(inout) :: cdata_l   ! Input driver data for land model
+type(mct_aVect)  , intent(inout) :: x2l_l     ! Import state to land model
+type(mct_aVect)  , intent(inout) :: l2x_l     ! Export state from land model

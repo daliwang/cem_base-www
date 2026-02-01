@@ -1,0 +1,7 @@
+sub_in, no_xfac_ubc_in, tgcm_ubc_fixed_ymd_in, tgcm_ubc_fixed_tod_in, t_pert_ubc_in, tgcm_ubc_cycle_yr_in, tgcm_ubc_data_type_in, tgcm_ubc_file_in, snoe_ubc_file_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

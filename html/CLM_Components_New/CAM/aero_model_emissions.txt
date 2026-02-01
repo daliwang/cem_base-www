@@ -1,0 +1,7 @@
+sub_in, state, cam_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, dust_emis, seasalt_emis

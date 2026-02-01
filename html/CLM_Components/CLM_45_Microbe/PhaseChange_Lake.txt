@@ -1,0 +1,7 @@
+sub_in, cv, filter_lakec, cv_lake, ubc, lhabs, num_lakec, lbc
+sub_out, cv, lhabs, cv_lake
+global_ro, dz_lake, snl
+global_wo, imelt, eflx_snomelt
+global_mod, snow_depth, qflx_snow_melt, lake_icefrac, t_soisno, qflx_snomelt, h2osno, h2osoi_ice, h2osoi_liq, qflx_snofrz_lyr, t_lake
+global_non, dz
+calls

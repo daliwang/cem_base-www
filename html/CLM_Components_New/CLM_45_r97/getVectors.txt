@@ -1,0 +1,7 @@
+sub_in, this, bounds, ed_clm_inst, canopystate_inst, ed_allsites_inst, waterstate_inst, ed_phenology_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ed_update_site, ed_clm_inst%ed_clm_link, this%printDataInfoLL, this%printDataInfoVector, this%createPatchCohortStructure, this%convertCohortVectorToList, this%printIoInfoLL

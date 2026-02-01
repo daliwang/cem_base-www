@@ -1,0 +1,7 @@
+sub_in, nommr, pmid, nocool, o3mmr, t, n2mmr, o1mmr, lchnk, ncol, o2mmr
+sub_out, nocool
+global_ro
+global_wo
+global_mod
+global_non
+calls

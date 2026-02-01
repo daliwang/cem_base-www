@@ -1,0 +1,8 @@
+sub_param, this:1, ierr:5, X:3, F:4, snes:2
+sub_out
+global_ro| this%goveqns, cur_goveq, NONE| cur_goveq%next, cur_goveq, NONE
+global_wo
+global_mod
+global_non
+calls, cur_goveq%GetFromSOEAuxVarsIntrn, DMCompositeRestoreAccessArray, DMCompositeGetEntriesArray, cur_goveq%Residual, cur_goveq%UpdateAuxVarsSS, VSFMSOEUpdateAuxVarsODE, cur_goveq%UpdateAuxVarsBC, DMCompositeGetAccessArray, cur_goveq%UpdateAuxVarsIntrn, DMCompositeGetNumberDM, VecZeroEntries
+readParams,

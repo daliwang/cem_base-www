@@ -1,0 +1,7 @@
+sub_in, nt, this, data
+sub_out, data
+global_ro, this%data, this%data_shape
+global_wo, this%read_times
+global_mod
+global_non
+calls, shr_assert_all, shr_assert

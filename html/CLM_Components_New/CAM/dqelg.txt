@@ -1,0 +1,7 @@
+sub_in, result, epstab, abserr, n, nres, res3la, ier
+sub_out, res3la, nres, abserr, result, epstab
+global_ro
+global_wo
+global_mod
+global_non
+calls, sd1mach

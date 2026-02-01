@@ -1,0 +1,7 @@
+sub_in, dtype, name, pname, col_type, dimsizes, persistence, index, pbuf_add
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, find_pbuf_header

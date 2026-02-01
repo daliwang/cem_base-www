@@ -1,0 +1,9 @@
+sub_in, coszen, ubc, albsni, num_nourbanc, albsnd, filter_nourbanc, lbc
+sub_out
+global_ro, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%landunit, clm3%g%l%c%cps%isoicol, clm3%g%l%itype, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%snl
+global_wo, clm3%g%l%c%cps%albsoi
+global_mod, clm3%g%l%c%cps%albsod
+global_non, clm3%g%l%c%cps%albgri, clm3%g%l%c%cws%lake_icefrac, clm3%g%l%c%cps%albgrd
+calls
+
+Tree height: 6

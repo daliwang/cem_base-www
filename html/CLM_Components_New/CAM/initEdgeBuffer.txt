@@ -1,0 +1,7 @@
+sub_in, edge, buf_ptr, receive_ptr, nlyr
+sub_out
+global_ro, edge%buf
+global_wo
+global_mod
+global_non, tmp_ptr
+calls, remap_2D_ptr_buf, abortmp, haltmp, remap_2D_ptr_receive

@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cps%dz, cns%sminn_vr, cns%smin_no3_vr, cws%h2osoi_liq, cwf%qflx_drain, cwf%qflx_surf
+global_wo
+global_mod, cnf%smin_no3_runoff_vr, cnf%sminn_leached_vr, cnf%smin_no3_leached_vr
+global_non
+calls
+
+Tree height: 4

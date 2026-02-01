@@ -1,0 +1,9 @@
+sub_in, num_snowc, filter_snowc, bounds
+sub_out
+global_ro, cws%int_snow, cps%frac_iceold, cps%snl, cws%h2osoi_ice, lun%itype, cws%swe_old, cps%frac_sno_eff, col%landunit, cps%imelt, cps%n_melt, cws%h2osoi_liq, ces%t_soisno
+global_wo
+global_mod, cps%dz
+global_non, cps%snow_depth
+calls
+
+Tree height: 7

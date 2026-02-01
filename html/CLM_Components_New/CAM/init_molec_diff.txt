@@ -1,0 +1,7 @@
+sub_in, kind, cpair_in, errstring, n_avog_in, kbtz_in, ncnst, gravit_in, rair_in, mw_dry_in
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, ubc_init

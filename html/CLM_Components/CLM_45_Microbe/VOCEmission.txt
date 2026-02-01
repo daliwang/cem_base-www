@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, lbp, ubp
+sub_out
+global_ro, fsi24, cisha_z, t_veg24, elai, gridcell, fsi240, column, forc_solai, cisun_z, molec_weight, elai_p, fsd240, t_veg, itype, t_veg240, name, emis_factors, fsun, fsd24, fsun24, index, forc_pbot, class_number, forc_solad, fsun240
+global_wo, gammaS_out, par240u_out, gammaL_out, par24a_out, topt_out, alpha_out, gammaC_out, para_out, gammaP_out, paru_out, Eopt_out, gamma_out, gammaA_out, cp_out, gammaT_out, par24u_out, par240a_out
+global_mod, vocflx, meg, vocflx_tot
+global_non, clayfrac, bsw, h2osoi_vol, dz, sandfrac, itype, landunit, h2osoi_ice, watsat, shr_megan_linkedlist, next_megcomp, sucsat
+calls, endrun

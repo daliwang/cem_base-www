@@ -1,0 +1,9 @@
+sub_in, endp, begg, begc, endg, begp, endc
+sub_out
+global_ro, clm3%g%l%c%npfts, clm3%g%l%itype, clm3%g%l%c%p%wtcol, clm3%g%l%c%p%landunit, clm3%g%l%c%pfti
+global_wo
+global_mod, clm3%g%l%c%cwf%h2ocan_loss, clm3%g%l%c%p%pws%h2ocan
+global_non, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls
+
+Tree height: 5

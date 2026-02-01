@@ -1,0 +1,8 @@
+sub_param, this
+sub_out
+global_ro
+global_wo, this%pressure_prev, this%satParams%bc_lambda, this%density_type, this%dsat_dP, this%satParams%alpha, this%satParams%vg_m, this%satParams%vg_n, this%satParams%sat_res, this%dden_dP, this%dvis_dP, this%condition_value, this%conductance, this%frac_liq_sat, this%pressure, this%temperature, this%vis, this%dpor_dP, this%satParams%sat_func_type, this%por, this%perm, this%dkr_dP
+global_mod
+global_non
+calls, PorosityFunctionInit
+readParams,

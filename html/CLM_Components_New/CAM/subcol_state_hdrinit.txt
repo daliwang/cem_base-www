@@ -1,0 +1,7 @@
+sub_in, state_sc, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, subcol_get_nsubcol

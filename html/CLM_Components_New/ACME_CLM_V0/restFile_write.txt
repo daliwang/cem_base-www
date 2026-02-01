@@ -1,0 +1,7 @@
+sub_in, waterflux_vars, dgvs_vars, surfalb_vars, c13_carbonstate_vars, carbonstate_vars, canopystate_vars, frictionvel_vars, cnstate_vars, waterstate_vars, soilhydrology_vars, lakestate_vars, soilstate_vars, rdate, ch4_vars, solarabs_vars, aerosol_vars, photosyns_vars, nitrogenstate_vars, bounds, carbonflux_vars, temperature_vars, c14_carbonstate_vars, nitrogenflux_vars, noptr, energyflux_vars, file, atm2lnd_vars, EDbio_vars
+sub_out
+global_ro, bounds%begp:bounds%endp, h2osoi_ice_col=waterstate_vars%h2osoi_ice_col, tsai_patch=canopystate_vars%tsai_patch, watsat_col=soilstate_vars%watsat_col, tlai_patch=canopystate_vars%tlai_patch, h2osoi_liq_col=waterstate_vars%h2osoi_liq_col, bounds%begc:bounds%endc
+global_wo
+global_mod
+global_non
+calls, , nitrogenflux_vars%Restart, atm2lnd_vars%restart, EDRest, waterflux_vars%restart, waterstate_vars%restart, restFile_closeRestart, c13_carbonstate_vars%restart, c14_carbonstate_vars%restart, surfalb_vars%restart, restFile_close, cnstate_vars%Restart, carbonstate_vars%restart, restFile_dimset, solarabs_vars%restart, restFile_open, photosyns_vars%restart, soilhydrology_vars%restart, accumulRest, hist_restart_ncd, dgvs_vars%Restart, temperature_vars%restart, nitrogenstate_vars%Restart, restFile_enddef, SubgridRest, timemgr_restart_io, energyflux_vars%restart, aerosol_vars%restart, carbonflux_vars%restart, frictionvel_vars%, lakestate_vars%restart, canopystate_vars%restart, restFile_write_pfile, ch4_vars%restart

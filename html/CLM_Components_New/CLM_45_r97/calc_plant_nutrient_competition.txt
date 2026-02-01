@@ -1,0 +1,7 @@
+sub_in, this, bounds, filter_soilp, cnveg_nitrogenflux_inst, c13_cnveg_carbonflux_inst, cnveg_state_inst, c14_cnveg_carbonflux_inst, cnveg_carbonflux_inst, aroot, num_soilp, arepr, fpg_col
+sub_out, aroot
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%calc_plant_cn_alloc

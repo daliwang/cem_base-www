@@ -1,0 +1,7 @@
+sub_in, flbc_timing_in, flbc_file, f11vmr, n2ovmr, co2vmr, flbc_list, ch4vmr, f12vmr
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cam_pio_openfile, getfil, flbc_get, endrun, get_curr_date, cnst_get_ind, pio_closefile

@@ -1,0 +1,9 @@
+sub_in, lbj, r, a, filter, numf, ubc, jtop, c, ubj, b, lbc
+sub_out, u
+global_ro, clm3%g%l%c%itype
+global_wo
+global_mod
+global_non
+calls
+
+Tree height: 5

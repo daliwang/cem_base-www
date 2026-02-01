@@ -1,0 +1,7 @@
+sub_in, numeqns, elements
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mkl_dcsrgemv, dfgmres, dfgmres_init, dfgmres_get, mkl_dcsrtrsv, dcsrilu0, dfgmres_check

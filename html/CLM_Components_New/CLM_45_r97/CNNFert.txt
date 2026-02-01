@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, soilbiogeochem_nitrogenflux_inst, cnveg_nitrogenflux_inst, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, cnveg_nitrogenflux_inst%fert_patch, soilbiogeochem_nitrogenflux_inst%fert_to_sminn_col
+calls, p2c

@@ -1,0 +1,7 @@
+sub_in, tgcm_ubc_file_out, no_xfac_ubc_out, snoe_ubc_file_out, tgcm_ubc_fixed_tod_out, t_pert_ubc_out, tgcm_ubc_cycle_yr_out, tgcm_ubc_fixed_ymd_out, tgcm_ubc_data_type_out
+sub_out, tgcm_ubc_data_type_out, tgcm_ubc_fixed_ymd_out, tgcm_ubc_cycle_yr_out, tgcm_ubc_fixed_tod_out, snoe_ubc_file_out, t_pert_ubc_out, tgcm_ubc_file_out, no_xfac_ubc_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

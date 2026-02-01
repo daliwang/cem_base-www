@@ -1,0 +1,7 @@
+sub_in, regionb, regiona, regionc
+sub_out, regionc
+global_ro
+global_wo
+global_mod
+global_non
+calls

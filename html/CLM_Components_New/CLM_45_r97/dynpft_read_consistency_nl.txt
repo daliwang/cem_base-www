@@ -1,0 +1,7 @@
+sub_in, check_dynpft_consistency
+sub_out, check_dynpft_consistency
+global_ro
+global_wo
+global_mod
+global_non
+calls, relavu, shr_mpi_bcast, endrun, find_nlgroup_name

@@ -1,0 +1,13 @@
+sub_param, x, pn, xi, yi, y
+sub_out, yi
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer,  intent(in)                :: pn    !order of interpolation
+real(r8), dimension(:), intent(in)  :: x   !location of data
+real(r8), dimension(:), intent(in)  :: y   !value of data
+real(r8), dimension(:), intent(in)  :: xi  !target points to be evaluated
+real(r8), dimension(:), intent(out) :: yi !target values

@@ -1,0 +1,7 @@
+sub_in, bounds, canopystate_vars, filter_soilp, filter_nolakep, num_nolakep, waterstate_vars, energyflux_vars, filter_nolakec, waterflux_vars, num_nolakec, num_soilp
+sub_out
+global_ro, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osno_col, col%snl, waterstate_vars%h2osoi_ice_col, canopystate_vars%frac_veg_nosno_alb_patch, col%landunit
+global_wo, energyflux_vars%eflx_bot_col, waterstate_vars%h2osno_old_col, canopystate_vars%frac_veg_nosno_patch, photosyns_vars%cisun_z_patch, waterflux_vars%qflx_glcice_col, waterstate_vars%do_capsnow_col, waterstate_vars%frac_iceold_col, photosyns_vars%cisha_z_patch
+global_mod
+global_non, canopystate_vars%elai_patch, canopystate_vars%esai_patch
+calls

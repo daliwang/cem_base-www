@@ -1,0 +1,7 @@
+sub_in, nets, hybrid, elem, dt, fvm, tl, hvcoord, nsubstep, nete
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, copy_qdp_d2h, prim_printstate, TimeLevel_update, prim_step, prim_diag_scalars, prim_energy_fixer, vertical_remap, TimeLevel_Qdp, prim_energy_halftimes, copy_qdp_h2d

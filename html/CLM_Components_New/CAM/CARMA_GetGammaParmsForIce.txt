@@ -1,0 +1,7 @@
+sub_in, pgam, carma, niic, qiic, rc, lami, rho
+sub_out, pgam, lami, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

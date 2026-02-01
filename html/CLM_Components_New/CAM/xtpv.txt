@@ -1,0 +1,7 @@
+sub_in, al, jl5, iord, a6, jhigh, jm, cv, fxv, mfxv, id, ffslv, ar, dm, im, jh3, qtmpv, jh7, jlast, jl7, jfirst, jl3, qv, jh11, jh4, cosav, jl11, jl4, jh2, jl2, jh5, jlow
+sub_out, fxv, qtmpv
+global_ro
+global_wo
+global_mod
+global_non
+calls, fxppmv

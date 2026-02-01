@@ -1,0 +1,7 @@
+sub_in, pliml, p, gam, trp, t, plimu
+sub_out, trp
+global_ro
+global_wo
+global_mod
+global_non
+calls

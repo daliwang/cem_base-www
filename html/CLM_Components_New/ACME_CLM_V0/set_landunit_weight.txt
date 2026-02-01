@@ -1,0 +1,7 @@
+sub_in, ltype, weight, g
+sub_out
+global_ro, grc%landunit_indices
+global_wo, lun%wtgcell
+global_mod
+global_non
+calls, endrun

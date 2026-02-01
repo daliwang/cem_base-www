@@ -1,0 +1,7 @@
+sub_in, pmid, ncol, sad_src, sad_int
+sub_out, sad_int
+global_ro
+global_wo
+global_mod
+global_non
+calls

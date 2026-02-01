@@ -1,0 +1,7 @@
+sub_in, h, o2, o1, no, co2, lchnk, o3, ncol
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, fields, fields, fields, fields, fields, fields
+calls

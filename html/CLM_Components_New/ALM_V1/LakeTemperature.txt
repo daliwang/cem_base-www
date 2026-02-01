@@ -1,0 +1,21 @@
+sub_param, temperature_vars, waterflux_vars, filter_lakep, lakestate_vars, waterstate_vars, filter_lakec, solarabs_vars, energyflux_vars, num_lakep, soilstate_vars, bounds, ch4_vars, num_lakec
+sub_out
+global_ro, col%snl, col%dz, solarabs_vars%sabg_patch, solarabs_vars%fsr_nir_d_patch, lakestate_vars%ws_col, solarabs_vars%fsds_nir_d_patch, pft%column, col%z_lake, solarabs_vars%fsds_nir_i_patch, lakestate_vars%etal_col, solarabs_vars%fsr_nir_i_patch, col%dz_lake, col%lakedepth, col%z, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osno_col, temperature_vars%t_grnd_col, lakestate_vars%lake_raw_col, solarabs_vars%sabg_lyr_patch, waterstate_vars%h2osoi_ice_col, lakestate_vars%ks_col
+global_wo, lakestate_vars%savedtke1_col, waterflux_vars%qflx_snofrz_col, waterstate_vars%frac_iceold_col
+global_mod, temperature_vars%hc_soi_col, temperature_vars%t_lake_col, ch4_vars%grnd_ch4_cond_col, temperature_vars%hc_soisno_col, lakestate_vars%lake_icefrac_col, energyflux_vars%errsoi_col, lakestate_vars%lake_icethick_col, energyflux_vars%eflx_sh_tot_patch, lakestate_vars%lakeresist_col, energyflux_vars%eflx_soil_grnd_patch, temperature_vars%t_soisno_col, lakestate_vars%betaprime_col, energyflux_vars%eflx_gnet_patch, energyflux_vars%eflx_sh_grnd_patch
+global_non
+calls, Tridiagonal, PhaseChange_Lake, SoilThermProp_Lake
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_lakec       ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_lakec(:) ! column filter for non-lake points
+integer                , intent(in)    :: num_lakep       ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_lakep(:) ! patch filter for non-lake points
+type(solarabs_type)    , intent(in)    :: solarabs_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(ch4_type)         , intent(inout) :: ch4_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(lakestate_type)   , intent(inout) :: lakestate_vars

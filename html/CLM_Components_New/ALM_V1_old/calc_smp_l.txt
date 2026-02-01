@@ -1,0 +1,16 @@
+sub_param, t_soisno:6, soil_water_retention_curve:9, bounds:1, numf:4, waterstate_vars:8, soilstate_vars:7, ubj:3, lbj:2, filter:5
+sub_out
+global_ro| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| soilstate_vars%watsat_col, watsat, NONE
+global_wo| waterstate_vars%smp_l_col, smp_l, NONE
+global_mod
+global_non| soilstate_vars%bsw_col, bsw, NONE| soilstate_vars%sucsat_col, sucsat, NONE
+calls, soil_water_retention_curve%soil_suction
+readParams,
+type(bounds_type)         , intent(in)    :: bounds  ! bounds
+integer                   , intent(in)    :: lbj, ubj                                          ! lower and upper bounds, make sure they are > 0
+integer                   , intent(in)    :: numf                                              ! number of columns in column filter
+integer                   , intent(in)    :: filter(:)                                         ! column filter
+real(r8)                  , intent(in)    :: t_soisno(bounds%begc: , lbj: )                    ! soil temperature
+type(soilstate_type)      , intent(in)    :: soilstate_vars
+type(waterstate_type)     , intent(inout) :: waterstate_vars
+class(soil_water_retention_curve_type), intent(in) :: soil_water_retention_curve

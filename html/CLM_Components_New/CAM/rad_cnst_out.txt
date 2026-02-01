@@ -1,0 +1,7 @@
+sub_in, list_idx, pbuf, state
+sub_out
+global_ro, ngas, aer, numaerosols, mmr, gas
+global_wo
+global_mod
+global_non, gaslist, aerosollist
+calls, pbuf_get_field, endrun, outfld

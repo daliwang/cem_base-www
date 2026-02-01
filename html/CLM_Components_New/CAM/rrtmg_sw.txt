@@ -1,0 +1,7 @@
+sub_in, asdir, cldfr, iceflgsw, coszen, nlay, aldif, lchnk, h2ovmr, adjes, ninflxc, difdnir, difdnuv, scon, ssacld, liqflgsw, plev, swuflxc, dirdnuv, ninflx, ssaaer, cicewp, asmaer, asmcld, play, taucld, ncol, o3vmr, tauaer, swuflx, tsfc, icld, swhr, co2vmr, swdflxc, inflgsw, swdflx, ch4vmr, cliqwp, asdif, tlay, swhrc, o2vmr, dotau, dirdnir, dyofyr, tlev, reliq, n2ovmr, aldir, reice
+sub_out, swhrc, swuflxc, ninflxc, difdnir, difdnuv, swdflx, dirdnir, swuflx, dirdnuv, swhr, ninflx, swdflxc
+global_ro
+global_wo
+global_mod
+global_non
+calls, setcoef_sw, inatm_sw, spcvrt_sw, cldprop_sw

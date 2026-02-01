@@ -1,0 +1,7 @@
+sub_in, mfxreqs, mlt, delpf, v, ncx, jord_c, pe, cxreqs, mfy, delp, grid, pi, ptxy, cp, cx_om, iord_c, u, cyreqs, ptk, pkc, wzkp, wz3, s_trac, cxtag, nx, jord_d, hs, ptc, dt, wzxy, pkcc, iord_d, ipe, nmfx, mfytag, pkkp, akap, ae, wzc, umax, pexy, cy_om, filtcw, vc, nmfy, wz, pt, om, cy3, ns, iremote, pk, ncy, mfx, mfxtag, ptopin, uc, dpt, mfyreqs, delpxy, pkxy, cytag, cx3, hsxy
+sub_out, v, delpf, cx_om, wz, delpxy, cy_om, dpt, pkc, wz3, vc, pk, ptxy, uc, ptc, u
+global_ro
+global_wo
+global_mod
+global_non
+calls, mp_send4d_ns, get_met_fields, mp_send3d, mpiisend, FVstartclock, pft2d, geopk, geopk_d, mp_recv3d, mp_send2_ns, geopk16, mp_recv4d_ns, mp_recvirr, FVstopclock, mp_sendirr, FVbarrierclock, mp_recv3d_2, endrun, mp_recv2_ns, d_sw, c_sw, d2a2c_winds, mp_send3d_2

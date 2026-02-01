@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, n, bl, currentPatch, bsw, bdead, FI
+global_wo
+global_mod, SH, currentCohort
+global_non
+calls

@@ -1,0 +1,12 @@
+sub_in, coszen, canyon_hwr, alb_improad_dir, alb_wall_dif, num_urbanl, alb_roof_dir, sdir_sunwall, filter_urbanl, sdif_shadewall, sdif_road, bounds, sdif, sdir_road, sdir_shadewall, alb_roof_dif, sdif_sunwall, alb_improad_dif, alb_perroad_dir, alb_wall_dir, sdir, alb_perroad_dif, wtroad_perv
+sub_out, sref_perroad_dif, sref_roof_dif, sref_perroad_dir, sref_shadewall_dif, sref_roof_dir, sref_shadewall_dir, sref_improad_dir, sref_sunwall_dir, sref_improad_dif, sref_sunwall_dif
+global_ro, lps%vf_sr, lps%vf_ww, lps%vf_wr, lps%vf_rw, lps%vf_sw
+global_wo, lps%sabs_roof_dif, lps%sabs_roof_dir
+global_mod, lps%sabs_sunwall_dif, lps%sabs_shadewall_dir, lps%sabs_improad_dir, lps%sabs_sunwall_dir, lps%sabs_shadewall_dif, lps%sabs_improad_dif, lps%sabs_perroad_dir, lps%sabs_perroad_dif
+global_non
+calls, shr_assert, endrun
+
+Tree height: 5
+0 , shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, 
+3+, endrun, 
+4+, endrun, endrun, 

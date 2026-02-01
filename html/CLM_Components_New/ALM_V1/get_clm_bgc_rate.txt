@@ -1,0 +1,12 @@
+sub_param, num_soilc, clm_bgc_data, filter_soilc, bounds
+sub_out
+global_ro, clm_bgc_data%plant_ndemand_vr_col, col%wtgcell, clm_bgc_data%externaln_to_nh4_col, col%gridcell, bounds%begg, clm_bgc_data%externalc_to_decomp_cpools_col, clm_pf_idata%C_molecular_weight, clm_bgc_data%externaln_to_decomp_npools_col, clm_pf_idata%N_molecular_weight, clm_pf_idata%nzclm_mapped, clm_pf_idata%ngclm_sub, clm_bgc_data%externaln_to_no3_col, clm_bgc_data%no3_net_transport_vr_col
+global_wo
+global_mod
+global_non, clm_bgc_data%plant_pdemand_vr_col, clm_bgc_data%externalp_to_primp_col, clm_bgc_data%externalp_to_labilep_col, clm_bgc_data%sminp_net_transport_vr_col, clm_bgc_data%externalp_to_decomp_ppools_col, clm_bgc_data%externalp_to_solutionp_col
+calls, VecRestoreArrayF90, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

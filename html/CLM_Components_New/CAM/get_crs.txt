@@ -1,0 +1,7 @@
+sub_in, sht_indexer, xs_short_file
+sub_out, sht_indexer
+global_ro
+global_wo
+global_mod
+global_non
+calls, cam_pio_openfile, endrun, pio_closefile, getfil, alloc_err, pio_seterrorhandling

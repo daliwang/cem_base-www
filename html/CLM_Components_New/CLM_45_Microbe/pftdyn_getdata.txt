@@ -1,0 +1,12 @@
+sub_in, begg, pft0, endg, maxpft, ntime
+sub_out, pctpft
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, endrun
+
+Tree height: 4
+0 , ncd_io, 
+3+, endrun, 
+2+, endrun, 

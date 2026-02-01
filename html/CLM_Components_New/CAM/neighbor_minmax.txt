@@ -1,0 +1,7 @@
+sub_in, edgeMinMax, min_neigh, elem, nets, nt, max_neigh, kmass, nete, min_var, hybrid, max_var
+sub_out, max_neigh, min_neigh, min_var, elem, max_var
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, t_startf, edgeVunpackMin, edgeVpack, bndry_exchangeV, edgeVunpackMax, FreeEdgeBuffer, initEdgeBuffer

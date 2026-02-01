@@ -1,0 +1,7 @@
+sub_in, site_in
+sub_out
+global_ro, %cfa, currentCohort%shorter, currentPatch%tallest, site_in%oldest_patch, currentPatch%younger, EDecophyscon%crown_kill, %pft, %cambial_mort
+global_wo, %fire_mort
+global_mod, %crownfire_mort
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, q2out, comm, modc, send_bl, q1in, q1out, q2in, recv_bl
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

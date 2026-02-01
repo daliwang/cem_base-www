@@ -1,0 +1,18 @@
+sub_param, tracer_flx_infl:11, bunsencef_topsoi:7, bounds:1, numf:5, waterflux_vars:10, betrtracer_vars:8, filter:6, jtops:4, ubj:3, tracerboundarycond_vars:9, lbj:2
+sub_out, tracer_flx_infl
+global_ro| tracerboundarycond_vars%tracer_gwdif_concflux_top_col, tracer_gwdif_concflux_top_col, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| waterflux_vars%qflx_gross_infl_soil_col, qflx_gross_infl_soil, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)            , intent(in)    :: bounds
+integer                      , intent(in)    :: lbj, ubj
+integer                      , intent(in)    :: jtops(bounds%begc: )           ! top label of each column
+integer                      , intent(in)    :: numf                           ! number of columns in column filter
+integer                      , intent(in)    :: filter(:)                      ! column filter
+real(r8)                     , intent(in)    :: bunsencef_topsoi(bounds%begc: , 1: )
+type(BeTRTracer_Type)        , intent(in)    :: betrtracer_vars
+type(tracerboundarycond_type), intent(in)    :: tracerboundarycond_vars
+type(waterflux_type)         , intent(inout) :: waterflux_vars
+real(r8)                     , intent(inout) :: tracer_flx_infl(bounds%begc: , 1: )

@@ -1,0 +1,11 @@
+sub_param, nompools, nreacts, this, nprimstvars
+sub_out
+global_ro
+global_wo, this%nr
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in) :: nompools
+integer, intent(in) :: nreacts
+integer, intent(in) :: nprimstvars     !number of primary state variables

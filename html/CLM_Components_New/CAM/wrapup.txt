@@ -1,0 +1,7 @@
+sub_in, rstwr, nlend
+sub_out, rstwr
+global_ro, tape
+global_wo
+global_mod
+global_non
+calls, PIO_CloseFile, get_curr_date, h_inquire, cam_PIO_openfile, get_curr_time

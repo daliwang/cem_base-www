@@ -1,0 +1,7 @@
+sub_in, parr, p2c_scale_type, bounds, carr
+sub_out, carr
+global_ro, pft%wtcol, pft%column
+global_wo
+global_mod
+global_non
+calls, endrun

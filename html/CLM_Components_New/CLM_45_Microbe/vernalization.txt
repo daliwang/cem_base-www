@@ -1,0 +1,9 @@
+sub_in, p
+sub_out
+global_ro, clm3%g%l%c%p%pes%t_ref2m_max, clm3%g%l%c%p%column, clm3%g%l%c%p%pes%t_ref2m_min, clm3%g%l%c%p%pps%tlai, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%p%pes%t_ref2m
+global_wo, clm3%g%l%c%p%pps%gddmaturity, clm3%g%l%c%p%pps%huigrain
+global_mod, clm3%g%l%c%p%pps%hdidx, clm3%g%l%c%p%pps%vf, clm3%g%l%c%p%pps%cumvd
+global_non, clm3%g%l%c%p%pps%croplive
+calls
+
+Tree height: 8

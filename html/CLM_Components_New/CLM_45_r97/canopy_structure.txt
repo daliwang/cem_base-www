@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch, currentPatch%tallest, bdead, currentCohort%taller, area, bstore, bl, br, bsw, pft
+global_wo, NCL_p, ncl_p
+global_mod, excl_weight, dbh, prom_weight, CWD_BG, leaf_litter, CWD_AG, n, root_litter, currentCohort, c_area, canopy_layer
+global_non, currentCohort, null, currentCohort%taller, copyc
+calls, fuse_cohorts, copy_cohort, terminate_cohorts

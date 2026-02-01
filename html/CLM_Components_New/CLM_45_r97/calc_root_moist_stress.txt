@@ -1,0 +1,7 @@
+sub_in, temperature_inst, soilstate_inst, bounds, fn, energyflux_inst, soil_water_retention_curve, nlevgrnd, canopystate_inst, filterp, waterstate_inst
+sub_out, nlevgrnd
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, normalize_unfrozen_rootfr, calc_root_moist_stress_clm45default

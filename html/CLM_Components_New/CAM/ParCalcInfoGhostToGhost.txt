@@ -1,0 +1,7 @@
+sub_in, GA, InComm, Info, GB
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, GhostInfo, MPI_ALLREDUCE, MPI_COMM_SIZE, MPI_COMM_RANK, DecompGlobalToLocal, ParExchangeLength

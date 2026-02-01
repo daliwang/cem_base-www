@@ -1,0 +1,7 @@
+sub_in, oldwp, pbuf, state, cld_abs_od
+sub_out, cld_abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, endrun

@@ -1,0 +1,7 @@
+sub_in, state, pbuf, ptend, dtime
+sub_out
+global_ro, prec_str_grid, alst_mic, iclwpst_grid
+global_wo, dei_grid
+global_mod, rei_grid, des_grid, rel_grid, lambdac_grid, mu_grid
+global_non, cvreffice, cvreffliq, qme, mgflxprc, ast, prain, nevapr, mgflxsnw
+calls, size_dist_param_liq, handle_errmsg, micro_mg_get_cols1_5, subcol_field_avg, micro_mg_tend1_5, physics_state_copy, pbuf_col_type_index, endrun, physics_update, physics_ptend_sum, phys_getopts, physics_ptend_init, physics_state_dealloc, pbuf_get_field, micro_mg_tend1_0, size_dist_param_basic, outfld

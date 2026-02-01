@@ -1,0 +1,8 @@
+sub_param, this:1, data_1d:2
+sub_out
+global_ro| cur_goveq%ncells, ncells, NONE| vsfm_soe%goveqns, cur_goveq, NONE| cur_goveq%next, cur_goveq, NONE| cur_goveq%ncells', ncells', NONE
+global_wo
+global_mod
+global_non| this%sysofeqns, vsfm_soe, NONE| cur_goveq, goveq_richards_pres, NONE
+calls, VecCopy, DMCompositeGetEntriesArray, VecRestoreArrayF90, VecGetArrayF90, DMCompositeRestoreAccessArray, DMCompositeGetAccessArray, endrun, DMCompositeGetNumberDM
+readParams,

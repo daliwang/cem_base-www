@@ -1,0 +1,16 @@
+sub_param, nprimvars:1, ystate:5, plant_frts:6, reaction_rates:7, nitrogen_limit_flag:4, nr:2, cascade_matrix:8, pct_clay:3
+sub_out, cascade_matrix, reaction_rates
+global_ro| centurybgc_vars%lid_plant_minn_up_reac, lid_plant_minn_up_reac, NONE| centurybgc_vars%lid_nh4, lid_nh4, NONE| centurybgc_vars%som2, som2, NONE| centurybgc_vars%som3, som3, NONE| centurybgc_vars%lid_no3_den_reac, lid_no3_den_reac, NONE| centurybgc_vars%lit3, lit3, NONE| centurybgc_vars%lid_nh4_nit_reac, lid_nh4_nit_reac, NONE| centurybgc_vars%nelms, nelms, NONE| centurybgc_vars%lid_plant_compet, lid_plant_compet, NONE| centurybgc_vars%som1, som1, NONE| centurybgc_vars%c_loc, c_loc, NONE| centurybgc_vars%lid_denit_compet, lid_denit_compet, NONE| centurybgc_vars%cwd, cwd, NONE| centurybgc_vars%lit2, lit2, NONE| centurybgc_vars%lit1, lit1, NONE| centurybgc_vars%lid_no3, lid_no3, NONE| centurybgc_vars%lid_nitri_compet, lid_nitri_compet, NONE
+global_wo
+global_mod
+global_non| centurybgc_vars%lid_lit1_compet, lid_lit1_compet, NONE| centurybgc_vars%lid_som1_compet, lid_som1_compet, NONE| centurybgc_vars%lid_cwd_compet, lid_cwd_compet, NONE| centurybgc_vars%lid_som3_compet, lid_som3_compet, NONE| centurybgc_vars%lid_lit2_compet, lid_lit2_compet, NONE| centurybgc_vars%lid_lit3_compet, lid_lit3_compet, NONE| centurybgc_vars%lid_som2_compet, lid_som2_compet, NONE| centurybgc_vars%lid_clay_compet, lid_clay_compet, NONE
+calls, ecacomplex_cell_norm
+readParams,readParams
+integer , intent(in) :: nprimvars
+integer , intent(in) :: nr
+real(r8), intent(in) :: pct_clay
+logical , intent(in) :: nitrogen_limit_flag(centurybgc_vars%nom_pools)
+real(r8), intent(in) :: ystate(1:nprimvars)
+real(r8), intent(in) :: plant_frts
+real(r8), intent(inout) :: reaction_rates(1:nr)
+real(r8), intent(inout) :: cascade_matrix(1:nprimvars, 1:nr)

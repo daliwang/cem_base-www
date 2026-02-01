@@ -1,0 +1,7 @@
+sub_in, dyn_out, dyn_in, etamid, gw
+sub_out, etamid
+global_ro
+global_wo
+global_mod
+global_non
+calls, slt_initial, plevs0, t_startf, t_stopf, omcalc

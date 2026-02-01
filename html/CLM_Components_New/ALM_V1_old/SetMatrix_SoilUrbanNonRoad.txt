@@ -1,0 +1,18 @@
+sub_param, fact:9, tk:6, dhsdT:5, bounds:1, dz_h2osfc:8, tk_h2osfc:7, filter_nolakec:3, bmatrix_soil:10, num_nolakec:2, nband:4
+sub_out, bmatrix_soil
+global_ro| col%zi, zi, NONE| col%z, z, NONE| col%landunit, landunit, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds                          ! bounds
+integer , intent(in)  :: num_nolakec                             ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                       ! column filter for non-lake points
+integer , intent(in)  :: nband                                   ! number of bands of the tridigonal matrix
+real(r8), intent(in)  :: dhsdT(bounds%begc: )                    ! temperature derivative of "hs" [col]
+real(r8), intent(in)  :: tk(bounds%begc: ,-nlevsno+1: )          ! thermal conductivity [W/(m K)]
+real(r8), intent(in)  :: tk_h2osfc(bounds%begc: )                ! thermal conductivity [W/(m K)]
+real(r8), intent(in)  :: dz_h2osfc(bounds%begc: )                ! Thickness of standing water [m]
+real(r8), intent(in)  :: fact( bounds%begc: , -nlevsno+1: )      ! used in computing tridiagonal matrix [col, lev]
+real(r8), intent(inout) :: bmatrix_soil(bounds%begc: , 1:, 1: )  ! matrix enteries

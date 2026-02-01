@@ -1,0 +1,7 @@
+sub_in, un2o1, emstot, un2o0, aer_trn_ttl, wb, tint, tlayr4, bn2o1, w, bch4, uco211, ucfc11, co2t, plol, pnm, co2eml, co2mmr, tplnke, tlayr, s2c, co2em, uco212, uco213, uco223, uco221, abplnk2, plco2, plos, ucfc12, lchnk, abplnk1, h2otr, uptype, plh2ob, uco222, tint4, uch4, ncol, tcg, bn2o0, plh2o
+sub_out, co2em, co2eml, emstot, co2t, h2otr
+global_ro
+global_wo
+global_mod
+global_non
+calls, trcplk, trcems, qsat_water

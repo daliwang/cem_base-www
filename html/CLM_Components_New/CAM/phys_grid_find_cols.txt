@@ -1,0 +1,7 @@
+sub_in, lat, icol, lon, owner, distmin, lcid, mlats, mlons, nclosest
+sub_out, owner, icol, lcid, distmin, mlats, mlons
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

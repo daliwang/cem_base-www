@@ -1,0 +1,7 @@
+sub_in, ncol, map2chm, q, lchnk, pbuf
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_short_lived_species, set_short_lived_species

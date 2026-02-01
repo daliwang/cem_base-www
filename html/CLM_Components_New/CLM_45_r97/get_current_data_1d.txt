@@ -1,0 +1,7 @@
+sub_in, this, cur_data
+sub_out, cur_data
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%read_data_if_needed

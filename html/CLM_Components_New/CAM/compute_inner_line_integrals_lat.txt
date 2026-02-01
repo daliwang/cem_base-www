@@ -1,0 +1,7 @@
+sub_in, xgno, abscissae, jx_min, ngauss, jx_max, r_cross_lat, jmax_segments, jy_min, jy_max, jsegment, weights_eul_index, weights, nreconstruction, gauss_weights, jcross_lat, cross_lat_eul_index
+sub_out, jsegment, weights_eul_index, weights
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_weights_exact

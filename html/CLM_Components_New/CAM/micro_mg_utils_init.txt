@@ -1,0 +1,7 @@
+sub_in, errstring, rh2o, cpair, latvap, tmelt_in, kind, latice
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,10 @@
+sub_in, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, pcisof%frootc_to_litter, col%npfts, pftcon%lf_flig, pftcon%fr_fcel, pftcon%fr_flig, pftcon%lf_flab, pcisof%leafc_to_litter, pftcon%fr_flab, pps%froot_prof, pftcon%lf_fcel, pft%wtcol, pps%leaf_prof, col%pfti, pft%itype
+global_wo
+global_mod, ccisof%phenology_c_to_litr_cel_c, ccisof%phenology_c_to_litr_lig_c, ccisof%phenology_c_to_litr_met_c
+global_non, cc14f, cc13f, pc14f, pc13f
+calls, endrun
+
+Tree height: 3
+0 , endrun, 

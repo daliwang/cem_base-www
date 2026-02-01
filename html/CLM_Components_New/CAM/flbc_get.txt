@@ -1,0 +1,7 @@
+sub_in, lbcs, initial, ncid, read_gmean
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, lininterp_init, get_rlon_all_p, get_rlat_all_p, lininterp_finish, lininterp

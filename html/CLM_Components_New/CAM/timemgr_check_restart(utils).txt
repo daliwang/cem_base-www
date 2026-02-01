@@ -1,0 +1,7 @@
+sub_in, perpetual_ymd, calendar_in, start_ymd, perpetual_run, ref_ymd, dtime_in, ref_tod, start_tod
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

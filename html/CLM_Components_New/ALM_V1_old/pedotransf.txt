@@ -1,0 +1,15 @@
+sub_param, sucsat:6, ipedof:1, watsat:4, bsw:5, xksat:7, clay:3, sand:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pedotransf_cosby1984_table5, endrun, pedotransf_cosby1984_table4, pedotransf_noilhan_lacarrere1995
+readParams,
+integer,  intent(in) :: ipedof !type of pedotransfer function, use the default pedotransfer function
+real(r8), intent(in) :: sand   !% sand
+real(r8), intent(in) :: clay   !% clay
+real(r8), intent(out):: watsat !v/v saturate moisture
+real(r8), intent(out):: bsw    !b shape parameter
+real(r8), intent(out):: sucsat !mm, soil matric potential
+real(r8), intent(out):: xksat  !mm/s, saturated hydraulic conductivity

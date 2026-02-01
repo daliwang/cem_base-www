@@ -1,0 +1,7 @@
+sub_in, ncol, egwdffi, ngwv, tend_level, ubm, pmid, kbot, rho, pver, nm, rdpm, decomp, ktop, dt, gwut, gravit, c
+sub_out, egwdffi
+global_ro
+global_wo
+global_mod
+global_non
+calls, vd_lu_decomp

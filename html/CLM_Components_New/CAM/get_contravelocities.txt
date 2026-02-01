@@ -1,0 +1,7 @@
+sub_in, k, elem, deriv, spelt, contrauv
+sub_out, contrauv
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, ncol, calday, sunlons, lchnk
+sub_out, sunlons
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_horiz_grid_d, get_rlon_all_p, get_rlat_all_p, get_lat_all_p

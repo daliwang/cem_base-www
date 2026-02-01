@@ -1,0 +1,18 @@
+sub_param, henrycef_col, numf, jtops, betrtracer_vars, t_soisno, lbj, soi_pH, filter, bounds, aqu2neutralcef_col, ubj
+sub_out, henrycef_col, aqu2neutralcef_col
+global_ro, betrtracer_vars%tracer_group_memid, betrtracer_vars%is_h2o, betrtracer_vars%volatilegroupid, betrtracer_vars%ngwmobile_tracer_groups, betrtracer_vars%is_volatile
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in) :: bounds  ! bounds
+integer,                intent(in) :: lbj, ubj        ! lower and upper bounds, make sure they are > 0
+integer,                intent(in) :: jtops(bounds%begc: )        ! top label of each column
+integer,                intent(in) :: numf                                          ! number of columns in column filter
+integer,                intent(in) :: filter(:)                                     ! column filter
+real(r8),               intent(in) :: t_soisno(bounds%begc: ,  lbj: )   !soil temperature
+real(r8),               intent(in) :: soi_pH(bounds%begc: , lbj: )      !pH profile
+type(betrtracer_type),  intent(in) :: betrtracer_vars        ! betr configuration information
+real(r8),   intent(inout):: aqu2neutralcef_col(bounds%begc: , lbj: , 1: ) !conversion parameter between bulk aqueous and neutral aqueous tracer
+real(r8),   intent(inout):: henrycef_col(bounds%begc: , lbj: ,  1: )       !henry's constant, mol/L/atm = M/atm

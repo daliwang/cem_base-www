@@ -1,0 +1,11 @@
+sub_param, declinm1, bounds, declin
+sub_out
+global_ro, grc%lat
+global_wo, grc%prev_dayl, grc%dayl
+global_mod
+global_non, bounds%begg, bounds%endg
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in) :: declin              ! solar declination angle for the first model time step (radians)
+real(r8), intent(in) :: declinm1            ! solar declination angle for the previous time step (radians)

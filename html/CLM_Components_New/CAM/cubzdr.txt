@@ -1,0 +1,7 @@
+sub_in, nlon, pkdim, dfz2, lbasdz, dfz1, f
+sub_out, dfz1, dfz2
+global_ro
+global_wo
+global_mod
+global_non
+calls

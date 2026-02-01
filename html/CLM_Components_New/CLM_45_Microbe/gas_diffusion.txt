@@ -1,0 +1,10 @@
+sub_in, filter_micbioc, num_micbioc, ubc, lbc
+sub_out
+global_ro, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%z, clm3%g%l%c%landunit, clm3%g%l%itype
+global_wo
+global_mod, clm3%g%l%c%cmic%ccon_o2s_sat, clm3%g%l%c%cmic%ccon_ch4s_unsat, clm3%g%l%c%cmic%ccon_co2s_sat, clm3%g%l%c%cmic%ccon_ch4s_sat, clm3%g%l%c%cmic%ccon_o2s_unsat, clm3%g%l%c%cmic%ccon_co2s_unsat, clm3%g%l%c%cmic%ccon_h2s_unsat, clm3%g%l%c%cmic%ccon_h2s_sat
+global_non, clm3%g%l%c%cws%finundated, clm3%g%l%c%cmic%fsat_pre
+calls, get_waterhead
+
+Tree height: 3
+0 , get_waterhead, 

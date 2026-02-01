@@ -1,0 +1,7 @@
+sub_in, a2x, EClock, x2a
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, getfil, ESMF_ArrayGet, pio_closefile, seq_timemgr_EClockGetData, pio_read_darray, pio_freedecomp, pio_initdecomp, esmfshr_util_ArrayGetName, cam_pio_openfile, pio_seterrorhandling, esmfshr_util_ArrayGetSize

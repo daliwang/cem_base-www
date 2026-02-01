@@ -1,0 +1,7 @@
+sub_in, pmxrgn, qrlc, qnm, nmxrgn, n2o, flnt, flutc, lwupcgs, o3, cfc12, emis, qrl, flns, cld, fldsc, flut, fcnl, ncol, ch4, cfc11, pmid, co2mmr, flntc, flnsc, odap_aer, pmln, tnm, flwds, fnl, pint, doabsems, lchnk, piln
+sub_out, qrlc, qrl, flwds, flns, fnl, flntc, fldsc, flut, flnsc, flnt, flutc, fcnl
+global_ro, absnxt, emstot
+global_wo
+global_mod
+global_non, abstot_3d
+calls, radabs, radtpl, radems, trcpth, outfld, radoz2, aer_trans_from_od, quick_sort

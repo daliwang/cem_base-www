@@ -1,0 +1,16 @@
+sub_param, filter_soilc:3, carbonflux_vars:8, soilstate_vars:5, canopystate_vars:4, bounds:1, temperature_vars:6, num_soilc:2, ch4_vars:7
+sub_out
+global_ro| soilstate_vars%soilpsi_col, soilpsi, NONE| ch4_vars%o2stress_sat_col, o2stress_sat, NONE| canopystate_vars%alt_indx_col, alt_indx, NONE| col%dz, dz, NONE| ch4_vars%o2stress_unsat_col, o2stress_unsat, NONE| ch4_vars%finundated_col, finundated, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| soilstate_vars%sucsat_col, sucsat, NONE
+global_wo| carbonflux_vars%decomp_k_col, decomp_k, NONE
+global_mod| carbonflux_vars%w_scalar_col, w_scalar, NONE| carbonflux_vars%t_scalar_col, t_scalar, NONE| carbonflux_vars%o_scalar_col, o_scalar, NONE
+global_non
+calls, endrun
+readParams,readCNDecompBgcParams
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(ch4_type)         , intent(in)    :: ch4_vars
+type(carbonflux_type)  , intent(inout) :: carbonflux_vars

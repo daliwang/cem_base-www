@@ -1,0 +1,7 @@
+sub_in, nflds, arr, arr_gmean
+sub_out, arr_gmean
+global_ro, w
+global_wo
+global_mod
+global_non
+calls, gather_chunk_to_field, mpibcast, get_horiz_grid_dim_d, get_horiz_grid_d

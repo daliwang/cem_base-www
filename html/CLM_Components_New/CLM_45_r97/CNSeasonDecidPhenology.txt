@@ -1,0 +1,7 @@
+sub_in, cnveg_state_inst, temperature_inst, cnveg_carbonflux_inst, cnveg_carbonstate_inst, cnveg_nitrogenflux_inst, num_soilp, filter_soilp, cnveg_nitrogenstate_inst, dgvs_inst
+sub_out
+global_ro, annavg_t2m, frootc_storage, frootn_storage, dayl, deadcrootn_storage, livestemn_storage, deadstemn_storage, livecrootn_storage, leafn_storage, woody, deadstemc_storage, deadcrootc_storage, season_decid, leafc_storage, ivt, prev_dayl, t_soisno, livestemc_storage, gresp_storage, livecrootc_storage
+global_wo, leafn_xfer, gresp_storage_to_xfer, livecrootn_xfer, livecrootc_storage_to_xfer, livestemn_xfer_to_livestemn, deadstemn_xfer, leafc_xfer, frootn_storage_to_xfer, deadcrootn_xfer_to_deadcrootn, deadcrootc_xfer_to_deadcrootc, frootc_xfer_to_frootc, livestemn_storage_to_xfer, frootn_xfer_to_frootn, deadcrootn_storage_to_xfer, prev_frootc_to_litter, deadstemn_xfer_to_deadstemn, livestemc_storage_to_xfer, deadcrootn_xfer, deadstemc_xfer, bglfr, leafc_storage_to_xfer, deadstemc_storage_to_xfer, livecrootn_storage_to_xfer, frootc_storage_to_xfer, deadcrootc_storage_to_xfer, lgsf, livecrootc_xfer_to_livecrootc, prev_leafc_to_litter, livestemc_xfer_to_livestemc, leafc_xfer_to_leafc, livestemn_xfer, frootc_xfer, livestemc_xfer, livecrootn_xfer_to_livecrootn, deadstemn_storage_to_xfer, leafn_storage_to_xfer, livecrootc_xfer, leafn_xfer_to_leafn, bgtr, frootn_xfer, deadcrootc_xfer, deadstemc_xfer_to_deadstemc
+global_mod, offset_flag, pftmayexist, onset_gddflag, offset_counter, dormant_flag, onset_flag, onset_counter, onset_gdd, days_active
+global_non
+calls

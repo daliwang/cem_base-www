@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, update_landunit_weights_one_gcell, set_landunit_weight
+readParams,
+type(bounds_type), intent(in) :: bounds

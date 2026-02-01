@@ -1,0 +1,7 @@
+sub_in, cy, dt, frac, grid, omgaxy, pexy, cx
+sub_out
+global_ro, pe
+global_wo
+global_mod, omga
+global_non
+calls, mp_send3d, mp_sendirr, mp_recvirr, mp_recv3d

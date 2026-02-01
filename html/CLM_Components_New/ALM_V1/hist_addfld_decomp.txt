@@ -1,0 +1,14 @@
+sub_param, default, long_name, units, fname, ptr_col, ptr_patch, type2d, avgflag
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+character(len=*), intent(in) :: fname                    ! field name
+character(len=*), intent(in) :: type2d                   ! 2d output type
+character(len=*), intent(in) :: units                    ! units of field
+character(len=1), intent(in) :: avgflag                  ! time averaging flag
+character(len=*), intent(in) :: long_name                ! long name of field
+character(len=*), optional, intent(in) :: default        ! if set to 'inactive, field will not appear on primary tape

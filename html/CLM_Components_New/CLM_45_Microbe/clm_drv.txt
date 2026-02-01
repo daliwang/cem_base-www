@@ -1,0 +1,16 @@
+sub_in, rstwr, doalb, declin, rdate, nlend, nextsw_cday, declinp1
+sub_out
+global_ro, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%cps%snow_depth
+global_wo, clm3%g%l%c%cps%frac_sno
+global_mod
+global_non, clm3%g%l%c
+calls, Biogeophysics1, CNZeroFluxes_dwt, histCNDV, SurfaceAlbedo, pftdyn_interp, NBalanceCheck, pft2col, clm_driverInit, CNEcosystemDyn, hist_update_hbuf, ch4, updateAccFlds, SLakeFluxes, decomp_vertprofiles, BeginNBalance, DustDryDep, DustEmission, hist_htapes_wrapup, write_diagnostic, interpMonthlyVeg, depvel_compute, CNFireInterp, inicPerp, SLakeTemperature, BareGroundFluxes, EcosystemDyn, Hydrology2, dynland_hwcontent, clm_map2gcell, restFile_write, CNAnnualUpdate, BeginCBalance, ndep_interp, get_curr_date, alt_calc, UrbanFluxes, BalanceCheck, get_clump_bounds, pftdyn_wbal_init, SurfaceRadiation, SLakeHydrology, CBalanceCheck, VOCEmission, BeginWaterBalance, t_startf, pftdyn_wbal, t_stopf, reweightWrapup, UrbanRadiation, CanopyFluxes, dv, pftwt_interp, Hydrology1, SnowAge_grain, get_ref_date, UrbanAlbedo, update_finundated, Biogeophysics2, pftdyn_cnbal, create_clm_s2x, endrun
+
+Tree height: 6
+0 , endrun, get_clump_bounds, t_startf, dynland_hwcontent, t_stopf, get_clump_bounds, t_startf, alt_calc, decomp_vertprofiles, t_stopf, get_clump_bounds, t_startf, BeginWaterBalance, t_stopf, t_startf, BeginCBalance, BeginNBalance, t_stopf, t_startf, get_clump_bounds, pftdyn_wbal_init, CNZeroFluxes_dwt, pftwt_interp, reweightWrapup, pftdyn_wbal, pftdyn_cnbal, CNZeroFluxes_dwt, ndep_interp, CNFireInterp, t_stopf, get_clump_bounds, t_startf, clm_driverInit, t_stopf, t_startf, Hydrology1, t_stopf, t_startf, SurfaceRadiation, UrbanRadiation, t_stopf, t_startf, Biogeophysics1, t_stopf, t_startf, BareGroundFluxes, t_stopf, t_startf, UrbanFluxes, t_stopf, t_startf, CanopyFluxes, t_stopf, t_startf, SLakeFluxes, SLakeTemperature, t_stopf, t_startf, DustEmission, DustDryDep, VOCEmission, t_stopf, t_startf, Biogeophysics2, t_stopf, t_startf, pft2col, t_stopf, t_startf, Hydrology2, t_stopf, t_startf, SLakeHydrology, t_stopf, t_startf, SnowAge_grain, t_stopf, t_startf, CNEcosystemDyn, CNAnnualUpdate, EcosystemDyn, t_stopf, t_startf, depvel_compute, t_stopf, t_startf, BalanceCheck, t_stopf, 
+1+, t_startf, interpMonthlyVeg, t_stopf, t_startf, interpMonthlyVeg, t_stopf, t_startf, pftdyn_interp, get_clump_bounds, reweightWrapup, dynland_hwcontent, t_stopf, pftdyn_cnbal, t_startf, ch4, t_stopf, t_startf, update_finundated, ch4, t_stopf, t_startf, clm_map2gcell, t_stopf, 
+2-, t_startf, CBalanceCheck, NBalanceCheck, t_stopf, 
+2+, t_startf, SurfaceAlbedo, t_stopf, t_startf, t_stopf, t_startf, create_clm_s2x, t_stopf, t_startf, write_diagnostic, t_stopf, t_startf, t_stopf, t_startf, updateAccFlds, t_stopf, t_startf, hist_update_hbuf, t_stopf, t_startf, get_curr_date, 
+3+, UrbanAlbedo, inicPerp, get_curr_date, get_ref_date, t_stopf, t_startf, t_startf, hist_htapes_wrapup, t_stopf, 
+4+, get_clump_bounds, dv, t_startf, histCNDV, t_stopf, 
+5+, t_stopf, t_startf, restFile_write, t_stopf, 

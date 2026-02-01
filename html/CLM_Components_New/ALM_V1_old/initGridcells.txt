@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro| ldomain%glcmask, glcmask, NONE| bounds_clump%begp, begp, NONE| ldomain%lonc, lonc, NONE| ldecomp%gdc2glo, gdc2glo, NONE| bounds_clump%begl, begl, NONE| ldomain%latc, latc, NONE| bounds_clump%begc, begc, NONE
+global_wo| grc%lat, lat, NONE| grc%gindex, gindex, NONE| grc%lon, lon, NONE
+global_mod| grc%area, area, NONE| ldomain%area, area, NONE| grc%londeg, londeg, NONE| grc%latdeg, latdeg, NONE
+global_non
+calls, clm_ptrs_check, set_cohort_decomp, get_clump_bounds, clm_ptrs_compdown, compute_higher_order_weights, set_landunit_wet_ice_lake, set_landunit_crop_noncompete, set_landunit_veg_compete, set_landunit_urban
+readParams,

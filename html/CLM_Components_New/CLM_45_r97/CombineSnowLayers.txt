@@ -1,0 +1,7 @@
+sub_in, waterflux_inst, temperature_inst, waterstate_inst, num_snowc, bounds, filter_snowc, aerosol_inst
+sub_out
+global_ro, urbpoi
+global_wo, frac_sno, qflx_sl_top_soil, z, int_snow
+global_mod, mss_bcpho, snl, frac_sno_eff, mss_dst2, mss_dst4, h2osno, mss_dst1, ltype, dz, mss_ocpho, h2osoi_ice, snw_rds, snow_depth, mss_dst3, zi, mss_bcphi, mss_ocphi, h2osoi_liq, t_soisno
+global_non
+calls, Combo

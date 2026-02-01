@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, bounds%begp, bounds%begl, bounds%begc, bounds%endp, bounds%begg, grc%landunit_indices, pft%landunit, col%landunit, bounds%endg, bounds%endl, bounds%endc
+global_wo
+global_mod
+global_non
+calls, endrun

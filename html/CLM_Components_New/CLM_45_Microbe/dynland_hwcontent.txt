@@ -1,0 +1,9 @@
+sub_in, begg, endg
+sub_out, gcell_heat, gcell_ice, gcell_liq
+global_ro, clm3%g%l%lps%cv_roof, clm3%g%l%c%cws%lake_icefrac, clm3%g%l%c%p%wtcol, clm3%g%l%c%cws%wa, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%dz_lake, clm3%g%l%colf, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%pftf, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%csol, clm3%g%lunf, clm3%g%l%lps%cv_wall, clm3%g%l%c%pfti, clm3%g%luni, clm3%g%l%itype, clm3%g%l%c%wtgcell, clm3%g%l%c%ces%t_lake, clm3%g%l%c%itype, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%watsat, clm3%g%l%coli, clm3%g%l%c%p%active, clm3%g%l%lps%cv_improad, clm3%g%l%c%p%pws%h2ocan, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice
+global_wo
+global_mod
+global_non, clm3%g%l%lps%nlev_improad, clm3%g%l%c%p, clm3%g, clm3%g%l, clm3%g%l%c, clm3%g%l%c%p%itype
+calls
+
+Tree height: 6

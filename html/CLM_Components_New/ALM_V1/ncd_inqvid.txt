@@ -1,0 +1,13 @@
+sub_param, name, varid, ncid, readvar, vardesc
+sub_out, readvar, varid
+global_ro, vardesc%varid
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling
+readParams,
+class(file_desc_t), intent(inout) :: ncid      ! netcdf file id
+character(len=*)  , intent(in)    :: name      ! variable name
+integer           , intent(out)   :: varid     ! variable id
+type(Var_desc_t)  , intent(out)   :: vardesc   ! variable descriptor
+logical, optional , intent(out)   :: readvar   ! does variable exist

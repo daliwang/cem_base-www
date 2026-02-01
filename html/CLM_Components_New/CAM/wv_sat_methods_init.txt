@@ -1,0 +1,7 @@
+sub_in, tboil_in, h2otrip_in, epsilo_in, errstring, ttrice_in, tmelt_in, kind
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

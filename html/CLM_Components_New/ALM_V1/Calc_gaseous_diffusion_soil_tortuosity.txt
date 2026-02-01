@@ -1,0 +1,16 @@
+sub_param, filter_soilc, waterstate_vars, bounds, ubj, num_soilc, tau_gas, lbj, soilstate_vars, jtops
+sub_out, tau_gas
+global_ro, soilstate_vars%bsw_col, soilstate_vars%eff_porosity_col, waterstate_vars%air_vol_col
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),        intent(in) :: bounds                             ! bounds
+integer,                  intent(in) :: num_soilc                          ! number of column soil points in column filter
+integer,                  intent(in) :: filter_soilc(:)                    ! column filter for soil points
+integer,                  intent(in) :: lbj, ubj                           ! lower and upper bounds, make sure they are > 0
+integer,                  intent(in) :: jtops(bounds%begc: )               ! top label of each column
+type(soilstate_type),     intent(in) :: soilstate_vars                     ! column soil physical state variables
+type(Waterstate_Type),    intent(in) :: waterstate_vars                    ! column soil water state variables
+real(r8),              intent(inout) :: tau_gas(bounds%begc: , lbj: )      !output variable

@@ -1,0 +1,7 @@
+sub_in, m, q, gcid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_cnst_hi, init_cnst_un, init_cnst_lw, init_cnst_md, endrun

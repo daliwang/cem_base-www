@@ -1,0 +1,7 @@
+sub_in, year, rlat, iz, day, nlat, time, nlon, ia, fname, ncf, fdir, rlon, nvar, zgrid, month, dtwrite
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, define_netcdf

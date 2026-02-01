@@ -1,0 +1,7 @@
+sub_in, nyrs
+sub_out, nyrs
+global_ro
+global_wo
+global_mod
+global_non
+calls

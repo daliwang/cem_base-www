@@ -1,0 +1,7 @@
+sub_in, weights, gauss_weights, yseg, nreconstruction, abscissae, ngauss, xseg
+sub_out, weights
+global_ro
+global_wo
+global_mod
+global_non
+calls

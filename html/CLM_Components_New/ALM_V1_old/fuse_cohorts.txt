@@ -1,0 +1,9 @@
+sub_param, patchptr:1
+sub_out
+global_ro| currentCohort%shorter, currentCohort, NONE| currentPatch%tallest, currentCohort, NONE| nextc%shorter, nextc, NONE| currentPatch%tallest, nextc, NONE| nextnextc, nextc, NONE| patchptr%NCL_p, NCL_p, NONE
+global_wo
+global_mod| %gpp, gpp, NONE| %npp, npp, NONE| %root_md, root_md, NONE| %laimemory, laimemory, NONE| %dmort, dmort, NONE| %dbh, dbh, NONE| %year_net_uptake, year_net_uptake, NONE| %seed_prod, seed_prod, NONE| %br, br, NONE| %balive, balive, NONE| %resp, resp, NONE| %fire_mort, fire_mort, NONE| %bsw, bsw, NONE| %gpp_acc, gpp_acc, NONE| %n, n, NONE| %bl, bl, NONE| %storage_flux, storage_flux, NONE| %resp_acc, resp_acc, NONE| %bdead, bdead, NONE| %leaf_litter, leaf_litter, NONE| %leaf_md, leaf_md, NONE| %canopy_trim, canopy_trim, NONE| %md, md, NONE| %carbon_balance, carbon_balance, NONE| %bstore, bstore, NONE| %b, b, NONE| %hite, hite, NONE| %npp_acc, npp_acc, NONE
+global_non| nextnextc, nextc%taller%shorter, NONE| nextc%taller, currentPatch%shortest, NONE| nextc%shorter, nextnextc, NONE| patchptr, currentPatch, NONE| nextc%taller, nextnextc%taller, NONE
+calls, sort_cohorts
+readParams,
+type (patch)  , pointer, intent(inout) :: patchptr

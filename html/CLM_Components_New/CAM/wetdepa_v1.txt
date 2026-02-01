@@ -1,0 +1,7 @@
+sub_in, bcscavt, conicw, cmfdqr, q, ncol, conds, iscavt, fracis, pdel, cldv, scavt, bsscavt, sol_factii_in, sol_factic_in, isscavt, icscavt, cwat, sol_facti_in, tracer, evaps, cldt, sol_factbi_in, scavcoef, precs, deltat, t, sol_factiic_in, cldc, sol_fact, p
+sub_out, iscavt, fracis, scavt
+global_ro
+global_wo
+global_mod
+global_non
+calls

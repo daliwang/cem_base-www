@@ -1,0 +1,19 @@
+sub_param, bounds, num_lakec, cv, energyflux_vars, waterstate_vars, lakestate_vars, filter_lakec, lhabs, temperature_vars, waterflux_vars, cv_lake
+sub_out, cv_lake, cv, lhabs
+global_ro, col%snl, col%dz_lake
+global_wo, temperature_vars%imelt_col, energyflux_vars%eflx_snomelt_col
+global_mod, waterstate_vars%h2osno_col, temperature_vars%t_lake_col, waterflux_vars%qflx_snofrz_lyr_col, waterflux_vars%qflx_snow_melt_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%snow_depth_col, waterflux_vars%qflx_snofrz_col, lakestate_vars%lake_icefrac_col, waterstate_vars%h2osoi_liq_col, temperature_vars%t_soisno_col, waterflux_vars%qflx_snomelt_col
+global_non, col%dz
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_lakec                        ! number of lake columns
+integer                , intent(in)    :: filter_lakec(:)                  ! column filter for lake points
+real(r8)               , intent(inout) :: cv( bounds%begc: , -nlevsno+1: ) ! heat capacity [J/(m2 K)] [col, lev]
+real(r8)               , intent(inout) :: cv_lake( bounds%begc: , 1: )     ! heat capacity [J/(m2 K)] [col, levlak]
+real(r8)               , intent(out)   :: lhabs( bounds%begc: )            ! total per-column latent heat abs. (J/m^2) [col]
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(lakestate_type)   , intent(inout) :: lakestate_vars

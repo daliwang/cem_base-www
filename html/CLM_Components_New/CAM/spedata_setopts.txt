@@ -1,0 +1,7 @@
+sub_in, spe_remove_file_in, spe_data_file_in, spe_filenames_list_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, ubg, ubc, num_nourbanc, lbg, filter_nourbanc, lbp, filter_nourbanp, num_nourbanp, lbc, nextsw_cday, ubp, declinp1
+sub_out
+global_ro, mss_cnc_bcphi, taul, column, rhol, itype, mss_cnc_dst3, h2osno, h2osoi_liq, taus, rhos, mss_cnc_dst4, lat, mss_cnc_bcpho, mss_cnc_dst1, snw_rds, elai, landunit, gridcell, h2osoi_ice, mss_cnc_ocphi, tlai, mss_cnc_dst2, mss_cnc_ocpho, tsai, esai, itype, gridcell, lon, frac_sno
+global_wo, fabi_sha_z, albsni_hst, fabi_sun_z, decl, albgri_bc, fabd_sha, flx_absiv, fabi_sha, ftid, flx_absdn, fabi_sun, ftdd, albgri_oc, albgri_pur, vcmaxcintsun, fabd_sha_z, fabd_sun_z, flx_absin, ftii, fsun_z, albgrd_dst, fabi, albd, albsnd_hst, albi, fabd_sun, flx_absdv, fabd, albgrd_pur, albgri_dst, albgrd_oc, albgrd_bc
+global_mod, ncan, albgri, albsoi, coszen, albsod, tsai_z, nrad, tlai_z, albgrd, vcmaxcintsha
+global_non, active
+calls, SoilAlbedo, TwoStream, SNICAR_RT, endrun

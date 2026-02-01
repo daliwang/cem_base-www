@@ -1,0 +1,7 @@
+sub_in, num_soilp, num_pcropp, doalb, filter_pcropp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNOffsetLitterfall, CNEvergreenPhenology, CNStressDecidPhenology, CNSeasonDecidPhenology, CNPhenologyClimate, CNBackgroundLitterfall, CNOnsetGrowth, CNLitterToColumn, CNLivewoodTurnover

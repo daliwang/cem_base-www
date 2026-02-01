@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, itype, altmax_lastyear_indx, wtcol, rootfr, npfts, column, pfti
+global_wo
+global_mod, leaf_prof, croot_prof, nfixation_prof, froot_prof, stem_prof, ndep_prof
+global_non, endp, begc, active, begp, endc
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, arbinit
+sub_out
+global_ro, fsat_bef, finundated_lag, itype, landunit, qflx_surf_lag
+global_wo, finundated
+global_mod, conc_o2_sat, conc_ch4_unsat, layer_sat_lag, lake_soilc, conc_ch4_sat, o2stress_sat, o2stress_unsat, conc_o2_unsat
+global_non, cellorg
+calls, get_proc_bounds

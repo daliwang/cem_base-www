@@ -1,0 +1,10 @@
+sub_in, ubl, lbl, num_urbanl, sdif, canyon_hwr, filter_urbanl
+sub_out, sdif_road, sdif_shadewall, sdif_sunwall
+global_ro, clm3%g%l%lps%vf_sr, clm3%g%l%lps%vf_sw
+global_wo
+global_mod
+global_non
+calls, endrun
+
+Tree height: 2
+1+, endrun, 

@@ -1,0 +1,7 @@
+sub_in, pmid, tmid, pdel, obklen, ustar, z0, ram
+sub_out, ram
+global_ro
+global_wo
+global_mod
+global_non
+calls

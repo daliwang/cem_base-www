@@ -1,0 +1,7 @@
+sub_in, num_hydrologyc, filter_hydrologyc, bounds
+sub_out
+global_ro
+global_wo, cws%h2osfc
+global_mod
+global_non
+calls, VecGetArrayF90, VecRestoreArrayF90

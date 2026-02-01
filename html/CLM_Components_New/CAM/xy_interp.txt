@@ -1,0 +1,7 @@
+sub_in, jm1, weight_y, ncols, count_y, lats, var_src, var_trg, im1, km1, pcols, index_x, lons, index_y, count_x, jm2, im2, weight_x
+sub_out, var_trg
+global_ro
+global_wo
+global_mod
+global_non
+calls

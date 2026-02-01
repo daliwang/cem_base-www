@@ -1,0 +1,7 @@
+sub_in, t
+sub_out
+global_ro, tape
+global_wo
+global_mod, tape
+global_non
+calls

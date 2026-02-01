@@ -1,0 +1,7 @@
+sub_in, num_do_smb_c, solarabs_inst, waterflux_inst, irrigation_inst, bounds, canopystate_inst, filter_do_smb_c, glc2lnd_inst, waterstate_inst, atm2lnd_inst, energyflux_inst
+sub_out
+global_ro, forc_rain, qflx_dew_grnd, h2osno_old, fabi, eflx_lwrad_out, forc_solai, eflx_lh_tot, ftii, glc_dyn_runoff_routing, qflx_top_soil, frac_sno_eff, fsr, do_capsnow, fsa, qflx_evap_tot, qflx_surf, h2osno, eflx_heat_from_ac_patch, eflx_wasteheat_patch, begwb, qflx_snow_grnd_col, qflx_snow_melt, qflx_snwcp_ice, qflx_sub_snow, eflx_traffic_patch, forc_solad, forc_snow, eflx_sh_tot, qflx_drain, eflx_soil_grnd, qflx_h2osfc_to_ice, qflx_qrgwl, errsoi_col, qflx_glcice_melt, albd, qflx_prec_grnd, qflx_glcice_frz, sabg_snow, eflx_lwrad_net, sabg_soil, sabg_chk, forc_lwrad, qflx_evap_grnd, qflx_irrig, ftdd, endwb, qflx_snwcp_liq, sabv, albi, esai, fabd, qflx_floodc, qflx_drain_perched, sabg, ftid, qflx_rain_grnd_col, qflx_snow_h2osfc, qflx_sl_top_soil, frac_sno, qflx_dew_snow, qflx_h2osfc_surf, elai
+global_wo, netrad
+global_mod, snow_sinks, errsol, errlon, snow_sources, errh2osno, errh2o, errseb
+global_non, waterflux_inst%qflx_glcice_col, waterflux_inst%qflx_ice_dynbal_grc, waterflux_inst%qflx_runoff_col, waterflux_inst%qflx_liq_dynbal_grc, atm2lnd_inst%volr_grc, energyflux_inst%eflx_dynbal_grc, waterflux_inst%qflx_evap_soi_col
+calls, endrun

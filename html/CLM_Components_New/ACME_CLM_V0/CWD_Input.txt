@@ -1,0 +1,7 @@
+sub_in, currentPatch
+sub_out
+global_ro, %leaf_litter, %root_md, %br, currentPatch%seed_decay, %n, %bl, %woody_turnover, %leaf_md, udata%deltat, currentCohort%taller, currentPatch%shortest, %pft, currentPatch%area, %bdead, %bsw, %dndt, %bstore
+global_wo
+global_mod, currentPatch%root_litter_in, currentPatch%cwd_BG_in, currentPatch%leaf_litter_in, currentPatch%cwd_AG_in
+global_non
+calls

@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, clm3%g%l%c%p%pnf%hrv_livecrootn_storage_to_litter, clm3%g%l%c%cnf%harvest_n_to_litr_lig_n, clm3%g%l%c%cnf%harvest_n_to_litr_cel_n, clm3%g%l%c%p%pnf%hrv_deadcrootn_to_litter, clm3%g%l%c%p%pnf%hrv_deadstemn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_deadstemn_to_prod100n, clm3%g%l%c%p%pnf%hrv_deadcrootn_storage_to_litter, clm3%g%l%c%p%pnf%hrv_deadcrootn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_retransn_to_litter, clm3%g%l%c%cnf%harvest_n_to_litr_met_n, clm3%g%l%c%cnf%harvest_n_to_cwdn, clm3%g%l%c%p%pnf%hrv_livestemn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_deadstemn_storage_to_litter, clm3%g%l%c%p%pnf%hrv_leafn_storage_to_litter, clm3%g%l%c%p%pnf%hrv_frootn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_livestemn_to_litter, clm3%g%l%c%p%pnf%hrv_deadstemn_to_prod10n, clm3%g%l%c%p%pnf%hrv_livecrootn_to_litter, clm3%g%l%c%p%pnf%hrv_leafn_to_litter, clm3%g%l%c%p%pnf%hrv_leafn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_frootn_storage_to_litter, clm3%g%l%c%p%pnf%hrv_frootn_to_litter, clm3%g%l%c%p%pnf%hrv_livecrootn_xfer_to_litter, clm3%g%l%c%p%pnf%hrv_livestemn_storage_to_litter
+global_wo
+global_mod, clm3%g%l%c%p%pns%leafn_storage, clm3%g%l%c%p%pns%frootn_xfer, clm3%g%l%c%p%pns%deadstemn_storage, clm3%g%l%c%p%pns%leafn_xfer, clm3%g%l%c%p%pns%livestemn_storage, clm3%g%l%c%p%pns%deadcrootn, clm3%g%l%c%p%pns%livestemn_xfer, clm3%g%l%c%p%pns%deadcrootn_xfer, clm3%g%l%c%p%pns%leafn, clm3%g%l%c%p%pns%deadcrootn_storage, clm3%g%l%c%p%pns%livecrootn, clm3%g%l%c%p%pns%frootn_storage, clm3%g%l%c%p%pns%frootn, clm3%g%l%c%p%pns%livestemn, clm3%g%l%c%cns%decomp_npools_vr, clm3%g%l%c%p%pns%deadstemn_xfer, clm3%g%l%c%p%pns%deadstemn, clm3%g%l%c%p%pns%livecrootn_storage, clm3%g%l%c%p%pns%retransn, clm3%g%l%c%p%pns%livecrootn_xfer
+global_non
+calls
+
+Tree height: 1

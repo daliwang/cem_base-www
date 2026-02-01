@@ -1,0 +1,7 @@
+sub_in, filterp, canopystate_inst, photosyns_inst, atm2lnd_inst, fn
+sub_out
+global_ro, psnsun_wj, forc_pc13o2, psnsha_wc, laisun, forc_pco2, psnsha, alphapsnsha, psnsun_wc, psnsha_wj, psnsha_wp, psnsun_wp, alphapsnsun, psnsun, laisha
+global_wo, c13_psnsun, fpsn_wp, c14_psnsun, c14_psnsha, c13_psnsha, fpsn_wc, fpsn, fpsn_wj
+global_mod, rc13_psnsun, rc13_canair, rc13_psnsha
+global_non, atm2lnd_inst%forc_po2_grc
+calls

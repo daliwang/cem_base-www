@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, hrv_deadcrootc_storage_to_litter, hrv_frootc_storage_to_litter, hrv_frootc_xfer_to_litter, hrv_gresp_xfer_to_litter, hrv_deadcrootc_to_litter, harvest_c_to_cwdc, hrv_deadstemc_to_prod100c, hrv_livestemc_xfer_to_litter, hrv_livecrootc_to_litter, hrv_leafc_storage_to_litter, harvest_c_to_litr_cel_c, harvest_c_to_litr_met_c, hrv_deadcrootc_xfer_to_litter, hrv_xsmrpool_to_atm, harvest_c_to_litr_lig_c, hrv_gresp_storage_to_litter, hrv_livecrootc_xfer_to_litter, hrv_deadstemc_storage_to_litter, hrv_frootc_to_litter, hrv_leafc_to_litter, hrv_leafc_xfer_to_litter, hrv_deadstemc_xfer_to_litter, hrv_deadstemc_to_prod10c, hrv_livestemc_storage_to_litter, hrv_livestemc_to_litter, hrv_livecrootc_storage_to_litter
+global_wo
+global_mod, deadcrootc_storage, deadcrootc, frootc, gresp_storage, gresp_xfer, livestemc_storage, deadstemc_xfer, frootc_xfer, livecrootc, livecrootc_storage, decomp_cpools_vr, leafc_storage, leafc_xfer, deadstemc, livestemc_xfer, leafc, livecrootc_xfer, deadcrootc_xfer, frootc_storage, livestemc, xsmrpool, deadstemc_storage
+global_non, ccf, cc14f, cc13f, pcf, pc14f, pc13f, pcs, pc13s, pc14s, cc13s, cc14s, ccs
+calls, endrun

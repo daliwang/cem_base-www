@@ -1,0 +1,7 @@
+sub_in, num_methp, ch4_vars, sat, lake, bounds, nitrogenflux_vars, num_methc, waterstate_vars, jwt, filter_methp, carbonflux_vars, temperature_vars, soilstate_vars, filter_methc
+sub_out
+global_ro, carbonflux_vars%fphr_col, col%dz, ch4_vars%lake_soilc_col, ch4_vars%finundated_col, ch4_vars%annavg_finrw_col, soilstate_vars%rootfr_patch, soilstate_vars%rootfr_col, ch4_vars%layer_sat_lag_col, nitrogenflux_vars%pot_f_nit_vr_col, temperature_vars%t_soisno_col, carbonflux_vars%rr_col, pft%column, carbonflux_vars%rr_patch, carbonflux_vars%somhr_col, carbonflux_vars%hr_vr_col, col%zi, pft%wtcol, carbonflux_vars%o_scalar_col, carbonflux_vars%lithr_col, ch4_vars%pH_col, ch4_vars%finundated_lag_col, col%gridcell, ch4_vars%conc_o2_sat_col, ch4_vars%conc_o2_unsat_col
+global_wo, ch4_vars%ch4_prod_depth_sat_col, ch4_vars%ch4_prod_depth_unsat_col
+global_mod, ch4_vars%o2_decomp_depth_sat_col, ch4_vars%o2_decomp_depth_unsat_col, ch4_vars%sif_col
+global_non, ch4_vars%co2_decomp_depth_sat_col, ch4_vars%co2_decomp_depth_unsat_col, soilstate_vars%watsat_col, waterstate_vars%h2osoi_vol_col, col%z
+calls, endrun

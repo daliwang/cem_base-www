@@ -1,0 +1,7 @@
+sub_in, ud, phi, nlon, grfulat, vd, phidp, lam, coslat, grfu, grfv, grfvlat, lamdp
+sub_out, grfulat, grfvlat
+global_ro
+global_wo
+global_mod
+global_non
+calls

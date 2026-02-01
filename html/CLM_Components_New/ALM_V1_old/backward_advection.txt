@@ -1,0 +1,12 @@
+sub_param, dtime:3, zold:4, us:2, zi:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, Extra_inst%AAssign, ode_rk2
+readParams,
+real(r8), dimension(:), intent(in) :: zi     !boundary interfaces,  [0 : n+4], 2:n+2 are to be advected
+real(r8), dimension(:), intent(in) :: us     !interface velocities, [0 : n+4] including ghost cells
+real(r8),               intent(in) :: dtime  !time stepping
+real(r8), dimension(:), intent(out):: zold   !the starting point of the interfaces, [0:n]

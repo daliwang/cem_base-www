@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, decomp_k, cascade_donor_pool, fpi_vr, floating_cn_ratio_decomp_pools, rf_decomp_cascade, cascade_receiver_pool, decomp_cpools_vr, decomp_npools_vr, w_scalar, initial_cn_ratio, pathfrac_decomp_cascade
+global_wo, decomp_cascade_ctransfer_vr, sminn_to_denit_decomp_cascade_vr, decomp_cascade_hr_vr, decomp_cascade_ntransfer_vr, decomp_cascade_sminn_flux_vr, potential_immob_vr
+global_mod, fphr, net_nmin, net_nmin_vr, gross_nmin, phr_vr, gross_nmin_vr
+global_non, altmax_indx, rootfr, itype, altmax_lastyear_indx, landunit
+calls, nitrif_denitrif, decomp_vertprofiles, CNAllocation, decomp_rate_constants_bgc, decomp_rate_constants_cn

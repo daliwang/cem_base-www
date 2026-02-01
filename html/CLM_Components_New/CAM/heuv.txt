@@ -1,0 +1,7 @@
+sub_in, nlev, zen, mw, kbot, o_vmr, o2_vmr, euv_hrates, n2_vmr, occ, zkm, o2cc, n2cc, cparg
+sub_out, euv_hrates
+global_ro
+global_wo
+global_mod
+global_non
+calls, slant_col, sphers

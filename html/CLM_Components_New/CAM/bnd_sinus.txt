@@ -1,0 +1,7 @@
+sub_in, ihlat_bnd, itrans_width
+sub_out, ihlat_bnd, itrans_width
+global_ro
+global_wo
+global_mod
+global_non
+calls, svdcmp, ff, svbksb

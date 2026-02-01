@@ -1,0 +1,15 @@
+sub_param, filter_methp, ch4_vars, carbonflux_vars, bounds, filter_methc, num_methp, num_methc
+sub_out
+global_ro, ch4_vars%finundated_col, carbonflux_vars%agnpp_patch, carbonflux_vars%bgnpp_patch, carbonflux_vars%somhr_col, pft%column
+global_wo, carbonflux_vars%annavg_agnpp_patch, ch4_vars%annavg_finrw_col, carbonflux_vars%annavg_bgnpp_patch
+global_mod, ch4_vars%annsum_counter_col, ch4_vars%tempavg_somhr_col, carbonflux_vars%tempavg_agnpp_patch, carbonflux_vars%tempavg_bgnpp_patch, ch4_vars%annavg_somhr_col, ch4_vars%tempavg_finrw_col
+global_non
+calls
+readParams,readCH4Params
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_methc         ! number of soil columns in filter
+integer                , intent(in)    :: filter_methc(:)   ! filter for soil columns
+integer                , intent(in)    :: num_methp         ! number of soil points in pft filter
+integer                , intent(in)    :: filter_methp(:)   ! patch filter for soil points
+type(carbonflux_type)  , intent(inout) :: carbonflux_vars
+type(ch4_type)         , intent(inout) :: ch4_vars

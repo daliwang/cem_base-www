@@ -1,0 +1,24 @@
+sub_param, filter_soilp, carbonstate_vars, nitrogenstate_vars, c13_carbonstate_vars, filter_soilc, tracerstate_vars, betrtracer_vars, c13_carbonflux_vars, carbonflux_vars, c14_carbonstate_vars, bounds, c14_carbonflux_vars, nitrogenflux_vars, num_soilp, num_soilc, tracerflux_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, c13_carbonflux_vars%Summary, nitrogenflux_vars%Summary, t_stopf, nitrogenstate_vars%Summary, c14_carbonstate_vars%Summary, carbonflux_vars%Summary, c14_carbonflux_vars%Summary, carbonstate_vars%Summary, c13_carbonstate_vars%Summary
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc            ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)      ! filter for soil columns
+integer                  , intent(in)    :: num_soilp            ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)      ! filter for soil patches
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars      !
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars     !
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars  !
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars !
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars  !
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars !
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars    !
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars   !
+type(betrtracer_type)    , intent(in)    :: betrtracer_vars      ! betr configuration information
+type(tracerstate_type)   , intent(in)    :: tracerstate_vars     !
+type(tracerflux_type)    , intent(in)    :: tracerflux_vars      !

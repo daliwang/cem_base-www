@@ -1,0 +1,7 @@
+sub_in, snow, solar_flux, dvel, ncdate, lonndx, sfc_temp, tv, rain, mmr, ncol, latndx, dflx, endlandtype, spec_hum, beglandtype, rh, soilw, air_temp, icefrc, lchnk, wind_speed, pressure_sfc, pressure_10m, ocnfrc
+sub_out, dvel, dflx
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_drydep_setHCoeff

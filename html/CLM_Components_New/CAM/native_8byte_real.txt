@@ -1,0 +1,7 @@
+sub_in, realInOut
+sub_out, realInOut
+global_ro
+global_wo
+global_mod
+global_non
+calls, mvbits

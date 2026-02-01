@@ -1,0 +1,12 @@
+sub_param, waterstate_vars, temperature_vars, soilstate_vars, site_in
+sub_out
+global_ro, %dseed_dt, %dcwd_ag_dt, %dndt, %droot_litter_dt, udata%deltat, %dbalivedt, %dbdeaddt, %dbstoredt, %dleaf_litter_dt, currentCohort%taller, currentPatch%shortest, site_in%youngest_patch, currentPatch%older, %ddbhdt, %dcwd_bg_dt
+global_wo, %gpp_acc, %resp_acc, %npp_acc
+global_mod, %balive, %cwd_ag, %leaf_litter, %dbh, %bstore, %seed_bank, %cwd_bg, %age, %n, %bdead, %root_litter
+global_non
+calls, canopy_derivs, allocate_live_biomass, non_canopy_derivs
+readParams,
+type(site)             , intent(in), target :: site_in
+type(soilstate_type)   , intent(in)         :: soilstate_vars
+type(temperature_type) , intent(in)         :: temperature_vars
+type(waterstate_type)  , intent(in)         :: waterstate_vars

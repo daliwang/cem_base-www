@@ -1,0 +1,7 @@
+sub_in, tsi
+sub_out, tsi
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_true_ref_solar_band_irrad

@@ -1,0 +1,15 @@
+sub_in, filter_nourbanc, filter_nourbanp, num_nourbanp, nextsw_cday, bounds, declinp1, num_nourbanc
+sub_out
+global_ro, pps%tsai, cps%frac_sno, cps%snw_rds, pftcon%taus, cps%mss_cnc_bcphi, cps%mss_cnc_dst1, cps%mss_cnc_dst4, cps%mss_cnc_dst2, cws%h2osoi_ice, pftcon%taul, pps%elai, cws%h2osoi_liq, cps%mss_cnc_ocphi, pps%tlai, cps%mss_cnc_ocpho, pftcon%rhol, cps%mss_cnc_bcpho, pftcon%rhos, pps%esai, cps%mss_cnc_dst3
+global_wo, pps%albd, pps%fabi_sun, cps%flx_absin, cps%albgri_bc, pps%fabi_sha, cps%albgri_pur, pps%albi, pps%fsun_z, pps%fabi, pps%fabi_sha_z, pps%ftdd, cps%albgri_oc, pps%fabd_sha_z, cps%albsnd_hst, cps%flx_absdv, pps%vcmaxcintsun, pps%fabd_sun, cps%albgri_dst, pps%ftid, cps%albgrd_bc, cps%albgrd_oc, cps%albgrd_pur, cps%albgrd_dst, cps%flx_absiv, pps%fabi_sun_z, pps%fabd, cps%albsni_hst, cps%flx_absdn, pps%fabd_sun_z, pps%ftii, pps%fabd_sha
+global_mod, cps%albsod, pps%nrad, cps%coszen, pps%vcmaxcintsha, cps%albgri, pps%ncan, pps%tsai_z, cps%albgrd, pps%tlai_z, cps%albsoi
+global_non, cws%h2osno, pft%column, pft%gridcell, pft%landunit
+calls, SoilAlbedo, TwoStream, SNICAR_RT, endrun
+
+Tree height: 5
+0 , SoilAlbedo, SNICAR_RT, SNICAR_RT, 
+2-, TwoStream, 
+2+, endrun, 
+3+, endrun, 
+1+, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, SNICAR_RT, 
+2+, SNICAR_RT, SNICAR_RT, 

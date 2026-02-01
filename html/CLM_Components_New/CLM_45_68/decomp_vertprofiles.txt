@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, pft%column, col%npfts, cps%altmax_lastyear_indx, col%pfti, pps%rootfr, pft%wtcol, pft%itype
+global_wo
+global_mod, pps%croot_prof, cps%nfixation_prof, pps%leaf_prof, pps%stem_prof, cps%ndep_prof, pps%froot_prof
+global_non, bounds%begc, bounds%begp, bounds%endc, shr_log_errMsg, bounds%endp
+calls, endrun
+
+Tree height: 5
+1+, endrun, endrun, 

@@ -1,0 +1,31 @@
+sub_param, waterflux_vars:9, waterstate_vars:8, soilstate_vars:10, canopystate_vars:22, temperature_vars:11, filter_soilp:6, carbonstate_vars:17, filter_soilc:4, ch4_vars:23, cnstate_vars:15, num_soilp:5, nitrogenstate_vars:19, soilhydrology_vars:13, phosphorusflux_vars:20, bounds:2, carbonflux_vars:16, clm_bgc_data:1, energyflux_vars:12, atm2lnd_vars:7, phosphorusstate_vars:21, num_soilc:3, nitrogenflux_vars:18, soil_water_retention_curve:14
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_clm_soil_property, get_clm_bgc_flux, get_clm_bgc_state, get_clm_soil_thermohydro
+readParams,
+type(bounds_type)           , intent(in)    :: bounds
+integer                     , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                     , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+integer                     , intent(in)    :: num_soilp         ! number of soil patches in filter
+integer                     , intent(in)    :: filter_soilp(:)   ! filter for soil patches
+type(atm2lnd_type)          , intent(in)    :: atm2lnd_vars
+type(canopystate_type)      , intent(in)    :: canopystate_vars
+type(waterstate_type)       , intent(in)    :: waterstate_vars
+type(waterflux_type)        , intent(in)    :: waterflux_vars
+type(soilstate_type)        , intent(in)    :: soilstate_vars
+type(temperature_type)      , intent(in)    :: temperature_vars
+type(soilhydrology_type)    , intent(in)    :: soilhydrology_vars
+type(energyflux_type)       , intent(in)    :: energyflux_vars
+type(cnstate_type)          , intent(in)    :: cnstate_vars
+type(carbonflux_type)       , intent(in)    :: carbonflux_vars
+type(carbonstate_type)      , intent(in)    :: carbonstate_vars
+type(nitrogenflux_type)     , intent(in)    :: nitrogenflux_vars
+type(nitrogenstate_type)    , intent(in)    :: nitrogenstate_vars
+type(phosphorusflux_type)   , intent(in)    :: phosphorusflux_vars
+type(phosphorusstate_type)  , intent(in)    :: phosphorusstate_vars
+type(ch4_type)              , intent(in)    :: ch4_vars
+class(soil_water_retention_curve_type)  , intent(in)    :: soil_water_retention_curve
+type(clm_bgc_interface_data_type)       , intent(inout) :: clm_bgc_data

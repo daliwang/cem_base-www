@@ -1,0 +1,7 @@
+sub_in, snowh, qi, qv, landfrac, p, T, aist
+sub_out, aist
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat_water

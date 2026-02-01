@@ -1,0 +1,10 @@
+sub_in, num_snowc, filter_snowc, lbc, ubc
+sub_out
+global_ro, clm3%g%l%c%landunit
+global_wo, clm3%g%l%c%cws%int_snow, clm3%g%l%c%cps%z, clm3%g%l%c%cwf%qflx_sl_top_soil, clm3%g%l%c%cps%frac_sno
+global_mod, clm3%g%l%c%cps%mss_dst4, clm3%g%l%c%cps%snw_rds, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%mss_bcphi, clm3%g%l%c%cps%mss_dst1, clm3%g%l%c%cps%mss_ocphi, clm3%g%l%c%cps%mss_dst2, clm3%g%l%c%cps%mss_dst3, clm3%g%l%itype, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%cps%mss_bcpho, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%mss_ocpho, clm3%g%l%c%cps%frac_sno_eff
+global_non
+calls, Combo
+
+Tree height: 9
+7-, Combo, 

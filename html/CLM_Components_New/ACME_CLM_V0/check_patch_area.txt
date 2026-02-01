@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch%younger, currentSite%oldest_patch
+global_wo
+global_mod, currentSite%oldest_patch%area, %area
+global_non
+calls

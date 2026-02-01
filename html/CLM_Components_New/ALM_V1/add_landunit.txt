@@ -1,0 +1,12 @@
+sub_param, li, gi, wtgcell, ltype
+sub_out, li
+global_ro
+global_wo, lun%itype, lun%urbpoi, lun%ifspecial, lun%lakpoi, lun%glcmecpoi, lun%gridcell
+global_mod, lun%wtgcell
+global_non
+calls
+readParams,
+integer  , intent(inout) :: li      ! input value is index of last landunit added; output value is index of this newly-added landunit
+integer  , intent(in)    :: gi      ! grid cell index on which this landunit should be placed
+integer  , intent(in)    :: ltype   ! landunit type
+real(r8) , intent(in)    :: wtgcell ! weight of the landunit relative to the grid cell

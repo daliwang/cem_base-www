@@ -1,0 +1,7 @@
+sub_in, mmr_old, rc, cstate, satice_old, igas, satliq_old, mmr
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, supersat

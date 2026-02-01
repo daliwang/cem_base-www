@@ -1,0 +1,7 @@
+sub_in, filter_soilp, cnstate_vars, carbonflux_vars, num_soilp, carbonstate_vars, nitrogenflux_vars
+sub_out
+global_ro, carbonstate_vars%frootc_patch, carbonflux_vars%cpool_to_frootc_patch, carbonflux_vars%cpool_to_leafc_patch, ecophyscon%livewdcn, cnstate_vars%annsum_grainc_patch, carbonstate_vars%livestemc_patch, ecophyscon%leafcn, cnstate_vars%offset_counter_patch, ecophyscon%frootcn, carbonflux_vars%cpool_to_grainc_patch, ecophyscon%graincn, carbonstate_vars%leafc_patch, ecophyscon%lflitcn, carbonstate_vars%grainc_patch, pft%itype, ecophyscon%evergreen, cnstate_vars%offset_flag_patch, carbonflux_vars%cpool_to_livestemc_patch
+global_wo, nitrogenflux_vars%grainn_to_food_patch, nitrogenflux_vars%leafn_to_retransn_patch, nitrogenflux_vars%livestemn_to_litter_patch, nitrogenflux_vars%frootn_to_litter_patch
+global_mod, nitrogenflux_vars%leafn_to_litter_patch, carbonflux_vars%prev_frootc_to_litter_patch, carbonflux_vars%grainc_to_food_patch, carbonflux_vars%livestemc_to_litter_patch, carbonflux_vars%leafc_to_litter_patch, carbonflux_vars%prev_leafc_to_litter_patch, carbonflux_vars%frootc_to_litter_patch
+global_non
+calls

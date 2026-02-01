@@ -1,0 +1,7 @@
+sub_in, f, bounds, t
+sub_out
+global_ro, clmptr_rs, %field%c2l_scale_type, %field%beg1d, %field%hpindex, %field%end1d, %field%l2g_scale_type, %field%p2c_scale_type, %hlist, %field%type1d, %field%type1d_out, %avgflag
+global_wo
+global_mod, tape, tape, col%active, >lun%active, pft%active
+global_non
+calls, l2g, c2g, endrun, p2g

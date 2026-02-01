@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, temperature_inst, num_nolakec, atm2lnd_inst, waterstate_inst, waterflux_inst, filter_nolakep, aerosol_inst, canopystate_inst, num_nolakep, irrigation_inst, bounds
+sub_out
+global_ro, frac_h2osfc, do_capsnow, qflx_floodg, forc_t, n_melt, qflx_irrig, frac_veg_nosno, esai, qflx_snow_melt, t_grnd, forc_snow, forc_rain, qflx_snow_grnd_col, dewmx, elai
+global_wo, t_soisno, qflx_snwcp_liq, qflx_floodc, frac_sno_eff, qflx_snow_h2osfc, frac_iceold, z, zi, qflx_prec_grnd, qflx_snow_grnd_patch, qflx_rain_grnd, qflx_snwcp_ice, swe_old
+global_mod, snow_depth, int_snow, snl, frac_sno, qflx_prec_intr, h2osoi_ice, dz, h2ocan, h2osoi_liq, h2osno
+global_non, waterstate_inst%h2osfc_col
+calls, p2c, FracWet, waterstate_inst%Reset, FracH2oSfc, aerosol_inst%Reset

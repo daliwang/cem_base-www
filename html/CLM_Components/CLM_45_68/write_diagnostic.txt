@@ -1,0 +1,7 @@
+sub_in, nstep, wrtdia
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, t_barrierf, mpi_send, get_proc_global, shr_sys_flush, mpi_recv, mpi_reduce, endrun

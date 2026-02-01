@@ -1,0 +1,21 @@
+sub_param, lev_dimname, endo, sgridindex, nlevo, endi, activeo, ncidi, vec_dimname, switchdimi, bego, nlevi, switchdimo, activei, begi, varname, ncido
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, ncd_io
+readParams,
+character(len=*)  , intent(inout) :: varname
+character(len=*)  , intent(inout) :: vec_dimname
+character(len=*)  , intent(inout) :: lev_dimname
+integer           , intent(in)    :: begi, endi
+integer           , intent(in)    :: bego, endo
+integer           , intent(in)    :: nlevi, nlevo
+logical           , intent(inout) :: switchdimi
+logical           , intent(inout) :: switchdimo
+type(file_desc_t) , intent(inout) :: ncidi
+type(file_desc_t) , intent(inout) :: ncido
+logical           , intent(in)    :: activei(begi:endi)
+logical           , intent(in)    :: activeo(bego:endo)
+integer           , intent(in)    :: sgridindex(bego:endo)

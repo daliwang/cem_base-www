@@ -1,0 +1,7 @@
+sub_in, wcl, explayc, ns, aer_tau, aer_tau_w_f, gci, gcl, uo3, uco2, coszrs, abco2, tauxci, abh2o, tdirc, tauxcl, rdir, abo2, aer_tau_w_g, fci, wci, trayoslp, ndayc, tdif, tdifc, rdirc, tdir, uh2o, aer_tau_w, uo2, rdif, pflx, abo3, fcl, rdifc, explay
+sub_out, tdirc, rdir, explayc, aer_tau, tdif, aer_tau_w_g, aer_tau_w_f, tdifc, rdirc, tdir, rdif, aer_tau_w, explay, rdifc
+global_ro
+global_wo
+global_mod
+global_non
+calls

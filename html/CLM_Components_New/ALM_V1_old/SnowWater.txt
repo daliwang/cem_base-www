@@ -1,0 +1,17 @@
+sub_param, bounds:1, num_nosnowc:4, atm2lnd_vars:6, num_snowc:2, filter_snowc:3, aerosol_vars:9, filter_nosnowc:5, waterflux_vars:7, waterstate_vars:8
+sub_out
+global_ro| waterstate_vars%h2osno_col, h2osno, NONE| waterstate_vars%do_capsnow_col, do_capsnow, NONE| col%snl, snl, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| waterflux_vars%qflx_sub_snow_col, qflx_sub_snow, NONE| waterflux_vars%qflx_snomelt_col, qflx_snomelt, NONE| waterflux_vars%qflx_dew_grnd_col, qflx_dew_grnd, NONE| waterflux_vars%qflx_dew_snow_col, qflx_dew_snow, NONE| waterflux_vars%qflx_rain_grnd_col, qflx_rain_grnd, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| waterflux_vars%qflx_evap_grnd_col, qflx_evap_grnd, NONE| col%landunit, landunit, NONE
+global_wo| waterflux_vars%mflx_neg_snow_col_1d, mflx_neg_snow_col_1d, NONE| waterflux_vars%qflx_top_soil_col, qflx_top_soil, NONE
+global_mod| waterflux_vars%qflx_snow_melt_col, qflx_snow_melt, NONE| aerosol_vars%mss_dst4_col, mss_dst4, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| aerosol_vars%mss_dst3_col, mss_dst3, NONE| aerosol_vars%mss_ocpho_col, mss_ocpho, NONE| col%dz, dz, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| waterstate_vars%int_snow_col, int_snow, NONE| aerosol_vars%mss_bcpho_col, mss_bcpho, NONE| aerosol_vars%mss_ocphi_col, mss_ocphi, NONE| aerosol_vars%mss_bcphi_col, mss_bcphi, NONE| aerosol_vars%mss_dst2_col, mss_dst2, NONE| aerosol_vars%mss_dst1_col, mss_dst1, NONE
+global_non| bounds%endc, endc, NONE| bounds%begc, begc, NONE
+calls, AerosolFluxes
+readParams,
+type(bounds_type)     , intent(in)    :: bounds
+integer               , intent(in)    :: num_snowc         ! number of snow points in column filter
+integer               , intent(in)    :: filter_snowc(:)   ! column filter for snow points
+integer               , intent(in)    :: num_nosnowc       ! number of non-snow points in column filter
+integer               , intent(in)    :: filter_nosnowc(:) ! column filter for non-snow points
+type(atm2lnd_type)    , intent(in)    :: atm2lnd_vars
+type(waterflux_type)  , intent(inout) :: waterflux_vars
+type(waterstate_type) , intent(inout) :: waterstate_vars
+type(aerosol_type)    , intent(inout) :: aerosol_vars

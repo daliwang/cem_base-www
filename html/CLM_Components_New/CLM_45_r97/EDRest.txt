@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, canopystate_inst, ed_clm_inst, ncid, flag, ed_phenology_inst, waterstate_inst, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ervc%getVectors, ervc%deleteEDRestartVectorClass, ervc%doVectorIO, ervc%setVectors

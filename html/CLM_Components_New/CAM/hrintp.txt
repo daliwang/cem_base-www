@@ -1,0 +1,7 @@
+sub_in, fint, idp, fyt, ydp, jcen, limitd, nlon, fdp, dy, wdy, y, nlonex, jdp, pf, fxl, xdp, fb, x, fyb, fxr, pkcnst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, herxin, limdy, cubydr, heryin

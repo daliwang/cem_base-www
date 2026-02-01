@@ -1,0 +1,14 @@
+sub_param, filter_hydrologyc, filter_urbanc, num_hydrologyc, num_urbanc, h2osoi_liq, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)       , intent(in)    :: bounds               ! bounds
+integer                 , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                 , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                 , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                 , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+real(r8)                , intent(in)    :: h2osoi_liq(bounds%begc: , 1: )

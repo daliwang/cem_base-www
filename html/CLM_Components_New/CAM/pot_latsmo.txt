@@ -1,0 +1,7 @@
+sub_in, idlat, pots, pot, pot_highlats, !, ==
+sub_out, pot
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,16 @@
+sub_param, carbonflux_vars, carbonstate_vars, EDbio_vars, nitrogenstate_vars, bounds, waterstate_vars, geds_local, canopystate_vars
+sub_out
+global_ro, %br, currentSite%oldest_patch, currentPatch%younger, col%gridcell, %balive, pft%column, %hite, %tallest, col%pfti, %bsw, %bstore, %pft, %area, ecophyscon%leafcn, %bdead
+global_wo, %patchno, %b, %livestemn, EDpft%ED_bareground, %lai, %livecrootn, EDpft%ED_patch, canopystate_vars%hbot_patch, geds_local%clmcolumn, canopystate_vars%elai_patch, canopystate_vars%esai_patch, canopystate_vars%tsai_patch, canopystate_vars%tlai_patch
+global_mod, %c_area, EDpft%wtED, %treelai, canopystate_vars%htop_patch, %clm_pno, currentCohort%taller, currentPatch%shortest, %total_canopy_area, %bare_frac_area, %total_tree_area
+global_non, geds_local
+calls, clm_indices, clm_leaf_area_profile, root_fraction, update_ed_history_variables
+readParams,
+type(bounds_type)           , intent(in)            :: bounds  ! clump bounds
+type(gridcell_edstate_type) , intent(inout), target :: geds_local( bounds%begg: )
+type(waterstate_type)       , intent(inout)         :: waterstate_vars
+type(canopystate_type)      , intent(inout)         :: canopystate_vars
+type(EDbio_type)            , intent(inout)         :: EDbio_vars
+type(carbonstate_type)      , intent(inout)         :: carbonstate_vars
+type(nitrogenstate_type)    , intent(inout)         :: nitrogenstate_vars
+type(carbonflux_type)       , intent(inout)         :: carbonflux_vars

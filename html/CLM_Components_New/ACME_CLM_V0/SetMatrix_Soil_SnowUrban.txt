@@ -1,0 +1,7 @@
+sub_in, tk, num_nolakec, filter_nolakec, nband, bounds, frac_sno_eff, fact, bmatrix_soil_snow
+sub_out, bmatrix_soil_snow
+global_ro, col%z, col%landunit
+global_wo
+global_mod
+global_non, bounds%begc, bounds%endc
+calls, SetMatrix_Soil_SnowUrbanNonRoad, SetMatrix_Soil_SnowUrbanRoad

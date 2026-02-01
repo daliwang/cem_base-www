@@ -1,0 +1,10 @@
+sub_in, no_update, filter_h2osfc, bounds, num_h2osfc
+sub_out, frac_h2osfc
+global_ro, cps%micro_sigma, cws%h2osno
+global_wo, cps%frac_sno_eff
+global_mod, cws%h2osfc, cps%frac_sno, cws%h2osoi_liq
+global_non, shr_kind_r8, shr_spfn_erf
+calls, shr_assert
+
+Tree height: 5
+0 , shr_assert, 

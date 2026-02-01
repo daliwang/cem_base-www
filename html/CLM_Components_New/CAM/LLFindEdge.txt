@@ -1,0 +1,7 @@
+sub_in, found, Edge, dest, src, id
+sub_out, id, found
+global_ro, temp_node, id
+global_wo
+global_mod
+global_non
+calls

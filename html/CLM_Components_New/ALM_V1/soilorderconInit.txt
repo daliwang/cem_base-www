@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro
+global_wo
+global_mod, soilordercon%k_s3_biochem, soilordercon%r_occlude, soilordercon%k_s4_biochem, soilordercon%k_s1_biochem, soilordercon%ks_sorption, soilordercon%k_s2_biochem, soilordercon%r_weather, soilordercon%smax, soilordercon%r_adsorp, soilordercon%r_desorp
+global_non
+calls
+readParams,

@@ -1,0 +1,15 @@
+sub_param, hksat_col:6, t:1, mode:7, sucsat_col:4, bounds:2, bsw_col:5, watsat_col:3
+sub_out
+global_ro| col%landunit, landunit, NONE
+global_wo
+global_mod
+global_non
+calls, shr_string_listAppend, ncd_defvar, c2g, endrun, ncd_io
+readParams,
+integer           , intent(in) :: t    ! tape index
+type(bounds_type) , intent(in) :: bounds
+real(r8)          , intent(in) :: watsat_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: sucsat_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: bsw_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: hksat_col( bounds%begc:,1: )
+character(len=*)  , intent(in) :: mode ! 'define' or 'write'

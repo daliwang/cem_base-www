@@ -1,0 +1,7 @@
+sub_in, ptrad, prdnd, pref, pfu, ptdbt, ptra, prup, pdbt, kw, prupd, prefd, klev, pfd
+sub_out, pfd, pfu, prdnd, prupd, prup
+global_ro
+global_wo
+global_mod
+global_non
+calls

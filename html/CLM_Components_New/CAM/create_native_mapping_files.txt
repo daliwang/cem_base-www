@@ -1,0 +1,7 @@
+sub_in, maptype, elem, par
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling, datetime, pio_closefile, interpolate_scalar, endrun, cam_pio_createfile, pio_initdecomp, get_horiz_grid_d, interp_init, wrap_repro_sum, set_interp_parameter, mpi_allreduce, CreateMetaData, cube_facepoint_ne, pio_write_darray, cam_pio_openfile

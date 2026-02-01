@@ -1,0 +1,7 @@
+sub_in, pbuf2d, File
+sub_out
+global_ro, dimsizes, vardesc, dtype, name
+global_wo
+global_mod
+global_non, pbuf2d
+calls, pio_seterrorhandling

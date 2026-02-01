@@ -1,0 +1,12 @@
+sub_param, bounds, clm_bgc_data, num_soilc, filter_soilc
+sub_out
+global_ro, clm_pf_idata%nzclm_mapped, clm_pf_idata%C_molecular_weight, clm_pf_idata%nlclm_sub, clm_bgc_data%decomp_npools_vr_col, clm_pf_idata%N_molecular_weight, clm_bgc_data%decomp_cpools_vr_col, col%gridcell, bounds%begg, clm_bgc_data%initial_cn_ratio, col%wtgcell
+global_wo, clm_bgc_data%gross_nmin_vr_col, clm_bgc_data%sminn_vr_col, clm_bgc_data%actual_immob_vr_col, clm_bgc_data%sminn_to_plant_vr_col, clm_bgc_data%potential_immob_vr_col
+global_mod, clm_bgc_data%decomp_npools_sourcesink_col, clm_bgc_data%decomp_cpools_sourcesink_col, clm_bgc_data%smin_no3_to_plant_vr_col, clm_bgc_data%smin_no3_vr_col, clm_bgc_data%smin_nh4_to_plant_vr_col, clm_bgc_data%smin_nh4_vr_col, clm_bgc_data%smin_nh4sorb_vr_col
+global_non
+calls, VecRestoreArrayReadF90, VecGetArrayReadF90, VecRestoreArrayF90, update_bgc_gaslosses_pf2clm
+readParams,clm_pf_readnl
+type(bounds_type)        , intent(in) :: bounds
+integer                  , intent(in) :: num_soilc         ! number of soil columns in filter
+integer                  , intent(in) :: filter_soilc(:)   ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

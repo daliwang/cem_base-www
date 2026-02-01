@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit
+global_wo, caerch4bios_unsat, canaerch4bios_sat, cco2bios_sat, caces_prod, cdons_unsat, canaerch4bios_unsat, ccon_o2s_sat, ccon_o2s_unsat, ccon_co2s_unsat, dochr_vr, canaerch4bios, cacebios, caerch4bios_sat, cacebios_unsat, froot_r, cacebios_sat, ccon_h2s_sat, caces, ccon_co2s, caces_unsat, cdocs_unsat, caerch4bios, cdocs_sat, cmicbions, ccon_ch4s_sat, ccon_ch4s_unsat, ccon_ch4s, ccon_o2s, cn_microbe, cdons_sat, caces_sat, caces_sat_prod, cco2bios, ccon_h2s, ccon_co2s_sat, ccon_h2s_unsat, root2doc, cdons, cco2bios_unsat, cdons_min, cdocs_pre, caces_unsat_prod, cdocs, cmicbiocs
+global_mod
+global_non, ch4stress_unsat, micbio_hr, micbio_hr_vr, rootfr, o2stress_sat, itype, o2stress_unsat, gridcell, ch4stress_sat, finundated, totcolch4, sif
+calls, get_proc_bounds

@@ -1,0 +1,12 @@
+sub_param, orig_field, norms, sum_field, sum_wts
+sub_out, norms
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in)  :: orig_field(:)  ! the original field, at the grid cell level
+real(r8), intent(in)  :: sum_field(:)   ! the new weighted sum across columns (dimensioned by grid cell)
+real(r8), intent(in)  :: sum_wts(:)     ! sum of the weights used to create sum_field (dimensioned by grid cell)
+real(r8), intent(out) :: norms(:)       ! computed normalization factors

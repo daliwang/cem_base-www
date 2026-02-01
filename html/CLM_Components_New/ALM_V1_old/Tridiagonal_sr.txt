@@ -1,0 +1,19 @@
+sub_param, bounds:1, b:8, c:9, jtop:4, is_col_active:12, lbj:2, r:10, numf:5, filter:6, u:11, a:7, ubj:3
+sub_out, u
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds                                   ! bounds
+integer           , intent(in)    :: lbj, ubj                                 ! lbinning and ubing level indices
+integer           , intent(in)    :: jtop( bounds%begc: bounds%endc)          ! top level for each column [col]
+integer           , intent(in)    :: numf                                     ! filter dimension
+integer           , intent(in)    :: filter(:)                                ! filter
+real(r8)          , intent(in)    :: a( bounds%begc:bounds%endc , lbj:ubj)    ! "a" left off diagonal of tridiagonal matrix [col , j]
+real(r8)          , intent(in)    :: b( bounds%begc:bounds%endc , lbj:ubj)    ! "b" diagonal column for tridiagonal matrix [col  , j]
+real(r8)          , intent(in)    :: c( bounds%begc:bounds%endc , lbj:ubj)    ! "c" right off diagonal tridiagonal matrix [col   , j]
+real(r8)          , intent(in)    :: r( bounds%begc:bounds%endc , lbj:ubj)    ! "r" forcing term of tridiagonal matrix [col      , j]
+real(r8)          , intent(inout) :: u( bounds%begc:bounds%endc , lbj:ubj)    ! solution [col                                    , j]
+logical, optional, intent(in)     :: is_col_active(bounds%begc:bounds%endc)   !

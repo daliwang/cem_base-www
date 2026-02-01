@@ -1,0 +1,7 @@
+sub_in, filter_pcropp, filter_soilp, filter_soilc, ubc, num_soilp, num_pcropp, doalb, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNSoilLittVertTransp, CSummary, NStateUpdate2, CNMResp, CNNFixation, CNZeroFluxes, CNPrecisionControl, CNGapMortality, CNPhenology, CStateUpdate2h, CStateUpdate3, NSummary, CNHarvest, CNFireArea, CNVegStructUpdate, t_startf, CNFireFluxes, CNGResp, CStateUpdate0, t_stopf, CStateUpdate2, CNWoodProducts, NStateUpdate2h, CStateUpdate1, NStateUpdate1, CNNDeposition, NStateUpdate3, CNDecompAlloc, CNNLeaching

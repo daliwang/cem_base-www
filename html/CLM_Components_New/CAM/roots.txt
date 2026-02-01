@@ -1,0 +1,7 @@
+sub_in, c, status, r1, r2, b, a
+sub_out, status, r1, r2
+global_ro
+global_wo
+global_mod
+global_non
+calls

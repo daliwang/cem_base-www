@@ -1,0 +1,11 @@
+sub_in, filter_methc, num_methp, jwt, num_methc, bounds, lake, sat, filter_methp
+sub_out
+global_ro, cch4%annavg_finrw, cch4%conc_o2_unsat, pps_a%rootfr, ccf%lithr, cps%zi, ccf%somhr, cch4%fphr, cch4%lake_soilc, pps%rootfr, cps%dz, col%gridcell, pft%column, cws%finundated, pft%wtcol, cch4%finundated_lag, ccf%hr_vr, cch4%layer_sat_lag, cnf%pot_f_nit_vr, pcf%rr, ccf%o_scalar, cps%pH, ces%t_soisno
+global_wo, cch4%ch4_prod_depth_unsat
+global_mod, cch4%sif, cch4%o2_decomp_depth_unsat
+global_non, cch4%co2_decomp_depth_sat, cch4%ch4_prod_depth_sat, cps%watsat, cps%z, cch4%conc_o2_sat, pcf_a%rr, grc%latdeg, cws%h2osoi_vol, cch4%o2_decomp_depth_sat, cch4%co2_decomp_depth_unsat, pft%itype
+calls, shr_assert, endrun
+
+Tree height: 7
+0 , shr_assert, 
+2-, endrun, 

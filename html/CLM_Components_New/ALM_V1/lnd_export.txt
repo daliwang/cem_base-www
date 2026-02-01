@@ -1,0 +1,12 @@
+sub_param, bounds, l2x, lnd2atm_vars, lnd2glc_vars
+sub_out, l2x
+global_ro, lnd2atm_vars%ddvel_grc, lnd2glc_vars%qice_grc, lnd2glc_vars%topo_grc, lnd2atm_vars%qflx_rofliq_qsur_grc, lnd2atm_vars%nee_grc, lnd2atm_vars%fsa_grc, lnd2atm_vars%q_ref2m_grc, lnd2atm_vars%albd_grc, lnd2atm_vars%qflx_rofice_grc, lnd2atm_vars%qflx_rofliq_qsub_grc, lnd2atm_vars%taux_grc, lnd2atm_vars%qflx_rofliq_qgwl_grc, lnd2atm_vars%flux_ch4_grc, lnd2atm_vars%h2osno_grc, lnd2atm_vars%flxvoc_grc, lnd2atm_vars%qflx_evap_tot_grc, lnd2atm_vars%t_ref2m_grc, bounds%begg, lnd2atm_vars%eflx_lwrad_out_grc, lnd2atm_vars%tauy_grc, lnd2atm_vars%t_rad_grc, lnd2atm_vars%eflx_sh_tot_grc, lnd2atm_vars%albi_grc, lnd2glc_vars%tsrf_grc, lnd2atm_vars%eflx_lh_tot_grc, lnd2atm_vars%u_ref10m_grc
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds  ! bounds
+type(lnd2atm_type), intent(inout) :: lnd2atm_vars ! clm land to atmosphere exchange data type
+type(lnd2glc_type), intent(inout) :: lnd2glc_vars ! clm land to atmosphere exchange data type
+real(r8)          , intent(out)   :: l2x(:,:)! land to coupler export state on land grid

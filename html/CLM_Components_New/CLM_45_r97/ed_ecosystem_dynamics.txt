@@ -1,0 +1,7 @@
+sub_in, ed_clm_inst, atm2lnd_inst, ed_phenology_inst, waterstate_inst, currentSite, temperature_inst, soilstate_inst
+sub_out
+global_ro, currentPatch
+global_wo
+global_mod
+global_non
+calls, fuse_cohorts, ed_integrate_state_variables, fuse_patches, sort_cohorts, disturbance_rates, ed_total_balance_check, terminate_patches, spawn_patches, recruitment, phenology, fire_model, terminate_cohorts

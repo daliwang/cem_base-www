@@ -1,0 +1,14 @@
+sub_param, dt:6, odefun:1, y:7, nprimeq:3, t:5, neq:4, y0:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ebbks, odefun
+readParams,
+integer,  intent(in)  :: nprimeq    !number of primary equations that are subject to positive constraint
+integer,  intent(in)  :: neq        !total number of equations
+real(r8), intent(in)  :: y0(neq)    !initial values
+real(r8), intent(in)  :: t          !current time
+real(r8), intent(in)  :: dt         !time step
+real(r8), intent(out) :: y(neq)     !return value

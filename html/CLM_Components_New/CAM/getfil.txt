@@ -1,0 +1,7 @@
+sub_in, iflag, lexist, fulpath, locfn
+sub_out, locfn
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

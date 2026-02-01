@@ -1,0 +1,7 @@
+sub_in, bounds, filter_hydrologyc, num_urbanc, filter_do_smb_c, num_hydrologyc, atm2lnd_vars, num_nolakec, glc2lnd_vars, waterstate_vars, num_do_smb_c, filter_nolakec, soilstate_vars, waterflux_vars, temperature_vars, soilhydrology_vars, filter_urbanc
+sub_out
+global_ro, waterstate_vars%h2osoi_liq_col, atm2lnd_vars%forc_rain_downscaled_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_snwcp_ice_col, glc2lnd_vars%glc_dyn_runoff_routing_grc, waterstate_vars%h2ocan_col, waterstate_vars%snow_persistence_col, waterflux_vars%qflx_irrig_col, waterstate_vars%h2osfc_col, atm2lnd_vars%forc_snow_downscaled_col, waterflux_vars%qflx_evap_tot_col, waterstate_vars%h2osno_col, col%itype, soilhydrology_vars%wa_col, waterstate_vars%begwb_col, atm2lnd_vars%forc_flood_grc, waterflux_vars%qflx_glcice_melt_col, col%gridcell, col%landunit, col%dz
+global_wo, waterflux_vars%qflx_infl_col, waterflux_vars%qflx_runoff_r_col, waterstate_vars%h2osoi_vol_col, waterflux_vars%qflx_runoff_u_col, waterflux_vars%qflx_rsub_sat_col
+global_mod, waterflux_vars%qflx_h2osfc_surf_col, waterstate_vars%endwb_col, waterflux_vars%qflx_surf_col, waterflux_vars%qflx_glcice_col, waterflux_vars%qflx_drain_perched_col, waterflux_vars%qflx_drain_col, waterflux_vars%qflx_qrgwl_col, waterflux_vars%qflx_glcice_frz_col, waterflux_vars%qflx_runoff_col
+global_non
+calls, CLMVICMap, Drainage

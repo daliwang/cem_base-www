@@ -1,0 +1,7 @@
+sub_in, carbonflux_vars, num_soilp, filter_soilp, canopystate_vars, temperature_vars, nitrogenstate_vars, num_soilc, bounds, photosyns_vars, filter_soilc, soilstate_vars
+sub_out
+global_ro, ecophyscon%woody, ecophyscon%evergreen, temperature_vars%t_ref2m_patch, canopystate_vars%laisun_patch, nitrogenstate_vars%grainn_patch, canopystate_vars%laisha_patch, nitrogenstate_vars%livecrootn_patch, pft%column, temperature_vars%t_soisno_col, nitrogenstate_vars%livestemn_patch, nitrogenstate_vars%frootn_patch, photosyns_vars%lmrsun_patch, canopystate_vars%frac_veg_nosno_patch, soilstate_vars%rootfr_patch, photosyns_vars%lmrsha_patch, pft%itype
+global_wo, carbonflux_vars%livestem_mr_patch, carbonflux_vars%livecroot_mr_patch, carbonflux_vars%grain_mr_patch, carbonflux_vars%leaf_mr_patch
+global_mod, carbonflux_vars%froot_mr_patch
+global_non
+calls

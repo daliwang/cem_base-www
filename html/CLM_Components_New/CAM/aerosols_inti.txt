@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, nh3_ndx, so4_ndx, nh4no3_ndx, nh4_ndx, hno3_ndx
+global_mod
+global_non
+calls, addfld

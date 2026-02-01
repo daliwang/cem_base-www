@@ -1,0 +1,15 @@
+sub_param, arr2d_inout, numf, ubj1, lbj1, lbj2, filter, ubj2
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer,  intent(in) :: lbj1         !left bound of dim 1
+integer,  intent(in) :: lbj2         !left bound of dim 2
+integer,  intent(in) :: ubj1         !right bound of dim 1
+integer,  intent(in) :: ubj2         !right bound of dim 2
+integer,  intent(in) :: numf         !filter size
+integer,  intent(in) :: filter(:)    !filter
+real(r8), intent(inout) :: arr2d_inout(lbj1: , lbj2: )   !input 2d array

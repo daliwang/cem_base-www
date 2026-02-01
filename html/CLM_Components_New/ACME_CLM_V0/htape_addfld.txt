@@ -1,0 +1,7 @@
+sub_in, avgflag, f, t
+sub_out
+global_ro, bounds%begl, bounds%begg, %hlist, %avgflag, %field%type1d_out, bounds%endl, bounds%endg, %nflds, bounds%begc, bounds%endp, bounds%begp, %field, %field%num2d, bounds%endc
+global_wo
+global_mod, %field%type1d
+global_non
+calls, get_proc_global, get_proc_bounds, endrun

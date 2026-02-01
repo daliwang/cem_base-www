@@ -1,0 +1,7 @@
+sub_in, filter_natvegp, lbp, num_natvegp, ubp
+sub_out, filter_natvegp, num_natvegp
+global_ro, present
+global_wo
+global_mod
+global_non
+calls

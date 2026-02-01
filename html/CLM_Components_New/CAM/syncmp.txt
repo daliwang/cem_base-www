@@ -1,0 +1,7 @@
+sub_in, par
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, abortmp, MPI_Error_String, MPI_barrier

@@ -1,0 +1,7 @@
+sub_in, cnveg_carbonstate_inst, atm2lnd_inst, bounds, cnveg_carbonflux_inst, dgvs_inst
+sub_out
+global_ro, deadstemc, allom1, dwood, crownarea_max, ivt, tcmin, twmax, dsladlai, gddmin, tcmax, reinickerp, slatop, annsum_npp, prec365, tmomin20, agdd20, annsum_litfall, woody, agddtw
+global_wo, greffic, heatstress
+global_mod, leafcmax, nind, crownarea, fpcgrid, present, pftmayexist
+global_non
+calls, endrun

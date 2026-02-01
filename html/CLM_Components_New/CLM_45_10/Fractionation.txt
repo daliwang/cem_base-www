@@ -1,0 +1,9 @@
+sub_in, phase, lbp, ubp, fn, filterp
+sub_out
+global_ro, clm_a2l%forc_pco2, clm3%g%l%c%p%pef%parsun_z, clm3%g%l%c%p%ppsyns%gs_mol, clm3%g%l%c%p%pps%nrad, clm3%g%l%c%p%itype, pftcon%c3psn, clm_a2l%forc_pbot, clm3%g%l%c%p%ppsyns%an, clm3%g%l%c%p%ppsyns%gb_mol, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%pepv%downreg
+global_wo, clm3%g%l%c%p%pps%alphapsnsun
+global_mod
+global_non, clm3%g%l%c%p%pps%alphapsnsha, clm3%g%l%c%p%pef%parsha_z
+calls
+
+Tree height: 3

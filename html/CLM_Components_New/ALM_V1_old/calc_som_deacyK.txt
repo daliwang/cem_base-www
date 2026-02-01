@@ -1,0 +1,21 @@
+sub_param, centurybgc_vars:11, tracerstate_vars:9, betrtracer_vars:10, numf:4, filter:5, ubj:3, bounds:1, lbj:2, k_decay:14, jtops:6, nom_pools:7, dtime:13, carbonflux_vars:12, tracercoeff_vars:8
+sub_out, k_decay
+global_ro| CNDecompBgcParamsInst%k_decay_cwd, k_decay_cwd, NONE| centurybgc_vars%depth_scalar_col, depth_scalar, NONE| CNDecompBgcParamsInst%k_decay_som3, k_decay_som3, NONE| CNDecompBgcParamsInst%k_decay_lit1, k_decay_lit1, NONE| carbonflux_vars%w_scalar_col, w_scalar, NONE| CNDecompBgcParamsInst%k_decay_lit2, k_decay_lit2, NONE| CNDecompBgcParamsInst%k_decay_lit3, k_decay_lit3, NONE| carbonflux_vars%t_scalar_col, t_scalar, NONE| CNDecompBgcParamsInst%k_decay_som2, k_decay_som2, NONE| CNDecompBgcParamsInst%k_decay_som1, k_decay_som1, NONE| carbonflux_vars%o_scalar_col, o_scalar, NONE
+global_wo
+global_mod
+global_non| centurybgc_vars%lit3, lit3, NONE| centurybgc_vars%som1, som1, NONE| centurybgc_vars%lit1, lit1, NONE| centurybgc_vars%som3, som3, NONE| centurybgc_vars%cwd, cwd, NONE| centurybgc_vars%som2, som2, NONE| centurybgc_vars%lit2, lit2, NONE
+calls
+readParams,
+integer                , intent(in)    :: nom_pools
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: lbj, ubj
+integer                , intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer                , intent(in)    :: numf
+integer                , intent(in)    :: filter(:)
+real(r8)               , intent(in)    :: dtime
+type(betrtracer_type)  , intent(in)    :: betrtracer_vars                    ! betr configuration information
+type(centurybgc_type)  , intent(in)    :: centurybgc_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(tracercoeff_type) , intent(in)    :: tracercoeff_vars
+type(tracerstate_type) , intent(inout) :: tracerstate_vars
+real(r8)               , intent(out)   :: k_decay(nom_pools, bounds%begc:bounds%endc, lbj:ubj)

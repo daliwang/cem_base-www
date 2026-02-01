@@ -1,0 +1,7 @@
+sub_in, ps, div, dp, vgrad_lnps, hvcoord, p, omega_p
+sub_out, omega_p
+global_ro
+global_wo
+global_mod
+global_non
+calls

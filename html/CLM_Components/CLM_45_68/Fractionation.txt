@@ -1,0 +1,7 @@
+sub_in, bounds, phase, fn, filterp
+sub_out
+global_ro, downreg, column, itype, gb_mol, parsha_z, parsun_z, forc_pco2, an, forc_pbot, c3psn, gridcell, nrad, gs_mol
+global_wo, alphapsnsha, alphapsnsun
+global_mod
+global_non
+calls

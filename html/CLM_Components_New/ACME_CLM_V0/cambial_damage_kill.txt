@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, %dbh, %pft, EDecophyscon%bark_scaler, >currentPatch%younger;, currentPatch%tallest;, currentCohort%shorter;, %tau_l
+global_wo, %cambial_mort
+global_mod, currentSite%oldest_patch;
+global_non
+calls

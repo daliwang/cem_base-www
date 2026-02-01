@@ -1,0 +1,11 @@
+sub_in, num_lakec, filter_lakec, filter_lakep, num_lakep, bounds
+sub_out
+global_ro, a2l_downscaled_col%forc_snow, a2l_downscaled_col%forc_t, pft%gridcell, a2l_downscaled_col%forc_rain, pft%column, pwf%qflx_evap_tot, clm_a2l%forc_flood, cps%dz_lake, cps%watsat, ces%t_grnd, pwf%qflx_evap_soi
+global_wo, pwf_a%qflx_dew_grnd, cws%zwt, cps%mss_cnc_dst1, pwf_a%qflx_prec_grnd, pwf_a%qflx_rain_grnd, pwf_a%qflx_evap_tot, cws%soilalpha, pwf%qflx_irrig, cps%mss_cnc_ocpho, cps%frac_sno_eff, cwf%qflx_top_soil, pwf_a%qflx_dew_snow, cps%mss_bc_top, cps%snw_rds, cps%mss_cnc_bcphi, cps%mss_cnc_dst4, pwf_a%qflx_evap_grnd, pwf_a%qflx_irrig, cwf%qflx_h2osfc_surf, cps%sno_liq_top, cwf%qflx_rsub_sat, cwf%qflx_floodc, cps%frac_iceold, cws%zwt_perched, cws%frost_table, cwf%qflx_drain_perched, cps%zi, cps%mss_cnc_ocphi, cwf%qflx_runoff, cws%qcharge, pwf_a%qflx_sub_snow, cws%fcov, cws%fsat, cps%mss_oc_top, cps%z, pwf_a%qflx_snwcp_liq, cps%rootr_column, cps%mss_cnc_dst2, cps%dTdz_top, cps%h2osno_top, cps%snot_top, cwf%qflx_infl, cps%mss_dst_top, cps%snw_rds_top, cps%mss_cnc_bcpho, cps%mss_cnc_dst3
+global_mod, pef%eflx_soil_grnd, cps%mss_dst2, pwf%qflx_sub_snow, pwf%qflx_evap_grnd, cws%h2osoi_vol, cwf%qflx_snomelt, cws%lake_icefrac, cps%mss_bctot, cps%snl, cws%h2osoi_ice, cwf%qflx_drain, cwf%qflx_surf, ces%t_lake, cps%mss_ocpho, cps%snow_depth, cwbal%begwb, pef%eflx_grnd_lake, cps%mss_bcpho, pwf%qflx_snwcp_liq, cef%eflx_snomelt, pwf_a%qflx_snwcp_ice, cps%dz, cps%mss_dst4, cps%mss_dst3, cps%mss_dst_col, cps%mss_bc_col, cps%mss_oc_col, pwf%qflx_prec_grnd, pwf%qflx_rain_grnd, cwf%qflx_sl_top_soil, pwf%qflx_snwcp_ice, cws%snowice, pef%eflx_sh_grnd, cps%mss_bcphi, cps%mss_dsttot, cwbal%endwb, cps%mss_dst1, cwf%qflx_qrgwl, pwf_a%qflx_snow_grnd, pef%eflx_gnet, cws%h2osno, pwf%qflx_snow_grnd, cws%h2osoi_liq, pwf%qflx_dew_grnd, pwf%qflx_dew_snow, cws%snowliq, cwf%qflx_snow_melt, ces%t_soisno, cps%mss_ocphi, pef%eflx_sh_tot, cps%mss_octot
+global_non, col%gridcell, col%landunit, shr_kind_r8
+calls, DivideSnowLayers_Lake, CombineSnowLayers, SnowAge_grain, SnowWater, BuildSnowFilter, SnowCompaction
+
+Tree height: 7
+2+, BuildSnowFilter, SnowWater, 
+3-, SnowCompaction, CombineSnowLayers, DivideSnowLayers_Lake, BuildSnowFilter, SnowAge_grain, 

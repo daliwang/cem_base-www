@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, cns%decomp_npools_vr, col%gridcell, cns%smin_nh4_vr, ccs%decomp_cpools_vr, bounds%begg, cns%smin_no3_vr
+global_wo
+global_mod
+global_non
+calls, VecRestoreArrayF90, VecGetArrayF90

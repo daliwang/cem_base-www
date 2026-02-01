@@ -1,0 +1,7 @@
+sub_in, cfact, press, cldnum, ncol, qin, hno3g, mbar, xlwc, xhno3, xmsa, xh2o2, xso2, xnh4c, xnh3, xno3c, lchnk, xh2so4, xso4_init, cldfrc, nh3g, xso4, tfld, loffset, delso4_hprxn, dtime, pdel, qcw
+sub_out, qin, qcw
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

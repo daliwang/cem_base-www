@@ -1,0 +1,16 @@
+sub_param, num_hydrologyc:2, h2osoi_liq:6, qcharge:7, waterflux_vars:8, bounds:1, num_urbanc:4, filter_hydrologyc:3, filter_urbanc:5
+sub_out
+global_ro| waterflux_vars%qflx_gross_evap_soil_col, qflx_gross_evap_soil_col, NONE| waterflux_vars%qflx_rootsoi_col, qflx_rootsoi, NONE| waterflux_vars%qflx_gross_infl_soil_col, qflx_gross_infl_soil_col, NONE
+global_wo
+global_mod| waterflux_vars%qflx_adv_col, qflx_adv, NONE| waterflux_vars%qflx_infl_col, qflx_infl, NONE
+global_non
+calls
+readParams,
+type(bounds_type)       , intent(in)    :: bounds               ! bounds
+integer                 , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                 , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                 , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                 , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+type(waterflux_type)    , intent(inout) :: waterflux_vars
+real(r8)                , intent(in)    :: h2osoi_liq(bounds%begc: , 1: )  !mm H2O/m2 eqv. kg H2O/m2
+real(r8)                , intent(in)    :: qcharge(bounds%begc: )  ! mm H2O/s aquifer recharge rate

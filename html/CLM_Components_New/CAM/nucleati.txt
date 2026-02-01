@@ -1,0 +1,7 @@
+sub_in, onimey, dst_num, wbar, relhum, so4_num, oniimm, soot_num, cldn, nfice, rhoair, tair, onihf, qc, nuci, onidep
+sub_out, nuci, onidep, onihf, onimey, oniimm
+global_ro
+global_wo
+global_mod
+global_non
+calls, hetero, hf

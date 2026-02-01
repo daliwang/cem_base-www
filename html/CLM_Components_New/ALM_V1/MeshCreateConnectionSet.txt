@@ -1,0 +1,9 @@
+sub_param, soil_top_cell_offset, conn_set, mesh, region_itype, ncells
+sub_out, ncells
+global_ro, mesh%dy, mesh%dz, mesh%dx, mesh%nlev
+global_wo, ConnectionSetNew%area, ConnectionSetNew%dist_dn, ConnectionSetNew%dist_unitvec, ConnectionSetNew%dist_up
+global_mod, ConnectionSetNew%id_up, ConnectionSetNew%id_dn, mesh%ncells
+global_non, ConnectionSetNew
+calls, endrun
+readParams,
+PetscInt, intent(out)             :: ncells

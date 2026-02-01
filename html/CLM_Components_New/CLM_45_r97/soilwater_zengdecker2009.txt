@@ -1,0 +1,7 @@
+sub_in, temperature_inst, waterflux_inst, soilhydrology_inst, soil_water_retention_curve, waterstate_inst, filter_hydrologyc, num_urbanc, filter_urbanc, num_hydrologyc, bounds, soilstate_inst
+sub_out
+global_ro, origflag, t_soisno, smpmin, h2osoi_vol, hksat, zi, fracice, zwt, z, bsw, h2osoi_ice, dz, sucsat, qflx_infl, watsat
+global_wo, hk_l, smp_l
+global_mod, h2osoi_liq, icefrac, qcharge, qflx_deficit
+global_non, soilhydrology_inst%hkdepth_col, soilstate_inst%eff_porosity_col
+calls, Tridiagonal, Compute_EffecRootFrac_And_VertTranSink

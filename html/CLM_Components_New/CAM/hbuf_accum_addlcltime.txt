@@ -1,0 +1,7 @@
+sub_in, lcltod_start, decomp_type, fillvalue, nacs, field, buf8, flag_xyfill, dimind, lcltod_stop, c, idim
+sub_out, buf8, nacs
+global_ro
+global_wo
+global_mod
+global_non
+calls, dyn_grid_get_elem_coords, check_accum, get_rlon_all_p, get_curr_date

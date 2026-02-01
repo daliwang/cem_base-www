@@ -1,0 +1,11 @@
+sub_in, ubl, zen, lbl, coszen, sdir, num_urbanl, canyon_hwr
+sub_out, sdir_road, sdir_sunwall, sdir_shadewall
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+
+Tree height: 4
+2+, endrun, 
+3+, endrun, endrun, 

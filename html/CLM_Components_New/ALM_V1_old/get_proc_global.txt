@@ -1,0 +1,14 @@
+sub_param, nc:4, nl:3, nt:2, np:5, nCohorts:6, ng:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, optional, intent(out) :: ng        ! total number of gridcells across all processors
+integer, optional, intent(out) :: nt        ! total number of gridcells across all processors
+integer, optional, intent(out) :: nl        ! total number of landunits across all processors
+integer, optional, intent(out) :: nc        ! total number of columns across all processors
+integer, optional, intent(out) :: np        ! total number of pfts across all processors
+integer, optional, intent(out) :: nCohorts  ! total number ED cohorts

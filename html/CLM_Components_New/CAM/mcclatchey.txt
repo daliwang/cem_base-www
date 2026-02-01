@@ -1,0 +1,7 @@
+sub_in, tk, stype, rh, prs, hgt
+sub_out, hgt, prs, tk, rh
+global_ro
+global_wo
+global_mod
+global_non
+calls

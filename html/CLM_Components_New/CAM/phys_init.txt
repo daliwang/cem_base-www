@@ -1,0 +1,7 @@
+sub_in, phys_tend, cam_out, pbuf2d, phys_state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, qbo_init, carma_init, aoa_tracers_init, convect_deep_init, cloud_rad_props_init, cloud_diagnostics_init, radheat_init, physconst_init, prescribed_ozone_init, pbl_utils_init, wv_sat_init, modal_aero_wateruptake_init, subcol_init, sslt_rebin_init, iondrag_init, metdata_phys_init, gw_init, rad_cnst_init, chem_init, aircraft_emit_init, physics_state_set_grid, rayleigh_friction_init, microp_driver_init, mspd_init, stratiform_init, phys_inidat, microp_aero_init, solar_data_init, tsinti, prescribed_aero_init, pbuf_initialize, tracers_init, modal_aero_calcsize_init, rad_solar_var_init, prescribed_volcaero_init, physics_type_alloc, check_energy_init, aer_rad_props_init, ionos_init, aerodep_flx_init, diag_init, radiation_init, prescribed_ghg_init, phys_getopts, tropopause_init, cldfrc_init, conv_water_init, phys_debug_init, convect_shallow_init, co2_init

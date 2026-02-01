@@ -1,0 +1,27 @@
+sub_param, tracerstate_vars:18, bounds:1, h2osoi_liqvol:10, betrtracer_vars:13, waterstate_vars:20, tracerflux_vars:19, lbj:2, Rfactor:7, waterflux_vars:16, tracercoeff_vars:15, ubj:3, zi:9, dtime:12, dz:8, num_soilc:5, tracerboundarycond_vars:14, jtops:4, filter_soilc:6, transp_pathway:11, bgc_reaction:17
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, do_tracer_gw_diffusion, bgc_reaction%do_tracer_equilibration, do_tracer_advection
+readParams,
+type(bounds_type)             , intent(in)    :: bounds
+integer                       , intent(in)    :: lbj, ubj
+integer                       , intent(in)    :: num_soilc                           ! number of columns in column filter_soilc
+integer                       , intent(in)    :: filter_soilc(:)                     ! column filter_soilc
+integer                       , intent(in)    :: jtops(bounds%begc: )                ! top label of each column
+type(betrtracer_type)         , intent(in)    :: betrtracer_vars
+real(r8)                      , intent(in)    :: dz(bounds%begc: ,lbj: )             !
+real(r8)                      , intent(in)    :: zi(bounds%begc: ,lbj-1: )           !
+real(r8)                      , intent(in)    :: h2osoi_liqvol(bounds%begc: , lbj: ) !
+real(r8)                      , intent(in)    :: Rfactor(bounds%begc: ,lbj: ,1: )    !rfactor for dual diffusive transport
+integer                       , intent(in)    :: transp_pathway(2)                   !the pathway vector
+real(r8)                      , intent(in)    :: dtime                               !model time step
+type(waterflux_type)          , intent(in)    :: waterflux_vars
+type(tracerboundarycond_type) , intent(in)    :: tracerboundarycond_vars
+class(bgc_reaction_type)      , intent(in)    :: bgc_reaction
+type(tracercoeff_type)        , intent(inout) :: tracercoeff_vars
+type(tracerstate_type)        , intent(inout) :: tracerstate_vars
+type(tracerflux_type)         , intent(inout) :: tracerflux_vars
+type(Waterstate_Type)         , intent(in)    :: waterstate_vars                     ! water state variables

@@ -1,0 +1,9 @@
+sub_in, filter_methc, num_methp, num_methc, ubc, lbp, lbc, filter_methp, ubp
+sub_out
+global_ro, clm3%g%l%c%p%column, clm3%g%l%c%p%pcf%agnpp, clm3%g%l%c%ccf%somhr, clm3%g%l%c%cws%finundated, clm3%g%l%c%p%pcf%bgnpp
+global_wo, clm3%g%l%c%p%pcf%annavg_bgnpp, clm3%g%l%c%cch4%annavg_finrw, clm3%g%l%c%p%pcf%annavg_agnpp
+global_mod, clm3%g%l%c%p%pcf%tempavg_bgnpp, clm3%g%l%c%cch4%tempavg_somhr, clm3%g%l%c%p%pcf%tempavg_agnpp, clm3%g%l%c%cch4%annavg_somhr, clm3%g%l%c%cch4%tempavg_finrw, clm3%g%l%c%cch4%annsum_counter
+global_non
+calls
+
+Tree height: 3

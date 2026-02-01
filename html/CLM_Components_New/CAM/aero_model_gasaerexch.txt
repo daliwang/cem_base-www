@@ -1,0 +1,7 @@
+sub_in, airdens, vmr0, pbuf, lchnk, vmr, zm, cldnum, cwat, invariants, reaction_rates, relhum, tfld, qh2o, pdel, mbar, pmid, del_h2so4_gasprod, delt, cldfr, loffset, ncol
+sub_out
+global_ro, fldcw
+global_wo
+global_mod
+global_non
+calls, modal_aero_gasaerexch_sub, modal_aero_newnuc_sub, modal_aero_coag_sub, t_stopf, setsox, qqcw2vmr, t_startf, vmr2qqcw, pbuf_get_field, outfld

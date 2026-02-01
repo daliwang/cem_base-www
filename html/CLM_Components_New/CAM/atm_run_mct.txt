@@ -1,0 +1,7 @@
+sub_in, cdata_a, EClock, x2a_a, a2x_a
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_file_setLogLevel, seq_infodata_PutData, cam_run4, t_stopf, advance_timestep, scam_use_iop_srf, seq_infodata_GetData, shr_file_getLogLevel, atm_export, atm_write_srfrest_mct, atm_import, cam_run2, shr_file_getLogUnit, cam_run1, memmon_dump_fort, get_curr_date, seq_timemgr_EClockGetData, shr_sys_abort, t_startf, shr_file_setLogUnit, memmon_reset_addr, cam_run3

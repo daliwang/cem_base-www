@@ -1,0 +1,12 @@
+sub_in, num_nolakep, filter_nolakec, filter_nolakep, filter_urbanl, num_urbanl, bounds, num_nolakec
+sub_out
+global_ro, pps%frac_veg_nosno, cps%frac_h2osfc, col%npfts, pef%eflx_wasteheat_pft, pef%cgrnds, cps%snl, cws%h2osoi_ice, lun%itype, ces%t_h2osfc_bef, cps%emg, cps%frac_sno_eff, pft%gridcell, pef%eflx_sh_veg, cef%eflx_building_heat, pef%dlrad, pef%eflx_traffic_pft, cps%htvp, pef%eflx_heat_from_ac_pft, pwf%qflx_evap_veg, pft%column, pef%cgrndl, pef%sabg_soil, pef%sabg, ces%tssbef, pef%sabg_snow, pwf%qflx_tran_veg, pft%wtcol, cws%h2osoi_liq, pef%ulrad, ces%t_h2osfc, a2l_downscaled_col%forc_lwrad, col%pfti, col%itype, ces%t_grnd, pft%landunit
+global_wo, pwf%qflx_sub_snow, pef%eflx_lh_vegt, pef%eflx_soil_grnd_u, pef%eflx_sh_tot_u, pef%eflx_lwrad_out_r, pef%eflx_lh_vege, pef%eflx_soil_grnd_r, pef%eflx_lwrad_net_r, pwf%qflx_evap_tot, pwf%qflx_evap_can, pef%eflx_lh_grnd, pef%eflx_sh_tot_r, pef%eflx_lwrad_out_u, pef%eflx_lh_tot_u, pef%eflx_lh_tot_r
+global_mod, pef%eflx_soil_grnd, pwf%qflx_ev_snow, pef%eflx_lh_tot, pwf%qflx_evap_grnd, pwf%qflx_snwcp_ice, pebal%errsoi, pef%eflx_sh_grnd, pwf%qflx_ev_soil, pef%eflx_lwrad_net_u, pef%eflx_lwrad_out, pwf%qflx_dew_grnd, pwf%qflx_dew_snow, pwf%qflx_ev_h2osfc, pef%eflx_lwrad_net, pwf%qflx_snwcp_liq, pef%eflx_sh_tot, pwf%qflx_evap_soi
+global_non, cws%h2osfc, ces%dt_grnd, cps%frac_sno, ces%t_soisno, lun%canyon_hwr, cebal%errsoi
+calls, t_startf, t_stopf, SoilTemperature, p2c
+
+Tree height: 6
+0 , t_startf, SoilTemperature, t_stopf, t_startf, t_stopf, t_startf, 
+1-, t_stopf, t_startf, 
+3+, t_stopf, t_startf, p2c, t_stopf, 

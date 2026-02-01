@@ -1,0 +1,7 @@
+sub_in, activeo, activei, begi, bego, mindist_index, endi, subgrido, endo, subgridi
+sub_out, mindist_index
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

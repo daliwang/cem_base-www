@@ -1,0 +1,8 @@
+sub_in, fractions_a, ice, fractions_o, fractions_w, fractions_g, rof, wav, fractions_r, ocn, glc, atm, fractions_i, infodata, lnd, fractions_l
+sub_out
+global_ro, prep_lnd_get_mapper_Fa2l, prep_atm_get_mapper_Fi2a, prep_ice_get_mapper_SFo2i, prep_atm_get_mapper_Fl2a, prep_ocn_get_mapper_SFi2o, data, prep_atm_get_mapper_Fo2a, rAttr, prep_rof_get_mapper_Fl2r, prep_ocn_get_mapper_Fa2o
+global_wo
+global_mod
+global_non, component_get_dom_cx, component_get_dom_cx, component_get_dom_cx, component_get_dom_cx, component_get_dom_cx, component_get_dom_cx, component_get_dom_cx
+calls, seq_map_map, mct_aVect_zero, seq_infodata_getData, seq_frac_check, mct_aVect_init
+calls_ln, seq_map_map@450, seq_frac_check@460, seq_map_map@388, mct_aVect_init@324, mct_aVect_init@304, mct_aVect_zero@325, mct_aVect_zero@366, seq_map_map@446, mct_aVect_zero@305, mct_aVect_zero@384, mct_aVect_init@356, seq_map_map@334, mct_aVect_init@383, seq_map_map@335, mct_aVect_zero@357, seq_map_map@374, seq_infodata_getData@279, seq_map_map@394, mct_aVect_init@315, seq_map_map@404, seq_map_map@399, mct_aVect_init@365, mct_aVect_zero@345, mct_aVect_init@344, mct_aVect_zero@316

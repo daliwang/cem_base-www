@@ -1,0 +1,7 @@
+sub_in, imax, x, y, imin, yorigo, y_in, xorigo, x_in
+sub_out, x, y
+global_ro
+global_wo
+global_mod
+global_non
+calls

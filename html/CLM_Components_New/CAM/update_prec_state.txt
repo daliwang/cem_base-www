@@ -1,0 +1,7 @@
+sub_in, xs, name='update_prec_state', bind, C, nelemd, c_ptr_to_object
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

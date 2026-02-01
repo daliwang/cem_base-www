@@ -1,0 +1,9 @@
+sub_param, currentCohort
+sub_out
+global_ro, currentCohort%br, EDecophyscon%cushion, ecophyscon%froot_leaf, EDecophyscon%root_long, currentCohort%bstore, EDecophyscon%clone_alloc, ecophyscon%leaf_long, currentCohort%gpp_acc, currentCohort%npp_acc, currentCohort%bl, EDecophyscon%seed_alloc, currentCohort%pft, currentCohort%resp_acc, currentCohort%n, EDecophyscon%sapwood_ratio, EDecophyscon%leaf_stor_priority
+global_wo, currentCohort%gpp, currentCohort%resp, currentCohort%seed_prod, currentCohort%dndt, currentCohort%dhdt, currentCohort%ddbhdt, ecophyscon%evergreen
+global_mod, currentCohort%storage_flux, currentCohort%dbalivedt, currentCohort%leaf_md, currentCohort%woody_turnover, currentCohort%root_md, currentCohort%dbstoredt, currentCohort%md, %flux_in, currentCohort%carbon_balance, currentCohort%dbdeaddt, currentCohort%hite, currentCohort%npp
+global_non, currentCohort%siteptr
+calls, allocate_live_biomass
+readParams,
+type(cohort),intent(inout),pointer :: currentCohort

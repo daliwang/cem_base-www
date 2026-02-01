@@ -1,0 +1,8 @@
+sub_param, nmesh:5, this:1, soe_type:3, mpp_type:2, meshes:4
+sub_out
+global_ro
+global_wo| this%itype, itype, NONE
+global_mod
+global_non
+calls, endrun, this%Init, VSFMSOERichardsEqnODESetup
+readParams,

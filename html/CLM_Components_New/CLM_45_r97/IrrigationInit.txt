@@ -1,0 +1,7 @@
+sub_in, bounds, soil_water_retention_curve, soilstate_inst, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%InitHistory, this%InitAllocate, this%InitCold

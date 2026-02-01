@@ -1,0 +1,7 @@
+sub_in, zi, snowab, pdel, prfzheat, precip, evapsnow, meltheat, ncol, psacwo, tn, ttend, fracw, fwaut, fsacw, fsaci, qn, seaicef, rhu00, lctend, evapheat, rhdfda, ice2pr, fsnow, prodsnow, deltat, fice, fsaut, cldn, cme, cwat, psacio, prodprec, pracwo, rkflxprc, omega, evapprec, rkflxsnw, liq2snow, liq2pr, p, qtend, lchnk, snowh
+sub_out, precip, meltheat, fsaut, evapsnow, snowab, ice2pr, prodsnow, prfzheat, psacwo, psacio, cme, liq2snow, liq2pr, pracwo, prodprec, rkflxprc, fwaut, fracw, rkflxsnw, fsaci, fsacw, evapprec, evapheat
+global_ro
+global_wo
+global_mod
+global_non
+calls, findsp_vc, endrun, findmcnew, qsat

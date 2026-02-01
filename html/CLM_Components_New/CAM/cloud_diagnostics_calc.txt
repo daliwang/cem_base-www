@@ -1,0 +1,7 @@
+sub_in, state, pbuf
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cldovrlap, conv_water_4rad, pbuf_get_field, cloud_cover_diags_out, outfld, cldclw, cldems

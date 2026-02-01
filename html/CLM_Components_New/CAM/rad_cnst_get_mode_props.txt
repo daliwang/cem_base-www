@@ -1,0 +1,7 @@
+sub_in, ncoef, rhdeliques, dgnumhi, refrtablw, dgnumlo, asmpsw, absplw, prefi, extpsw, prefr, refitabsw, sigmag, refitablw, list_idx, mode_idx, refrtabsw, dgnum, rhcrystal, abspsw
+sub_out
+global_ro, idx_props
+global_wo
+global_mod
+global_non, ma_list
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, iso_cnveg_carbonstate_inst, cnveg_carbonflux_inst, num_soilp, filter_soilp, isotope, soilbiogeochem_state_inst, num_soilc, iso_cnveg_carbonflux_inst, cnveg_carbonstate_inst, filter_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, cnveg_carbonflux_inst, cnveg_carbonstate_inst, iso_cnveg_carbonstate_inst, iso_cnveg_carbonflux_inst
+calls, CNCIsoGapPftToColumn, CIsoFluxCalc

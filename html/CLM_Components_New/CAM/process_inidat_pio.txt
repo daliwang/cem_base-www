@@ -1,0 +1,7 @@
+sub_in, ncid, m_cnst, fieldname
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, microp_driver_init_cnst, compute_gsfactors, chem_init_cnst, random_number, mpiscatterv, mpibcast, aoa_tracers_init_cnst, co2_init_cnst, spetru_3d_scalar, tracers_init_cnst, spetru_uv, spetru_phis, qneg3, stratiform_init_cnst, endrun, spetru_ps, pio_seterrorhandling, carma_init_cnst

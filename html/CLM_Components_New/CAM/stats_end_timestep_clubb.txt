@@ -1,0 +1,7 @@
+sub_in, lchnk, out_radzm, out_zt, out_sfc, out_radzt, out_zm, thecol
+sub_out, out_zt, out_sfc, out_radzt, out_zm, out_radzm
+global_ro
+global_wo
+global_mod
+global_non
+calls, stats_avg, stats_zero

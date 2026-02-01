@@ -1,0 +1,7 @@
+sub_in, solarabs_vars, canopystate_vars, surfalb_vars, phase, fn, bounds, photosyns_vars, filterp, cnstate_vars, atm2lnd_vars
+sub_out
+global_ro, pft%column, photosyns_vars%gs_mol_patch, photosyns_vars%gb_mol_patch, solarabs_vars%parsun_z_patch, solarabs_vars%parsha_z_patch, atm2lnd_vars%forc_pbot_downscaled_col, atm2lnd_vars%forc_pco2_grc, pft%itype, surfalb_vars%nrad_patch, pft%gridcell, photosyns_vars%an_patch, cnstate_vars%downreg_patch, ecophyscon%c3psn
+global_wo, photosyns_vars%alphapsnsun_patch, photosyns_vars%alphapsnsha_patch
+global_mod
+global_non
+calls

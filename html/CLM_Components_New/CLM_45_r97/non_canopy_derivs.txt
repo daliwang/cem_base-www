@@ -1,0 +1,7 @@
+sub_in, temperature_inst, waterstate_inst, currentPatch, soilstate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cwd_input, seed_decay, seeds_in, cwd_out, seed_germination

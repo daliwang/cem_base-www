@@ -1,0 +1,7 @@
+sub_in, bounds, canopystate_inst
+sub_out
+global_ro
+global_wo, annlai
+global_mod
+global_non
+calls, ncd_inqfdims, ncd_pio_closefile, check_dim, shr_scam_getCloseLatLon, getfil, endrun, ncd_io, ncd_pio_openfile

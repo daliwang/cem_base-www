@@ -1,0 +1,7 @@
+sub_in, recvtype, sendtype, root, flow_cntl, recvbuf, displs, sendbuf, recvcnts, comm, sendcnt
+sub_out, recvbuf
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, mpi_rsend, mpi_send, mpi_comm_rank, mpi_comm_size, endrun, mpi_gatherv, mpi_irecv, t_stopf, mpi_wait, mpi_recv

@@ -1,0 +1,10 @@
+sub_in, endp, begp
+sub_out
+global_ro, clm3%g%l%c%p%pdgvs%fpcgrid, clm3%g%l%wtgcell, clm3%g%l%c%p%landunit, clm3%g%l%c%p%gridcell, clm3%g%l%itype
+global_wo, clm3%g%l%c%p%wtlunit, clm3%g%l%c%p%wtgcell
+global_mod, clm3%g%l%c%p%wtcol, clm3%g%l%c%p%pdgvs%fpcgridold
+global_non, clm3%g%l, clm3%g%l%c%p
+calls, get_curr_date
+
+Tree height: 3
+0 , get_curr_date, 

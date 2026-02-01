@@ -1,0 +1,7 @@
+sub_in, qrs_tot, pbuf, ncol, state, bot_mlt_lev, asdir
+sub_out, qrs_tot
+global_ro
+global_wo
+global_mod
+global_non
+calls, setinv, heuv, get_lat_all_p, usrrxt_hrates, aurora, set_ub_col, get_short_lived_species, setcol, jshort, outfld, calc_cp, setrxt_hrates, zenith, mmr2vmr, jlong, get_rlon_all_p, get_rlat_all_p, adjrxt, shr_orb_decl, heatnirco2, set_mean_mass, airglow, cph, get_lon_all_p

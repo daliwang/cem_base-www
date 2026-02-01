@@ -1,0 +1,7 @@
+sub_in, endlatind, beglatind, inname, mlat, latname, latdeg
+sub_out, latname, endlatind, beglatind
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

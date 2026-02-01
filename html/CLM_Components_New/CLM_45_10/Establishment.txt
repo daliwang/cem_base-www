@@ -1,0 +1,10 @@
+sub_in, ubg, lbp, ubp, lbg
+sub_out
+global_ro, pftcon%dsladlai, pftcon%slatop, clm3%g%l%c%p%gridcell, clm3%g%gdgvs%tmomin20, dgv_pftcon%reinickerp, dgv_pftcon%twmax, clm3%g%l%c%p%pepv%annsum_npp, clm3%g%l%itype, dgv_pftcon%crownarea_max, clm3%g%l%c%p%pdgvs%agddtw, pftcon%dwood, pftcon%woody, dgv_pftcon%allom1, clm3%g%l%c%p%landunit, clm3%g%l%c%p%pdgvs%prec365, clm3%g%l%c%p%pepv%annsum_litfall, clm3%g%l%c%p%pcs%deadstemc, clm3%g%l%c%p%itype, dgv_pftcon%gddmin
+global_wo, clm3%g%l%c%p%pdgvs%pftmayexist, clm3%g%l%c%p%pdgvs%heatstress, clm3%g%l%c%p%pdgvs%greffic
+global_mod, clm3%g%l%c%p%pdgvs%present, clm3%g%l%c%p%pdgvs%crownarea, clm3%g%l%c%p%pdgvs%fpcgrid, clm3%g%l%c%p%pcs%leafcmax, clm3%g%l%c%p%pdgvs%nind
+global_non, dgv_pftcon%tcmin, dgv_pftcon%tcmax, clm3%g%gdgvs%agdd20
+calls, endrun
+
+Tree height: 8
+5+, endrun, 

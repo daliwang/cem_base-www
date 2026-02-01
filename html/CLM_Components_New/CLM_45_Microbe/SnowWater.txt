@@ -1,0 +1,9 @@
+sub_in, filter_nosnowc, num_snowc, filter_snowc, lbc, ubc, num_nosnowc
+sub_out
+global_ro, clm3%g%l%c%cws%h2osno, clm3%g%l%c%landunit, clm3%g%l%c%cwf%pwf_a%qflx_dew_snow, clm_a2l%forc_aer, clm3%g%l%c%cwf%pwf_a%qflx_dew_grnd, clm3%g%l%c%cwf%pwf_a%qflx_sub_snow, clm3%g%l%c%gridcell, clm3%g%l%c%cps%do_capsnow, clm3%g%l%c%cwf%pwf_a%qflx_evap_grnd, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%cwf%pwf_a%qflx_rain_grnd, clm3%g%l%c%cwf%qflx_snomelt, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%frac_sno_eff
+global_wo, clm3%g%l%c%cwf%flx_oc_dep_dry, clm3%g%l%c%cwf%flx_oc_dep, clm3%g%l%c%cwf%flx_dst_dep, clm3%g%l%c%cwf%flx_oc_dep_wet, clm3%g%l%c%cwf%flx_bc_dep_wet, clm3%g%l%c%cwf%flx_bc_dep_dry, clm3%g%l%c%cwf%flx_bc_dep, clm3%g%l%c%cwf%qflx_top_soil
+global_mod, clm3%g%l%c%cwf%flx_dst_dep_wet1, clm3%g%l%c%cwf%flx_oc_dep_pho, clm3%g%l%c%cps%mss_dst4, clm3%g%l%c%cwf%flx_dst_dep_dry2, clm3%g%l%c%cwf%flx_bc_dep_phi, clm3%g%l%c%cwf%flx_dst_dep_wet3, clm3%g%l%c%cwf%qflx_snow_melt, clm3%g%l%c%cwf%flx_dst_dep_wet4, clm3%g%l%c%cwf%flx_dst_dep_dry1, clm3%g%l%c%cps%dz, clm3%g%l%c%cws%int_snow, clm3%g%l%c%cps%mss_bcphi, clm3%g%l%c%cps%mss_dst1, clm3%g%l%c%cwf%flx_dst_dep_wet2, clm3%g%l%c%cps%mss_ocphi, clm3%g%l%c%cps%mss_dst2, clm3%g%l%c%cwf%flx_oc_dep_phi, clm3%g%l%c%cps%mss_dst3, clm3%g%l%c%cwf%flx_dst_dep_dry3, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%mss_bcpho, clm3%g%l%c%cwf%flx_bc_dep_pho, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%mss_ocpho, clm3%g%l%c%cwf%flx_dst_dep_dry4
+global_non, clm3%g%l%c%cwf%pwf_a%qflx_ev_soil, clm3%g%l%c%cwf%pwf_a%qflx_evap_soi, clm3%g%l%itype, clm3%g%l%c%cwf%pwf_a%qflx_ev_snow
+calls
+
+Tree height: 5

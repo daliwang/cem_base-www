@@ -1,0 +1,7 @@
+sub_in, dyn_in, dyn_out, nlfilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, initial_conds, slt_alloc, dyn_init, chem_surfvals_init, initialize_prognostics, ref_pres_init, spmdbuf, initcom, phys_grid_init

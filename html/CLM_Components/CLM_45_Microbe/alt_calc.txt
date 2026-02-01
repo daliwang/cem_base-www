@@ -1,0 +1,7 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, t_soisno, gridcell, lat
+global_wo, altmax_lastyear_indx, altmax_lastyear
+global_mod, alt_indx, altmax_indx, alt, altmax
+global_non
+calls, get_curr_date

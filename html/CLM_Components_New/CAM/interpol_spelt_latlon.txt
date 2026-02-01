@@ -1,0 +1,7 @@
+sub_in, spelt, f, flatlon, corners, interpdata
+sub_out, flatlon
+global_ro
+global_wo
+global_mod
+global_non
+calls, cip_coeff

@@ -1,0 +1,7 @@
+sub_in, qi_st_out, a_dc_in, snowh, ql_out, p_in, al_st_out, landfrac, ql_st_out, qi_sc_in, T0_in, k, ncol, ql_sc_in, qi_out, qi_dc_in, lchnk, qv0_in, T_out, qv_out, a_sc_in, ql0_in, ql_dc_in, qi0_in, ai_st_out
+sub_out, ql_st_out, al_st_out, ai_st_out, qi_out, qi_st_out, T_out, qv_out, ql_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, gridmean_RH, instratus_core, endrun, qsat_water, astG_PDF_single, aist_single, astG_RHU, astG_PDF, astG_RHU_single, aist_vector

@@ -1,0 +1,8 @@
+sub_in, rc, drvcomp, clock, exportState, importState
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ccsm_final
+calls_ln, ccsm_final@3886

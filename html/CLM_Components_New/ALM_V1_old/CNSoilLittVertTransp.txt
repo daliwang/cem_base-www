@@ -1,0 +1,23 @@
+sub_param, nitrogenflux_vars:13, carbonstate_vars:6, phosphorusstate_vars:14, carbonflux_vars:9, filter_soilc:3, bounds:1, num_soilc:2, phosphorusflux_vars:15, c14_carbonstate_vars:8, nitrogenstate_vars:12, canopystate_vars:4, c13_carbonstate_vars:7, cnstate_vars:5, c13_carbonflux_vars:10, c14_carbonflux_vars:11
+sub_out
+global_ro| decomp_cascade_con%is_cwd, is_cwd, NONE| canopystate_vars%altmax_lastyear_col, altmax_lastyear, NONE| cnstate_vars%scalaravg_col, scalaravg_col, NONE| decomp_cascade_con%spinup_factor, spinup_factor, NONE| c14_carbonflux_vars%decomp_cpools_sourcesink_col, source, NONE| c13_carbonflux_vars%decomp_cpools_sourcesink_col, source, NONE| carbonflux_vars%decomp_cpools_sourcesink_col, source, NONE| phosphorusflux_vars%decomp_ppools_sourcesink_col, source, NONE| nitrogenflux_vars%decomp_npools_sourcesink_col, source, NONE| canopystate_vars%altmax_col, altmax, NONE
+global_wo
+global_mod| c14_carbonflux_vars%decomp_cpools_transport_tendency_col, trcr_tendency_ptr, NONE| c13_carbonflux_vars%decomp_cpools_transport_tendency_col, trcr_tendency_ptr, NONE| nitrogenflux_vars%decomp_npools_transport_tendency_col, trcr_tendency_ptr, NONE| carbonflux_vars%decomp_cpools_transport_tendency_col, trcr_tendency_ptr, NONE| phosphorusflux_vars%decomp_ppools_transport_tendency_col, trcr_tendency_ptr, NONE| nitrogenstate_vars%decomp_npools_vr_col, conc_ptr, NONE| carbonstate_vars%decomp_cpools_vr_col, conc_ptr, NONE| c14_carbonstate_vars%decomp_cpools_vr_col, conc_ptr, NONE| c13_carbonstate_vars%decomp_cpools_vr_col, conc_ptr, NONE| phosphorusstate_vars%decomp_ppools_vr_col, conc_ptr, NONE| cnstate_vars%som_diffus_coef_col, som_diffus_coef, NONE| cnstate_vars%som_adv_coef_col, som_adv_coef, NONE
+global_non
+calls, Tridiagonal, endrun, get_curr_date
+readParams,readCNSoilLittVertTranspParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc        ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)  ! filter for soil columns
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

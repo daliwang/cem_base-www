@@ -1,0 +1,14 @@
+sub_param, nitrogenstate_vars:5, filter_soilc:3, nuptake_prof:6, cnstate_vars:4, num_soilc:2, bounds:1
+sub_out, nuptake_prof
+global_ro| nitrogenstate_vars%sminn_vr_col, sminn_vr, NONE| nitrogenstate_vars%smin_nh4_vr_col, smin_nh4_vr, NONE| nitrogenstate_vars%smin_no3_vr_col, smin_no3_vr, NONE| cnstate_vars%nfixation_prof_col, nfixation_prof, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,readCNAllocParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc        ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)  ! filter for soil columns
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+real(r8)                 , intent(inout) :: nuptake_prof(bounds%begc:bounds%endc, 1:nlevdecomp)

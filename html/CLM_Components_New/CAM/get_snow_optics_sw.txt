@@ -1,0 +1,7 @@
+sub_in, pbuf, state, tau, tau_w_f, tau_w, tau_w_g
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, interpolate_ice_optics_sw

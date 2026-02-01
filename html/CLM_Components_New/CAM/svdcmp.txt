@@ -1,0 +1,7 @@
+sub_in, m, n, mp, v, w, np, a
+sub_out, a, w, v
+global_ro
+global_wo
+global_mod
+global_non
+calls

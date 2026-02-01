@@ -1,0 +1,7 @@
+sub_in, par_z, je, x0, iv, g, oair, iter, cair, gb_mol, p, rh_can, gs_mol, lmr_z
+sub_out, iter, x0
+global_ro
+global_wo
+global_mod
+global_non
+calls, brent, ci_func

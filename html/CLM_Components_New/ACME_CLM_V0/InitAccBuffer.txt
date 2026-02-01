@@ -1,0 +1,7 @@
+sub_in, bounds, this
+sub_out
+global_ro
+global_wo, this%fsd240_patch, this%fsi24_patch, this%fsi240_patch, this%fsd24_patch
+global_mod
+global_non
+calls, init_accum_field

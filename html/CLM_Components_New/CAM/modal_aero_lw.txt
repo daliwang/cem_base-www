@@ -1,0 +1,7 @@
+sub_in, state, list_idx, tauxar, pbuf
+sub_out, tauxar
+global_ro, dgnumwet, qaerwat
+global_wo
+global_mod
+global_non
+calls, rad_cnst_get_info, pbuf_get_field, rad_cnst_get_aer_mmr, rad_cnst_get_aer_props, modal_aero_calcsize_diag, modal_aero_wateruptake_dr, rad_cnst_get_mode_props, binterp, endrun

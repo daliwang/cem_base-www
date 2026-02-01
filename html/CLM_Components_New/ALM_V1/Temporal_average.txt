@@ -1,0 +1,10 @@
+sub_param, dtime, column, this
+sub_out
+global_ro
+global_wo, this%tracer_flx_totleached_col
+global_mod, this%tracer_flx_dif_col, this%tracer_flx_vtrans_col, this%tracer_flx_drain_col, this%tracer_flx_netphyloss_col, this%tracer_flx_h2osfc_snow_residual_col, this%tracer_flx_ebu_col, this%tracer_flx_top_soil_col, this%tracer_flx_surfemi_col, this%tracer_flx_tparchm_col, this%tracer_flx_snowmelt_col, this%tracer_flx_surfrun_col, this%tracer_flx_netpro_col, this%tracer_flx_prec_col, this%tracer_flx_dew_snow_col, this%tracer_flx_infl_col, this%tracer_flx_leaching_col, this%tracer_flx_can_loss_col, this%tracer_flx_sub_snow_col, this%tracer_flx_dew_grnd_col
+global_non
+calls
+readParams,
+integer              , intent(in)  :: column     ! column index
+real(r8)             , intent(in)  :: dtime

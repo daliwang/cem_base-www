@@ -1,0 +1,7 @@
+sub_in, index, File, pbuf2d
+sub_out
+global_ro, dimsizes, dtype
+global_wo
+global_mod
+global_non, pbuf2d
+calls, pio_write_darray, pbuf_get_field_restart, get_phys_decomp

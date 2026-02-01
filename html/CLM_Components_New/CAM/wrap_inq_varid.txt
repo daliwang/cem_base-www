@@ -1,0 +1,7 @@
+sub_in, varid, nfid, abort, varname
+sub_out, varid
+global_ro
+global_wo
+global_mod
+global_non
+calls, handle_error

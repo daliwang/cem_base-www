@@ -1,0 +1,9 @@
+sub_param, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%set_current_year, get_curr_date
+readParams,
+class(time_info_type), intent(inout) :: this      ! this object

@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| ecophyscon%leaf_long, leaf_long, NONE| ecophyscon%froot_leaf, froot_leaf, NONE| currentPatch%tallest, currentCohort, NONE| currentCohort%shorter, currentCohort, NONE| currentPatch%older, currentPatch, NONE| currentSite%youngest_patch, currentPatch, NONE| %pft, pft, NONE| %treesai, treesai, NONE| ecophyscon%slatop, slatop, NONE| EDecophyscon%root_long, root_long, NONE
+global_wo| %nv, nv, NONE| %year_net_uptake, year_net_uptake, NONE
+global_mod| %canopy_trim, canopy_trim, NONE| %treelai, treelai, NONE| %laimemory, laimemory, NONE| %leaf_cost, leaf_cost, NONE
+global_non
+calls
+readParams,
+type (site),intent(inout), pointer :: currentSite

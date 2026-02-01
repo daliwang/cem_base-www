@@ -1,0 +1,9 @@
+sub_param, bounds, this
+sub_out
+global_ro, pft%landunit
+global_wo, this%psnsun_patch, this%c13_psnsha_patch, this%c14_psnsha_patch, this%psnsun_wj_patch, this%fpsn_patch, this%rc13_psnsha_patch, this%alphapsnsun_patch, this%c13_psnsun_patch, this%psnsun_wc_patch, this%fpsn_wc_patch, this%fpsn_wj_patch, this%rc13_psnsun_patch, this%fpsn_wp_patch, this%psnsha_wc_patch, this%rc13_canair_patch, this%alphapsnsha_patch, this%psnsha_patch, this%c14_psnsun_patch, this%psnsha_wj_patch, this%psnsun_wp_patch, this%psnsha_wp_patch
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds

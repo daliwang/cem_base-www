@@ -1,0 +1,12 @@
+sub_param, num_soilc:2, bounds:1, nitrogenflux_vars:4, filter_soilc:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non| nitrogenflux_vars%fert_to_sminn_col, fert_to_sminn, NONE| nitrogenflux_vars%fert_patch, fert, NONE
+calls, p2c
+readParams,readCNNDynamicsParams
+type(bounds_type)       , intent(in)    :: bounds
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars

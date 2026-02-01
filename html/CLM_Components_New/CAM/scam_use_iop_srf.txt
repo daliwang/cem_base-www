@@ -1,0 +1,7 @@
+sub_in, cam_in
+sub_out, cam_in
+global_ro
+global_wo
+global_mod
+global_non
+calls

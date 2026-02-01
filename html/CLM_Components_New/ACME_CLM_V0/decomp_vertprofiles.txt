@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, filter_soilp, num_soilp, filter_soilc, cnstate_vars, num_soilc, soilstate_vars, bounds
+sub_out
+global_ro, canopystate_vars%altmax_lastyear_indx_col, pft%itype, pft%wtcol, pft%column, col%pfti
+global_wo, cnstate_vars%activeroot_prof_col
+global_mod, cnstate_vars%ndep_prof_col, cnstate_vars%stem_prof_patch, cnstate_vars%nfixation_prof_col, cnstate_vars%leaf_prof_patch, cnstate_vars%froot_prof_patch, cnstate_vars%croot_prof_patch, soilstate_vars%rootfr_patch
+global_non, bounds%endc, bounds%endp, bounds%begc, bounds%begp
+calls, endrun

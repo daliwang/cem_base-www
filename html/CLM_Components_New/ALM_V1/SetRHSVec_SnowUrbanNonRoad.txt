@@ -1,0 +1,19 @@
+sub_param, num_nolakec, hs_top, dhsdT, hs_top_snow, bounds, rt, filter_nolakec, fn, sabg_lyr_col, fact, t_soisno
+sub_out, rt
+global_ro, col%z, col%landunit
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds                                     ! bounds
+integer           , intent(in)    :: num_nolakec                                ! number of column non-lake points in column filter
+integer           , intent(in)    :: filter_nolakec(:)                          ! column filter for non-lake points
+real(r8)          , intent(in)    :: hs_top_snow( bounds%begc: )                ! heat flux on top snow layer [W/m2]
+real(r8)          , intent(in)    :: hs_top( bounds%begc: )                     ! net energy flux into surface layer (col) [W/m2]
+real(r8)          , intent(in)    :: dhsdT( bounds%begc: )                      ! temperature derivative of "hs" [col]
+real(r8)          , intent(in)    :: sabg_lyr_col( bounds%begc: , -nlevsno+1: ) ! absorbed solar radiation (col,lyr) [W/m2]
+real(r8)          , intent(in)    :: fact( bounds%begc: , -nlevsno+1: )         ! used in computing tridiagonal matrix [col, lev]
+real(r8)          , intent(in)    :: fn (bounds%begc: , -nlevsno+1: )           ! heat diffusion through the layer interface [W/m2]
+real(r8)          , intent(in)    :: t_soisno(bounds%begc:, -nlevsno+1:)        ! soil temperature (Kelvin)
+real(r8)          , intent(inout) :: rt(bounds%begc: , -nlevsno: )              ! rhs vector entries

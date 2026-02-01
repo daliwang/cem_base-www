@@ -1,0 +1,9 @@
+sub_param, list
+sub_out
+global_ro, list%first, curr_conn_set%next
+global_wo
+global_mod
+global_non, curr_conn_set
+calls, ConnectionSetDestroy, ConnectionSetListInit
+readParams,
+type(connection_set_list_type), intent(inout) :: list

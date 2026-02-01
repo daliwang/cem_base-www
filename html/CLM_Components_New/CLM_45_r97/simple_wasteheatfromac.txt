@@ -1,0 +1,7 @@
+sub_in, eflx_urban_ac, eflx_heat_from_ac, eflx_wasteheat, eflx_urban_heat
+sub_out, eflx_heat_from_ac, eflx_wasteheat
+global_ro
+global_wo
+global_mod
+global_non
+calls

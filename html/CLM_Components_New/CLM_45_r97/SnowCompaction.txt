@@ -1,0 +1,7 @@
+sub_in, bounds, num_snowc, waterstate_inst, temperature_inst, filter_snowc
+sub_out
+global_ro, snl, ltype, frac_sno, h2osoi_ice, int_snow, frac_iceold, t_soisno, imelt, h2osoi_liq, swe_old, n_melt
+global_wo
+global_mod, dz
+global_non, waterstate_inst%snow_depth_col
+calls

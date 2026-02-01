@@ -1,0 +1,7 @@
+sub_in, n2cc, jno_sht, zkm, jo2_sht, zen, jsht, o3cc, nocc, nlev, o2cc, tlev
+sub_out, jo2_sht, jsht
+global_ro
+global_wo
+global_mod
+global_non
+calls, sphers, alloc_err, calc_jno, calc_o2srb, dgemm, lymana, slant_col

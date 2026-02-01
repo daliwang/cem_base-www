@@ -1,0 +1,10 @@
+sub_param, cur_data, this
+sub_out, cur_data
+global_ro, this%data_at_tlower, this%get_data_shape
+global_wo
+global_mod
+global_non
+calls, this%read_data_if_needed
+readParams,
+class(dyn_var_time_uninterp_type) , intent(inout) :: this             ! this object
+real(r8)                          , intent(out)   :: cur_data{DIMSTR} ! current value of data

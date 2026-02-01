@@ -1,0 +1,7 @@
+sub_in, num_lakec, filter_lakec, filter_nolakec, num_hydrologyc, bounds, filter_hydrologyc, num_nolakec
+sub_out
+global_ro, itype, zi, h2osfc, h2osno, h2osoi_liq, h2osoi_ice, zwt, h2ocan
+global_wo
+global_mod, wa, begwb
+global_non, dz, h2ocan, itype
+calls, p2c

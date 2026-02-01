@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, pcf%m_leafc_storage_to_litter, pnf%m_livestemn_xfer_to_litter, pcf%m_deadstemc_storage_to_litter, pnf%m_leafn_storage_to_litter, pcf%m_deadcrootc_storage_to_litter, col%npfts, pnf%m_deadstemn_xfer_to_litter, pcf%m_deadcrootc_xfer_to_litter, pcf%m_leafc_xfer_to_litter, pcf%m_frootc_storage_to_litter, pcf%m_frootc_to_litter, pnf%m_livestemn_storage_to_litter, pnf%m_livestemn_to_litter, pcf%m_leafc_to_litter, pftcon%lf_flig, pnf%m_retransn_to_litter, pnf%m_livecrootn_to_litter, pftcon%fr_fcel, pnf%m_frootn_to_litter, pcf%m_deadstemc_xfer_to_litter, pftcon%fr_flig, pnf%m_livecrootn_storage_to_litter, pftcon%lf_flab, pcf%m_livecrootc_storage_to_litter, pftcon%fr_flab, pps%froot_prof, pnf%m_frootn_xfer_to_litter, pnf%m_deadcrootn_storage_to_litter, pnf%m_deadstemn_to_litter, pnf%m_leafn_to_litter, pcf%m_livestemc_xfer_to_litter, pcf%m_frootc_xfer_to_litter, pcf%m_livecrootc_to_litter, pcf%m_gresp_storage_to_litter, pftcon%lf_fcel, pcf%m_deadcrootc_to_litter, pcf%m_livestemc_to_litter, pps%stem_prof, pps%croot_prof, pft%wtcol, pnf%m_deadcrootn_xfer_to_litter, pnf%m_livecrootn_xfer_to_litter, pcf%m_deadstemc_to_litter, pcf%m_livestemc_storage_to_litter, pcf%m_livecrootc_xfer_to_litter, pnf%m_deadcrootn_to_litter, pcf%m_gresp_xfer_to_litter, pnf%m_leafn_xfer_to_litter, pps%leaf_prof, col%pfti, pnf%m_deadstemn_storage_to_litter, pnf%m_frootn_storage_to_litter, pft%itype
+global_wo
+global_mod, cnf%gap_mortality_n_to_litr_met_n, cnf%gap_mortality_n_to_litr_lig_n, ccf%gap_mortality_c_to_litr_lig_c, cnf%gap_mortality_n_to_litr_cel_n, cnf%gap_mortality_n_to_cwdn, ccf%gap_mortality_c_to_litr_met_c, ccf%gap_mortality_c_to_cwdc, ccf%gap_mortality_c_to_litr_cel_c
+global_non
+calls
+
+Tree height: 3

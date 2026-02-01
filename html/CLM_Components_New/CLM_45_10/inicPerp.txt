@@ -1,0 +1,19 @@
+sub_in
+sub_out
+global_ro, clm3%g%l%itype, clm3%g%l%c%cps%dz, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%landunit, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%snow_depth
+global_wo, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cps%frac_sno
+global_mod
+global_non, clm3%g, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, ncd_io, getfil, ncd_pio_closefile, get_proc_global, shr_sys_flush, get_proc_bounds, ncd_pio_openfile, check_dim, mpi_bcast, endrun
+
+Tree height: 11
+0 , get_proc_bounds, get_proc_global, ncd_io, 
+1-, ncd_pio_openfile, 
+1+, getfil, ncd_pio_openfile, check_dim, check_dim, check_dim, check_dim, check_dim, check_dim, check_dim, check_dim, mpi_bcast, ncd_io, 
+2+, shr_sys_flush, ncd_io, 
+3+, ncd_io, 
+4+, ncd_io, 
+5+, ncd_io, 
+6+, ncd_io, 
+7+, ncd_io, 
+8+, ncd_pio_closefile, 

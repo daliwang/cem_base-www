@@ -1,0 +1,13 @@
+sub_param, aerosol_vars, filter_snowc, num_snowc, atm2lnd_vars, bounds
+sub_out
+global_ro, atm2lnd_vars%forc_aer_grc, col%gridcell, col%snl
+global_wo, aerosol_vars%flx_dst_dep_col, aerosol_vars%flx_oc_dep_wet_col, aerosol_vars%flx_bc_dep_col, aerosol_vars%flx_bc_dep_wet_col, aerosol_vars%flx_oc_dep_dry_col, aerosol_vars%flx_bc_dep_dry_col, aerosol_vars%flx_oc_dep_col
+global_mod, aerosol_vars%mss_dst3_col, aerosol_vars%mss_ocphi_col, aerosol_vars%mss_ocpho_col, aerosol_vars%flx_oc_dep_pho_col, aerosol_vars%mss_dst1_col, aerosol_vars%mss_dst2_col, aerosol_vars%mss_bcphi_col, aerosol_vars%mss_bcpho_col, aerosol_vars%flx_oc_dep_phi_col, aerosol_vars%flx_dst_dep_dry2_col, aerosol_vars%flx_dst_dep_wet1_col, aerosol_vars%flx_dst_dep_dry3_col, aerosol_vars%flx_dst_dep_wet4_col, aerosol_vars%flx_bc_dep_phi_col, aerosol_vars%flx_dst_dep_wet3_col, aerosol_vars%mss_dst4_col, aerosol_vars%flx_bc_dep_pho_col, aerosol_vars%flx_dst_dep_dry4_col, aerosol_vars%flx_dst_dep_dry1_col, aerosol_vars%flx_dst_dep_wet2_col
+global_non
+calls
+readParams,
+type(bounds_type)  , intent(in)    :: bounds
+integer            , intent(in)    :: num_snowc       ! number of snow points in column filter
+integer            , intent(in)    :: filter_snowc(:) ! column filter for snow points
+type(atm2lnd_type) , intent(in)    :: atm2lnd_vars
+type(aerosol_type) , intent(inout) :: aerosol_vars

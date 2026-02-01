@@ -1,0 +1,7 @@
+sub_in, ncol, ionBot, lchnk, pbuf, istate, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, zenith, get_solar_parms, pbuf_get_field, outfld

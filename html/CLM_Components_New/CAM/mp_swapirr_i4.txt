@@ -1,0 +1,7 @@
+sub_in, recv_bl, sw_alltoall, send_bl, comm, sw_handshake, sw_maxreq, a2out, a1out, a2in, sw_send, a1in
+sub_out, a1out, a2out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_isend, mpi_waitall, mpi_rsend, mpi_send, t_stopf, mpi_alltoallv, mpi_wait, MPI_COMM_RANK, MPI_COMM_SIZE, mpi_irsend, t_startf, mpi_irecv

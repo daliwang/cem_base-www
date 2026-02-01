@@ -1,0 +1,7 @@
+sub_in, num_soilc, cnveg_nitrogenflux_inst, filter_soilc, bounds, soilbiogeochem_nitrogenflux_inst, cnveg_nitrogenstate_inst
+sub_out
+global_ro, sminn_leached, smin_no3_leached, col_fire_nloss, soyfixn_to_sminn, product_nloss, nfix_to_sminn, dwt_nloss, denit, totcoln, col_begnb, f_n2o_nit, smin_no3_runoff, supplement_to_sminn, fert_to_sminn, ndep_to_sminn, som_n_leached
+global_wo
+global_mod, col_endnb
+global_non
+calls, endrun

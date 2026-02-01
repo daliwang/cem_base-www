@@ -1,0 +1,12 @@
+sub_in, ubl, lbl, filter_nolakec, num_urbanl, ubc, num_nolakec, filter_urbanl, lbc, xmf
+sub_out, c_h2osfc, xmf_h2osfc, fact
+global_ro, clm3%g%l%lps%t_building_max, clm3%g%l%c%p%pef%eflx_sh_soil, clm3%g%l%c%npfts, clm3%g%l%c%p%pef%sabg_lyr, clm3%g%l%c%p%pwf%qflx_ev_soil, clm3%g%l%wtlunit_roof, clm3%g%l%lef%eflx_heat_from_ac, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%c%cps%z, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%lef%eflx_wasteheat, clm3%g%l%c%p%pef%dlrad, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%cef%eflx_bot, clm3%g%l%c%p%pef%eflx_sh_h2osfc, clm3%g%l%c%p%active, clm3%g%l%c%p%pef%cgrnd, clm3%g%l%c%p%pef%sabg_snow, clm3%g%l%c%p%wtcol, clm3%g%l%c%p%pef%sabg_soil, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%p%pef%sabg, clm3%g%l%c%p%pef%eflx_lwrad_net, clm3%g%l%c%cps%emg, clm3%g%l%c%p%gridcell, clm3%g%l%c%cps%dz, clm3%g%l%c%pfti, clm3%g%l%lps%t_building_min, clm3%g%l%c%p%pps%frac_veg_nosno, clm3%g%l%c%p%pwf%qflx_ev_h2osfc, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%cps%htvp, clm3%g%l%itype, clm3%g%l%c%p%pwf%qflx_ev_snow, clm3%g%l%lef%eflx_traffic, clm3%g%l%c%ces%tssbef, clm3%g%l%c%cps%zi, clm3%g%l%c%p%pef%eflx_sh_snow, clm3%g%l%c%p%landunit, clm_a2l%forc_lwrad, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%frac_sno_eff
+global_wo, clm3%g%l%c%cef%eflx_urban_heat, clm3%g%l%c%p%pef%eflx_anthro, clm3%g%l%c%cef%eflx_fgr, clm3%g%l%c%cef%eflx_urban_ac, clm3%g%l%c%p%pef%sabg_chk, clm3%g%l%c%cef%eflx_fgr12
+global_mod, clm3%g%l%c%p%pef%eflx_traffic_pft, clm3%g%l%lps%t_building, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%p%pef%eflx_wasteheat_pft, clm3%g%l%c%ces%hc_soi, clm3%g%l%c%p%pef%dgnetdT, clm3%g%l%c%p%pef%eflx_heat_from_ac_pft, clm3%g%l%c%ces%hc_soisno, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cef%eflx_building_heat, clm3%g%l%c%ces%t_h2osfc, clm3%g%l%c%p%pef%eflx_gnet
+global_non, clm3%g%l%canyon_hwr, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cws%h2osno, clm3%g%l%c%ces%t_h2osfc_bef, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%snow_depth
+calls, Phasechange_beta, PhaseChangeH2osfc, BandDiagonal, t_startf, t_stopf, SoilThermProp
+
+Tree height: 20
+0 , SoilThermProp, 
+12-, t_startf, BandDiagonal, t_stopf, 
+16+, PhaseChangeH2osfc, Phasechange_beta, 

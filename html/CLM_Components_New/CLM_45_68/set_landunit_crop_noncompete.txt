@@ -1,0 +1,10 @@
+sub_in, gi, setdata, ltype
+sub_out, ci, li, pi
+global_ro
+global_wo
+global_mod
+global_non
+calls, subgrid_get_gcellinfo
+
+Tree height: 3
+0 , subgrid_get_gcellinfo, 

@@ -1,0 +1,11 @@
+sub_in, dhsdT, filter_nolakec, fact, bounds, num_nolakec
+sub_out, xmf
+global_ro, cps%frac_h2osfc, cps%snl, lun%itype, cps%frac_sno_eff, cps%dz, cps%sucsat, cps%watsat, cps%bsw, col%itype
+global_wo, cef%eflx_snomelt_r, cef%eflx_snomelt_u, cwf%qflx_snow_melt
+global_mod, cwf%qflx_snofrz_col, cws%h2osno, cws%h2osoi_liq, cps%snow_depth, cwf%qflx_glcice_melt, cwf%qflx_snomelt, cwf%qflx_glcice, cps%imelt, ces%t_soisno, cws%h2osoi_ice, cef%eflx_snomelt, cwf%qflx_snofrz_lyr
+global_non, cps%frac_sno, ces%tssbef
+calls, t_startf, shr_assert, t_stopf
+
+Tree height: 10
+0 , t_startf, shr_assert, shr_assert, shr_assert, 
+5-, t_stopf, 

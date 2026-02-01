@@ -1,0 +1,7 @@
+sub_in, k, spelt, dsphere1, nstep, contrauv, dsphere2
+sub_out, dsphere1, contrauv, dsphere2
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_boomerang_velocities

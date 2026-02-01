@@ -1,0 +1,7 @@
+sub_in, sec_spec, File, yr_spec, day_spec, mon_spec
+sub_out
+global_ro, units_desc, mdims_desc, avgflag_desc, xyfill_desc, numlev_desc, vdesc, fillval_desc, hwrt_prec_desc, decomp_type_desc, field_name_desc, sseq_desc, issubcol_desc, longname_desc
+global_wo
+global_mod
+global_non
+calls, wshist

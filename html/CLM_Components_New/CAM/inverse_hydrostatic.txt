@@ -1,0 +1,7 @@
+sub_in, zm_init, p_sfc, thvm, z, nlevels, exner
+sub_out, z
+global_ro
+global_wo
+global_mod
+global_non
+calls

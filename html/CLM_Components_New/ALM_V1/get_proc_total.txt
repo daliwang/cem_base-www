@@ -1,0 +1,15 @@
+sub_param, nCohorts, ncells, npfts, ncols, pid, nlunits, ntopounits
+sub_out, ntopounits, nlunits, ncols, npfts, ncells, nCohorts
+global_ro, %nlunits, %npfts, %ncols, %ntopounits, %ncells, %nCohorts
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in)  :: pid     ! proc id
+integer, intent(out) :: ncells  ! total number of gridcells on the processor
+integer, intent(out) :: ntopounits  ! total number of topographic units on the processor
+integer, intent(out) :: nlunits ! total number of landunits on the processor
+integer, intent(out) :: ncols   ! total number of columns on the processor
+integer, intent(out) :: npfts   ! total number of pfts on the processor
+integer, intent(out) :: nCohorts ! total number of cohorts on the processor

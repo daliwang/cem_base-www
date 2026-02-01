@@ -1,0 +1,7 @@
+sub_in, par, elem, subelement_corners, fdofp
+sub_out, fdofp, subelement_corners
+global_ro, UniquePtoffset, ja, ia
+global_wo
+global_mod
+global_non, elem
+calls, LongEdgeVunpackMIN, LongEdgeVpack, initLongEdgeBuffer, bndry_exchangeV

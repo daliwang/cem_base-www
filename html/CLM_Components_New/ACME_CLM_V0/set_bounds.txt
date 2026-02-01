@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, bounds%endp, bounds%endl, bounds%endg, bounds%endc
+global_mod, bounds%begp, bounds%begl, bounds%begc, bounds%begg
+global_non
+calls

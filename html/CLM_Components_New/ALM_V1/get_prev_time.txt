@@ -1,0 +1,9 @@
+sub_param, days, seconds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_ClockGet, ESMF_TimeIntervalGet, chkrc
+readParams,
+integer, intent(out) ::&

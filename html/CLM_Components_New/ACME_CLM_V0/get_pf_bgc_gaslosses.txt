@@ -1,0 +1,7 @@
+sub_in, bounds, num_soilc, filter_soilc
+sub_out
+global_ro, cps%frac_h2osfc, bounds%begg, clm_a2l%forc_pco2, clm_a2l%forc_pbot, cps%frac_sno_eff, col%gridcell
+global_wo, ccf%hr_vr, cnf%f_ngas_decomp_vr, cnf%f_ngas_denit_vr, cnf%f_ngas_nitri_vr
+global_mod, cnf%f_n2o_soil_vr, ccf%f_co2_soil_vr, cnf%f_n2_soil_vr
+global_non, cps%dz
+calls, pflotranModelUpdateAqGasesfromCLM, VecGetArrayF90, VecRestoreArrayF90

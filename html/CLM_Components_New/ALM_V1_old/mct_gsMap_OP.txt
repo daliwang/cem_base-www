@@ -1,0 +1,10 @@
+sub_param, GSMap:1, PEno:2, Points:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(mct_gsMap), intent(in) :: GSMap
+integer, intent(in) :: PEno

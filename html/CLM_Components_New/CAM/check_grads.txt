@@ -1,0 +1,7 @@
+sub_in, iz, month, ntimes, day, l_error, nvar, iunit, ia, year, time_grads, nrecord, fname, time, fdir, dtwrite
+sub_out, ntimes, nrecord, l_error
+global_ro
+global_wo
+global_mod
+global_non
+calls

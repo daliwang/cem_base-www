@@ -1,0 +1,18 @@
+sub_param, num_vegsol:3, temperature_vars:8, canopystate_vars:7, filter_vegsol:2, rho:5, coszen:4, tau:6, surfalb_vars:10, bounds:1, waterstate_vars:9
+sub_out
+global_ro| surfalb_vars%albgri_col, albgri, NONE| waterstate_vars%fwet_patch, fwet, NONE| surfalb_vars%tlai_z_patch, tlai_z, NONE| canopystate_vars%elai_patch, elai, NONE| temperature_vars%t_veg_patch, t_veg, NONE| canopystate_vars%esai_patch, esai, NONE| pft%itype, itype, NONE| surfalb_vars%tsai_z_patch, tsai_z, NONE| ecophyscon%xl, xl, NONE| pft%column, column, NONE| surfalb_vars%albgrd_col, albgrd, NONE| surfalb_vars%nrad_patch, nrad, NONE
+global_wo
+global_mod| surfalb_vars%fabi_patch, fabi, NONE| surfalb_vars%fabd_sun_patch, fabd_sun, NONE| surfalb_vars%albd_patch, albd, NONE| surfalb_vars%fabi_sun_z_patch, fabi_sun_z, NONE| surfalb_vars%vcmaxcintsun_patch, vcmaxcintsun, NONE| surfalb_vars%ftii_patch, ftii, NONE| surfalb_vars%fabd_patch, fabd, NONE| surfalb_vars%fabd_sha_patch, fabd_sha, NONE| surfalb_vars%ftdd_patch, ftdd, NONE| surfalb_vars%fabd_sha_z_patch, fabd_sha_z, NONE| surfalb_vars%fabi_sha_patch, fabi_sha, NONE| surfalb_vars%vcmaxcintsha_patch, vcmaxcintsha, NONE| surfalb_vars%fabi_sha_z_patch, fabi_sha_z, NONE| surfalb_vars%albi_patch, albi, NONE| surfalb_vars%fabd_sun_z_patch, fabd_sun_z, NONE| surfalb_vars%ftid_patch, ftid, NONE| surfalb_vars%fsun_z_patch, fsun_z, NONE| surfalb_vars%fabi_sun_patch, fabi_sun, NONE
+global_non
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: filter_vegsol (:)        ! filter for vegetated patches with coszen>0
+integer                , intent(in)    :: num_vegsol               ! number of vegetated patches where coszen>0
+real(r8), intent(in)  :: coszen( bounds%begp: )   ! cosine solar zenith angle for next time step [pft]
+real(r8), intent(in)  :: rho( bounds%begp: , 1: ) ! leaf/stem refl weighted by fraction LAI and SAI [pft, numrad]
+real(r8), intent(in)  :: tau( bounds%begp: , 1: ) ! leaf/stem tran weighted by fraction LAI and SAI [pft, numrad]
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(surfalb_type)     , intent(inout) :: surfalb_vars

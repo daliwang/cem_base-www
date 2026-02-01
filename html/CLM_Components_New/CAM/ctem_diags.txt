@@ -1,0 +1,7 @@
+sub_in, uzm, v3, omga, pe, h2o, pt, u3, ps, grid
+sub_out, uzm
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpibcast, par_xsum, vertinterp, outfld, pargatherint

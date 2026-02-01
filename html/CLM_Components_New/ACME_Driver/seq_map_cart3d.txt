@@ -1,0 +1,8 @@
+sub_in, fldv, norm, fldu, mapper, av_d, av_s, type, string
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_mpi_max, shr_mpi_sum, seq_map_map, mct_avect_clean, mct_avect_init, mpi_comm_rank
+calls_ln, shr_mpi_sum@711, seq_map_map@657, mct_avect_clean@721, mpi_comm_rank@708, mct_avect_init@634, mct_avect_init@631, shr_mpi_max@709, shr_mpi_sum@712, mct_avect_clean@720, shr_mpi_sum@710

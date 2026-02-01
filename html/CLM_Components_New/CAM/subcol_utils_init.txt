@@ -1,0 +1,7 @@
+sub_in, subcol_scheme_init
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_allocate_internal

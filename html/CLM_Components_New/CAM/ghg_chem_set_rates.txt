@@ -1,0 +1,7 @@
+sub_in, zen_angle, rxn_rates, ncol, lchnk, latmapback
+sub_out, rxn_rates
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

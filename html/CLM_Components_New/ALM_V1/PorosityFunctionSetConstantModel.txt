@@ -1,0 +1,10 @@
+sub_param, porParams, por_base
+sub_out
+global_ro
+global_wo, porParams%porosity_base, porParams%porosityId
+global_mod
+global_non
+calls
+readParams,
+type(porosity_params_type), intent (out) :: porParams
+PetscReal, intent (in)                   :: por_base

@@ -1,0 +1,7 @@
+sub_in, lcl_par, gbl_par, leader, lcl_component
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_Intercomm_create

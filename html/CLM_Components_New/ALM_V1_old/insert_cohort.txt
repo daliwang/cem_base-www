@@ -1,0 +1,13 @@
+sub_param, tnull:4, pcc:1, ptall:2, snull:5, pshort:3
+sub_out
+global_ro| ptallest, shortptr, NONE| tallptr%shorter, shortptr, NONE| pshortest, current, NONE| current%taller, current, NONE| pcc%dbh, dbh, NONE| current, tallptr, NONE| null, tallptr, NONE
+global_wo| pcc%taller, taller, NONE
+global_mod
+global_non| shortptr, icohort%shorter, NONE| icohort, icohort%patchptr%tallest, NONE| pcc%patchptr, currentPatch, NONE| icohort, icohort%patchptr%shortest, NONE| icohort, tallptr%shorter, NONE| icohort, udata%storebigcohort, NONE| icohort, currentPatch%tallest, NONE| null, ptallest, NONE| ptall, ptallest, NONE| icohort, ptallest, NONE| icohort, shortptr%taller, NONE| icohort, currentPatch%shortest, NONE| null, pshortest, NONE| icohort, pshortest, NONE| pshort, pshortest, NONE| tallptr, icohort%taller, NONE| icohort, udata%storesmallcohort, NONE| pcc, icohort, NONE
+calls
+readParams,
+type(cohort), target, intent(inout) :: pcc
+type(cohort), target, intent(inout) :: ptall
+type(cohort), target, intent(inout) :: pshort
+integer, intent(in)   :: tnull
+integer, intent(in)   :: snull

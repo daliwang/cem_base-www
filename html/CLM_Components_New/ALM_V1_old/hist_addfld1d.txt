@@ -1,0 +1,23 @@
+sub_param, ptr_lnd:10, units:2, set_urb:17, set_nolake:16, long_name:4, c2l_scale_type:13, fname:1, avgflag:3, default:21, ptr_patch:9, set_noglcmec:19, set_spec:20, ptr_gcell:6, ptr_atm:11, set_lake:15, type1d_out:5, l2g_scale_type:14, set_nourb:18, p2c_scale_type:12, ptr_lunit:7, ptr_col:8
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+character(len=*), intent(in)           :: fname          ! field name
+character(len=*), intent(in)           :: units          ! units of field
+character(len=1), intent(in)           :: avgflag        ! time averaging flag
+character(len=*), intent(in)           :: long_name      ! long name of field
+character(len=*), optional, intent(in) :: type1d_out     ! output type (from clmtype)
+real(r8)        , optional, intent(in) :: set_lake       ! value to set lakes to
+real(r8)        , optional, intent(in) :: set_nolake     ! value to set non-lakes to
+real(r8)        , optional, intent(in) :: set_urb        ! value to set urban to
+real(r8)        , optional, intent(in) :: set_nourb      ! value to set non-urban to
+real(r8)        , optional, intent(in) :: set_noglcmec   ! value to set non-glacier_mec to
+real(r8)        , optional, intent(in) :: set_spec       ! value to set special to
+character(len=*), optional, intent(in) :: p2c_scale_type ! scale type for subgrid averaging of pfts to column
+character(len=*), optional, intent(in) :: c2l_scale_type ! scale type for subgrid averaging of columns to landunits
+character(len=*), optional, intent(in) :: l2g_scale_type ! scale type for subgrid averaging of landunits to gridcells
+character(len=*), optional, intent(in) :: default        ! if set to 'inactive, field will not appear on primary tape

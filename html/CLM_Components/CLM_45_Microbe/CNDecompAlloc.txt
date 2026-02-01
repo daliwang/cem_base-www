@@ -1,0 +1,7 @@
+sub_in, filter_soilp, filter_soilc, ubc, num_soilp, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro, decomp_k, is_soil, cascade_donor_pool, fpi_vr, floating_cn_ratio_decomp_pools, finundated, rf_decomp_cascade, cascade_receiver_pool, t_scalar, o_scalar, cdons_min, t_soisno, w_scalar, is_microbe, is_litter, initial_cn_ratio, pathfrac_decomp_cascade
+global_wo, cdons_unsat, decomp_cascade_ntransfer_vr, decomp_cascade_sminn_flux_vr, potential_immob_vr, decomp_cascade_ctransfer_vr, cn_microbe, cdons_sat, cmicbions, sminn_to_denit_decomp_cascade_vr, decomp_cascade_hr_vr
+global_mod, fphr, decomp_npools_vr, cdocs_unsat, cdocs_sat, cmicbiocs, cdocs, net_nmin, net_nmin_vr, gross_nmin, phr_vr, gross_nmin_vr, decomp_cpools_vr, cdons
+global_non, altmax_indx, h2osoi_vol, dochr_vr, froot_r, altmax_lastyear_indx, micbio_hr, sminn_to_denit_excess_vr, micbio_hr_vr, root2doc, landunit, rootfr, itype, watsat
+calls, nitrif_denitrif, decomp_vertprofiles, CNAllocation, decomp_rate_constants

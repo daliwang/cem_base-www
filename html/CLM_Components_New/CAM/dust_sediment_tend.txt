@@ -1,0 +1,7 @@
+sub_in, pint, pdel, dtime, dusttend, sfdust, dustmr, pvdust, ncol, t, pmid
+sub_out, dusttend, sfdust
+global_ro
+global_wo
+global_mod
+global_non
+calls, getflx

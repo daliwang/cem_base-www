@@ -1,0 +1,8 @@
+sub_in, comp, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_ggrid_clean, seq_mctext_avinit, seq_mctext_gsmapInit, seq_domain_compare, seq_map_init_exchange, seq_mctext_gGridInit, seq_map_map_exchange, shr_sys_flush, mct_avect_zero, seq_mctext_avExtend
+calls_ln, seq_map_init_exchange@712, mct_avect_zero@742, mct_avect_zero@743, shr_sys_flush@696, seq_mctext_gsmapInit@698, seq_mctext_avExtend@733, seq_map_init_exchange@707, seq_map_map_exchange@735, mct_ggrid_clean@739, seq_map_map_exchange@727, seq_mctext_gGridInit@726, seq_mctext_gGridInit@734, shr_sys_flush@705, shr_sys_flush@710, seq_domain_compare@737, seq_mctext_avinit@717, seq_mctext_avinit@716, shr_sys_flush@686, shr_sys_flush@724, shr_sys_flush@731

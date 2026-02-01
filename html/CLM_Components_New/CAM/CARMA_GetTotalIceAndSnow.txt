@@ -1,0 +1,7 @@
+sub_in, snowSurface, carma, iceMass, cstate, snowMass, snowNumber, iceRe, rc, iceNumber, makeSnow
+sub_out, snowSurface, snowNumber, snowMass, rc, iceRe, iceNumber, iceMass
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMAGROUP_Get, CARMASTATE_SetDetrain, CARMASTATE_GetDetrain, CARMASTATE_GetBin, CARMA_Get, CARMASTATE_SetBin

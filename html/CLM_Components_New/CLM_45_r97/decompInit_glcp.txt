@@ -1,0 +1,7 @@
+sub_in, glcmask, lns, lni, lnj
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, scatter_data_from_master, gather_data_to_master, get_proc_bounds, endrun, mct_gsMap_init, get_proc_global, shr_sys_flush, mpi_barrier, subgrid_get_gcellinfo

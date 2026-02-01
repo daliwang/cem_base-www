@@ -1,0 +1,11 @@
+sub_in, num_pcropp, filter_pcropp
+sub_out
+global_ro, pftcon%leaf_long, pftcon%leafcn, pes%t10, pps%tlai, pft%gridcell, pps%gddtsoi, pps%gddplant, pft%column, pes%t_ref2m_min, pftcon%fertnitro, pes%a10tmin, pft%itype
+global_wo, pps%cropplant, pepv%lgsf, pepv%offset_counter, pps%huileaf, pepv%bglfr, pps%vf, pps%hdidx, pps%cumvd, pepv%bgtr, pepv%onset_flag, pepv%offset_flag
+global_mod, pps%gddmaturity, pps%idop, pps%harvdate, pps%gdd020, pepv%onset_counter, ccf%dwt_seedc_to_leaf, pepv%fert_counter, pes%a5tmin, pns%leafn_xfer, pps%croplive, pnf%fert, pps%gdd820, pps%huigrain, pcs%leafc_xfer, cnf%dwt_seedn_to_leaf
+global_non, pps%gdd1020
+calls, vernalization, get_curr_date
+
+Tree height: 14
+0 , get_curr_date, 
+10+, vernalization, 

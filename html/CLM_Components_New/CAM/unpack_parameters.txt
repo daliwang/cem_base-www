@@ -1,0 +1,7 @@
+sub_in, Lscale_mu_coef, C2c, nu1, C7b, C14, nu10, C4, mu, C2rtthl, c_K2, nu8, c_K8, C7_Lscale0, C5, gamma_coefc, C6rtb, C6thlb, C7, c_K1, C6thl, C1c, C8b, taumax, C2thl, lmin_coef, beta, C1, C6rtc, wpxp_L_thresh, c_K6, C2rt, nu_hd, nu9, C13, C1b, c_K, C7c, nu_r, C15, gamma_coef, c_K9, C8, nu6, C11b, c_Krrainm, C2b, nu2, C12, C10, C2, Lscale_pert_coef, C6rt, params, gamma_coefb, taumin, C6thl_Lscale0, C6rt_Lscale0, C6thlc, C11c, C11
+sub_out, gamma_coefc, C6thlb, C6rtb, C6thl, c_K1, C7, C1c, C8b, C1, beta, taumax, C2thl, lmin_coef, c_K6, wpxp_L_thresh, C6rtc, Lscale_mu_coef, C7b, C2c, nu1, C14, nu10, C4, mu, C2rtthl, c_K8, nu8, c_K2, C5, C7_Lscale0, C12, nu2, C2b, C10, C2, Lscale_pert_coef, gamma_coefb, C6rt, C6rt_Lscale0, taumin, C6thl_Lscale0, C11c, C11, C6thlc, nu9, C2rt, nu_hd, C1b, C13, c_K, C7c, c_K9, gamma_coef, C8, nu6, C15, nu_r, c_Krrainm, C11b
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,16 @@
+sub_param, smin_nh4, dtime, smin_no3, nitrogen_limit_flag, cascade_matrix, nreactions, reaction_rates, nstvars
+sub_out, cascade_matrix, reaction_rates
+global_ro, centurybgc_vars%lid_plant_minn_up_reac, centurybgc_vars%lid_no3, centurybgc_vars%lid_nh4_nit_reac, centurybgc_vars%lid_no3_den_reac, centurybgc_vars%nom_pools, centurybgc_vars%lid_nh4, centurybgc_vars%lid_nh4_supp
+global_wo
+global_mod
+global_non, centurybgc_vars%lid_nh4_nit, centurybgc_vars%lid_minn_nh4_plant, centurybgc_vars%lid_minn_no3_immob, centurybgc_vars%lid_minn_nh4_immob, centurybgc_vars%lid_plant_minn, centurybgc_vars%lid_minn_no3_plant
+calls
+readParams,readParams
+integer , intent(in)    :: nstvars
+integer , intent(in)    :: nreactions
+logical , intent(in)    :: nitrogen_limit_flag(centurybgc_vars%nom_pools)
+real(r8), intent(in)    :: smin_nh4
+real(r8), intent(in)    :: smin_no3
+real(r8), intent(in)    :: dtime
+real(r8), intent(inout) :: cascade_matrix(nstvars, nreactions)
+real(r8), intent(inout) :: reaction_rates(nreactions)

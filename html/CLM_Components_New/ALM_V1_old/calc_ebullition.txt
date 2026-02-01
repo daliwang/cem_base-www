@@ -1,0 +1,23 @@
+sub_param, bounds:1, tracerstate_vars:15, lbj:2, betrtracer_vars:13, fracice:11, forc_psrf:7, zwt:12, dz:9, dtime:10, zi:8, ubj:3, tracercoeff_vars:14, tracer_flx_ebu_col:16, num_soilc:5, filter_soilc:6, jtops:4
+sub_out, tracer_flx_ebu_col
+global_ro| tracercoeff_vars%aqu2bulkcef_mobile_col, aqu2bulkcef_mobile_col, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| betrtracer_vars%id_trc_n2, id_trc_n2, NONE| betrtracer_vars%groupid, groupid, NONE| tracercoeff_vars%henrycef_col, henrycef_col, NONE| betrtracer_vars%id_trc_ar, id_trc_ar, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| betrtracer_vars%id_trc_co2x, id_trc_co2x, NONE| betrtracer_vars%id_trc_o2, id_trc_o2, NONE| betrtracer_vars%id_trc_ch4, id_trc_ch4, NONE| betrtracer_vars%is_mobile, is_mobile, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| betrtracer_vars%volatileid, volatileid, NONE| betrtracer_vars%is_h2o, is_h2o, NONE| betrtracer_vars%nvolatile_tracers, nvolatile_tracers, NONE
+global_wo
+global_mod| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: jtops(bounds%begc: )                                                             ! top label of each column
+integer,                intent(in)    :: num_soilc                                                                        ! number of columns in column filter_soilc
+integer,                intent(in)    :: filter_soilc(:)                                                                  ! column filter_soilc
+real(r8),               intent(in)    :: dtime
+real(r8),               intent(in)    :: dz(bounds%begc: , lbj: )
+real(r8),               intent(in)    :: zi(bounds%begc: , lbj-1: )
+real(r8),               intent(in)    :: forc_psrf(bounds%begc: )                                                         ! atmospheric pressure, [Pa]
+real(r8),               intent(in)    :: fracice(bounds%begc: , lbj: )                                                    ! fraction of ice in the soil layer, 0-1
+real(r8),               intent(in)    :: zwt(bounds%begc: )                                                               ! water table depth [m]
+type(betrtracer_type),  intent(in)    :: betrtracer_vars                                                                  ! tracer info data structure
+type(tracercoeff_type), intent(in)    :: tracercoeff_vars                                                                 ! tracer phase conversion coefficients
+type(tracerstate_type), intent(inout) :: tracerstate_vars                                                                 ! tracer state variables data structure
+real(r8),               intent(inout) :: tracer_flx_ebu_col(bounds%begc:bounds%endc, 1:betrtracer_vars%nvolatile_tracers) ! tracer ebullition

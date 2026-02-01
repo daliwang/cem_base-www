@@ -1,0 +1,7 @@
+sub_in, num_natvegp, cnveg_carbonstate_inst, bounds, filter_natvegp, dgvs_inst
+sub_out
+global_ro, allom1, deadstemc, slatop, leafcmax, tree, dsladlai, woody, reinickerp, dwood, crownarea_max, ivt
+global_wo
+global_mod, fpcgrid, crownarea, nind
+global_non
+calls

@@ -1,0 +1,17 @@
+sub_param, num_soilc:6, lbj:3, tracercoeff_vars:9, bounds:2, jtops:5, ubj:4, this:1, tracerstate_vars:10, filter_soilc:7, betrtracer_vars:8
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(bgc_reaction_mock_run_type),    intent(in) :: this
+type(bounds_type),      intent(in) :: bounds
+integer,                intent(in) :: lbj, ubj
+integer,                intent(in) :: jtops(bounds%begc: )        ! top label of each column
+integer,                intent(in) :: num_soilc
+integer,                intent(in) :: filter_soilc(:)
+type(betrtracer_type),  intent(in) :: betrtracer_vars
+type(tracercoeff_type), intent(in) :: tracercoeff_vars
+type(tracerstate_type), intent(inout) :: tracerstate_vars

@@ -1,0 +1,19 @@
+sub_param, bounds, anaerobic_frac, soilstate_vars, numf, h2osoi_vol, filter, lbj, ubj, conc_o2_unsat, o2_decomp_depth_unsat, jtops, t_soisno
+sub_out, anaerobic_frac
+global_ro, soilstate_vars%bsw_col, soilstate_vars%watfc_col, soilstate_vars%cellorg_col, soilstate_vars%soilpsi_col, soilstate_vars%watsat_col
+global_wo
+global_mod
+global_non, soilstate_vars%sucsat_col
+calls
+readParams,
+type(bounds_type),      intent(in) :: bounds
+integer,                intent(in) :: lbj, ubj
+integer,                intent(in) :: jtops(bounds%begc: )                       ! top label of each column
+integer,                intent(in) :: numf
+integer,                intent(in) :: filter(:)                                  !indices
+type(soilstate_type),   intent(in) :: soilstate_vars
+real(r8),               intent(in) :: t_soisno(bounds%begc: , lbj: )
+real(r8),               intent(in) :: h2osoi_vol(bounds%begc:, lbj: )
+real(r8),               intent(in) :: o2_decomp_depth_unsat(bounds%begc: ,lbj: ) !potential o2 consumption, as deduced from aerobic heteorotrophic decomposition, mol o2/m3/s
+real(r8),               intent(in) :: conc_o2_unsat(bounds%begc: , lbj: )        !bulk soil o2 concentration, mol/m3
+real(r8),              intent(out) :: anaerobic_frac(bounds%begc: , lbj: )       !fraction of aerobic soil

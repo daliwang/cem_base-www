@@ -1,0 +1,20 @@
+sub_param, nitrogenflux_vars:11, c13_carbonstate_vars:4, c14_carbonstate_vars:5, filter_soilc:2, nitrogenstate_vars:6, c14_carbonflux_vars:10, num_soilc:1, c13_carbonflux_vars:9, carbonstate_vars:3, carbonflux_vars:8, phosphorusflux_vars:12, phosphorusstate_vars:7
+sub_out
+global_ro| c13_carbonflux_vars%hrv_cropc_to_prod1c_col, hrv_cropc_to_prod1c_col, NONE| carbonflux_vars%hrv_cropc_to_prod1c_col, hrv_cropc_to_prod1c_col, NONE| c14_carbonflux_vars%hrv_cropc_to_prod1c_col, hrv_cropc_to_prod1c_col, NONE| phosphorusflux_vars%hrv_cropp_to_prod1p_col, hrv_cropp_to_prod1p_col, NONE| nitrogenflux_vars%hrv_cropn_to_prod1n_col, hrv_cropn_to_prod1n_col, NONE
+global_wo
+global_mod| phosphorusstate_vars%prod1p_col, prod1p_col, NONE| nitrogenstate_vars%prod1n_col, prod1n_col, NONE| c14_carbonstate_vars%prod1c_col, prod1c_col, NONE| carbonstate_vars%prod1c_col, prod1c_col, NONE| c13_carbonstate_vars%prod1c_col, prod1c_col, NONE| c13_carbonflux_vars%prod1c_loss_col, prod1c_loss_col, NONE| carbonflux_vars%prod1c_loss_col, prod1c_loss_col, NONE| c14_carbonflux_vars%prod1c_loss_col, prod1c_loss_col, NONE| phosphorusflux_vars%prod1p_loss_col, prod1p_loss_col, NONE| nitrogenflux_vars%prod1n_loss_col, prod1n_loss_col, NONE
+global_non
+calls
+readParams,
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c14_carbonstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+type(phosphorusstate_type), intent(in)   :: phosphorusstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type), intent(inout) :: phosphorusflux_vars

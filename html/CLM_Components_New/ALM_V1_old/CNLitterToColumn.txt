@@ -1,0 +1,14 @@
+sub_param, num_soilc:1, nitrogenflux_vars:5, cnstate_vars:3, phosphorusflux_vars:6, carbonflux_vars:4, filter_soilc:2
+sub_out
+global_ro| phosphorusflux_vars%livestemp_to_litter_patch, livestemp_to_litter, NONE| ecophyscon%fr_flig, fr_flig, NONE| ecophyscon%lf_fcel, lf_fcel, NONE| col%pfti, pfti, NONE| carbonflux_vars%livestemc_to_litter_patch, livestemc_to_litter, NONE| cnstate_vars%leaf_prof_patch, leaf_prof, NONE| ecophyscon%lf_flig, lf_flig, NONE| phosphorusflux_vars%leafp_to_litter_patch, leafp_to_litter, NONE| ecophyscon%lf_flab, lf_flab, NONE| carbonflux_vars%leafc_to_litter_patch, leafc_to_litter, NONE| pft%wtcol, wtcol, NONE| nitrogenflux_vars%leafn_to_litter_patch, leafn_to_litter, NONE| cnstate_vars%froot_prof_patch, froot_prof, NONE| pft%itype, ivt, NONE| phosphorusflux_vars%frootp_to_litter_patch, frootp_to_litter, NONE| ecophyscon%fr_fcel, fr_fcel, NONE| carbonflux_vars%frootc_to_litter_patch, frootc_to_litter, NONE| nitrogenflux_vars%frootn_to_litter_patch, frootn_to_litter, NONE| nitrogenflux_vars%livestemn_to_litter_patch, livestemn_to_litter, NONE| ecophyscon%fr_flab, fr_flab, NONE
+global_wo
+global_mod| nitrogenflux_vars%phenology_n_to_litr_lig_n_col, phenology_n_to_litr_lig_n, NONE| nitrogenflux_vars%phenology_n_to_litr_met_n_col, phenology_n_to_litr_met_n, NONE| carbonflux_vars%phenology_c_to_litr_met_c_col, phenology_c_to_litr_met_c, NONE| nitrogenflux_vars%phenology_n_to_litr_cel_n_col, phenology_n_to_litr_cel_n, NONE| phosphorusflux_vars%phenology_p_to_litr_lig_p_col, phenology_p_to_litr_lig_p, NONE| carbonflux_vars%phenology_c_to_litr_cel_c_col, phenology_c_to_litr_cel_c, NONE| phosphorusflux_vars%phenology_p_to_litr_cel_p_col, phenology_p_to_litr_cel_p, NONE| phosphorusflux_vars%phenology_p_to_litr_met_p_col, phenology_p_to_litr_met_p, NONE| carbonflux_vars%phenology_c_to_litr_lig_c_col, phenology_c_to_litr_lig_c, NONE
+global_non
+calls
+readParams,readCNPhenolParams
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)      , intent(in)    :: cnstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars

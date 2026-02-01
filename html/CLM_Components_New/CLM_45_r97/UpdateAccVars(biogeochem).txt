@@ -1,0 +1,7 @@
+sub_in, t_ref2m_patch, bounds, this, t_a10_patch
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, update_accum_field, extract_accum_field, get_curr_date, endrun

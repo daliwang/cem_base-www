@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, lbp, ubp
+sub_out
+global_ro, clm3%g%l%c%p%pcf%cisun_z, shr_megan_linkedlist%index, clm3%g%l%c%p%pps%fsun, shr_megan_linkedlist%class_number, clm3%g%l%c%p%pvs%fsun240, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%pps%elai, clm_a2l%forc_solad, clm_a2l%forc_solai, clm3%g%l%c%p%pvs%fsi24, clm3%g%l%c%p%pcf%cisha_z, clm3%g%l%c%p%column, shr_megan_linkedlist%molec_weight, clm3%g%l%c%p%pvs%t_veg24, clm3%g%l%c%p%pvs%t_veg240, clm3%g%l%c%p%pvs%elai_p, clm3%g%l%c%p%pes%t_veg, clm3%g%l%c%p%pvs%fsi240, clm3%g%l%c%p%pvs%fsun24, shr_megan_linkedlist%emis_factors, clm3%g%l%c%p%pvs%fsd24, clm3%g%l%c%p%itype, clm_a2l%forc_pbot, clm3%g%l%c%p%pvs%fsd240
+global_wo, clm3%g%l%c%p%pvf%par240a_out, clm3%g%l%c%p%pvf%gammaL_out, clm3%g%l%c%p%pvf%gammaT_out, clm3%g%l%c%p%pvf%gammaP_out, clm3%g%l%c%p%pvf%para_out, clm3%g%l%c%p%pvf%gammaC_out, clm3%g%l%c%p%pvf%paru_out, clm3%g%l%c%p%pvf%par24u_out, clm3%g%l%c%p%pvf%alpha_out, clm3%g%l%c%p%pvf%par240u_out, clm3%g%l%c%p%pvf%Eopt_out, clm3%g%l%c%p%pvf%gamma_out, clm3%g%l%c%p%pvf%cp_out, clm3%g%l%c%p%pvf%gammaS_out, clm3%g%l%c%p%pvf%gammaA_out, clm3%g%l%c%p%pvf%par24a_out, clm3%g%l%c%p%pvf%topt_out
+global_mod, clm3%g%l%c%p%pvf%vocflx, clm3%g%l%c%p%pvf%vocflx_tot, clm3%g%l%c%p%pvf%meg
+global_non, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%itype, clm3%g%l%c%landunit, meg_cmp%next_megcomp, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%watsat, shr_megan_linkedlist, clm3%g%l%c%p%pps%sandfrac, clm3%g%l%c%cps%dz, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%p%pps%clayfrac
+calls, endrun
+
+Tree height: 5
+2+, endrun, 

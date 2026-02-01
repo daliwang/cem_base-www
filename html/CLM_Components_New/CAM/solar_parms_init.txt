@@ -1,0 +1,7 @@
+sub_in, solar_parms_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, pio_closefile, get_curr_date, getfil, cam_pio_openfile, alloc_err

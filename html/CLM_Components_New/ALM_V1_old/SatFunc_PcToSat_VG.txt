@@ -1,0 +1,12 @@
+sub_param, sat:3, pc:2, satParams:1, dsat_dP:4
+sub_out, dsat_dP, sat
+global_ro| satParams%vg_n, vg_n, NONE| satParams%sat_res, sat_res, NONE| satParams%alpha, alpha, NONE| satParams%vg_m, vg_m, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(saturation_params_type) , intent(in)  :: satParams
+PetscReal                    , intent(in)  :: pc
+PetscReal                    , intent(out) :: sat
+PetscReal                    , intent(out) :: dsat_dP

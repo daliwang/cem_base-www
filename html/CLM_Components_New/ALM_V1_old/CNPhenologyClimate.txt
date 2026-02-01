@@ -1,0 +1,14 @@
+sub_param, filter_soilp:2, temperature_vars:5, filter_pcropp:4, num_soilp:1, cnstate_vars:6, num_pcropp:3
+sub_out
+global_ro| cnstate_vars%CropRestYear, CropRestYear, NONE| temperature_vars%gdd8_patch, gdd8, NONE| temperature_vars%gdd10_patch, gdd10, NONE| temperature_vars%t_ref2m_patch, t_ref2m, NONE| temperature_vars%gdd0_patch, gdd0, NONE
+global_wo
+global_mod| temperature_vars%gdd020_patch, gdd020, NONE| cnstate_vars%tempavg_t2m_patch, tempavg_t2m, NONE| temperature_vars%gdd1020_patch, gdd1020, NONE| temperature_vars%gdd820_patch, gdd820, NONE
+global_non
+calls, get_curr_date
+readParams,readCNPhenolParams
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+integer                , intent(in)    :: num_pcropp      ! number of prognostic crops in filter
+integer                , intent(in)    :: filter_pcropp(:)! filter for prognostic crop patches
+type(temperature_type) , intent(inout) :: temperature_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars

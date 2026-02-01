@@ -1,0 +1,7 @@
+sub_in, filter_methp, num_methp, cnveg_carbonflux_inst, num_methc, ch4_inst, soilbiogeochem_carbonflux_inst, bounds, filter_methc
+sub_out
+global_ro, finundated, agnpp, bgnpp, somhr
+global_wo, annavg_bgnpp, annavg_agnpp, annavg_finrw
+global_mod, annsum_counter, tempavg_agnpp, tempavg_somhr, annavg_somhr, tempavg_finrw, tempavg_bgnpp
+global_non
+calls

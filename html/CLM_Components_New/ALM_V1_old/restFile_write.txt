@@ -1,0 +1,42 @@
+sub_param, energyflux_vars:13, temperature_vars:23, lakestate_vars:15, canopystate_vars:5, noptr:34, rdate:33, file:2, phosphorusstate_vars:27, aerosol_vars:4, soilhydrology_vars:19, waterflux_vars:24, surfalb_vars:22, tracerstate_vars:30, cnstate_vars:6, dgvs_vars:12, EDbio_vars:26, solarabs_vars:21, ch4_vars:11, soilstate_vars:20, nitrogenstate_vars:16, carbonstate_vars:7, atm2lnd_vars:3, tracerflux_vars:31, photosyns_vars:18, waterstate_vars:25, c13_carbonstate_vars:8, carbonflux_vars:10, frictionvel_vars:14, nitrogenflux_vars:17, phosphorusflux_vars:28, tracercoeff_vars:32, betrtracer_vars:29, c14_carbonstate_vars:9, bounds:1
+sub_out, cnstate_vars
+global_ro| h2osoi_ice_col=waterstate_vars%h2osoi_ice_col, h2osoi_ice_col, NONE| bounds%begc:bounds%endc, endc, NONE| watsat_col=soilstate_vars%watsat_col, watsat_col, NONE| tlai_patch=canopystate_vars%tlai_patch, tlai_patch, NONE| h2osoi_liq_col=waterstate_vars%h2osoi_liq_col, h2osoi_liq_col, NONE| bounds%begp:bounds%endp, endp, NONE| tsai_patch=canopystate_vars%tsai_patch, tsai_patch, NONE
+global_wo
+global_mod
+global_non
+calls, nitrogenflux_vars%Restart, cnstate_vars%Restart, phosphorusflux_vars%Restart, tracercoeff_vars%Restart, canopystate_vars%restart, dgvs_vars%Restart, tracerflux_vars%Restart, aerosol_vars%restart, hist_restart_ncd, lakestate_vars%restart, restFile_closeRestart, ch4_vars%restart, energyflux_vars%restart, restFile_enddef, temperature_vars%restart, timemgr_restart_io, waterstate_vars%restart, soilstate_vars%restart, restFile_dimset, carbonflux_vars%restart, restFile_write_pfile, accumulRest, atm2lnd_vars%restart, EDRest, soilhydrology_vars%restart, solarabs_vars%restart, c14_carbonstate_vars%restart, restFile_open, tracerstate_vars%Restart, frictionvel_vars%, nitrogenstate_vars%Restart, carbonstate_vars%restart, surfalb_vars%restart, , restFile_close, SubgridRest, photosyns_vars%restart, c13_carbonstate_vars%restart, phosphorusstate_vars%Restart, waterflux_vars%restart
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+character(len=*)         , intent(in)    :: file             ! output netcdf restart file
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(aerosol_type)       , intent(in)    :: aerosol_vars
+type(canopystate_type)   , intent(inout) :: canopystate_vars ! due to EDrest call
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c14_carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(ch4_type)           , intent(in)    :: ch4_vars
+type(dgvs_type)          , intent(in)    :: dgvs_vars
+type(energyflux_type)    , intent(in)    :: energyflux_vars
+type(frictionvel_type)   , intent(in)    :: frictionvel_vars
+type(lakestate_type)     , intent(in)    :: lakestate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(in)    :: nitrogenflux_vars
+type(photosyns_type)     , intent(in)    :: photosyns_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(solarabs_type)      , intent(in)    :: solarabs_vars
+type(surfalb_type)       , intent(in)    :: surfalb_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars  ! due to EDrest call
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(EDbio_type)         , intent(inout) :: EDbio_vars       ! due to EDrest call
+type(phosphorusstate_type),intent(inout)    :: phosphorusstate_vars
+type(phosphorusflux_type) ,intent(in)     :: phosphorusflux_vars
+type(tracerstate_type)   , intent(inout) :: tracerstate_vars ! due to Betrrest call
+type(BeTRTracer_Type)    , intent(in)    :: betrtracer_vars
+type(tracerflux_type)    , intent(inout) :: tracerflux_vars
+type(tracercoeff_type)   , intent(inout) :: tracercoeff_vars
+character(len=*)         , intent(in), optional :: rdate     ! restart file time stamp for name
+logical                  , intent(in), optional :: noptr     ! if should NOT write to the restart pointer file

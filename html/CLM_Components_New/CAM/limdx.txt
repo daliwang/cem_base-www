@@ -1,0 +1,7 @@
+sub_in, f, fxr, len, ibeg, dx, fxl, pidim
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, scm0

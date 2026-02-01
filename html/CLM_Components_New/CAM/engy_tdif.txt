@@ -1,0 +1,7 @@
+sub_in, tm1, w, pdel, t, nlon, cwava, difft
+sub_out, difft
+global_ro
+global_wo
+global_mod
+global_non
+calls

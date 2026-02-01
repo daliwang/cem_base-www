@@ -1,0 +1,7 @@
+sub_in, p
+sub_out
+global_ro, column, t_ref2m, snow_depth, t_ref2m_min, t_ref2m_max
+global_wo, gddmaturity, huigrain
+global_mod, vf, hdidx, cumvd
+global_non, tlai, croplive
+calls

@@ -1,0 +1,7 @@
+sub_in, r_scat, tau, tau_w_g, pbuf, tau_w_f, mass, tau_w, r_ascat, ncol, r_ext, r_mu, lchnk
+sub_out, tau_w_f, tau_w, tau, tau_w_g
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field

@@ -1,0 +1,16 @@
+sub_param, wliq2:6, dz:1, wliq:2, wice2:7, dz2:5, wice:3, t:4, t2:8
+sub_out, t, dz, wliq, wice
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in)    :: dz2   ! nodal thickness of 2 elements being combined [m]
+real(r8), intent(in)    :: wliq2 ! liquid water of element 2 [kg/m2]
+real(r8), intent(in)    :: wice2 ! ice of element 2 [kg/m2]
+real(r8), intent(in)    :: t2    ! nodal temperature of element 2 [K]
+real(r8), intent(inout) :: dz    ! nodal thickness of 1 elements being combined [m]
+real(r8), intent(inout) :: wliq  ! liquid water of element 1
+real(r8), intent(inout) :: wice  ! ice of element 1 [kg/m2]
+real(r8), intent(inout) :: t     ! nodel temperature of elment 1 [K]

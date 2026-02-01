@@ -1,0 +1,7 @@
+sub_in, xpyp, dt, yp2, xpyp_chnge, l_first_clip_ts, solve_type, xp2, l_last_clip_ts
+sub_out, xpyp_chnge, xpyp
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_end_update, stat_begin_update, stat_modify

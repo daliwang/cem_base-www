@@ -1,0 +1,7 @@
+sub_in, jcollect, jmax_segments, weights, weights_eul_index, jsegment, nreconstruction
+sub_out, jcollect, weights_eul_index, weights
+global_ro
+global_wo
+global_mod
+global_non
+calls

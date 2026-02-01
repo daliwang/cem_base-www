@@ -1,0 +1,25 @@
+sub_param, filter_urbanp, num_urbanc, filter_urbanl, energyflux_vars, soilstate_vars, filter_urbanc, temperature_vars, num_urbanp, num_nourbanl, waterflux_vars, frictionvel_vars, bounds, filter_nourbanl, waterstate_vars, atm2lnd_vars, num_urbanl, urbanparams_vars
+sub_out, frictionvel_vars
+global_ro, :lun%pftf, temperature_vars%t_soisno_col, atm2lnd_vars%forc_rho_not_downscaled_grc, lun%pfti, energyflux_vars%htvp_col, grc%londeg, lun%z_d_town, soilstate_vars%soilalpha_u_col, lun%wtlunit_roof, atm2lnd_vars%forc_v_grc, pft%column, soilstate_vars%rootr_road_perv_col, atm2lnd_vars%forc_t_not_downscaled_grc, waterstate_vars%dqgdT_col, waterstate_vars%qg_col, lun%z_0_town, energyflux_vars%eflx_urban_ac_col, frictionvel_vars%forc_hgt_t_patch, col%itype, lun%wtroad_perv, lun%gridcell, pft%gridcell, col%landunit, pft%landunit, atm2lnd_vars%forc_q_not_downscaled_grc, waterstate_vars%snow_depth_col, lun%canyon_hwr, energyflux_vars%eflx_urban_heat_col, lun%ht_roof, waterstate_vars%h2osoi_ice_col, atm2lnd_vars%forc_u_grc, waterstate_vars%frac_sno_col, urbanparams_vars%wind_hgt_canyon, temperature_vars%t_grnd_col, atm2lnd_vars%forc_th_not_downscaled_grc, frictionvel_vars%forc_hgt_u_patch, waterstate_vars%h2osoi_liq_col, urbanparams_vars%eflx_traffic_factor
+global_wo, energyflux_vars%tauy_patch, energyflux_vars%eflx_traffic_lun, energyflux_vars%ulrad_patch, waterflux_vars%qflx_evap_soi_patch, temperature_vars%t_veg_patch, energyflux_vars%eflx_sh_soil_patch, energyflux_vars%cgrnd_patch, waterflux_vars%qflx_evap_veg_patch, temperature_vars%t_ref2m_u_patch, energyflux_vars%eflx_heat_from_ac_lun, temperature_vars%t_ref2m_patch, energyflux_vars%taux_patch, energyflux_vars%eflx_sh_h2osfc_patch, soilstate_vars%rootr_patch, frictionvel_vars%ram1_patch, waterstate_vars%rh_ref2m_u_patch, energyflux_vars%dlrad_patch, energyflux_vars%eflx_sh_snow_patch, energyflux_vars%eflx_sh_tot_u_patch, temperature_vars%t_building_lun
+global_mod, energyflux_vars%eflx_sh_tot_patch, waterstate_vars%qaf_lun, energyflux_vars%eflx_wasteheat_lun, waterflux_vars%qflx_tran_veg_patch, temperature_vars%taf_lun, energyflux_vars%cgrndl_patch, energyflux_vars%eflx_sh_grnd_patch, waterstate_vars%rh_ref2m_patch, energyflux_vars%cgrnds_patch, waterstate_vars%q_ref2m_patch
+global_non, col%snl, waterstate_vars%h2osno_col, bounds%endl, waterflux_vars%qflx_evap_tot_patch, atm2lnd_vars%forc_pbot_not_downscaled_grc, bounds%begl
+calls, FrictionVelocity, endrun, MoninObukIni, get_curr_date, QSat
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nourbanl       ! number of non-urban landunits in clump
+integer                , intent(in)    :: filter_nourbanl(:) ! non-urban landunit filter
+integer                , intent(in)    :: num_urbanl         ! number of urban landunits in clump
+integer                , intent(in)    :: filter_urbanl(:)   ! urban landunit filter
+integer                , intent(in)    :: num_urbanc         ! number of urban columns in clump
+integer                , intent(in)    :: filter_urbanc(:)   ! urban column filter
+integer                , intent(in)    :: num_urbanp         ! number of urban patches in clump
+integer                , intent(in)    :: filter_urbanp(:)   ! urban pft filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(urbanparams_type) , intent(in)    :: urbanparams_vars
+type(soilstate_type)   , intent(inout) :: soilstate_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars

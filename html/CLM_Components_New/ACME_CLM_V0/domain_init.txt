@@ -1,0 +1,7 @@
+sub_in, clmlevel, nbeg, nj, domain, nend, isgrid2d, ni
+sub_out
+global_ro
+global_wo, domain%frac, domain%glcmask, domain%nend, domain%mask, domain%latc, domain%nbeg, domain%lonc, domain%ns, domain%topo, domain%pftm, domain%area, domain%decomped
+global_mod, domain%ni, domain%isgrid2d, domain%set, domain%nj, domain%clmlevel
+global_non
+calls, domain_clean, shr_sys_abort

@@ -1,0 +1,7 @@
+sub_in, dyn_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, initial_file_get_id, topo_file_get_id
+calls, initialize_comsrf, initialize_iop_history, clean_iodesc_list, read_inidat, initialize_radbuffer

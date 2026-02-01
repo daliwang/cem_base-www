@@ -1,0 +1,7 @@
+sub_in, li, ci, setdata, gi, pi, ltype
+sub_out
+global_ro, urbinp%wtroad_perv, urbinp%wtlunit_roof
+global_wo
+global_mod
+global_non
+calls, subgrid_get_gcellinfo, add_landunit, add_patch, endrun, add_column

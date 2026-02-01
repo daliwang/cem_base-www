@@ -1,0 +1,11 @@
+sub_param, fname:2, file:1, mode:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+class(file_desc_t) , intent(inout) :: file   ! Output PIO file handle
+character(len=*)   , intent(in)    :: fname  ! Input filename to open
+integer            , intent(in)    :: mode   ! file mode

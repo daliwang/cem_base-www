@@ -1,0 +1,7 @@
+sub_in, tkes, shcl, wbrk, extend_dn, long, zi, extend, lbrk, ricl, extend_up, kbase, smcl, ghcl, bflxs, sprod, s2, pver, pcols, n2, ktop, ebrk, bprod, z, ncvfin, belongcv
+sub_out, wbrk, shcl, extend, ebrk, ktop, extend_dn, kbase, extend_up, ncvfin, ricl, lbrk, ghcl, belongcv, smcl
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

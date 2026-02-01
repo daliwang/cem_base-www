@@ -1,0 +1,10 @@
+sub_in, num_nolakep, lbp, filter_nolakep, ubp
+sub_out
+global_ro, clm3%g%l%c%cws%qg_h2osfc, clm3%g%l%c%cps%forc_rho, clm3%g%l%c%cws%qg_soil, clm3%g%l%c%p%column, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%watsat, clm_a2l%forc_u, clm3%g%l%c%cps%z0qg, clm3%g%l%c%cps%beta, clm3%g%l%c%cps%forc_pbot, clm3%g%l%c%ces%thv, clm3%g%l%c%cws%qg_snow, clm3%g%l%c%p%gridcell, clm3%g%l%c%cws%qg, clm3%g%l%c%cps%dz, clm3%g%l%c%cws%dqgdT, clm3%g%l%c%ces%t_soisno, clm_a2l%forc_v, clm3%g%l%c%p%pps%frac_veg_nosno, clm3%g%l%c%p%pps%forc_hgt_u_pft, clm3%g%l%c%ces%forc_t, clm3%g%l%c%cps%htvp, clm3%g%l%itype, clm3%g%l%c%ces%forc_th, clm3%g%l%c%cps%zii, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%z0mg, clm3%g%l%c%cws%forc_q, clm3%g%l%c%cps%z0hg, clm3%g%l%c%p%landunit, clm3%g%l%c%p%pes%thm, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%snl, clm3%g%l%c%ces%t_h2osfc, clm3%g%l%c%cws%soilbeta
+global_wo, clm3%g%l%c%p%pps%rssha, clm3%g%l%c%p%pef%eflx_sh_soil, clm3%g%l%c%p%pcf%psnsun_wc, clm3%g%l%c%p%pps%rssun, clm3%g%l%c%p%pcf%fpsn, clm3%g%l%c%p%pwf%qflx_ev_soil, clm3%g%l%c%p%pcf%psnsha_wp, clm3%g%l%c%p%pmf%tauy, clm3%g%l%c%p%pef%dlrad, clm3%g%l%c%p%pes%t_veg, clm3%g%l%c%p%pwf%qflx_evap_tot, clm3%g%l%c%p%pps%btran, clm3%g%l%c%p%pps%grnd_ch4_cond, clm3%g%l%c%p%pcf%fpsn_wp, clm3%g%l%c%p%pcf%fpsn_wc, clm3%g%l%c%p%pef%eflx_sh_h2osfc, clm3%g%l%c%p%pcf%psnsha_wj, clm3%g%l%c%p%pef%cgrnd, clm3%g%l%c%p%pps%rresis, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%c%p%pef%ulrad, clm3%g%l%c%p%pmf%taux, clm3%g%l%c%p%pcf%psnsun, clm3%g%l%c%p%pps%rootr, clm3%g%l%c%p%pwf%qflx_ev_h2osfc, clm3%g%l%c%p%pcf%fpsn_wj, clm3%g%l%c%p%pcf%psnsha_wc, clm3%g%l%c%p%pwf%qflx_ev_snow, clm3%g%l%c%p%pes%rh_ref2m_r, clm3%g%l%c%p%pps%ram1, clm3%g%l%c%p%pcf%psnsun_wj, clm3%g%l%c%p%pcf%psnsha, clm3%g%l%c%p%pef%eflx_sh_snow, clm3%g%l%c%p%pes%t_ref2m_r, clm3%g%l%c%p%pcf%psnsun_wp
+global_mod, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%c%p%pes%t_ref2m, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%c%p%pef%cgrnds, clm3%g%l%c%p%pes%q_ref2m, clm3%g%l%c%p%pes%rh_ref2m, clm3%g%l%c%p%pef%cgrndl
+global_non, clm3%g%l%c%cps%frac_sno
+calls, QSat, FrictionVelocity, MoninObukIni
+
+Tree height: 2
+0 , MoninObukIni, FrictionVelocity, QSat, 

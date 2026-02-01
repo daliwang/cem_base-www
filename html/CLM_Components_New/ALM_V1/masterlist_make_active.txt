@@ -1,0 +1,11 @@
+sub_param, tape_index, name, avgflag
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+character(len=*), intent(in) :: name          ! field name
+integer, intent(in) :: tape_index             ! history tape index
+character(len=1), intent(in), optional :: avgflag  ! time averaging flag

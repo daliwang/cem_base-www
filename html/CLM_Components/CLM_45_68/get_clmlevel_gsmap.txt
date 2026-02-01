@@ -1,0 +1,7 @@
+sub_in, clmlevel, gsmap
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, gsmap_lun_gdc2glo, gsmap_pft_gdc2glo, gsmap_lnd_gdc2glo, gsmap_col_gdc2glo, gsmap_gce_gdc2glo
+calls, shr_sys_abort

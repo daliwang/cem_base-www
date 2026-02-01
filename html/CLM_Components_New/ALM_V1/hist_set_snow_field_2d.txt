@@ -1,0 +1,14 @@
+sub_param, no_snow_behavior, type1d, end1d, field_in, beg1d, field_out
+sub_out, field_out
+global_ro, col%snl, pft%column
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+integer         , intent(in)  :: beg1d                    ! beginning spatial index
+integer         , intent(in)  :: end1d                    ! ending spatial index
+real(r8)        , intent(out) :: field_out( beg1d: , 1: ) ! output field [point, lev]
+real(r8)        , intent(in)  :: field_in ( beg1d: , 1: ) ! input field [point, lev]
+integer         , intent(in)  :: no_snow_behavior         ! behavior to use when a snow layer is absent
+character(len=*), intent(in)  :: type1d                   ! 1d clm pointer type ("column" or "pft")

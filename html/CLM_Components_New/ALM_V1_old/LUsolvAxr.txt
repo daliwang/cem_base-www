@@ -1,0 +1,11 @@
+sub_param, n:3, a:1, r:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ludcmp, lubksb
+readParams,
+real(r8) , intent(inout) :: a(n,n)
+real(r8) , intent(inout) :: r(n)
+integer  , intent(in)    :: n

@@ -1,0 +1,11 @@
+sub_in, esat_tv, dayl_factor, rb, eair, cair, phase, lbp, ubp, oair, filterp, fn
+sub_out
+global_ro, clm3%g%l%c%p%pes%t10, clm3%g%l%c%p%pps%tlai_z, pftcon%leafcn, pftcon%fnitr, clm3%g%l%c%p%pes%t_veg, pftcon%slatop, clm3%g%l%c%p%pef%parsun_z, pftcon%flnr, clm3%g%l%c%p%pes%thm, clm3%g%l%c%p%ppsyns%gs_mol, clm3%g%l%c%p%pps%nrad, clm3%g%l%c%p%pps%vcmaxcintsun, clm3%g%l%c%p%itype, clm_a2l%forc_pbot, clm3%g%l%c%p%pps%laisun_z, clm3%g%l%c%p%pps%btran, clm3%g%l%c%p%gridcell
+global_wo, clm3%g%l%c%p%pcf%psnsun_wc, clm3%g%l%c%p%pps%rssun, clm3%g%l%c%p%pcf%lmrsun, clm3%g%l%c%p%ppsyns%kp_z, clm3%g%l%c%p%ppsyns%qe, clm3%g%l%c%p%ppsyns%ko, clm3%g%l%c%p%ppsyns%theta_cj, clm3%g%l%c%p%ppsyns%cp, clm3%g%l%c%p%pps%alphapsnsun, clm3%g%l%c%p%pcf%psnsun, clm3%g%l%c%p%pps%rh_leaf, clm3%g%l%c%p%pcf%psnsun_wj, clm3%g%l%c%p%ppsyns%tpu_z, clm3%g%l%c%p%ppsyns%kc, clm3%g%l%c%p%pcf%psnsun_wp
+global_mod, clm3%g%l%c%p%pcf%cisun_z, clm3%g%l%c%p%ppsyns%gb_mol, clm3%g%l%c%p%ppsyns%ac, clm3%g%l%c%p%ppsyns%bbb, clm3%g%l%c%p%ppsyns%aj, clm3%g%l%c%p%ppsyns%ag, clm3%g%l%c%p%pcf%psnsun_z, clm3%g%l%c%p%ppsyns%vcmax_z, clm3%g%l%c%p%ppsyns%an, clm3%g%l%c%p%ppsyns%c3flag, clm3%g%l%c%p%ppsyns%ap, clm3%g%l%c%p%pcf%lmrsun_z, clm3%g%l%c%p%ppsyns%mbb, clm3%g%l%c%p%pps%rssun_z
+global_non, clm3%g%l%c%p%pps%rssha, clm3%g%l%c%p%pcf%psnsha_wc, clm3%g%l%c%p%pps%laisha_z, clm3%g%l%c%p%pps%alphapsnsha, clm3%g%l%c%p%pcf%psnsha, clm3%g%l%c%p%pps%vcmaxcintsha, clm3%g%l%c%p%pps%rssha_z, clm3%g%l%c%p%pcf%psnsha_z, clm3%g%l%c%p%pcf%lmrsha, clm3%g%l%c%p%pcf%lmrsha_z, clm3%g%l%c%p%pcf%psnsha_wj, clm3%g%l%c%p%pef%parsha_z, clm3%g%l%c%p%pcf%cisha_z, pftcon%c3psn, clm3%g%l%c%p%pcf%psnsha_wp
+calls, quadratic, hybrid, endrun
+
+Tree height: 12
+7-, quadratic, hybrid, 
+11+, endrun, 

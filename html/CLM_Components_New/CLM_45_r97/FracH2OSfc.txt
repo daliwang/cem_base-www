@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, filter_h2osfc, bounds, no_update, num_h2osfc
+sub_out
+global_ro, h2osno, micro_sigma
+global_wo, frac_sno_eff
+global_mod, h2osoi_liq, h2osfc, frac_h2osfc, frac_sno
+global_non
+calls

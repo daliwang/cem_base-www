@@ -1,0 +1,17 @@
+sub_param, ncid, nt, readvar, switchdim, flag, data, varname, upperb2, lowerb2, cnvrtnan2fill, dim1name
+sub_out, data
+global_ro
+global_wo
+global_mod
+global_non, iodesc_list
+calls, pio_write_darray, ncd_getiodesc, ncd_inqvid, pio_read_darray, scam_field_offsets, shr_sys_abort, pio_setframe
+readParams,
+class(file_desc_t), intent(inout) :: ncid         ! netcdf file id
+character(len=*) , intent(in)  :: flag            ! 'read' or 'write'
+character(len=*) , intent(in)  :: varname         ! variable name
+character(len=*) , intent(in)  :: dim1name        ! dimension 1 name
+integer, optional, intent(in)  :: nt              ! time sample index
+integer, optional, intent(in)  :: lowerb2,upperb2 ! lower and upper bounds of second dimension
+logical, optional, intent(out) :: readvar         ! true => variable is on initial dataset (read only)
+logical, optional, intent(in)  :: switchdim       ! true=> permute dim1 and dim2 for output
+logical, optional, intent(in)  :: cnvrtnan2fill   ! true => convert any NaN's to _FillValue (spval)

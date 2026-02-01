@@ -1,0 +1,7 @@
+sub_in, calday
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_solar_parms, euvac_set_etf, jlong_timestep_init, jshort_timestep_init

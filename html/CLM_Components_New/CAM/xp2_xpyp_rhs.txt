@@ -1,0 +1,7 @@
+sub_in, invrs_rho_ds_zm, a1, threshold, wpxap_zt, tau_zm, dt, a1_zt, solve_type, rhs, xbm, wpxap, wp3_on_wp2_zt, xam, Cn, wp3_on_wp2, beta, wp2_zt, wpxbp_zt, rho_ds_zm, wpxbp, xapxbp, rho_ds_zt, l_iter
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_begin_update_pt, stat_modify_pt, set_boundary_conditions_rhs, stat_update_var_pt

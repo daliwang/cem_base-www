@@ -1,0 +1,10 @@
+sub_param, this, bounds
+sub_out
+global_ro, grc%landunit_indices, col%itype, lun%wtgcell, this%frac_grc
+global_wo, col%wtlunit
+global_mod
+global_non
+calls, endrun, set_landunit_weight
+readParams,
+class(glc2lnd_type), intent(in) :: this
+type(bounds_type)  , intent(in) :: bounds  ! bounds

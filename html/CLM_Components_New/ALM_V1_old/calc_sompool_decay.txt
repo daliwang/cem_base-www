@@ -1,0 +1,17 @@
+sub_param, om_pools:9, lbj:2, ubj:3, bounds:1, k_decay:8, decay_rates:10, jtops:6, centurybgc_vars:7, filter:5, numf:4
+sub_out, decay_rates, k_decay
+global_ro| centurybgc_vars%nom_pools, nom_pools, NONE| centurybgc_vars%c_loc, c_loc, NONE| centurybgc_vars%nelms, nelms, NONE| centurybgc_vars%n_loc, n_loc, NONE
+global_wo
+global_mod
+global_non| centurybgc_vars%nom_totelms, nom_totelms, NONE
+calls
+readParams,
+type(centurybgc_type) , intent(in)    :: centurybgc_vars
+type(bounds_type)     , intent(in)    :: bounds
+integer               , intent(in)    :: lbj, ubj
+integer               , intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer               , intent(in)    :: numf
+integer               , intent(in)    :: filter(:)
+real(r8)              , intent(inout) :: k_decay(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)
+real(r8)              , intent(in)    :: om_pools(centurybgc_vars%nom_totelms,bounds%begc:bounds%endc, lbj:ubj)
+real(r8)              , intent(out)   :: decay_rates(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)

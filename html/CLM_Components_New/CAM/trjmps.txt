@@ -1,0 +1,7 @@
+sub_in, phimp, vpr, nlon, upr, phipr, lampr, dt
+sub_out, lampr, phipr
+global_ro
+global_wo
+global_mod
+global_non
+calls

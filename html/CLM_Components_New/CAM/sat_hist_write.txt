@@ -1,0 +1,7 @@
+sub_in, nfils, nflds, tape
+sub_out, nfils
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, read_next_position, get_indices, dump_columns, write_record_coord, t_startf, endrun

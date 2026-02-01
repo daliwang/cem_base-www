@@ -1,0 +1,7 @@
+sub_in, wm_zt, wp3_on_wp2, a3, rho_ds_zm, a3_zt, rho_ds_zt, invrs_rho_ds_zt, nsub, a1_zt, Kw8, l_crank_nich_diff, dt, wm_zm, a1, Skw_zt, wp2, Kw1, tauw3t, C11_Skw_fnc, nsup, invrs_rho_ds_zm, C1_Skw_fnc, tau1m, lhs
+sub_out, lhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_boundary_conditions_lhs

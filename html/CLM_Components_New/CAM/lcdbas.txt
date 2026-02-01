@@ -1,0 +1,7 @@
+sub_in, dbas3, grd, dbas2
+sub_out, dbas3, dbas2
+global_ro
+global_wo
+global_mod
+global_non
+calls

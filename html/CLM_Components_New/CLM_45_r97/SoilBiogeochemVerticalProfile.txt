@@ -1,0 +1,7 @@
+sub_in, canopystate_inst, filter_soilc, filter_soilp, soilbiogeochem_state_inst, num_soilc, soilstate_inst, bounds, num_soilp
+sub_out
+global_ro, rootfr, altmax_lastyear_indx
+global_wo
+global_mod, froot_prof, leaf_prof, croot_prof, nfixation_prof, ndep_prof, stem_prof
+global_non
+calls, endrun

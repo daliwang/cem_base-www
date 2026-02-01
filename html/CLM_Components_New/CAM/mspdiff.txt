@@ -1,0 +1,7 @@
+sub_in, ztodt, pdel, lchnk, pint, q, pmid, mbarv, t, rairv, rpdel, ncol
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, blktri

@@ -1,0 +1,8 @@
+sub_in, fldv, fldu, norm, string, type, av_d, av_s, mapper
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_map_cart3d, shr_sys_abort, seq_map_map
+calls_ln, shr_sys_abort@578, shr_sys_abort@585, seq_map_map@582, seq_map_cart3d@580

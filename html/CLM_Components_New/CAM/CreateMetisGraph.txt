@@ -1,0 +1,7 @@
+sub_in, GridVertex, adjncy, adjwgt, xadj
+sub_out, xadj, adjwgt, adjncy
+global_ro
+global_wo
+global_mod
+global_non
+calls, sort

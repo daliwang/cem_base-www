@@ -1,0 +1,7 @@
+sub_in, bounds, dgvs_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, dynpft_init, dynHarvest_init, compute_higher_order_weights, dynCNDV_init

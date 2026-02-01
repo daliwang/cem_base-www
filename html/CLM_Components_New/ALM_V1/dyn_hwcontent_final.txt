@@ -1,0 +1,17 @@
+sub_param, lakestate_vars, temperature_vars, urbanparams_vars, bounds, waterflux_vars, energyflux_vars, waterstate_vars, soilhydrology_vars, soilstate_vars
+sub_out
+global_ro, temperature_vars%heat2_grc, temperature_vars%heat1_grc, waterstate_vars%liq2_grc, waterstate_vars%ice1_grc, waterstate_vars%ice2_grc, waterstate_vars%liq1_grc
+global_wo, energyflux_vars%eflx_dynbal_grc, waterflux_vars%qflx_liq_dynbal_grc, waterflux_vars%qflx_ice_dynbal_grc
+global_mod
+global_non
+calls, dyn_hwcontent
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+type(urbanparams_type)   , intent(in)    :: urbanparams_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(lakestate_type)     , intent(in)    :: lakestate_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(energyflux_type)    , intent(inout) :: energyflux_vars

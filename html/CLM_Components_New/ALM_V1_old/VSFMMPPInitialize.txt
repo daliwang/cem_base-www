@@ -1,0 +1,12 @@
+sub_param, begc:2, vsfm_mpp:1, soilstate_vars:4, endc:3, soilhydrology_vars:6, waterstate_vars:5
+sub_out
+global_ro| cur_goveq%ncells, ncells, NONE| vsfm_soe%goveqns, cur_goveq, NONE| cur_goveq%next, cur_goveq, NONE
+global_wo
+global_mod
+global_non| vsfm_mpp%sysofeqns, vsfm_soe, NONE| cur_goveq, goveq_richards_pres, NONE
+calls, VecDestroy, VSFMMPPSetICs, VecGetArrayF90, VecCreateSeq, VecRestoreArrayF90, VSFMSOESetAuxVars, vsfm_soe%SetDtime, vsfm_soe%PreSolve, VSFMMPPSetSoils, vsfm_soe%PostSolve
+readParams,
+integer, intent(in)                               :: begc,endc
+type(soilstate_type) , intent(in)                 :: soilstate_vars
+type(waterstate_type), intent(in)                 :: waterstate_vars
+type(soilhydrology_type), intent(in)              :: soilhydrology_vars

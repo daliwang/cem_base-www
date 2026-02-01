@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, HumanIndexReadNML, init_hydrology, shr_nl_find_group_name, set_timemgr_init, clm_varctl_set, relavu, endrun, CanopyHydrology_readnl, control_spmd, UrbanReadNML

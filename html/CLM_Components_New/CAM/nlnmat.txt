@@ -1,0 +1,7 @@
+sub_in, dti, y, rxt, mat, lmat
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, nlnmat_finit, nlnmat03, nlnmat01, nlnmat02

@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%woody, pcs%livecrootc, pcs%livestemc, pftcon%livewdcn, pftcon%deadwdcn, pft%itype
+global_wo, pnf%livecrootn_to_retransn, pnf%livestemn_to_retransn, pcf%livecrootc_to_deadcrootc, pcf%livestemc_to_deadstemc
+global_mod, pnf%livestemn_to_deadstemn, pnf%livecrootn_to_deadcrootn
+global_non, pns%livecrootn, pns%livestemn
+calls
+
+Tree height: 2

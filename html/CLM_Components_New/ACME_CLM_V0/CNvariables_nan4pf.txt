@@ -1,0 +1,7 @@
+sub_in, carbonflux_vars, filter_soilc, nitrogenstate_vars, nitrogenflux_vars, cnstate_vars, bounds, carbonstate_vars, num_soilc
+sub_out
+global_ro
+global_wo, carbonflux_vars%decomp_cascade_ctransfer_vr_col, nitrogenflux_vars%decomp_cascade_ntransfer_vr_col, nitrogenflux_vars%smin_no3_to_plant_vr_col, nitrogenflux_vars%smin_nh4_to_plant_vr_col, nitrogenflux_vars%potential_immob_vr_col, cnstate_vars%fpi_vr_col, carbonflux_vars%decomp_cascade_hr_vr_col
+global_mod
+global_non
+calls

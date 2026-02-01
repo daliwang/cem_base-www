@@ -1,0 +1,7 @@
+sub_in, type, variable, hybrid, res
+sub_out, res
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_Barrier, MPI_Allreduce, MPI_Error_String, MPI_Bcast, MPI_Gatherv

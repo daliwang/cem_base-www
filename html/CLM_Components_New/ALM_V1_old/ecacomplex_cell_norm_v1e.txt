@@ -1,0 +1,12 @@
+sub_param, kd:1, siej:4, ss:2, ee:3
+sub_out, siej
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), dimension(:), intent(in)  :: kd
+real(r8), dimension(:), intent(in)  :: ss
+real(r8), intent(in)                :: ee
+real(r8), dimension(:), intent(out) :: siej

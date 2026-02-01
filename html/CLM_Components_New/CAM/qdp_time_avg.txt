@@ -1,0 +1,7 @@
+sub_in, nu_p, nete, rkstage, np1_qdp, n0_qdp, elem, nets, limiter_option
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, qdp_time_avg_cuda

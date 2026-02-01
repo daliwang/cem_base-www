@@ -1,0 +1,11 @@
+sub_in, num_nolakep, filter_nolakec, filter_nolakep, bounds, num_nolakec
+sub_out
+global_ro, pps%frac_veg_nosno, cps%frac_h2osfc, a2l_downscaled_col%forc_snow, a2l_downscaled_col%forc_t, lun%itype, pps%elai, pft%gridcell, a2l_downscaled_col%forc_rain, col%gridcell, pft%column, clm_a2l%forc_flood, col%landunit, pps%irrig_rate, cps%n_melt, pwf_a%qflx_snow_grnd, cwf%qflx_snow_melt, pps%dewmx, ces%t_grnd, col%itype, pps%esai, pft%landunit
+global_wo, cps%mss_dst2, cwf%qflx_floodc, cps%frac_iceold, cwf%qflx_snow_h2osfc, cps%mss_bctot, cps%mss_ocpho, cps%zi, cps%frac_sno_eff, cws%swe_old, cps%mss_bcpho, pwf%qflx_snwcp_liq, cps%mss_oc_top, cps%z, cps%mss_bc_top, cps%mss_dst4, cps%snw_rds, cps%mss_dst_col, cps%mss_dst3, cps%mss_bc_col, cps%mss_oc_col, pwf%qflx_prec_grnd, pwf%qflx_snwcp_ice, pwf%qflx_rain_grnd, cps%mss_bcphi, cps%mss_dsttot, cps%mss_dst1, cps%mss_dst_top, cps%mss_ocphi, ces%t_soisno, cps%mss_octot
+global_mod, cps%dz, cws%int_snow, cps%frac_sno, cws%h2osno, pwf%qflx_snow_grnd, cws%h2osoi_liq, cps%snow_depth, pws%h2ocan, pwf%qflx_prec_intr, cps%snl, cws%h2osoi_ice, pps%n_irrig_steps_left, pwf%qflx_irrig
+global_non, cws%h2osfc, pps%fwet, col%pfti, pps%fdry, col%npfts
+calls, FracH2oSfc, FracWet, p2c
+
+Tree height: 8
+1-, FracWet, p2c, 
+2-, FracH2oSfc, 

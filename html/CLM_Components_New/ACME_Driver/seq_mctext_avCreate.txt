@@ -1,0 +1,8 @@
+sub_in, lsize, AVin, ID, IDin, AVout
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_aVect_init, mpi_allreduce, shr_mpi_chkerr, shr_sys_abort, mpi_bcast, seq_comm_getinfo
+calls_ln, mct_aVect_init@919, mpi_bcast@913, mpi_allreduce@894, shr_sys_abort@899, shr_mpi_chkerr@895, mct_aVect_init@921, seq_comm_getinfo@879, mpi_bcast@912, mct_aVect_init@923

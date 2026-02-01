@@ -1,0 +1,11 @@
+sub_in, num_pcropp, filter_pcropp
+sub_out
+global_ro, clm3%g%l%c%p%pes%t10, pftcon%leaf_long, pftcon%leafcn, clm3%g%l%c%p%column, clm3%g%l%c%p%pes%t_ref2m_min, clm3%g%l%c%p%pps%gddtsoi, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%pes%a10tmin, clm3%g%l%c%p%pps%tlai, clm3%g%l%c%p%pps%gddplant, pftcon%fertnitro, clm3%g%l%c%p%itype
+global_wo, clm3%g%l%c%p%pepv%lgsf, clm3%g%l%c%p%pepv%onset_flag, clm3%g%l%c%p%pepv%offset_counter, clm3%g%l%c%p%pepv%offset_flag, clm3%g%l%c%p%pps%vf, clm3%g%l%c%p%pps%cumvd, clm3%g%l%c%p%pps%huileaf, clm3%g%l%c%p%pepv%bglfr, clm3%g%l%c%p%pps%hdidx, clm3%g%l%c%p%pps%cropplant, clm3%g%l%c%p%pepv%bgtr
+global_mod, clm3%g%l%c%p%pps%idop, clm3%g%l%c%p%pes%a5tmin, clm3%g%l%c%p%pnf%fert, clm3%g%l%c%p%pps%huigrain, clm3%g%l%c%p%pps%croplive, clm3%g%l%c%p%pcs%leafc_xfer, clm3%g%l%c%p%pns%leafn_xfer, clm3%g%l%c%ccf%dwt_seedc_to_leaf, clm3%g%l%c%p%pepv%fert_counter, clm3%g%l%c%p%pps%gddmaturity, clm3%g%l%c%p%pps%gdd020, clm3%g%l%c%p%pepv%onset_counter, clm3%g%l%c%p%pps%gdd820, clm3%g%l%c%cnf%dwt_seedn_to_leaf, clm3%g%l%c%p%pps%harvdate
+global_non, clm3%g%l%c%p%pps%gdd1020
+calls, vernalization, get_curr_date
+
+Tree height: 14
+0 , get_curr_date, 
+10+, vernalization, 

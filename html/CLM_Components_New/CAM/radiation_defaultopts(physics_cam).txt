@@ -1,0 +1,7 @@
+sub_in, iradlw_out, irad_always_out, spectralflux_out, iradsw_out, iradae_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

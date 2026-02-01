@@ -1,0 +1,9 @@
+sub_param, cp_p
+sub_out
+global_ro
+global_wo, cp_p%lai, cp_p%fabd_sha_z, cp_p%patchno, cp_p%fuel_mef, cp_p%canopy_area_profile, cp_p%dseed_dt, cp_p%cwd_ag, cp_p%bare_frac_area, cp_p%ros_back, cp_p%fabd_sun_z, cp_p%btran_ft, cp_p%present, cp_p%sabs_dif, cp_p%fabi_sha_z, cp_p%gpp, cp_p%ncan, cp_p%age, cp_p%leaf_litter, cp_p%tsai_profile, cp_p%f_sun, cp_p%fuel_eff_moist, cp_p%fabd, cp_p%seeds_in, cp_p%ed_laisun_z, cp_p%fab, cp_p%seed_germination, cp_p%ed_parsha_z, cp_p%tlai_profile, cp_p%tfc_ros, cp_p%tr_soil_dir, cp_p%root_litter, cp_p%ab, cp_p%seed_bank, cp_p%npp, cp_p%fuel_sav, cp_p%ed_laisha_z, cp_p%canopy_area, cp_p%fuel_frac, cp_p%fd, cp_p%seed_decay, cp_p%nf, cp_p%sabs_dir, cp_p%fi, cp_p%burnt_frac_litter, cp_p%clm_pno, cp_p%tr_soil_dif, cp_p%frac_burnt, cp_p%cwd_bg, cp_p%ed_parsun_z, cp_p%disturbance_rates, cp_p%sh, cp_p%fuel_bulkd, cp_p%elai_profile, cp_p%disturbance_rate, cp_p%ros_front, cp_p%nrad, cp_p%esai_profile, cp_p%canopy_layer_lai, cp_p%tau_l, cp_p%total_canopy_area, cp_p%fabi_sun_z, cp_p%tr_soil_dir_dif, cp_p%psn_z, cp_p%effect_wspeed, cp_p%pft_agb_profile, cp_p%fabi
+global_mod, cp_p%area, cp_p%sum_fuel, cp_p%spread
+global_non, null, cp_p, null, null, null, null
+calls
+readParams,
+type(patch), target, intent(inout) :: cp_p

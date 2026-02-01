@@ -1,0 +1,7 @@
+sub_in, mult, ne, se, nw, sw, v, desc, vlyr, kptr, g
+sub_out, mult, se, ne, sw, nw, v
+global_ro
+global_wo
+global_mod
+global_non
+calls

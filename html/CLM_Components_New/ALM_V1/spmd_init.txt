@@ -1,0 +1,10 @@
+sub_param, LNDID, clm_mpicom
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_allgather, mpi_gatherv, mpi_comm_rank, mpi_comm_size, mpi_get_processor_name
+readParams,
+integer, intent(in) :: clm_mpicom
+integer, intent(in) :: LNDID

@@ -1,0 +1,26 @@
+sub_in, mode, t
+sub_out
+global_ro, clm3%g%l%c%cps%z, clm3%g%l%c%landunit, clm3%g%l%c%cps%z_lake, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%dz_lake, clm3%g%l%c%cps%dz, clm3%g%l%lakpoi, clm3%g%l%c%cps%hksat
+global_wo
+global_mod
+global_non, clm3%g%l, clm3%g%l%c
+calls, ncd_io, c2g, get_proc_bounds, shr_string_listAppend, ncd_defvar, endrun
+
+Tree height: 26
+6-, shr_string_listAppend, 
+7-, endrun, ncd_defvar, 
+7+, get_proc_bounds, 
+8-, ncd_defvar, 
+19-, ncd_io, 
+19+, c2g, 
+20-, ncd_io, shr_string_listAppend, 
+21-, endrun, ncd_defvar, 
+21+, get_proc_bounds, 
+22-, ncd_defvar, 
+22+, ncd_defvar, 
+24-, ncd_io, 
+24+, c2g, 
+25-, ncd_io, 
+25+, ncd_io, 
+20+, ncd_io, 
+8+, ncd_defvar, 

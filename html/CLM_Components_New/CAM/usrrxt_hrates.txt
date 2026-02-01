@@ -1,0 +1,7 @@
+sub_in, tempi, ncol, kbot, rxt, m, tempn, h2ovmr, tempe, invariants, pmid
+sub_out, rxt
+global_ro
+global_wo
+global_mod
+global_non
+calls

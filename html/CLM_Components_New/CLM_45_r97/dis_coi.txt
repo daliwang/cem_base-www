@@ -1,0 +1,7 @@
+sub_in, Tc_4, wb_t, discoi
+sub_out, discoi
+global_ro
+global_wo
+global_mod
+global_non
+calls

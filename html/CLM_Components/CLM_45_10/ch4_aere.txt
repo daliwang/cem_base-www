@@ -1,0 +1,7 @@
+sub_in, filter_methc, num_methp, jwt, num_methc, ubc, lake, lbp, sat, lbc, filter_methp, ubp
+sub_out
+global_ro, wtcol, ch4_prod_depth_unsat, ch4_prod_depth_sat, watsat, annavg_agnpp, column, itype, c_atm, z, annavg_bgnpp, annsum_npp, frootc, conc_o2_sat, conc_o2_unsat, elai, qflx_tran_veg, grnd_ch4_cond, h2osoi_vol, dz, t_soisno, rootr, conc_ch4_sat, conc_ch4_unsat, rootfr, gridcell
+global_wo
+global_mod, o2_aere_depth_sat, o2_aere_depth_unsat, ch4_aere_depth_unsat, ch4_aere_depth_sat, ch4_tran_depth_unsat, ch4_tran_depth_sat
+global_non, co2_aere_depth_sat, co2_aere_depth_unsat, ch4_oxid_depth_unsat, ch4_oxid_depth_sat, canopy_cond
+calls

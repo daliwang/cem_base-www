@@ -1,0 +1,7 @@
+sub_in, vpr, phisc, nlon, sinphi, phib, lamgc, dttmp, cosphi, upr, lamsc, phigc, lam, phi
+sub_out, phisc, lamsc
+global_ro
+global_wo
+global_mod
+global_non
+calls

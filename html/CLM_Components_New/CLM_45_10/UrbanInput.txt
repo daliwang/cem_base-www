@@ -1,0 +1,41 @@
+sub_in, mode
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_inqdlen, getfil, ncd_pio_closefile, get_proc_bounds, ncd_pio_openfile, ncd_inqdid, ncd_inqfdims, endrun
+
+Tree height: 35
+1+, get_proc_bounds, 
+2+, getfil, ncd_pio_openfile, ncd_inqdid, 
+3+, ncd_inqfdims, ncd_inqdid, ncd_inqdlen, ncd_inqdid, ncd_inqdlen, ncd_inqdid, ncd_inqdlen, ncd_io, 
+4+, endrun, endrun, endrun, endrun, ncd_io, 
+5+, ncd_io, 
+6+, ncd_io, 
+7+, ncd_io, 
+8+, ncd_io, 
+9+, ncd_io, 
+10+, ncd_io, 
+11+, ncd_io, 
+12+, ncd_io, 
+13+, ncd_io, 
+14+, ncd_io, 
+15+, ncd_io, 
+16+, ncd_io, 
+17+, ncd_io, 
+18+, ncd_io, 
+19+, ncd_io, 
+20+, ncd_io, 
+21+, ncd_io, 
+22+, ncd_io, 
+23+, ncd_io, 
+24+, ncd_io, 
+25+, ncd_io, 
+26+, ncd_io, 
+27+, ncd_io, 
+28+, ncd_io, 
+29+, ncd_io, 
+30+, ncd_io, 
+33-, endrun, 
+31+, ncd_pio_closefile, 

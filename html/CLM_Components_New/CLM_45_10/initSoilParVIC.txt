@@ -1,0 +1,9 @@
+sub_in, claycol, c, om_fraccol, sandcol
+sub_out
+global_ro, clm3%g%l%c%cps%depth, clm3%g%l%c%cps%vic_clm_fract
+global_wo, clm3%g%l%c%cps%phi_s, clm3%g%l%c%cps%max_moist, clm3%g%l%c%cps%ksat, clm3%g%l%c%cps%c_param
+global_mod, clm3%g%l%c%cps%porosity, clm3%g%l%c%cps%expt
+global_non, clm3%g%l%c%cps%z, clm3%g%l%c%cps%Wsvic, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%ds, clm3%g%l%c%cps%dsmax, clm3%g%l%c%cps%b_infil, clm3%g%l%c%cps%zi
+calls
+
+Tree height: 2

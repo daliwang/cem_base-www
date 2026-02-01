@@ -1,0 +1,8 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_pio_init1, mpi_init, shr_mpi_chkerr, shr_pio_init2, seq_comm_setnthreads, shr_file_setIO, shr_file_setLogUnit, seq_comm_getinfo, shr_file_setLogLevel, seq_comm_init
+calls_ln, seq_comm_getinfo@660, shr_file_setIO@701, seq_comm_getinfo@601, seq_comm_getinfo@616, shr_pio_init2@732, shr_file_setLogLevel@708, seq_comm_getinfo@654, seq_comm_getinfo@683, seq_comm_getinfo@594, shr_file_setLogLevel@704, seq_comm_getinfo@668, seq_comm_getinfo@639, seq_comm_setnthreads@568, mpi_init@550, seq_comm_getinfo@624, seq_comm_getinfo@675, shr_pio_init1@557, shr_mpi_chkerr@551, seq_comm_getinfo@631, seq_comm_getinfo@690, shr_file_setLogUnit@702, seq_comm_getinfo@609, seq_comm_getinfo@576, seq_comm_getinfo@646, seq_comm_init@564, seq_comm_getinfo@567, seq_comm_getinfo@572

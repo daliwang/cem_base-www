@@ -1,0 +1,10 @@
+sub_param, x, y
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls, diff
+readParams,
+real(r8), dimension(:), intent(in)  :: x   !input array
+real(r8), dimension(:), intent(out) :: y   !output dif

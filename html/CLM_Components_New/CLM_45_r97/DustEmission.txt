@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, soilstate_inst, filter_nolakep, bounds, frictionvel_inst, atm2lnd_inst, dust_inst, num_nolakep, canopystate_inst
+sub_out
+global_ro, h2osoi_ice, gwc_thr, fv, u10, tsai, forc_rho, watsat, h2osoi_vol, mbl_bsn_fct, tlai, h2osoi_liq, mss_frc_cly_vld, frac_sno
+global_wo
+global_mod, flx_mss_vrt_dst, flx_mss_vrt_dst_tot
+global_non
+calls, endrun

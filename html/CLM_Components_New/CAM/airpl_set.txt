@@ -1,0 +1,7 @@
+sub_in, cldtop, extfrc, xno_ndx, ncol, lchnk, co_ndx, no_ndx, zint_abs
+sub_out, extfrc
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

@@ -1,0 +1,7 @@
+sub_in, jlow, jan, jl11, jh11, p, ja, im, dm, al, jhigh
+sub_out, al
+global_ro
+global_wo
+global_mod
+global_non
+calls

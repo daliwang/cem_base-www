@@ -1,0 +1,7 @@
+sub_in, ptend, state, tend, dt
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_dealloc, cnst_get_ind, state_cnst_min_nz, qneg3, shr_sys_flush, physconst_update, phys_getopts, geopotential_dse, endrun

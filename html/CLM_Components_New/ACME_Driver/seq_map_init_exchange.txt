@@ -1,0 +1,8 @@
+sub_in, string, mapper, comp, flow
+sub_out
+global_ro, component_get_gsmap_cx, component_get_gsmap_cc, component_get_gsmap_cc, component_get_gsmap_cx
+global_wo
+global_mod
+global_non, component_get_gsmap_cc, component_get_gsmap_cx, component_get_gsmap_cx, component_get_gsmap_cc
+calls, seq_map_mapinit, seq_map_mappoint, shr_sys_flush, seq_map_mapmatch, mct_rearr_init, seq_comm_getinfo, seq_map_gsmapcheck, mct_gsMap_clean, seq_mctext_gsmapExtend
+calls_ln, seq_map_mapmatch@103, mct_gsMap_clean@183, seq_map_mapinit@108, seq_mctext_gsmapExtend@144, seq_map_mapinit@167, mct_rearr_init@179, shr_sys_flush@191, seq_mctext_gsmapExtend@143, seq_comm_getinfo@139, seq_comm_getinfo@90, seq_comm_getinfo@138, mct_gsMap_clean@184, seq_map_mappoint@106, seq_comm_getinfo@137, seq_map_gsmapcheck@178

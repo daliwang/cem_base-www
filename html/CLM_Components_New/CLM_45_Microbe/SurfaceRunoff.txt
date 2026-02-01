@@ -1,0 +1,10 @@
+sub_in, num_urbanc, ubc, filter_urbanc, lbp, num_hydrologyc, lbc, ubp, filter_hydrologyc
+sub_out, icefrac
+global_ro, clm3%g%l%c%cwf%qflx_snow_h2osfc, clm3%g%l%c%cps%b_infil, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%max_moist, clm3%g%l%c%cwf%qflx_floodc, clm3%g%l%c%cwf%pwf_a%qflx_evap_grnd, clm3%g%l%c%cps%wtfact, clm3%g%l%c%cws%zwt_perched, clm3%g%l%c%itype, clm3%g%l%c%cps%watsat, clm3%g%l%c%cws%ice, clm3%g%l%c%cws%moist, clm3%g%l%c%cws%zwt, clm3%g%l%c%cws%frost_table, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice
+global_wo, clm3%g%l%c%cws%i_0
+global_mod, clm3%g%l%c%cws%fsat, clm3%g%l%c%cws%max_infil, clm3%g%l%c%cws%fcov, clm3%g%l%c%cps%fracice, clm3%g%l%c%cwf%qflx_top_soil, clm3%g%l%c%cwf%qflx_surf, clm3%g%l%c%cws%h2osoi_liq
+global_non, clm3%g%l%itype, clm3%g%l%c%gridcell, clm3%g%l%c%landunit, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%eff_porosity, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%cps%hkdepth, clm3%g%l%c%cps%hksat
+calls, endrun
+
+Tree height: 5
+2+, endrun, 

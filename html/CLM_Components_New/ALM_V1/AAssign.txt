@@ -1,0 +1,17 @@
+sub_param, k_d, cn_r, this, betrtracer_vars, cp_r, cell_sand, n2_n2o_r_denit, tracer_conc_atm, aere_cond, gas2bulkcef
+sub_out
+global_ro, betrtracer_vars%volatileid
+global_wo, this%n2_n2o_ratio_denit, this%scal_f, this%conc_f, this%cellsand, this%cn_ratios, this%cp_ratios, this%k_decay, this%conv_f
+global_mod
+global_non
+calls
+readParams,
+real(r8), dimension(:), intent(in) :: cn_r
+real(r8), dimension(:), intent(in) :: cp_r
+real(r8), dimension(:), intent(in) :: k_d
+real(r8)              , intent(in) :: n2_n2o_r_denit
+real(r8)              , intent(in) :: cell_sand
+type(BeTRtracer_type ), intent(in) :: betrtracer_vars
+real(r8)              , intent(in) :: gas2bulkcef(1:betrtracer_vars%nvolatile_tracers)
+real(r8)              , intent(in) :: aere_cond(1:betrtracer_vars%nvolatile_tracers)
+real(r8)              , intent(in) :: tracer_conc_atm(1:betrtracer_vars%nvolatile_tracers)

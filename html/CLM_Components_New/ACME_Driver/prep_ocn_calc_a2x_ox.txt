@@ -1,0 +1,8 @@
+sub_in, timer
+sub_out
+global_ro, component_get_c2x_cx
+global_wo
+global_mod
+global_non
+calls, seq_map_mapvect, seq_map_map, t_drvstopf, t_drvstartf
+calls_ln, t_drvstopf@957, t_drvstartf@946, seq_map_mapvect@955, seq_map_map@950, seq_map_map@952

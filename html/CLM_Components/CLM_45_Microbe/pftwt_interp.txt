@@ -1,0 +1,7 @@
+sub_in, endp, begp
+sub_out
+global_ro, itype, fpcgrid, gridcell, landunit
+global_wo, wtlunit
+global_mod, fpcgridold, wtcol, wtgcell
+global_non, p, l
+calls, get_curr_date

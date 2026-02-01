@@ -1,0 +1,23 @@
+sub_param, y0:10, betrtracer_vars:12, centurybgc_vars:11, neq:7, lbj:2, ubj:3, yf:9, plantsoilnutrientflux_vars:16, filter:5, numf:4, dtime:8, nitrogenflux_vars:15, carbonflux_vars:14, bounds:1, tracerflux_vars:13, jtops:6
+sub_out
+global_ro| centurybgc_vars%c_loc, c_loc, NONE| centurybgc_vars%lid_plant_minn, lid_plant_minn, NONE| centurybgc_vars%lid_nh4_nit, lid_nh4_nit, NONE| centurybgc_vars%lid_o2_paere, lid_o2_paere, NONE| centurybgc_vars%lid_minn_nh4_plant, lid_minn_nh4_plant, NONE| centurybgc_vars%n_loc, n_loc, NONE| centurybgc_vars%lid_ar, lid_ar, NONE| centurybgc_vars%lid_n2o_paere, lid_n2o_paere, NONE| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE| centurybgc_vars%lid_n2, lid_n2, NONE| centurybgc_vars%lid_co2, lid_co2, NONE| centurybgc_vars%lid_no3_den, lid_no3_den, NONE| centurybgc_vars%lid_ch4, lid_ch4, NONE| centurybgc_vars%lid_minn_no3_immob, lid_minn_no3_immob, NONE| nitrogenflux_vars%supplement_to_sminn_vr_col, supplement_to_sminn_vr_col, NONE| centurybgc_vars%lid_n2_paere, lid_n2_paere, NONE| centurybgc_vars%lid_ch4_paere, lid_ch4_paere, NONE| centurybgc_vars%lid_minn_no3_plant, lid_minn_no3_plant, NONE| centurybgc_vars%lid_co2_hr, lid_co2_hr, NONE| centurybgc_vars%lid_ar_paere, lid_ar_paere, NONE| centurybgc_vars%lid_n2o_nit, lid_n2o_nit, NONE| centurybgc_vars%lid_co2_paere, lid_co2_paere, NONE| centurybgc_vars%lid_nh4_supp, lid_nh4_supp, NONE| centurybgc_vars%nelms, nelms, NONE| centurybgc_vars%lid_n2o, lid_n2o, NONE| centurybgc_vars%lid_o2, lid_o2, NONE| centurybgc_vars%lid_no3, lid_no3, NONE| betrtracer_vars%id_trc_nh3x, id_trc_nh3x, NONE| centurybgc_vars%nom_pools, nom_pools, NONE| centurybgc_vars%lid_nh4, lid_nh4, NONE| centurybgc_vars%lid_minn_nh4_immob, lid_minn_nh4_immob, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE
+global_wo| nitrogenflux_vars%f_denit_vr_col, f_denit_vr, NONE| plantsoilnutrientflux_vars%plant_minn_active_yield_flx_vr_col, plant_minn_active_yield_flx_vr_col, NONE| nitrogenflux_vars%actual_immob_no3_vr_col, actual_immob_no3_vr, NONE| nitrogenflux_vars%actual_immob_nh4_vr_col, actual_immob_nh4_vr, NONE| carbonflux_vars%hr_vr_col, hr_vr, NONE| nitrogenflux_vars%f_n2o_nit_vr_col, f_n2o_nit_vr, NONE| nitrogenflux_vars%smin_nh4_to_plant_vr_col, smin_nh4_to_plant_vr, NONE| nitrogenflux_vars%smin_no3_to_plant_vr_col, smin_no3_to_plant_vr, NONE| nitrogenflux_vars%f_nit_vr_col, f_nit_vr, NONE| tracerflux_vars%tracer_flx_parchm_vr_col, tracer_flx_parchm_vr, NONE
+global_mod| tracerflux_vars%tracer_flx_netpro_vr_col, tracer_flx_netpro_vr, NONE
+global_non| betrtracer_vars%volatileid, volatileid, NONE
+calls
+readParams,
+type(bounds_type),                  intent(in)    :: bounds
+integer,                            intent(in)    :: lbj, ubj
+integer,                            intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer,                            intent(in)    :: numf
+integer,                            intent(in)    :: filter(:)
+integer                          ,  intent(in)    :: neq
+real(r8)                         ,  intent(in)    :: dtime
+real(r8)                         ,  intent(in)    :: yf(neq, bounds%begc:bounds%endc, lbj:ubj) !
+real(r8)                         ,  intent(in)    :: y0(neq, bounds%begc:bounds%endc, lbj:ubj) !
+type(centurybgc_type)            ,  intent(in)    :: centurybgc_vars
+type(betrtracer_type)            ,  intent(in)    :: betrtracer_vars
+type(carbonflux_type)            ,  intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)          ,  intent(inout) :: nitrogenflux_vars
+type(tracerflux_type)            ,  intent(inout) :: tracerflux_vars
+type(plantsoilnutrientflux_type),   intent(inout) :: plantsoilnutrientflux_vars

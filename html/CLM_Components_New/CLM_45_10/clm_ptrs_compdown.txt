@@ -1,0 +1,11 @@
+sub_in
+sub_out
+global_ro, clm3%g%l%c%gridcell, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%column, clm3%g%l%c%landunit, clm3%g%l%c%p%landunit, clm3%g%l%gridcell
+global_wo, clm3%g%nlandunits, clm3%g%l%c%npfts, clm3%g%npfts, clm3%g%l%ncolumns, clm3%g%ncolumns, clm3%g%l%npfts
+global_mod, clm3%g%coli, clm3%g%pftf, clm3%g%colf, clm3%g%l%coli, clm3%g%l%pfti, clm3%g%l%colf, clm3%g%l%c%pftf, clm3%g%lunf, clm3%g%l%pftf, clm3%g%l%c%pfti, clm3%g%pfti, clm3%g%luni
+global_non, clm3%g, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, get_proc_bounds, endrun
+
+Tree height: 3
+0 , get_proc_bounds, 
+2+, endrun, endrun, endrun, endrun, endrun, endrun, 

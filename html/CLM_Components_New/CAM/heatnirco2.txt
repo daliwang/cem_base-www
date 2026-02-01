@@ -1,0 +1,7 @@
+sub_in, scco2, sza, co2, zarg, htng, pmid, kbot
+sub_out, htng
+global_ro
+global_wo
+global_mod
+global_non
+calls

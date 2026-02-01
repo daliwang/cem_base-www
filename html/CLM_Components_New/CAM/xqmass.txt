@@ -1,0 +1,7 @@
+sub_in, hwxbl, cwava, qo, nlon, hwxal, xn, qn, w, pdela, pdelb, etamid, xo
+sub_out, hwxbl, hwxal
+global_ro
+global_wo
+global_mod
+global_non
+calls

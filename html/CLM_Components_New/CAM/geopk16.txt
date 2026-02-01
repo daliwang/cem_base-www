@@ -1,0 +1,7 @@
+sub_in, delp, grid, hs, ng, pt, pe, akap, cp, wz, pk
+sub_out, wz, pe, pk
+global_ro
+global_wo
+global_mod
+global_non
+calls, mp_recvirr, MPI_TYPE_INDEXED, mp_sendirr, get_partneroffset, MPI_TYPE_COMMIT, parexchangevector

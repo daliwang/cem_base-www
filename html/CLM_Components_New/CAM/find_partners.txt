@@ -1,0 +1,7 @@
+sub_in, nsmpx, proc_smp_mapx, opt, proc_busy_d
+sub_out, nsmpx, proc_smp_mapx
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_gcol_block_d, endrun

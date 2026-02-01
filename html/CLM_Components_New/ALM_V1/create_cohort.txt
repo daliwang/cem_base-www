@@ -1,0 +1,20 @@
+sub_param, hite, clayer, bstore, balive, bdead, patchptr, pft, dbh, ctrim, nn, status, laimemory
+sub_out
+global_ro, patchptr%area
+global_wo, new_cohort%treesai, new_cohort%status_coh, new_cohort%n, new_cohort%canopy_trim, new_cohort%lai, new_cohort%indexnumber, new_cohort%canopy_layer
+global_mod, new_cohort%laimemory, new_cohort%treelai, new_cohort%dbh, new_cohort%balive, new_cohort%bdead, new_cohort%pft, new_cohort%hite, new_cohort%c_area, new_cohort%bstore, udata%currentindex
+global_non, patchptr%siteptr, patchptr%shortest, patchptr%tallest, new_cohort, udata%storesmallcohort, patchptr, new_cohort, udata%storebigcohort
+calls, allocate_live_biomass, zero_cohort, insert_cohort, nan_cohort
+readParams,
+type(patch), intent(inout), pointer  :: patchptr
+integer,  intent(in)   :: pft       ! Cohort Plant Funew_cohorttional Type
+integer,  intent(in)   :: clayer    ! canopy status of cohort (1 = canopy, 2 = understorey, etc.)
+integer,  intent(in)   :: status    ! growth status of plant  (2 = leaves on , 1 = leaves off)
+real(r8), intent(in)   :: nn        ! number of individuals in cohort per 'area' (10000m2 default)
+real(r8), intent(in)   :: hite      ! height: meters
+real(r8), intent(in)   :: dbh       ! dbh: cm
+real(r8), intent(in)   :: balive    ! total living biomass: kGC per indiv
+real(r8), intent(in)   :: bdead     ! total dead biomass: kGC per indiv
+real(r8), intent(in)   :: bstore    ! stored carbon: kGC per indiv
+real(r8), intent(in)   :: laimemory ! target leaf biomass- set from previous year: kGC per indiv
+real(r8), intent(in)   :: ctrim     ! What is the fraction of the maximum leaf biomass that we are targeting? :-

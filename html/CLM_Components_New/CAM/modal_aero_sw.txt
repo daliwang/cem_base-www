@@ -1,0 +1,7 @@
+sub_in, idxnite, pbuf, wa, fa, state, tauxar, ga, nnite, list_idx
+sub_out, wa, fa, tauxar, ga
+global_ro, qaerwat
+global_wo
+global_mod
+global_non, dgnumwet_m
+calls, rad_cnst_get_aer_mmr, pbuf_get_field, rad_cnst_get_info, rad_cnst_get_aer_props, modal_size_parameters, endrun, binterp, modal_aero_wateruptake_dr, outfld, modal_aero_calcsize_diag, rad_cnst_get_mode_props

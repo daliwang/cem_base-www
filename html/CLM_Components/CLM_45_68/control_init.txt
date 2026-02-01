@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_timemgr_init, clm_varctl_set, SoilHydrology_readnl, shr_nl_find_group_name, Hydrology1_readnl, control_spmd, endrun, relavu

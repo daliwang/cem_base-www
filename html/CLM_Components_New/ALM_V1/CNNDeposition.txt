@@ -1,0 +1,11 @@
+sub_param, bounds, atm2lnd_vars, nitrogenflux_vars
+sub_out
+global_ro, atm2lnd_vars%forc_ndep_grc, col%gridcell
+global_wo, nitrogenflux_vars%ndep_to_sminn_col
+global_mod
+global_non
+calls
+readParams,readCNNDynamicsParams
+type(bounds_type)        , intent(in)    :: bounds
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars

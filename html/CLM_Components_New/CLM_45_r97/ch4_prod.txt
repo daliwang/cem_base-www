@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_nitrogenflux_inst, soilbiogeochem_carbonflux_inst, temperature_inst, lake, jwt, bounds, filter_methc, waterstate_inst, num_methc, ch4_inst, filter_methp, soilstate_inst, num_methp, cnveg_carbonflux_inst, sat
+sub_out
+global_ro, pH, rr, col_rr, t_soisno, lake_soilc, wtcol, finundated, rootfr, layer_sat_lag, zi, o_scalar, finundated_lag, pot_f_nit_vr, lithr, dz, hr_vr, fphr, somhr, conc_o2, rootfr_col, annavg_finrw
+global_wo, ch4_prod_depth
+global_mod, sif, o2_decomp_depth
+global_non, col%z, waterstate_inst%h2osoi_vol_col, soilstate_inst%watsat_col, ch4_inst%co2_decomp_depth_unsat_col, ch4_inst%co2_decomp_depth_sat_col
+calls, endrun

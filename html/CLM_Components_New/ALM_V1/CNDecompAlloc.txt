@@ -1,0 +1,25 @@
+sub_param, soilstate_vars, carbonstate_vars, phosphorusstate_vars, filter_soilc, num_soilp, canopystate_vars, carbonflux_vars, nitrogenstate_vars, waterstate_vars, num_soilc, nitrogenflux_vars, temperature_vars, filter_soilp, bounds, ch4_vars, cnstate_vars, phosphorusflux_vars
+sub_out
+global_ro, cnstate_vars%rf_decomp_cascade_col, phosphorusstate_vars%decomp_ppools_vr_col, nitrogenstate_vars%decomp_npools_vr_col, carbonstate_vars%decomp_cpools_vr_col, decomp_cascade_con%cascade_donor_pool, cnstate_vars%pathfrac_decomp_cascade_col, carbonflux_vars%w_scalar_col, cnstate_vars%fpi_vr_col, decomp_cascade_con%floating_cp_ratio_decomp_pools, decomp_cascade_con%initial_cp_ratio, decomp_cascade_con%is_cwd, carbonflux_vars%decomp_k_col, cnstate_vars%fpi_p_vr_col, decomp_cascade_con%floating_cn_ratio_decomp_pools, decomp_cascade_con%cascade_receiver_pool, decomp_cascade_con%initial_cn_ratio
+global_wo, nitrogenflux_vars%sminn_to_denit_decomp_cascade_vr_col, nitrogenflux_vars%potential_immob_vr_col, carbonflux_vars%decomp_cascade_ctransfer_vr_col, nitrogenflux_vars%decomp_cascade_sminn_flux_vr_col, phosphorusflux_vars%potential_immob_p_vr_col, carbonflux_vars%decomp_cascade_hr_vr_col, phosphorusflux_vars%decomp_cascade_sminp_flux_vr_col, phosphorusflux_vars%decomp_cascade_ptransfer_vr_col, nitrogenflux_vars%decomp_cascade_ntransfer_vr_col
+global_mod, carbonflux_vars%phr_vr_col, nitrogenflux_vars%soil_n_immob_flux_vr, phosphorusflux_vars%pmpf_decomp_cascade, phosphorusflux_vars%soil_p_immob_flux_vr, phosphorusflux_vars%net_pmin_vr_col, nitrogenflux_vars%pmnf_decomp_cascade, nitrogenflux_vars%soil_n_grossmin_flux, nitrogenflux_vars%soil_n_immob_flux, nitrogenflux_vars%gross_nmin_vr_col, phosphorusflux_vars%gross_pmin_vr_col, carbonflux_vars%fphr_col, nitrogenflux_vars%net_nmin_vr_col, phosphorusflux_vars%soil_p_immob_flux, phosphorusflux_vars%soil_p_grossmin_flux
+global_non, phosphorusflux_vars%gross_pmin_col, nitrogenflux_vars%net_nmin_col, nitrogenflux_vars%actual_immob_vr_col, phosphorusflux_vars%actual_immob_p_vr_col, nitrogenflux_vars%gross_nmin_col, phosphorusflux_vars%net_pmin_col
+calls, t_stopf, CNAllocation2_ResolveNPLimit, decomp_rate_constants_cn, nitrif_denitrif, t_startf, decomp_rate_constants_bgc
+readParams,readCNDecompParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc          ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)    ! filter for soil columns
+integer                  , intent(in)    :: num_soilp          ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)    ! filter for soil patches
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(ch4_type)           , intent(in)    :: ch4_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

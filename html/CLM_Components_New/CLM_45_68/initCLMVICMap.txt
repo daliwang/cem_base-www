@@ -1,0 +1,13 @@
+sub_in, c
+sub_out
+global_ro, cps%dz, cps%depth
+global_wo
+global_mod, cps%vic_clm_fract
+global_non, cps%z, cps%zi
+calls, linear_interp
+
+Tree height: 4
+2+, linear_interp, 
+3+, linear_interp, 
+1+, linear_interp, 
+2+, linear_interp, 

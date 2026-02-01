@@ -1,0 +1,7 @@
+sub_in, Tc_5, wbt_s, discois, relhum
+sub_out, discois
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, prescribed_volcaero_register, prescribed_ghg_register, cloud_diagnostics_register, aoa_tracers_register, prescribed_aero_register, subcol_register, modal_aero_wateruptake_reg, pbuf_init_time, phys_getopts, rad_cnst_get_info, microp_driver_register, radiation_register, conv_water_register, co2_register, cam3_ozone_data_register, prescribed_ozone_register, cnst_chk_dim, ionos_register, cldfrc_register, aircraft_emit_register, microp_aero_register, stratiform_register, diag_register, convect_shallow_register, carma_register, sslt_rebin_register, check_energy_register, cnst_add, cam3_aero_data_register, convect_deep_register, chem_register, modal_aero_calcsize_reg, tracers_register, pbuf_register_subcol, ghg_data_register, pbuf_add_field, iondrag_register

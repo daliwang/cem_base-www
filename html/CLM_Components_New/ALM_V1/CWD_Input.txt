@@ -1,0 +1,9 @@
+sub_param, currentPatch
+sub_out
+global_ro, currentPatch%shortest, currentCohort%taller, %bdead, %leaf_md, %bl, %br, %dndt, %bstore, %leaf_litter, udata%deltat, currentPatch%area, %root_md, %woody_turnover, currentPatch%seed_decay, %bsw, %n, %pft
+global_wo
+global_mod, currentPatch%cwd_AG_in, currentPatch%leaf_litter_in, currentPatch%root_litter_in, currentPatch%cwd_BG_in
+global_non
+calls
+readParams,
+type(patch),intent(inout), pointer :: currentPatch

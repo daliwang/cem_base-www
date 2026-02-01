@@ -1,0 +1,7 @@
+sub_in, taucmcl, hr, cfc22vmr, uflxc, tauaer, clwpmcl, icld, cfc12vmr, o2vmr, co2vmr, h2ovmr, dflx, dflxs, dflxc, ch4vmr, emis, tsfc, cfc11vmr, ccl4vmr, relqmcl, ciwpmcl, liqflglw, reicmcl, uflx, play, cldfmcl, iceflglw, uflxs, plev, inflglw, tlev, n2ovmr, lchnk, hrc, o3vmr, tlay, nlay, ncol
+sub_out, dflx, uflx, hrc, uflxc, dflxc, dflxs, hr, uflxs
+global_ro
+global_wo
+global_mod
+global_non
+calls, cldprmc, rtrnmc, setcoef, taumol, inatm

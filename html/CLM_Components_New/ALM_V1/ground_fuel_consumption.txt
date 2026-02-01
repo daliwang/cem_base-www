@@ -1,0 +1,9 @@
+sub_param, cs_pnt
+sub_out
+global_ro, %fuel_frac, %leaf_litter, %litter_moisture, %sum_fuel, %livegrass, %CWD_AG, >currentPatch%younger;
+global_wo, %tau_l, %TFC_ROS
+global_mod, %burnt_frac_litter, cs_pnt%oldest_patch;
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: cs_pnt

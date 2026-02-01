@@ -1,0 +1,7 @@
+sub_in, flag, this, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, restartvar, mct_gsmap_OP, get_clmlevel_gsmap

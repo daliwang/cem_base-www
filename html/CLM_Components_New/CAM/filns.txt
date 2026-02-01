@@ -1,0 +1,7 @@
+sub_in, j2, ipy, j1, im, tiny, jm, cosp, q, acosp
+sub_out, q, ipy
+global_ro
+global_wo
+global_mod
+global_non
+calls

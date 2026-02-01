@@ -1,0 +1,7 @@
+sub_in, aglobal, alocal, missing, clmlevel
+sub_out, aglobal
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_aVect_gather, get_clmlevel_gsmap, t_startf, mct_aVect_exportIattr, t_stopf, mct_aVect_importIattr, mct_aVect_clean, mct_aVect_init

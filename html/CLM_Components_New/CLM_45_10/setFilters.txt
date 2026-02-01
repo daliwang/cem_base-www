@@ -1,0 +1,10 @@
+sub_in, nc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, clm3%g%l%c%itype
+calls, get_clump_bounds
+
+Tree height: 4
+0 , get_clump_bounds, 

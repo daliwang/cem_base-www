@@ -1,0 +1,9 @@
+sub_param, site_in:1
+sub_out
+global_ro| >currentPatch%tallest, tallest, NONE| currentCohort%pft, pft, NONE| currentCohort%hite, hite, NONE| %SH, SH, NONE| site_in%oldest_patch, currentPatch, NONE| currentPatch%younger;, currentPatch, NONE| EDecophyscon%crown, crown, NONE
+global_wo
+global_mod| currentCohort%cfa, cfa, NONE| !currentCohort%canopy_trim, canopy_trim, NONE| currentCohort%canopy_trim, canopy_trim, NONE
+global_non| currentCohort%shorter;, currentCohort, NONE
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: site_in

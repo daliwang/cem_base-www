@@ -1,0 +1,12 @@
+sub_in, par_z, je, iv, oair, cair, gb_mol, c, p, rh_can, gs_mol, lmr_z
+sub_out, iter, x0
+global_ro
+global_wo
+global_mod
+global_non
+calls, brent, ci_func
+
+Tree height: 3
+0 , ci_func, 
+1+, ci_func, ci_func, 
+2+, brent, ci_func, 

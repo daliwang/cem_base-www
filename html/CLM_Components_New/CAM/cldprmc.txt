@@ -1,0 +1,7 @@
+sub_in, ncbands, taucmc, relqmc, iceflag, cldfmc, inflag, reicmc, nlayers, liqflag, dgesmc, clwpmc, ciwpmc
+sub_out, taucmc, ncbands
+global_ro
+global_wo
+global_mod
+global_non
+calls

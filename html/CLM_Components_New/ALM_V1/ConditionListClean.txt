@@ -1,0 +1,9 @@
+sub_param, list
+sub_out
+global_ro, list%first, cur_cond%next
+global_wo
+global_mod
+global_non, cur_cond
+calls, ConditionListInit, ConditionDestroy
+readParams,
+type(condition_list_type), intent(inout) :: list

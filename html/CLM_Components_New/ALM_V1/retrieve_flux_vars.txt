@@ -1,0 +1,23 @@
+sub_param, bounds, betrtracer_vars, tracerflux_vars, neq, yf, centurybgc_vars, carbonflux_vars, numf, y0, plantsoilnutrientflux_vars, filter, ubj, lbj, dtime, nitrogenflux_vars, jtops
+sub_out
+global_ro, nitrogenflux_vars%supplement_to_sminn_vr_col, centurybgc_vars%c_loc, centurybgc_vars%nelms, betrtracer_vars%id_trc_nh3x, centurybgc_vars%lid_n2o_paere, centurybgc_vars%lid_minn_no3_plant, centurybgc_vars%lid_ar_paere, centurybgc_vars%lid_co2_paere, centurybgc_vars%lid_ar, centurybgc_vars%lid_n2o, centurybgc_vars%lid_co2, centurybgc_vars%lid_nh4_nit, centurybgc_vars%lid_n2, centurybgc_vars%lid_ch4, centurybgc_vars%lid_no3_den, centurybgc_vars%lid_n2_paere, centurybgc_vars%n_loc, centurybgc_vars%lid_minn_nh4_plant, centurybgc_vars%lid_no3, centurybgc_vars%nom_pools, betrtracer_vars%id_trc_no3x, centurybgc_vars%lid_o2_paere, centurybgc_vars%lid_n2o_nit, centurybgc_vars%lid_nh4_supp, centurybgc_vars%lid_o2, centurybgc_vars%lid_minn_no3_immob, centurybgc_vars%lid_ch4_paere, centurybgc_vars%lid_nh4, betrtracer_vars%ngwmobile_tracers, centurybgc_vars%lid_co2_hr, centurybgc_vars%lid_plant_minn, centurybgc_vars%lid_minn_nh4_immob
+global_wo, plantsoilnutrientflux_vars%plant_minn_active_yield_flx_vr_col, nitrogenflux_vars%actual_immob_no3_vr_col, carbonflux_vars%hr_vr_col, nitrogenflux_vars%f_n2o_nit_vr_col, tracerflux_vars%tracer_flx_parchm_vr_col, nitrogenflux_vars%actual_immob_nh4_vr_col, nitrogenflux_vars%f_denit_vr_col, nitrogenflux_vars%smin_nh4_to_plant_vr_col, nitrogenflux_vars%f_nit_vr_col, nitrogenflux_vars%smin_no3_to_plant_vr_col
+global_mod, tracerflux_vars%tracer_flx_netpro_vr_col
+global_non, betrtracer_vars%volatileid
+calls
+readParams,
+type(bounds_type),                  intent(in)    :: bounds
+integer,                            intent(in)    :: lbj, ubj
+integer,                            intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer,                            intent(in)    :: numf
+integer,                            intent(in)    :: filter(:)
+integer                          ,  intent(in)    :: neq
+real(r8)                         ,  intent(in)    :: dtime
+real(r8)                         ,  intent(in)    :: yf(neq, bounds%begc:bounds%endc, lbj:ubj) !
+real(r8)                         ,  intent(in)    :: y0(neq, bounds%begc:bounds%endc, lbj:ubj) !
+type(centurybgc_type)            ,  intent(in)    :: centurybgc_vars
+type(betrtracer_type)            ,  intent(in)    :: betrtracer_vars
+type(carbonflux_type)            ,  intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)          ,  intent(inout) :: nitrogenflux_vars
+type(tracerflux_type)            ,  intent(inout) :: tracerflux_vars
+type(plantsoilnutrientflux_type),   intent(inout) :: plantsoilnutrientflux_vars

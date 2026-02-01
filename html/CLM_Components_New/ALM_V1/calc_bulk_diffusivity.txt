@@ -1,0 +1,20 @@
+sub_param, ubj, bulkdiffus, canopystate_vars, bounds, waterstate_vars, filter, lbj, t_soisno, tau_soi, betrtracer_vars, jtops, bunsencef_col, numf
+sub_out, bulkdiffus
+global_ro, canopystate_vars%altmax_col, betrtracer_vars%tracer_group_memid, betrtracer_vars%is_h2o, canopystate_vars%altmax_lastyear_col, betrtracer_vars%volatilegroupid, betrtracer_vars%ntracer_groups, tau_soi%tau_gas, betrtracer_vars%tracer_solid_passive_diffus_thc_group, waterstate_vars%air_vol_col, tau_soi%tau_liq, betrtracer_vars%ngwmobile_tracer_groups, waterstate_vars%h2osoi_liqvol_col, betrtracer_vars%is_volatile, betrtracer_vars%tracer_solid_passive_diffus_scal_group
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)          , intent(in) :: bounds                                  ! bounds
+integer                    , intent(in) :: numf                                    ! number of columns in column filter
+integer                    , intent(in) :: filter(:)                               ! column filter
+integer                    , intent(in) :: lbj, ubj                                ! lower and upper bounds, make sure they are > 0
+integer                    , intent(in) :: jtops(bounds%begc: )                    ! top label of each column
+real(r8)                   , intent(in) :: t_soisno(bounds%begc: ,  lbj: )         ! soil temperature
+real(r8)                   , intent(in) :: bunsencef_col(bounds%begc: ,lbj: ,1: )  ! bunsen coefficient for gaseous-aqueous conversion
+type(betrtracer_type)      , intent(in) :: betrtracer_vars                         ! betr configuration information
+type(Waterstate_Type)      , intent(in) :: waterstate_vars                         ! water state variables
+type(canopystate_type)     , intent(in) :: canopystate_vars                        ! canopy state variables
+type(soil_tortuosity_type) , intent(in) :: tau_soi                                 ! soil tortuosity
+real(r8)                   ,intent(out) :: bulkdiffus(bounds%begc: ,lbj: , 1: )    ! the returning variable

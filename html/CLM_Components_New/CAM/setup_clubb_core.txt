@@ -1,0 +1,7 @@
+sub_in, nzmax, !, In, , ts_nudge_in, T0_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, initialize_csr_class, setup_model_flags, setup_parameters, setup_prognostic_variables, set_Lscale_max, gmres_init, setup_grid, setup_parameters_model, setup_diagnostic_variables, gmres_cache_temp_init

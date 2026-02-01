@@ -1,0 +1,7 @@
+sub_in, cnveg_state_inst, cnveg_nitrogenflux_inst, filter_soilp, this, num_soilp, aroot, c13_cnveg_carbonflux_inst, bounds, cnveg_carbonstate_inst, canopystate_inst, photosyns_inst, arepr, cnveg_nitrogenstate_inst, c14_cnveg_carbonflux_inst, cnveg_carbonflux_inst, crop_inst
+sub_out, aroot
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%calc_plant_nitrogen_demand

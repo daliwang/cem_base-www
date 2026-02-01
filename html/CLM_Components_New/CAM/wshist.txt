@@ -1,0 +1,7 @@
+sub_in, rgnht_in
+sub_out
+global_ro, tape
+global_wo
+global_mod
+global_non
+calls, t_stopf, dump_field, pio_closefile, sat_hist_write, get_solar_parms, get_curr_time, h_normalize, get_curr_date, h_define, endrun, datetime, t_startf, h_zero

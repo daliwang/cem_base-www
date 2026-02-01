@@ -1,0 +1,12 @@
+sub_param, cnstate_vars, filter_soilc, num_soilc, carbonflux_vars
+sub_out
+global_ro, carbonflux_vars%m_leafc_xfer_to_litter_patch, ecophyscon%fr_flig, col%pfti, carbonflux_vars%m_deadstemc_xfer_to_litter_patch, pft%wtcol, ecophyscon%fr_fcel, carbonflux_vars%m_frootc_storage_to_litter_patch, carbonflux_vars%m_livecrootc_storage_to_litter_patch, cnstate_vars%leaf_prof_patch, carbonflux_vars%m_livecrootc_xfer_to_litter_patch, carbonflux_vars%m_deadcrootc_xfer_to_litter_patch, carbonflux_vars%m_deadcrootc_storage_to_litter_patch, carbonflux_vars%m_deadcrootc_to_litter_patch, carbonflux_vars%m_deadstemc_storage_to_litter_patch, carbonflux_vars%m_gresp_xfer_to_litter_patch, carbonflux_vars%m_livestemc_storage_to_litter_patch, pft%itype, cnstate_vars%froot_prof_patch, carbonflux_vars%m_gresp_storage_to_litter_patch, ecophyscon%fr_flab, carbonflux_vars%m_deadstemc_to_litter_patch, carbonflux_vars%m_livestemc_xfer_to_litter_patch, cnstate_vars%stem_prof_patch, carbonflux_vars%m_livestemc_to_litter_patch, carbonflux_vars%m_leafc_storage_to_litter_patch, ecophyscon%lf_flig, ecophyscon%lf_fcel, ecophyscon%lf_flab, cnstate_vars%croot_prof_patch, carbonflux_vars%m_frootc_xfer_to_litter_patch, carbonflux_vars%m_frootc_to_litter_patch, carbonflux_vars%m_livecrootc_to_litter_patch, carbonflux_vars%m_leafc_to_litter_patch
+global_wo
+global_mod, carbonflux_vars%gap_mortality_c_to_litr_met_c_col, carbonflux_vars%gap_mortality_c_to_litr_lig_c_col, carbonflux_vars%gap_mortality_c_to_litr_cel_c_col, carbonflux_vars%gap_mortality_c_to_cwdc_col
+global_non
+calls
+readParams,
+integer               , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer               , intent(in)    :: filter_soilc(:)   ! soil column filter
+type(cnstate_type)    , intent(in)    :: cnstate_vars
+type(carbonflux_type) , intent(inout) :: carbonflux_vars

@@ -1,0 +1,7 @@
+sub_in, o2x_o, x2o_o, cdata_o, EClock
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ocn_write_restart, shr_sys_abort, get_curr_date, ocn_run, t_startf, seq_timemgr_EClockGetData, ocn_export_mct, t_stopf, advance_timestep

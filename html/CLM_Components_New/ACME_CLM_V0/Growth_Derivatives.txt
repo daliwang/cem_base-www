@@ -1,0 +1,7 @@
+sub_in, currentCohort
+sub_out
+global_ro, currentCohort%bstore, currentCohort%resp_acc, currentCohort%npp_acc, currentCohort%gpp_acc, EDecophyscon%sapwood_ratio, EDecophyscon%seed_alloc, EDecophyscon%leaf_stor_priority, currentCohort%pft, EDecophyscon%clone_alloc, ecophyscon%froot_leaf, currentCohort%n, EDecophyscon%cushion, currentCohort%bl, currentCohort%br, EDecophyscon%root_long, ecophyscon%leaf_long
+global_wo, currentCohort%dhdt, currentCohort%seed_prod, currentCohort%ddbhdt, currentCohort%dndt, currentCohort%resp, currentCohort%gpp, ecophyscon%evergreen
+global_mod, currentCohort%hite, currentCohort%woody_turnover, currentCohort%leaf_md, currentCohort%carbon_balance, currentCohort%npp, currentCohort%dbalivedt, currentCohort%storage_flux, %flux_in, currentCohort%dbdeaddt, currentCohort%md, currentCohort%root_md, currentCohort%dbstoredt
+global_non, currentCohort%siteptr
+calls, allocate_live_biomass

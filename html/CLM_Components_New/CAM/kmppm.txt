@@ -1,0 +1,7 @@
+sub_in, lmt, dm, itot, a4
+sub_out, a4
+global_ro
+global_wo
+global_mod
+global_non
+calls

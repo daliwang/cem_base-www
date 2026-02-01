@@ -1,0 +1,8 @@
+sub_in, av_o, norm_i, norm, av_i, rList, mapper
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_sMat_avMult, ESMF_AttributeSet, ESMF_StateGet, mct_aVect_init, shr_sys_abort, ESMF_StateAdd, ESMF_StateRemove, ESMF_GridCompRun, mct_aVect_copy, ESMF_ArrayDestroy, mct_aVect_clean, ESMF_ArrayGet, seq_comm_getcompstates
+calls_ln, shr_sys_abort@993, mct_aVect_init@1000, seq_comm_getcompstates@1080, mct_aVect_copy@1121, ESMF_ArrayGet@1064, ESMF_ArrayDestroy@1094, ESMF_StateAdd@1058, ESMF_ArrayDestroy@1089, mct_sMat_avMult@1102, mct_aVect_init@1004, ESMF_GridCompRun@1081, mct_aVect_clean@1123, ESMF_StateRemove@1087, shr_sys_abort@1097, ESMF_ArrayGet@1044, mct_aVect_init@1006, ESMF_AttributeSet@1072, mct_aVect_init@1001, mct_aVect_clean@1124, shr_sys_abort@987, ESMF_StateRemove@1092, ESMF_StateGet@1042, mct_aVect_copy@1013, ESMF_StateGet@1062, ESMF_AttributeSet@1053, ESMF_StateAdd@1076

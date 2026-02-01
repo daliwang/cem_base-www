@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch, currentCohort, canopy_layer
+global_wo
+global_mod, spread, c_area
+global_non
+calls

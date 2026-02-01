@@ -1,0 +1,9 @@
+sub_in, filter_nosnowc, num_snowc, filter_snowc, bounds, num_nosnowc
+sub_out
+global_ro, pwf_a%qflx_dew_grnd, cps%frac_sno, cwf%qflx_snomelt, pwf_a%qflx_rain_grnd, cps%snl, cps%frac_sno_eff, pwf_a%qflx_sub_snow, clm_a2l%forc_aer, pwf_a%qflx_dew_snow, col%gridcell, pwf_a%qflx_evap_grnd, col%landunit, cws%h2osno
+global_wo, cwf%flx_oc_dep_wet, cwf%flx_bc_dep, cwf%flx_dst_dep, cwf%qflx_top_soil, cwf%flx_bc_dep_wet, cwf%flx_oc_dep, cwf%flx_bc_dep_dry, cwf%flx_oc_dep_dry
+global_mod, cps%dz, cwf%flx_bc_dep_pho, cws%int_snow, cps%mss_dst2, cps%mss_dst4, cps%mss_dst3, cwf%flx_oc_dep_pho, cwf%flx_dst_dep_dry3, cwf%flx_dst_dep_dry4, cwf%flx_dst_dep_wet2, cwf%flx_dst_dep_wet3, cwf%flx_dst_dep_wet4, cwf%flx_dst_dep_wet1, cps%mss_bcphi, cws%h2osoi_ice, cps%mss_dst1, cwf%flx_bc_dep_phi, cps%mss_ocpho, cwf%flx_dst_dep_dry1, cws%h2osoi_liq, cwf%flx_oc_dep_phi, cwf%qflx_snow_melt, cps%mss_bcpho, cwf%flx_dst_dep_dry2, cps%mss_ocphi
+global_non, lun%itype, pwf_a%qflx_ev_soil, pwf_a%qflx_evap_soi, pwf_a%qflx_ev_snow
+calls
+
+Tree height: 5

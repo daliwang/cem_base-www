@@ -1,0 +1,8 @@
+sub_in, gsMap_d, mapid, mapfile, gsMap_s, strategy
+sub_out, mapid
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_flush
+calls_ln, shr_sys_flush@114

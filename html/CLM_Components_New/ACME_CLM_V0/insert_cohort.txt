@@ -1,0 +1,7 @@
+sub_in, snull, tnull, ptall, pcc, pshort
+sub_out
+global_ro, current%taller, pshortest, tallptr%shorter, ptallest, null, current, pcc%dbh
+global_wo, pcc%taller
+global_mod
+global_non, null, icohort, ptall, shortptr, icohort, pcc, tallptr, icohort, icohort, icohort, icohort, icohort, icohort, icohort, null, pshort, icohort, pcc%patchptr
+calls

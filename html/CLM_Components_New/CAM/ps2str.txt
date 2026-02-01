@@ -1,0 +1,7 @@
+sub_in, gu, radfld, tauu, nw, nid, zen, omu, dsdh, rsfc
+sub_out, radfld
+global_ro
+global_wo
+global_mod
+global_non
+calls, trislv, tridec

@@ -1,0 +1,9 @@
+sub_param, patch_in:1
+sub_out
+global_ro| patch_in%siteptr%status, status, NONE| EDecophyscon%sapwood_ratio, sapwood_ratio, NONE| patch_in%area, area, NONE| patch_in%siteptr%dstatus, dstatus, NONE| EDecophyscon%initd, initd, NONE| EDecophyscon%cushion, cushion, NONE| ecophyscon%froot_leaf, froot_leaf, NONE| EDecophyscon%hgt_min, hgt_min, NONE
+global_wo| dc%b, b, NONE| dc%canopy_trim, canopy_trim, NONE| dc%n, n, NONE| dc%dbh, dbh, NONE| dc%bstore, bstore, NONE
+global_mod| dc%bdead, bdead, NONE| dc%hite, hite, NONE| dc%balive, balive, NONE| dc%laimemory, laimemory, NONE| dc%pft, pft, NONE
+global_non| null, patch_in%tallest, NONE| udata%storebigcohort, patch_in%tallest, NONE| null, patch_in%shortest, NONE| udata%storesmallcohort, patch_in%shortest, NONE
+calls, sort_cohorts, fuse_cohorts, create_cohort
+readParams,
+type(patch), intent(inout), pointer  :: patch_in

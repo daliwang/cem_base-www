@@ -1,0 +1,7 @@
+sub_in, dom, bounds
+sub_out
+global_ro, ldomain%lonc, bounds%begg, ldomain%mask, ldomain%frac, ldomain%area, ldomain%latc
+global_wo
+global_mod
+global_non
+calls, ESMF_Finalize, ESMF_ArrayGet

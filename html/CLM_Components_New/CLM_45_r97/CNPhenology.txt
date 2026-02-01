@@ -1,0 +1,7 @@
+sub_in, bounds, temperature_inst, cnveg_state_inst, froot_prof_patch, num_pcropp, cnveg_carbonflux_inst, num_soilp, cnveg_nitrogenflux_inst, canopystate_inst, cnveg_carbonstate_inst, soilstate_inst, filter_pcropp, filter_soilp, cnveg_nitrogenstate_inst, doalb, num_soilc, filter_soilc, leaf_prof_patch, dgvs_inst, crop_inst, waterstate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNPhenologyClimate, CNLivewoodTurnover, CNLitterToColumn, CNOnsetGrowth, CNOffsetLitterfall, CNSeasonDecidPhenology, CNEvergreenPhenology, CNBackgroundLitterfall, CNStressDecidPhenology, CropPhenology

@@ -1,0 +1,8 @@
+sub_in, fractions_ix, timer
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_c2x_cx
+calls, seq_map_map, t_drvstopf, t_drvstartf
+calls_ln, seq_map_map@691, t_drvstartf@686, seq_map_map@694, t_drvstopf@698

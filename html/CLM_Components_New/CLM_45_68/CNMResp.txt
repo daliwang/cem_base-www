@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, pps%laisha, pps%frac_veg_nosno, pft%column, pns%livecrootn, pcf%lmrsun, pcf%lmrsha, pps%laisun, pns%frootn, pns%grainn, pftcon%woody, ces%t_soisno, pns%livestemn, pps%rootfr, pes%t_ref2m, pft%itype
+global_wo, pcf%livecroot_mr, pcf%grain_mr, pcf%leaf_mr, pcf%livestem_mr
+global_mod, pcf%froot_mr
+global_non, lun%itype, col%landunit, pns%leafn, pft%landunit
+calls
+
+Tree height: 3

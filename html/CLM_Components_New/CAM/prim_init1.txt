@@ -1,0 +1,7 @@
+sub_in, par, elem, fvm, Tl, dom_mt
+sub_out, elem, dom_mt
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_allreduce, omp_set_num_threads, InitReductionBuffer, test_gauss, genEdgeSched, ManagerInit, set_corner_coordinates, deallocate_gridvertex_nbrs, initRestartFile, genmetispart, repro_sum_setopts, MeshCubeTopology, allocate_gridvertex_nbrs, TimeLevel_init, SetElemOffset, assign_node_numbers_to_elem, test_gausslobatto, fvm_init1, genspacepart, Prim_Advec_Init, initMetaGraph, syncmp, repro_sum_defaultopts, readnl, abortmp, allocate_element_desc, CubeTopology, MeshSetCoordinates, prim_printstate_init, prim_advance_init, repro_sum, rotation_init_atomic, cube_init_atomic, initReductionBuffer, CreateUniqueIndex, global_dof, mass_matrix, diffusion_init, spelt_init1

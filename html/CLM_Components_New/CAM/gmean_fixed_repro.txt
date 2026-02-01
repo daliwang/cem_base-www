@@ -1,0 +1,7 @@
+sub_in, nflds, rel_diff, arr_gmean, arr
+sub_out, arr_gmean
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_wght_all_p, shr_reprosum_calc

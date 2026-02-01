@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, %n, >currentCohort%shorter;, %bsw, %bdead, %FI, currentSite%oldest_patch;, currentPatch%younger;, %bl
+global_wo
+global_mod, currentPatch%tallest;, %SH
+global_non
+calls

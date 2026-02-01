@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, clm3%g%l%c%cps%fpg, clm3%g%l%c%p%pepv%plant_ndemand, clm3%g%l%c%cps%wf, clm3%g%l%c%cns%sminn, clm3%g%l%c%p%pps%gddmaturity, clm3%g%l%c%p%pps%gddplant, clm3%g%l%c%p%itype, clm3%g%l%c%p%column
+global_wo
+global_mod, clm3%g%l%c%p%pnf%soyfixn
+global_non, clm3%g%l%c%cnf%soyfixn_to_sminn, clm3%g%l%c%p%pps%croplive
+calls, p2c
+
+Tree height: 8
+4-, p2c, 

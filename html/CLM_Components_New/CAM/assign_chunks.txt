@@ -1,0 +1,7 @@
+sub_in, nsmpthreads, proc_smp_mapx, npthreads, nsmpchunks, nsmpx
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_gcol_block_d

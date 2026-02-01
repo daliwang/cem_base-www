@@ -1,0 +1,7 @@
+sub_in, l_standard_term_ta_out, l_quintic_poly_interp_out, l_single_C2_Skw_out, l_vert_avg_closure_out, l_upwind_xm_ma_out, l_tke_aniso_out, l_upwind_xpyp_ta_out, l_upwind_wpxp_ta_out, l_use_cloud_cover_out
+sub_out, l_quintic_poly_interp_out, l_vert_avg_closure_out, l_single_C2_Skw_out, l_standard_term_ta_out, l_use_cloud_cover_out, l_upwind_wpxp_ta_out, l_tke_aniso_out, l_upwind_xm_ma_out, l_upwind_xpyp_ta_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

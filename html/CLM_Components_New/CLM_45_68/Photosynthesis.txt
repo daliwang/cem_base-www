@@ -1,0 +1,12 @@
+sub_in, esat_tv, dayl_factor, rb, eair, bounds, cair, phase, fn, filterp, oair
+sub_out
+global_ro, pps%nrad, pftcon%leafcn, pftcon%fnitr, pes%t10, pes%t_veg, pftcon%slatop, pftcon%flnr, pes%thm, pft%itype, pps%vcmaxcintsun, pft%column, pps%btran, a2l_downscaled_col%forc_pbot, pps%tlai_z, pps%laisun_z, ppsyns%gs_mol, pef%parsun_z
+global_wo, ppsyns%theta_cj, ppsyns%cp, pps%alphapsnsun, pcf%psnsun_wc, pps%rssun, pcf%psnsun_wp, ppsyns%kp_z, ppsyns%qe, pcf%psnsun_wj, pcf%psnsun, ppsyns%kc, pcf%lmrsun, ppsyns%tpu_z, ppsyns%ko, pps%rh_leaf
+global_mod, pcf%psnsun_z, pps%rssun_z, ppsyns%ag, ppsyns%an, ppsyns%mbb, ppsyns%ac, ppsyns%c3flag, ppsyns%ap, ppsyns%bbb, ppsyns%vcmax_z, pcf%cisun_z, ppsyns%aj, pcf%lmrsun_z, ppsyns%gb_mol
+global_non, pcf%cisha_z, pps%laisha_z, pps%rssha, pps%vcmaxcintsha, pcf%lmrsha, pef%parsha_z, pcf%psnsha_wp, pft%gridcell, pps%rssha_z, pcf%psnsha, pps%alphapsnsha, pcf%psnsha_z, pcf%psnsha_wj, pcf%psnsha_wc, pcf%lmrsha_z, pftcon%c3psn
+calls, quadratic, shr_assert, hybrid, endrun
+
+Tree height: 12
+0 , shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, 
+7-, quadratic, hybrid, 
+11+, endrun, 

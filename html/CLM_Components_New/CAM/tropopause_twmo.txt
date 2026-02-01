@@ -1,0 +1,7 @@
+sub_in, tropT, tropZ, tropP, pstate, tropLev
+sub_out, tropT, tropZ, tropLev
+global_ro
+global_wo
+global_mod
+global_non
+calls, twmo

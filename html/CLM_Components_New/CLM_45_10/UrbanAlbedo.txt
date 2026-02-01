@@ -1,0 +1,12 @@
+sub_in, num_urbanc, ubl, num_urbanp, lbl, num_urbanl, ubc, filter_urbanc, filter_urbanp, lbp, filter_urbanl, lbc, nc, ubp
+sub_out
+global_ro, urban_clump(nc)%alb_roof_dif, urban_clump(nc)%canyon_hwr, urban_clump(nc)%wtroad_perv, urban_clump(nc)%alb_perroad_dir, urban_clump(nc)%alb_improad_dir, clm3%g%l%c%p%gridcell, urban_clump(nc)%alb_wall_dir, urban_clump(nc)%alb_improad_dif, clm3%g%l%c%cps%coszen, urban_clump(nc)%alb_perroad_dif, clm3%g%l%c%p%column, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%itype, clm3%g%l%coli, urban_clump(nc)%alb_roof_dir, clm3%g%l%gridcell
+global_wo, clm3%g%l%c%p%pps%fsun, clm3%g%l%c%p%pps%fabd_sun, clm3%g%l%c%p%pps%ftdd, clm3%g%l%lps%sabs_perroad_dif, clm3%g%l%lps%sabs_roof_dif, clm3%g%l%lps%sabs_sunwall_dif, clm3%g%l%c%p%pps%ftii, clm3%g%l%c%p%pps%fabd_sha, clm3%g%l%lps%sabs_sunwall_dir, clm3%g%l%lps%sabs_shadewall_dif, clm3%g%l%c%p%pps%fabi, clm3%g%l%lps%sabs_improad_dif, clm3%g%l%c%p%pps%fabd, clm3%g%l%c%p%pps%albd, clm3%g%l%c%p%pps%ftid, clm3%g%l%lps%sabs_roof_dir, clm3%g%l%lps%sabs_perroad_dir, clm3%g%l%c%p%pps%albi, clm3%g%l%c%p%pps%fabi_sun, clm3%g%l%lps%sabs_shadewall_dir, clm3%g%l%c%p%pps%fabi_sha, clm3%g%l%lps%sabs_improad_dir
+global_mod, clm3%g%l%c%cps%albgri, clm3%g%l%c%cps%albgrd
+global_non, clm3%g%l%lps%vf_sr, urban_clump(nc)%alb_wall_dif, clm3%g%l%c%gridcell, clm3%g%l%lps%vf_wr, clm3%g%l%lps%vf_sw, clm3%g%l%lps%vf_rw, clm3%g%l%c%landunit, clm3%g%l%lps%vf_ww, clm3%g%lon, clm3%g%lat, clm3%g%l%colf
+calls, incident_direct, net_solar, incident_diffuse, view_factor
+
+Tree height: 10
+2+, view_factor, 
+5+, net_solar, 
+3+, incident_direct, incident_diffuse, 

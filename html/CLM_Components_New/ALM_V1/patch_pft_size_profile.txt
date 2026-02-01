@@ -1,0 +1,9 @@
+sub_param, cp_pnt
+sub_out
+global_ro, cp_pnt%area, %n, currentCohort%taller, currentPatch%shortest, %bdead, %pft
+global_wo
+global_mod, cp_pnt%pft_agb_profile
+global_non, cp_pnt
+calls
+readParams,
+type(patch), target, intent(inout) :: cp_pnt

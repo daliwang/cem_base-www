@@ -1,0 +1,7 @@
+sub_in, pmap, kdpmpf, kdpmph, sigmp, sigdp, sig, wb, sigh, wst, iterdp, wsb, dsigh, kdp, dt, nlon
+sub_out, sigdp, sigmp
+global_ro
+global_wo
+global_mod
+global_non
+calls, vdplim, kdpfnd, herzin

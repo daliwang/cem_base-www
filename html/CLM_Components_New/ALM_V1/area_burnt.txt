@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, currentSite%oldest_patch;, currentPatch%younger;, %ROS_front, %ROS_back, %area, ldomain%area, %FD, %nf, currentSite%clmgcell
+global_wo, %NF
+global_mod, %AB, currentSite%frac_burnt, %frac_burnt, !currentPatch%ab, %ab
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(inout), pointer :: currentSite

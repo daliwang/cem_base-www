@@ -1,0 +1,7 @@
+sub_in, caseid_in, ctitle_in, single_column_in, username_in, hostname_in, version_in, brnch_retain_casename_in, nsrest_in, scmlon_in, scmlat_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this, shr_sys_abort

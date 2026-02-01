@@ -1,0 +1,7 @@
+sub_in, phys_twin_algorithm_out, phys_loadbalance_out, phys_alltoall_out, phys_chnk_per_thd_out
+sub_out, phys_loadbalance_out, phys_alltoall_out, phys_chnk_per_thd_out, phys_twin_algorithm_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

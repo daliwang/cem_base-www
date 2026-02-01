@@ -1,0 +1,7 @@
+sub_in, bounds, num_nolakec, filter_nosnowc, filter_hydrologyc, filter_snowc, num_nosnowc, filter_nolakec, num_snowc, num_hydrologyc
+sub_out
+global_ro, pps%rootr, col%gridcell, pft%wtgcell, pwf%qflx_tran_veg, cwf%qflx_infl, pft%wtcol, bounds%begg, col%pfti, col%wtgcell, pwf_a%qflx_tran_veg
+global_wo
+global_mod, cps%rootr_column
+global_non, pwf%qflx_evap_soi, pft%wtcol
+calls, pflotranModelStepperRunTillPauseTime, VecGetArrayF90, pflotranModelUpdateFlowConds, pflotranModelGetUpdatedStates, VecRestoreArrayF90, get_proc_global

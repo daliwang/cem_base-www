@@ -1,0 +1,7 @@
+sub_in, ncol, landfrac, vgsi, icefrac, vgo, vgl, ocnfrac, vg
+sub_out, vg
+global_ro
+global_wo
+global_mod
+global_non
+calls

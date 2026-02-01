@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro| this%aux_vars_in, aux_vars_in, NONE| this%source_sinks%first, cur_cond, NONE| cur_cond%next, cur_cond, NONE| %pressure, pressure, NONE| %id_dn, id_dn, NONE
+global_wo| this%aux_vars_ss, aux_vars_ss, NONE
+global_mod
+global_non| cur_cond%conn_set, cur_conn_set, NONE
+calls, this%aux_vars_ss
+readParams,

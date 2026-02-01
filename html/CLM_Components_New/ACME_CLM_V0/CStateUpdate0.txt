@@ -1,0 +1,7 @@
+sub_in, carbonflux_vars, filter_soilp, num_soilp, carbonstate_vars
+sub_out
+global_ro, carbonflux_vars%psnsun_to_cpool_patch, carbonflux_vars%psnshade_to_cpool_patch
+global_wo
+global_mod, carbonstate_vars%cpool_patch
+global_non, carbonstate_vars, carbonflux_vars
+calls

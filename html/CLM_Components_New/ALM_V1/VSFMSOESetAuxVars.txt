@@ -1,0 +1,9 @@
+sub_param, var_type, var_vec, vsfm_soe, offset, auxvar_type
+sub_out
+global_ro, vsfm_soe%aux_vars_in
+global_wo
+global_mod
+global_non
+calls, VecGetLocalSize, vsfm_soe%aux_vars_in, VecGetArrayF90, endrun, VecRestoreArrayF90
+readParams,
+PetscInt, intent(in)                       :: var_type

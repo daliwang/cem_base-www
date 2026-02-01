@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%leaf_long, pftcon%evergreen, pft%itype
+global_wo, pepv%bgtr, pepv%bglfr, pepv%lgsf
+global_mod
+global_non
+calls
+
+Tree height: 2

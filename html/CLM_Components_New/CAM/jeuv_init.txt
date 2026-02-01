@@ -1,0 +1,7 @@
+sub_in, electron_file, euvacdat_file, indexer, photon_file
+sub_out, indexer
+global_ro
+global_wo
+global_mod
+global_non
+calls, freeunit, endrun, getfil

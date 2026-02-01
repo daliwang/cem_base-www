@@ -1,0 +1,7 @@
+sub_in, input_file, xin
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, getfil, bnddyi, get_curr_date, get_perp_date, alloc_err, endrun, mpibcast, handle_ncerr, scatter_field_to_chunk

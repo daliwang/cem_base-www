@@ -1,0 +1,10 @@
+sub_in, ncido, endi, sgridindex, bego, dimname, varname, activeo, endo, ncidi, activei, begi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io
+
+Tree height: 4
+0 , ncd_io, ncd_io, ncd_io, 

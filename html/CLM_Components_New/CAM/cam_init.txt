@@ -1,0 +1,7 @@
+sub_in, ref_ymd, cam_in, ref_tod, start_tod, perpetual_run, mpicom_atm, stop_tod, calendar, cam_out, start_ymd, perpetual_ymd, stop_ymd
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cam_initfiles_open, init_masterlinkedlist, init_pio_subsystem, phys_init, cam_read_restart, stepon_init, atm2hub_alloc, hub2atm_alloc, phys_register, initialize_iop_history, trunc, bldfld, cam_initial, intht

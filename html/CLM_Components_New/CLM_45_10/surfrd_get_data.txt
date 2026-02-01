@@ -1,0 +1,18 @@
+sub_in, lfsurdat, ldomain
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, domain_clean, ncd_io, surfrd_wtxy_veg_all, surfrd_wtxy_veg_dgvm, getfil, ncd_pio_closefile, surfrd_wtxy_special, ncd_pio_openfile, get_proc_bounds, domain_init, ncd_inqfdims, check_var, endrun
+
+Tree height: 6
+0 , get_proc_bounds, 
+1+, getfil, ncd_pio_openfile, ncd_io, 
+2+, check_var, ncd_inqfdims, domain_init, ncd_io, 
+3-, check_var, 
+4-, endrun, 
+3+, ncd_io, 
+4+, domain_clean, surfrd_wtxy_special, surfrd_wtxy_veg_dgvm, ncd_pio_closefile, 
+5-, endrun, 
+5+, endrun, surfrd_wtxy_veg_all, surfrd_wtxy_veg_all, 

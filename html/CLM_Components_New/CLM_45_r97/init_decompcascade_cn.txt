@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_state_inst, bounds
+sub_out
+global_ro
+global_wo, rf_decomp_cascade, is_litter, decomp_pool_name_long, cascade_step_name, cascade_receiver_pool, initial_cn_ratio, decomp_pool_name_short, floating_cn_ratio_decomp_pools, decomp_pool_name_restart, cascade_donor_pool, is_cellulose, is_cwd, pathfrac_decomp_cascade, is_soil, is_metabolic, is_lignin, initial_stock, spinup_factor, decomp_pool_name_history
+global_mod
+global_non
+calls

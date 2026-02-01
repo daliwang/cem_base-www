@@ -1,0 +1,7 @@
+sub_in, dt_diag, zen_angle, vmr, photos, zmid, col_dens, lchnk, ts, pmid, cwat, srf_alb, esfact, dust_vmr, ncol, temper, fracday, tdens, cldfr, relhum, ps
+sub_out, dt_diag, fracday, photos
+global_ro
+global_wo
+global_mod
+global_non
+calls, photoin, get_rlon_all_p, endrun, get_curr_date, set_xnox_photo, get_rlat_all_p

@@ -1,0 +1,10 @@
+sub_param, l2g_scale_type:1, scale_lookup:2
+sub_out, scale_lookup
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+character(len=*), intent(in)  :: l2g_scale_type           ! scale factor type for averaging
+real(r8)        , intent(out) :: scale_lookup(max_lunit)  ! scale factor for each landunit type

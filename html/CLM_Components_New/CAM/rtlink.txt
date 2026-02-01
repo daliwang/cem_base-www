@@ -1,0 +1,7 @@
+sub_in, omds1, omocs2, omds3, dto3, dto2, dtrl, omcbs1, dtsal, gso4, dtcld, radfld, gds1, omds2, gcld, dtds3, gds4, z, dtds4, omso4, dtds2, omcbs2, dsdh, dtant, gant, omocs1, gsal, zen, gds3, dtcbs2, gcbs2, nid, dtocs1, gcbs1, nw, gocs2, omcld, albedo, dtcbs1, gds2, omsal, omds4, dtso4, gocs1, dtds1, omant, dtocs2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ps2str

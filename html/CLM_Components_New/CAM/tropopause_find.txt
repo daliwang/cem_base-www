@@ -1,0 +1,7 @@
+sub_in, primary, tropT, tropZ, tropP, backup, pstate, tropLev
+sub_out, tropLev
+global_ro
+global_wo
+global_mod
+global_non
+calls, tropopause_findUsing

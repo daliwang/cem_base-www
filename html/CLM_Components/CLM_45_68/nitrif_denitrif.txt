@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, bd, bsw, watsat, cellorg, finundated, watfc, smin_no3_vr, conc_o2_unsat, w_scalar, h2osoi_liq, o2_decomp_depth_unsat, o2_decomp_depth_sat, soilpsi, t_scalar, sucsat, conc_o2_sat, h2osoi_vol, t_soisno, dz, smin_nh4_vr, phr_vr
+global_wo, n2_n2o_ratio_denit_vr, pot_f_denit_vr
+global_mod, k_nitr_vr, k_nitr_h2o_vr, fr_WFPS, smin_no3_massdens_vr, soil_bulkdensity, k_nitr_ph_vr, fmax_denit_nitrate_vr, r_psi, anaerobic_frac, soil_co2_prod, wfps_vr, k_nitr_t_vr, pot_f_nit_vr, f_denit_base_vr, ratio_k1, diffus, fmax_denit_carbonsubstrate_vr, ratio_no3_co2
+global_non
+calls

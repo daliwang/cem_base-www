@@ -1,0 +1,11 @@
+sub_in, nc
+sub_out
+global_ro, clm3%g%l%c%landunit, clm3%g%l%c%p%column
+global_wo
+global_mod, clm3%g%l%active, clm3%g%l%c%p%active, clm3%g%l%c%active
+global_non, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, get_clump_bounds, endrun
+
+Tree height: 2
+0 , get_clump_bounds, 
+1+, endrun, 

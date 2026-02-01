@@ -1,0 +1,8 @@
+sub_in, lnd_c2_rof, infodata
+sub_out
+global_ro, component_get_x2c_cx, component_get_c2x_cx
+global_wo
+global_mod
+global_non
+calls, mct_aVect_zero, mct_avect_zero, mct_aVect_initSharedFields, seq_infodata_getData, seq_comm_getData, seq_map_init_rcfile, mct_avect_init, shr_sys_flush
+calls_ln, seq_map_init_rcfile@137, mct_avect_init@125, mct_aVect_zero@119, shr_sys_flush@141, mct_avect_zero@126, seq_infodata_getData@96, mct_aVect_initSharedFields@118, seq_comm_getData@107

@@ -1,0 +1,7 @@
+sub_in, name_id, name_to_find, list_length, list_of_names
+sub_out, name_id
+global_ro
+global_wo
+global_mod
+global_non
+calls

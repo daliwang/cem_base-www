@@ -1,0 +1,7 @@
+sub_in, GridVertex, GridEdge
+sub_out, GridVertex
+global_ro
+global_wo
+global_mod
+global_non
+calls, find_corner_neighbors, initialize_space_filling_curve, initgridedge, create_index_table, CubeSetupEdgeIndex, mesh_connectivity, abortmp, find_side_neighbors

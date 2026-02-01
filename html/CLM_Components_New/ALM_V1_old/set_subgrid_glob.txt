@@ -1,0 +1,13 @@
+sub_param, active:5, dimname:3, beg:1, subgrid:6, end:2, ncid:4
+sub_out, active
+global_ro
+global_wo| subgrid%coslat, coslat, NONE| subgrid%name, name, NONE
+global_mod| subgrid%lon, lon, NONE| subgrid%lat, lat, NONE
+global_non
+calls, ncd_io
+readParams,
+integer            , intent(in)    :: beg, end
+type(file_desc_t)  , intent(inout) :: ncid
+character(len=*)   , intent(inout) :: dimname
+logical            , intent(out)   :: active(beg:end)
+type(subgrid_type) , intent(inout) :: subgrid

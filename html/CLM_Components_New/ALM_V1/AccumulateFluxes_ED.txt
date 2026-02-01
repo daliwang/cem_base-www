@@ -1,0 +1,10 @@
+sub_param, photosyns_vars, p
+sub_out
+global_ro, pft%gridcell, %npp_clm, photosyns_vars%psncanopy_patch, EDpft%ED_patch, %ts_net_uptake, %resp_clm, %gpp_clm, currentPatch%shortest, currentCohort%taller
+global_wo, photosyns_vars%fpsn_patch
+global_mod, %year_net_uptake, %resp_acc, %gpp_acc, %npp_acc
+global_non, currentPatch%younger, gridCellEdState
+calls
+readParams,
+integer              , intent(in)    :: p  !patch/'p'
+type(photosyns_type) , intent(inout) :: photosyns_vars

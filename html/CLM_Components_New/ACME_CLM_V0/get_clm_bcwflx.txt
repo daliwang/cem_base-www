@@ -1,0 +1,7 @@
+sub_in, num_hydrologyc, num_snowc, filter_nolakec, num_urbanc, num_nosnowc, filter_snowc, filter_hydrologyc, filter_nosnowc, filter_urbanc, bounds, num_nolakec
+sub_out
+global_ro, col%wtgcell, clm_pf_idata%pressure_reference, col%pfti, bounds%begg, col%gridcell, cps%frac_h2osfc, pwf_a%qflx_tran_veg, pwf_a%qflx_ev_h2osfc, col%landunit, pft%wtcol, cps%frac_sno_eff, pwf%qflx_tran_veg, lun%itype, cps%hksat, cps%watsat, ces%t_grnd, pft%wtgcell, pflotran_m%option%myrank, pwf_a%qflx_ev_soil, pps%rootr, cwf%qflx_top_soil
+global_wo
+global_mod, cps%rootr_column
+global_non, cps%sucsat, cps%dz, cps%sucmin, clm_a2l%forc_pbot, cws%h2osoi_ice, cps%watmin, cps%bsw, pwf_a%qflx_ev_snow, pwf_a%qflx_evap_soi, cws%h2osoi_liq
+calls, VecRestoreArrayF90, clm_pf_set_sflow_forcing, SnowWater, VecGetArrayF90, BuildSnowFilter

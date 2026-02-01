@@ -1,0 +1,15 @@
+sub_param, nprimeq, y, dt, neq, f, pscal, y0
+sub_out, y, pscal
+global_ro
+global_wo, mbkks_data%iJ
+global_mod, mbkks_data%aj, mbkks_data%nJ
+global_non
+calls, daxpy
+readParams,
+real(r8), intent(in)  :: y0(neq)  ! state variable at previous time step
+real(r8), intent(in)  :: f(neq)   ! derivative
+real(r8), intent(in)  :: dt       ! time stepping
+integer,  intent(in)  :: nprimeq  !
+integer,  intent(in)  :: neq      ! number of equations
+real(r8), intent(out) :: y(neq)   ! updated state variable
+real(r8), intent(out) :: pscal

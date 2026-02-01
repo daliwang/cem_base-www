@@ -1,0 +1,7 @@
+sub_in, EDpftvarcon_inst, numpft
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

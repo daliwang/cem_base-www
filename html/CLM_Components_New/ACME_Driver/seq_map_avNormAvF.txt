@@ -1,0 +1,8 @@
+sub_in, norm, av_o, avfifld, avf_i, av_i, rList, mapper
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_map_avNormArr, shr_sys_abort
+calls_ln, shr_sys_abort@921, seq_map_avNormArr@932, seq_map_avNormArr@934

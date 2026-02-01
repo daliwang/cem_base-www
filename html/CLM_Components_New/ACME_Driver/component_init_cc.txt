@@ -1,0 +1,8 @@
+sub_in, comp, seq_flds_c2x_fluxes, Eclock, seq_flds_c2x_fields, gridcomp_register, drvcomp, seq_flds_x2c_fields, NlFilename, seq_flds_x2c_fluxes, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+calls_ln

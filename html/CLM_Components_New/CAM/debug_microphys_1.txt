@@ -1,0 +1,7 @@
+sub_in, prain, snow_pcw, evapsnow, i, fice, prec_pcw, liq2snow, state1, nevapr, ice2pr, ptend, liq2pr, qme, k, dtime, prodsnow
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, limit, fx, result, last, blist, rlist, fx_vars, inf, alist, epsrel, abserr, iord, elist, bound, ier, neval, epsabs
+sub_out, alist, abserr, ier, neval, last, result, rlist, blist, elist, iord
+global_ro
+global_wo
+global_mod
+global_non
+calls, dqelg, sd1mach, dqk15i

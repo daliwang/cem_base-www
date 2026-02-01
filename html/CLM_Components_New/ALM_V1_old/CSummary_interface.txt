@@ -1,0 +1,11 @@
+sub_param, num_soilc:3, this:1, bounds:2, filter_soilc:4
+sub_out
+global_ro| this%harvest_c_to_cwdc_col, harvest_c_to_cwdc_col, NONE| this%f_co2_soil_vr_col, f_co2_soil_vr_col, NONE| this%dwt_frootc_to_litr_cel_c_col, dwt_frootc_to_litr_cel_c_col, NONE| this%dwt_frootc_to_litr_met_c_col, dwt_frootc_to_litr_met_c_col, NONE| this%gap_mortality_c_to_cwdc_col, gap_mortality_c_to_cwdc_col, NONE| this%hr_vr_col, hr_vr_col, NONE| this%decomp_cpools_sourcesink_col, decomp_cpools_sourcesink_col, NONE| this%dwt_livecrootc_to_cwdc_col, dwt_livecrootc_to_cwdc_col, NONE| this%phenology_c_to_litr_lig_c_col, phenology_c_to_litr_lig_c_col, NONE| this%gap_mortality_c_to_litr_lig_c_col, gap_mortality_c_to_litr_lig_c_col, NONE| this%dwt_deadcrootc_to_cwdc_col, dwt_deadcrootc_to_cwdc_col, NONE| this%harvest_c_to_litr_met_c_col, harvest_c_to_litr_met_c_col, NONE| decomp_cascade_con%is_litter, is_litter, NONE| this%gap_mortality_c_to_litr_met_c_col, gap_mortality_c_to_litr_met_c_col, NONE| this%harvest_c_to_litr_lig_c_col, harvest_c_to_litr_lig_c_col, NONE| this%phenology_c_to_litr_cel_c_col, phenology_c_to_litr_cel_c_col, NONE| this%dwt_frootc_to_litr_lig_c_col, dwt_frootc_to_litr_lig_c_col, NONE| this%phenology_c_to_litr_met_c_col, phenology_c_to_litr_met_c_col, NONE| this%harvest_c_to_litr_cel_c_col, harvest_c_to_litr_cel_c_col, NONE| this%gap_mortality_c_to_litr_cel_c_col, gap_mortality_c_to_litr_cel_c_col, NONE| decomp_cascade_con%is_cwd, is_cwd, NONE
+global_wo| this%cwdc_hr_col, cwdc_hr_col, NONE
+global_mod| this%externalc_to_decomp_cpools_col, externalc_to_decomp_cpools_col, NONE| this%hr_col, hr_col, NONE| this%litterc_loss_col, litterc_loss_col, NONE| this%f_co2_soil_col, f_co2_soil_col, NONE| this%cwdc_loss_col, cwdc_loss_col, NONE| this%externalc_to_decomp_delta_col, externalc_to_decomp_delta_col, NONE
+global_non| decomp_cascade_con%is_soil, is_soil, NONE
+calls
+readParams,
+type(bounds_type) ,  intent(in) :: bounds
+integer,             intent(in) :: num_soilc       ! number of soil columns in filter
+integer,             intent(in) :: filter_soilc(:) ! filter for soil columns

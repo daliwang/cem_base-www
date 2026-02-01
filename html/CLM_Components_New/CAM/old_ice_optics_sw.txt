@@ -1,0 +1,7 @@
+sub_in, state, oldicewp, ice_tau_w, pbuf, ice_tau_w_f, ice_tau, ice_tau_w_g
+sub_out, ice_tau, ice_tau_w_g, ice_tau_w, ice_tau_w_f
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, get_sw_spectral_boundaries, pbuf_get_field

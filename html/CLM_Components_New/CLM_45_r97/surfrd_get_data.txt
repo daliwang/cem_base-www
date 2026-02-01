@@ -1,0 +1,7 @@
+sub_in, lfsurdat, begg, endg, ldomain
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, getfil, ncd_pio_closefile, endrun, domain_clean, surfrd_special, ncd_pio_openfile, ncd_inqfdims, domain_init, check_var, surfrd_veg_dgvm, check_sums_equal_1, ncd_io, surfrd_veg_all

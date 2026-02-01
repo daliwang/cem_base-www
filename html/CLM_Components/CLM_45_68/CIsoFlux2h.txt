@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, pft, pc14f, pc13f, pc13s, pc14s
+calls, CNCIsoHarvestPftToColumn, CIsoFluxCalc, endrun

@@ -1,0 +1,15 @@
+sub_param, phosphorusflux_vars, num_soilc, bounds, clm_bgc_data, carbonflux_vars, filter_soilc, nitrogenflux_vars
+sub_out
+global_ro, clm_bgc_data%decomp_npools_sourcesink_col, clm_bgc_data%decomp_ppools_sourcesink_col, clm_bgc_data%decomp_cpools_sourcesink_col
+global_wo, phosphorusflux_vars%decomp_ppools_sourcesink_col, nitrogenflux_vars%decomp_npools_sourcesink_col, carbonflux_vars%decomp_cpools_sourcesink_col
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)           , intent(in)    :: bounds
+integer                     , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                     , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+type(carbonflux_type)       , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)     , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type)   , intent(inout) :: phosphorusflux_vars
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

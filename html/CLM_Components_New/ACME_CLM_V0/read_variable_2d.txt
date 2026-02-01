@@ -1,0 +1,7 @@
+sub_in, data, this, nt
+sub_out, data
+global_ro, this%varname, this%conversion_factor
+global_wo
+global_mod
+global_non
+calls, , endrun, ncd_io, check_sums_equal_1

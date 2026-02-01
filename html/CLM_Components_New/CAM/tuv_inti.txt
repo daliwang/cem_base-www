@@ -1,0 +1,7 @@
+sub_in, nz, tuv_xsect_file, lng_indexer
+sub_out, lng_indexer
+global_ro
+global_wo
+global_mod
+global_non
+calls, r08_inti, schu_inti, r44_inti, endrun, getfil, cam_pio_openfile, pio_seterrorhandling, pio_closefile

@@ -1,0 +1,7 @@
+sub_in, trg, hybi, trg_x, src, p0, hyai, nsrc, ntrg, ncol, ps
+sub_out, trg
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_default, wrap_inq_dimlen, bnddyi, wrap_inq_varid, wrap_get_var_realx, wrap_open, wrap_inq_dimid, get_curr_date, endrun, addfld, mpibcast, wrap_get_scalar_int, wrap_get_var_int

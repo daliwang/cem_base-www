@@ -1,0 +1,7 @@
+sub_in, num2d, ubg, ubl, lbl, p2c_scale_type, ubc, lbg, garr, lbp, c2l_scale_type, parr, lbc, l2g_scale_type, ubp
+sub_out, garr
+global_ro, itype, wtgcell, active, itype, landunit, landunit, canyon_hwr, gridcell, column
+global_wo
+global_mod
+global_non, npfts, pfti
+calls, build_scale_l2g, endrun

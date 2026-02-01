@@ -1,0 +1,13 @@
+sub_param, bounds, c2l_scale_type, parr, p2c_scale_type, larr
+sub_out, larr
+global_ro, pft%wtlunit, col%landunit, pft%landunit, pft%column, lun%canyon_hwr
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in)  :: parr( bounds%begp: )  ! input column array
+real(r8), intent(out) :: larr( bounds%begl: )  ! output landunit array
+character(len=*), intent(in) :: p2c_scale_type ! scale factor type for averaging
+character(len=*), intent(in) :: c2l_scale_type ! scale factor type for averaging

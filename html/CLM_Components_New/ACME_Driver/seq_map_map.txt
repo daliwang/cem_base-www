@@ -1,0 +1,8 @@
+sub_in, msgtag, string, av_s, av_d, mapper, avwtsfld_s, fldlist, avwts_s, norm
+sub_out, norm
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_rearr_rearrange, mct_aVect_copy, shr_sys_abort, mct_rearr_rearrange_fldlist, seq_map_avNorm
+calls_ln, shr_sys_abort@423, seq_map_avNorm@457, seq_map_avNorm@454, mct_aVect_copy@433, mct_aVect_copy@431, mct_rearr_rearrange@444, seq_map_avNorm@462, mct_rearr_rearrange_fldlist@441, seq_map_avNorm@464, shr_sys_abort@419

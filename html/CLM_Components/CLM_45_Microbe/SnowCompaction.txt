@@ -1,0 +1,7 @@
+sub_in, num_snowc, filter_snowc, lbc, ubc
+sub_out
+global_ro, swe_old, int_snow, imelt, landunit, frac_iceold, itype, h2osoi_liq, snl, n_melt, h2osoi_ice, t_soisno, frac_sno_eff
+global_wo
+global_mod, dz
+global_non, snow_depth
+calls

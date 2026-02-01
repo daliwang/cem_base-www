@@ -1,0 +1,7 @@
+sub_in, hc2s, vco2, flux, ndenair, ncol, vn2, vo, mwair, xnorm, vo2, t
+sub_out, hc2s
+global_ro
+global_wo
+global_mod
+global_non
+calls

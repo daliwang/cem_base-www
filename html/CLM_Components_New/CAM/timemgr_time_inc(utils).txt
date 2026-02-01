@@ -1,0 +1,7 @@
+sub_in, tod2, ymd2, tod1, inc_s, inc_h, ymd1, inc_d
+sub_out, ymd2
+global_ro
+global_wo
+global_mod
+global_non
+calls, chkrc, ESMF_TimeGet, endrun, ESMF_TimeIntervalSet

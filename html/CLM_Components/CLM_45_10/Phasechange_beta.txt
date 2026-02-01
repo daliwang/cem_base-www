@@ -1,0 +1,7 @@
+sub_in, dhsdT, filter_nolakec, fact, ubc, num_nolakec, lbc, xmf
+sub_out, xmf
+global_ro, bsw, landunit, watsat, itype, itype, frac_h2osfc, snl, frac_sno_eff, sucsat, dz
+global_wo, qflx_snow_melt, eflx_snomelt_r, eflx_snomelt_u
+global_mod, snow_depth, qflx_glcice_melt, t_soisno, qflx_snomelt, h2osno, qflx_snofrz_col, eflx_snomelt, imelt, h2osoi_ice, h2osoi_liq, qflx_snofrz_lyr, qflx_glcice
+global_non, frac_sno, tssbef
+calls, t_startf, t_stopf

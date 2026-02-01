@@ -1,0 +1,7 @@
+sub_in, fdp, hs, hr, hl, kkdp, xr, dhl, wdz, wgt2x, lhrzint, wgt2z, xl, rdz, wgt3y, wgt4y, lvrtint, kdp, wgt4z, dhn, rdphi, lam, ht, wgt1z, wgt3z, wgt3x, idp, ys, wgt1x, dht, wgt1y, dhr, wgt2y, yn, wgt4x, dhs, lbasdy, limdrv, nlon, hb, jcen, jdp, fb, dhb, hn, limdrh
+sub_out, fdp
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, whenieq

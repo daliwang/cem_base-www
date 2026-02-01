@@ -1,0 +1,8 @@
+sub_in, infodata, timer_mrg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, t_drvstopf, prep_glc_merge, t_drvstartf
+calls_ln, t_drvstartf@211, prep_glc_merge@217, t_drvstopf@219

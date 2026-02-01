@@ -1,0 +1,7 @@
+sub_in, ncid, this, flag
+sub_out
+global_ro, data=this%water_memory, data=this%root_litter_in, data=this%gpp_acc, data=this%dbh, data=this%livegrass, data=this%areaRestart, data=this%cwd_bg, data=this%leaf_md, data=this%bl, data=this%cwd_ag, data=this%root_litter, data=this%leaf_litter_in, data=this%npp_acc, data=this%bstore, data=this%hite, data=this%root_md, data=this%age, data=this%resp_clm, data=this%canopy_layer, data=this%status_coh, data=this%spread, data=this%laimemory, data=this%old_stock, data=this%bdead, data=this%cohortsPerPatch, data=this%pft, data=this%seed_bank, data=this%numPatchesPerCell, data=this%canopy_trim, data=this%n, data=this%cellWithPatch, data=this%balive, data=this%leaf_litter, data=this%br
+global_wo
+global_mod
+global_non
+calls, get_clmlevel_gsmap, restartvar, mct_gsmap_OP

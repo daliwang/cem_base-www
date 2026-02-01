@@ -1,0 +1,20 @@
+sub_param, cn_ratios:7, ubj:3, lbj:2, pct_sand:11, centurybgc_vars:9, pot_nh3_immob:13, cp_ratios:8, bounds:1, pot_co2_hr:12, jtops:6, pot_decay_rates:10, filter:5, numf:4
+sub_out, pot_nh3_immob, pot_co2_hr
+global_ro| centurybgc_vars%som2, som2, NONE| centurybgc_vars%lit2, lit2, NONE| centurybgc_vars%lit3_dek_reac, lit3_dek_reac, NONE| centurybgc_vars%som2_dek_reac, som2_dek_reac, NONE| centurybgc_vars%som3, som3, NONE| centurybgc_vars%lit2_dek_reac, lit2_dek_reac, NONE| centurybgc_vars%som3_dek_reac, som3_dek_reac, NONE| centurybgc_vars%som1, som1, NONE| centurybgc_vars%som1_dek_reac, som1_dek_reac, NONE| centurybgc_vars%lit1_dek_reac, lit1_dek_reac, NONE| centurybgc_vars%lit1, lit1, NONE| centurybgc_vars%cwd, cwd, NONE| centurybgc_vars%cwd_dek_reac, cwd_dek_reac, NONE| centurybgc_vars%lit3, lit3, NONE
+global_wo
+global_mod
+global_non| centurybgc_vars%nom_pools, nom_pools, NONE
+calls
+readParams,
+type(bounds_type)       , intent(in) :: bounds
+integer                 , intent(in) :: lbj, ubj
+integer                 , intent(in) :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer                 , intent(in) :: numf
+integer                 , intent(in) :: filter(:)
+type(centurybgc_type)   , intent(in) :: centurybgc_vars
+real(r8)                , intent(in) :: cn_ratios(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(in) :: cp_ratios(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(in) :: pot_decay_rates(centurybgc_vars%nom_pools, bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(in) :: pct_sand(bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(out):: pot_co2_hr(bounds%begc:bounds%endc, lbj:ubj)
+real(r8)                , intent(out):: pot_nh3_immob(bounds%begc:bounds%endc, lbj:ubj)

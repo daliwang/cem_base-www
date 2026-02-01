@@ -1,0 +1,12 @@
+sub_param, t_K, p, dden_dp, den
+sub_out, den, dden_dp
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+PetscReal, intent(in)  :: p         ! [Pa]
+PetscReal, intent(in)  :: t_K       ! [K]
+PetscReal, intent(out) :: den       ! [kmol m^{-3}]
+PetscReal, intent(out) :: dden_dp   ! [kmol m^{-3} Pa^{-1}]

@@ -1,0 +1,7 @@
+sub_in, nlfilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, freeunit, mpibcast, endrun, find_group_name

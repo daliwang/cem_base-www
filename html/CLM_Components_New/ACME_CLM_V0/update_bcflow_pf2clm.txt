@@ -1,0 +1,7 @@
+sub_in, filter_hydrologyc, bounds, num_hydrologyc
+sub_out
+global_ro, cwf%qflx_top_soil, col%gridcell, pwf_a%qflx_ev_soil, ces%t_grnd, lun%itype, cps%frac_sno_eff, pwf_a%qflx_ev_h2osfc, col%landunit, cps%frac_h2osfc, bounds%begg, pwf_a%qflx_evap_soi
+global_wo, cwf%qflx_drain
+global_mod, cwf%qflx_surf, cwf%qflx_infl
+global_non, cps%zi, pwf_a%qflx_ev_snow, cps%dz, clm_a2l%forc_pbot
+calls, VecGetArrayF90, VecRestoreArrayF90

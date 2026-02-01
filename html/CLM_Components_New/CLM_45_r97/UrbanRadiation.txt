@@ -1,0 +1,7 @@
+sub_in, filter_urbanp, waterstate_inst, energyflux_inst, num_nourbanl, num_urbanp, num_urbanl, filter_urbanl, atm2lnd_inst, filter_urbanc, num_urbanc, surfalb_inst, temperature_inst, filter_nourbanl, solarabs_inst, urbanparams_inst, bounds
+sub_out
+global_ro, frac_sno, forc_solad, ctype, forc_solai, em_perroad, colf, t_grnd, coli, em_improad, em_roof, forc_lwrad
+global_wo, eflx_lwrad_net, eflx_lwrad_out, fsa_u, eflx_lwrad_net_u
+global_mod, sabs_sunwall_dir, sabs_perroad_dif, sabs_roof_dir, sabs_shadewall_dif, sabs_improad_dif, sabs_perroad_dir, sabv, sabs_improad_dir, sabs_roof_dif, fsa, sabg, sabs_shadewall_dir, sabs_sunwall_dif
+global_non, bounds%begl, urbanparams_inst%em_wall, atm2lnd_inst%forc_solar_grc, bounds%endl, temperature_inst%t_ref2m_patch, surfalb_inst%albd_patch, lun%canyon_hwr, surfalb_inst%albi_patch, lun%wtroad_perv
+calls, get_curr_date, net_longwave

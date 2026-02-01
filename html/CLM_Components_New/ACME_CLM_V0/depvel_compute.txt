@@ -1,0 +1,7 @@
+sub_in, drydepvel_vars, photosyns_vars, atm2lnd_vars, waterstate_vars, frictionvel_vars, bounds, canopystate_vars
+sub_out
+global_ro, atm2lnd_vars%forc_rain_downscaled_col, frictionvel_vars%rb1_patch, canopystate_vars%mlaidiff_patch, pft%gridcell, atm2lnd_vars%forc_t_downscaled_col, pft%landunit, canopystate_vars%annlai_patch, canopystate_vars%fsun_patch, grc%londeg, pft%column, pft%itype, waterstate_vars%h2osoi_vol_col, bounds%endp, atm2lnd_vars%forc_pbot_downscaled_col, atm2lnd_vars%forc_solad_grc, photosyns_vars%rssha_patch, bounds%begp, grc%latdeg, atm2lnd_vars%forc_q_downscaled_col, frictionvel_vars%vds_patch, photosyns_vars%rssun_patch, frictionvel_vars%ram1_patch, canopystate_vars%elai_patch
+global_wo, drydepvel_vars%velocity_patch
+global_mod
+global_non, waterstate_vars%snow_depth_col, atm2lnd_vars%forc_solai_grc
+calls, endrun, seq_drydep_setHCoeff

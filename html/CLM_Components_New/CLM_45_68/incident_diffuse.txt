@@ -1,0 +1,11 @@
+sub_in, num_urbanl, bounds, sdif, canyon_hwr, filter_urbanl
+sub_out, sdif_road, sdif_shadewall, sdif_sunwall
+global_ro, lps%vf_sr, lps%vf_sw
+global_wo
+global_mod
+global_non
+calls, shr_assert, endrun
+
+Tree height: 2
+0 , shr_assert, shr_assert, shr_assert, shr_assert, shr_assert, 
+1+, endrun, 

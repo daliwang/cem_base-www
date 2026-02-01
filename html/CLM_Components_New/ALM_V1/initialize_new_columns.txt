@@ -1,0 +1,11 @@
+sub_param, temperature_vars, cactive_prior, bounds
+sub_out
+global_ro, bounds%begc:bounds%endc
+global_wo
+global_mod
+global_non
+calls, GetGlobalWrite, copy_state
+readParams,
+type(bounds_type)      , intent(in)    :: bounds                        ! bounds
+logical                , intent(in)    :: cactive_prior( bounds%begc: ) ! column-level active flags from prior time step
+type(temperature_type) , intent(inout) :: temperature_vars

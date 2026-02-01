@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+**/Traffic.csv
+**/Location_Stats.csv
+cgi-bin-bk/
+error/

@@ -1,0 +1,12 @@
+sub_param, this, cond_type, cond_type_to_exclude, num_conds, ncells_for_conds
+sub_out, ncells_for_conds, num_conds
+global_ro, %ncells, cur_cond%next, this%source_sinks%first, this%boundary_conditions%first
+global_wo
+global_mod
+global_non
+calls, this%NumConditions, endrun
+readParams,
+PetscInt, intent(in)                     :: cond_type
+PetscInt, intent(in)                     :: cond_type_to_exclude
+PetscInt, intent(out)                    :: num_conds
+PetscInt, intent(out), pointer           :: ncells_for_conds(:)

@@ -1,0 +1,7 @@
+sub_in, num_h2osfc, no_update, waterstate_vars, bounds, filter_h2osfc
+sub_out
+global_ro, waterstate_vars%h2osno_col, col%landunit, col%micro_sigma
+global_wo, waterstate_vars%frac_sno_eff_col
+global_mod, waterstate_vars%h2osfc_col, waterstate_vars%h2osoi_liq_col, waterstate_vars%frac_h2osfc_col, waterstate_vars%frac_sno_col
+global_non
+calls

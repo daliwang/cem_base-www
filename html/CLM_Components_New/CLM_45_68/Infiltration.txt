@@ -1,0 +1,9 @@
+sub_in, num_urbanc, num_hydrologyc, bounds, filter_urbanc, filter_hydrologyc
+sub_out
+global_ro, cps%b_infil, cps%dz, pwf_a%qflx_ev_soil, cps%max_moist, cps%frac_h2osfc, cws%ice, pwf_a%qflx_evap_grnd, cps%snl, cws%h2osoi_ice, lun%itype, cps%watsat, cws%i_0, cws%moist, cps%frac_sno_eff, cps%topo_slope, cps%h2osfc_thresh, cps%hksat, cws%fsat, pwf_a%qflx_ev_h2osfc, cws%max_infil, col%itype, cwf%qflx_top_soil
+global_wo, cps%eff_porosity
+global_mod, cwf%qflx_infl, cws%h2osfc, cwf%qflx_h2osfc_surf, cps%icefrac, cwf%qflx_surf
+global_non, cws%zwt, cps%smpmin, cps%sucsat, col%landunit, cws%zwt_perched, pwf_a%qflx_evap_soi, cws%frost_table, cws%h2osno, cws%h2osoi_liq, ces%t_h2osfc, cps%snow_depth, pwf_a%qflx_ev_snow, cps%bsw, cws%fcov, ces%t_soisno, cps%hksat_min
+calls
+
+Tree height: 6

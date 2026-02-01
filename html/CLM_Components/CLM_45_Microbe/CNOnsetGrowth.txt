@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, woody, onset_counter, bgtr, itype, livestemc_xfer, livecrootn_xfer, deadstemn_xfer, leafn_xfer, frootn_xfer, deadcrootn_xfer, deadstemc_xfer, livestemn_xfer, frootc_xfer, leafc_xfer, livecrootc_xfer, deadcrootc_xfer, onset_flag
+global_wo, deadstemc_xfer_to_deadstemc, deadstemn_xfer_to_deadstemn, frootn_xfer_to_frootn, livestemn_xfer_to_livestemn, livecrootc_xfer_to_livecrootc, deadcrootc_xfer_to_deadcrootc, leafc_xfer_to_leafc, livecrootn_xfer_to_livecrootn, frootc_xfer_to_frootc, livestemc_xfer_to_livestemc, leafn_xfer_to_leafn, deadcrootn_xfer_to_deadcrootn
+global_mod
+global_non
+calls

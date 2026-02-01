@@ -1,0 +1,8 @@
+sub_param, vsfm_mpp
+sub_out
+global_ro, cur_goveq%next, vsfm_soe%goveqns, cur_goveq%ncells
+global_wo
+global_mod
+global_non, vsfm_mpp%sysofeqns, cur_goveq, vsfm_mpp%sysofeqns
+calls, DMCompositeCreate, DMSetUp, SNESSetJacobian, DMCreateGlobalVector, DMSetOptionsPrefix, DMCreateMatrix, DMCompositeAddDM, SNESSetFunction, SNESSetTolerances, VecZeroEntries, DMSetFromOptions, DMDASetFieldName, SNESSetFromOptions, endrun, DMDestroy, DMDACreate1d, SNESCreate
+readParams,

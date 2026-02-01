@@ -1,0 +1,11 @@
+sub_param, bounds, atm2lnd_vars, phosphorusflux_vars
+sub_out
+global_ro, col%gridcell, atm2lnd_vars%forc_pdep_grc
+global_wo, phosphorusflux_vars%pdep_to_sminp_col
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars

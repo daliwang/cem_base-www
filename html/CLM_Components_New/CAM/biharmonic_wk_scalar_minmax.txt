@@ -1,0 +1,7 @@
+sub_in, qtens, edgeq, deriv, emin, elem, emax, nets, nete, hybrid
+sub_out, emax, emin
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, t_startf, edgeVunpackMin, bndry_exchangeV, edgeVpack, edgeVunpack, edgeVunpackMax

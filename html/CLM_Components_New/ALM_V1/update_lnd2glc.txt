@@ -1,0 +1,15 @@
+sub_param, temperature_vars, filter_do_smb_c, init, this, bounds, num_do_smb_c, waterflux_vars
+sub_out
+global_ro, col%itype, waterflux_vars%qflx_glcice_col, temperature_vars%t_soisno_col, col%gridcell, col%glc_topo, col%landunit
+global_wo, this%topo_grc, this%tsrf_grc
+global_mod, this%qice_grc
+global_non
+calls, endrun
+readParams,
+class(lnd2glc_type)    , intent(inout) :: this
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_do_smb_c       ! number of columns in filter_do_smb_c
+integer                , intent(in)    :: filter_do_smb_c(:) ! column filter: columns where smb calculations are performed
+type(temperature_type) , intent(in)    :: temperature_vars
+type(waterflux_type)   , intent(in)    :: waterflux_vars
+logical                , intent(in)    :: init               ! if true=>only set a subset of fields

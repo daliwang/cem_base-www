@@ -1,0 +1,7 @@
+sub_in, iflag, locfn, fulpath
+sub_out, locfn
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort

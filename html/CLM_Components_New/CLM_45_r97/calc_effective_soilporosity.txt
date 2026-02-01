@@ -1,0 +1,7 @@
+sub_in, ubj, watsat, denice, eff_por, h2osoi_ice, filter, bounds, numf
+sub_out, eff_por
+global_ro
+global_wo
+global_mod
+global_non
+calls

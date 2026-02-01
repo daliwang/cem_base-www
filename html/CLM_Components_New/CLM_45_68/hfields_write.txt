@@ -1,0 +1,18 @@
+sub_in, mode, t
+sub_out
+global_ro, tape(t)%hlist(f)%hbuf
+global_wo
+global_mod
+global_non
+calls, ncd_io, hfields_1dinfo, ncd_defvar, endrun
+
+Tree height: 6
+3+, hfields_1dinfo, 
+4-, ncd_io, 
+4+, ncd_io, 
+5+, endrun, 
+2+, hfields_1dinfo, endrun, 
+4-, ncd_defvar, 
+4+, ncd_defvar, 
+4-, ncd_defvar, 
+4+, ncd_defvar, 

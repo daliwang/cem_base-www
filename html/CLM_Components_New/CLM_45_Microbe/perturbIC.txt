@@ -1,0 +1,12 @@
+sub_in, landunit
+sub_out
+global_ro, clm3%g%l%c%itype, landunit%c%landunit, landunit%itype
+global_wo
+global_mod, landunit%c%ces%t_soisno, landunit%c%ces%t_lake, landunit%c%ces%t_grnd
+global_non, landunit%c%cps%snl, landunit%lakpoi
+calls, get_proc_bounds, random_number
+
+Tree height: 6
+2+, get_proc_bounds, random_number, 
+3-, random_number, 
+3+, random_number, 

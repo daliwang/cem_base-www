@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, %nf, ldomain%area, %area, currentSite%clmgcell, %ROS_back, %FD, currentSite%oldest_patch;, currentPatch%younger;, %ROS_front
+global_wo, %NF
+global_mod, !currentPatch%ab, %ab, %AB, %frac_burnt, currentSite%frac_burnt
+global_non
+calls

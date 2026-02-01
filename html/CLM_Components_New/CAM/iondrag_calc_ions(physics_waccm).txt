@@ -1,0 +1,7 @@
+sub_in, delt, pbuf, ncol, ptend, state, lchnk
+sub_out
+global_ro, q_xo2, q_o2p, q_elec, q_op, q_nop, q_xo1
+global_wo
+global_mod
+global_non
+calls, t_stopf, jouleheat_tend, pbuf_set_field, iondrag_tend, set_mean_mass, physics_ptend_init, outfld, get_exbdrift, pbuf_get_field, t_startf

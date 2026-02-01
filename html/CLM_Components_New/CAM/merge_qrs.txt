@@ -1,0 +1,7 @@
+sub_in, hmlt, cpair, hmrg, ncol, hcam
+sub_out, hmrg
+global_ro
+global_wo
+global_mod
+global_non
+calls

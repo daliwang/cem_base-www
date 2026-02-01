@@ -1,0 +1,7 @@
+sub_in, p_rate, m, inv, ncol
+sub_out, p_rate
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,8 @@
+sub_in, comp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_gsmap_cx, component_get_gsmap_cc
+calls, seq_comm_getinfo, mct_gsMap_clean, seq_mctext_gsmapExtend, seq_mctext_gsmapCreate
+calls_ln, seq_mctext_gsmapCreate@333, seq_comm_getinfo@325, seq_comm_getinfo@326, seq_mctext_gsmapExtend@332, seq_comm_getinfo@324, seq_comm_getinfo@311, mct_gsMap_clean@335

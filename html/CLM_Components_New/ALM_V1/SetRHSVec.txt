@@ -1,0 +1,27 @@
+sub_param, hs_soil, tk, fact, fn, filter_nolakec, c_h2osfc, sabg_lyr_col, tk_h2osfc, dz_h2osfc, rvector, waterstate_vars, dhsdT, bounds, hs_top_snow, hs_h2osfc, temperature_vars, num_nolakec, dtime, hs_top
+sub_out, rvector
+global_ro
+global_wo
+global_mod
+global_non, bounds%endc, bounds%begc, waterstate_vars%frac_h2osfc_col, temperature_vars%t_h2osfc_col, temperature_vars%t_soisno_col, waterstate_vars%frac_sno_eff_col
+calls, SetRHSVec_Snow, SetRHSVec_StandingSurfaceWater, SetRHSVec_Soil
+readParams,
+type(bounds_type) , intent(in)  :: bounds                            ! bounds
+integer  , intent(in)  :: num_nolakec                                ! number of column non-lake points in column filter
+integer  , intent(in)  :: filter_nolakec(:)                          ! column filter for non-lake points
+real(r8) , intent(in)  :: dtime                                      ! land model time step (sec)
+real(r8) , intent(in)  :: hs_h2osfc( bounds%begc: )                  ! heat flux on standing water [W/m2]
+real(r8) , intent(in)  :: hs_top_snow( bounds%begc: )                ! heat flux on top snow layer [W/m2]
+real(r8) , intent(in)  :: hs_soil( bounds%begc: )                    ! heat flux on soil [W/m2]
+real(r8) , intent(in)  :: hs_top( bounds%begc: )                     ! net energy flux into surface layer (col) [W/m2]
+real(r8) , intent(in)  :: dhsdT( bounds%begc: )                      ! temperature derivative of "hs" [col]
+real(r8) , intent(in)  :: sabg_lyr_col( bounds%begc: , -nlevsno+1: ) ! absorbed solar radiation (col,lyr) [W/m2]
+real(r8) , intent(in)  :: tk( bounds%begc: , -nlevsno+1: )           ! thermal conductivity [W/(m K)]
+real(r8) , intent(in)  :: tk_h2osfc( bounds%begc: )                  ! thermal conductivity of h2osfc [W/(m K)] [col]
+real(r8) , intent(in)  :: fact( bounds%begc: , -nlevsno+1: )         ! used in computing tridiagonal matrix [col, lev]
+real(r8) , intent(in)  :: fn( bounds%begc: , -nlevsno+1: )           ! heat diffusion through the layer interface [W/m2]
+real(r8) , intent(in)  :: c_h2osfc( bounds%begc: )                   ! heat capacity of surface water [col]
+real(r8) , intent(in)  :: dz_h2osfc( bounds%begc: )                  ! Thickness of standing water [m]
+real(r8) , intent(out) :: rvector( bounds%begc: , -nlevsno: )        ! RHS vector used in numerical solution of temperature
+type(temperature_type) , intent(in) :: temperature_vars
+type(waterstate_type)  , intent(in) :: waterstate_vars

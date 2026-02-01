@@ -1,0 +1,7 @@
+sub_in, newentry
+sub_out
+global_ro
+global_wo, next_entry, listentry
+global_mod
+global_non
+calls

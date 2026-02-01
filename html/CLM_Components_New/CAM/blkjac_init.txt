@@ -1,0 +1,7 @@
+sub_in, deriv, lambdasq, nets, elem, nete, blkjac
+sub_out, blkjac
+global_ro, metinv, metdet, rmp
+global_wo
+global_mod
+global_non, elem
+calls, dgetrf, dgetri, haltmp

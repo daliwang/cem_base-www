@@ -1,0 +1,10 @@
+sub_param, bounds, dom_clm
+sub_out
+global_ro, ldomain%area, bounds%begg, ldomain%lonc, ldomain%latc, ldomain%frac, ldomain%mask
+global_wo
+global_mod
+global_non
+calls, mct_gGrid_importRattr, mct_gsMap_orderedPoints, mct_gGrid_init, mct_gGrid_importIAttr, mct_gGrid_importRAttr
+readParams,
+type(bounds_type), intent(in) :: bounds
+type(mct_ggrid), intent(out)   :: dom_clm     ! Output domain information for land model

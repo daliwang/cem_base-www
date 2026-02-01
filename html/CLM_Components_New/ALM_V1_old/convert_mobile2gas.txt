@@ -1,0 +1,17 @@
+sub_param, jtops:4, filter:6, tracer_conc_mobile:10, ubj:3, lbj:2, numf:5, betrtracer_vars:9, bounds:1, gas2bulkcef_mobile_col:8, do_forward:7
+sub_out, tracer_conc_mobile
+global_ro| betrtracer_vars%is_volatile, is_volatile, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in) :: bounds                  ! bounds
+integer,                intent(in) :: lbj, ubj                ! lower and upper bounds
+integer,                intent(in) :: jtops(bounds%begc: )    ! top label of each column
+integer,                intent(in) :: numf                    ! number of filters
+integer,                intent(in) :: filter(:)               ! filter
+logical,                intent(in) :: do_forward              ! true, dual_bulk => gaseous
+type(betrtracer_type),  intent(in) :: betrtracer_vars         ! betr configuration information
+real(r8),               intent(in) :: gas2bulkcef_mobile_col(bounds%begc: ,lbj: , 1: )  !conversion parameter
+real(r8),             intent(inout):: tracer_conc_mobile(bounds%begc: ,lbj: , 1: )  !bulk mobile tracer

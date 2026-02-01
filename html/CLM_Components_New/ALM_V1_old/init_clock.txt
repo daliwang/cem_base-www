@@ -1,0 +1,12 @@
+sub_param, start_date:1, stop_date:4, ref_date:2, curr_date:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_ClockGet, ESMF_TimeIntervalSet, chkrc, ESMF_ClockAdvance
+readParams,
+type(ESMF_Time), intent(in) :: start_date  ! start date for run
+type(ESMF_Time), intent(in) :: ref_date    ! reference date for time coordinate
+type(ESMF_Time), intent(in) :: curr_date   ! current date (equal to start_date)
+type(ESMF_Time), intent(in) :: stop_date   ! stop date for run

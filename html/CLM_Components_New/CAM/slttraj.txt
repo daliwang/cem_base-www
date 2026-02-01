@@ -1,0 +1,7 @@
+sub_in, detai, ztodt, kkdp, kdp, etadotp, u3p, lam, wgt4x, pmap, wgt2z, dhr, v3p, wgt2y, upr, wgt4z, hl, wgt3x, etamid, wgt2x, lbasiy, wgt1y, wgt1x, v3, wgt3z, lampr, yn, phi, idp, xl, rdz, dhl, dht, sigdp, lamdp, hs, wgt4y, etaint, etadot, vpr, hn, lat, hb, detam, phipr, lbassi, jdp, nlon, v3sld, u3, dlam, rdphi, lbasiz, u3sld, jcen, ra, iter, dphi, dhn, xr, dhb, hr, kdpmpf, ys, kdpmph, wgt1z, wgt3y, dhs, ht, phidp
+sub_out, yn, vpr, xr, xl, upr, phipr, ys, lampr
+global_ro
+global_wo
+global_mod
+global_non
+calls, bandij, sltlinint, depinc, kdpfnd, trajdp

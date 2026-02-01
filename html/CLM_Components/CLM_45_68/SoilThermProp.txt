@@ -1,0 +1,7 @@
+sub_in, cv, filter_nolakec, bounds, num_nolakec, tk_h2osfc, tk
+sub_out, cv, tk_h2osfc, tk
+global_ro, h2osfc, csol, landunit, tk_roof, watsat, tk_improad, cv_wall, h2osno, itype, snl, h2osoi_liq, cv_improad, z, zi, cv_roof, tkdry, h2osoi_ice, t_soisno, dz, tkmg, tk_wall, nlev_improad, frac_sno_eff
+global_wo
+global_mod, itype, thk, bw
+global_non, tksatu
+calls, t_startf, shr_assert, t_stopf

@@ -1,0 +1,10 @@
+sub_param, y:2, x:1
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), dimension(:), intent(in)  :: x  !input vector
+real(r8), dimension(:), intent(out) :: y  !sum

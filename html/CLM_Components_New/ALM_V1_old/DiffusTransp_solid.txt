@@ -1,0 +1,21 @@
+sub_param, dtime_col:10, numfl:5, source:12, trcin:8, bounds:1, dz:11, hmconductance:9, filter:6, ubj:3, ntrcs:7, lbj:2, update_col:13, lbn:4, dtracer:14
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, Diffustransp_solid_tridiag, Tridiagonal
+readParams,
+type(bounds_type),  intent(in) :: bounds                       ! bounds
+integer  , intent(in)   :: lbj, ubj                            ! lbinning and ubing level indices
+integer  , intent(in)   :: lbn(bounds%begc: )                  ! indices of top boundary
+integer  , intent(in)   :: numfl                               ! filter dimension
+integer  , intent(in)   :: filter(:)                           ! filter
+integer  , intent(in)   :: ntrcs
+real(r8) , intent(in)   :: hmconductance(bounds%begc: , lbj: ) ! weighted conductance
+real(r8) , intent(in)   :: dtime_col(bounds%begc: )            ! model time step
+real(r8) , intent(in)   :: dz(bounds%begc: , lbj: )            ! layer thickness
+real(r8) , intent(in)   :: trcin (bounds%begc: , lbj: , 1: )   ! tracer concentration [mol/m3]
+real(r8) , intent(in)   :: source(bounds%begc: , lbj: , 1: )   ! chemical sources [mol/m3/s]
+logical  , intent(in)   :: update_col(bounds%begc: )           ! logical switch indicating if the column is for active update
+real(r8), intent(inout) :: dtracer(bounds%begc: , lbj: ,1: )   ! update to the tracer

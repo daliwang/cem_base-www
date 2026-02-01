@@ -1,0 +1,7 @@
+sub_in, hwn, etamid, q2, cwava, q1, w, pdel, nlon
+sub_out, hwn
+global_ro
+global_wo
+global_mod
+global_non
+calls

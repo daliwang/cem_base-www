@@ -1,0 +1,7 @@
+sub_in, xs_long_file, lng_indexer
+sub_out, lng_indexer
+global_ro
+global_wo
+global_mod
+global_non
+calls, getfil, mpibcast, endrun, alloc_err

@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, carbonstate_vars, bounds, carbonflux_vars
+sub_out
+global_ro, carbonflux_vars%gpp_col, carbonflux_vars%er_col, carbonstate_vars%totcolc_col, carbonflux_vars%fire_closs_col, carbonflux_vars%som_c_leached_col, carbonflux_vars%hrv_xsmrpool_to_atm_col, carbonstate_vars%begcb_col, grc%londeg, col%gridcell, grc%latdeg, carbonflux_vars%product_closs_col, carbonflux_vars%dwt_closs_col
+global_wo
+global_mod, carbonstate_vars%errcb_col, carbonstate_vars%endcb_col
+global_non
+calls, endrun

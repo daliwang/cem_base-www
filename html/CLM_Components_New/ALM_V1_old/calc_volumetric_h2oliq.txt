@@ -1,0 +1,17 @@
+sub_param, jtop:2, eff_porosity:7, bounds:1, ubj:4, lbj:3, h2osoi_liq:8, vol_liq:10, numf:5, denh2o:9, filter:6
+sub_out, vol_liq
+global_ro| col%dz, dz, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)    :: bounds                             ! bounds
+integer           , intent(in)    :: jtop( bounds%begc: )               ! top level for each column [col]
+integer           , intent(in)    :: lbj, ubj                           ! lbinning and ubing level indices
+integer           , intent(in)    :: numf                               ! filter dimension
+integer           , intent(in)    :: filter(:)                          ! filter
+real(r8)          , intent(in)    :: eff_porosity(bounds%begc: , lbj: ) ! effective soil porosity
+real(r8)          , intent(in)    :: h2osoi_liq(bounds%begc: , lbj: )   ! liquid water content [kg H2o/m2]
+real(r8)          , intent(in)    :: denh2o                             ! water density [kg/m3]
+real(r8)          , intent(inout) :: vol_liq(bounds%begc: , lbj: )      ! volumetric liquid water content

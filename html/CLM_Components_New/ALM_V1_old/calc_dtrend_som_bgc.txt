@@ -1,0 +1,12 @@
+sub_param, cascade_matrix:3, reaction_rates:4, nx:1, ny:2, dxdt:5
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, dgemv
+readParams,
+integer,  intent(in) :: nx, ny
+real(r8), intent(in) :: cascade_matrix(1:nx,1:ny)
+real(r8), intent(in) :: reaction_rates(1:ny)
+real(r8), intent(out):: dxdt(1:nx)

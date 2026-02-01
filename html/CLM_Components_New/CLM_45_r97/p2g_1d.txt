@@ -1,0 +1,7 @@
+sub_in, l2g_scale_type, parr, bounds, p2c_scale_type, c2l_scale_type, garr
+sub_out, garr
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, build_scale_l2g

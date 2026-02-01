@@ -1,0 +1,7 @@
+sub_in, Ainv, sphere, FaceNum, alphabeta
+sub_out, Ainv
+global_ro
+global_wo
+global_mod
+global_non
+calls

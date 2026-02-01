@@ -1,0 +1,7 @@
+sub_in, num_soilp, aroot, cnveg_state_inst, this, filter_soilp, cnveg_nitrogenflux_inst, arepr, cnveg_nitrogenstate_inst, c14_cnveg_carbonflux_inst, cnveg_carbonflux_inst, crop_inst, c13_cnveg_carbonflux_inst, canopystate_inst, photosyns_inst, bounds, cnveg_carbonstate_inst
+sub_out, aroot, arepr
+global_ro, grpnow, froot_mr, croplive, annmax_retransn, psnsun, livestemc, retransn, xsmrpool, allconsl, gddmaturity, annsum_potential_gpp, arootf, c13_psnsha, leaf_mr, flivewd, fleafi, peaklai, arooti, ivt, annsum_npp, laisun, aleaff, c14_psnsha, psnsha, deadwdcn, croot_stem, woody, grperc, fleafcn, ffrootcn, stem_leaf, grain_mr, astemf, fstemcn, livestem_mr, c14_psnsun, bfact, leafc, huileaf, hui, graincn, livewdcn, froot_leaf, laisha, frootcn, declfact, frootc, leafout, leafcn, allconss, huigrain, c13_psnsun, livecroot_mr
+global_wo, leafn_to_retransn, livestemn_to_retransn, livestem_xsmr, frootn_to_retransn, livecroot_xsmr, froot_xsmr, leaf_xsmr, grain_xsmr, cpool_to_xsmrpool
+global_mod, leaf_curmr, aleaf, froot_curmr, c_allometry, xsmrpool_recover, tempsum_potential_gpp, avail_retransn, availc, psnsun_to_cpool, tempmax_retransn, gpp, psnshade_to_cpool, livecroot_curmr, n_allometry, plant_ndemand, astem, retransn_to_npool, grain_flag, aleafi, grain_curmr, astemi, livestem_curmr
+global_non, cnveg_nitrogenflux_inst%sminn_to_npool_patch
+calls

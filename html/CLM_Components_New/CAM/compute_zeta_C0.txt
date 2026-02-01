@@ -1,0 +1,7 @@
+sub_in, zeta, nete, hybrid, nt, elem, nets
+sub_out, zeta
+global_ro
+global_wo
+global_mod
+global_non
+calls, make_C0, derivinit

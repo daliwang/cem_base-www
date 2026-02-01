@@ -1,0 +1,7 @@
+sub_in, hvcoord, flt, deriv, cg, red, blkjac, nets, elem, tl, dt, hybrid, nete, refstate
+sub_out, elem
+global_ro, Tref, Amat, Pvec, Tmat, Emat, RTref, Lambda, Emat_inv
+global_wo
+global_mod
+global_non, refstate%Amat_inv, refstate%Href
+calls, t_startf, edgeVpack, cg_create, t_stopf, preq_pressure, preq_omegap, edgeVunpack, preq_filter, bndry_exchangeV, prim_diffusion, t_barrierf, set_vert_struct_mat, preq_vertadv, blkjac_init

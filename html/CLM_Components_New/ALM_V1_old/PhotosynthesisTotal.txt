@@ -1,0 +1,14 @@
+sub_param, atm2lnd_vars:3, cnstate_vars:4, fn:1, photosyns_vars:6, canopystate_vars:5, filterp:2
+sub_out
+global_ro| canopystate_vars%laisha_patch, laisha, NONE| photosyns_vars%psnsha_wc_patch, psnsha_wc, NONE| cnstate_vars%rc14_atm_patch, rc14_atm, NONE| photosyns_vars%psnsha_patch, psnsha, NONE| photosyns_vars%psnsun_wp_patch, psnsun_wp, NONE| photosyns_vars%psnsun_patch, psnsun, NONE| photosyns_vars%alphapsnsha_patch, alphapsnsha, NONE| photosyns_vars%psnsun_wj_patch, psnsun_wj, NONE| canopystate_vars%laisun_patch, laisun, NONE| atm2lnd_vars%forc_pc13o2_grc, forc_pc13o2, NONE| photosyns_vars%psnsha_wj_patch, psnsha_wj, NONE| photosyns_vars%psnsha_wp_patch, psnsha_wp, NONE| atm2lnd_vars%forc_pco2_grc, forc_pco2, NONE| photosyns_vars%alphapsnsun_patch, alphapsnsun, NONE| pft%gridcell, gridcell, NONE| photosyns_vars%psnsun_wc_patch, psnsun_wc, NONE
+global_wo| photosyns_vars%c14_psnsun_patch, c14_psnsun, NONE| photosyns_vars%fpsn_wc_patch, fpsn_wc, NONE| photosyns_vars%fpsn_wp_patch, fpsn_wp, NONE| photosyns_vars%fpsn_wj_patch, fpsn_wj, NONE| photosyns_vars%c13_psnsha_patch, c13_psnsha, NONE| photosyns_vars%fpsn_patch, fpsn, NONE| photosyns_vars%c14_psnsha_patch, c14_psnsha, NONE| photosyns_vars%c13_psnsun_patch, c13_psnsun, NONE
+global_mod| photosyns_vars%rc13_psnsha_patch, rc13_psnsha, NONE| photosyns_vars%rc13_psnsun_patch, rc13_psnsun, NONE| photosyns_vars%rc13_canair_patch, rc13_canair, NONE
+global_non| atm2lnd_vars%forc_po2_grc, forc_po2, NONE
+calls
+readParams,
+integer                , intent(in)    :: fn                             ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                    ! patch filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars

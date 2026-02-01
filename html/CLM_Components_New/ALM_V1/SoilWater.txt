@@ -1,0 +1,19 @@
+sub_param, waterstate_vars, soilhydrology_vars, soilstate_vars, num_urbanc, soil_water_retention_curve, filter_urbanc, filter_hydrologyc, bounds, temperature_vars, waterflux_vars, num_hydrologyc
+sub_out
+global_ro, col%dz, waterstate_vars%h2osoi_ice_col
+global_wo, waterstate_vars%h2osoi_vol_col
+global_mod, waterstate_vars%h2osoi_liq_col, soilhydrology_vars%wa_col
+global_non
+calls, endrun, soilwater_zengdecker2009, soilwater_vsfm
+readParams,
+type(bounds_type)        , intent(in)    :: bounds                ! bounds
+integer                  , intent(in)    :: num_hydrologyc        ! number of column soil points in column filter
+integer                  , intent(in)    :: filter_hydrologyc(:)  ! column filter for soil points
+integer                  , intent(in)    :: num_urbanc            ! number of column urban points in column filter
+integer                  , intent(in)    :: filter_urbanc(:)      ! column filter for urban points
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+class(soil_water_retention_curve_type), intent(in) :: soil_water_retention_curve

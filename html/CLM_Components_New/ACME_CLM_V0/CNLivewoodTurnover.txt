@@ -1,0 +1,7 @@
+sub_in, filter_soilp, nitrogenstate_vars, nitrogenflux_vars, carbonstate_vars, carbonflux_vars, num_soilp
+sub_out
+global_ro, carbonstate_vars%livecrootc_patch, pft%itype, ecophyscon%woody, carbonstate_vars%livestemc_patch, ecophyscon%livewdcn, ecophyscon%deadwdcn
+global_wo, nitrogenflux_vars%livecrootn_to_retransn_patch, carbonflux_vars%livestemc_to_deadstemc_patch, carbonflux_vars%livecrootc_to_deadcrootc_patch, nitrogenflux_vars%livestemn_to_retransn_patch
+global_mod, nitrogenflux_vars%livecrootn_to_deadcrootn_patch, nitrogenflux_vars%livestemn_to_deadstemn_patch
+global_non, nitrogenstate_vars%livecrootn_patch, nitrogenstate_vars%livestemn_patch
+calls

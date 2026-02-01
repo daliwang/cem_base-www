@@ -1,0 +1,10 @@
+sub_in, mss_cnc_aer_in, h2osno_liq, flg_slr_in, coszen, snw_rds, ubc, num_nourbanc, albsfc, filter_nourbanc, flg_snw_ice, lbc, h2osno_ice
+sub_out, albout, flx_abs
+global_ro, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osno
+global_wo
+global_mod
+global_non, clm3%g%l%c%cps%frac_sno_eff
+calls, endrun
+
+Tree height: 5
+2+, endrun, endrun, endrun, endrun, 

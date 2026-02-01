@@ -1,0 +1,7 @@
+sub_in, tl, nets, elem, nete, spelt
+sub_out, spelt
+global_ro
+global_wo
+global_mod
+global_non
+calls, vmap, abortmp, get_Ainv

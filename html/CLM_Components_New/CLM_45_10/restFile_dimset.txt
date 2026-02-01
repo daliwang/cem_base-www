@@ -1,0 +1,10 @@
+sub_in, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, getdatetime, ncd_defdim, get_proc_global, ncd_putatt
+
+Tree height: 1
+0 , get_proc_global, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_defdim, ncd_putatt, getdatetime, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, ncd_putatt, 

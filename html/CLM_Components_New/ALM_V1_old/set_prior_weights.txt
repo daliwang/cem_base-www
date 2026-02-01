@@ -1,0 +1,10 @@
+sub_param, this:1, bounds:2
+sub_out
+global_ro| pft%wtcol, wtcol, NONE| col%active, active, NONE
+global_wo| this%cactive, cactive, NONE| this%pwtcol, pwtcol, NONE
+global_mod
+global_non
+calls
+readParams,
+class(prior_weights_type) , intent(inout) :: this   ! this object
+type(bounds_type)         , intent(in)    :: bounds

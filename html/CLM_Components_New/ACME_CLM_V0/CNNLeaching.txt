@@ -1,0 +1,7 @@
+sub_in, waterflux_vars, filter_soilc, nitrogenflux_vars, num_soilc, nitrogenstate_vars, waterstate_vars, bounds
+sub_out
+global_ro, waterflux_vars%qflx_surf_col, nitrogenstate_vars%sminn_vr_col, nitrogenstate_vars%smin_no3_vr_col, waterflux_vars%qflx_drain_col, col%dz, waterstate_vars%h2osoi_liq_col
+global_wo
+global_mod, nitrogenflux_vars%smin_no3_runoff_vr_col, nitrogenflux_vars%smin_no3_leached_vr_col, nitrogenflux_vars%sminn_leached_vr_col
+global_non
+calls

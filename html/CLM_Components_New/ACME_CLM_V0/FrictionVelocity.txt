@@ -1,0 +1,7 @@
+sub_in, ustar, obu, lbn, filtern, ubn, fn, z0q, iter, temp12m, um, z0m, temp22m, temp1, fm, frictionvel_vars, temp2, displa, z0h, landunit_index, ur
+sub_out, fm, temp12m, temp1, temp2, ustar, temp22m
+global_ro, frictionvel_vars%forc_hgt_q_patch, pft%gridcell, lun%gridcell, lun%pfti, frictionvel_vars%forc_hgt_u_patch, lun%pftf, frictionvel_vars%forc_hgt_t_patch
+global_wo, frictionvel_vars%u10_clm_patch, frictionvel_vars%fv_patch, frictionvel_vars%vds_patch, frictionvel_vars%u10_patch, frictionvel_vars%va_patch
+global_mod
+global_non
+calls

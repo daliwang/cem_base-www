@@ -1,0 +1,17 @@
+sub_param, waterstate_vars, waterflux_vars, energyflux_vars, bounds, soilstate_vars, dhsdT, num_nolakec, temperature_vars, filter_nolakec
+sub_out
+global_ro, col%landunit, col%snl, soilstate_vars%bsw_col, temperature_vars%fact_col, soilstate_vars%watsat_col, waterstate_vars%frac_sno_eff_col, soilstate_vars%sucsat_col, waterstate_vars%frac_h2osfc_col, col%dz
+global_wo, waterflux_vars%qflx_snow_melt_col, energyflux_vars%eflx_snomelt_r_col, energyflux_vars%eflx_snomelt_u_col
+global_mod, temperature_vars%xmf_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_snomelt_col, temperature_vars%imelt_col, waterstate_vars%snow_depth_col, energyflux_vars%eflx_snomelt_col, waterflux_vars%qflx_glcice_col, waterflux_vars%qflx_snofrz_lyr_col, waterstate_vars%h2osno_col, temperature_vars%t_soisno_col, waterflux_vars%qflx_snofrz_col, waterflux_vars%qflx_glcice_melt_col, waterstate_vars%h2osoi_liq_col
+global_non, waterstate_vars%frac_sno_col
+calls, t_stopf, t_startf
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakec                          ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_nolakec(:)                    ! column filter for non-lake points
+real(r8)               , intent(in)    :: dhsdT ( bounds%begc: )               ! temperature derivative of "hs" [col]
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars

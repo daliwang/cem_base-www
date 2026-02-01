@@ -1,0 +1,7 @@
+sub_in, call_index, cs_pnt
+sub_out
+global_ro, %leaf_litter, %n, %area, %seed_bank, %cwd_ag, %cwd_bg, currentPatch%younger, currentSite%oldest_patch, %bdead, currentCohort%shorter;, currentPatch%tallest;, %root_litter, %bstore, %balive
+global_wo
+global_mod, cs_pnt%old_stock, cs_pnt%flux_out, cs_pnt%flux_in
+global_non, cs_pnt
+calls

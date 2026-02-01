@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, hrv_livestemn_xfer_to_litter, hrv_deadstemn_to_prod10n, hrv_deadcrootn_storage_to_litter, hrv_livecrootn_xfer_to_litter, hrv_leafn_xfer_to_litter, hrv_leafn_storage_to_litter, hrv_deadstemn_storage_to_litter, hrv_retransn_to_litter, hrv_frootn_storage_to_litter, harvest_n_to_litr_met_n, hrv_deadstemn_to_prod100n, hrv_deadcrootn_to_litter, hrv_livestemn_storage_to_litter, hrv_frootn_xfer_to_litter, hrv_livestemn_to_litter, hrv_leafn_to_litter, hrv_frootn_to_litter, hrv_deadstemn_xfer_to_litter, harvest_n_to_cwdn, hrv_livecrootn_storage_to_litter, harvest_n_to_litr_cel_n, hrv_livecrootn_to_litter, hrv_deadcrootn_xfer_to_litter, harvest_n_to_litr_lig_n
+global_wo
+global_mod, frootn_xfer, deadcrootn_xfer, frootn, deadstemn, frootn_storage, leafn, livestemn_storage, deadstemn_storage, livestemn_xfer, retransn, deadcrootn_storage, livecrootn_storage, deadcrootn, decomp_npools_vr, livecrootn, deadstemn_xfer, livecrootn_xfer, leafn_xfer, leafn_storage, livestemn
+global_non
+calls

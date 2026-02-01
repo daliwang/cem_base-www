@@ -1,0 +1,7 @@
+sub_in, tend_sc, state_sc, state, pbuf, tend
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, subcol_get_nsubcol, subcol_set_filter, subcol_set_weight, subcol_set_subcols, endrun

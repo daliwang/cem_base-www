@@ -1,0 +1,8 @@
+sub_in, timer_mrg, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, seq_infodata_GetData, prep_ice_merge, t_drvstopf, t_drvstartf
+calls_ln, seq_infodata_GetData@202, prep_ice_merge@215, t_drvstopf@218, t_drvstartf@205

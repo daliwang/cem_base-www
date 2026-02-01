@@ -1,0 +1,7 @@
+sub_in, u0_in, cufrc_out, pblh_in, t0_in, rliq_out, qlten_out, vten_out, mix, qiten_out, flxprc1_out, ql0_in, evapc_out, qcu_out, qtflx_out, ps0_in, umf_out, trten_out, concldfrct_in, dt, qrten_out, dp0_in, qsten_out, qiu_out, lchnk, mkx, qc_out, qvten_out, v0_in, p0_in, cbmf_out, tr0_in, sten_out, s0_in, tke_in, qlu_out, cnb_out, dpdry0_in, qv0_in, cldfrct_in, qi0_in, flxsnow1_out, iend, uten_out, slflx_out, cnt_out, precip_out, ncnst, zs0_in, z0_in, cush_inout, snow_out
+sub_out, flxsnow1_out, qiten_out, rliq_out, cnb_out, qlu_out, qlten_out, vten_out, sten_out, cbmf_out, cufrc_out, qc_out, snow_out, qvten_out, qrten_out, cush_inout, qsten_out, qiu_out, umf_out, uten_out, cnt_out, slflx_out, trten_out, precip_out, flxprc1_out, evapc_out, qcu_out, qtflx_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, positive_moisture_single, qsat, cnst_get_ind, getbuoy, conden, endrun, roots, findsp_vc, fluxbelowinv, outfld

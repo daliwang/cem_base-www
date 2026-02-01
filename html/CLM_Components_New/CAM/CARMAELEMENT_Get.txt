@@ -1,0 +1,7 @@
+sub_in, itype, rho, rc, isolute, name, ielement, icomposition, carma, shortname, igroup
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,9 @@
+sub_in, filter_methc, num_methp, num_methc, bounds, filter_methp
+sub_out
+global_ro, pcf%bgnpp, ccf%somhr, pcf%agnpp, pft%column, cws%finundated
+global_wo, cch4%annavg_finrw, pcf%annavg_bgnpp, pcf%annavg_agnpp
+global_mod, cch4%annsum_counter, cch4%tempavg_finrw, pcf%tempavg_agnpp, cch4%tempavg_somhr, cch4%annavg_somhr, pcf%tempavg_bgnpp
+global_non
+calls
+
+Tree height: 3

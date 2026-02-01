@@ -1,0 +1,8 @@
+sub_in, timer_diag, info_debug, comp, flow, infodata, comment
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_drvstartf, seq_diag_avect_mct, t_drvstopf
+calls_ln, seq_diag_avect_mct@1363, seq_diag_avect_mct@1367, t_drvstartf@1358, t_drvstopf@1373

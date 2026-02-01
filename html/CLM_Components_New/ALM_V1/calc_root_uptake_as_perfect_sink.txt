@@ -1,0 +1,19 @@
+sub_param, dz, ubj, halfdt_col, tracer_conc, filter_soilc, dtime_loc, transp_mass, qflx_rootsoi, update_col, lbj, bounds, num_soilc
+sub_out, tracer_conc, transp_mass
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: num_soilc                           ! number of columns in column filter_soilc
+integer,                intent(in)    :: filter_soilc(:)                     ! column filter_soilc
+real(r8),               intent(in)    :: dz(bounds%begc: , lbj: )            ! layer thickness
+real(r8),               intent(in)    :: dtime_loc(bounds%begc: )
+real(r8),               intent(in)    :: qflx_rootsoi(bounds%begc: , lbj: )
+logical,                intent(in)    :: update_col(bounds%begc:bounds%endc) ! logical switch for active col update
+logical,                intent(in)    :: halfdt_col(bounds%begc:bounds%endc)
+real(r8),               intent(inout) :: tracer_conc(bounds%begc: , lbj: )   ! incoming tracer concentration
+real(r8),               intent(out)   :: transp_mass(bounds%begc: )

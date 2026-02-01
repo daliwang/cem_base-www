@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, aais_area, area, lat, gindex, aais_mask, gris_mask, gris_area, lon
+global_mod, latdeg, londeg
+global_non, p, c, g, l
+calls, set_landunit_veg_compete, set_landunit_wet_ice_lake, set_landunit_urban, clm_ptrs_check, get_proc_global, get_proc_bounds, set_landunit_crop_noncompete, clm_ptrs_compdown

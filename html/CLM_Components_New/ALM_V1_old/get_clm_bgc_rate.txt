@@ -1,0 +1,12 @@
+sub_param, clm_bgc_data:1, filter_soilc:4, num_soilc:3, bounds:2
+sub_out
+global_ro| clm_bgc_data%externaln_to_decomp_npools_col, col_net_to_decomp_npools_vr, NONE| clm_pf_idata%ngclm_sub, ngclm_sub, FLEXIBLE_POOLS| clm_bgc_data%externaln_to_no3_col, externaln_to_no3_vr, NONE| bounds%begg, begg, NONE| clm_bgc_data%plant_ndemand_vr_col, col_plant_ndemand_vr, NONE| clm_pf_idata%nzclm_mapped, nzclm_mapped, NONE| clm_bgc_data%externaln_to_nh4_col, externaln_to_nh4_vr, NONE| clm_bgc_data%externalc_to_decomp_cpools_col, col_net_to_decomp_cpools_vr, NONE| col%wtgcell, wtgcell, NONE| col%gridcell, gridcell, NONE| clm_bgc_data%no3_net_transport_vr_col, no3_net_transport_vr, NONE| clm_pf_idata%C_molecular_weight, C_molecular_weight, NONE| clm_pf_idata%N_molecular_weight, N_molecular_weight, NONE
+global_wo
+global_mod
+global_non| clm_bgc_data%externalp_to_primp_col, externalp_to_primp_vr, NONE| clm_bgc_data%plant_pdemand_vr_col, col_plant_pdemand_vr, NONE| clm_bgc_data%externalp_to_labilep_col, externalp_to_labilep_vr, NONE| clm_bgc_data%externalp_to_decomp_ppools_col, col_net_to_decomp_ppools_vr, NONE| clm_bgc_data%sminp_net_transport_vr_col, sminp_net_transport_vr, NONE| clm_bgc_data%externalp_to_solutionp_col, externalp_to_solutionp, NONE
+calls, VecRestoreArrayF90, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

@@ -1,0 +1,7 @@
+sub_in, taux, cldn, ustar, tauy, obklen, ocnfrac, pbuf, shflx, ztodt, ptend, state, sgh, landfrac, cflx
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, handle_errmsg, outfld, physics_ptend_init, qsat, compute_hb_diff, pbuf_set_field, endrun, calc_obklen, pbuf_get_field, compute_vdiff, compute_tms, compute_eddy_diff, positive_moisture

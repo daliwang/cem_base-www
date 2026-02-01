@@ -1,0 +1,13 @@
+sub_in, lni, glcmask, lnj, lns
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subgrid_get_gcellinfo, get_proc_global, shr_sys_flush, mpi_barrier, get_proc_bounds, scatter_data_from_master, gather_data_to_master, mct_gsMap_init, endrun
+
+Tree height: 6
+0 , get_proc_bounds, get_proc_global, gather_data_to_master, scatter_data_from_master, gather_data_to_master, scatter_data_from_master, gather_data_to_master, scatter_data_from_master, gather_data_to_master, scatter_data_from_master, mct_gsMap_init, mct_gsMap_init, mct_gsMap_init, mct_gsMap_init, shr_sys_flush, mpi_barrier, 
+1-, subgrid_get_gcellinfo, 
+1+, subgrid_get_gcellinfo, endrun, endrun, 
+3+, shr_sys_flush, mpi_barrier, shr_sys_flush, 

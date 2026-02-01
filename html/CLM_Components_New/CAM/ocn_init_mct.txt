@@ -1,0 +1,7 @@
+sub_in, EClock, cdata_o, x2o_o, o2x_o, NLFilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, timemgr_init, ocn_export_mct, mct_aVect_init, ocn_init, seq_infodata_PutData, seq_timemgr_EClockGetData, ocn_SetgsMap_mct, seq_infodata_GetData, advance_timestep, seq_cdata_setptrs, ocn_run, mct_aVect_zero, ocn_domain_mct

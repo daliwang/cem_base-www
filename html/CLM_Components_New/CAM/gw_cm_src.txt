@@ -1,0 +1,7 @@
+sub_in, xv, kbot, tau, c, src_level, ubm, ngwv, tend_level, ubi, frontgf, v, yv, ncol, u
+sub_out, ubm, c, tau, src_level, tend_level, ubi
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_unit_vector

@@ -1,0 +1,8 @@
+sub_in, timer_mrg, fractions_wx, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, t_drvstartf, prep_wav_merge, t_drvstopf
+calls_ln, t_drvstopf@199, t_drvstartf@188, prep_wav_merge@197

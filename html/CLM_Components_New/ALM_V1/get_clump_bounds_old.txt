@@ -1,0 +1,14 @@
+sub_param, n, begc, begCohort, endc, begl, begp, endp, endCohort, endg, endl, begg
+sub_out, endp, endCohort, endl, begg, endg, begc, begCohort, begp, endc, begl
+global_ro, %endg, %begg, %endl, %endCohort, %endp, procinfo%cid, %begl, %endc, %begp, %begCohort, %begc
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in)  :: n           ! proc clump index
+integer, intent(out) :: begp, endp  ! clump beg and end pft indices
+integer, intent(out) :: begc, endc  ! clump beg and end column indices
+integer, intent(out) :: begl, endl  ! clump beg and end landunit indices
+integer, intent(out) :: begg, endg  ! clump beg and end gridcell indices
+integer, intent(out) :: begCohort, endCohort  ! cohort beg and end gridcell indices

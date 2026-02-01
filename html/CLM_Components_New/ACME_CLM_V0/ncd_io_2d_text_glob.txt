@@ -1,0 +1,7 @@
+sub_in, posNOTonfile, varname, flag, readvar, data, ncid, nt
+sub_out, data
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqvid

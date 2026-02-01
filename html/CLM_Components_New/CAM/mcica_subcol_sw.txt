@@ -1,0 +1,7 @@
+sub_in, ciwpmcl, clwp, ciwp, ncol, play, ssac, rel, ssacmcl, icld, lchnk, nlay, asmcmcl, permuteseed, clwpmcl, cldfmcl, fsfcmcl, cldfrac, taucmcl, relqmcl, tauc, reicmcl, fsfc, rei, asmc
+sub_out, reicmcl, relqmcl
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, generate_stochastic_clouds_sw

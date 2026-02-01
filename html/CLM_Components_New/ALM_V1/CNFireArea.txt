@@ -1,0 +1,20 @@
+sub_param, filter_soilp, num_soilp, waterstate_vars, filter_soilc, soilhydrology_vars, carbonstate_vars, atm2lnd_vars, temperature_vars, bounds, energyflux_vars, cnstate_vars, num_soilc
+sub_out
+global_ro, atm2lnd_vars%forc_rh_grc, energyflux_vars%btran2_patch, pft%wtcol, carbonstate_vars%leafc_patch, atm2lnd_vars%forc_lnfm, carbonstate_vars%deadcrootc_xfer_patch, carbonstate_vars%livecrootc_patch, soilhydrology_vars%fsat_col, waterstate_vars%wf2_col, col%pfti, decomp_cascade_con%is_cwd, carbonstate_vars%frootc_storage_patch, carbonstate_vars%leafc_storage_patch, atm2lnd_vars%forc_snow_downscaled_col, grc%lat, cnstate_vars%scalaravg_col, carbonstate_vars%frootc_patch, cnstate_vars%lfpftd_patch, cnstate_vars%peatf_lf_col, atm2lnd_vars%forc_rain_downscaled_col, col%wtgcell, cnstate_vars%abm_lf_col, prec60_col_target, atm2lnd_vars%forc_t_downscaled_col, cnstate_vars%gdp_lf_col, atm2lnd_vars%forc_hdm, pft%itype, prec10_col_target, carbonstate_vars%deadcrootc_storage_patch, temperature_vars%t_soi17cm_col, carbonstate_vars%leafc_xfer_patch, carbonstate_vars%livecrootc_storage_patch, carbonstate_vars%decomp_cpools_vr_col, carbonstate_vars%totvegc_col, carbonstate_vars%totlitc_col, waterstate_vars%wf_col, atm2lnd_vars%forc_wind_grc, carbonstate_vars%frootc_xfer_patch, col%gridcell, carbonstate_vars%leafc_col, decomp_cascade_con%spinup_factor, carbonstate_vars%deadcrootc_patch, carbonstate_vars%livecrootc_xfer_patch
+global_wo, cnstate_vars%burndate_patch, cnstate_vars%fbac_col
+global_mod, cnstate_vars%lfwt_col, cnstate_vars%cropf_col, cnstate_vars%trotr2_col, cnstate_vars%farea_burned_col, cnstate_vars%fd_col, cnstate_vars%fsr_col, cnstate_vars%baf_peatf_col, cnstate_vars%baf_crop_col, cnstate_vars%lfc_col, cnstate_vars%wtlf_col, cnstate_vars%lpop_col, carbonstate_vars%fuelc_col, cnstate_vars%nfire_col, carbonstate_vars%fuelc_crop_col, cnstate_vars%fbac1_col, cnstate_vars%lgdp1_col, cnstate_vars%lgdp_col, cnstate_vars%trotr1_col, carbonstate_vars%rootc_col, cnstate_vars%dtrotr_col
+global_non, carbonstate_vars%totvegc_patch, atm2lnd_vars%prec60_patch, atm2lnd_vars%prec10_patch, carbonstate_vars%deadstemc_col, carbonstate_vars%deadstemc_patch
+calls, p2c, get_curr_date
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                  , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(energyflux_type)    , intent(in)    :: energyflux_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars

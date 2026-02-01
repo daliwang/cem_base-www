@@ -1,0 +1,11 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, print_accum_fields, init_accum_field
+
+Tree height: 2
+0 , init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, print_accum_fields, 
+1+, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, init_accum_field, 

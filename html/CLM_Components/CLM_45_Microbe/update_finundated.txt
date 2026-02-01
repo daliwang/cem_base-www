@@ -1,0 +1,7 @@
+sub_in, filter_micbioc, num_micbioc, ubc, lbc
+sub_out
+global_ro, landunit, itype, finundated
+global_wo
+global_mod, caerch4bios_unsat, canaerch4bios_sat, cco2bios_sat, canaerch4bios_unsat, ccon_o2s_unsat, ccon_o2s_sat, ccon_co2s_unsat, caerch4bios_sat, cacebios_unsat, cacebios_sat, ccon_h2s_sat, fsat_pre, caces_unsat, cdocs_unsat, cdocs_sat, ccon_ch4s_unsat, ccon_ch4s_sat, caces_sat, ccon_co2s_sat, ccon_h2s_unsat, cco2bios_unsat
+global_non
+calls

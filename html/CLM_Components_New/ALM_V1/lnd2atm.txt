@@ -1,0 +1,23 @@
+sub_param, waterstate_vars, energyflux_vars, ch4_vars, surfalb_vars, lnd2atm_vars, atm2lnd_vars, bounds, carbonflux_vars, waterflux_vars, temperature_vars, vocemis_vars, drydepvel_vars, solarabs_vars, frictionvel_vars, dust_vars
+sub_out
+global_ro, lnd2atm_vars%nem_grc, grc%area, waterflux_vars%qflx_ice_dynbal_grc, energyflux_vars%eflx_dynbal_grc, waterflux_vars%qflx_liq_dynbal_grc, atm2lnd_vars%volr_grc
+global_wo
+global_mod, waterstate_vars%tws_grc, lnd2atm_vars%qflx_rofice_grc, lnd2atm_vars%nee_grc, lnd2atm_vars%eflx_sh_tot_grc, lnd2atm_vars%qflx_rofliq_grc
+global_non
+calls, lnd2atm_minimal, c2g, p2g
+readParams,
+type(bounds_type)      , intent(in)     :: bounds
+type(atm2lnd_type)     , intent(in)     :: atm2lnd_vars
+type(surfalb_type)     , intent(in)     :: surfalb_vars
+type(temperature_type) , intent(in)     :: temperature_vars
+type(frictionvel_type) , intent(in)     :: frictionvel_vars
+type(waterstate_type)  , intent(inout)  :: waterstate_vars
+type(waterflux_type)   , intent(in)     :: waterflux_vars
+type(energyflux_type)  , intent(in)     :: energyflux_vars
+type(solarabs_type)    , intent(in)     :: solarabs_vars
+type(carbonflux_type)  , intent(in)     :: carbonflux_vars
+type(drydepvel_type)   , intent(in)     :: drydepvel_vars
+type(vocemis_type)     , intent(in)     :: vocemis_vars
+type(dust_type)        , intent(in)     :: dust_vars
+type(ch4_type)         , intent(in)     :: ch4_vars
+type(lnd2atm_type)     , intent(inout)  :: lnd2atm_vars

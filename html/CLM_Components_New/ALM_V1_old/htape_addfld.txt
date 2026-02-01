@@ -1,0 +1,11 @@
+sub_param, t:1, f:2, avgflag:3
+sub_out
+global_ro| %hlist, hlist, NONE| bounds%begl, begl, NONE| %avgflag, avgflag, NONE| bounds%begg, begg, NONE| bounds%begp, begp, NONE| bounds%endl, endl, NONE| bounds%endp, endp, NONE| %nflds, nflds, NONE| bounds%endg, endg, NONE| %field, field, NONE| %field%num2d, num2d, NONE| bounds%endc, endc, NONE| %field%type1d_out, type1d_out, NONE| bounds%begc, begc, NONE
+global_wo
+global_mod| %field%type1d, type1d, NONE
+global_non
+calls, get_proc_global, endrun, get_proc_bounds
+readParams,
+integer, intent(in) :: t                 ! history tape index
+integer, intent(in) :: f                 ! field index from master field list
+character(len=1), intent(in) :: avgflag  ! time averaging flag

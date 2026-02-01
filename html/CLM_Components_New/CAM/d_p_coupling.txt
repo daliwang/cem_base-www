@@ -1,0 +1,7 @@
+sub_in, phis, v3, t3, ps, omga, pbuf2d, q3, phys_state, phys_tend, u3
+sub_out, phys_state
+global_ro
+global_wo
+global_mod
+global_non, pbuf_get_chunk
+calls, set_state_pdry, get_lon_all_p, transpose_block_to_chunk, t_stopf, t_barrierf, t_startf, block_to_chunk_recv_pters, endrun, get_lat_all_p, block_to_chunk_send_pters, plevs0, check_energy_timestep_init, geopotential_t

@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro| this%boundary_conditions%first, cur_cond, NONE| this%source_sinks%first, cur_cond, NONE| cur_cond%next, cur_cond, NONE| %ncells, ncells, NONE
+global_wo
+global_mod
+global_non
+calls, this%aux_vars_bc, this%aux_vars_ss, this%aux_vars_in
+readParams,

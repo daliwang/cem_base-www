@@ -1,0 +1,14 @@
+sub_param, num_soilc, bounds, clm_bgc_data, phosphorusstate_vars, filter_soilc, nitrogenstate_vars
+sub_out
+global_ro, clm_bgc_data%labilep_vr_col, clm_bgc_data%solutionp_vr_col, clm_bgc_data%sminp_vr_col, clm_bgc_data%occlp_vr_col, clm_bgc_data%smin_nh4_vr_col, clm_bgc_data%sminn_vr_col, clm_bgc_data%smin_nh4sorb_vr_col, clm_bgc_data%secondp_vr_col, clm_bgc_data%smin_no3_vr_col, clm_bgc_data%primp_vr_col
+global_wo, nitrogenstate_vars%sminn_vr_col, phosphorusstate_vars%secondp_vr_col, phosphorusstate_vars%primp_vr_col, nitrogenstate_vars%smin_nh4_vr_col, phosphorusstate_vars%labilep_vr_col, phosphorusstate_vars%sminp_vr_col, phosphorusstate_vars%occlp_vr_col, nitrogenstate_vars%smin_nh4sorb_vr_col, phosphorusstate_vars%solutionp_vr_col
+global_mod, nitrogenstate_vars%smin_no3_vr_col
+global_non
+calls
+readParams,
+type(bounds_type)           , intent(in)    :: bounds
+integer                     , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                     , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+type(nitrogenstate_type)    , intent(inout) :: nitrogenstate_vars
+type(phosphorusstate_type)  , intent(inout) :: phosphorusstate_vars
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

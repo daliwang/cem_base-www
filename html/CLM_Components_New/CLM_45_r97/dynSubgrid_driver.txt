@@ -1,0 +1,7 @@
+sub_in, canopystate_inst, soilhydrology_inst, cnveg_carbonstate_inst, c13_cnveg_carbonstate_inst, glc2lnd_inst, cnveg_nitrogenflux_inst, soilbiogeochem_state_inst, temperature_inst, c14_cnveg_carbonstate_inst, waterflux_inst, urbanparams_inst, cnveg_carbonflux_inst, waterstate_inst, soilstate_inst, lakestate_inst, dgvs_inst, soilbiogeochem_carbonflux_inst, cnveg_state_inst, photosyns_inst, c14_cnveg_carbonflux_inst, energyflux_inst, c13_cnveg_carbonflux_inst, bounds_proc, cnveg_nitrogenstate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, compute_higher_order_weights, dynpft_interp, dyn_ED, glc2lnd_inst%update_glc2lnd, prior_weights%set_prior_weights, dyn_cnbal_patch, dynHarvest_interp, set_subgrid_diagnostic_fields, reweight_wrapup, get_clump_bounds, dynCNDV_interp, dyn_hwcontent_final, update_landunit_weights, dyn_hwcontent_init, initialize_new_columns

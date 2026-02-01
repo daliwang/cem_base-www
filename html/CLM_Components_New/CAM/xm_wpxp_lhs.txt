@@ -1,0 +1,7 @@
+sub_in, wpxp_upper_lim, wm_zm, wpxp_lower_lim, C6x_Skw_fnc, a1, invrs_rho_ds_zm, wp3_on_wp2, wpxp, dt, invrs_rho_ds_zt, wp3_on_wp2_zt, rho_ds_zt, a1_zt, tau_zm, rho_ds_zm, l_implemented, wm_zt, C7_Skw_fnc, Kw6, lhs, wp2, l_iter
+sub_out, lhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_boundary_conditions_lhs

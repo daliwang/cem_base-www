@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_carbonflux_inst, bounds, filter_soilc, num_soilc, cnveg_carbonstate_inst, cnveg_carbonflux_inst
+sub_out
+global_ro, col_begcb, som_c_leached, gpp, dwt_closs, er, product_closs, col_fire_closs, totcolc, col_hrv_xsmrpool_to_atm
+global_wo
+global_mod, col_endcb
+global_non
+calls, endrun

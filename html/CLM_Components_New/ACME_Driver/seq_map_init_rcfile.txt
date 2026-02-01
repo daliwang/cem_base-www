@@ -1,0 +1,8 @@
+sub_in, string, mapper, maprctype, esmf_map, maprcfile, maprcname, comp_s, samegrid, comp_d
+sub_out
+global_ro, component_get_gsmap_cx, component_get_gsmap_cx
+global_wo
+global_mod
+global_non, component_get_gsmap_cx, component_get_gsmap_cx
+calls, mct_rearr_init, seq_comm_setptrs, ESMF_StateAdd, shr_sys_abort, shr_sys_flush, seq_map_mapinit, seq_comm_petlist, seq_comm_getcompstates, ESMF_GridCompInitialize, shr_mct_sMatPInitnc, shr_mct_queryConfigFile, seq_map_mappoint, seq_map_gsmapcheck, seq_map_mapmatch
+calls_ln, seq_comm_getcompstates@253, mct_rearr_init@172, seq_map_mapinit@166, seq_map_gsmapcheck@171, shr_sys_abort@289, ESMF_GridCompInitialize@274, ESMF_StateAdd@267, seq_comm_setptrs@141, seq_comm_petlist@232, seq_map_mappoint@163, ESMF_StateAdd@261, seq_map_mapmatch@180, seq_map_mapinit@152, shr_mct_sMatPInitnc@191, seq_map_mapmatch@160, seq_map_mappoint@183, ESMF_StateAdd@264, seq_map_mappoint@150, shr_sys_flush@299, seq_map_mapmatch@147, seq_map_mapinit@185, ESMF_StateAdd@270, shr_mct_queryConfigFile@178

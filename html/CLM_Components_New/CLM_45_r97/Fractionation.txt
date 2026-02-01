@@ -1,0 +1,7 @@
+sub_in, bounds, atm2lnd_inst, photosyns_inst, canopystate_inst, surfalb_inst, filterp, fn, phase, cnveg_state_inst, solarabs_inst
+sub_out
+global_ro, an, forc_pbot, forc_pco2, gb_mol, gs_mol, nrad, c3psn, downreg, par_z
+global_wo, alphapsn
+global_mod
+global_non
+calls

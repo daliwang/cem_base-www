@@ -1,0 +1,7 @@
+sub_in, soilhydrology_inst, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, initSoilParVIC, ncd_pio_closefile, initCLMVICMap, organicrd, endrun, ncd_io, getfil, ncd_pio_openfile

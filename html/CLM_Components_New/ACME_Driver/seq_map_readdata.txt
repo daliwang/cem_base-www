@@ -1,0 +1,8 @@
+sub_in, ni_d, gsmap_s, maprcfile, maprcname, avfld_d, ni_s, nj_d, nj_s, gsmap_d, av_s, av_d, string, filefld_s, avfld_s, mpicom, filefld_d, ID
+sub_out
+global_ro, shr_pio_getiosys
+global_wo
+global_mod
+global_non
+calls, pio_freedecomp, I90_allLoadF, shr_sys_abort, pio_read_darray, i90_gtoken, mct_gsmap_OrderedPoints, i90_label, pio_initdecomp, pio_closefile, MPI_COMM_RANK
+calls_ln, MPI_COMM_RANK@789, pio_initdecomp@876, pio_initdecomp@860, mct_gsmap_OrderedPoints@875, I90_allLoadF@811, shr_sys_abort@826, pio_freedecomp@880, shr_sys_abort@814, i90_label@817, shr_sys_abort@820, mct_gsmap_OrderedPoints@859, pio_closefile@884, i90_gtoken@823, shr_sys_abort@870, shr_sys_abort@854, pio_read_darray@879, pio_read_darray@863, pio_freedecomp@864

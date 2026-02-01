@@ -1,0 +1,7 @@
+sub_in, recvtag, sendbuf, recvtype, recvbuf, dest, source, sendtype, sendtag, sendcount, recvcount, comm
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, t_startf, t_stopf, mpi_sendrecv

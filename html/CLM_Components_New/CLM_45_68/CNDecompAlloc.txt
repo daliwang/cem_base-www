@@ -1,0 +1,12 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cps%rf_decomp_cascade, decomp_cascade_con%cascade_donor_pool, ccf%w_scalar, cps%fpi_vr, cns%decomp_npools_vr, decomp_cascade_con%cascade_receiver_pool, ccs%decomp_cpools_vr, decomp_cascade_con%initial_cn_ratio, ccf%decomp_k, cps%pathfrac_decomp_cascade
+global_wo, cnf%sminn_to_denit_decomp_cascade_vr, cnf%potential_immob_vr, ccf%decomp_cascade_hr_vr, cnf%decomp_cascade_ntransfer_vr, cnf%decomp_cascade_sminn_flux_vr, ccf%decomp_cascade_ctransfer_vr
+global_mod, ccf%phr_vr, cch4%fphr, cnf%net_nmin, cnf%net_nmin_vr, cnf%gross_nmin, cnf%gross_nmin_vr
+global_non, cps%altmax_lastyear_indx, cps%altmax_indx, lun%itype, col%landunit, pps%rootfr
+calls, nitrif_denitrif, decomp_vertprofiles, CNAllocation, decomp_rate_constants_bgc, decomp_rate_constants_cn
+
+Tree height: 5
+0 , decomp_vertprofiles, CNAllocation, 
+1-, decomp_rate_constants_cn, 
+1+, decomp_rate_constants_bgc, nitrif_denitrif, 

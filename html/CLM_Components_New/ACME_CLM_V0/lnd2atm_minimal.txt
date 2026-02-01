@@ -1,0 +1,7 @@
+sub_in, bounds, surfalb_vars, waterstate_vars, lnd2atm_vars, energyflux_vars
+sub_out
+global_ro, lnd2atm_vars%eflx_lwrad_out_grc
+global_wo, lnd2atm_vars%t_rad_grc
+global_mod, lnd2atm_vars%h2osno_grc
+global_non
+calls, c2g, p2g

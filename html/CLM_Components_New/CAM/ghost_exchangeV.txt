@@ -1,0 +1,7 @@
+sub_in, ntrac, hybrid, npoints, nhc, buffer
+sub_out
+global_ro, source, dest, lengthP_ghost, ptrP_ghost, nSendCycles, nRecvCycles
+global_wo
+global_mod, tag
+global_non, pSchedule%RecvCycle, pSchedule%SendCycle, Schedule
+calls, MPI_Irecv, MPI_Waitall, MPI_Isend, MPI_Error_String

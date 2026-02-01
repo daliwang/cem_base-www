@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_state_inst, bounds, c14_soilbiogeochem_carbonstate_inst, c14_soilbiogeochem_carbonflux_inst, soilbiogeochem_nitrogenstate_inst, c13_soilbiogeochem_carbonstate_inst, soilbiogeochem_carbonstate_inst, soilbiogeochem_carbonflux_inst, soilbiogeochem_nitrogenflux_inst, c13_soilbiogeochem_carbonflux_inst, canopystate_inst, num_soilc, filter_soilc
+sub_out
+global_ro, altmax, altmax_lastyear, is_cwd, spinup_factor, source
+global_wo
+global_mod, som_diffus_coef, trcr_tendency_ptr, som_adv_coef, conc_ptr
+global_non
+calls, Tridiagonal, endrun

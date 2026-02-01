@@ -1,0 +1,7 @@
+sub_in, zvir, pmid, piln, zm, pmln, pint, t, gravit, q, rair, zi, rpdel, ncol, pdel
+sub_out, zm, zi
+global_ro
+global_wo
+global_mod
+global_non
+calls

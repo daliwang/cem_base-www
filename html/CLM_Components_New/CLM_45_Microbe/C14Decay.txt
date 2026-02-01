@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, decomp_cascade_con%spinup_factor
+global_wo
+global_mod, clm3%g%l%c%cc14s%decomp_cpools_vr, clm3%g%l%c%p%pc14s%deadcrootc_storage, clm3%g%l%c%p%pc14s%leafc_storage, clm3%g%l%c%cc14s%seedc, clm3%g%l%c%p%pc14s%leafc, clm3%g%l%c%p%pc14s%deadcrootc, clm3%g%l%c%p%pc14s%livestemc_storage, clm3%g%l%c%p%pc14s%deadstemc_xfer, clm3%g%l%c%p%pc14s%frootc, clm3%g%l%c%p%pc14s%frootc_storage, clm3%g%l%c%p%pc14s%livecrootc_storage, clm3%g%l%c%p%pc14s%deadcrootc_xfer, clm3%g%l%c%p%pc14s%pft_ctrunc, clm3%g%l%c%p%pc14s%livecrootc, clm3%g%l%c%p%pc14s%deadstemc_storage, clm3%g%l%c%p%pc14s%gresp_xfer, clm3%g%l%c%p%pc14s%livestemc_xfer, clm3%g%l%c%p%pc14s%livecrootc_xfer, clm3%g%l%c%p%pc14s%livestemc, clm3%g%l%c%p%pc14s%xsmrpool, clm3%g%l%c%p%pc14s%frootc_xfer, clm3%g%l%c%p%pc14s%gresp_storage, clm3%g%l%c%p%pc14s%deadstemc, clm3%g%l%c%p%pc14s%cpool, clm3%g%l%c%p%pc14s%leafc_xfer
+global_non
+calls
+
+Tree height: 2

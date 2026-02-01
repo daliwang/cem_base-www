@@ -1,0 +1,7 @@
+sub_in, aername, r_lw_abs, opticstype, sw_nonhygro_ext, refindex_aer_sw, list_idx, mu, sw_hygro_ssa, mode_idx, lw_hygro_ext, refindex_aer_lw, sw_hygro_asm, r_sw_ascat, sw_nonhygro_ascat, r_sw_ext, lw_ext, spectype, sw_nonhygro_scat, sw_nonhygro_ssa, num_to_mass_aer, sw_nonhygro_asm, dryrad_aer, r_sw_scat, spec_idx, sw_hygro_ext, dispersion_aer, hygro_aer, density_aer
+sub_out
+global_ro, idx
+global_wo
+global_mod
+global_non, ma_list
+calls, endrun

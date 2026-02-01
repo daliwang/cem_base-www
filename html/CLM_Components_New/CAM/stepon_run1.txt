@@ -1,0 +1,7 @@
+sub_in, dyn_out, phys_tend, ztodt, dyn_in, phys_state, pbuf2d
+sub_out, ztodt
+global_ro
+global_wo
+global_mod
+global_non
+calls, diag_dynvar_ic, d_p_coupling, t_startf, t_stopf

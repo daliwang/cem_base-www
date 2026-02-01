@@ -1,0 +1,7 @@
+sub_in, jy_min, x, y, centroid, jx_min, jx_max, area, jy_max
+sub_out, centroid, area
+global_ro
+global_wo
+global_mod
+global_non
+calls

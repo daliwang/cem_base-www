@@ -1,0 +1,7 @@
+sub_in, lchnk, icefrc, ocnfrc, ncol, lndfrc
+sub_out, ncol, ocnfrc, icefrc
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, physics_dme_adjust, endrun, t_stopf, t_startf

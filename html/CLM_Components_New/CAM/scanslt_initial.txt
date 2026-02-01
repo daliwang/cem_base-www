@@ -1,0 +1,7 @@
+sub_in, detam, etamid, gravit_in, gw, cwava, adv_state
+sub_out, etamid
+global_ro
+global_wo
+global_mod
+global_non
+calls, plevs0, adv_state_alloc, grdini

@@ -1,0 +1,12 @@
+sub_param, soe_avars:3, soe_avar_type:2, offset:4, this:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, RichardsODEPressureGetFromSOEAuxVarsSS, RichardsODEPressureGetFromSOEAuxVarsBC, endrun, RichardsODEPressureGetFromSOEAuxVarsIntrn
+readParams,
+class(goveqn_richards_ode_pressure_type), intent(inout)        :: this
+PetscInt, intent(in)                                           :: soe_avar_type
+type (sysofeqns_vsfm_auxvar_type), dimension(:), intent(in)    :: soe_avars
+PetscInt, intent(in), optional :: offset

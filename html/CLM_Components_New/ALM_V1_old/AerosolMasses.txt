@@ -1,0 +1,16 @@
+sub_param, filter_off:5, waterflux_vars:6, num_on:2, bounds:1, num_off:4, waterstate_vars:7, aerosol_vars:8, filter_on:3
+sub_out
+global_ro| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterflux_vars%qflx_snwcp_ice_col, qflx_snwcp_ice_col, NONE| col%snl, snl, NONE| waterstate_vars%do_capsnow_col, do_capsnow, NONE
+global_wo| aerosol_vars%mss_cnc_dst2_col, mss_cnc_dst2, NONE| waterstate_vars%h2osno_top_col, h2osno_top, NONE| aerosol_vars%mss_cnc_dst3_col, mss_cnc_dst3, NONE| aerosol_vars%mss_cnc_ocphi_col, mss_cnc_ocphi, NONE| aerosol_vars%mss_bc_top_col, mss_bc_top, NONE| aerosol_vars%mss_cnc_dst4_col, mss_cnc_dst4, NONE| aerosol_vars%mss_cnc_bcpho_col, mss_cnc_bcpho, NONE| aerosol_vars%mss_cnc_dst1_col, mss_cnc_dst1, NONE| aerosol_vars%mss_dst_top_col, mss_dst_top, NONE| aerosol_vars%mss_oc_top_col, mss_oc_top, NONE| aerosol_vars%mss_cnc_ocpho_col, mss_cnc_ocpho, NONE| waterstate_vars%snw_rds_col, snw_rds, NONE| aerosol_vars%mss_cnc_bcphi_col, mss_cnc_bcphi, NONE
+global_mod| aerosol_vars%mss_dst4_col, mss_dst4, NONE| aerosol_vars%mss_dst_col_col, mss_dst_col, NONE| aerosol_vars%mss_dst3_col, mss_dst3, NONE| aerosol_vars%mss_bc_col_col, mss_bc_col, NONE| aerosol_vars%mss_bctot_col, mss_bctot, NONE| aerosol_vars%mss_dst1_col, mss_dst1, NONE| aerosol_vars%mss_oc_col_col, mss_oc_col, NONE| aerosol_vars%mss_dst2_col, mss_dst2, NONE| aerosol_vars%mss_dsttot_col, mss_dsttot, NONE| aerosol_vars%mss_bcpho_col, mss_bcpho, NONE| aerosol_vars%mss_bcphi_col, mss_bcphi, NONE| aerosol_vars%mss_ocpho_col, mss_ocpho, NONE| aerosol_vars%mss_ocphi_col, mss_ocphi, NONE| aerosol_vars%mss_octot_col, mss_octot, NONE
+global_non
+calls
+readParams,
+type(bounds_type)     , intent(in )   :: bounds
+integer               , intent(in)    :: num_on         ! number of column filter-ON points
+integer               , intent(in)    :: filter_on(:)   ! column filter for filter-ON points
+integer               , intent(in)    :: num_off        ! number of column non filter-OFF points
+integer               , intent(in)    :: filter_off(:)  ! column filter for filter-OFF points
+type(waterflux_type)  , intent(in)    :: waterflux_vars
+type(waterstate_type) , intent(inout) :: waterstate_vars
+type(aerosol_type)    , intent(inout) :: aerosol_vars

@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, shr_megan_linkedlist, next_megcomp
+global_wo, molec_weight, emis_factors, class_number
+global_mod
+global_non
+calls, megan_factors_init, megan_factors_get

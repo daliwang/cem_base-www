@@ -1,0 +1,7 @@
+sub_in, state, pbuf, num, list_idx, mode_idx, phase
+sub_out
+global_ro
+global_wo
+global_mod, idx
+global_non, zero_cols, state%q, ma_list
+calls, endrun, pbuf_get_field

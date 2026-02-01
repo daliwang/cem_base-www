@@ -1,0 +1,7 @@
+sub_in, ztodt, grqa, grpma, grdpsa, grpla, grtla, grtha, grpsa, grta, irow, gruha, grua, grqma, grqla, grtma, grvha, grva, grda
+sub_out, grvha, grva, grda, grta, gruha, grqla, grtma, grqma, grua, grpsa, grtha, grpma, grqa, grpla, grdpsa, grtla
+global_ro
+global_wo
+global_mod
+global_non
+calls

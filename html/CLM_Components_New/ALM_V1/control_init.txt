@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_timemgr_init, CanopyHydrology_readnl, relavu, init_hydrology, control_spmd, endrun, clm_varctl_set, betr_readNL, clm_pf_readnl, shr_nl_find_group_name
+readParams,

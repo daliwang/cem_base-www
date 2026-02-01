@@ -1,0 +1,7 @@
+sub_in, filter_methc, filter_methp, carbonflux_vars, bounds, num_methc, ch4_vars, num_methp
+sub_out
+global_ro, ch4_vars%finundated_col, carbonflux_vars%bgnpp_patch, carbonflux_vars%somhr_col, pft%column, carbonflux_vars%agnpp_patch
+global_wo, ch4_vars%annavg_finrw_col, carbonflux_vars%annavg_bgnpp_patch, carbonflux_vars%annavg_agnpp_patch
+global_mod, carbonflux_vars%tempavg_agnpp_patch, ch4_vars%tempavg_finrw_col, carbonflux_vars%tempavg_bgnpp_patch, ch4_vars%tempavg_somhr_col, ch4_vars%annavg_somhr_col, ch4_vars%annsum_counter_col
+global_non
+calls

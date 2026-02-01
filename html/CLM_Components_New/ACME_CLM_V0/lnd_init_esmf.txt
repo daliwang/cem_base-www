@@ -1,0 +1,7 @@
+sub_in, export_state, rc, import_state, comp, EClock
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_AttributeSet, set_timemgr_init, ESMF_ArraySpecSet, ESMF_Finalize, MPI_Comm_dup, ESMF_VMGet, shr_file_setIO, shr_file_setLogLevel, ESMF_ArrayGet, clm_cpl_indices_set, shr_file_getLogUnit, endrun, seq_timemgr_EClockGetData, get_proc_bounds, ESMF_StateAdd, initialize2, ESMF_AttributeAdd, lnd_export, lnd_domain_esmf, shr_file_getLogLevel, ESMF_AttributeGet, shr_file_setLogUnit, ESMF_VMGetCurrent, memmon_dump_fort, control_setNL, clm_varctl_set, spmd_init, memmon_reset_addr, set_nextsw_cday, initialize1

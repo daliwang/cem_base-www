@@ -1,0 +1,15 @@
+sub_param, bounds:1, temperature_vars:5, is_lake:7, waterstate_vars:6, aerosol_vars:4, filter_snowc:3, num_snowc:2
+sub_out
+global_ro| waterstate_vars%frac_sno_eff_col, frac_sno, NONE
+global_wo| col%z, z, NONE
+global_mod| col%snl, snl, NONE| aerosol_vars%mss_ocpho_col, mss_ocpho, NONE| aerosol_vars%mss_ocphi_col, mss_ocphi, NONE| aerosol_vars%mss_dst2_col, mss_dst2, NONE| aerosol_vars%mss_bcphi_col, mss_bcphi, NONE| waterstate_vars%snw_rds_col, snw_rds, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| aerosol_vars%mss_dst4_col, mss_dst4, NONE| col%zi, zi, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| aerosol_vars%mss_dst3_col, mss_dst3, NONE| col%dz, dz, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| aerosol_vars%mss_bcpho_col, mss_bcpho, NONE| aerosol_vars%mss_dst1_col, mss_dst1, NONE
+global_non
+calls, Combo, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_snowc       ! number of column snow points in column filter
+integer                , intent(in)    :: filter_snowc(:) ! column filter for snow points
+type(aerosol_type)     , intent(inout) :: aerosol_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+logical                , intent(in)    :: is_lake  !TODO - this should be examined and removed in the future

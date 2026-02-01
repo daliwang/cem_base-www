@@ -1,0 +1,7 @@
+sub_in, zm, tv, rair, pmid, pdel
+sub_out, zm
+global_ro
+global_wo
+global_mod
+global_non
+calls

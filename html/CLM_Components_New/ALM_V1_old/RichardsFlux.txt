@@ -1,0 +1,34 @@
+sub_param, kr_dn:10, dden_dP_dn:13, dflux_dP_dn:26, compute_deriv:21, cond_type:23, den_up:4, dvis_dP_up:7, kr_up:2, internal_conn:22, dist_unitvec:20, dflux_dP_up:25, Pres_dn:9, perm_vec_dn:16, dvis_dP_dn:15, perm_vec_up:8, vis_dn:14, vis_up:6, den_dn:12, dkr_dP_dn:11, dist_dn:19, dist_up:18, area:17, flux:24, dden_dP_up:5, dkr_dP_up:3, Pres_up:1
+sub_out, dflux_dP_up, flux, dflux_dP_dn
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+PetscReal, intent(in)  :: Pres_up
+PetscReal, intent(in)  :: kr_up
+PetscReal, intent(in)  :: dkr_dP_up
+PetscReal, intent(in)  :: den_up
+PetscReal, intent(in)  :: dden_dP_up
+PetscReal, intent(in)  :: vis_up
+PetscReal, intent(in)  :: dvis_dP_up
+PetscReal, intent(in)  :: perm_vec_up(3)
+PetscReal, intent(in)  :: Pres_dn
+PetscReal, intent(in)  :: kr_dn
+PetscReal, intent(in)  :: dkr_dP_dn
+PetscReal, intent(in)  :: den_dn
+PetscReal, intent(in)  :: dden_dP_dn
+PetscReal, intent(in)  :: vis_dn
+PetscReal, intent(in)  :: dvis_dP_dn
+PetscReal, intent(in)  :: perm_vec_dn(3)
+PetscReal, intent(in)  :: area
+PetscReal, intent(in)  :: dist_up
+PetscReal, intent(in)  :: dist_dn
+PetscReal, intent(in)  :: dist_unitvec(3)
+PetscBool, intent(in)  :: compute_deriv
+PetscBool, intent(in)  :: internal_conn
+PetscInt,  intent(in)  :: cond_type
+PetscReal, intent(out) :: flux
+PetscReal, intent(out) :: dflux_dP_up
+PetscReal, intent(out) :: dflux_dP_dn

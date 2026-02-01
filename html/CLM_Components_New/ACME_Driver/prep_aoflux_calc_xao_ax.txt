@@ -1,0 +1,8 @@
+sub_in, fractions_ox, timer, flds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, prep_atm_get_mapper_So2a, prep_atm_get_mapper_Fo2a
+calls, t_drvstopf, seq_map_map, t_drvstartf
+calls_ln, t_drvstopf@171, seq_map_map@150, t_drvstartf@144, seq_map_map@166, seq_map_map@161

@@ -1,0 +1,12 @@
+sub_in, filter_lakec, num_lakep, ubc, num_lakec, lbp, filter_lakep, lbc, ubp
+sub_out
+global_ro, clm3%g%l%c%p%pef%sabg_lyr, clm3%g%l%c%p%pef%fsds_nir_d, clm3%g%l%c%p%pef%fsr_nir_i, clm_a2l%forc_th, clm3%g%l%c%p%column, clm_a2l%forc_t, clm3%g%l%c%ces%t_lake, clm3%g%l%c%cws%h2osoi_liq, clm_a2l%forc_u, clm3%g%l%c%p%pef%fsds_nir_i, clm3%g%l%c%cps%savedtke1, clm3%g%l%c%p%pef%fsr_nir_d, clm3%g%l%c%gridcell, clm3%g%l%c%p%pef%sabg, clm3%g%l%c%cps%lakefetch, clm3%g%l%c%p%gridcell, clm3%g%lat, clm3%g%l%c%cps%lakedepth, clm_a2l%forc_snow, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%dz_lake, clm3%g%l%c%ces%t_soisno, clm_a2l%forc_v, clm_a2l%forc_rho, clm_a2l%forc_rain, clm_a2l%forc_q, clm_a2l%forc_lwrad, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice, clm_a2l%forc_pbot
+global_wo, clm3%g%l%c%p%pwf%qflx_snwcp_liq, clm3%g%l%c%p%pef%sabg_chk, clm3%g%l%c%cch4%lake_raw, clm3%g%l%c%p%pef%eflx_gnet, clm3%g%l%c%p%pef%eflx_lh_grnd, clm3%g%l%c%cps%ws, clm3%g%l%c%p%pmf%tauy, clm3%g%l%c%p%pwf%qflx_snwcp_ice, clm3%g%l%c%p%pes%t_veg, clm3%g%l%c%p%pwf%qflx_evap_tot, clm3%g%l%c%cps%z0qg, clm3%g%l%c%cps%ks, clm3%g%l%c%p%pes%rh_ref2m, clm3%g%l%c%p%pef%eflx_lwrad_net, clm3%g%l%c%p%pmf%taux, clm3%g%l%c%p%pef%eflx_soil_grnd, clm3%g%l%c%p%pwf%qflx_prec_grnd, clm3%g%l%c%cps%z0hg, clm3%g%l%c%p%pps%ram1_lake
+global_mod, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%c%p%pps%forc_hgt_t_pft, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%c%cps%ust_lake, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%z0mg, clm3%g%l%c%p%pps%ram1, clm3%g%l%c%p%pes%t_ref2m, clm3%g%l%c%p%pef%eflx_lh_tot, clm3%g%l%c%p%pes%q_ref2m, clm3%g%l%c%p%pps%forc_hgt_q_pft, clm3%g%l%c%p%pef%eflx_lwrad_out, clm3%g%l%c%p%pps%forc_hgt_u_pft
+global_non
+calls, QSat, FrictionVelocity, MoninObukIni
+
+Tree height: 7
+1-, QSat, MoninObukIni, FrictionVelocity, 
+2-, QSat, 
+5-, QSat, 

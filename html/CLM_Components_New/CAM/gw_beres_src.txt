@@ -1,0 +1,7 @@
+sub_in, ubm, v, lat, ngwv, tau, ubi, src_level, hdepth, tend_level, netdt, maxq0, xv, zm, c, u, yv, ncol
+sub_out, ubm, src_level, maxq0, tend_level, hdepth, tau, ubi, c
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_unit_vector

@@ -1,0 +1,10 @@
+sub_param, mode, t
+sub_out
+global_ro, %field%num2d, %field%long_name, %field%end1d_out, %field%type2d, %hlist, tape, %field%num1d_out, %ntimes, %field%name, %field%beg1d_out, %field%type1d_out, %avgflag, %field%units
+global_wo
+global_mod
+global_non
+calls, endrun, ncd_io, ncd_defvar, hfields_1dinfo
+readParams,
+integer, intent(in) :: t                ! tape index
+character(len=*), intent(in) :: mode    ! 'define' or 'write'

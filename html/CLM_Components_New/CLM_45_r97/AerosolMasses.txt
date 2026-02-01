@@ -1,0 +1,7 @@
+sub_in, filter_off, filter_on, num_on, aerosol_inst, waterflux_inst, waterstate_inst, bounds, num_off
+sub_out
+global_ro, do_capsnow, snl, h2osoi_ice, h2osoi_liq
+global_wo, snw_rds, mss_bc_top, mss_cnc_dst2, mss_oc_top, h2osno_top, mss_cnc_bcphi, mss_cnc_dst1, mss_cnc_ocpho, mss_dst_top, mss_cnc_dst4, mss_cnc_dst3, mss_cnc_ocphi, mss_cnc_bcpho
+global_mod, mss_ocphi, mss_dst4, mss_bcpho, mss_oc_col, mss_ocpho, mss_octot, mss_bcphi, mss_dsttot, mss_bctot, mss_dst1, mss_dst_col, mss_dst3, mss_bc_col, mss_dst2
+global_non
+calls

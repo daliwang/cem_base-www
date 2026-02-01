@@ -1,0 +1,7 @@
+sub_in, cnveg_nitrogenstate_inst, cnveg_carbonstate_inst, cnveg_nitrogenflux_inst, num_soilp, filter_soilp, cnveg_state_inst, cnveg_carbonflux_inst
+sub_out
+global_ro, onset_flag, deadcrootn_xfer, deadstemc_xfer, ivt, livecrootn_xfer, leafn_xfer, leafc_xfer, deadstemn_xfer, onset_counter, livestemc_xfer, bgtr, livecrootc_xfer, deadcrootc_xfer, frootn_xfer, woody, livestemn_xfer, frootc_xfer
+global_wo, deadstemn_xfer_to_deadstemn, livestemn_xfer_to_livestemn, deadcrootn_xfer_to_deadcrootn, deadcrootc_xfer_to_deadcrootc, frootc_xfer_to_frootc, frootn_xfer_to_frootn, leafn_xfer_to_leafn, livecrootn_xfer_to_livecrootn, deadstemc_xfer_to_deadstemc, leafc_xfer_to_leafc, livecrootc_xfer_to_livecrootc, livestemc_xfer_to_livestemc
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, dmort, currentPatch, new_patch%tallest, fire_mort, new_patch%shortest, currentCohort
+global_wo, disturbance_rates
+global_mod, n, area, disturbance_rate
+global_non, null, new_patch%shortest, null, null, new_patch%tallest, new_patch, currentPatch, null, NULL, new_patch, new_patch
+calls, zero_cohort, zero_patch, sort_cohorts, create_patch, copy_cohort, terminate_cohorts, average_patch_properties, fuse_cohorts, check_patch_area, set_patchno, insert_cohort, mortality_litter_fluxes, fire_litter_fluxes

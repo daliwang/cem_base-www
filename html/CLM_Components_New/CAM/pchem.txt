@@ -1,0 +1,7 @@
+sub_in, wl, nw, tlev, airlev, xs, nlng, wc, pht_tag
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, r10, r15, r18, r14, r11, r17, xs_mvk, r44, r01, r06, r08, r04

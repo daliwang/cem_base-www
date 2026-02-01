@@ -1,0 +1,7 @@
+sub_in, gcol, owner, nclosest, lon, mlats, icol, lat, lcid, mlons, distmin
+sub_out, distmin, icol, lcid, mlons, mlats, gcol, owner
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, get_rlon_all_p, t_stopf, mpi_allgather, get_rlat_all_p

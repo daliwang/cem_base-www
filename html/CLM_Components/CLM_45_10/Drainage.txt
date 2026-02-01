@@ -1,0 +1,7 @@
+sub_in, num_urbanc, vol_liq, ubc, filter_urbanc, icefrac, num_hydrologyc, lbc, filter_hydrologyc
+sub_out
+global_ro, bsw, max_moist, ds, landunit, watsat, dsmax, itype, topo_slope, qflx_dew_snow, depth, itype, frac_h2osfc, snl, hkdepth, eff_porosity, ice, z, hk_l, zi, moist, qcharge, qflx_dew_grnd, c_param, sucsat, qflx_snwcp_liq, dz, t_soisno, hksat, Wsvic
+global_wo, eflx_impsoil, qflx_qrgwl, qflx_drain, qflx_irrig
+global_mod, h2osfc, qflx_snwcp_ice, frost_table, qflx_drain_perched, h2osoi_liq, h2osoi_ice, qflx_sub_snow, wa, qflx_rsub_sat, zwt_perched, zwt
+global_non, topo_ndx
+calls, endrun

@@ -1,0 +1,8 @@
+sub_param, goveqn_ptr:3, this:1, goveqn_id:2
+sub_out
+global_ro| cur_goveq%next, cur_goveq, NONE| this%goveqns, cur_goveq, NONE
+global_wo
+global_mod
+global_non| cur_goveq, goveqn_ptr, NONE
+calls, endrun
+readParams,

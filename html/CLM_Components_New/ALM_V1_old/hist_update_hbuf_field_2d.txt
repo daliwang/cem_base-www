@@ -1,0 +1,12 @@
+sub_param, t:1, f:2, bounds:3, num2d:4
+sub_out
+global_ro| %field%type1d, type1d, NONE| %field%l2g_scale_type, l2g_scale_type, NONE| %avgflag, avgflag, NONE| %field%c2l_scale_type, c2l_scale_type, NONE| %field%end1d, end1d, NONE| %hlist, hlist, NONE| %field%p2c_scale_type, p2c_scale_type, NONE| %field%beg1d, beg1d, NONE| %field%type1d_out, type1d_out, NONE| %field%hpindex, hpindex, NONE| clmptr_ra, field, NONE| %field%no_snow_behavior, no_snow_behavior, NONE
+global_wo
+global_mod| col%active, active, NONE| >lun%active, active, NONE| pft%active, active, NONE| tape, nacs, NONE| tape, hbuf, NONE
+global_non
+calls, c2g, endrun, p2g, l2g, hist_set_snow_field_2d
+readParams,
+integer, intent(in) :: t            ! tape index
+integer, intent(in) :: f            ! field index
+type(bounds_type), intent(in) :: bounds
+integer, intent(in) :: num2d        ! size of second dimension

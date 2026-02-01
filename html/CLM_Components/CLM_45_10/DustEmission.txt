@@ -1,0 +1,7 @@
+sub_in, ubl, lbl, ubc, lbp, num_nolakep, filter_nolakep, lbc, ubp
+sub_out
+global_ro, mss_frc_cly_vld, landunit, gridcell, h2osoi_ice, gwc_thr, watsat, tlai, column, itype, h2osoi_vol, wtlunit, u10, tsai, active, forc_rho, h2osoi_liq, mbl_bsn_fct, frac_sno, fv
+global_wo
+global_mod, flx_mss_vrt_dst, flx_mss_vrt_dst_tot
+global_non
+calls, endrun

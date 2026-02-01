@@ -1,0 +1,7 @@
+sub_in, decomptype, dimlens, found, dimcnt, dtype, iodesc
+sub_out, iodesc, found
+global_ro
+global_wo, iodesc
+global_mod, this, tag
+global_non
+calls

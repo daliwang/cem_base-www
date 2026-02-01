@@ -1,0 +1,7 @@
+sub_in, clim_soilw_file, depvel_lnd_file, season_wes_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_landuse_and_soilw_from_file, pio_closefile, soilw_inti, endrun, dvel_inti_fromlnd, interp_map, getfil, phys_getopts, get_horiz_grid_d, cam_pio_openfile

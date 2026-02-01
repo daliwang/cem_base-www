@@ -1,0 +1,7 @@
+sub_in, this, waterflux_vars, bounds, temperature_vars, num_do_smb_c, init, filter_do_smb_c
+sub_out
+global_ro, col%landunit, col%itype, waterflux_vars%qflx_glcice_col, col%gridcell, temperature_vars%t_soisno_col, col%glc_topo
+global_wo, this%tsrf_grc, this%topo_grc
+global_mod, this%qice_grc
+global_non
+calls, endrun

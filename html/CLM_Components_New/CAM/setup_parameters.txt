@@ -1,0 +1,7 @@
+sub_in, momentum_heights, params, deltaz, err_code, grid_type, nzmax, thermodynamic_heights
+sub_out, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, unpack_parameters, adj_low_res_nu

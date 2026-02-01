@@ -1,0 +1,7 @@
+sub_in, dgacc, qv12, qn11, lamda, knc, xxlsgat, qs12, sgacc, kfmac, kfmat, kfmatac, sgatk, qs22, qn22, qs11, xxlsgac, dgatk, qn12, qs21
+sub_out, qn12, qs21, qs12, qs11, qn22, qs22, qv12, qn11
+global_ro
+global_wo
+global_mod
+global_non
+calls

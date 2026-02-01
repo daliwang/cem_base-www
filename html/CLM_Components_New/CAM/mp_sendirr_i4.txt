@@ -1,0 +1,7 @@
+sub_in, q2out, q1out, q2in, recv_bl, comm, modc, send_bl, q1in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, mpi_irecv, MPI_RSEND, mpi_irsend, MPI_COMM_RANK, MPI_IRSEND, t_stopf, mpi_send, MPI_WAIT, mpi_rsend, mp_swapirr_i4, MPI_ISEND, MPI_SEND, mpi_isend, MPI_IRECV

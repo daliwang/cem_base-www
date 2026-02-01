@@ -1,0 +1,7 @@
+sub_in, avgflag_pertape, nhtfrq, fincl, nlfile, mfilt, hfilename_spec
+sub_out, mfilt, hfilename_spec, fincl, avgflag_pertape, nhtfrq
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, find_group_name, mpibcast, freeunit

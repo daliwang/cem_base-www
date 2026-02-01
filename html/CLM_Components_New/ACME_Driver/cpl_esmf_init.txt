@@ -1,0 +1,8 @@
+sub_in, rc, c2x_cx_state, cplgc, x2c_cx_state, EClock
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, cpl_esmf_init_states
+calls_ln, cpl_esmf_init_states@92, cpl_esmf_init_states@142, cpl_esmf_init_states@102, cpl_esmf_init_states@122, cpl_esmf_init_states@112, cpl_esmf_init_states@132, cpl_esmf_init_states@82

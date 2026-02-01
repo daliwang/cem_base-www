@@ -1,0 +1,7 @@
+sub_in, use_gas_abs, re_matrix, rh_matrix, nhclass, mt, g_atten_to_vol, h_atten_to_vol, hp, Ze_non, ngate, nprof, p_matrix, hgt_matrix, k2, nsizes, hm_matrix, g_to_vol_in, dBZe, do_ray, use_mie_table, g_to_vol_out, D, Ze_ray, t_matrix, freq
+sub_out, Ze_non, dBZe, re_matrix, h_atten_to_vol, Ze_ray, g_atten_to_vol
+global_ro
+global_wo
+global_mod
+global_non
+calls, zeff, dsd

@@ -1,0 +1,7 @@
+sub_in, delp, r_vir, qqq, phis, grid, te0, v, t3, tte, pe, cp, u, rg, peln
+sub_out, tte
+global_ro
+global_wo
+global_mod
+global_non
+calls, par_xsum, mp_send3d, par_vecsum, mp_recv3d

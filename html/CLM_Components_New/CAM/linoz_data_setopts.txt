@@ -1,0 +1,7 @@
+sub_in, linoz_data_fixed_tod_in, linoz_data_filelist_in, linoz_data_file_in, linoz_data_cycle_yr_in, linoz_data_fixed_ymd_in, linoz_data_rmfile_in, linoz_data_path_in, linoz_data_type_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, advance_trcdata, outfld

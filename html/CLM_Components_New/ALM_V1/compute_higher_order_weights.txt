@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro, col%landunit, pft%wtcol, pft%column
+global_wo
+global_mod, pft%wtgcell, lun%wtgcell, col%wtgcell, pft%wtlunit, col%wtlunit
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds  ! clump bounds

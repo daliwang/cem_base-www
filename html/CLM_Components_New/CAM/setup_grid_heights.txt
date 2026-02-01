@@ -1,0 +1,7 @@
+sub_in, grid_type, l_implemented, thermodynamic_heights, momentum_heights, deltaz, zm_init
+sub_out, 
+global_ro
+global_wo
+global_mod
+global_non
+calls

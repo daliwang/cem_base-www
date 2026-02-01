@@ -1,0 +1,7 @@
+sub_in, invrs_rho_ds_zm, nu, a1, dt, tau_zm, a1_zt, wp3_on_wp2_zt, lhs, Cn, wp3_on_wp2, Kw, beta, wm_zm, l_iter, rho_ds_zm, rho_ds_zt
+sub_out, lhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_boundary_conditions_lhs

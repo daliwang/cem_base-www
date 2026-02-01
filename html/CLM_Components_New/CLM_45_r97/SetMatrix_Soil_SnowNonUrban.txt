@@ -1,0 +1,7 @@
+sub_in, frac_sno_eff, nband, bounds, filter_nolakec, num_nolakec, fact, tk, bmatrix_soil_snow
+sub_out, bmatrix_soil_snow
+global_ro, z
+global_wo
+global_mod
+global_non
+calls

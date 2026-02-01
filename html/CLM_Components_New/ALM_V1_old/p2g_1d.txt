@@ -1,0 +1,14 @@
+sub_param, c2l_scale_type:5, bounds:1, garr:3, p2c_scale_type:4, l2g_scale_type:6, parr:2
+sub_out, garr
+global_ro| pft%column, column, NONE| lun%canyon_hwr, canyon_hwr, NONE| col%landunit, landunit, NONE| pft%landunit, landunit, NONE| pft%wtgcell, wtgcell, NONE| pft%gridcell, gridcell, NONE
+global_wo
+global_mod
+global_non
+calls, endrun, build_scale_l2g
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in)  :: parr( bounds%begp: )  ! input pft array
+real(r8), intent(out) :: garr( bounds%begg: )  ! output gridcell array
+character(len=*), intent(in) :: p2c_scale_type ! scale factor type for averaging
+character(len=*), intent(in) :: c2l_scale_type ! scale factor type for averaging
+character(len=*), intent(in) :: l2g_scale_type ! scale factor type for averaging

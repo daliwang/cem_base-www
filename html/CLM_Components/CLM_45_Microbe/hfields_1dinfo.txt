@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro, latdeg, londeg, landunit, gridcell, itype
+global_wo
+global_mod
+global_non, g, c, p, do, l
+calls, ncd_io, ncd_defvar, get_proc_bounds

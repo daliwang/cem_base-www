@@ -1,0 +1,39 @@
+sub_param, carbonstate_vars:11, filter_soilp:5, temperature_vars:23, cnstate_vars:9, num_soilp:4, canopystate_vars:21, filter_pcropp:7, num_soilc:2, soilstate_vars:22, atm2lnd_vars:18, doalb:8, filter_soilc:3, photosyns_vars:27, waterstate_vars:19, crop_vars:24, ch4_vars:25, bounds:1, num_pcropp:6, energyflux_vars:29, nitrogenflux_vars:16, c13_carbonstate_vars:13, phosphorusflux_vars:30, soilhydrology_vars:28, c14_carbonflux_vars:14, carbonflux_vars:10, c13_carbonflux_vars:12, nitrogenstate_vars:17, phosphorusstate_vars:31, dgvs_vars:26, waterflux_vars:20, c14_carbonstate_vars:15
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, c14_carbonflux_vars%summary_rr, C14Decay, NStateUpdate1, CNPhenology, c13_carbonflux_vars%summary_cflux_for_ch4, CNSoilLittVertTransp, CNRootDyn, CIsoFlux3, 'CNDecompAlloc2', CIsoFlux1, carbonflux_vars%summary_cflux_for_ch4, PStateUpdate2, CStateUpdate3, CNFireFluxes, CNHarvest, c14_carbonflux_vars%summary_cflux_for_ch4, carbonflux_vars%summary_rr, PStateUpdate2h, t_startf, CNGResp, c13_carbonflux_vars%summary_rr, CNDecompAlloc, CStateUpdate2h, NStateUpdate2h, CNCropHarvestPools, update_plant_stoichiometry, CNDecompAlloc2, PStateUpdate1, CStateUpdate2, CIsoFlux2h, CIsoFlux2, NStateUpdate2, CStateUpdate0, CStateUpdate1, CNGapMortality, CNWoodProducts, t_stopf, C14BombSpike, CNFireArea
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+integer                  , intent(in)    :: num_soilp         ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)   ! filter for soil patches
+integer                  , intent(in)    :: num_pcropp        ! number of prog. crop patches in filter
+integer                  , intent(in)    :: filter_pcropp(:)  ! filter for prognostic crop patches
+logical                  , intent(in)    :: doalb             ! true = surface albedo calculation time step
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(crop_type)          , intent(inout) :: crop_vars
+type(ch4_type)           , intent(in)    :: ch4_vars
+type(dgvs_type)          , intent(inout) :: dgvs_vars
+type(photosyns_type)     , intent(in)    :: photosyns_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(energyflux_type)    , intent(in)    :: energyflux_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars

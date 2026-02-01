@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, clm3%g%l%c%cc13f%dwt_prod10c_gain, clm3%g%l%c%cnf%dwt_prod100n_gain, clm3%g%l%c%cnf%dwt_prod10n_gain, clm3%g%l%c%ccf%dwt_prod100c_gain, clm3%g%l%c%cc13f%hrv_deadstemc_to_prod100c, clm3%g%l%c%ccf%dwt_prod10c_gain, clm3%g%l%c%ccf%hrv_deadstemc_to_prod100c, clm3%g%l%c%cc14f%hrv_deadstemc_to_prod10c, clm3%g%l%c%cc13f%hrv_deadstemc_to_prod10c, clm3%g%l%c%cc13f%dwt_prod100c_gain, clm3%g%l%c%cc14f%dwt_prod10c_gain, clm3%g%l%c%cc14f%dwt_prod100c_gain, clm3%g%l%c%cnf%hrv_deadstemn_to_prod10n, clm3%g%l%c%cnf%hrv_deadstemn_to_prod100n, clm3%g%l%c%cc14f%hrv_deadstemc_to_prod100c, clm3%g%l%c%ccf%hrv_deadstemc_to_prod10c
+global_wo
+global_mod, clm3%g%l%c%cc14f%prod100c_loss, clm3%g%l%c%ccf%prod10c_loss, clm3%g%l%c%cc14s%prod10c, clm3%g%l%c%cc14f%prod10c_loss, clm3%g%l%c%ccf%prod100c_loss, clm3%g%l%c%cnf%prod100n_loss, clm3%g%l%c%ccs%prod10c, clm3%g%l%c%cnf%prod10n_loss, clm3%g%l%c%cns%prod10n, clm3%g%l%c%cc14s%prod100c, clm3%g%l%c%cc13s%prod10c, clm3%g%l%c%cc13s%prod100c, clm3%g%l%c%cc13f%prod100c_loss, clm3%g%l%c%cns%prod100n, clm3%g%l%c%ccs%prod100c, clm3%g%l%c%cc13f%prod10c_loss
+global_non, clm3%g%l%c
+calls
+
+Tree height: 2

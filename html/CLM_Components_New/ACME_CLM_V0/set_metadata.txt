@@ -1,0 +1,7 @@
+sub_in, do_check_sums_equal_1, varname, conversion_factor, this, dyn_file, dim1name, data_shape
+sub_out
+global_ro
+global_wo
+global_mod, this%dim1name, this%data_shape, this%do_check_sums_equal_1, this%varname, this%conversion_factor
+global_non, dyn_file
+calls

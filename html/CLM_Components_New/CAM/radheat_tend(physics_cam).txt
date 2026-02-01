@@ -1,0 +1,7 @@
+sub_in, flnt, asdir, qrl, fsnt, state, net_flx, flns, pbuf, ptend, fsns, qrs
+sub_out, net_flx
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init

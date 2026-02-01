@@ -1,0 +1,10 @@
+sub_in, ubg, filter_natvegp, lbp, kyr, num_natvegp, ubp, lbg
+sub_out
+global_ro, clm3%g%l%c%p%pdgvs%agdd, clm3%g%l%c%p%pdgvs%t_mo_min, clm3%g%l%c%p%gridcell
+global_wo
+global_mod, clm3%g%gdgvs%tmomin20, clm3%g%gdgvs%agdd20
+global_non, clm3%g%l%c%p%pdgvs%fpcgrid, clm3%g%l%c%p%mxy
+calls, Establishment, Light, BuildNatVegFilter
+
+Tree height: 2
+0 , BuildNatVegFilter, Light, Establishment, 

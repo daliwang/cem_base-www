@@ -1,0 +1,7 @@
+sub_in, nc
+sub_out
+global_ro, landunit, column
+global_wo
+global_mod, active
+global_non, c, p, l
+calls, get_clump_bounds, endrun

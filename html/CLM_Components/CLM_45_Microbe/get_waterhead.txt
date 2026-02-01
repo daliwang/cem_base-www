@@ -1,0 +1,7 @@
+sub_in, ubc, filter_c, waterhead, lbc, num_c
+sub_out, waterhead
+global_ro, h2osoi_vol, watsat, t_soisno
+global_wo
+global_mod
+global_non
+calls

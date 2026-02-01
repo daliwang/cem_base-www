@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%dsladlai, cps%farea_burned, pcs%leafc, pft%column, dgv_pftcon%allom3, pftcon%slatop, dgv_pftcon%allom2, pftcon%displar, pftcon%z0mr, pdgvs%fpcgrid, pcs%deadstemc, cps%snow_depth, pdgvs%nind, pps%harvdate, pftcon%dwood, pft%gridcell, pps%forc_hgt_u_pft, pftcon%woody, pft%itype
+global_wo, pps%frac_veg_nosno_alb, pps%esai
+global_mod, pps%htop, pps%peaklai, pps%tsai, pps%elai, pps%hbot, pps%tlai, pps%htmx
+global_non
+calls
+
+Tree height: 6

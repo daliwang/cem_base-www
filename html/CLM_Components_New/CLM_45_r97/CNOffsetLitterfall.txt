@@ -1,0 +1,7 @@
+sub_in, cnveg_state_inst, cnveg_carbonflux_inst, cnveg_carbonstate_inst, cnveg_nitrogenflux_inst, num_soilp, filter_soilp
+sub_out
+global_ro, grainc, graincn, offset_flag, cpool_to_frootc, frootcn, ivt, cpool_to_leafc, livestemc, lflitcn, cpool_to_grainc, livewdcn, cpool_to_livestemc, leafc, offset_counter, frootc, leafcn
+global_wo, leafn_to_retransn, livestemn_to_litter, grainn_to_food, frootn_to_litter
+global_mod, prev_leafc_to_litter, frootc_to_litter, leafc_to_litter, livestemc_to_litter, grainc_to_food, leafn_to_litter, prev_frootc_to_litter
+global_non
+calls

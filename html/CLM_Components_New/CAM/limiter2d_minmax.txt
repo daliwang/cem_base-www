@@ -1,0 +1,7 @@
+sub_in, hvcoord, qmax, Q, qmin, spheremp, dp
+sub_out, Q
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,22 @@
+sub_param, canopystate_vars, bounds, eair, atm2lnd_vars, cair, fn, dayl_factor, temperature_vars, filterp, EDbio_vars, rb, esat_tv, photosyns_vars, oair
+sub_out
+global_ro, %canopy_layer, ecophyscon%fnitr, temperature_vars%thm_patch, %balive, gridCellEdState%rootfr_ft, gridCellEdState%esai_profile, gridCellEdState%btran_ft, EDpft%ED_patch, %NV, canopystate_vars%elai_patch, gridCellEdState%ed_laisun_z, %laimemory, currentCohort%shorter, currentPatch%tallest, %treesai, %c_area, %br, temperature_vars%t_veg_patch, gridCellEdState%ed_laisha_z, gridCellEdState%area, %pft, %n, %hite, EDecophyscon%sapwood_ratio, gridCellEdState%elai_profile, %nv, 1:currentCohort%nv, ecophyscon%c3psn, gridCellEdState%canopy_area_profile, gridCellEdState%total_canopy_area, gridCellEdState%NCL_p, ecophyscon%woody, ecophyscon%leafcn, gridCellEdState%f_sun, ecophyscon%froot_leaf, gridCellEdState%ed_parsun_z, %column, %livecrootn, atm2lnd_vars%forc_pbot_downscaled_col, %gridcell, pft%gridcell, %canopy_trim, gridCellEdState%ed_parsha_z, %treelai, temperature_vars%t_soisno_col, EDEcophyscon%BB_slope, gridCellEdState%canopy_layer_lai, ecophyscon%slatop
+global_wo, gridCellEdState%present, gridCellEdState%nrad, %ts_net_uptake, %npp_clm
+global_mod, %livestemn, gridCellEdState%ncan, %rd, photosyns_vars%lmrcanopy_patch, %froot_mr, %gpp_clm, photosyns_vars%psncanopy_patch, EDbio_vars%GCcanopy_patch, %resp_g, %resp_clm, %gscan, gridCellEdState%psn_z, canopystate_vars%rscanopy_patch, %livestem_mr, %livecroot_mr, %bsw, %resp_m, !currentCohort%resp_m
+global_non, ecophyscon%flnr, gridCellEdState, currentPatch%younger, canopystate_vars%tlai_patch
+calls, endrun, root_fraction, t_stopf, t_startf, quadratic
+readParams,
+type(bounds_type)      , intent(in)    :: bounds                      ! bounds
+integer                , intent(in)    :: fn                          ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                 ! pft filter
+real(r8)               , intent(in)    :: esat_tv(bounds%begp: )      ! saturation vapor pressure at t_veg (Pa)
+real(r8)               , intent(in)    :: eair( bounds%begp: )        ! vapor pressure of canopy air (Pa)
+real(r8)               , intent(in)    :: oair( bounds%begp: )        ! Atmospheric O2 partial pressure (Pa)
+real(r8)               , intent(in)    :: cair( bounds%begp: )        ! Atmospheric CO2 partial pressure (Pa)
+real(r8)               , intent(inout) :: rb( bounds%begp: )          ! boundary layer resistance (s/m)
+real(r8)               , intent(in)    :: dayl_factor( bounds%begp: ) ! scalar (0-1) for daylength
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars
+type(EDbio_type)       , intent(inout) :: EDbio_vars

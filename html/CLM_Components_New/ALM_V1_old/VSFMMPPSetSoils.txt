@@ -1,0 +1,10 @@
+sub_param, soilstate_vars:4, vsfm_mpp:1, begc:2, endc:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, VSFMMPPSetSoilsCLM, endrun
+readParams,
+integer, intent(in)               :: begc,endc
+type(soilstate_type) , intent(in) :: soilstate_vars

@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %pft, %treesai, ecophyscon%slatop, EDecophyscon%root_long, ecophyscon%froot_leaf, currentSite%youngest_patch, currentPatch%older, currentCohort%shorter, currentPatch%tallest, ecophyscon%leaf_long
+global_wo, %year_net_uptake, %nv
+global_mod, %canopy_trim, %laimemory, %leaf_cost, %treelai
+global_non
+calls
+readParams,
+type (site),intent(inout), pointer :: currentSite

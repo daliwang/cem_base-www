@@ -1,0 +1,7 @@
+sub_in, temperature_inst, ed_phenology_inst, currentSite, waterstate_inst
+sub_out
+global_ro, ED_GDD_patch, t_veg24
+global_wo
+global_mod
+global_non
+calls, phenology_leafonoff

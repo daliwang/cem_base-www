@@ -1,0 +1,12 @@
+sub_param, sat_res, vg_m, satParams, alpha
+sub_out
+global_ro
+global_wo, satParams%relperm_func_type, satParams%sat_func_type, satParams%vg_n
+global_mod, satParams%sat_res, satParams%alpha, satParams%vg_m
+global_non
+calls, satParams%Init, endrun
+readParams,
+type(saturation_params_type) , intent(out) :: satParams
+PetscReal                    , intent(in)  :: sat_res
+PetscReal                    , intent(in)  :: alpha
+PetscReal                    , intent(in)  :: vg_m

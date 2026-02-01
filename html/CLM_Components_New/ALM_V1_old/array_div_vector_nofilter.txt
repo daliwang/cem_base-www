@@ -1,0 +1,11 @@
+sub_param, arr1d_in:1, which_dim:2, arr2d_inout:3
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_assert
+readParams,
+real(r8), intent(in) :: arr1d_in(:)     !scaling factor
+integer,  intent(in) :: which_dim        !which dimension is scaled
+real(r8), intent(inout) :: arr2d_inout(:,:)   !2d array to be scaled

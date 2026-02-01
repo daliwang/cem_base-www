@@ -1,0 +1,8 @@
+sub_in, mapper, mpicom
+sub_out
+global_ro
+global_wo, counter, rearrange_only, mapfile, copy_only, strategy
+global_mod, mpicom
+global_non, seq_maps
+calls, shr_sys_abort
+calls_ln, shr_sys_abort@139

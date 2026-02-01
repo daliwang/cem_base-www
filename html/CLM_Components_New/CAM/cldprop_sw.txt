@@ -1,0 +1,7 @@
+sub_in, asmc, rei, cldfrac, dge, iceflag, clwp, ssacloud, nlayers, ssac, ciwp, taucldorig, inflag, asmcloud, tauc, liqflag, rel, taucloud
+sub_out, asmcloud, taucloud, ssacloud, taucldorig
+global_ro
+global_wo
+global_mod
+global_non
+calls

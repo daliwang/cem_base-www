@@ -1,0 +1,7 @@
+sub_in, flag, ncid, bounds, rdate
+sub_out
+global_ro
+global_wo
+global_mod, tape, tape
+global_non
+calls, ncd_io, ncd_defdim, ncd_pio_closefile, get_proc_global, ncd_pio_openfile, ncd_inqvid, ncd_enddef, ncd_inqdlen, getfil, ncd_defvar, htape_create, strip_null, endrun

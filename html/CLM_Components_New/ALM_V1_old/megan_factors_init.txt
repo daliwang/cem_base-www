@@ -1,0 +1,14 @@
+sub_param, filename:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, bld_hash_table_indices, pio_closefile, getfil, ncd_pio_openfile, ncd_inqdlen, enter_hash_data
+readParams,
+character(len=*),intent(in) :: filename ! MEGAN factors input file
+character(len=*),intent(in) :: names(:)
+character(len=*), intent(in) :: name
+real(r8), intent(in) :: data(:)
+integer,  intent(in) :: class_n
+real(r8), intent(in) :: molec_wght

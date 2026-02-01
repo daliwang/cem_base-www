@@ -1,0 +1,21 @@
+sub_param, cnstate_vars, carbonstate_vars, nitrogenstate_vars, carbonflux_vars, num_soilp, nitrogenflux_vars, filter_soilp, c14_carbonflux_vars, bounds, photosyns_vars, c13_carbonflux_vars, filter_soilc, num_soilc
+sub_out
+global_ro, ecophyscon%woody, ecophyscon%flivewd, cnstate_vars%c_allometry_patch, ecophyscon%leafcn, ecophyscon%livewdcn, carbonflux_vars%availc_patch, ecophyscon%deadwdcn, ecophyscon%croot_stem, carbonflux_vars%annsum_npp_patch, carbonflux_vars%gpp_before_downreg_patch, c14cf%psnshade_to_cpool_patch, c13cf%psnshade_to_cpool_patch, nitrogenflux_vars%retransn_to_npool_patch, nitrogenflux_vars%plant_ndemand_patch, ecophyscon%froot_leaf, cnstate_vars%n_allometry_patch, ecophyscon%frootcn, ecophyscon%graincn, cnstate_vars%fpg_col, c13cf%psnsun_to_cpool_patch, c14cf%psnsun_to_cpool_patch, ecophyscon%stem_leaf, pft%itype, cnstate_vars%astem_patch, cnstate_vars%aleaf_patch, cnstate_vars%croplive_patch, pft%column, ecophyscon%fcur
+global_wo, nitrogenflux_vars%npool_to_livecrootn_patch, nitrogenflux_vars%npool_to_livestemn_storage_patch, carbonflux_vars%cpool_to_gresp_storage_patch, nitrogenflux_vars%npool_to_grainn_storage_patch, nitrogenflux_vars%npool_to_frootn_patch, carbonflux_vars%cpool_to_frootc_patch, nitrogenflux_vars%npool_to_deadcrootn_patch, nitrogenflux_vars%npool_to_deadcrootn_storage_patch, nitrogenflux_vars%npool_to_deadstemn_storage_patch, carbonflux_vars%cpool_to_deadcrootc_patch, c13cf%psnsun_to_cpool_patch, c14cf%psnsun_to_cpool_patch, nitrogenflux_vars%npool_to_deadstemn_patch, carbonflux_vars%cpool_to_deadstemc_patch, carbonflux_vars%cpool_to_livestemc_patch, c14cf%psnshade_to_cpool_patch, c13cf%psnshade_to_cpool_patch, nitrogenflux_vars%npool_to_livecrootn_storage_patch, carbonflux_vars%cpool_to_grainc_patch, carbonflux_vars%cpool_to_leafc_patch, nitrogenflux_vars%npool_to_leafn_patch, nitrogenflux_vars%npool_to_grainn_patch, nitrogenflux_vars%npool_to_leafn_storage_patch, nitrogenflux_vars%npool_to_frootn_storage_patch, nitrogenflux_vars%npool_to_livestemn_patch, carbonflux_vars%cpool_to_livecrootc_patch
+global_mod, carbonflux_vars%cpool_to_livestemc_storage_patch, nitrogenflux_vars%plant_nalloc_patch, carbonflux_vars%excess_cflux_patch, carbonflux_vars%cpool_to_livecrootc_storage_patch, nitrogenflux_vars%sminn_to_npool_patch, carbonflux_vars%cpool_to_deadcrootc_storage_patch, carbonflux_vars%cpool_to_deadstemc_storage_patch, cnstate_vars%downreg_patch, carbonflux_vars%plant_calloc_patch, carbonflux_vars%cpool_to_grainc_storage_patch, carbonflux_vars%cpool_to_leafc_storage_patch, carbonflux_vars%psnsun_to_cpool_patch, carbonflux_vars%cpool_to_frootc_storage_patch, carbonflux_vars%psnshade_to_cpool_patch
+global_non, photosyns_vars%psnsun_patch, carbonstate_vars%leafc_patch, carbonstate_vars%frootc_patch, nitrogenstate_vars%retransn_patch, nitrogenflux_vars%frootn_to_retransn_patch, c14_carbonflux_vars, carbonstate_vars%livestemc_patch, nitrogenflux_vars%sminn_to_plant_col, c13_carbonflux_vars, photosyns_vars%psnsha_patch
+calls
+readParams,readCNAllocBetrParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc        ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)  ! filter for soil columns
+integer                  , intent(in)    :: num_soilp        ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)  ! filter for soil patches
+type(photosyns_type)     , intent(in)    :: photosyns_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars

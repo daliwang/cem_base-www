@@ -1,0 +1,7 @@
+sub_in, list_idx_in, state, pbuf, dgnum_m
+sub_out
+global_ro
+global_wo, dgncur_a
+global_mod
+global_non
+calls, rad_cnst_get_aer_props, rad_cnst_get_mode_num, endrun, pbuf_get_field, rad_cnst_get_aer_mmr, rad_cnst_get_mode_props, rad_cnst_get_info

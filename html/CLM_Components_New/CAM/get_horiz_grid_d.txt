@@ -1,0 +1,7 @@
+sub_in, clat_d_out, area_d_out, clon_d_out, size, wght_d_out
+sub_out, area_d_out, clat_d_out, wght_d_out, clon_d_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

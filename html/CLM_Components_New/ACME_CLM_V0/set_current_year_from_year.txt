@@ -1,0 +1,7 @@
+sub_in, cur_year, this
+sub_out
+global_ro, this%nyears, this%years
+global_wo, this%time_index_lower
+global_mod, this%time_index_upper
+global_non
+calls, endrun

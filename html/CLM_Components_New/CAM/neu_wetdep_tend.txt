@@ -1,0 +1,7 @@
+sub_in, prain, delt, zint, wd_tend, pmid, ncol, cmfdqr, lchnk, pdel, tfld, cld, mmr, nevapr
+sub_out, wd_tend
+global_ro
+global_wo
+global_mod
+global_non
+calls, washo, get_area_all_p, outfld

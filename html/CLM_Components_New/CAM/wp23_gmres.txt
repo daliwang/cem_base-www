@@ -1,0 +1,7 @@
+sub_in, C1_Skw_fnc, err_code, nsup, invrs_rho_ds_zm, C11_Skw_fnc, tauw3t, rhs, tau1m, l_crank_nich_diff, Kw8, a1_zt, nsub, solut, wp2, Kw1, Skw_zt, a1, wm_zm, dt, a3_zt, invrs_rho_ds_zt, nrhs, rho_ds_zt, rho_ds_zm, a3, wp3_on_wp2, wm_zt
+sub_out, solut, rhs, err_code
+global_ro
+global_wo
+global_mod
+global_non
+calls, wp23_lhs, band_solvex, gmres_solve, band_solve, gmres_cache_soln, wp23_lhs_csr, stat_update_var_pt

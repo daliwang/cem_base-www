@@ -1,0 +1,7 @@
+sub_in, alon, alfa3, hemis, qteaur, flux2, colat, flux3, alfa2, do_aurora, flux, alfa, ncol, drizl
+sub_out, alfa2, flux3, flux2, qteaur, alfa3, drizl, alfa, flux
+global_ro
+global_wo
+global_mod
+global_non
+calls

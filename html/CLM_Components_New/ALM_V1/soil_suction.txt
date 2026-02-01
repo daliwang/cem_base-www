@@ -1,0 +1,14 @@
+sub_param, smp, this, smpsat, bsw, dsmpds, s
+sub_out, dsmpds, smp
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(soil_water_retention_curve_clapp_hornberg_1978_type), intent(in) :: this
+real(r8), intent(in)            :: smpsat   !minimum soil suction, positive [mm]
+real(r8), intent(in)            :: s        !reletive saturation, [0, 1]
+real(r8), intent(in)            :: bsw      !shape parameter
+real(r8), intent(out)           :: smp      !soil suction, negative, [mm]
+real(r8), optional, intent(out) :: dsmpds   !d[smp]/ds, [mm]

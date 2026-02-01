@@ -1,0 +1,10 @@
+sub_param, porParams:2, this:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, PorosityFunctionSetLinearModel, PorosityFunctionSetConstantModel
+readParams,
+class(porosity_params_type), intent (out) :: this
+class(porosity_params_type), intent (in)  :: porParams

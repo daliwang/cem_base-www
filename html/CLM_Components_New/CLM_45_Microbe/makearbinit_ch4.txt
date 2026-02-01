@@ -1,0 +1,10 @@
+sub_in, arbinit
+sub_out
+global_ro, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%cch4%fsat_bef, clm3%g%l%c%cch4%finundated_lag, clm3%g%l%c%cch4%qflx_surf_lag
+global_wo, clm3%g%l%c%cws%finundated
+global_mod, clm3%g%l%c%cch4%o2stress_sat, clm3%g%l%c%cch4%conc_ch4_unsat, clm3%g%l%c%cch4%conc_ch4_sat, clm3%g%l%c%cch4%o2stress_unsat, clm3%g%l%c%cch4%conc_o2_sat, clm3%g%l%c%cch4%lake_soilc, clm3%g%l%c%cch4%conc_o2_unsat, clm3%g%l%c%cch4%layer_sat_lag
+global_non, clm3%g%l%c%cps%cellorg
+calls, get_proc_bounds
+
+Tree height: 16
+1+, get_proc_bounds, 

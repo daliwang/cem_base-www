@@ -1,0 +1,7 @@
+sub_in, face_no, sphere, cart, ne, cube, number
+sub_out, face_no, number, cube
+global_ro
+global_wo
+global_mod
+global_non
+calls, abortmp

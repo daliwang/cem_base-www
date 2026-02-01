@@ -1,0 +1,10 @@
+sub_param, histrest, t
+sub_out
+global_ro, %ncprec
+global_wo
+global_mod
+global_non
+calls, ncd_defdim, ncd_putatt, htape_add_ltype_metadata, shr_sys_flush, getdatetime, htape_add_cft_metadata, , ncd_pio_createfile, get_proc_global
+readParams,
+integer, intent(in) :: t                   ! tape index
+logical, intent(in), optional :: histrest  ! if creating the history restart file

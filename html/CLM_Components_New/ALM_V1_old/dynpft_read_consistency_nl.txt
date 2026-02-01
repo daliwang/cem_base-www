@@ -1,0 +1,9 @@
+sub_param, check_dynpft_consistency:1
+sub_out, check_dynpft_consistency
+global_ro
+global_wo
+global_mod
+global_non
+calls, relavu, endrun, shr_mpi_bcast, find_nlgroup_name
+readParams,dynpft_read_consistency_nl
+logical, intent(out) :: check_dynpft_consistency ! whether to do the consistency check

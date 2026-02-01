@@ -1,0 +1,7 @@
+sub_in, patchptr
+sub_out
+global_ro, %pft, %bl, patchptr%area, %n, %bdead, %br, %bstore, %bsw, nextc, currentPatch%tallest
+global_wo
+global_mod, patchptr%leaf_litter, patchptr%CWD_AG, patchptr%root_litter, patchptr%CWD_BG
+global_non, currentCohort%taller, currentCohort%shorter, currentCohort%shorter, patchptr, currentCohort%taller, currentCohort%shorter
+calls

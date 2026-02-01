@@ -1,0 +1,7 @@
+sub_in, watsat_col, hksat_col, mode, sucsat_col, bounds, t, bsw_col
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, endrun, ncd_defvar, shr_string_listAppend, c2g

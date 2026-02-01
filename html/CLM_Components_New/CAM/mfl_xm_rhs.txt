@@ -1,0 +1,7 @@
+sub_in, rhs, xm_forcing, wpxp, rho_ds_zm, dt, invrs_rho_ds_zt, xm_old
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls

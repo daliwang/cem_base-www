@@ -1,0 +1,7 @@
+sub_in, je, gb_mol, iv, fval, cair, gs_mol, atm2lnd_vars, lmr_z, photosyns_vars, par_z, ci, p, c, oair, rh_can
+sub_out, fval, gs_mol
+global_ro, photosyns_vars%tpu_z_patch, photosyns_vars%c3flag_patch, photosyns_vars%kc_patch, photosyns_vars%cp_patch, photosyns_vars%vcmax_z_patch, photosyns_vars%bbb_patch, photosyns_vars%mbb_patch, photosyns_vars%kp_z_patch, photosyns_vars%ko_patch, atm2lnd_vars%forc_pbot_downscaled_col, photosyns_vars%qe_patch, photosyns_vars%theta_cj_patch
+global_wo
+global_mod, photosyns_vars%an_patch, photosyns_vars%ag_patch, photosyns_vars%ac_patch, photosyns_vars%ap_patch, photosyns_vars%aj_patch
+global_non
+calls, quadratic

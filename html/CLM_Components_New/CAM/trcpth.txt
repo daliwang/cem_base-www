@@ -1,0 +1,7 @@
+sub_in, uco221, uco223, uco213, uco212, ucfc12, uptype, ch4, cfc12, bn2o0, qnm, uch4, ncol, uco222, un2o0, un2o1, n2o, bn2o1, cfc11, co2mmr, pnm, bch4, uco211, ucfc11, tnm
+sub_out, ucfc12, bn2o1, bn2o0, uch4, uco222, un2o0, uco223, uco213, uptype, uco221, bch4, ucfc11, uco211, un2o1, uco212
+global_ro
+global_wo
+global_mod
+global_non
+calls

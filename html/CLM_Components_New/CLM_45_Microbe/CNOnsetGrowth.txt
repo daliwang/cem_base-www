@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, clm3%g%l%c%p%pcs%livecrootc_xfer, clm3%g%l%c%p%pns%frootn_xfer, clm3%g%l%c%p%pns%leafn_xfer, clm3%g%l%c%p%pepv%onset_flag, clm3%g%l%c%p%pcs%frootc_xfer, clm3%g%l%c%p%pns%deadcrootn_xfer, clm3%g%l%c%p%pns%deadstemn_xfer, clm3%g%l%c%p%pcs%leafc_xfer, clm3%g%l%c%p%pcs%deadcrootc_xfer, pftcon%woody, clm3%g%l%c%p%pcs%livestemc_xfer, clm3%g%l%c%p%pepv%onset_counter, clm3%g%l%c%p%pns%livestemn_xfer, clm3%g%l%c%p%pcs%deadstemc_xfer, clm3%g%l%c%p%pepv%bgtr, clm3%g%l%c%p%pns%livecrootn_xfer
+global_wo, clm3%g%l%c%p%pnf%deadcrootn_xfer_to_deadcrootn, clm3%g%l%c%p%pnf%leafn_xfer_to_leafn, clm3%g%l%c%p%pnf%livestemn_xfer_to_livestemn, clm3%g%l%c%p%pnf%livecrootn_xfer_to_livecrootn, clm3%g%l%c%p%pnf%deadstemn_xfer_to_deadstemn, clm3%g%l%c%p%pcf%livecrootc_xfer_to_livecrootc, clm3%g%l%c%p%pcf%livestemc_xfer_to_livestemc, clm3%g%l%c%p%pcf%frootc_xfer_to_frootc, clm3%g%l%c%p%pcf%leafc_xfer_to_leafc, clm3%g%l%c%p%pnf%frootn_xfer_to_frootn, clm3%g%l%c%p%pcf%deadstemc_xfer_to_deadstemc, clm3%g%l%c%p%pcf%deadcrootc_xfer_to_deadcrootc
+global_mod
+global_non, clm3%g%l%c%p%itype
+calls
+
+Tree height: 3

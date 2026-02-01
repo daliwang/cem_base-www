@@ -1,0 +1,11 @@
+sub_in, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_global, check_dim
+
+Tree height: 2
+0 , check_dim, check_dim, check_dim, check_dim, 
+1+, get_proc_global, check_dim, check_dim, check_dim, check_dim, 

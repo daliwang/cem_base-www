@@ -1,0 +1,7 @@
+sub_in, soilhydrology_vars, soil_water_retention_curve, num_urbanc, filter_urbanc, soilstate_vars, waterflux_vars, waterstate_vars, bounds, temperature_vars, filter_hydrologyc, num_hydrologyc
+sub_out
+global_ro, pft%wtcol, waterflux_vars%qflx_infl_col, col%zi, soilstate_vars%hksat_col, waterflux_vars%qflx_tran_veg_patch, soilstate_vars%watsat_col, waterstate_vars%h2osoi_vol_col, col%z, waterstate_vars%h2osoi_ice_col, soilhydrology_vars%origflag, soilstate_vars%bsw_col, soilstate_vars%smpmin_col, soilhydrology_vars%zwt_col, soilstate_vars%sucsat_col, soilstate_vars%rootr_patch, soilhydrology_vars%fracice_col, temperature_vars%t_soisno_col, waterflux_vars%qflx_tran_veg_col, col%dz, col%pfti
+global_wo, soilstate_vars%smp_l_col, soilstate_vars%hk_l_col
+global_mod, soilstate_vars%rootr_col, waterflux_vars%qflx_deficit_col, soilhydrology_vars%qcharge_col, waterstate_vars%h2osoi_liq_col, soilhydrology_vars%icefrac_col
+global_non, soilstate_vars%eff_porosity_col, soilhydrology_vars%hkdepth_col
+calls, Tridiagonal

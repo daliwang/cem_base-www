@@ -1,0 +1,7 @@
+sub_in, prefd, ptrad, ptau, nlayers, pw, pref, lrtchk, pgg, ptra, prmuz
+sub_out, ptrad, prefd, pref, ptra
+global_ro
+global_wo
+global_mod
+global_non
+calls

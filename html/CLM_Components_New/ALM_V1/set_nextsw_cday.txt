@@ -1,0 +1,9 @@
+sub_param, nextsw_cday_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(IN) :: nextsw_cday_in ! input calday of next radiation computation

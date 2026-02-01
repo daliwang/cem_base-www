@@ -1,0 +1,7 @@
+sub_in, count, start, dim1name, found, ncid, vardesc, posNOTonfile
+sub_out, found, start, count
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, ncd_inqvdims, shr_scam_getCloseLatLon

@@ -1,0 +1,7 @@
+sub_in, flx_abs, albout, bounds, coszen, filter_nourbanc, mss_cnc_aer_in, flg_slr_in, h2osno_liq, albsfc, num_nourbanc, waterstate_inst, snw_rds, h2osno_ice, flg_snw_ice
+sub_out, albout, flx_abs
+global_ro, h2osno, snl
+global_wo
+global_mod
+global_non, waterstate_inst%frac_sno_eff_col
+calls, endrun

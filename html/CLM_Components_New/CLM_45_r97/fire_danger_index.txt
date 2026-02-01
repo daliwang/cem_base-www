@@ -1,0 +1,7 @@
+sub_in, currentSite, atm2lnd_inst, temperature_inst
+sub_out
+global_ro, t_veg24, rh24, prec24
+global_wo
+global_mod
+global_non
+calls

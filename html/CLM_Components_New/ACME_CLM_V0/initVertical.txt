@@ -1,0 +1,7 @@
+sub_in, bounds, thick_roof, snow_depth, thick_wall
+sub_out
+global_ro, col%landunit, col%gridcell
+global_wo, col%micro_sigma, col%z, col%n_melt
+global_mod, col%topo_slope, col%lakedepth, col%snl, col%zi, col%dz, col%z_lake, col%topo_std, col%dz_lake
+global_non
+calls, ncd_inqdlen, shr_sys_abort, ncd_pio_openfile, ncd_io, ncd_pio_closefile, getfil

@@ -1,0 +1,9 @@
+sub_param, val:2, this:1
+sub_out
+global_ro
+global_wo| !this%PFTstorebiomass_patch, PFTstorebiomass_patch, NONE| !this%PFTbiomass_patch, PFTbiomass_patch, NONE| !this%canopy_spread_patch, canopy_spread_patch, NONE| !this%trimming_patch, trimming_patch, NONE| this%rb_patch, rb_patch, NONE| !this%PFTleafbiomass_patch, PFTleafbiomass_patch, NONE| this%efpot_patch, efpot_patch, NONE| !this%PFTnindivs_patch, PFTnindivs_patch, NONE
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: val

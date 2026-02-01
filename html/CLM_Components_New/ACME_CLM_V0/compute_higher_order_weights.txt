@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, pft%wtcol, col%landunit, pft%column
+global_wo
+global_mod, col%wtlunit, pft%wtlunit, lun%wtgcell, col%wtgcell, pft%wtgcell
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, currentSite, atm2lnd_vars, temperature_vars
+sub_out
+global_ro, atm2lnd_vars%prec24_patch, atm2lnd_vars%rh24_patch, currentSite%oldest_patch%clm_pno, temperature_vars%t_veg24_patch
+global_wo
+global_mod, currentSite%acc_NI
+global_non
+calls

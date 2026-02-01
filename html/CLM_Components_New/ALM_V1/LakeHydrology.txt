@@ -1,0 +1,25 @@
+sub_param, lakestate_vars, energyflux_vars, num_shlakenosnowc, num_lakec, soilstate_vars, temperature_vars, filter_lakep, waterflux_vars, num_lakep, waterstate_vars, bounds, atm2lnd_vars, filter_shlakesnowc, aerosol_vars, filter_shlakenosnowc, filter_lakec, num_shlakesnowc
+sub_out, aerosol_vars
+global_ro, atm2lnd_vars%forc_snow_downscaled_col, temperature_vars%t_grnd_col, waterflux_vars%qflx_evap_soi_patch, soilstate_vars%watsat_col, waterstate_vars%do_capsnow_col, atm2lnd_vars%forc_flood_grc, pft%gridcell, waterflux_vars%qflx_evap_tot_patch, pft%column, col%dz_lake, atm2lnd_vars%forc_rain_downscaled_col, atm2lnd_vars%forc_t_downscaled_col
+global_wo, waterflux_vars%qflx_irrig_col, waterflux_vars%qflx_snwcp_liq_col, waterflux_vars%qflx_dew_snow_col, temperature_vars%dTdz_top_col, waterflux_vars%qflx_evap_tot_col, energyflux_vars%eflx_grnd_lake_patch, waterflux_vars%qflx_prec_grnd_col, waterstate_vars%snw_rds_top_col, waterflux_vars%qflx_drain_perched_col, waterflux_vars%qflx_top_soil_col, temperature_vars%snot_top_col, waterflux_vars%qflx_floodc_col, waterstate_vars%frac_sno_eff_col, col%zi, waterflux_vars%qflx_rsub_sat_col, waterflux_vars%qflx_irrig_patch, waterflux_vars%qflx_dew_grnd_col, waterstate_vars%sno_liq_top_col, waterflux_vars%qflx_sub_snow_col, waterstate_vars%frac_iceold_col, waterstate_vars%h2osno_top_col, waterflux_vars%qflx_snwcp_ice_col, waterflux_vars%qflx_infl_col, waterflux_vars%qflx_runoff_col, waterflux_vars%qflx_surf_col, col%z, waterflux_vars%qflx_h2osfc_surf_col, waterflux_vars%qflx_evap_grnd_col, waterstate_vars%snw_rds_col, waterflux_vars%qflx_rain_grnd_col
+global_mod, lakestate_vars%lake_icefrac_col, waterflux_vars%qflx_snwcp_ice_patch, waterflux_vars%qflx_snwcp_liq_patch, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_snow_grnd_patch, waterflux_vars%qflx_rain_grnd_patch, waterflux_vars%qflx_dew_grnd_patch, waterstate_vars%snowice_col, waterflux_vars%qflx_prec_grnd_patch, energyflux_vars%eflx_gnet_patch, waterstate_vars%snow_depth_col, waterstate_vars%snowliq_col, energyflux_vars%eflx_soil_grnd_patch, temperature_vars%t_lake_col, energyflux_vars%eflx_snomelt_col, waterflux_vars%qflx_sl_top_soil_col, col%snl, col%dz, temperature_vars%t_soisno_col, waterflux_vars%qflx_qrgwl_col, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osoi_vol_col, waterflux_vars%qflx_snow_grnd_col, waterflux_vars%qflx_snomelt_col, energyflux_vars%eflx_sh_grnd_patch, waterflux_vars%qflx_sub_snow_patch, waterflux_vars%qflx_drain_col, energyflux_vars%eflx_sh_tot_patch, waterstate_vars%begwb_col, waterflux_vars%qflx_dew_snow_patch, waterflux_vars%qflx_evap_grnd_patch, waterflux_vars%qflx_snow_melt_col, waterstate_vars%endwb_col, waterstate_vars%h2osno_col
+global_non, col%gridcell, bounds%begc, col%landunit, bounds%endc
+calls, BuildSnowFilter, SnowWater, aerosol_vars%Reset, DivideSnowLayers, SnowCompaction, CombineSnowLayers, waterstate_vars%Reset
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_lakec               ! number of column lake points in column filter
+integer                , intent(in)    :: filter_lakec(:)         ! column filter for lake points
+integer                , intent(in)    :: num_lakep               ! number of pft lake points in column filter
+integer                , intent(in)    :: filter_lakep(:)         ! patch filter for lake points
+integer                , intent(out)   :: num_shlakesnowc         ! number of column snow points
+integer                , intent(out)   :: filter_shlakesnowc(:)   ! column filter for snow points
+integer                , intent(out)   :: num_shlakenosnowc       ! number of column non-snow points
+integer                , intent(out)   :: filter_shlakenosnowc(:) ! column filter for non-snow points
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(aerosol_type)     , intent(inout) :: aerosol_vars
+type(lakestate_type)   , intent(inout) :: lakestate_vars

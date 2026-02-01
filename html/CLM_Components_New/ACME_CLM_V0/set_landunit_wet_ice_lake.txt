@@ -1,0 +1,7 @@
+sub_in, glcmask, ci, li, pi, ltype, setdata, gi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_column, add_patch, add_landunit, subgrid_get_gcellinfo, endrun

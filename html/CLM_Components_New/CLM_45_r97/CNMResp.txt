@@ -1,0 +1,7 @@
+sub_in, bounds, cnveg_carbonflux_inst, photosyns_inst, canopystate_inst, num_soilc, soilstate_inst, num_soilp, filter_soilc, temperature_inst, cnveg_nitrogenstate_inst, filter_soilp
+sub_out
+global_ro, laisha, ivt, lmrsun, woody, frootn, laisun, grainn, t_soisno, t_ref2m, rootfr, livecrootn, lmrsha, frac_veg_nosno, livestemn
+global_wo, livestem_mr, livecroot_mr, grain_mr, leaf_mr
+global_mod, froot_mr
+global_non
+calls

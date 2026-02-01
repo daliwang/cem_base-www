@@ -1,0 +1,7 @@
+sub_in, fids, file, times_found, itms
+sub_out, times_found, itms, fids
+global_ro
+global_wo
+global_mod
+global_non
+calls, advance_file, open_trc_datafile

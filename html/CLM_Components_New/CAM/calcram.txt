@@ -1,0 +1,7 @@
+sub_in, fvin, fv, t, pdel, pmid, ram1, ocnfrac, ustar, icefrac, landfrac, obklen, ram1in, ncol
+sub_out, fv, ram1
+global_ro
+global_wo
+global_mod
+global_non
+calls

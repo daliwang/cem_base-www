@@ -1,0 +1,7 @@
+sub_in, grc, bounds, soilhydrology_vars, waterstate_vars, soilstate_vars, temperature_vars, lun, col
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotran_not_available, interface_init_clm_pf

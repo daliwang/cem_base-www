@@ -1,0 +1,7 @@
+sub_in, zi, pint, lchnk, ubc_mmr, ncol, ntop_molec, msis_temp, ubc_flux
+sub_out, ubc_mmr, ubc_flux, msis_temp
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_tgcm_ubc, get_msis_ubc, cnst_get_ind, endrun, set_no_ubc

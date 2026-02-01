@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, col%gridcell, col%itype, col%landunit
+global_wo, col%glc_topo, ldomain%mask
+global_mod
+global_non
+calls, t_stopf, EDpft%Init, shr_sys_flush, decompInit_glcp, surfrd_get_topo, ncd_pio_init, control_print, lun%Init, get_proc_bounds, clm_varcon_init, initGridCells, domain_check, ch4conrd, surfrd_get_grid, surfrd_get_data, clm_varpar_init, grc%Init, landunit_varcon_init, control_init, UrbanInput, decompInit_clumps, pft%Init, col%Init, decompInit_lnd, coh%Init, surfrd_get_globmask, t_startf, pftconrd

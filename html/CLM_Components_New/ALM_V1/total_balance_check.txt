@@ -1,0 +1,10 @@
+sub_param, cs_pnt, call_index
+sub_out
+global_ro, %n, currentSite%oldest_patch, currentPatch%younger, %cwd_bg, %seed_bank, currentCohort%shorter;, currentPatch%tallest;, %balive, %bdead, %root_litter, %area, %bstore, %leaf_litter, %cwd_ag
+global_wo
+global_mod, cs_pnt%flux_in, cs_pnt%flux_out, cs_pnt%old_stock
+global_non, cs_pnt
+calls
+readParams,
+type(site), intent(inout), target :: cs_pnt
+integer,    intent(in)            :: call_index

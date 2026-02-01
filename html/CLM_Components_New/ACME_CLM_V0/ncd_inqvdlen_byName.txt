@@ -1,0 +1,7 @@
+sub_in, dimnum, varname, dlen, ncid, err_code
+sub_out, err_code, dlen
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqvdlen_byDesc, check_var

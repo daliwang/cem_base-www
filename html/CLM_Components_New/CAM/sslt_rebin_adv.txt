@@ -1,0 +1,7 @@
+sub_in, pbuf, phys_state
+sub_out
+global_ro, sslt3, sslt4, sslt2, sslt1
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, outfld

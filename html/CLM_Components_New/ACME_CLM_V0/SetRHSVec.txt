@@ -1,0 +1,7 @@
+sub_in, dtime, hs_soil, num_nolakec, dhsdT, filter_nolakec, waterstate_vars, bounds, c_h2osfc, fact, dz_h2osfc, sabg_lyr_col, hs_top_snow, tk_h2osfc, hs_top, rvector, tk, hs_h2osfc, fn, temperature_vars
+sub_out, rvector
+global_ro
+global_wo
+global_mod
+global_non, temperature_vars%t_soisno_col, temperature_vars%t_h2osfc_col, bounds%endc, waterstate_vars%frac_sno_eff_col, bounds%begc, waterstate_vars%frac_h2osfc_col
+calls, SetRHSVec_Soil, SetRHSVec_StandingSurfaceWater, SetRHSVec_Snow

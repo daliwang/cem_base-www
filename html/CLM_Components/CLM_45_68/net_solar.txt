@@ -1,0 +1,7 @@
+sub_in, coszen, canyon_hwr, sref_roof_dif, sref_perroad_dif, alb_improad_dir, alb_wall_dif, num_urbanl, alb_roof_dir, sref_perroad_dir, sdir_sunwall, sref_shadewall_dir, filter_urbanl, sref_improad_dir, sdif_shadewall, sdif_road, bounds, sdif, sdir_road, sdir_shadewall, sref_roof_dir, alb_roof_dif, sref_sunwall_dir, sref_improad_dif, sdif_sunwall, sref_sunwall_dif, alb_improad_dif, alb_perroad_dir, alb_wall_dir, sdir, alb_perroad_dif, sref_shadewall_dif, wtroad_perv
+sub_out, sref_perroad_dif, sref_roof_dif, sref_perroad_dir, sref_shadewall_dif, sref_roof_dir, sref_shadewall_dir, sref_improad_dir, sref_sunwall_dir, sref_improad_dif, sref_sunwall_dif
+global_ro, vf_ww, vf_sw, vf_rw, vf_wr, vf_sr
+global_wo, sabs_roof_dir, sabs_roof_dif
+global_mod, sabs_perroad_dif, sabs_sunwall_dif, sabs_sunwall_dir, sabs_improad_dif, sabs_shadewall_dif, sabs_perroad_dir, sabs_shadewall_dir, sabs_improad_dir
+global_non
+calls, shr_assert, endrun

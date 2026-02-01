@@ -1,0 +1,7 @@
+sub_in, crop_vars, filter_pcropp, nitrogenflux_vars, c13_carbonstate_vars, filter_soilp, waterstate_vars, nitrogenstate_vars, doalb, soilhydrology_vars, ch4_vars, c14_carbonstate_vars, num_pcropp, atm2lnd_vars, canopystate_vars, energyflux_vars, dgvs_vars, filter_soilc, temperature_vars, carbonflux_vars, c13_carbonflux_vars, photosyns_vars, c14_carbonflux_vars, waterflux_vars, soilstate_vars, carbonstate_vars, cnstate_vars, num_soilp, bounds, num_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNPhenology, CStateUpdate1, CNAllocation, CNNDeposition, CNFireArea, CStateUpdate0, CNSoilLittVertTransp, CNHarvest, CStateUpdate2h, CNFireFluxes, CIsoFlux2, nitrogenflux_vars%SetValues, CNGapMortality, decomp_rate_constants_bgc, CNMResp, CStateUpdate3, t_startf, C14Decay, NStateUpdate2h, CNWoodProducts, c13_carbonflux_vars%SetValues, CNDecompAlloc, CIsoFlux1, CNSoyfix, decomp_rate_constants_cn, NStateUpdate2, CNNFert, CNDecompAlloc2, C14BombSpike, CNNFixation, CIsoFlux2h, carbonflux_vars%SetValues, c14_carbonflux_vars%SetValues, CIsoFlux3, t_stopf, CNGResp, CStateUpdate2, NStateUpdate1

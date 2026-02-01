@@ -1,0 +1,7 @@
+sub_in, begg, ns, endg, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, check_dim, ncd_io, ncd_inqdid, check_sums_equal_1

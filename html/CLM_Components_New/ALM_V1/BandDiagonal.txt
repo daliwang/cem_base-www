@@ -1,0 +1,18 @@
+sub_param, b, jbot, jtop, r, u, bounds, numf, nband, filter, ubj, lbj
+sub_out, u
+global_ro
+global_wo
+global_mod
+global_non
+calls, dgbsv
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)    :: lbj, ubj                        ! lbinning and ubing level indices
+integer , intent(in)    :: jtop( bounds%begc: )            ! top level for each column [col]
+integer , intent(in)    :: jbot( bounds%begc: )            ! bottom level for each column [col]
+integer , intent(in)    :: numf                            ! filter dimension
+integer , intent(in)    :: nband                           ! band width
+integer , intent(in)    :: filter(:)                       ! filter
+real(r8), intent(in)    :: b( bounds%begc: , 1:   , lbj: ) ! compact band matrix [col, nband, j]
+real(r8), intent(in)    :: r( bounds%begc: , lbj: )        ! "r" rhs of linear system [col, j]
+real(r8), intent(inout) :: u( bounds%begc: , lbj: )        ! solution [col, j]

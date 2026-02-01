@@ -1,0 +1,7 @@
+sub_in, gcell_heat, gcell_ice, gcell_liq, bounds
+sub_out, gcell_heat, gcell_ice, gcell_liq
+global_ro, cv_roof, t_soisno, dz, cv_wall, h2osno, csol, nlev_improad, h2osoi_liq, h2osoi_ice, snl, watsat, cv_improad
+global_wo
+global_mod
+global_non
+calls, shr_assert

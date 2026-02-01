@@ -1,0 +1,7 @@
+sub_in, kinf, m, rate, factor, ko, ncol
+sub_out, rate
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, field, pbuf2d, lchnk, col_type, mdimsize, index
+sub_out, field
+global_ro
+global_wo
+global_mod
+global_non, pbuf2d
+calls, endrun, subcol_unpack, pbuf_get_field

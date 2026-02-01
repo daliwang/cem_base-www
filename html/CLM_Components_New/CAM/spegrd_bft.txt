@@ -1,0 +1,7 @@
+sub_in, grdps, grvs, gruha, grqs, grds, grtma, grvha, nlon_fft, grts, grus, gruhs, grpms, grtms, grqms, grtla, grua, grva, grqla, grpss, grpma, grths, grpla, grtha, grtls, fftbuf, grda, grpls, grqa, grpsa, grvhs, grqma, grqls, grta, lat, grdpa
+sub_out, fftbuf
+global_ro
+global_wo
+global_mod
+global_non
+calls

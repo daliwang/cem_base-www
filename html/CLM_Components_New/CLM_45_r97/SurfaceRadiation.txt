@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, num_nourbanp, num_urbanc, waterstate_inst, filter_urbanp, num_urbanp, atm2lnd_inst, surfrad_inst, filter_urbanc, solarabs_inst, canopystate_inst, bounds, surfalb_inst, filter_nourbanp
+sub_out
+global_ro, albgri_pur, albgrd_pur, fabi, albsni_hst, flx_absin, ftid, flx_absiv, coszen, snl, albd, albgrd_bc, ftii, ftdd, albgrd, fabd_sun_z, elai, albgri_bc, fabd_sha_z, albsnd_hst, nrad, forc_solai, albgri_oc, albsod, albgrd_dst, fsun_z, elai_profile, frac_sno, albgri, fabi_sha_z, fabd, albsoi, albgrd_oc, flx_absdv, albi, fabi_sun_z, forc_solad, f_sun, albgri_dst, flx_absdn, tlai_z, snow_depth
+global_wo, fsds_sno_vd, fsds_sno_ni, sfc_frc_dst_sno, parsha_z, ed_parsha_z, sfc_frc_aer_sno, fsr_sno_nd, parveg_ln, fsds_vis_i_ln, sabg_pen, fsds_sno_nd, fsr_vis_d_ln, fsr_sno_vd, fsr_nir_d_ln, fsds_vis_d_ln, fsr_sno_ni, fsds_nir_d_ln, fsds_sno_vi, fsr_sno_vi, sfc_frc_oc_sno, parsun_z, ed_parsun_z, sfc_frc_bc_sno
+global_mod, fsun, fsr, sfc_frc_bc, sabg_snow, sabg, sfc_frc_dst, fsds_nir_i, fsds_vis_i, sfc_frc_oc, laisun_z, fsr_vis_d, sabg_soil, ed_laisha_z, fsa, sabv, laisha, fsds_vis_d, fsa_r, ed_laisun_z, sabg_lyr, laisun, sub_surf_abs_SW, sfc_frc_aer, fsr_nir_i, fsds_nir_d, laisha_z, fsr_nir_d, fsr_vis_i
+global_non, canopystate_inst%esai_patch, surfalb_inst%fabi_sun_patch, map_clmpatch_to_edpatch, surfalb_inst%fabd_sun_patch, canopystate_inst%tlai_patch, surfalb_inst%fabd_sha_patch, surfalb_inst%tsai_z_patch, surfalb_inst%fabi_sha_patch
+calls, get_curr_date, endrun

@@ -1,0 +1,7 @@
+sub_in, atm2lnd_vars, temperature_vars, site_in
+sub_out
+global_ro, currentPatch%older, site_in%youngest_patch
+global_wo, %AB, %frac_burnt, %fire
+global_mod
+global_non
+calls, rate_of_spread, fire_intensity, crown_scorching, wind_effect, post_fire_mortality, charecteristics_of_fuel, fire_danger_index, cambial_damage_kill, area_burnt, crown_damage, ground_fuel_consumption

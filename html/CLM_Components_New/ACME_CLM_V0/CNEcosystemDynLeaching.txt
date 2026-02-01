@@ -1,0 +1,7 @@
+sub_in, filter_soilc, dgvs_vars, num_pcropp, canopystate_vars, carbonstate_vars, cnstate_vars, num_soilp, bounds, num_soilc, carbonflux_vars, c13_carbonflux_vars, c14_carbonflux_vars, waterflux_vars, filter_pcropp, nitrogenflux_vars, c13_carbonstate_vars, filter_soilp, frictionvel_vars, waterstate_vars, nitrogenstate_vars, c14_carbonstate_vars, doalb
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNPrecisionControl, nitrogenstate_vars%Summary, CNNLeaching, carbonflux_vars%Summary, c14_carbonflux_vars%Summary, c13_carbonstate_vars%Summary, t_stopf, carbonstate_vars%Summary, c13_carbonflux_vars%Summary, NStateUpdate3, nitrogenflux_vars%Summary, c14_carbonstate_vars%Summary, t_startf

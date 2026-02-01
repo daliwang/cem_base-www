@@ -1,0 +1,7 @@
+sub_in, x, y, y0, x1, x0, y1
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls

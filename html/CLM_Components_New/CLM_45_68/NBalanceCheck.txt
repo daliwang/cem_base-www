@@ -1,0 +1,10 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cnf%supplement_to_sminn, cns%totcoln, cnf%product_nloss, cnbal%begnb, cnf%som_n_leached, cnf%sminn_leached, cnf%col_fire_nloss, cnf%dwt_nloss, cnf%smin_no3_leached, cnf%ndep_to_sminn, cnf%nfix_to_sminn, cnf%smin_no3_runoff, cnf%f_n2o_nit, cnf%denit
+global_wo
+global_mod, cnf%col_ninputs, cnf%col_noutputs, cnbal%errnb, cnbal%endnb
+global_non, cnf%soyfixn_to_sminn, cnf%fert_to_sminn
+calls, endrun
+
+Tree height: 3
+2+, endrun, 

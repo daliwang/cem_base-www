@@ -1,0 +1,10 @@
+sub_param, begc:2, vsfm_mpp:1, soilhydrology_vars:4, endc:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, VSFMMPPSetICsSNESCLM, endrun
+readParams,
+integer, intent(in)                  :: begc,endc
+type(soilhydrology_type), intent(in) :: soilhydrology_vars

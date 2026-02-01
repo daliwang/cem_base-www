@@ -1,0 +1,9 @@
+sub_in, filter_micbioc, num_micbioc, ubc, lbc
+sub_out
+global_ro, clm3%g%l%c%cws%finundated, clm3%g%l%c%landunit, clm3%g%l%itype
+global_wo
+global_mod, clm3%g%l%c%cmic%ccon_o2s_sat, clm3%g%l%c%cmic%ccon_ch4s_unsat, clm3%g%l%c%cmic%caerch4bios_unsat, clm3%g%l%c%cmic%canaerch4bios_unsat, clm3%g%l%c%cmic%ccon_co2s_sat, clm3%g%l%c%cmic%cdocs_sat, clm3%g%l%c%cmic%caces_sat, clm3%g%l%c%cmic%cco2bios_sat, clm3%g%l%c%cmic%canaerch4bios_sat, clm3%g%l%c%cmic%ccon_ch4s_sat, clm3%g%l%c%cmic%fsat_pre, clm3%g%l%c%cmic%cdocs_unsat, clm3%g%l%c%cmic%ccon_o2s_unsat, clm3%g%l%c%cmic%caerch4bios_sat, clm3%g%l%c%cmic%cacebios_sat, clm3%g%l%c%cmic%caces_unsat, clm3%g%l%c%cmic%ccon_co2s_unsat, clm3%g%l%c%cmic%ccon_h2s_unsat, clm3%g%l%c%cmic%ccon_h2s_sat, clm3%g%l%c%cmic%cco2bios_unsat, clm3%g%l%c%cmic%cacebios_unsat
+global_non
+calls
+
+Tree height: 3

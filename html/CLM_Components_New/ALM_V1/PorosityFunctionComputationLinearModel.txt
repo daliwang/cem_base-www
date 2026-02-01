@@ -1,0 +1,12 @@
+sub_param, porParams, dpor_dP, por, P
+sub_out, dpor_dP, por
+global_ro, porParams%lin_mod_slope, porParams%pressure_reference, porParams%porosity_base
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(porosity_params_type), intent (in) :: porParams
+PetscReal, intent (in)                  :: P
+PetscReal, intent (out)                 :: por
+PetscReal, intent (out)                 :: dpor_dP

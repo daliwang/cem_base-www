@@ -1,0 +1,9 @@
+sub_param, currentPatch:1
+sub_out
+global_ro| %pft, pft, NONE| %leaf_md, leaf_md, NONE| %leaf_litter, leaf_litter, NONE| currentCohort%taller, currentCohort, NONE| currentPatch%shortest, currentCohort, NONE| %br, br, NONE| %bdead, bdead, NONE| %root_md, root_md, NONE| %woody_turnover, woody_turnover, NONE| currentPatch%area, area, NONE| %bstore, bstore, NONE| %dndt, dndt, NONE| %n, n, NONE| %bsw, bsw, NONE| udata%deltat, deltat, NONE| %bl, bl, NONE| currentPatch%seed_decay, seed_decay, NONE
+global_wo
+global_mod| currentPatch%leaf_litter_in, leaf_litter_in, NONE| currentPatch%root_litter_in, root_litter_in, NONE| currentPatch%cwd_BG_in, cwd_BG_in, NONE| currentPatch%cwd_AG_in, cwd_AG_in, NONE
+global_non
+calls
+readParams,
+type(patch),intent(inout), pointer :: currentPatch

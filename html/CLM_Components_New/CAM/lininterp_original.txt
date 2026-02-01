@@ -1,0 +1,7 @@
+sub_in, nlatout, nlev, arrin, yin, nlatin, yout, arrout
+sub_out, arrout
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

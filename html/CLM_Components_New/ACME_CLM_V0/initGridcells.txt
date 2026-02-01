@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, bounds_clump%begc, ldecomp%gdc2glo, ldomain%latc, ldomain%lonc, ldomain%glcmask, bounds_clump%begl, bounds_clump%begp
+global_wo, grc%gindex, grc%lon, grc%lat
+global_mod, grc%latdeg, grc%londeg, grc%area, ldomain%area
+global_non
+calls, compute_higher_order_weights, set_landunit_wet_ice_lake, set_landunit_veg_compete, clm_ptrs_compdown, get_clump_bounds, set_landunit_crop_noncompete, set_cohort_decomp, clm_ptrs_check, set_landunit_urban

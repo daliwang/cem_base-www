@@ -1,0 +1,7 @@
+sub_in, em_perroad, t_roof, em_improad, lwup_shadewall, canyon_hwr, lwup_perroad, t_perroad, em_wall, em_roof, lwup_canyon, num_urbanl, lwup_roof, lwnet_canyon, lwdown, lwnet_shadewall, filter_urbanl, lwup_improad, t_improad, t_shadewall, lwnet_improad, bounds, lwnet_sunwall, lwnet_roof, t_sunwall, lwup_sunwall, wtroad_perv, lwnet_perroad
+sub_out, lwup_improad, lwup_canyon, lwup_shadewall, lwnet_improad, lwnet_roof, lwup_roof, lwnet_canyon, lwnet_sunwall, lwup_perroad, lwnet_shadewall, lwup_sunwall, lwnet_perroad
+global_ro, vf_ww, vf_sw, vf_rw, vf_wr, vf_sr
+global_wo
+global_mod
+global_non
+calls, shr_assert, endrun

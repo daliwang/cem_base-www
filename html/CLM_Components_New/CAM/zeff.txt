@@ -1,0 +1,7 @@
+sub_in, tt, ice, z_ray, nsizes, N, qs, kr, z_eff, xr, D, freq, rho_e, qe, k2
+sub_out, k2, z_ray, kr, z_eff
+global_ro
+global_wo
+global_mod
+global_non
+calls, mieint, avint, m_ice, m_wat

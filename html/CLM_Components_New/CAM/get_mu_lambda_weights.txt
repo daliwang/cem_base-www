@@ -1,0 +1,7 @@
+sub_in, pgam, lambda_wgts, lamc, mu_wgts
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp, lininterp_init

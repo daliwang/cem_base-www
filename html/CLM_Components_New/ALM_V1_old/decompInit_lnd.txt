@@ -1,0 +1,10 @@
+sub_param, lni:1, lnj:2, amask:3
+sub_out
+global_ro
+global_wo| procinfo%endp, endp, NONE| procinfo%begc, begc, NONE| procinfo%begl, begl, NONE| procinfo%npfts, npfts, NONE| procinfo%endc, endc, NONE| procinfo%endCohort, endCohort, NONE| procinfo%nCohorts, nCohorts, NONE| procinfo%ncols, ncols, NONE| procinfo%endl, endl, NONE| procinfo%nlunits, nlunits, NONE| procinfo%begp, begp, NONE| procinfo%begCohort, begCohort, NONE
+global_mod| procinfo%begg, begg, NONE| %begg, begg, NONE| procinfo%ncells, ncells, NONE| %ncells, ncells, NONE| ldecomp%gdc2glo, gdc2glo, NONE| procinfo%cid, cid, NONE| procinfo%nclumps, nclumps, NONE| procinfo%endg, endg, NONE| %endg, endg, NONE
+global_non
+calls, shr_sys_flush, endrun, get_proc_bounds, mct_gsMap_init
+readParams,
+integer , intent(in) :: amask(:)
+integer , intent(in) :: lni,lnj   ! domain global size

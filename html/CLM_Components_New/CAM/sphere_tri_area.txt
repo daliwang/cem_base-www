@@ -1,0 +1,7 @@
+sub_in, v3, v1, area, v2
+sub_out, area
+global_ro
+global_wo
+global_mod
+global_non
+calls

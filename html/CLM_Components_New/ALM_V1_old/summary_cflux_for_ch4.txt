@@ -1,0 +1,13 @@
+sub_param, num_soilp:3, this:1, bounds:2, num_soilc:5, filter_soilp:4, filter_soilc:6
+sub_out
+global_ro| this%grainc_xfer_to_grainc_patch, grainc_xfer_to_grainc_patch, NONE| this%frootc_xfer_to_frootc_patch, frootc_xfer_to_frootc_patch, NONE| this%livecrootc_xfer_to_livecrootc_patch, livecrootc_xfer_to_livecrootc_patch, NONE| this%leafc_xfer_to_leafc_patch, leafc_xfer_to_leafc_patch, NONE| decomp_cascade_con%is_soil, is_soil, NONE| this%cpool_to_livestemc_patch, cpool_to_livestemc_patch, NONE| this%livestemc_xfer_to_livestemc_patch, livestemc_xfer_to_livestemc_patch, NONE| this%deadcrootc_xfer_to_deadcrootc_patch, deadcrootc_xfer_to_deadcrootc_patch, NONE| this%cpool_to_grainc_patch, cpool_to_grainc_patch, NONE| this%cpool_to_frootc_patch, cpool_to_frootc_patch, NONE| this%cpool_to_leafc_patch, cpool_to_leafc_patch, NONE| this%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr_col, NONE| this%cpool_to_deadstemc_patch, cpool_to_deadstemc_patch, NONE| this%cpool_to_deadcrootc_patch, cpool_to_deadcrootc_patch, NONE| this%cpool_to_livecrootc_patch, cpool_to_livecrootc_patch, NONE| this%deadstemc_xfer_to_deadstemc_patch, deadstemc_xfer_to_deadstemc_patch, NONE| decomp_cascade_con%is_litter, is_litter, NONE
+global_wo| this%bgnpp_patch, bgnpp_patch, NONE
+global_mod| this%hr_vr_col, hr_vr_col, NONE| this%somhr_col, somhr_col, NONE| this%agnpp_patch, agnpp_patch, NONE| this%decomp_cascade_hr_col, decomp_cascade_hr_col, NONE| this%lithr_col, lithr_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type), intent(in)  :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches

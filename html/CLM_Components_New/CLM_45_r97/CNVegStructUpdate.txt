@@ -1,0 +1,7 @@
+sub_in, canopystate_inst, filter_soilp, waterstate_inst, frictionvel_inst, cnveg_state_inst, dgvs_inst, num_soilp, cnveg_carbonstate_inst
+sub_out
+global_ro, farea_burned, ivt, allom3, deadstemc, woody, laimx, forc_hgt_u_patch, displar, snow_depth, z0mr, harvdate, nind, dsladlai, leafc, ztopmx, slatop, fpcgrid, allom2, dwood
+global_wo, frac_veg_nosno_alb
+global_mod, elai, hbot, tsai, tlai, peaklai, esai, htmx, htop
+global_non
+calls

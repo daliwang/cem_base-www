@@ -1,0 +1,7 @@
+sub_in, pref_edge, pref_mid, num_pr_lev
+sub_out, pref_edge, num_pr_lev, pref_mid
+global_ro
+global_wo
+global_mod
+global_non
+calls

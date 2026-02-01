@@ -1,0 +1,7 @@
+sub_in, temperature_inst, filter_nosnowc, num_snowc, waterstate_inst, num_nosnowc, waterflux_inst, bounds, filter_snowc
+sub_out
+global_ro, qflx_snow_grnd_col, qflx_snwcp_ice, frac_sno, h2osno, snl, t_soisno, do_capsnow, qflx_snofrz_lyr, h2osoi_liq, dz, h2osoi_ice
+global_wo, sno_liq_top, snot_top, dTdz_top, snw_rds_top
+global_mod, snw_rds
+global_non, temperature_inst%t_grnd_col
+calls

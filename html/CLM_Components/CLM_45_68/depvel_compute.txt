@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, mlaidiff, annlai, h2osoi_vol, ram1, vds, fsun, forc_t, rb1, rssha, elai, rssun, forc_rain, forc_q, forc_pbot, forc_solad
+global_wo, drydepvel
+global_mod
+global_non, snow_depth, forc_solai
+calls, seq_drydep_setHCoeff, endrun

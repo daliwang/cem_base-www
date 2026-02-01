@@ -1,0 +1,7 @@
+sub_in, energyflux_inst, num_urbanl, temperature_inst, num_nolakec, filter_urbanl, tk, filter_nolakec, bounds, urbanparams_inst
+sub_out
+global_ro, zi, canyon_hwr, wtlunit_roof, t_building_max, ht_roof, taf, z, ctype, t_building_min, urbpoi, tssbef, clandunit, t_soisno
+global_wo, eflx_urban_ac, eflx_urban_heat, eflx_building
+global_mod, t_floor, t_sunw_inner, t_shdw_inner, t_roof_inner, t_building
+global_non
+calls, endrun, dgesv

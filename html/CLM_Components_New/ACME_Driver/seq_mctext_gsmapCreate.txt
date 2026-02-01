@@ -1,0 +1,8 @@
+sub_in, mpicomi, gsmapi, gsmapo, mpicomo, compido
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_indexset, mct_gsMap_activepes, mct_gsMap_copy, shr_sys_abort, mct_gsmap_activepes, mct_gsmap_init, shr_mpi_chkerr, mpi_comm_rank, mct_permute, mpi_comm_size, mct_indexsort
+calls_ln, mct_permute@683, shr_sys_abort@702, shr_mpi_chkerr@628, shr_mpi_chkerr@626, mct_permute@719, shr_sys_abort@746, mpi_comm_size@625, mct_gsmap_activepes@754, mpi_comm_rank@623, mct_gsmap_init@741, mct_gsmap_init@689, shr_mpi_chkerr@624, mpi_comm_rank@627, mct_indexsort@681, mct_gsMap_activepes@635, mct_indexsort@718, mct_indexset@680, mct_permute@682, shr_sys_abort@738, shr_mpi_chkerr@630, mct_gsMap_copy@664, mct_indexset@717, mpi_comm_size@629, shr_sys_abort@729

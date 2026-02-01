@@ -1,0 +1,7 @@
+sub_in, liq_tau_w_g, liq_tau_w, liq_tau, pbuf, liq_tau_w_f, oldliqwp, state
+sub_out, liq_tau_w_g, liq_tau_w, liq_tau, liq_tau_w_f
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_sw_spectral_boundaries, endrun, pbuf_get_field

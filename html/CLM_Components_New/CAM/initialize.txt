@@ -1,0 +1,7 @@
+sub_in, nete, hybrid, hvcoord, dt, elem, eta_ave_w, ntl3, compute_diagnostics, n_Q, ntl2, ntl1, nets, deriv, lenx, object
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

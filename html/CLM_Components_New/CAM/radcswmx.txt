@@ -1,0 +1,7 @@
+sub_in, E_aldif, fns, fsntoac, E_co2mmr, E_asdir, fsutoa, tauxci_out, E_o2mmr, qrsc, E_o3mmr, E_cliqwp, Nday, fsdtoa, fsds, fsnsc, fsnirtoa, E_cld, qrs, fsnrtoaq, ncol, E_aer_tau_w_g, tauxcl_out, nmxrgn, IdxDay, fcns, E_cicewp, E_h2ommr, solld, Nnite, IdxNite, E_aer_tau_w, E_pmid, fsns, fsntoa, E_aer_tau, sols, E_aer_tau_w_f, E_rel, E_asdif, eccf, E_pint, soll, fsnt, E_rei, fsntc, solsd, lchnk, E_aldir, fsdsc, E_coszrs, pmxrgn, solin, fsnrtoac
+sub_out, solsd, fsntc, fsnsc, fsdtoa, fsds, fsnt, soll, fsnrtoac, qrs, fsnrtoaq, solin, pmxrgn, nmxrgn, tauxcl_out, fsnirtoa, fsdsc, fcns, fsntoac, solld, fns, qrsc, sols, fsutoa, fsns, fsntoa, tauxci_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ExpDayNite, get_sw_spectral_boundaries, CmpDayNite, quick_sort, outfld, get_variability, raddedmx, endrun, phys_getopts

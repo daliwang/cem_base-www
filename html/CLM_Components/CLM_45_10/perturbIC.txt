@@ -1,0 +1,7 @@
+sub_in, landunit
+sub_out
+global_ro, lakpoi, landunit, itype, itype
+global_wo
+global_mod, t_grnd, t_soisno, t_lake
+global_non, snl
+calls, get_proc_bounds, random_number

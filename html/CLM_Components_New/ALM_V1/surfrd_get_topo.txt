@@ -1,0 +1,10 @@
+sub_param, domain, filename
+sub_out
+global_ro, domain%nbeg, domain%nend
+global_wo
+global_mod
+global_non
+calls, ncd_pio_closefile, endrun, getfil, ncd_pio_openfile, ncd_io, ncd_inqfdims
+readParams,
+type(domain_type),intent(inout) :: domain   ! domain to init
+character(len=*) ,intent(in)    :: filename ! grid filename

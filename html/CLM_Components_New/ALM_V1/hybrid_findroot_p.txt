@@ -1,0 +1,14 @@
+sub_param, iter, func, p, x0
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8) , intent(inout) :: x0           !solution's initial guess
+integer    ,  intent(in) :: p            !index used in the function
+integer    , intent(out) :: iter         !number of used iterations
+real(r8), intent(in)  :: x
+real(r8), intent(out) :: f
+integer,  intent(in)  :: p

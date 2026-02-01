@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_gridcell_wstate_type, init_pft_estate_type, init_pft_cstate_type, init_column_estate_type, init_pft_cflux_type, init_column_pstate_type, init_pft_depvd_type, init_column_cstate_type, init_pft_wflux_type, init_pft_nstate_type, init_landunit_eflux_type, init_column_cflux_type, init_column_nstate_type, init_decomp_cascade_constants, init_nitrogen_balance_type, init_pft_pstate_type, init_pft_ecophys_constants, init_gridcell_estate_type, init_column_type, init_pft_pdgvstate_type, init_pft_mflux_type, init_carbon_balance_type, init_pft_nflux_type, init_pft_DGVMecophys_constants, init_pft_vflux_type, init_energy_balance_type, init_pft_epv_type, init_gridcell_eflux_type, init_pft_type, init_gridcell_efstate_type, init_column_nflux_type, init_pft_vstate_type, init_gridcell_ch4_type, init_landunit_pstate_type, init_column_wstate_type, init_gridcell_wflux_type, init_water_balance_type, init_gridcell_type, init_column_eflux_type, init_pft_dflux_type, init_landunit_type, init_pft_eflux_type, init_gridcell_pstate_type, init_pft_psynstate_type, init_column_ch4_type, init_pft_wstate_type, init_column_wflux_type

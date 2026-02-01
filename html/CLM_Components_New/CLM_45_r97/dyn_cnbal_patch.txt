@@ -1,0 +1,7 @@
+sub_in, bounds, cnveg_nitrogenstate_inst, prior_weights, c13_cnveg_carbonflux_inst, cnveg_carbonstate_inst, soilbiogeochem_state_inst, cnveg_state_inst, cnveg_nitrogenflux_inst, canopystate_inst, c14_cnveg_carbonflux_inst, photosyns_inst, soilbiogeochem_carbonflux_inst, c14_cnveg_carbonstate_inst, cnveg_carbonflux_inst, c13_cnveg_carbonstate_inst
+sub_out
+global_ro
+global_wo
+global_mod, ptr, dwt_ptr3, dwt_ptr1, dwt_ptr2, dwt_ptr0
+global_non
+calls, endrun, photosyns_inst%NewPatchinit

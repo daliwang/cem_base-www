@@ -1,0 +1,18 @@
+sub_in, ptr_col, long_name, type2d, fname, default, avgflag, units, ptr_pft
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, ptr_pft(:, ptr_col(:, shr_log_errMsg
+calls, hist_addfld1d, hist_addfld2d, endrun
+
+Tree height: 5
+2-, endrun, 
+4-, hist_addfld1d, 
+4+, hist_addfld2d, 
+4-, hist_addfld1d, 
+4+, hist_addfld2d, 
+3-, hist_addfld1d, 
+3+, hist_addfld2d, 
+3-, hist_addfld1d, 
+3+, hist_addfld2d, 

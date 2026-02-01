@@ -1,0 +1,7 @@
+sub_in, smp, smpsat, bsw, dsmpds, s, this
+sub_out, smp, dsmpds
+global_ro
+global_wo
+global_mod
+global_non
+calls

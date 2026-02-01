@@ -1,0 +1,7 @@
+sub_in, canopystate_inst, coszen, bounds, tau, surfalb_inst, waterstate_inst, num_vegsol, filter_vegsol, rho, temperature_inst
+sub_out
+global_ro, elai, tsai_z, xl, albgrd, nrad, fwet, t_veg, tlai_z, albgri, esai
+global_wo
+global_mod, vcmaxcintsha, ftdd, fabi_sha, vcmaxcintsun, fabi, fabd_sha, ftii, albi, fabd_sun, ftid, albd, fabd, fabi_sun_z, fabi_sha_z, fabi_sun, fsun_z, fabd_sha_z, fabd_sun_z
+global_non
+calls

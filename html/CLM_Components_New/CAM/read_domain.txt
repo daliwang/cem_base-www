@@ -1,0 +1,7 @@
+sub_in, dim1e, ncid, dim2e, dim2b, latnam, dimlatnam, readvar, varname, lonnam, dimlonnam, field, dim1b
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

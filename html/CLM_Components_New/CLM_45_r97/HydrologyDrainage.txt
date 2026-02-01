@@ -1,0 +1,7 @@
+sub_in, num_urbanc, temperature_inst, filter_urbanc, filter_nolakec, soilhydrology_inst, irrigation_inst, num_nolakec, waterstate_inst, soilstate_inst, filter_hydrologyc, num_do_smb_c, atm2lnd_inst, filter_do_smb_c, num_hydrologyc, bounds, waterflux_inst, glc2lnd_inst
+sub_out
+global_ro, qflx_irrig, forc_snow, snow_persistence, begwb, wa, h2osoi_ice, glc_dyn_runoff_routing, h2osoi_liq, forc_rain, h2osfc, ctype, h2ocan, dz, qflx_evap_tot, qflx_snwcp_ice, h2osno, qflx_glcice_melt, qflx_floodg
+global_wo, h2osoi_vol, qflx_infl, qflx_runoff_u, qflx_runoff_r, qflx_rsub_sat
+global_mod, endwb, qflx_drain, qflx_glcice, qflx_glcice_frz, qflx_qrgwl, qflx_h2osfc_surf, qflx_drain_perched, qflx_runoff, qflx_surf
+global_non
+calls, CLMVICMap, Drainage

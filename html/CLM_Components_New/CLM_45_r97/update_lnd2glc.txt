@@ -1,0 +1,7 @@
+sub_in, this, bounds, num_do_smb_c, waterflux_inst, init, temperature_inst, filter_do_smb_c
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, E_aer_tau_w, qrsc, ncol, fsntoac, fsnirtoa, sd, fcns, fsnrtoac, E_cld_tau_w_g, E_asdir, old_convert, IdxDay, fsds, E_cld, sols, soll, E_aldif, fsdsc, E_aer_tau_w_g, Nday, Nnite, E_pmid, rrtmg_levs, fsntoa, fsnsc, E_aldir, su, fsutoa, E_coszrs, fsns, solld, E_aer_tau, IdxNite, qrs, fsntc, fns, fsnt, solin, eccf, E_cld_tau_w, solsd, E_cld_tau_w_f, sfac, r_state, fsnrtoaq, lchnk, E_asdif, E_cld_tau, E_aer_tau_w_f
+sub_out, sols, soll, solsd, fsdsc, fsnrtoaq, fsntoa, fsnsc, fsutoa, su, qrsc, fsntoac, fsns, fsnirtoa, solld, sd, fcns, qrs, fns, fsntc, fsnrtoac, solin, fsnt, fsds
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, ExpDayNite, outfld, CmpDayNite, mcica_subcol_sw, t_stopf, rrtmg_sw

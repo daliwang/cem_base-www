@@ -1,0 +1,12 @@
+sub_param, bounds:1, dust_vars:4, atm2lnd_vars:2, frictionvel_vars:3
+sub_out
+global_ro| atm2lnd_vars%forc_rho_downscaled_col, forc_rho, NONE| pft%gridcell, gridcell, NONE| frictionvel_vars%ram1_patch, ram1, NONE| frictionvel_vars%fv_patch, fv, NONE| atm2lnd_vars%forc_t_downscaled_col, forc_t, NONE| pft%column, column, NONE
+global_wo| dust_vars%vlc_trb_1_patch, vlc_trb_1, NONE| dust_vars%vlc_trb_4_patch, vlc_trb_4, NONE| dust_vars%vlc_trb_2_patch, vlc_trb_2, NONE| dust_vars%vlc_trb_3_patch, vlc_trb_3, NONE
+global_mod| dust_vars%vlc_trb_patch, vlc_trb, NONE
+global_non| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(frictionvel_type) , intent(in)    :: frictionvel_vars
+type(dust_type)        , intent(inout) :: dust_vars

@@ -1,0 +1,7 @@
+sub_in, ncol, lchnk, diag_idx, idxnite, tau, nnite, iaer
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

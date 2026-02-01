@@ -1,0 +1,7 @@
+sub_in, yin, arrin, yout, arrout, nout, nin
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp_init, lininterp_finish, lininterp1d

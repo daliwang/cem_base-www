@@ -1,0 +1,8 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_comm_setptrs, shr_mpi_sum
+calls_ln, seq_comm_setptrs@419, shr_mpi_sum@421

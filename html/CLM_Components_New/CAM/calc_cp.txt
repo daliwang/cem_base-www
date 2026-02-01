@@ -1,0 +1,7 @@
+sub_in, vmr, cpairz, ncol
+sub_out, cpairz
+global_ro
+global_wo
+global_mod
+global_non
+calls

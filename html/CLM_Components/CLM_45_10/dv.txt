@@ -1,0 +1,7 @@
+sub_in, ubg, filter_natvegp, lbp, kyr, num_natvegp, ubp, lbg
+sub_out
+global_ro, gridcell, t_mo_min, agdd
+global_wo
+global_mod, agdd20, tmomin20
+global_non, mxy, fpcgrid
+calls, Establishment, Light, BuildNatVegFilter

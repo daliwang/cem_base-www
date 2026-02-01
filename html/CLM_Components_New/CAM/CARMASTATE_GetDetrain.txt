@@ -1,0 +1,7 @@
+sub_in, cstate, rhop_wet, rc, r_wet, ibin, nmr, mmr, ielem, numberDensity
+sub_out, mmr, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

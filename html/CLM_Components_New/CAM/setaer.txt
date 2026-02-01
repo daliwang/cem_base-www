@@ -1,0 +1,7 @@
+sub_in, dtcbs1, omcbs2, dtds1, omds2, acbs1, omds1, gds3, aant, asal, dtant, dtsoa, nw, gds4, dtcbs2, gds1, gsal, dtocs1, asoa, aocs1, aso4, omds4, omocs1, omds3, omocs2, aocs2, gcbs2, omsal, z, ads, gocs2, rh, gso4, dtsal, dtso4, gant, dtocs2, omcbs1, omso4, dtds2, airden, acbs2, dtds4, omant, dtds3, gocs1, gcbs1, gds2
+sub_out, dtds2, omcbs1, omso4, dtocs2, dtsal, dtso4, gso4, gant, gocs2, omsal, gds2, gocs1, gcbs1, dtds4, dtds3, omant, dtsoa, dtant, omds1, gds3, omds2, omcbs2, dtds1, dtcbs1, gcbs2, omocs1, omds3, omocs2, omds4, gsal, dtocs1, gds1, gds4, dtcbs2
+global_ro
+global_wo
+global_mod
+global_non
+calls

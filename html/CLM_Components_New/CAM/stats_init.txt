@@ -1,0 +1,7 @@
+sub_in, time_current, fdir, grad_zt, nnrad_zm, iunit, delt, gzt, rlat, fname_prefix, nnrad_zt, stats_tsamp_in, month, grad_zm, day, stats_tout_in, nzmax, l_stats_in, fnamelist, year, gzm, stats_fmt_in, rlon
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, stats_init_rad_zm, stats_init_rad_zt, stats_init_zt, stats_zero, stats_init_zm, open_netcdf, stats_init_sfc, open_grads

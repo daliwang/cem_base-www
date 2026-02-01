@@ -1,0 +1,7 @@
+sub_in, loc_arr, fid, strt, file, cnt, order, vid
+sub_out, loc_arr
+global_ro
+global_wo
+global_mod
+global_non, wrk2d
+calls, lininterp_finish, lininterp_init, get_rlat_all_p, lininterp, endrun

@@ -1,0 +1,7 @@
+sub_in, bounds_proc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, update_landunit_weights, prior_weights%set_prior_weights, shr_assert, dyn_hwcontent_final, dynCNDV_interp, reweightWrapup, dyn_hwcontent_init, get_clump_bounds, dynpft_interp, dynHarvest_interp, dyn_cnbal_pft, compute_higher_order_weights

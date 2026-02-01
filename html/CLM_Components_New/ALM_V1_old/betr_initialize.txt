@@ -1,0 +1,11 @@
+sub_param, ubj:3, waterstate_vars:4, bounds:1, lbj:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, tracercoeff_vars%Init, init_transportmod, plantsoilnutrientflux_vars%Init, bgc_reaction%initCold, tracerState_vars%Init, betrtracer_vars%init_scalars, tracerboundarycond_vars%Init, bgc_reaction%init_boundary_condition_type, tracer_param_init, bgc_reaction%Init_betrbgc, betrbgc_init, tracerflux_vars%Init
+readParams,betr_readNL
+type(bounds_type)    , intent(in) :: bounds
+integer              , intent(in) :: lbj, ubj
+type(waterstate_type), intent(in) :: waterstate_vars

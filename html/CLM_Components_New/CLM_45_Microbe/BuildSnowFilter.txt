@@ -1,0 +1,9 @@
+sub_in, filter_nolakec, ubc, num_nolakec, lbc
+sub_out, filter_nosnowc, num_snowc, filter_snowc, num_nosnowc
+global_ro, clm3%g%l%c%cps%snl
+global_wo
+global_mod
+global_non
+calls
+
+Tree height: 2

@@ -1,0 +1,7 @@
+sub_in, mask, temp, m, ncol, sad_ice, press, h2o_avail, radius_ice
+sub_out, radius_ice, sad_ice
+global_ro
+global_wo
+global_mod
+global_non
+calls

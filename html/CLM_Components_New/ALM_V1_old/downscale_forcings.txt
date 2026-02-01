@@ -1,0 +1,12 @@
+sub_param, bounds:1, filter_do_smb_c:3, num_do_smb_c:2, atm2lnd_vars:4
+sub_out
+global_ro| col%gridcell, gridcell, NONE| atm2lnd_vars%forc_snow_not_downscaled_grc, forc_snow_g, NONE| atm2lnd_vars%forc_pbot_not_downscaled_grc, forc_pbot_g, NONE| col%glc_topo, glc_topo, NONE| ldomain%topo, topo, NONE| atm2lnd_vars%forc_th_not_downscaled_grc, forc_th_g, NONE| atm2lnd_vars%forc_hgt_grc, forc_hgt_grc, NONE| atm2lnd_vars%forc_t_not_downscaled_grc, forc_t_g, NONE| col%landunit, landunit, NONE| atm2lnd_vars%forc_q_not_downscaled_grc, forc_q_g, NONE| atm2lnd_vars%forc_rain_not_downscaled_grc, forc_rain_g, NONE| atm2lnd_vars%forc_rho_not_downscaled_grc, forc_rho_g, NONE
+global_wo| atm2lnd_vars%forc_rho_downscaled_col, forc_rho_c, NONE| atm2lnd_vars%forc_t_downscaled_col, forc_t_c, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot_c, NONE| atm2lnd_vars%forc_q_downscaled_col, forc_q_c, NONE| atm2lnd_vars%forc_th_downscaled_col, forc_th_c, NONE
+global_mod| atm2lnd_vars%forc_rain_downscaled_col, forc_rain_c, NONE| atm2lnd_vars%forc_snow_downscaled_col, forc_snow_c, NONE
+global_non
+calls, Qsat, downscale_longwave, check_downscale_consistency
+readParams,
+type(bounds_type)  , intent(in)    :: bounds
+integer            , intent(in)    :: num_do_smb_c       ! number of columns in filter_do_smb_c
+integer            , intent(in)    :: filter_do_smb_c(:) ! filter_do_smb_c giving columns over which downscaling should be done
+type(atm2lnd_type) , intent(inout) :: atm2lnd_vars

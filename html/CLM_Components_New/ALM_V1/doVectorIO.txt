@@ -1,0 +1,11 @@
+sub_param, ncid, flag, this
+sub_out
+global_ro, data=this%seed_bank, data=this%cwd_bg, data=this%dbh, data=this%canopy_trim, data=this%areaRestart, data=this%leaf_litter_in, data=this%npp_acc, data=this%n, data=this%bl, data=this%resp_clm, data=this%root_md, data=this%age, data=this%br, data=this%leaf_md, data=this%bdead, data=this%bstore, data=this%cellWithPatch, data=this%old_stock, data=this%root_litter_in, data=this%spread, data=this%cwd_ag, data=this%cohortsPerPatch, data=this%leaf_litter, data=this%canopy_layer, data=this%numPatchesPerCell, data=this%root_litter, data=this%gpp_acc, data=this%water_memory, data=this%pft, data=this%status_coh, data=this%hite, data=this%laimemory, data=this%balive, data=this%livegrass
+global_wo
+global_mod
+global_non
+calls, get_clmlevel_gsmap, restartvar, mct_gsmap_OP
+readParams,
+class(EDRestartVectorClass), intent(inout) :: this
+type(file_desc_t), intent(inout)           :: ncid   ! netcdf id
+character(len=*) , intent(in)              :: flag   !'read' or 'write'

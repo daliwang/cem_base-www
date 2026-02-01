@@ -1,0 +1,10 @@
+sub_in, l2g_scale_type, bounds
+sub_out, scale_l2g
+global_ro
+global_wo
+global_mod
+global_non
+calls, create_scale_l2g_lookup, shr_assert
+
+Tree height: 1
+0 , shr_assert, create_scale_l2g_lookup, 

@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnallocate_carbon_only_set, get_curr_date, cnallocate_carbonnitrogen_only_set, endrun, cnallocate_carbonphosphorus_only_set
+readParams,readCNAllocParams
+type(bounds_type), intent(in) :: bounds

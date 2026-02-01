@@ -1,0 +1,9 @@
+sub_param, this:1
+sub_out
+global_ro| this%vectorLengthStart, vectorLengthStart, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(EDRestartVectorClass), intent(inout) :: this

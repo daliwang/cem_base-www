@@ -1,0 +1,7 @@
+sub_in, grfv, parrsld, nlon, u3, fftbuf, detam, tarrsld, grfu, iter, adv_state, ztodt, nlon_fft, lat, v3, etadot, etamid, dtr
+sub_out, parrsld, fftbuf
+global_ro
+global_wo
+global_mod
+global_non
+calls, sltint, bandij, sltwgts, kdpfnd, nunv1, slttraj

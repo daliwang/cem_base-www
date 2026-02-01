@@ -1,0 +1,7 @@
+sub_in, filter_nosnowc, num_soilc, num_nolakec, filter_urbanc, filter_soilp, bounds, num_soilp, filter_snowc, filter_hydrologyc, filter_nolakec, num_urbanc, filter_soilc, num_nosnowc, num_hydrologyc, num_snowc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotranModelUpdateFinalWaypoint, pflotranModelUpdateFlowConds, pflotranModelGetUpdatedStates, pflotranModelGetBgcVariables, pflotranModelSetInitialConcentrations, pflotranModelSetSoilHbcs, pflotranModelGetBCMassBalanceDelta, ice_adjust_porosity, cpu_time, pflotranModelSetInternalTHStatesfromCLM, update_bcflow_pf2clm, pflotranModelGetSoilProp, get_clm_bceflx, get_clm_bgc_rate, pflotranModelSetBGCRates, update_soil_th_clm2pf, pflotranModelStepperRunTillPauseTime, pflotranModelUpdateTHfromCLM, get_clm_bcwflx, get_clm_bgc_concentration

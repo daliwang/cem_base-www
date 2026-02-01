@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, croot_prof, m_deadstemc_to_litter_fire, stem_prof, wtcol, active, npfts, m_deadcrootc_to_litter_fire, decomp_cpools_vr, pfti
+global_wo, m_decomp_cpools_to_fire_vr
+global_mod, fire_mortality_c_to_cwdc
+global_non, cc14f, cc13f, col, pft, pc14f, pc13f, pc13s, pc14s, cc13s, cc14s
+calls, CIsoFluxCalc, endrun

@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, waterstate_vars, p, temperature_vars, cnstate_vars
+sub_out
+global_ro, temperature_vars%t_ref2m_max_patch, waterstate_vars%snow_depth_col, temperature_vars%t_ref2m_min_patch, temperature_vars%t_ref2m_patch, pft%column
+global_wo, cnstate_vars%huigrain_patch, cnstate_vars%gddmaturity_patch
+global_mod, cnstate_vars%hdidx_patch, cnstate_vars%cumvd_patch, cnstate_vars%vf_patch
+global_non, canopystate_vars%tlai_patch
+calls

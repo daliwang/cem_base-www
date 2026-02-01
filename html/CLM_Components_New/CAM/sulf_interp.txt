@@ -1,0 +1,7 @@
+sub_in, ncol, ccm_sulf, lchnk
+sub_out, ccm_sulf
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

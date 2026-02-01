@@ -1,0 +1,7 @@
+sub_in, tk, dtime, temperature_inst, fn, energyflux_inst, num_nolakec, fact, cv, filter_nolakec, bounds
+sub_out, fact, fn
+global_ro, t_shdw_inner, t_soisno, zi, z, t_building, t_roof_inner, eflx_bot, dz, ctype, t_sunw_inner
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, col_type, use_subcol
+sub_out, col_type
+global_ro
+global_wo
+global_mod
+global_non
+calls

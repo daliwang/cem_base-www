@@ -1,0 +1,7 @@
+sub_in, cc_p
+sub_out
+global_ro
+global_wo, livestem_mr, resp_m, NV, status_coh, rd, fire_mort, livecroot_mr, resp_g, froot_mr
+global_mod
+global_non, cc_p
+calls

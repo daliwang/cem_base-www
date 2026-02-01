@@ -1,0 +1,7 @@
+sub_in, etadot, d, lat, nlon, edstar
+sub_out, etadot
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, number, face_no, je, ie
+sub_out, face_no, je, ie
+global_ro
+global_wo
+global_mod
+global_non
+calls

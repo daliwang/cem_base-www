@@ -1,0 +1,15 @@
+sub_param, bounds:1, carbonstate_vars:4, betrtracer_vars:7, nitrogenstate_vars:5, filter_soilc:3, tracerstate_vars:6, num_soilc:2
+sub_out
+global_ro| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE| betrtracer_vars%id_trc_nh3x, id_trc_nh3x, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile, NONE
+global_wo| nitrogenstate_vars%sminn_vr_col, sminn_vr_col, NONE
+global_mod| nitrogenstate_vars%smin_nh4_vr_col, smin_nh4_vr_col, NONE| nitrogenstate_vars%smin_no3_vr_col, smin_no3_vr_col, NONE
+global_non
+calls
+readParams,readParams
+type(bounds_type)        , intent(in)    :: bounds             ! bounds
+integer                  , intent(in)    :: num_soilc          ! number of columns in column filter
+integer                  , intent(in)    :: filter_soilc(:)    ! column filter
+type(tracerstate_type)   , intent(in)    :: tracerstate_vars
+type(betrtracer_type)    , intent(in)    :: betrtracer_vars    ! betr configuration information
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars !

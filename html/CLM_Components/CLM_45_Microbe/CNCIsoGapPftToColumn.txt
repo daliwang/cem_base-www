@@ -1,0 +1,7 @@
+sub_in, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, froot_prof, m_livecrootc_storage_to_litter, stem_prof, m_frootc_to_litter, wtcol, m_deadcrootc_xfer_to_litter, npfts, m_frootc_xfer_to_litter, m_deadcrootc_storage_to_litter, m_leafc_storage_to_litter, fr_fcel, croot_prof, lf_flig, itype, m_leafc_xfer_to_litter, lf_fcel, m_deadstemc_to_litter, m_livestemc_to_litter, m_leafc_to_litter, m_livecrootc_to_litter, m_livestemc_storage_to_litter, m_gresp_storage_to_litter, m_deadstemc_xfer_to_litter, m_frootc_storage_to_litter, fr_flab, m_deadcrootc_to_litter, m_livestemc_xfer_to_litter, m_livecrootc_xfer_to_litter, m_gresp_xfer_to_litter, leaf_prof, fr_flig, active, lf_flab, pfti, m_deadstemc_storage_to_litter
+global_wo
+global_mod, gap_mortality_c_to_litr_lig_c, gap_mortality_c_to_litr_met_c, gap_mortality_c_to_cwdc, gap_mortality_c_to_litr_cel_c
+global_non, cc14f, cc13f, pc14f, pc13f
+calls, endrun

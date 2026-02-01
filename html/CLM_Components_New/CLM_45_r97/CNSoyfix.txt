@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_nitrogenflux_inst, crop_inst, num_soilp, cnveg_state_inst, soilbiogeochem_nitrogenstate_inst, cnveg_nitrogenflux_inst, bounds, filter_soilp, filter_soilc, num_soilc, waterstate_inst, soilbiogeochem_state_inst
+sub_out
+global_ro, gddmaturity, fpg, wf, plant_ndemand, sminn, croplive, hui
+global_wo
+global_mod, soyfixn
+global_non, soilbiogeochem_nitrogenflux_inst%soyfixn_to_sminn_col
+calls, p2c

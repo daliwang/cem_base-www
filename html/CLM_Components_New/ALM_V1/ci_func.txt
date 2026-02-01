@@ -1,0 +1,21 @@
+sub_param, c, cair, gb_mol, iv, p, oair, je, lmr_z, atm2lnd_vars, gs_mol, ci, fval, rh_can, par_z, photosyns_vars
+sub_out, gs_mol, fval
+global_ro, photosyns_vars%c3flag_patch, photosyns_vars%ko_patch, photosyns_vars%qe_patch, photosyns_vars%tpu_z_patch, photosyns_vars%kp_z_patch, photosyns_vars%theta_cj_patch, photosyns_vars%bbb_patch, photosyns_vars%mbb_patch, photosyns_vars%cp_patch, photosyns_vars%vcmax_z_patch, photosyns_vars%kc_patch, atm2lnd_vars%forc_pbot_downscaled_col
+global_wo
+global_mod, photosyns_vars%an_patch, photosyns_vars%ac_patch, photosyns_vars%ap_patch, photosyns_vars%ag_patch, photosyns_vars%aj_patch
+global_non
+calls, quadratic
+readParams,
+real(r8)             , intent(in)    :: ci       ! intracellular leaf CO2 (Pa)
+real(r8)             , intent(in)    :: lmr_z    ! canopy layer: leaf maintenance respiration rate (umol CO2/m**2/s)
+real(r8)             , intent(in)    :: par_z    ! par absorbed per unit lai for canopy layer (w/m**2)
+real(r8)             , intent(in)    :: gb_mol   ! leaf boundary layer conductance (umol H2O/m**2/s)
+real(r8)             , intent(in)    :: je       ! electron transport rate (umol electrons/m**2/s)
+real(r8)             , intent(in)    :: cair     ! Atmospheric CO2 partial pressure (Pa)
+real(r8)             , intent(in)    :: oair     ! Atmospheric O2 partial pressure (Pa)
+real(r8)             , intent(in)    :: rh_can   ! canopy air realtive humidity
+integer              , intent(in)    :: p, iv, c ! pft, vegetation type and column indexes
+real(r8)             , intent(out)   :: fval     ! return function of the value f(ci)
+real(r8)             , intent(out)   :: gs_mol   ! leaf stomatal conductance (umol H2O/m**2/s)
+type(atm2lnd_type)   , intent(in)    :: atm2lnd_vars
+type(photosyns_type) , intent(inout) :: photosyns_vars

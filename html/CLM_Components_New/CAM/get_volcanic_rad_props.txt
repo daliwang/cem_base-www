@@ -1,0 +1,7 @@
+sub_in, tau_w_f, ascat, mass, tau_w, ext, tau, tau_w_g, scat, ncol
+sub_out, tau_w, tau_w_f, tau_w_g, tau
+global_ro
+global_wo
+global_mod
+global_non
+calls

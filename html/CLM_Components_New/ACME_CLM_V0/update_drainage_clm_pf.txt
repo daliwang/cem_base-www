@@ -1,0 +1,7 @@
+sub_in, filter_hydrologyc, num_hydrologyc
+sub_out
+global_ro
+global_wo, cwf%qflx_qrgwl, cwf%qflx_drain_perched, cwf%qflx_rsub_sat, !cwf%qflx_drain, cwf%qflx_irrig
+global_mod
+global_non
+calls

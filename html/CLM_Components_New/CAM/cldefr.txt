@@ -1,0 +1,7 @@
+sub_in, rei, landm, landfrac, rel, t, ncol, ps, snowh, lchnk, icefrac, pmid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, reitab, reltab

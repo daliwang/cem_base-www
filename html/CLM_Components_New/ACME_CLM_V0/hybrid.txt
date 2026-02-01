@@ -1,0 +1,7 @@
+sub_in, cair, iv, je, gb_mol, lmr_z, atm2lnd_vars, gs_mol, x0, par_z, photosyns_vars, p, iter, oair, c, rh_can
+sub_out, x0, iter
+global_ro
+global_wo
+global_mod
+global_non
+calls, brent, ci_func

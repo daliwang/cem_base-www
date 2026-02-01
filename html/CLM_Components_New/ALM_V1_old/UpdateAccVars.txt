@@ -1,0 +1,9 @@
+sub_param, bounds:2, this:1
+sub_out
+global_ro| this%forc_t_downscaled_col, forc_t_downscaled_col, NONE| this%forc_rain_downscaled_col, forc_rain_downscaled_col, NONE| this%forc_snow_downscaled_col, forc_snow_downscaled_col, NONE| pft%column, column, NONE| pft%gridcell, gridcell, NONE| this%forc_wind_grc, forc_wind_grc, NONE| this%forc_solad_grc, forc_solad_grc, NONE| this%forc_rh_grc, forc_rh_grc, NONE| this%forc_solai_grc, forc_solai_grc, NONE
+global_wo| this%t_mo_patch, t_mo_patch, NONE
+global_mod| this%t_mo_min_patch, t_mo_min_patch, NONE
+global_non
+calls, update_accum_field, endrun, extract_accum_field
+readParams,
+type(bounds_type)      , intent(in) :: bounds

@@ -1,0 +1,7 @@
+sub_in, node_multiplicity
+sub_out, node_multiplicity
+global_ro
+global_wo
+global_mod
+global_non
+calls, abortmp

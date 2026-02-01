@@ -1,0 +1,7 @@
+sub_in, lap, lau, thp, thu, lar, thr
+sub_out, thr, lar
+global_ro
+global_wo
+global_mod
+global_non
+calls

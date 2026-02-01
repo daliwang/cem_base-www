@@ -1,0 +1,45 @@
+sub_in
+sub_out
+global_ro, clm3%g%l%c%gridcell, clm3%g%l%c%p%gridcell, clm3%g%lat, clm3%g%l%lps%thick_wall, clm3%g%l%lps%thick_roof, clm3%g%l%c%p%column, clm3%g%l%c%cps%pH, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%p%itype
+global_wo, clm3%g%l%c%cps%phi_s, clm3%g%gve%efisop, clm3%g%l%c%cps%p3, clm3%g%l%c%cps%dsmax, clm3%g%l%c%cps%b_infil, clm3%g%l%c%cps%cellorg, clm3%g%l%c%cps%cellclay, clm3%g%l%c%cps%max_dayl, clm3%g%l%c%p%pps%dewmx, clm3%g%l%c%cps%hksat_min, clm3%g%l%c%p%pps%clayfrac, clm3%g%l%c%cps%rootfr_road_perv, clm3%g%l%c%cps%z, clm3%g%l%c%cps%porosity, clm3%g%l%c%cps%wtfact, clm3%g%l%c%cps%tkdry, clm3%g%l%c%cps%expt, clm3%g%l%c%cps%Wsvic, clm3%g%l%c%cps%watdry, clm3%g%l%c%cps%watfc, clm3%g%l%c%cps%isoicol, clm3%g%l%c%cps%zwt0, clm3%g%l%c%cps%gwc_thr, clm3%g%l%c%p%pps%rootfr, clm3%g%l%c%p%pps%rresis, clm3%g%l%c%cps%mss_frc_cly_vld, clm3%g%l%c%cps%peatf_lf, clm3%g%l%c%cps%tksatu, clm3%g%l%c%cps%cellsand, clm3%g%l%c%cps%lakefetch, clm3%g%l%c%cps%watopt, clm3%g%l%c%p%pps%sandfrac, clm3%g%l%c%cps%lakedepth, clm3%g%l%c%cps%gdp_lf, clm3%g%l%c%cps%n_melt, clm3%g%l%c%cps%max_moist, clm3%g%l%c%cps%ds, clm3%g%l%c%cps%csol, clm3%g%l%c%cps%abm_lf, clm3%g%l%c%cps%etal, clm3%g%l%c%cps%ksat, clm3%g%l%c%cps%smpmin, clm3%g%l%c%cps%hkdepth, clm3%g%l%c%cps%f0
+global_mod, clm3%g%l%c%cps%tkmg, clm3%g%l%c%cps%bd, clm3%g%l%c%cps%topo_slope, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%topo_std, clm3%g%l%c%cps%h2osfc_thresh, clm3%g%l%c%cps%micro_sigma, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%depth, clm3%g%l%c%cps%hksat
+global_non
+calls, SnowAge_init, initCLMVICMap, ncd_io, CNiniSpecial, SnowOptics_init, ncd_pio_closefile, get_proc_global, get_proc_bounds, ncd_pio_openfile, shr_scam_getCloseLatLon, ncd_inqdlen, organicrd, getfil, init_decompcascade, initSoilParVIC, endrun
+
+Tree height: 45
+1+, get_proc_bounds, get_proc_global, 
+2+, getfil, ncd_pio_openfile, ncd_inqdlen, ncd_io, 
+3+, shr_scam_getCloseLatLon, 
+4+, endrun, endrun, ncd_io, 
+5+, ncd_io, 
+6+, ncd_io, ncd_io, 
+7+, ncd_io, ncd_io, 
+8+, endrun, ncd_io, 
+9+, ncd_io, 
+10+, ncd_io, 
+11+, ncd_io, 
+12+, ncd_io, 
+13+, ncd_io, 
+14+, ncd_io, 
+15+, ncd_io, 
+16+, ncd_io, 
+17+, ncd_io, 
+18+, ncd_io, 
+19+, ncd_io, 
+20+, ncd_io, 
+21+, ncd_io, 
+22+, ncd_io, 
+23+, ncd_io, 
+24+, ncd_io, 
+25+, ncd_io, 
+26+, ncd_io, 
+27+, ncd_io, 
+28+, ncd_pio_closefile, 
+29-, organicrd, 
+30-, endrun, 
+30+, endrun, 
+31+, endrun, 
+42-, initCLMVICMap, initSoilParVIC, 
+42+, initCLMVICMap, initSoilParVIC, init_decompcascade, CNiniSpecial, 
+43+, SnowOptics_init, SnowAge_init, 
+29+, endrun, 

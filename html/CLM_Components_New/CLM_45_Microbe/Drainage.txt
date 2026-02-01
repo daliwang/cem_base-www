@@ -1,0 +1,11 @@
+sub_in, num_urbanc, vol_liq, ubc, filter_urbanc, icefrac, num_hydrologyc, lbc, filter_hydrologyc
+sub_out
+global_ro, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_liq, clm3%g%l%c%cps%dsmax, clm3%g%l%c%cps%z, clm3%g%l%c%itype, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%cps%watsat, clm3%g%l%c%cws%moist, clm3%g%l%c%cwf%pwf_a%qflx_dew_snow, clm3%g%l%c%cps%Wsvic, clm3%g%l%c%cps%depth, clm3%g%l%c%cwf%pwf_a%qflx_dew_grnd, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%topo_slope, clm3%g%l%c%cps%eff_porosity, clm3%g%l%c%cps%c_param, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%max_moist, clm3%g%l%c%cps%ds, clm3%g%l%itype, clm3%g%l%c%cws%qcharge, clm3%g%l%c%cps%zi, clm3%g%l%c%cws%ice, clm3%g%l%c%cps%hkdepth, clm3%g%l%c%cws%hk_l, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%hksat
+global_wo, clm3%g%l%c%cef%eflx_impsoil, clm3%g%l%c%cwf%qflx_irrig, clm3%g%l%c%cwf%qflx_drain, clm3%g%l%c%cwf%qflx_qrgwl
+global_mod, clm3%g%l%c%cwf%qflx_drain_perched, clm3%g%l%c%cwf%qflx_rsub_sat, clm3%g%l%c%cwf%pwf_a%qflx_sub_snow, clm3%g%l%c%cws%zwt_perched, clm3%g%l%c%cws%wa, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cws%zwt, clm3%g%l%c%cws%frost_table, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_ice
+global_non, clm3%g%l%c%cps%topo_ndx, clm3%g%l%c%landunit
+calls, endrun
+
+Tree height: 12
+10+, endrun, 
+9+, endrun, 

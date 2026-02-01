@@ -1,0 +1,7 @@
+sub_in, C7_Skw_fnc, l_iter, tau_zm, rho_ds_zm, a1_zt, xpthvp, xm, rho_ds_zt, solve_type, dt, rhs, wp3_on_wp2_zt, invrs_rho_ds_zm, wp3_on_wp2, thv_ds_zm, wpxp, xm_forcing, C6x_Skw_fnc, wpxp_lower_lim, a1, wpxp_upper_lim
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var_pt, stat_begin_update_pt, set_boundary_conditions_rhs

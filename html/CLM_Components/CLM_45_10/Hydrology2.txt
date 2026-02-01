@@ -1,0 +1,7 @@
+sub_in, num_urbanc, filter_nosnowc, num_snowc, filter_nolakec, filter_snowc, ubc, filter_urbanc, num_nolakec, lbp, num_hydrologyc, lbc, ubp, num_nosnowc, filter_hydrologyc
+sub_out
+global_ro, bsw, qflx_evap_tot, h2osfc, qflx_snwcp_ice, landunit, t_h2osfc, watsat, begwb, itype, itype, snow_depth, h2ocan, frac_h2osfc, snl, smpmin, do_capsnow, frac_sno_eff, wa, sucsat, forc_snow, forc_flood, gridcell, forc_rain
+global_wo, t_grnd, snw_rds_top, mss_cnc_bcphi, mss_cnc_dst3, snot_top, sno_liq_top, t_grnd_u, h2osno_top, qcharge, snw_rds, t_grnd_r, soilpsi, wf, fcov, qflx_infl, mss_dst_top, qflx_runoff_r, snowdp, qflx_runoff_u, fsat, qflx_rsub_sat, mss_cnc_dst4, wf2, mss_cnc_bcpho, mss_oc_top, mss_cnc_dst1, mss_cnc_ocphi, mss_cnc_dst2, dTdz_top, mss_cnc_ocpho, mss_bc_top
+global_mod, mss_dsttot, mss_ocpho, mss_ocphi, mss_dst1, qflx_drain, mss_bcphi, h2osoi_liqice_10cm, snowliq, mss_oc_col, mss_bcpho, snowice, h2osno, qflx_runoff, h2osoi_liq, qflx_irrig, z, qflx_glcice, zi, t_soi_10cm, mss_bctot, qflx_qrgwl, mss_dst_col, mss_bc_col, h2osoi_ice, qflx_h2osfc_surf, h2osoi_vol, qflx_glcice_frz, tsoi17, dz, t_soisno, mss_dst4, qflx_surf, smp_l, mss_dst2, mss_octot, mss_dst3, endwb
+global_non, qflx_evap_soi, active, frac_sno, zwt, hk_l
+calls, CombineSnowLayers, DivideSnowLayers, Drainage, Infiltration, CLMVICMap, SnowWater, BuildSnowFilter, SurfaceRunoff, SoilWater, SnowCompaction

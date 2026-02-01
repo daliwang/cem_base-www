@@ -1,0 +1,25 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_curr_date, update_accum_field, extract_accum_field, endrun
+
+Tree height: 16
+0 , get_curr_date, 
+1+, update_accum_field, extract_accum_field, 
+2-, update_accum_field, extract_accum_field, 
+3-, update_accum_field, extract_accum_field, 
+4-, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, 
+5+, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, 
+6+, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, update_accum_field, extract_accum_field, 
+7+, update_accum_field, extract_accum_field, 
+8+, update_accum_field, extract_accum_field, 
+9+, update_accum_field, extract_accum_field, 
+10-, update_accum_field, extract_accum_field, 
+11-, update_accum_field, extract_accum_field, 
+12-, update_accum_field, extract_accum_field, 
+13+, update_accum_field, extract_accum_field, 
+14+, update_accum_field, extract_accum_field, 
+2+, endrun, 

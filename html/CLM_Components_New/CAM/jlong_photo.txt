@@ -1,0 +1,7 @@
+sub_in, sza_in, colo3_in, j_long, nlev, p_in, alb_in, t_in
+sub_out, j_long
+global_ro
+global_wo
+global_mod
+global_non
+calls, alloc_err, dgemm, interpolate_rsf

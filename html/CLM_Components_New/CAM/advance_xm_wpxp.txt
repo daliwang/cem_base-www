@@ -1,0 +1,7 @@
+sub_in, rho_ds_zt, sigma_sqd_w, rtpthvp, dt, wp3_on_wp2_zt, invrs_rho_ds_zt, Kh_zt, sclrm_forcing, rtm, wp3_on_wp2, thv_ds_zm, rtm_ref, rtp2, invrs_rho_ds_zm, thlpthvp, pdf_params, wprtp, sclrm, sclrpthvp, sclrp2, wm_zm, thlm_ref, wp2, wpsclrp, Lscale, l_implemented, wm_zt, thlm, tau_zm, rho_ds_zm, Skw_zm, thlm_forcing, err_code, wpthlp, thlp2, rtm_forcing
+sub_out, rtm, err_code, thlm
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_end_update, xm_wpxp_solve, reportError, xm_wpxp_lhs, xm_wpxp_clipping_and_stats, stat_update_var, stat_begin_update, calc_turb_adv_range, xm_wpxp_rhs

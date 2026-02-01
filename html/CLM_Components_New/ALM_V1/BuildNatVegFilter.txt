@@ -1,0 +1,12 @@
+sub_param, num_natvegp, bounds, filter_natvegp, dgvs_vars
+sub_out, filter_natvegp, num_natvegp
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)  :: bounds
+integer           , intent(out) :: num_natvegp       ! number of patches in naturally-vegetated filter
+integer           , intent(out) :: filter_natvegp(:) ! patch filter for naturally-vegetated points
+type(dgvs_type)   , intent(in)  :: dgvs_vars

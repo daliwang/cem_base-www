@@ -1,0 +1,7 @@
+sub_in, c, soilhydrology_vars
+sub_out
+global_ro, col%dz, soilhydrology_vars%depth_col
+global_wo
+global_mod, soilhydrology_vars%vic_clm_fract_col
+global_non, col%z, col%zi
+calls, linear_interp

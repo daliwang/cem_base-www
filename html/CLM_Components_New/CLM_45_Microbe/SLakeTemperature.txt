@@ -1,0 +1,13 @@
+sub_in, filter_lakec, num_lakep, ubc, num_lakec, lbp, filter_lakep, lbc, ubp
+sub_out
+global_ro, clm3%g%l%c%cps%z_lake, clm3%g%l%c%p%pef%sabg_lyr, clm3%g%l%c%p%pef%fsds_nir_d, clm3%g%l%c%p%pef%fsr_nir_i, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cch4%lake_raw, clm3%g%l%c%p%column, clm3%g%l%c%cps%ws, clm3%g%l%c%cps%z, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%p%pef%fsds_nir_i, clm3%g%l%c%p%pef%fsr_nir_d, clm3%g%l%c%cps%ks, clm3%g%l%c%p%pef%sabg, clm3%g%l%c%cps%lakedepth, clm3%g%l%c%cps%dz_lake, clm3%g%l%c%cps%dz, clm3%g%l%c%cps%etal, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice
+global_wo, clm3%g%l%c%p%pef%eflx_grnd_lake, clm3%g%l%c%cwf%qflx_snofrz_col, clm3%g%l%c%cps%frac_iceold, clm3%g%l%c%cps%savedtke1
+global_mod, clm3%g%l%c%p%pef%eflx_soil_grnd, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%c%cws%lake_icefrac, clm3%g%l%c%ces%t_lake, clm3%g%l%c%cps%pps_a%grnd_ch4_cond, clm3%g%l%c%cebal%errsoi, clm3%g%l%c%ces%hc_soi, clm3%g%l%c%ces%hc_soisno, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cws%lake_icethick, clm3%g%l%c%p%pef%eflx_gnet
+global_non, clm3%g%l%c%gridcell, clm3%g%l%c%p%gridcell
+calls, Tridiagonal, PhaseChange_Lake, SoilThermProp_Lake
+
+Tree height: 26
+5-, SoilThermProp_Lake, 
+11+, Tridiagonal, 
+12+, PhaseChange_Lake, 
+20+, SoilThermProp_Lake, 

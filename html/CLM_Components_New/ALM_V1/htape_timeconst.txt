@@ -1,0 +1,10 @@
+sub_param, mode, t
+sub_out
+global_ro, %begtime, %ntimes
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_putatt, get_curr_date, ncd_defvar, getdatetime, get_ref_date, get_curr_time
+readParams,
+integer, intent(in) :: t              ! tape index
+character(len=*), intent(in) :: mode  ! 'define' or 'write'

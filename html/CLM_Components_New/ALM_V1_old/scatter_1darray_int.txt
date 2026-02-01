@@ -1,0 +1,9 @@
+sub_param, clmlevel:3, alocal:1, aglobal:2
+sub_out, alocal
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, mct_aVect_clean, t_stopf, mct_aVect_scatter, mct_aVect_importIattr, mct_aVect_exportIattr, mct_aVect_init, get_clmlevel_gsmap
+readParams,
+character(len=*) ,intent(in) :: clmlevel    ! type of input grid

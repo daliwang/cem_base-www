@@ -1,0 +1,7 @@
+sub_in, rh, spec_hum, pressure_10m, ocnfrac, lchnk, wind_speed, air_temp, soilw, pressure_sfc, icefrac, sfc_temp, rain, tv, snow, solar_flux, lonndx, ncdate, latndx, dvelocity, ncol, dflx, mmr
+sub_out, dvelocity, dflx
+global_ro
+global_wo
+global_mod
+global_non
+calls, drydep_xactive, get_met_fields

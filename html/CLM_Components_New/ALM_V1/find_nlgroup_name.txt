@@ -1,0 +1,11 @@
+sub_param, status, unit, group
+sub_out, status
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer,          intent(in)  :: unit     ! fortran unit attached to file
+character(len=*), intent(in)  :: group    ! namelist group name
+integer,          intent(out) :: status   ! 0 for success, -1 if group name not found

@@ -1,0 +1,10 @@
+sub_param, this, bounds
+sub_out
+global_ro, ldomain%lonc
+global_wo, this%aais_area_grc, this%aais_mask_grc, this%gris_mask_grc, this%gris_area_grc
+global_mod, ldomain%latc
+global_non
+calls
+readParams,
+class(glc_diagnostics_type), intent(inout) :: this
+type(bounds_type), intent(in) :: bounds

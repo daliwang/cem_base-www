@@ -1,0 +1,7 @@
+sub_in, inlen, outlen, incomm, output, input
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, parexchangevector

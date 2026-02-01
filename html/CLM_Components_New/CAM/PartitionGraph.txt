@@ -1,0 +1,7 @@
+sub_in, vwgt, tpwgts, options, npart, adjwgt, nelem, adjncy, partmethod, edgecut, part, xadj, numflag, wgtflag
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, METIS_WPartGraphRecursive, METIS_PartGraphRecursive, metis_partgraphkway, METIS_PartGraphVKway

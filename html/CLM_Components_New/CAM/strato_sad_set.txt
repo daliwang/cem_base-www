@@ -1,0 +1,7 @@
+sub_in, sad, pmid, ncol, lchnk
+sub_out, sad
+global_ro
+global_wo
+global_mod
+global_non
+calls, moz_findplb, get_curr_date, vinterp, endrun

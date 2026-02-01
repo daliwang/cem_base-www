@@ -1,0 +1,18 @@
+sub_param, waterstate_vars:8, num_soilc:1, carbonstate_vars:9, cnstate_vars:3, phosphorusstate_vars:10, filter_soilc:2, nitrogenstate_vars:5, temperature_vars:7, carbonflux_vars:4, nitrogenflux_vars:6
+sub_out
+global_ro| cnstate_vars%cn_scalar, cn_scalar, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| ecophyscon%vmax_nfix, vmax_nfix, NONE| nitrogenstate_vars%benefit_pgpp_pleafc_patch, benefit_pgpp_pleafc, NONE| carbonstate_vars%frootc_patch, frootc, NONE| nitrogenstate_vars%pnup_pfrootc_patch, pnup_pfrootc, NONE| temperature_vars%t_soi10cm_col, t_soi10cm_col, NONE| pft%wtcol, wtcol, NONE
+global_wo
+global_mod| nitrogenflux_vars%nfix_to_sminn_col, nfix_to_sminn, NONE
+global_non| ecophyscon%km_nfix, km_nfix, NONE| pft%itype, ivt, NONE| cnstate_vars%cp_scalar, cp_scalar, NONE
+calls
+readParams,readCNNDynamicsParams
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)      , intent(inout) :: cnstate_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type), intent(in)    :: nitrogenstate_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars
+type(temperature_type)  , intent(inout) :: temperature_vars
+type(waterstate_type)   , intent(in)    :: waterstate_vars
+type(carbonstate_type)  , intent(inout) :: carbonstate_vars
+type(phosphorusstate_type)  , intent(inout) :: phosphorusstate_vars

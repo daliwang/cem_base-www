@@ -1,0 +1,7 @@
+sub_in, kord, v, te0, pk, pe, mfy, pkz, mfx, grid, peln, u, cp, dz, mdt, akap, nx, tracer, pt, te, hs, omga, ps, delp, convt, consv, te_method
+sub_out, delp, pk, pt, te, omga, ps, dz, mfx, peln, pe, mfy
+global_ro
+global_wo
+global_mod
+global_non
+calls, map1_ppm, mapn_ppm_tracer, mp_send3d, par_vecsum, map1_cubic_te, par_xsum, mp_recv3d, endrun, pkez

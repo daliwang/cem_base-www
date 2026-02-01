@@ -1,0 +1,7 @@
+sub_in, src_x, trg, src, trg_x, nsrc, ntrg
+sub_out, trg
+global_ro
+global_wo
+global_mod
+global_non
+calls

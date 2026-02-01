@@ -1,0 +1,13 @@
+sub_in, mode, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, get_proc_bounds, ncd_defvar, endrun
+
+Tree height: 4
+0 , get_proc_bounds, 
+2+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, 
+3+, endrun, endrun, 
+1+, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 

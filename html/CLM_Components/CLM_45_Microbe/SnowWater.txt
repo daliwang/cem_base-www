@@ -1,0 +1,7 @@
+sub_in, filter_nosnowc, num_snowc, filter_snowc, lbc, ubc, num_nosnowc
+sub_out
+global_ro, landunit, h2osno, qflx_dew_snow, snl, qflx_sub_snow, qflx_rain_grnd, qflx_dew_grnd, do_capsnow, frac_sno_eff, qflx_snomelt, forc_aer, qflx_evap_grnd, gridcell, frac_sno
+global_wo, qflx_top_soil, flx_dst_dep, flx_oc_dep_dry, flx_bc_dep, flx_oc_dep, flx_bc_dep_wet, flx_bc_dep_dry, flx_oc_dep_wet
+global_mod, qflx_snow_melt, flx_oc_dep_pho, mss_ocpho, flx_dst_dep_dry4, int_snow, flx_oc_dep_phi, mss_ocphi, mss_dst1, flx_dst_dep_dry1, flx_bc_dep_pho, mss_bcphi, h2osoi_ice, flx_dst_dep_wet1, flx_dst_dep_wet3, flx_dst_dep_wet4, dz, mss_bcpho, flx_dst_dep_dry2, mss_dst4, flx_dst_dep_wet2, mss_dst2, h2osoi_liq, flx_bc_dep_phi, flx_dst_dep_dry3, mss_dst3
+global_non, qflx_evap_soi, qflx_ev_snow, qflx_ev_soil, itype
+calls

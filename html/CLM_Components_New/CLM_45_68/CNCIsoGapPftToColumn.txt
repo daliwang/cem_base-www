@@ -1,0 +1,10 @@
+sub_in, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, pcisof%m_livestemc_storage_to_litter, pcisof%m_deadcrootc_storage_to_litter, col%npfts, pcisof%m_livecrootc_xfer_to_litter, pcisof%m_leafc_xfer_to_litter, pftcon%lf_flig, pftcon%fr_fcel, pftcon%fr_flig, pftcon%lf_flab, pftcon%fr_flab, pps%froot_prof, pcisof%m_frootc_to_litter, pcisof%m_livecrootc_to_litter, pcisof%m_frootc_xfer_to_litter, pcisof%m_livecrootc_storage_to_litter, pcisof%m_frootc_storage_to_litter, pftcon%lf_fcel, pcisof%m_leafc_to_litter, pcisof%m_livestemc_xfer_to_litter, pcisof%m_deadcrootc_to_litter, pps%stem_prof, pps%croot_prof, pcisof%m_deadstemc_xfer_to_litter, pcisof%m_livestemc_to_litter, pft%wtcol, pcisof%m_deadstemc_storage_to_litter, pcisof%m_deadstemc_to_litter, pcisof%m_deadcrootc_xfer_to_litter, pps%leaf_prof, col%pfti, pcisof%m_gresp_storage_to_litter, pcisof%m_gresp_xfer_to_litter, pcisof%m_leafc_storage_to_litter, pft%itype
+global_wo
+global_mod, ccisof%gap_mortality_c_to_litr_met_c, ccisof%gap_mortality_c_to_litr_lig_c, ccisof%gap_mortality_c_to_cwdc, ccisof%gap_mortality_c_to_litr_cel_c
+global_non, cc14f, cc13f, pc14f, pc13f
+calls, endrun
+
+Tree height: 3
+0 , endrun, 

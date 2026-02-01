@@ -1,0 +1,7 @@
+sub_in, mmr, zint, lchunk, ncol, rho
+sub_out, mmr
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, ncid, flag, bounds, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, this%som_adv_coef_col, this%fpi_vr_col, this%som_diffus_coef_col, this%fpi_vr_col
+calls, restartvar

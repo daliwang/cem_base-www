@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, agdd20, nind, tmomin20, t_mo_min, leafcmax, present, crownarea
+global_mod
+global_non, p, g
+calls, get_proc_bounds

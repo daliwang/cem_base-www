@@ -1,0 +1,14 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, clmvarctl_init, set_timemgr_init, find_nlgroup_name, SoilHydrology_readnl, Hydrology1_readnl, set_clmvarctl, control_spmd, endrun, relavu
+
+Tree height: 5
+1+, find_nlgroup_name, relavu, set_timemgr_init, clmvarctl_init, Hydrology1_readnl, SoilHydrology_readnl, control_spmd, 
+3+, set_clmvarctl, 
+4+, endrun, 
+2+, endrun, endrun, endrun, 
+3+, endrun, endrun, 

@@ -1,0 +1,7 @@
+sub_in, bounds, cv, temperature_vars, soilstate_vars, num_nolakec, waterstate_vars, filter_nolakec, urbanparams_vars, tk, tk_h2osfc
+sub_out, cv, tk, tk_h2osfc
+global_ro, urbanparams_vars%tk_roof, waterstate_vars%h2osfc_col, col%z, col%landunit, waterstate_vars%h2osoi_ice_col, col%snl, soilstate_vars%tkmg_col, soilstate_vars%watsat_col, urbanparams_vars%tk_wall, soilstate_vars%csol_col, urbanparams_vars%nlev_improad, col%dz, waterstate_vars%frac_sno_eff_col, urbanparams_vars%cv_wall, urbanparams_vars%cv_improad, waterstate_vars%h2osno_col, soilstate_vars%tkdry_col, waterstate_vars%h2osoi_liq_col, urbanparams_vars%tk_improad, temperature_vars%t_soisno_col, col%zi, urbanparams_vars%cv_roof
+global_wo, col%itype
+global_mod, waterstate_vars%bw_col, soilstate_vars%thk_col
+global_non, soilstate_vars%tksatu_col
+calls, t_startf, t_stopf

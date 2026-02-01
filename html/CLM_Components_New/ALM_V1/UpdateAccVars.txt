@@ -1,0 +1,9 @@
+sub_param, bounds, this
+sub_out
+global_ro, this%forc_solad_grc, pft%column, this%forc_snow_downscaled_col, this%forc_wind_grc, this%forc_rh_grc, this%forc_t_downscaled_col, this%forc_solai_grc, this%forc_rain_downscaled_col, pft%gridcell
+global_wo, this%t_mo_patch
+global_mod, this%t_mo_min_patch
+global_non
+calls, update_accum_field, endrun, extract_accum_field
+readParams,
+type(bounds_type)      , intent(in) :: bounds

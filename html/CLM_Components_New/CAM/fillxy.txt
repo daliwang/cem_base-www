@@ -1,0 +1,7 @@
+sub_in, cosp, q, jm, acap, acosp, jfirst, jlast, im
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, filew

@@ -1,0 +1,12 @@
+sub_param, bounds, tracerboundarycond_vars, this, betrtracer_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(bgc_reaction_type)         , intent(in) :: this
+type(BeTRtracer_type )           , intent(in) :: betrtracer_vars
+type(bounds_type)                , intent(in) :: bounds
+type(tracerboundarycond_type)    , intent(in) :: tracerboundarycond_vars

@@ -1,0 +1,40 @@
+sub_param, frictionvel_vars, tracerstate_vars, ch4_vars, EDbio_vars, solarabs_vars, nitrogenflux_vars, photosyns_vars, canopystate_vars, soilstate_vars, betrtracer_vars, file, soilhydrology_vars, energyflux_vars, nitrogenstate_vars, c13_carbonstate_vars, carbonflux_vars, atm2lnd_vars, phosphorusstate_vars, c14_carbonstate_vars, surfalb_vars, carbonstate_vars, lakestate_vars, waterflux_vars, tracercoeff_vars, tracerflux_vars, phosphorusflux_vars, bounds, aerosol_vars, waterstate_vars, dgvs_vars, cnstate_vars, temperature_vars
+sub_out
+global_ro, watsat_col=soilstate_vars%watsat_col, bounds%begp:bounds%endp, tlai_patch=canopystate_vars%tlai_patch, h2osoi_ice_col=waterstate_vars%h2osoi_ice_col, tsai_patch=canopystate_vars%tsai_patch, h2osoi_liq_col=waterstate_vars%h2osoi_liq_col, bounds%begc:bounds%endc
+global_wo
+global_mod
+global_non
+calls, phosphorusflux_vars%Restart, cnstate_vars%Restart, atm2lnd_vars%restart, waterstate_vars%restart, soilhydrology_vars%restart, restFile_close, ch4_vars%restart, aerosol_vars%restart:, tracerstate_vars%Restart, aerosol_vars%restart, carbonstate_vars%restart, carbonflux_vars%restart, SubgridRest, EDRest, tracerflux_vars%Restart, restFile_dimcheck, dgvs_vars%Restart, surfalb_vars%restart, temperature_vars%restart, lakestate_vars%restart, photosyns_vars%restart, c13_carbonstate_vars%restart, , accumulRest, restFile_open, nitrogenstate_vars%Restart, phosphorusstate_vars%Restart, soilstate_vars%restart, waterflux_vars%restart, frictionvel_vars%, nitrogenflux_vars%Restart, energyflux_vars%restart, restFile_check_consistency, hist_restart_ncd, subgridRest_read_cleanup, tracercoeff_vars%Restart, solarabs_vars%restart, c14_carbonstate_vars%restart, canopystate_vars%restart
+readParams,restFile_read
+character(len=*)         , intent(in)    :: file  ! output netcdf restart file
+type(bounds_type)        , intent(in)    :: bounds
+type(atm2lnd_type)       , intent(inout) :: atm2lnd_vars
+type(aerosol_type)       , intent(inout) :: aerosol_vars
+type(canopystate_type)   , intent(inout) :: canopystate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(ch4_type)           , intent(inout) :: ch4_vars
+type(dgvs_type)          , intent(inout) :: dgvs_vars
+type(energyflux_type)    , intent(inout) :: energyflux_vars
+type(frictionvel_type)   , intent(inout) :: frictionvel_vars
+type(lakestate_type)     , intent(inout) :: lakestate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(photosyns_type)     , intent(inout) :: photosyns_vars
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(solarabs_type)      , intent(inout) :: solarabs_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(surfalb_type)       , intent(inout) :: surfalb_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(EDbio_type)         , intent(inout) :: EDbio_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars
+type(tracerstate_type)   , intent(inout) :: tracerstate_vars ! due to Betrrest call
+type(BeTRTracer_Type)    , intent(in)    :: betrtracer_vars
+type(tracerflux_type)    , intent(inout) :: tracerflux_vars
+type(tracercoeff_type)   , intent(inout) :: tracercoeff_vars

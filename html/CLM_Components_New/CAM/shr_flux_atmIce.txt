@@ -1,0 +1,7 @@
+sub_in, tbot, ts, mask, ubot, sen, rbot, taux, tref, zbot, vbot, qref, evap, thbot, lat, lwup, tauy, qbot
+sub_out, tref, lat, sen, evap, qref, taux, tauy, lwup
+global_ro
+global_wo
+global_mod
+global_non
+calls

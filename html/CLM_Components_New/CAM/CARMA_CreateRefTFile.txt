@@ -1,0 +1,7 @@
+sub_in, refh2so4, lev, reft, rc, filepath, refh2o, carma
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, wrap_put_att_text, wrap_put_var_realx, wrap_def_dim, wrap_enddef, wrap_def_var, wrap_create, wrap_close

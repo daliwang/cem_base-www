@@ -1,0 +1,10 @@
+sub_param, arr2d_inout, which_dim
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer,  intent(in) :: which_dim     !do normalization along which dimension?
+real(r8), intent(inout) :: arr2d_inout(:,:)   !input 2d array

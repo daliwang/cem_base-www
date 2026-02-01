@@ -1,0 +1,9 @@
+sub_param, offset, soe_avars, soe_avar_type, this
+sub_out, soe_avars
+global_ro, %pressure, %sat, %den, %por, this%aux_vars_in
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type (sysofeqns_vsfm_auxvar_type), dimension(:), intent(inout) :: soe_avars

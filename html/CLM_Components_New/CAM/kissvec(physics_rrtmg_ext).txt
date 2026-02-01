@@ -1,0 +1,7 @@
+sub_in, seed2, seed3, ran_arr, seed4, seed1
+sub_out, seed4, seed2, ran_arr, seed3, seed1
+global_ro
+global_wo
+global_mod
+global_non
+calls

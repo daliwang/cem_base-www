@@ -1,0 +1,7 @@
+sub_in, thlm, exner, err_code, thv_ds, thvm, p_in_Pa, mu, Lscale, rtm, em, l_implemented
+sub_out, Lscale, err_code, em
+global_ro
+global_wo
+global_mod
+global_non
+calls, length_check

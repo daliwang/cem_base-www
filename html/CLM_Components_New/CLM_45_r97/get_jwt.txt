@@ -1,0 +1,7 @@
+sub_in, bounds, jwt, temperature_inst, filter_methc, soilstate_inst, waterstate_inst, num_methc
+sub_out, jwt
+global_ro, watsat, t_soisno, h2osoi_vol
+global_wo
+global_mod
+global_non
+calls

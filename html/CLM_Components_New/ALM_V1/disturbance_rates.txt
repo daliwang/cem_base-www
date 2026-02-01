@@ -1,0 +1,9 @@
+sub_param, site_in
+sub_out
+global_ro, udata%deltat, site_in%oldest_patch, currentPatch%younger, site_in%frac_burnt, %frac_burnt, %area, currentPatch%shortest, currentCohort%taller
+global_wo, %disturbance_rate, site_in%disturbance_rate, site_in%dist_type
+global_mod, %dmort, %disturbance_rates, site_in%disturbance_fire, site_in%disturbance_mortality, %c_area
+global_non, currentPatch
+calls
+readParams,
+type (site) , intent(inout) :: site_in

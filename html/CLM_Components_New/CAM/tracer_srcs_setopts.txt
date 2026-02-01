@@ -1,0 +1,7 @@
+sub_in, tracer_srcs_fixed_tod_in, tracer_srcs_type_in, tracer_srcs_specifier_in, tracer_srcs_fixed_ymd_in, tracer_srcs_datapath_in, tracer_srcs_filelist_in, tracer_srcs_rmfile_in, tracer_srcs_file_in, tracer_srcs_cycle_yr_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, advance_trcdata

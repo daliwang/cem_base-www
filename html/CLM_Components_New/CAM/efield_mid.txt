@@ -1,0 +1,7 @@
+sub_in, mlat, mlon, pot
+sub_out, pot
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_fkflfs, ff, pnm

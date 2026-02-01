@@ -1,0 +1,9 @@
+sub_param, iunit:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_file_freeUnit
+readParams,
+integer, intent(in) :: iunit    !Fortran unit number

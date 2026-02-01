@@ -1,0 +1,16 @@
+sub_param, jtops, lbj, num_soilc, bounds, tracercoeff_vars, betrtracer_vars, Rfactor, ubj, filter_soilc
+sub_out, Rfactor
+global_ro, tracercoeff_vars%aqu2bulkcef_mobile_col, betrtracer_vars%volatilegroupid, betrtracer_vars%is_volatile, betrtracer_vars%tracer_group_memid, betrtracer_vars%ngwmobile_tracer_groups, tracercoeff_vars%gas2bulkcef_mobile_col
+global_wo
+global_mod
+global_non, betrtracer_vars%is_h2o
+calls
+readParams,
+type(bounds_type),      intent(in) :: bounds
+integer,                intent(in) :: lbj, ubj
+integer,                intent(in) :: jtops(bounds%begc: )        ! top label of each column
+integer,                intent(in) :: num_soilc                 ! number of columns in column filter_soilc
+integer,                intent(in) :: filter_soilc(:)            ! column filter_soilc
+type(betrtracer_type),  intent(in) :: betrtracer_vars
+type(tracercoeff_type), intent(in) :: tracercoeff_vars
+real(r8), intent(inout) :: Rfactor(bounds%begc: ,lbj:  ,1: )  !rfactor for dual diffusive transport

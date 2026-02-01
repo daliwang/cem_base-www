@@ -1,0 +1,16 @@
+sub_param, jtops:8, bounds:1, tracer_conc_mobile_col:12, yf:11, k2:10, filter:7, numf:6, ngwtracers:5, neq:4, ubj:3, lbj:2, k1:9
+sub_out, tracer_conc_mobile_col
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer,                intent(in)    :: numf
+integer,                intent(in)    :: filter(:)
+integer,                intent(in)    :: k1, k2, neq, ngwtracers
+real(r8),               intent(in)    :: yf(neq, bounds%begc:bounds%endc, lbj:ubj)
+real(r8),               intent(inout) :: tracer_conc_mobile_col(bounds%begc:bounds%endc,lbj:ubj,ngwtracers)

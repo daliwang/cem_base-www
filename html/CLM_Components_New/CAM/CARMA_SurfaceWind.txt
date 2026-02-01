@@ -1,0 +1,7 @@
+sub_in, icol, rc, carma, ilon, u10in, state, ilat, cam_in
+sub_out, u10in, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, WeibullWind

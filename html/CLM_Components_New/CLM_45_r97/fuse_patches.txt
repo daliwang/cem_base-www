@@ -1,0 +1,7 @@
+sub_in, csite
+sub_out
+global_ro, pft_agb_profile, currentPatch, tpp
+global_wo
+global_mod
+global_non, csite, currentPatch%older
+calls, sort_cohorts, fuse_2_patches, fuse_cohorts, patch_pft_size_profile

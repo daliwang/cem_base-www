@@ -1,0 +1,7 @@
+sub_in, ptop, lchnk, vmr, invariants, pdel, ncol, col_delta
+sub_out, col_delta
+global_ro
+global_wo
+global_mod
+global_non
+calls, p_interp

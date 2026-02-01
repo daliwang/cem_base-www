@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, waterflux_inst, filter_nosnowc, bounds, num_snowc, atm2lnd_inst, num_nosnowc, filter_snowc, aerosol_inst
+sub_out
+global_ro, do_capsnow, frac_sno, h2osno, frac_sno_eff, qflx_dew_grnd, snl, qflx_sub_snow, qflx_rain_grnd, qflx_dew_snow, qflx_evap_grnd, qflx_snomelt
+global_wo, qflx_top_soil
+global_mod, qflx_snow_melt, mss_dst2, mss_dst4, dz, mss_bcpho, mss_ocpho, h2osoi_ice, int_snow, mss_ocphi, h2osoi_liq, mss_dst1, mss_dst3, mss_bcphi
+global_non, bounds%endc, bounds%begc
+calls, AerosolFluxes

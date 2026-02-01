@@ -1,0 +1,7 @@
+sub_in, rair, pmid, ps, phis, gravit, ncol, psl, t
+sub_out, psl
+global_ro
+global_wo
+global_mod
+global_non
+calls

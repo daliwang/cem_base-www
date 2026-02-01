@@ -1,0 +1,11 @@
+sub_param, bounds:2, geds_local:3, this:1
+sub_out
+global_ro| this%vectorLengthStart, vectorLengthStart, NONE| grc%londeg, londeg, NONE| newp%siteptr%dstatus, dstatus, NONE| newp%siteptr%status, status, NONE| grc%latdeg, latdeg, NONE
+global_wo| geds_local%lon, lon, NONE| geds_local%ncd, ncd, NONE| dc%balive, balive, NONE| dc%bdead, bdead, NONE| geds_local%gdd, gdd, NONE| geds_local%istheresoil, istheresoil, NONE| dc%bstore, bstore, NONE| geds_local%lat, lat, NONE| dc%canopy_trim, canopy_trim, NONE| newp%patchno, patchno, NONE| dc%n, n, NONE| dc%laimemory, laimemory, NONE| dc%hite, hite, NONE| dc%canopy_layer, canopy_layer, NONE| dc%dbh, dbh, NONE
+global_mod
+global_non| newp, currentSite%youngest_patch, NONE| geds_local, currentSite, NONE| newp, currentSite%oldest_patch, NONE| currentSite%youngest_patch, currentSite%oldest_patch%younger, NONE| null, currentSite%oldest_patch%younger, NONE| newp, currentSite%youngest_patch%younger, NONE| null, currentSite%youngest_patch%younger, NONE| currentSite%youngest_patch, newp%older, NONE| currentSite%oldest_patch, currentSite%youngest_patch%older, NONE| null, currentSite%youngest_patch%older, NONE| null, newp%younger, NONE| currentSite, newp%siteptr, NONE| null, currentSite%oldest_patch%older, NONE
+calls, create_patch, zero_site, zero_patch, create_cohort
+readParams,
+class(EDRestartVectorClass), intent(inout)         :: this
+type(bounds_type),           intent(in)            :: bounds
+type(gridcell_edstate_type), target, intent(inout) :: geds_local( bounds%begg: )

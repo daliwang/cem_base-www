@@ -1,0 +1,7 @@
+sub_in, state, pbuf2d
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, pbuf_get_chunk
+calls, pbuf_get_field

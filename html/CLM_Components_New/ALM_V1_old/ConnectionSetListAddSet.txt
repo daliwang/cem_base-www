@@ -1,0 +1,8 @@
+sub_param, list:1, new_conn_set:2
+sub_out
+global_ro
+global_wo| new_conn_set%id, id, NONE
+global_mod| list%num_connection_list, num_connection_list, NONE
+global_non| new_conn_set, list%last, NONE| new_conn_set, list%last%next, NONE| new_conn_set, list%first, NONE
+calls
+readParams,

@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, do
+calls, endrun, get_proc_bounds, ncd_defvar, ncd_io

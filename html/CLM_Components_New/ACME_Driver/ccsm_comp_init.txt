@@ -1,0 +1,8 @@
+sub_in, rc, drvcomp, clock, exportState, importState
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_comm_setcompstates, ESMF_AttributeLink, ESMF_GridCompSetServices, ESMF_VMGetCurrent, ESMF_AttributeWrite, ccsm_init, esmfshr_attribute_appl_init, component_init_update_petlist, seq_comm_petlist
+calls_ln, component_init_update_petlist@3836, esmfshr_attribute_appl_init@3818, ESMF_GridCompSetServices@3799, component_init_update_petlist@3839, component_init_update_petlist@3838, ESMF_VMGetCurrent@3825, seq_comm_setcompstates@3794, component_init_update_petlist@3837, ESMF_AttributeWrite@3846, ccsm_init@3812, component_init_update_petlist@3835, seq_comm_setcompstates@3806, component_init_update_petlist@3834, component_init_update_petlist@3833, ESMF_GridCompSetServices@3787, seq_comm_petlist@3783, ESMF_AttributeLink@3774

@@ -1,0 +1,7 @@
+sub_in, xprogsul, emis_type, xvolc_emis
+sub_out, xvolc_emis, xprogsul
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, l_uv_nudge_in, , #ifdef, saturation_formula_in, GFDL, l_host_applies_sfc_fluxes_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, dlam, phip, jband, iband, nlon, lamp, phib
+sub_out, iband, jband
+global_ro
+global_wo
+global_mod
+global_non
+calls

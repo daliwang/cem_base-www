@@ -1,0 +1,7 @@
+sub_in, errstring, vd_lu_qdecomp, rairi, do_molec_diff, dtk, tauresy, ztodt, kvh, rpdel, v, cflx, u, pint, tautmsx, cgs, ksrftms, lchnk, tauresx, shflx, pmid, q, topflx, kvq, tautmsy, pver, compute_molec_diff, cgh, itaures, kvt, zi, nbot, tauy, ncol, pcols, ncnst, fieldlistm, ntop, fieldlist, qmincg, dse, cpairv, kvm, t, taux
+sub_out, dse, tauresy, tautmsx, v, tauresx, topflx, u, q, errstring, dtk, tautmsy
+global_ro
+global_wo
+global_mod
+global_non
+calls, vd_lu_decomp, vd_lu_solve, decomp%finalize

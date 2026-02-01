@@ -1,0 +1,10 @@
+sub_in, num_snowc, filter_snowc, bounds
+sub_out
+global_ro, cps%frac_sno_eff
+global_wo, cps%z
+global_mod, cps%dz, cps%mss_dst2, cps%mss_dst4, cps%snw_rds, cps%mss_dst3, cps%snl, cps%mss_bcphi, cws%h2osoi_ice, cps%mss_dst1, cps%mss_ocpho, cps%zi, cws%h2osoi_liq, cps%mss_bcpho, ces%t_soisno, cps%mss_ocphi
+global_non
+calls, Combo
+
+Tree height: 5
+2+, Combo, Combo, Combo, Combo, 

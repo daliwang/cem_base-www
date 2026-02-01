@@ -1,0 +1,7 @@
+sub_in, eflx_heat_from_ac_roof, num_urbanl, eflx_heat_from_ac_sunwall, eflx_heat_from_ac_shadewall, filter_urbanl, eflx_wasteheat_sunwall, energyflux_inst, eflx_wasteheat_roof, bounds, eflx_wasteheat_shadewall
+sub_out
+global_ro, canyon_hwr, eflx_urban_heat, wtlunit_roof, eflx_urban_ac, lgridcell
+global_wo
+global_mod, eflx_wasteheat
+global_non
+calls

@@ -1,0 +1,12 @@
+sub_param, nj, nbeg, ni, domain, clmlevel, isgrid2d, nend
+sub_out
+global_ro
+global_wo, domain%glcmask, domain%area, domain%ns, domain%latc, domain%lonc, domain%pftm, domain%decomped, domain%topo, domain%frac, domain%nend, domain%nbeg, domain%mask
+global_mod, domain%nj, domain%ni, domain%isgrid2d, domain%clmlevel, domain%set
+global_non
+calls, domain_clean, shr_sys_abort
+readParams,
+logical, intent(in) :: isgrid2d      ! true => global grid is lat/lon
+integer, intent(in) :: ni,nj         ! grid size, 2d
+integer         , intent(in), optional  :: nbeg,nend  ! beg/end indices
+character(len=*), intent(in), optional  :: clmlevel   ! grid type

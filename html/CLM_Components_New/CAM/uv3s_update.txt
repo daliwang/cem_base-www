@@ -1,0 +1,7 @@
+sub_in, v3s, dva, grid, u3s, dt5, dua
+sub_out, u3s, v3s
+global_ro
+global_wo
+global_mod
+global_non
+calls, mp_recv3d, mp_send3d, outfld

@@ -1,0 +1,11 @@
+sub_param, this:1, ncid:2, flag:3
+sub_out
+global_ro| data=this%root_md, root_md, NONE| data=this%cohortsPerPatch, cohortsPerPatch, NONE| data=this%bstore, bstore, NONE| data=this%pft, pft, NONE| data=this%canopy_trim, canopy_trim, NONE| data=this%laimemory, laimemory, NONE| data=this%n, n, NONE| data=this%leaf_litter_in, leaf_litter_in, NONE| data=this%root_litter_in, root_litter_in, NONE| data=this%hite, hite, NONE| data=this%canopy_layer, canopy_layer, NONE| data=this%cwd_bg, cwd_bg, NONE| data=this%leaf_litter, leaf_litter, NONE| data=this%dbh, dbh, NONE| data=this%livegrass, livegrass, NONE| data=this%status_coh, status_coh, NONE| data=this%leaf_md, leaf_md, NONE| data=this%npp_acc, npp_acc, NONE| data=this%age, age, NONE| data=this%water_memory, water_memory, NONE| data=this%numPatchesPerCell, numPatchesPerCell, NONE| data=this%cwd_ag, cwd_ag, NONE| data=this%gpp_acc, gpp_acc, NONE| data=this%bdead, bdead, NONE| data=this%balive, balive, NONE| data=this%areaRestart, areaRestart, NONE| data=this%resp_clm, resp_clm, NONE| data=this%br, br, NONE| data=this%spread, spread, NONE| data=this%seed_bank, seed_bank, NONE| data=this%old_stock, old_stock, NONE| data=this%bl, bl, NONE| data=this%root_litter, root_litter, NONE| data=this%cellWithPatch, cellWithPatch, NONE
+global_wo
+global_mod
+global_non
+calls, restartvar, mct_gsmap_OP, get_clmlevel_gsmap
+readParams,
+class(EDRestartVectorClass), intent(inout) :: this
+type(file_desc_t), intent(inout)           :: ncid   ! netcdf id
+character(len=*) , intent(in)              :: flag   !'read' or 'write'

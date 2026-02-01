@@ -1,0 +1,7 @@
+sub_in, lns, lnj, glcmask, lni
+sub_out
+global_ro, ldecomp%gdc2glo
+global_wo
+global_mod, %endl, procinfo%endl, %endp, procinfo%endp, procinfo%begCohort, %begCohort, procinfo%ncols, %ncols, procinfo%nlunits, %nlunits, procinfo%begp, %begp, procinfo%endc, %endc, procinfo%begc, %begc, %begl, procinfo%begl, %nCohorts, procinfo%nCohorts, procinfo%npfts, %npfts, %endCohort, procinfo%endCohort
+global_non
+calls, get_proc_bounds, mpi_allreduce, endrun, subgrid_get_gcellinfo

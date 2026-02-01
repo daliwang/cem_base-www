@@ -1,0 +1,7 @@
+sub_in, l_in_update, nn, kk, n, x
+sub_out, n, x, l_in_update
+global_ro
+global_wo
+global_mod
+global_non
+calls

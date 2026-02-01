@@ -1,0 +1,7 @@
+sub_in, fileo, filei, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, col_activeo, pft_activeo, lun_activeo, lun_activei, pft_activei, col_activei, lunindx, pftindx, colindx
+calls, check_dim_level, ncd_pio_openfile, interp_1d_int, endrun, pio_closefile, interp_0d_copy, pio_seterrorhandling, interp_1d_double, interp_2d_double, shr_sys_flush, findMinDist, check_dim_subgrid

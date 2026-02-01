@@ -1,0 +1,7 @@
+sub_in, geds_local, bounds
+sub_out
+global_ro, col%gridcell, col%landunit
+global_wo
+global_mod, geds_local%istheresoil
+global_non, geds_local
+calls

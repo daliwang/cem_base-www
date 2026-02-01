@@ -1,0 +1,12 @@
+sub_param, li, wtlunit, ctype, ci
+sub_out, ci
+global_ro
+global_wo, col%itype, col%landunit
+global_mod, lun%gridcell, col%gridcell, col%wtlunit
+global_non
+calls
+readParams,
+integer  , intent(inout) :: ci      ! input value is index of last column added; output value is index of this newly-added column
+integer  , intent(in)    :: li      ! landunit index on which this column should be placed (assumes this landunit has already been created)
+integer  , intent(in)    :: ctype   ! column type
+real(r8) , intent(in)    :: wtlunit ! weight of the column relative to the landunit

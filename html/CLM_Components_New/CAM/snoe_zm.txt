@@ -1,0 +1,7 @@
+sub_in, kp, zm, doy, f107
+sub_out, zm
+global_ro
+global_wo
+global_mod
+global_non
+calls

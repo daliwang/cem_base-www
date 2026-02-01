@@ -1,0 +1,7 @@
+sub_in, srffile_out, inifile_out, pftfile_out
+sub_out, pftfile_out, srffile_out, inifile_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

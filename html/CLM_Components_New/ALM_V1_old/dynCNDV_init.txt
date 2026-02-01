@@ -1,0 +1,10 @@
+sub_param, dgvs_vars:2, bounds:1
+sub_out
+global_ro| pft%wtcol, wtcol, NONE
+global_wo| dgvs_vars%fpcgrid_patch, fpcgrid_patch, NONE| dgvs_vars%fpcgridold_patch, fpcgridold_patch, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in)    :: bounds
+type(dgvs_type)  , intent(inout) :: dgvs_vars

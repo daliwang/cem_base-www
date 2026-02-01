@@ -1,0 +1,8 @@
+sub_param, ierr:3, B:2, this:1
+sub_out
+global_ro| cur_conn_set%next, cur_conn_set, NONE| cur_cond%conn_set, cur_conn_set, NONE| this%mesh%intrn_conn_set_list%first, cur_conn_set, NONE| %id_up, id_up, NONE| %itype, itype, NONE| %id_dn, id_dn, NONE| cur_cond%next, cur_cond, NONE| this%source_sinks%first, cur_cond, NONE| this%boundary_conditions%first, cur_cond, NONE
+global_wo
+global_mod
+global_non
+calls, MatSetValuesLocal, endrun, RichardsFlux
+readParams,

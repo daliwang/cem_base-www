@@ -1,0 +1,7 @@
+sub_in, m5, nitems, m3, m2
+sub_out, m2, m3, m5
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

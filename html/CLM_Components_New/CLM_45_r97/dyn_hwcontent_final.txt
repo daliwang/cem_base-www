@@ -1,0 +1,7 @@
+sub_in, urbanparams_inst, temperature_inst, energyflux_inst, lakestate_inst, waterstate_inst, soilstate_inst, soilhydrology_inst, waterflux_inst, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, dyn_hwcontent

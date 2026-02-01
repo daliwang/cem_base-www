@@ -1,0 +1,11 @@
+sub_param, geds_local, this, bounds
+sub_out
+global_ro, currentSite%oldest_patch, currentPatch%younger, this%vectorLengthStart, currentCohort%taller, currentPatch%shortest, bounds%begg, %area
+global_wo, this%areaRestart, this%cellWithPatch, this%numPatchesPerCell, this%cohortsPerPatch
+global_mod, %hite, this%hite, %laimemory, this%laimemory, this%balive, %balive, %livegrass, this%livegrass, this%old_stock, geds_local%old_stock, %root_litter_in, this%root_litter_in, geds_local%water_memory, this%water_memory, %root_md, this%root_md, %pft, this%pft, this%age, %age, this%br, %br, %leaf_md, this%leaf_md, %bdead, this%bdead, this%status_coh, %status_coh, this%bstore, %bstore, this%leaf_litter_in, %leaf_litter_in, this%npp_acc, %npp_acc, this%root_litter, %root_litter, %n, this%n, %gpp_acc, this%gpp_acc, %resp_clm, this%resp_clm, this%bl, %bl, %cwd_ag, this%cwd_ag, %spread, this%spread, %seed_bank, this%seed_bank, this%dbh, %dbh, %cwd_bg, this%cwd_bg, this%canopy_trim, %canopy_trim, %leaf_litter, this%leaf_litter, this%canopy_layer, %canopy_layer
+global_non, geds_local
+calls, shr_sys_abort
+readParams,
+class(EDRestartVectorClass), intent(inout)      :: this
+type(bounds_type),           intent(in)         :: bounds
+type(gridcell_edstate_type), target, intent(in) :: geds_local( bounds%begg: )

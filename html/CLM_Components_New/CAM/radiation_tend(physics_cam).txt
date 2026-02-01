@@ -1,0 +1,7 @@
+sub_in, landm, landfrac, cam_out, icefrac, pbuf, flns, state, fsns, fsds, flnt, fsnt, snowh, cam_in, net_flx, ptend
+sub_out, fsnt, flnt, fsds, fsns, flns
+global_ro
+global_wo
+global_mod
+global_non
+calls, cloud_cover_diags_out, get_rlon_all_p, radheat_tend, rad_cnst_out, output_rad_data, rad_cnst_get_gas, aer_rad_props_sw, vertinterp, calc_col_mean, t_startf, cospsimulator_intr_run, zenith, radinp, pbuf_get_field, radcswmx, radclwmx, outfld, t_stopf, get_rlat_all_p

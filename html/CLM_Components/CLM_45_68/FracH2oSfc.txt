@@ -1,0 +1,7 @@
+sub_in, frac_h2osfc, no_update, filter_h2osfc, bounds, num_h2osfc
+sub_out, frac_h2osfc
+global_ro, h2osno, micro_sigma
+global_wo, frac_sno_eff
+global_mod, h2osfc, h2osoi_liq, frac_sno
+global_non
+calls, shr_assert

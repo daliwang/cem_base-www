@@ -1,0 +1,12 @@
+sub_param, ncidi, varname, ncido, xtype
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, endrun
+readParams,
+character(len=*)   , intent(inout) :: varname
+integer            , intent(in)    :: xtype
+type(file_desc_t)  , intent(inout) :: ncidi
+type(file_desc_t)  , intent(inout) :: ncido

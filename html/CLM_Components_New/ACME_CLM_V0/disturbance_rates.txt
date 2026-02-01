@@ -1,0 +1,7 @@
+sub_in, site_in
+sub_out
+global_ro, %area, site_in%frac_burnt, %frac_burnt, currentCohort%taller, currentPatch%shortest, currentPatch%younger, site_in%oldest_patch, udata%deltat
+global_wo, site_in%disturbance_rate, %disturbance_rate, site_in%dist_type
+global_mod, %dmort, %c_area, site_in%disturbance_fire, %disturbance_rates, site_in%disturbance_mortality
+global_non, currentPatch
+calls

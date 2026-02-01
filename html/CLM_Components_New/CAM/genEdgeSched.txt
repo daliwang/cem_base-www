@@ -1,0 +1,7 @@
+sub_in, PartNumber, LSchedule, elem, MetaVertex
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, haltmp, SetCycle, LLInsertEdge

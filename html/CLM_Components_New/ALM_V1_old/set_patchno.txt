@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| currentPatch%younger, currentPatch, NONE| currentSite%oldest_patch, currentPatch, NONE
+global_wo
+global_mod| %patchno, patchno, NONE
+global_non
+calls
+readParams,
+type(site),intent(in), pointer :: currentSite

@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, num_hydrologyc, num_urbanc, temperature_inst, soilhydrology_inst, filter_urbanc, filter_hydrologyc, bounds, waterflux_inst, soilstate_inst
+sub_out
+global_ro, Dsmax, z, Ds, zi, hksat, dz, origflag, eff_porosity, Wsvic, hkdepth, h2osfcflag, watsat, sucsat, t_soisno, qflx_snwcp_liq, max_moist, bsw, ice, c_param, hk_l, moist
+global_wo, qflx_qrgwl, qflx_drain
+global_mod, wa, qflx_snwcp_ice, h2osoi_liq, frost_table, zwt, h2osoi_ice, zwt_perched, qflx_rsub_sat, h2osfc, icefrac, qflx_drain_perched
+global_non, waterflux_inst%qflx_sub_snow_col, waterflux_inst%qflx_dew_snow_col, soilhydrology_inst%depth_col, col%snl, soilhydrology_inst%qcharge_col, waterflux_inst%qflx_dew_grnd_col
+calls, endrun

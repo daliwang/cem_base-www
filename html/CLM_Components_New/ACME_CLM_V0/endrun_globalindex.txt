@@ -1,0 +1,7 @@
+sub_in, decomp_index, msg, clmlevel
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, GetGlobalWrite, shr_sys_abort

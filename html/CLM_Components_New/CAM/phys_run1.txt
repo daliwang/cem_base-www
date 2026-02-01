@@ -1,0 +1,7 @@
+sub_in, cam_in, phys_state, cam_out, pbuf2d, ztodt, phys_tend
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, pbuf_get_chunk
+calls, phys_timestep_init, pbuf_allocate, diag_allocate, t_stopf, gmean_mass, t_adj_detailf, get_met_srf1, tphysbc, outfld, t_barrierf, diag_physvar_ic, check_energy_gmean, phys_run1_adiabatic_or_ideal, t_startf

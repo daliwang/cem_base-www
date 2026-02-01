@@ -1,0 +1,7 @@
+sub_in, dust_inst, frictionvel_inst, bounds, atm2lnd_inst
+sub_out
+global_ro, forc_t, fv, ram1, forc_rho
+global_wo, vlc_trb_4, vlc_trb_3, vlc_trb_2, vlc_trb_1
+global_mod, vlc_trb
+global_non, atm2lnd_inst%forc_pbot_downscaled_col
+calls

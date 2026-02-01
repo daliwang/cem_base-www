@@ -1,0 +1,7 @@
+sub_in, l2g_scale_type, bounds, larr, garr
+sub_out, garr
+global_ro, lun%wtgcell, lun%gridcell
+global_wo
+global_mod
+global_non
+calls, endrun, build_scale_l2g

@@ -1,0 +1,7 @@
+sub_in, EdgeList, id, src, dest
+sub_out, id
+global_ro, temp_node
+global_wo
+global_mod
+global_non, EdgeList%first, temp_node, new_node, new_node, parent
+calls

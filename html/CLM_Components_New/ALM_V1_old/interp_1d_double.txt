@@ -1,0 +1,17 @@
+sub_param, activei:9, activeo:10, endi:4, begi:3, endo:6, ncido:8, dimname:2, sgridindex:11, ncidi:7, varname:1, bego:5
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io
+readParams,
+character(len=*)  , intent(inout) :: varname
+character(len=*)  , intent(inout) :: dimname
+integer           , intent(in)    :: begi, endi
+integer           , intent(in)    :: bego, endo
+type(file_desc_t) , intent(inout) :: ncidi
+type(file_desc_t) , intent(inout) :: ncido
+logical           , intent(in)    :: activei(begi:endi)
+logical           , intent(in)    :: activeo(bego:endo)
+integer           , intent(in)    :: sgridindex(bego:endo)

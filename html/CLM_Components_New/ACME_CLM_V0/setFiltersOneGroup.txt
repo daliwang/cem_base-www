@@ -1,0 +1,7 @@
+sub_in, this_filter, include_inactive, bounds, icemask_grc
+sub_out, this_filter
+global_ro, col%gridcell, pft%landunit, col%landunit, bounds%clump_index
+global_wo
+global_mod
+global_non
+calls

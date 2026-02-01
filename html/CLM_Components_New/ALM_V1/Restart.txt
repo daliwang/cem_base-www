@@ -1,0 +1,12 @@
+sub_param, flag, bounds, this, ncid
+sub_out
+global_ro, data=this%icemask_grc
+global_wo
+global_mod
+global_non
+calls, restartvar
+readParams,
+class(glc2lnd_type) , intent(inout) :: this
+type(bounds_type)   , intent(in)    :: bounds
+type(file_desc_t)   , intent(inout) :: ncid ! netcdf id
+character(len=*)    , intent(in)    :: flag ! 'read' or 'write'

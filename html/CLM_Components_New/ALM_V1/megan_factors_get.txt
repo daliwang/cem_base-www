@@ -1,0 +1,12 @@
+sub_param, factors, molecwght, class_n, comp_name
+sub_out, factors, class_n, molecwght
+global_ro, %class_num, %eff, %wght
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+character(len=*),intent(in)  :: comp_name      ! MEGAN compound name
+real(r8),        intent(out) :: factors(npfts) ! vegitation type factors for the compound of intrest
+integer,         intent(out) :: class_n        ! MEGAN class number for the compound of intrest
+real(r8),        intent(out) :: molecwght      ! molecular weight of the compound of intrest

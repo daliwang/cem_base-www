@@ -1,0 +1,7 @@
+sub_in, filter_methc, jwt, num_methc, bounds
+sub_out, jwt
+global_ro, watsat, h2osoi_vol, t_soisno
+global_wo
+global_mod
+global_non
+calls, shr_assert

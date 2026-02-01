@@ -1,0 +1,10 @@
+sub_in
+sub_out
+global_ro, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%cps%cellorg
+global_wo, clm3%g%l%c%cch4%ch4_surf_diff_sat, clm3%g%l%c%cch4%zwt_ch4_unsat, clm3%g%l%c%cch4%co2_decomp_depth_unsat, clm3%g%l%c%cps%pps_a%grnd_ch4_cond, clm3%g%l%c%cch4%co2_aere_depth_sat, clm3%g%l%c%cch4%ch4_surf_aere_unsat, clm3%g%l%c%cch4%fphr, clm3%g%l%c%cch4%o2_oxid_depth_unsat, clm3%g%l%c%cch4%ch4_prod_depth_lake, clm3%g%l%c%cch4%totcolch4, clm3%g%l%c%cch4%ch4_ebul_depth_unsat, clm3%g%l%c%cch4%o2_decomp_depth_sat, clm3%g%l%c%cch4%co2_aere_depth_unsat, clm3%g%l%c%cch4%conc_ch4_sat, clm3%g%l%c%cch4%ch4_surf_ebul_unsat, clm3%g%l%c%cch4%ch4stress_sat, clm3%g%l%c%cch4%conc_ch4_lake, clm3%g%l%c%cch4%ch4_prod_depth_sat, clm3%g%l%c%cch4%co2_decomp_depth_sat, clm3%g%l%c%cch4%ch4_surf_aere_sat, clm3%g%l%c%cch4%o2_aere_depth_unsat, clm3%g%l%c%cch4%o2_oxid_depth_sat, clm3%g%l%c%cch4%ch4_oxid_depth_unsat, clm3%g%l%c%cch4%ch4_tran_depth_unsat, clm3%g%l%c%cch4%sif, clm3%g%l%c%cch4%ch4_prod_depth_unsat, clm3%g%l%c%cch4%o2stress_unsat, clm3%g%l%c%cch4%ch4_aere_depth_unsat, clm3%g%l%c%cch4%conc_o2_sat, clm3%g%l%c%cch4%ch4_surf_ebul_sat, clm3%g%l%c%cch4%o2_aere_depth_sat, clm3%g%l%c%cch4%ch4_aere_depth_sat, clm3%g%l%c%cch4%ch4_surf_diff_lake, clm3%g%l%c%cws%finundated, clm3%g%l%c%cch4%o2_decomp_depth_unsat, clm3%g%l%c%cch4%ch4_tran_depth_sat, clm3%g%l%c%cch4%ch4stress_unsat, clm3%g%l%c%cch4%ch4_oxid_depth_lake, clm3%g%l%c%cch4%ch4_surf_ebul_lake, clm3%g%l%c%cch4%co2_oxid_depth_unsat, clm3%g%l%c%cch4%ch4_ebul_total_unsat, clm3%g%l%c%cch4%ch4_surf_diff_unsat, clm3%g%l%c%cch4%ch4_oxid_depth_sat, clm3%g%l%c%cch4%o2stress_sat, clm3%g%l%c%cps%pps_a%rootfr, clm3%g%l%c%cch4%ch4_ebul_depth_sat, clm3%g%l%c%cch4%conc_o2_lake, clm3%g%l%c%cch4%ch4_ebul_total_sat, clm3%g%l%c%cch4%lake_soilc, clm3%g%l%c%cch4%ch4_dfsat_flux, clm3%g%l%c%cch4%co2_oxid_depth_sat
+global_mod
+global_non, clm3%g%l%c%gridcell, clm3%g%l%c%cps%watsat
+calls, get_proc_bounds
+
+Tree height: 4
+1+, get_proc_bounds, 

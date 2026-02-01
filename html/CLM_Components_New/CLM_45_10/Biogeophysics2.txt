@@ -1,0 +1,12 @@
+sub_in, ubl, lbl, filter_nolakec, num_urbanl, ubc, num_nolakec, num_nolakep, lbp, filter_nolakep, filter_urbanl, lbc, ubp
+sub_out
+global_ro, clm3%g%l%c%npfts, clm3%g%l%c%p%pef%eflx_sh_veg, clm3%g%l%c%p%pwf%qflx_evap_veg, clm3%g%l%c%p%column, clm3%g%l%c%p%pef%dlrad, clm3%g%l%c%ces%t_h2osfc_bef, clm3%g%l%c%itype, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%frac_h2osfc, clm3%g%l%c%p%active, clm3%g%l%c%p%pef%sabg_snow, clm3%g%l%c%p%pef%ulrad, clm3%g%l%c%p%wtcol, clm3%g%l%c%p%pef%sabg_soil, clm3%g%l%c%p%pef%sabg, clm3%g%l%c%cps%emg, clm3%g%l%c%p%gridcell, clm3%g%l%c%cef%eflx_building_heat, clm3%g%l%c%pfti, clm3%g%l%c%p%pps%frac_veg_nosno, clm3%g%l%c%p%pef%eflx_traffic_pft, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%cps%htvp, clm3%g%l%itype, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%p%pef%eflx_wasteheat_pft, clm3%g%l%c%p%pef%eflx_heat_from_ac_pft, clm3%g%l%c%p%pef%cgrndl, clm3%g%l%c%ces%tssbef, clm3%g%l%c%p%landunit, clm3%g%l%c%p%pef%cgrnds, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice, clm_a2l%forc_lwrad, clm3%g%l%c%cps%frac_sno_eff, clm3%g%l%c%ces%t_h2osfc
+global_wo, clm3%g%l%c%p%pef%eflx_lh_vege, clm3%g%l%c%p%pef%eflx_soil_grnd_u, clm3%g%l%c%p%pef%eflx_lh_tot_r, clm3%g%l%c%p%pef%eflx_lh_grnd, clm3%g%l%c%p%pef%eflx_soil_grnd_r, clm3%g%l%c%p%pwf%qflx_sub_snow, clm3%g%l%c%p%pef%eflx_sh_tot_u, clm3%g%l%c%p%pef%eflx_lh_vegt, clm3%g%l%c%p%pwf%qflx_evap_tot, clm3%g%l%c%p%pwf%qflx_evap_can, clm3%g%l%c%p%pef%eflx_sh_tot_r, clm3%g%l%c%p%pef%eflx_lwrad_net_r, clm3%g%l%c%p%pef%eflx_lh_tot_u
+global_mod, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%c%p%pwf%qflx_evap_grnd, clm3%g%l%c%p%pef%eflx_lwrad_net, clm3%g%l%c%p%pwf%qflx_snwcp_liq, clm3%g%l%c%p%pebal%errsoi, clm3%g%l%c%p%pef%eflx_lh_tot, clm3%g%l%c%p%pef%eflx_lwrad_net_u, clm3%g%l%c%p%pwf%qflx_dew_snow, clm3%g%l%c%p%pwf%qflx_ev_soil, clm3%g%l%c%p%pef%eflx_lwrad_out, clm3%g%l%c%p%pwf%qflx_dew_grnd, clm3%g%l%c%p%pef%eflx_soil_grnd, clm3%g%l%c%p%pwf%qflx_ev_h2osfc, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%c%p%pwf%qflx_ev_snow, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%c%p%pwf%qflx_snwcp_ice
+global_non, clm3%g%l%canyon_hwr, clm3%g%l%c%cps%do_capsnow, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%ces%dt_grnd, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cebal%errsoi
+calls, t_startf, t_stopf, SoilTemperature, p2c
+
+Tree height: 6
+0 , t_startf, SoilTemperature, t_stopf, t_startf, t_stopf, t_startf, 
+1-, t_stopf, t_startf, 
+3+, t_stopf, t_startf, p2c, t_stopf, 

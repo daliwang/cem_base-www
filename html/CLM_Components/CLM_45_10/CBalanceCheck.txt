@@ -1,0 +1,7 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, som_c_leached, product_closs, er, gpp, col_fire_closs, totcolc, begcb, dwt_closs, hrv_xsmrpool_to_atm
+global_wo
+global_mod, col_cinputs, col_coutputs, endcb, errcb
+global_non
+calls, endrun

@@ -1,0 +1,10 @@
+sub_param, bounds, dgvs_vars
+sub_out
+global_ro, dgvs_vars%fpcgrid_patch, dgvs_vars%nind_patch, pft%gridcell, pft%landunit
+global_wo
+global_mod
+global_non
+calls, ncd_defvar, ncd_io, ncd_pio_createfile, ncd_defdim, get_ref_date, ncd_putatt, ncd_enddef, endrun, get_curr_date, shr_sys_getenv, ncd_pio_closefile, get_curr_time, getdatetime
+readParams,
+type(bounds_type), intent(in) :: bounds
+type(dgvs_type)  , intent(in) :: dgvs_vars

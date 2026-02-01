@@ -1,0 +1,7 @@
+sub_in, landfrac, ptend, state, deltat, cflx
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, tend_tr, physics_ptend_init, flux_tr

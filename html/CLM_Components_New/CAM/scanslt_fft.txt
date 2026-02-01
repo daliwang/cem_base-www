@@ -1,0 +1,7 @@
+sub_in, nlon_fft, nlon_fft2, fftbuf, fftbuf2
+sub_out, fftbuf
+global_ro
+global_wo
+global_mod
+global_non
+calls, fft991, t_barrierf, t_startf, t_stopf, realloc4a

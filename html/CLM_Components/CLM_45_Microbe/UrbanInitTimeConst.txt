@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, itype, emg, colf, udenstype, coli, itype
+global_wo, thick_wall, cv_roof, wtlunit_roof, wind_hgt_canyon, eflx_traffic_factor, tk_roof, tk_improad, ht_roof, cv_wall, t_building_min, tk_wall, t_building_max, nlev_improad, cv_improad, wtroad_perv, thick_roof
+global_mod, canyon_hwr
+global_non, gridcell
+calls, get_proc_bounds

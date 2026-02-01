@@ -1,0 +1,7 @@
+sub_in, p_in_Pa, cloud_frac, ricem, rho_zm, rtm, thlm, exner, rcm
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_negative

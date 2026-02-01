@@ -1,0 +1,7 @@
+sub_in, flag, ncid, bounds
+sub_out
+global_ro
+global_wo
+global_mod, woodc, deadcrootc_storage, deadcrootc, frootc, gresp_xfer, gresp_storage, livestemc_storage, grainc, grainc_xfer, deadstemc_xfer, dispvegc, frootc_xfer, grainc_storage, livecrootc, livecrootc_storage, leafc_storage, leafc_xfer, totvegc, deadstemc, livestemc_xfer, leafc, storvegc, livecrootc_xfer, cpool, pft_ctrunc, deadcrootc_xfer, totpftc, frootc_storage, livestemc, xsmrpool, deadstemc_storage
+global_non, decomp_npools_vr, col_ctrunc_vr, smin_nh4_vr, col_ntrunc_vr, pot_f_nit_vr, fpi_vr, sminn_vr, smin_no3_vr, f_nit_vr, decomp_cpools_vr, pcs, decomp_npools_vr, som_diffus_coef, col_ctrunc_vr, smin_nh4_vr, col_ntrunc_vr, pot_f_nit_vr, fpi_vr, sminn_vr, som_adv_coef, smin_no3_vr, f_nit_vr, decomp_cpools_vr, pc13s
+calls, restartvar, ncd_inqvdlen, get_proc_global, endrun

@@ -1,0 +1,7 @@
+sub_in, igcol, indx, jndx, owners, nclosest
+sub_out, indx, jndx, owners
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_gcol_block_d

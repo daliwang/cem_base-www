@@ -1,0 +1,7 @@
+sub_in, nt, dim1name, readvar, flag, ncid, varname, data
+sub_out, readvar
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncid%vars

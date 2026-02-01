@@ -1,0 +1,7 @@
+sub_in, begg, endg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_mpi_bcast, hist_addfld1d, find_nlgroup_name, shr_strdata_print, shr_strdata_create, clm_domain_mct, relavu, endrun

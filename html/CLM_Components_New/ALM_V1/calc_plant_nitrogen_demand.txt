@@ -1,0 +1,24 @@
+sub_param, cnstate_vars, nitrogenstate_vars, carbonstate_vars, carbonflux_vars, c14_carbonflux_vars, bounds, canopystate_vars, c13_carbonflux_vars, plant_totn_demand_flx_col, filter_soilc, crop_vars, num_soilp, nitrogenflux_vars, filter_soilp, photosyns_vars, num_soilc
+sub_out
+global_ro, carbonflux_vars%annsum_npp_patch, ecophyscon%croot_stem, ecophyscon%deadwdcn, carbonflux_vars%leaf_mr_patch, ecophyscon%livewdcn, crop_vars%gddplant_patch, photosyns_vars%psnsun_patch, cnstate_vars%gddmaturity_patch, ecophyscon%flivewd, ecophyscon%woody, canopystate_vars%laisun_patch, canopystate_vars%laisha_patch, cnstate_vars%croplive_patch, carbonstate_vars%livestemc_patch, carbonflux_vars%froot_mr_patch, carbonstate_vars%xsmrpool_patch, photosyns_vars%c14_psnsun_patch, carbonflux_vars%livecroot_mr_patch, ecophyscon%stem_leaf, cnstate_vars%annsum_potential_gpp_patch, ecophyscon%frootcn, cnstate_vars%huileaf_patch, ecophyscon%ffrootcn, cnstate_vars%huigrain_patch, ecophyscon%leafcn, crop_vars%gddtsoi_patch, photosyns_vars%psnsha_patch, cnstate_vars%peaklai_patch, nitrogenstate_vars%retransn_patch, ecophyscon%fstemcn, carbonflux_vars%livestem_mr_patch, ecophyscon%fleafcn, pft%itype, photosyns_vars%c14_psnsha_patch, carbonstate_vars%leafc_patch, carbonstate_vars%frootc_patch, ecophyscon%graincn, carbonflux_vars%grain_mr_patch, photosyns_vars%c13_psnsha_patch, ecophyscon%froot_leaf, cnstate_vars%annmax_retransn_patch, photosyns_vars%c13_psnsun_patch
+global_wo, nitrogenflux_vars%livestemn_to_retransn_patch, carbonflux_vars%froot_xsmr_patch, carbonflux_vars%livestem_xsmr_patch, carbonflux_vars%livecroot_xsmr_patch, carbonflux_vars%grain_xsmr_patch, carbonflux_vars%leaf_xsmr_patch, c13cf%psnshade_to_cpool_patch, c14cf%psnshade_to_cpool_patch, c14cf%psnsun_to_cpool_patch, c13cf%psnsun_to_cpool_patch, carbonflux_vars%cpool_to_xsmrpool_patch, nitrogenflux_vars%leafn_to_retransn_patch, nitrogenflux_vars%frootn_to_retransn_patch
+global_mod, carbonflux_vars%xsmrpool_recover_patch, carbonflux_vars%grain_curmr_patch, nitrogenflux_vars%avail_retransn_patch, cnstate_vars%c_allometry_patch, cnstate_vars%n_allometry_patch, carbonflux_vars%froot_curmr_patch, carbonflux_vars%psnshade_to_cpool_patch, nitrogenflux_vars%retransn_to_npool_patch, carbonflux_vars%livestem_curmr_patch, cnstate_vars%grain_flag_patch, nitrogenflux_vars%plant_ndemand_patch, cnstate_vars%tempsum_potential_gpp_patch, carbonflux_vars%gpp_before_downreg_patch, carbonflux_vars%leaf_curmr_patch, carbonflux_vars%availc_patch, carbonflux_vars%psnsun_to_cpool_patch, cnstate_vars%aleaf_patch, cnstate_vars%aleafi_patch, cnstate_vars%astemi_patch, carbonflux_vars%livecroot_curmr_patch, cnstate_vars%tempmax_retransn_patch, cnstate_vars%astem_patch
+global_non, c13_carbonflux_vars, c14_carbonflux_vars
+calls, p2c
+readParams,readCNAllocBetrParams
+type(bounds_type)        , intent(in)    :: bounds                                             !
+integer                  , intent(in)    :: num_soilc                                          ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)                                    ! filter for soil columns
+integer                  , intent(in)    :: num_soilp                                          ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)                                    ! filter for soil patches
+type(photosyns_type)     , intent(in)    :: photosyns_vars                                     !
+type(crop_type)          , intent(in)    :: crop_vars                                          !
+type(canopystate_type)   , intent(in)    :: canopystate_vars                                   !
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars                                   !
+type(cnstate_type)       , intent(inout) :: cnstate_vars                                       !
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars                                    !
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars                                !
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars                                !
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars                                 !
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars                                  !
+real(r8)                 , intent(inout) :: plant_totn_demand_flx_col(bounds%begc:bounds%endc) !

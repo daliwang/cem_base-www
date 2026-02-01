@@ -1,0 +1,7 @@
+sub_in, Tc_9, wb_t, tswmp65, tswmp80
+sub_out, tswmp65, tswmp80
+global_ro
+global_wo
+global_mod
+global_non
+calls

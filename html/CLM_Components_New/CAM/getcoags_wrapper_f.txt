@@ -1,0 +1,7 @@
+sub_in, xxlsgat, dgacc, pdensac, sgacc, betaii0, betaij2j, betaij3, airprs, xxlsgac, betaij0, pdensat, betajj0, sgatk, betaii2, betaij2i, betajj2, dgatk, airtemp
+sub_out, betajj0, betaii2, betaij3, betaij0, betaij2j, betaii0, betaij2i, betajj2
+global_ro
+global_wo
+global_mod
+global_non
+calls, getcoags

@@ -1,0 +1,10 @@
+sub_param, endg:2, mode:3, begg:1
+sub_out
+global_ro| ldomain%nj, nj, NONE| ldomain%ns, ns, NONE| ldomain%ni, ni, NONE
+global_wo
+global_mod
+global_non
+calls, ncd_inqdlen, endrun, getfil, ncd_io, ncd_inqfdims, ncd_inqdid, ncd_pio_closefile, ncd_pio_openfile
+readParams,
+integer, intent(in) :: begg, endg
+character(len=*), intent(in) :: mode

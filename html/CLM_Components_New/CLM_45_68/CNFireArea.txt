@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, ccs%totlitc, pcs%leafc, pcs%totvegc, cps%prec10_col, a2l_downscaled_col%forc_snow, clm_a2l%forc_rh, a2l_downscaled_col%forc_t, ccs%decomp_cpools_vr, pcs%deadcrootc_xfer, pcs%frootc_storage, pps%btran2, a2l_downscaled_col%forc_rain, ccs%totvegc_col, clm_a2l%forc_wind, pcs%livecrootc_xfer, pcs%livecrootc, cws%fsat, cps%peatf_lf, pcs%leafc_storage, cps%wf2, pcs%deadcrootc, pps%prec10, pps%prec60, cps%abm_lf, pcs%leafc_xfer, pcs%frootc, ccs%leafc_col, pcs%frootc_xfer, ces%tsoi17, pps%lfpftd, cps%prec60_col, pcs%deadcrootc_storage, pcs%livecrootc_storage, cps%wf, cps%gdp_lf
+global_wo, cps%fbac, pps%burndate
+global_mod, cps%baf_crop, cps%fbac1, ccs%fuelc_crop, cps%farea_burned, cps%fd_col, ccs%rootc_col, cps%nfire, cps%baf_peatf, cps%lgdp1_col, cps%dtrotr_col, cps%fsr_col, ccs%fuelc, cps%btran_col, cps%lpop_col, cps%trotr2_col, cps%lfc, cps%lfwt, cps%cropf_col, cps%trotr1_col, cps%lgdp_col, cps%wtlf
+global_non
+calls, get_curr_date, p2c
+
+Tree height: 9
+0 , p2c, p2c, p2c, p2c, get_curr_date, 

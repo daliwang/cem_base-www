@@ -1,0 +1,18 @@
+sub_param, waterstate_vars, soilhydrology_vars, soilstate_vars, gcell_heat, gcell_liq, bounds, lakestate_vars, temperature_vars, gcell_ice, urbanparams_vars
+sub_out, gcell_heat, gcell_ice, gcell_liq
+global_ro, waterstate_vars%h2osno_col, col%dz, soilstate_vars%watsat_col, waterstate_vars%h2ocan_patch, waterstate_vars%h2osoi_liq_col, lun%coli, soilstate_vars%csol_col, waterstate_vars%h2osno_col, urbanparams_vars%cv_wall, urbanparams_vars%cv_improad, waterstate_vars%h2osoi_ice_col, urbanparams_vars%nlev_improad, col%dz_lake, soilhydrology_vars%wa_col, pft%wtcol, col%wtgcell, lakestate_vars%lake_icefrac_col, urbanparams_vars%cv_roof, temperature_vars%t_soisno_col, lun%colf, lun%gridcell, col%snl, temperature_vars%t_lake_col
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)        , intent(in)  :: bounds
+real(r8)                 , intent(out) :: gcell_liq ( bounds%begg: )   ! [gridcell]
+real(r8)                 , intent(out) :: gcell_ice ( bounds%begg: )   ! [gridcell]
+real(r8)                 , intent(out) :: gcell_heat( bounds%begg: )   ! [gridcell]
+type(urbanparams_type)   , intent(in)  :: urbanparams_vars
+type(soilstate_type)     , intent(in)  :: soilstate_vars
+type(soilhydrology_type) , intent(in)  :: soilhydrology_vars
+type(temperature_type)   , intent(in)  :: temperature_vars
+type(waterstate_type)    , intent(in)  :: waterstate_vars
+type(lakestate_type)     , intent(in)  :: lakestate_vars

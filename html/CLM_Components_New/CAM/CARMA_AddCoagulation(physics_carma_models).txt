@@ -1,0 +1,7 @@
+sub_in, igroup1, igroup2, igroup3, rc, grav_e_coll0, ck0, carma, icollec
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

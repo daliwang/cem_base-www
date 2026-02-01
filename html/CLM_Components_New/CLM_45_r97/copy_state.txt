@@ -1,0 +1,7 @@
+sub_in, c_new, temperature_inst, c_template
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,12 @@
+sub_param, porParams, dpor_dP, P, por
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, PorosityFunctionComputationConstantModel, PorosityFunctionComputationLinearModel
+readParams,
+type(porosity_params_type), intent (in) :: porParams
+PetscReal, intent (in)                  :: P
+PetscReal, intent (out)                 :: por
+PetscReal, intent (out)                 :: dpor_dP

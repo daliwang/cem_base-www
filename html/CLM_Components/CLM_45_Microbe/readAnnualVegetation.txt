@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, mlaidiff, annlai
+global_mod
+global_non
+calls, ncd_io, getfil, ncd_pio_closefile, get_proc_bounds, ncd_pio_openfile, ncd_inqfdims, check_dim, shr_scam_getCloseLatLon, endrun

@@ -1,0 +1,7 @@
+sub_in, v, va, u, grid, ua
+sub_out, ua, va
+global_ro
+global_wo
+global_mod
+global_non
+calls, parcollective3d, mp_send3d, mp_recv3d

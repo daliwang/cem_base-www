@@ -1,0 +1,7 @@
+sub_in, lchnk, nsubcol
+sub_out, nsubcol
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

@@ -1,0 +1,23 @@
+sub_param, hs_top:6, fn:10, sabg_lyr_col:8, frac_sno_eff:13, hs_top_snow:4, num_nolakec:2, c_h2osfc:12, hs_soil:5, dhsdT:7, t_soisno:14, fact:9, fn_h2osfc:11, rt:15, bounds:1, filter_nolakec:3
+sub_out, rt
+global_ro| col%landunit, landunit, NONE
+global_wo
+global_mod
+global_non| col%z, z, NONE
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds                                     ! bounds
+integer , intent(in)  :: num_nolakec                                        ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                                  ! column filter for non-lake points
+real(r8), intent(in)  :: hs_top_snow(bounds%begc: )                         ! heat flux on top snow layer [W/m2]
+real(r8), intent(in)  :: hs_soil(bounds%begc: )                             ! heat flux on soil [W/m2]
+real(r8), intent(in)  :: hs_top(bounds%begc: )                              ! net energy flux into surface layer (col) [W/m2]
+real(r8), intent(in)  :: dhsdT(bounds%begc: )                               ! temperature derivative of "hs" [col]
+real(r8), intent(in)  :: sabg_lyr_col(bounds%begc:, -nlevsno+1: )           ! absorbed solar radiation (col,lyr) [W/m2]
+real(r8), intent(in)  :: fact( bounds%begc: , -nlevsno+1: )                 ! used in computing tridiagonal matrix [col, lev]
+real(r8), intent(in)  :: fn (bounds%begc: ,-nlevsno+1: )                    ! heat diffusion through the layer interface [W/m2]
+real(r8), intent(in)  :: fn_h2osfc (bounds%begc: )                          ! heat diffusion through standing-water/soil interface [W/m2]
+real(r8), intent(in)  :: c_h2osfc( bounds%begc: )                           ! heat capacity of surface water [col]
+real(r8), intent(in)  :: frac_sno_eff(bounds%begc: )                        ! fractional area with surface water greater than zero
+real(r8), intent(in)  :: t_soisno(bounds%begc:, -nlevsno+1:)                ! soil temperature (Kelvin)
+real(r8), intent(inout) :: rt(bounds%begc: ,1: )                            ! rhs vector entries

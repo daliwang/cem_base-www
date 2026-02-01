@@ -1,0 +1,8 @@
+sub_in, dom1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_flush, shr_sys_abort, mct_aVect_exportRAttr
+calls_ln, shr_sys_abort@566, mct_aVect_exportRAttr@552, mct_aVect_exportRAttr@553, shr_sys_flush@565

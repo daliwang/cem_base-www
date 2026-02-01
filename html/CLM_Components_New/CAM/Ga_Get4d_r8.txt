@@ -1,0 +1,7 @@
+sub_in, kfrom, j1, nq, i1, ga, nqto, kto, comm, jm, q, win, i2, jfrom, km, ifrom, j2, nq2, nqfrom, nq1, im, ito, jto, k1, k2
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_WAIT

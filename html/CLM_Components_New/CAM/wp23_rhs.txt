@@ -1,0 +1,7 @@
+sub_in, a1, dt, Skw_zt, Kw1, wp2, a1_zt, l_crank_nich_diff, Kw8, wp3, tau1m, rhs, tauw3t, C11_Skw_fnc, um, C1_Skw_fnc, vpwp, wp2thvp, wpthvp, a3, wp3_on_wp2, rho_ds_zm, vm, Kh_zt, thv_ds_zt, thv_ds_zm, vp2, invrs_rho_ds_zt, upwp, up2, a3_zt
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var_pt, set_boundary_conditions_rhs, stat_modify_pt, stat_begin_update_pt

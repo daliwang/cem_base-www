@@ -1,0 +1,7 @@
+sub_in, kvm, kbfs, ustar, ktopbl, kvh, bge, z, lchnk, kqfs, khfs, eddy_scheme, tke, wstar, qpert, cgh, obklen, pblh, cgs, ncol, tpert, kvf
+sub_out, ktopbl, cgh, qpert, tke, kvm, tpert, cgs, kvh
+global_ro
+global_wo
+global_mod
+global_non
+calls, phys_debug_hbdiff1

@@ -1,0 +1,7 @@
+sub_in, desc, accum_period, init_value, type2d, accum_type, name, subgrid_type, units, numlev
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, shr_sys_abort, get_proc_global

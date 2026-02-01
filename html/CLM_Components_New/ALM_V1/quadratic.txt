@@ -1,0 +1,10 @@
+sub_param, b, r1, c, a, r2
+sub_out, r1, r2
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+real(r8), intent(in)  :: a,b,c       ! Terms for quadratic equation
+real(r8), intent(out) :: r1,r2       ! Roots of quadratic equation

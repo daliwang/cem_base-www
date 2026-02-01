@@ -1,0 +1,10 @@
+sub_param, this:1, ff:2
+sub_out, ff
+global_ro| %por, por, NONE| %den, den, NONE| this%aux_vars_in, aux_vars_in, NONE| this%dtime, dtime, NONE| this%mesh%vol, vol, NONE| %sat, sat, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(goveqn_richards_ode_pressure_type), intent(inout)    :: this
+PetscReal, dimension(:), intent(out)                       :: ff

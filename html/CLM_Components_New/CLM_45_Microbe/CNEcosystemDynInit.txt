@@ -1,0 +1,10 @@
+sub_in, ubg, lbp, lbc, ubp, ubc, lbg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNAllocationInit, CNFireInit, CNPhenologyInit
+
+Tree height: 2
+0 , CNAllocationInit, CNPhenologyInit, CNFireInit, 

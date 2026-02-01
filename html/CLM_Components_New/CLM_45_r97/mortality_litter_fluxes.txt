@@ -1,0 +1,7 @@
+sub_in, new_patch_target, patch_site_areadis, cp_target
+sub_out
+global_ro, pft, bsw, dmort, bdead, br, currentCohort, bstore, area, n, bl
+global_wo
+global_mod, cwd_bg, canopy_mortality_root_litter, canopy_mortality_woody_litter, cwd_ag, canopy_mortality_leaf_litter, root_litter, leaf_litter
+global_non, new_patch_target, cp_target
+calls

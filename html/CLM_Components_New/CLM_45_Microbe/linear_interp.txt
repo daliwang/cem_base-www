@@ -1,0 +1,9 @@
+sub_in, y1, x, y0, x1, x0
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls
+
+Tree height: 1

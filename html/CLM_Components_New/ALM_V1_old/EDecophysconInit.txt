@@ -1,0 +1,10 @@
+sub_param, numpft:2, EDpftvarcon_inst:1
+sub_out
+global_ro
+global_wo
+global_mod| EDecophyscon%bark_scaler, bark_scaler, NONE| EDPftvarcon_inst%bark_scaler, bark_scaler, NONE| EDecophyscon%soilbeta, soilbeta, NONE| EDPftvarcon_inst%soilbeta, soilbeta, NONE| EDPftvarcon_inst%freezetol, freezetol, NONE| EDecophyscon%freezetol, freezetol, NONE| EDPftvarcon_inst%bb_slope, bb_slope, NONE| EDecophyscon%bb_slope, bb_slope, NONE| EDecophyscon%sd_mort, sd_mort, NONE| EDPftvarcon_inst%sd_mort, sd_mort, NONE| EDecophyscon%initd, initd, NONE| EDPftvarcon_inst%initd, initd, NONE| EDPftvarcon_inst%crown, crown, NONE| EDecophyscon%crown, crown, NONE| EDPftvarcon_inst%cushion, cushion, NONE| EDecophyscon%cushion, cushion, NONE| EDPftvarcon_inst%crown_kill, crown_kill, NONE| EDecophyscon%crown_kill, crown_kill, NONE| EDecophyscon%leafwatermax, leafwatermax, NONE| EDPftvarcon_inst%leafwatermax, leafwatermax, NONE| EDPftvarcon_inst%clone_alloc, clone_alloc, NONE| EDecophyscon%clone_alloc, clone_alloc, NONE| EDPftvarcon_inst%hgt_min, hgt_min, NONE| EDecophyscon%hgt_min, hgt_min, NONE| EDPftvarcon_inst%alpha_stem, alpha_stem, NONE| EDecophyscon%alpha_stem, alpha_stem, NONE| EDecophyscon%root_long, root_long, NONE| EDPftvarcon_inst%root_long, root_long, NONE| EDecophyscon%sapwood_ratio, sapwood_ratio, NONE| EDPftvarcon_inst%sapwood_ratio, sapwood_ratio, NONE| EDPftvarcon_inst%seed_rain, seed_rain, NONE| EDecophyscon%seed_rain, seed_rain, NONE| EDecophyscon%seed_alloc, seed_alloc, NONE| EDPftvarcon_inst%seed_alloc, seed_alloc, NONE| EDPftvarcon_inst%rootresist, rootresist, NONE| EDecophyscon%rootresist, rootresist, NONE| EDPftvarcon_inst%max_dbh, max_dbh, NONE| EDecophyscon%max_dbh, max_dbh, NONE| EDPftvarcon_inst%leaf_stor_priority, leaf_stor_priority, NONE| EDecophyscon%leaf_stor_priority, leaf_stor_priority, NONE| EDPftvarcon_inst%wood_density, wood_density, NONE| EDecophyscon%wood_density, wood_density, NONE
+global_non
+calls
+readParams,
+type(EDpftVarCon_type) , intent(in) :: EDpftvarcon_inst
+integer                , intent(in) :: numpft

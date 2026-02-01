@@ -1,0 +1,18 @@
+sub_param, atm2lnd_vars:4, cnstate_vars:6, bounds:1, fn:2, surfalb_vars:8, photosyns_vars:9, canopystate_vars:5, filterp:3, solarabs_vars:7, phase:10
+sub_out
+global_ro| pft%gridcell, gridcell, NONE| pft%itype, itype, NONE| atm2lnd_vars%forc_pco2_grc, forc_pco2, NONE| surfalb_vars%nrad_patch, nrad, NONE| solarabs_vars%parsha_z_patch, par_z, NONE| solarabs_vars%parsun_z_patch, par_z, NONE| pft%column, column, NONE| ecophyscon%c3psn, c3psn, NONE| photosyns_vars%gb_mol_patch, gb_mol, NONE| photosyns_vars%an_patch, an, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| cnstate_vars%downreg_patch, downreg, NONE| photosyns_vars%gs_mol_patch, gs_mol, NONE
+global_wo| photosyns_vars%alphapsnsha_patch, alphapsn, NONE| photosyns_vars%alphapsnsun_patch, alphapsn, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: fn                   ! size of pft filter
+integer                , intent(in)    :: filterp(fn)          ! patch filter
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(solarabs_type)    , intent(in)    :: solarabs_vars
+type(surfalb_type)     , intent(in)    :: surfalb_vars
+type(photosyns_type)   , intent(in)    :: photosyns_vars
+character(len=*)       , intent(in)    :: phase                ! 'sun' or 'sha'

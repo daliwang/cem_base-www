@@ -1,0 +1,7 @@
+sub_in, rkstage, np1_qdp, n0_qdp, nu_p, nete, nets, limiter_option, elem
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, qdp_time_avg_kernel<<<griddim

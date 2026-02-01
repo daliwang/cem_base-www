@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro, decomp_cascade_con%decomp_pool_name_history, decomp_cascade_con%floating_cn_ratio_decomp_pools, %nlmax, col%landunit, lun%itype, bounds%endg, ldecomp%gdc2glo, col%micro_sigma, bounds%begc, %ngmax, bounds%endc, pflotran_m%simulation, bounds%begg
+global_wo, clm_pf_idata%nlpf_sub, clm_pf_idata%floating_cn_ratio, clm_pf_idata%ngclm_2dtop, col%active, clm_pf_idata%nlclm_2dtop, clm_pf_idata%decomp_pool_name, clm_pf_idata%ngpf_srf, clm_pf_idata%ngpf_sub, clm_pf_idata%ngclm_sub, clm_pf_idata%nlclm_srf, clm_pf_idata%ngclm_srf, clm_pf_idata%nlpf_srf, pflotran_m%option%io_buffer, clm_pf_idata%nlclm_sub, clm_pf_idata%nlclm_2dbot, clm_pf_idata%ngclm_2dbot
+global_mod, clm_pf_idata%ndecomp_pools, clm_pf_idata%nzclm_mapped
+global_non, col%wtgcell, col%itype, pflotran_m%option, col%landunit, grc%area, grc%latdeg, col%topo_slope, col%gridcell, col%glc_topo, grc%gindex, grc%londeg, simulation%realization, col%topo_std
+calls, pflotranModelGetRTspecies, get_proc_global, pflotranModelSetupMappingfiles, pflotranModelCreate, pflotranModelStepperRunInit, pflotranModelGetTopFaceArea, pflotranModelInitMapping, CLMPFLOTRANIDataCreateVec, CLMPFLOTRANIDataInit, printErrMsg
+readParams,clm_pf_readnl
+type(bounds_type), intent(in) :: bounds  ! bounds

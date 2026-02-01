@@ -1,0 +1,19 @@
+sub_param, jtops:6, filter_soilc:5, qflx_drain_vr:7, num_soilc:4, tracercoeff_vars:10, col:8, ubj:3, bounds:1, tracerstate_vars:11, betrtracer_vars:9, tracerflux_vars:12, lbj:2
+sub_out
+global_ro| betrtracer_vars%groupid, groupid, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| betrtracer_vars%is_h2o, is_h2o, NONE| col%dz, dz, NONE| betrtracer_vars%is_advective, is_advective, NONE| tracercoeff_vars%aqu2bulkcef_mobile_col, aqu2bulkcef_mobile, NONE
+global_wo
+global_mod| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile, NONE| tracerflux_vars%tracer_flx_drain_col, tracer_flx_drain, NONE
+global_non
+calls, diagnose_gas_pressure
+readParams,
+type(bounds_type),        intent(in)    :: bounds
+integer,                  intent(in)    :: lbj, ubj
+integer,                  intent(in)    :: num_soilc                          ! number of columns in column filter_soilc
+integer,                  intent(in)    :: filter_soilc(:)                    ! column filter_soilc
+integer,                  intent(in)    :: jtops(bounds%begc: )
+real(r8),                 intent(in)    :: qflx_drain_vr(bounds%begc: ,lbj: ) !
+type(column_type),        intent(in)    :: col                                ! column type
+type(betrtracer_type),    intent(in)    :: betrtracer_vars                    ! betr configuration information
+type(tracercoeff_type),   intent(in)    :: tracercoeff_vars                   ! tracer phase conversion coefficients
+type(tracerflux_type),    intent(inout) :: tracerflux_vars
+type(tracerstate_type),   intent(inout) :: tracerstate_vars                   ! tracer state variables data structure

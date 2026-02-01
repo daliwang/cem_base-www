@@ -1,0 +1,17 @@
+sub_param, cascade_matrix, nreactions, nstvars, nitrogen_limit_flag, cn_ratios, n2_n2o_ratio_denit, centurybgc_vars, pct_sand, cp_ratios
+sub_out, nitrogen_limit_flag, cascade_matrix
+global_ro, centurybgc_vars%lid_n2o_nit, centurybgc_vars%lid_co2_paere, centurybgc_vars%som1_dek_reac, centurybgc_vars%lid_ar_paere, centurybgc_vars%cwd, centurybgc_vars%lid_nh4_nit_reac, centurybgc_vars%lid_n2_paere, centurybgc_vars%lid_co2_aere_reac, centurybgc_vars%lid_ch4_aere_reac, centurybgc_vars%lid_ar_aere_reac, centurybgc_vars%som2_dek_reac, centurybgc_vars%lit3, centurybgc_vars%lid_o2_paere, centurybgc_vars%cwd_dek_reac, centurybgc_vars%nelms, centurybgc_vars%lid_no3_den_reac, centurybgc_vars%c_loc, centurybgc_vars%lid_n2o_paere, centurybgc_vars%som2, centurybgc_vars%lid_o2_aere_reac, centurybgc_vars%som3_dek_reac, centurybgc_vars%lid_plant_minn_up_reac, centurybgc_vars%lit1_dek_reac, centurybgc_vars%lit2_dek_reac, centurybgc_vars%lid_no3, centurybgc_vars%lid_n2o_aere_reac, centurybgc_vars%som3, centurybgc_vars%lid_at_rt_reac, centurybgc_vars%lit2, centurybgc_vars%lit3_dek_reac, centurybgc_vars%lid_ch4_paere, centurybgc_vars%lid_co2_hr, centurybgc_vars%lid_n2_aere_reac, centurybgc_vars%som1, centurybgc_vars%lid_nh4, centurybgc_vars%lit1
+global_wo
+global_mod, centurybgc_vars%is_aerobic_reac, centurybgc_vars%primvarid
+global_non, centurybgc_vars%n_loc, centurybgc_vars%lid_minn_no3_plant, centurybgc_vars%lid_co2, centurybgc_vars%lid_ch4, centurybgc_vars%lid_at_rt, centurybgc_vars%lid_minn_nh4_immob, centurybgc_vars%lid_nh4_nit, centurybgc_vars%lid_n2, centurybgc_vars%lid_no3_den, centurybgc_vars%lid_o2, centurybgc_vars%lid_minn_no3_immob, centurybgc_vars%lid_n2o, centurybgc_vars%lid_ar, centurybgc_vars%lid_minn_nh4_plant, centurybgc_vars%lid_plant_minn
+calls
+readParams,
+integer                       , intent(in)  :: nstvars
+integer                       , intent(in)  :: nreactions
+type(centurybgc_type)         , intent(inout):: centurybgc_vars
+real(r8)                      , intent(in)  :: cn_ratios(centurybgc_vars%nom_pools)
+real(r8)                      , intent(in)  :: cp_ratios(centurybgc_vars%nom_pools)
+real(r8)                      , intent(in)  :: n2_n2o_ratio_denit                             !ratio of n2 to n2o during denitrification
+real(r8)                      , intent(in)  :: pct_sand
+real(r8)                      , intent(out) :: cascade_matrix(nstvars, nreactions)
+logical                       , intent(out) :: nitrogen_limit_flag(centurybgc_vars%nom_pools) !

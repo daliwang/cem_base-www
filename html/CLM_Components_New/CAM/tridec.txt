@@ -1,0 +1,7 @@
+sub_in, lower, order, main, upper, syscnt
+sub_out, upper, main
+global_ro
+global_wo
+global_mod
+global_non
+calls

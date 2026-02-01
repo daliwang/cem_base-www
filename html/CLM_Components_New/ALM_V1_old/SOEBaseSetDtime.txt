@@ -1,0 +1,8 @@
+sub_param, this:1, dtime:2
+sub_out
+global_ro| cur_goveqn%next, cur_goveqn, NONE| this%goveqns, cur_goveqn, NONE
+global_wo
+global_mod| this%dtime, dtime, NONE
+global_non
+calls, cur_goveqn%SetDtime
+readParams,

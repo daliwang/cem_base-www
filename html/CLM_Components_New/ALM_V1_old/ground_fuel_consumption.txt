@@ -1,0 +1,9 @@
+sub_param, cs_pnt:1
+sub_out
+global_ro| %fuel_frac, fuel_frac, NONE| %sum_fuel, sum_fuel, NONE| %litter_moisture, litter_moisture, NONE| %CWD_AG, CWD_AG, NONE| >currentPatch%younger;, younger;, NONE| %leaf_litter, leaf_litter, NONE| %livegrass, livegrass, NONE
+global_wo| %TFC_ROS, TFC_ROS, NONE| %tau_l, tau_l, NONE
+global_mod| %burnt_frac_litter, burnt_frac_litter, NONE| cs_pnt%oldest_patch;, currentPatch, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: cs_pnt

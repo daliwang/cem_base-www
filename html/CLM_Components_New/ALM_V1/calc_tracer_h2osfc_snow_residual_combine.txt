@@ -1,0 +1,15 @@
+sub_param, tracerflux_vars, filter_soilc, tracerstate_vars, betrtracer_vars, bounds, num_soilc, waterflux_vars
+sub_out
+global_ro, betrtracer_vars%ngwmobile_tracers, waterflux_vars%qflx_h2osfc2topsoi_col, waterflux_vars%qflx_snow2topsoi_col, col%dz, betrtracer_vars%is_h2o
+global_wo
+global_mod, tracerstate_vars%tracer_conc_mobile_col, tracerflux_vars%tracer_flx_h2osfc_snow_residual_col
+global_non, betrtracer_vars%tracernames
+calls
+readParams,
+type(bounds_type)         , intent(in)    :: bounds
+integer                   , intent(in)    :: num_soilc        ! number of column soil points in column filter_soilc
+integer                   , intent(in)    :: filter_soilc(:)  ! column filter_soilc for soil points
+type(waterflux_type)      , intent(in)    :: waterflux_vars
+type(betrtracer_type)     , intent(in)    :: betrtracer_vars  ! betr configuration information
+type(tracerflux_type)     , intent(inout) :: tracerflux_vars  ! tracer flux
+type(tracerstate_type)    , intent(inout) :: tracerstate_vars ! tracer state variables data structure

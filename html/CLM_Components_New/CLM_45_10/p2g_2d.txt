@@ -1,0 +1,12 @@
+sub_in, num2d, ubg, ubl, lbl, p2c_scale_type, ubc, lbg, lbp, c2l_scale_type, parr, lbc, l2g_scale_type, ubp
+sub_out, garr
+global_ro, clm3%g%l%canyon_hwr, clm3%g%l%itype, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%p%gridcell, clm3%g%l%c%p%landunit, clm3%g%l%c%p%active, clm3%g%l%c%p%wtgcell, clm3%g%l%c%p%column
+global_wo
+global_mod
+global_non, clm3%g%pfti, clm3%g%npfts
+calls, build_scale_l2g, endrun
+
+Tree height: 12
+0 , build_scale_l2g, 
+9-, endrun, endrun, 
+11+, endrun, 

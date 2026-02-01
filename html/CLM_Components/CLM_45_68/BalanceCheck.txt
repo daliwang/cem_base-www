@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, urbpoi, qflx_snow_melt, active, qflx_drain, qflx_ice_dynbal, fsr, eflx_soil_grnd, sabv, begwb, qflx_prec_grnd, itype, sabg_snow, itype, snl, qflx_irrig, area, volr, eflx_lh_tot, qflx_drain_perched, qflx_dew_grnd, qflx_sl_top_soil, qflx_liq_dynbal, qflx_h2osfc_surf, errsoi, forc_snow, sabg_chk, qflx_surf, forc_lwrad, active, qflx_snow_grnd, endwb, qflx_evap_tot, qflx_top_soil, sabg, qflx_snwcp_ice, fsa, sabg_soil, qflx_rain_grnd, h2osno, qflx_dew_snow, eflx_lwrad_out, eflx_traffic_pft, qflx_sub_snow, forc_solad, qflx_glcice, qflx_floodc, qflx_qrgwl, eflx_wasteheat_pft, eflx_dynbal, eflx_lwrad_net, do_capsnow, forc_solai, frac_sno_eff, h2osno_old, qflx_snwcp_liq, qflx_glcice_frz, qflx_snow_h2osfc, qflx_evap_grnd, forc_rain, eflx_sh_tot, qflx_h2osfc_to_ice, frac_sno
+global_wo, netrad
+global_mod, tws, snow_sources, errseb, qflx_runoffg, errlon, errsol, errh2osno, qflx_snwcp_iceg, snow_sinks, errh2o, eflx_sh_totg
+global_non, qflx_evap_soi, qflx_runoff, canyon_hwr
+calls, c2g, p2g, endrun

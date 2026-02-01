@@ -1,0 +1,9 @@
+sub_param, NLFilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, opnfil, shr_mpi_bcast, shr_nl_find_group_name, endrun, relavu
+readParams,betr_readNL
+character(len=*), intent(IN) :: NLFilename              ! Namelist filename

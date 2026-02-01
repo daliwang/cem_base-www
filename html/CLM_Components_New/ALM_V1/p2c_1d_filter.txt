@@ -1,0 +1,13 @@
+sub_param, pftarr, bounds, filterc, numfc, colarr
+sub_out, colarr
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)  :: numfc
+integer , intent(in)  :: filterc(numfc)
+real(r8), intent(in)  :: pftarr( bounds%begp: )
+real(r8), intent(out) :: colarr( bounds%begc: )

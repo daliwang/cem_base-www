@@ -1,0 +1,7 @@
+sub_in, File, index, pbuf2d
+sub_out
+global_ro, vardesc, name, dtype
+global_wo
+global_mod, dimsizes
+global_non, pbuf2d
+calls, get_phys_decomp, pio_read_darray, endrun, subcol_pack, buffer_set_field

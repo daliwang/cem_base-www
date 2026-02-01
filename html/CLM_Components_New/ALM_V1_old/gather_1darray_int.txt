@@ -1,0 +1,10 @@
+sub_param, aglobal:2, missing:4, alocal:1, clmlevel:3
+sub_out, aglobal
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, mct_aVect_gather, get_clmlevel_gsmap, mct_aVect_init, mct_aVect_exportIattr, mct_aVect_importIattr, mct_aVect_clean, t_startf
+readParams,
+character(len=*) ,intent(in) :: clmlevel    ! type of input grid
+integer ,optional,intent(in) :: missing     ! missing value

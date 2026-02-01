@@ -1,0 +1,7 @@
+sub_in, tau_zm, dt, solve_type, C14, a1_zt, xbm, xbp2, rhs, wpthvp, invrs_rho_ds_zm, a1, xap2, C4_C14_1d, wpxap_zt, Lscale, C4, beta, wp2, thv_ds_zm, wp2_zt, rho_ds_zt, C5, wpxbp_zt, rho_ds_zm, wpxbp, l_iter, wpxap, wp3_on_wp2_zt, wp3_on_wp2, xam
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var_pt, stat_begin_update_pt, stat_modify_pt

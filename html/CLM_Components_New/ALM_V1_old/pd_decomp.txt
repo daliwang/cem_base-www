@@ -1,0 +1,12 @@
+sub_param, AP:4, n:2, m:1, A:3, AD:5
+sub_out, AD, AP
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer  , intent(in) :: n, m
+real(r8) , intent(in) :: A(1: ,  1: )
+real(r8) , intent(out):: AP(1: , 1: )
+real(r8) , intent(out):: AD(1: , 1: )

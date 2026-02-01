@@ -1,0 +1,20 @@
+sub_param, c13_carbonflux_vars, phosphorusflux_vars, c13_carbonstate_vars, carbonflux_vars, nitrogenflux_vars, filter_soilc, c14_carbonflux_vars, phosphorusstate_vars, num_soilc, carbonstate_vars, c14_carbonstate_vars, nitrogenstate_vars
+sub_out
+global_ro, phosphorusflux_vars%hrv_cropp_to_prod1p_col, c14_carbonflux_vars%hrv_cropc_to_prod1c_col, carbonflux_vars%hrv_cropc_to_prod1c_col, c13_carbonflux_vars%hrv_cropc_to_prod1c_col, nitrogenflux_vars%hrv_cropn_to_prod1n_col
+global_wo
+global_mod, nitrogenstate_vars%prod1n_col, carbonstate_vars%prod1c_col, c14_carbonstate_vars%prod1c_col, c13_carbonstate_vars%prod1c_col, nitrogenflux_vars%prod1n_loss_col, phosphorusflux_vars%prod1p_loss_col, c14_carbonflux_vars%prod1c_loss_col, carbonflux_vars%prod1c_loss_col, c13_carbonflux_vars%prod1c_loss_col, phosphorusstate_vars%prod1p_col
+global_non
+calls
+readParams,
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(in)    :: c14_carbonstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+type(phosphorusstate_type), intent(in)   :: phosphorusstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type), intent(inout) :: phosphorusflux_vars

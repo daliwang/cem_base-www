@@ -1,0 +1,7 @@
+sub_in, arbinit
+sub_out
+global_ro, lakpoi, dz, t_soisno, landunit, snl, watsat, savedtke1, t_lake
+global_wo, z0mg, snw_rds_top, snw_rds, sno_liq_top
+global_mod, h2osoi_vol, lake_icefrac, h2osoi_liq, h2osoi_ice, ust_lake
+global_non, t_grnd, h2osno, itype
+calls, get_proc_bounds, snow_depth2levLake

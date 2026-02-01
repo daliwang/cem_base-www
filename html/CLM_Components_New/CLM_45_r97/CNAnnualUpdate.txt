@@ -1,0 +1,7 @@
+sub_in, num_soilp, cnveg_state_inst, filter_soilp, filter_soilc, cnveg_carbonflux_inst, num_soilc, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, p2c

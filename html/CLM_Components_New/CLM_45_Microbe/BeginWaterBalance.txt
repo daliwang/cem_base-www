@@ -1,0 +1,10 @@
+sub_in, filter_lakec, filter_nolakec, ubc, num_nolakec, num_lakec, lbp, num_hydrologyc, lbc, ubp, filter_hydrologyc
+sub_out
+global_ro, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%itype, clm3%g%l%c%cws%pws_a%h2ocan, clm3%g%l%c%cws%zwt, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%p%pws%h2ocan, clm3%g%l%c%cws%h2osno
+global_wo
+global_mod, clm3%g%l%c%cws%wa, clm3%g%l%c%cwbal%begwb
+global_non, clm3%g%l%itype, clm3%g%londeg, clm3%g%l%c%gridcell, clm3%g%l%c%landunit, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%zi, clm3%g%latdeg, clm3%g%l%c%cps%dz
+calls, p2c
+
+Tree height: 2
+0 , p2c, 

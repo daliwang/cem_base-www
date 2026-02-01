@@ -1,0 +1,7 @@
+sub_in, tmp_cldice, pbuf, cldliqini, cldiceini, ztodt, qini, tmp_cldliq, tmp_q, state, tmp_t, tend
+sub_out, tmp_cldice, tmp_q, tmp_cldliq, tmp_t
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, pbuf_get_field, check_energy_get_integrals, outfld

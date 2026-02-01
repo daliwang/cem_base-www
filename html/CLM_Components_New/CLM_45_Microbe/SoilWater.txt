@@ -1,0 +1,10 @@
+sub_in, num_urbanc, ubc, filter_urbanc, num_hydrologyc, lbc, filter_hydrologyc
+sub_out, dwat, dhkdw, hk
+global_ro, clm3%g%l%c%npfts, clm3%g%l%c%p%wtcol, clm3%g%l%c%cwf%pwf_a%qflx_tran_veg, clm3%g%l%c%cps%bsw, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cwf%qflx_infl, clm3%g%l%c%p%pps%rootr, clm3%g%l%c%pfti, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cps%z, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%zi, clm3%g%l%c%cps%smpmin, clm3%g%l%c%p%active, clm3%g%l%c%cws%zwt, clm3%g%l%c%cps%hksat, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%fracice
+global_wo, clm3%g%l%c%cws%smp_l, clm3%g%l%c%cws%hk_l
+global_mod, clm3%g%l%c%cws%qcharge, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%rootr_column
+global_non, clm3%g%l%c%cps%eff_porosity, clm3%g%l%c%itype, clm3%g%l%c%cps%hkdepth
+calls, Tridiagonal
+
+Tree height: 4
+1-, Tridiagonal, 

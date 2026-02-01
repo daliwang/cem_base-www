@@ -1,0 +1,7 @@
+sub_in, filter_soilc, num_soilc, bounds
+sub_out
+global_ro, cns%smin_no3_vr, bounds%begg, cns%smin_nh4sorb_vr, decomp_cascade_con%initial_cn_ratio, col%gridcell, ccs%decomp_cpools_vr, cns%smin_nh4_vr, cns%decomp_npools_vr
+global_wo, cnf%gross_nmin_vr, cnf%actual_immob_vr, cnf%sminn_to_plant_vr, cnf%sminn_delta_vr
+global_mod, cnf%smin_nh4sorb_delta_vr, cnf%smin_no3_delta_vr, ccf%decomp_cpools_delta_vr, cnf%decomp_npools_delta_vr, cnf%smin_nh4_delta_vr
+global_non, cns%sminn_vr, cnf%smin_no3_to_plant_vr, cnf%smin_nh4_to_plant_vr
+calls, get_pf_bgc_gaslosses, get_pf_bgc_states, VecGetArrayF90, VecRestoreArrayF90

@@ -1,0 +1,7 @@
+sub_in, dz_h2osfc, tk, bmatrix_soil, bounds, nband, frac_sno_eff, tk_h2osfc, fact, num_nolakec, dhsdT, filter_nolakec
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, bounds%begc, bounds%endc
+calls, SetMatrix_SoilUrbanNonRoad, SetMatrix_SoilUrbanRoad

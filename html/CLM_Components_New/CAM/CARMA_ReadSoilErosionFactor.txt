@@ -1,0 +1,7 @@
+sub_in, carma, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp_finish, wrap_get_var_realx, lininterp, handle_error, lininterp_init, wrap_open, getfil, wrap_close, wrap_inq_dimlen, wrap_inq_varid, wrap_inq_dimid

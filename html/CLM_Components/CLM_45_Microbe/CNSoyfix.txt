@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc
+sub_out
+global_ro, itype, wf, fpg, croplive, gddmaturity, gddplant, plant_ndemand, column, sminn
+global_wo
+global_mod, soyfixn
+global_non, soyfixn_to_sminn
+calls, p2c

@@ -1,0 +1,7 @@
+sub_in, taormc, reicmc, relqmc, iceflag, dgesmc, liqflag, cldfmc, inflag, fsfcmc, ciwpmc, nlayers, clwpmc, ssacmc, asmcmc, taucmc
+sub_out, taucmc, asmcmc, ssacmc, taormc
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, wbk, n, uwb, uth, u
+sub_out, uwb
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, tindex, name, flag
+sub_out
+global_ro, listentry
+global_wo, actflag, time_op, avgflag
+global_mod
+global_non
+calls, endrun

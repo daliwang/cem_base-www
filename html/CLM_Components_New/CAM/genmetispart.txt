@@ -1,0 +1,7 @@
+sub_in, GridEdge, GridVertex
+sub_out, GridVertex
+global_ro
+global_wo
+global_mod
+global_non
+calls, CreateMetisGraph, CreateSubGridGraph, genLocal2Global, abortmp, NewPartitionNumber, PartitionGraph, FreeGraph

@@ -1,0 +1,7 @@
+sub_in, geds_local, bounds, this
+sub_out
+global_ro, %area, currentPatch%shortest, currentCohort%taller, currentPatch%younger, currentSite%oldest_patch, this%vectorLengthStart, bounds%begg
+global_wo, this%areaRestart, this%numPatchesPerCell, this%cellWithPatch, this%cohortsPerPatch
+global_mod, this%old_stock, geds_local%old_stock, this%bdead, %bdead, %pft, this%pft, %root_litter_in, this%root_litter_in, %gpp_acc, this%gpp_acc, %dbh, this%dbh, this%status_coh, %status_coh, this%spread, %spread, this%livegrass, %livegrass, %laimemory, this%laimemory, %hite, this%hite, this%root_md, %root_md, this%age, %age, %resp_clm, this%resp_clm, this%canopy_layer, %canopy_layer, this%water_memory, geds_local%water_memory, %bstore, this%bstore, this%leaf_litter_in, %leaf_litter_in, this%leaf_litter, %leaf_litter, %balive, this%balive, this%br, %br, %npp_acc, this%npp_acc, this%root_litter, %root_litter, this%bl, %bl, this%n, %n, this%canopy_trim, %canopy_trim, %cwd_ag, this%cwd_ag, %cwd_bg, this%cwd_bg, this%seed_bank, %seed_bank, this%leaf_md, %leaf_md
+global_non, geds_local
+calls, shr_sys_abort

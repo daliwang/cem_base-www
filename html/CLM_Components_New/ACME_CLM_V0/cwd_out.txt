@@ -1,0 +1,7 @@
+sub_in, currentPatch, temperature_vars, waterstate_vars, soilstate_vars
+sub_out
+global_ro, udata%deltat!kgC, soilstate_vars%watsat_col, waterstate_vars%h2osoi_vol_col, currentPatch%clm_pno, currentPatch%btran_ft, currentPatch%leaf_litter, %clmcolumn, currentPatch%cwd_bg, currentPatch%root_litter, currentPatch%area, currentPatch%cwd_ag
+global_wo
+global_mod, currentPatch%cwd_bg_out, currentPatch%cwd_ag_out, currentPatch%leaf_litter_out, %flux_out, currentPatch%root_litter_out
+global_non, temperature_vars%t_veg24_patch, currentPatch%siteptr
+calls

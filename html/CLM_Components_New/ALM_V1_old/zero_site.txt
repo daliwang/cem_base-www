@@ -1,0 +1,9 @@
+sub_param, site_in:1
+sub_out
+global_ro
+global_wo| site_in%leafondate, leafondate, NONE| site_in%istheresoil, istheresoil, NONE| site_in%dstatus, dstatus, NONE| site_in%clmcolumn, clmcolumn, NONE| site_in%dleafondate, dleafondate, NONE| site_in%frac_burnt, frac_burnt, NONE| site_in%dleafoffdate, dleafoffdate, NONE| site_in%last_n_days, last_n_days, NONE| site_in%status, status, NONE| site_in%lat, lat, NONE| site_in%acc_ni, acc_ni, NONE| site_in%gdd, gdd, NONE| site_in%lon, lon, NONE| site_in%leafoffdate, leafoffdate, NONE| site_in%water_memory, water_memory, NONE| site_in%clmgcell, clmgcell, NONE| site_in%ncd, ncd, NONE| site_in%disturbance_rate, disturbance_rate, NONE
+global_mod| site_in%dist_type, dist_type, NONE
+global_non| null, site_in%oldest_patch, NONE| null, site_in%youngest_patch, NONE
+calls
+readParams,
+type(site), intent(inout) ::  site_in

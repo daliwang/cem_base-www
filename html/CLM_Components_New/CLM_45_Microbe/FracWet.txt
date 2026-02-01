@@ -1,0 +1,9 @@
+sub_in, filter, numf
+sub_out
+global_ro, clm3%g%l%c%p%pps%esai, clm3%g%l%c%p%pps%elai, clm3%g%l%c%p%pps%dewmx, clm3%g%l%c%p%pws%h2ocan, clm3%g%l%c%p%pps%frac_veg_nosno
+global_wo, clm3%g%l%c%p%pps%fdry
+global_mod, clm3%g%l%c%p%pps%fwet
+global_non
+calls
+
+Tree height: 3

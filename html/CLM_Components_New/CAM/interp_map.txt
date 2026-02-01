@@ -1,0 +1,7 @@
+sub_in, plat, lon_veg, lat_veg, lat_veg_edge, lon_veg_edge, lake, plon, npft_veg, nlat_veg, wetland, urban, soilw_map, landmask, vegetation_map, do_soilw, nlon_veg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, scatter_field_to_chunk, shr_scam_getCloseLatLon, cam_pio_openfile, get_horiz_grid_d, getfil, pio_closefile

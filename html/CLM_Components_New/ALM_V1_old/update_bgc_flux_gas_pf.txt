@@ -1,0 +1,14 @@
+sub_param, clm_bgc_data:1, bounds:2, carbonflux_vars:5, nitrogenflux_vars:6, num_soilc:3, filter_soilc:4
+sub_out
+global_ro| clm_bgc_data%f_ngas_nitri_vr_col, f_ngas_nitri_vr_col, NONE| clm_bgc_data%hr_vr_col, hr_vr_col, NONE| clm_bgc_data%f_ngas_denit_vr_col, f_ngas_denit_vr_col, NONE| clm_bgc_data%f_n2o_soil_vr_col, f_n2o_soil_vr_col, NONE| clm_bgc_data%f_ngas_decomp_vr_col, f_ngas_decomp_vr_col, NONE| clm_bgc_data%f_co2_soil_vr_col, f_co2_soil_vr_col, NONE| clm_bgc_data%f_n2_soil_vr_col, f_n2_soil_vr_col, NONE
+global_wo| carbonflux_vars%hr_vr_col, hr_vr, NONE| nitrogenflux_vars%f_n2o_soil_vr_col, f_n2o_soil_vr, NONE| nitrogenflux_vars%f_ngas_denit_vr_col, f_ngas_denit_vr, NONE| carbonflux_vars%f_co2_soil_vr_col, f_co2_soil_vr, NONE| nitrogenflux_vars%f_n2_soil_vr_col, f_n2_soil_vr, NONE| nitrogenflux_vars%f_ngas_nitri_vr_col, f_ngas_nitri_vr, NONE| nitrogenflux_vars%f_ngas_decomp_vr_col, f_ngas_decomp_vr, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)                  , intent(in)    :: bounds
+integer                            , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                            , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(carbonflux_type)              , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)            , intent(inout) :: nitrogenflux_vars
+type(clm_bgc_interface_data_type)  , intent(in)    :: clm_bgc_data

@@ -1,0 +1,9 @@
+sub_param, import_state, EClock, export_state, comp, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_file_getLogUnit, ESMF_ArrayGet, ESMF_Finalize, t_startf, clm_drv, set_nextsw_cday, lnd_export, shr_file_setLogLevel, shr_file_setLogUnit, t_stopf, get_proc_bounds, shr_orb_decl, update_rad_dtime, shr_file_getLogLevel, memmon_reset_addr, memmon_dump_fort, ESMF_StateGet, get_curr_date, work, ESMF_AttributeGet, lnd_import, seq_timemgr_EClockGetData, endrun, t_barrierf, advance_timestep, seq_timemgr_EclockGetData
+readParams,
+integer, intent(out) :: rc              ! Return code

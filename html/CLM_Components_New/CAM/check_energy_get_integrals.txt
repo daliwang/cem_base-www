@@ -1,0 +1,7 @@
+sub_in, tedif_glob_out, heat_glob_out
+sub_out, tedif_glob_out, heat_glob_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

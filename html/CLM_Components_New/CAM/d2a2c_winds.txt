@@ -1,0 +1,7 @@
+sub_in, grid, vc, u_cen, reset_winds, met_rlx, ua, u, va, v_cen, v, uc
+sub_out, v, va, ua, uc, vc
+global_ro, sinl5, cosl5, sinlon, coslon
+global_wo
+global_mod
+global_non
+calls

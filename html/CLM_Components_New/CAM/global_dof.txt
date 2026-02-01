@@ -1,0 +1,7 @@
+sub_in, par, elem
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non
+calls, FreeLongEdgeBuffer, LongEdgeVunpackMIN, LongEdgeVpack, bndry_exchangeV, genLocalDOF, initLongEdgeBuffer

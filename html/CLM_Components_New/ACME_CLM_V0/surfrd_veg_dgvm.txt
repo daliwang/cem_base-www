@@ -1,0 +1,7 @@
+sub_in, endg, begg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_sums_equal_1

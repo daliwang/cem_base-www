@@ -1,0 +1,7 @@
+sub_in, pint, cld, nmxrgn, ncol, lchnk, pmxrgn
+sub_out, nmxrgn, pmxrgn
+global_ro
+global_wo
+global_mod
+global_non
+calls

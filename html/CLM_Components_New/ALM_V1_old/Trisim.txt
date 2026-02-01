@@ -1,0 +1,24 @@
+sub_param, w1:16, d1:9, ubj:3, c1:8, c2:13, w2:17, d2:14, a1:6, filter:5, b2:12, numf:4, a2:11, lbj:2, e2:15, e1:10, bounds:1, b1:7
+sub_out, w2, w1
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in)  :: bounds                                 ! bounds
+integer           , intent(in)  :: lbj, ubj                               ! lbinning and ubing level indices
+integer           , intent(in)  :: numf                                   ! filter dimension
+integer           , intent(in)  :: filter(:)                              ! filter
+real(r8)          , intent(in)  :: a1(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: b1(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: c1(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: d1(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: e1(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: a2(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: b2(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: c2(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: d2(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(in)  :: e2(bounds%begc:bounds%endc, lbj:ubj)   !
+real(r8)          , intent(out) :: w1(bounds%begc:bounds%endc, lbj:ubj-1) !
+real(r8)          , intent(out) :: w2(bounds%begc:bounds%endc, lbj:ubj-1) !

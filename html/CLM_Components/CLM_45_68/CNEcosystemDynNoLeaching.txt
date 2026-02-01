@@ -1,0 +1,7 @@
+sub_in, filter_pcropp, filter_soilp, filter_soilc, bounds, num_soilp, num_pcropp, num_soilc, doalb
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNSoilLittVertTransp, NStateUpdate2, CNMResp, CNNFixation, CNZeroFluxes, CNGapMortality, CNPhenology, CStateUpdate2h, CStateUpdate3, CNHarvest, CNFireArea, t_startf, CNFireFluxes, CNGResp, CStateUpdate0, t_stopf, CStateUpdate2, CNWoodProducts, NStateUpdate2h, CStateUpdate1, NStateUpdate1, CNNDeposition, CNDecompAlloc

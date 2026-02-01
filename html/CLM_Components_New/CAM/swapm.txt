@@ -1,0 +1,7 @@
+sub_in, comm_protocol, comm_maxreq, rcvlths, comm, sdispls, sndbuf, sndlths, rdispls, rbuf_siz, swapids, steps, rcvbuf, sbuf_siz, nprocs
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_rsend, mpi_isend, mpi_send, mpi_wait, mpi_irecv, mpi_irsend

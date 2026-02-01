@@ -1,0 +1,7 @@
+sub_in, cdayout, update, cdates, nm, np
+sub_out, np, nm
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_perp_date, endrun, get_curr_date

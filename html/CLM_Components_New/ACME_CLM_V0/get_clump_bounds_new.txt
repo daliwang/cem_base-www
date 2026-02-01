@@ -1,0 +1,7 @@
+sub_in, bounds, n
+sub_out
+global_ro, procinfo%cid
+global_wo, bounds%clump_index, bounds%level
+global_mod, %begc, bounds%begc, bounds%begl, %begl, bounds%begCohort, %begCohort, bounds%endCohort, %endCohort, %begg, bounds%begg, %endp, bounds%endp, bounds%begp, %begp, bounds%endc, %endc, bounds%endl, %endl, bounds%endg, %endg
+global_non
+calls, shr_sys_abort

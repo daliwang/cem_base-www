@@ -1,0 +1,11 @@
+sub_param, b:2, a:1, error:3
+sub_out, a, b, error
+global_ro
+global_wo
+global_mod
+global_non
+calls, swap
+readParams,
+real(r8), dimension(:,:), intent(inout) :: a !contains the coefficients
+real(r8), dimension(:)  , intent(inout) :: b !contains the right-hand side
+integer,  intent(out)                   :: error

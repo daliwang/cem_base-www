@@ -1,0 +1,20 @@
+sub_param, bunsencef_col:7, t_soisno:12, bulkdiffus:13, bounds:1, betrtracer_vars:11, canopystate_vars:8, numf:5, waterstate_vars:9, tau_soi:10, ubj:3, lbj:2, filter:6, jtops:4
+sub_out, bulkdiffus
+global_ro| betrtracer_vars%ngwmobile_tracer_groups, ngwmobile_tracer_groups, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| tau_soi%tau_liq, tau_liq, NONE| canopystate_vars%altmax_col, altmax, NONE| waterstate_vars%air_vol_col, air_vol, NONE| betrtracer_vars%tracer_solid_passive_diffus_scal_group, tracer_solid_passive_diffus_scal_group, NONE| betrtracer_vars%is_h2o, is_h2o, NONE| waterstate_vars%h2osoi_liqvol_col, h2osoi_liqvol, NONE| betrtracer_vars%tracer_group_memid, tracer_group_memid, NONE| betrtracer_vars%ntracer_groups, ntracer_groups, NONE| tau_soi%tau_gas, tau_gas, NONE| betrtracer_vars%tracer_solid_passive_diffus_thc_group, tracer_solid_passive_diffus_thc_group, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| canopystate_vars%altmax_lastyear_col, altmax_lastyear, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)          , intent(in) :: bounds                                  ! bounds
+integer                    , intent(in) :: numf                                    ! number of columns in column filter
+integer                    , intent(in) :: filter(:)                               ! column filter
+integer                    , intent(in) :: lbj, ubj                                ! lower and upper bounds, make sure they are > 0
+integer                    , intent(in) :: jtops(bounds%begc: )                    ! top label of each column
+real(r8)                   , intent(in) :: t_soisno(bounds%begc: ,  lbj: )         ! soil temperature
+real(r8)                   , intent(in) :: bunsencef_col(bounds%begc: ,lbj: ,1: )  ! bunsen coefficient for gaseous-aqueous conversion
+type(betrtracer_type)      , intent(in) :: betrtracer_vars                         ! betr configuration information
+type(Waterstate_Type)      , intent(in) :: waterstate_vars                         ! water state variables
+type(canopystate_type)     , intent(in) :: canopystate_vars                        ! canopy state variables
+type(soil_tortuosity_type) , intent(in) :: tau_soi                                 ! soil tortuosity
+real(r8)                   ,intent(out) :: bulkdiffus(bounds%begc: ,lbj: , 1: )    ! the returning variable

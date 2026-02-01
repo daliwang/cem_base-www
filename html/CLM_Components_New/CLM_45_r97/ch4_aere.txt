@@ -1,0 +1,7 @@
+sub_in, sat, cnveg_carbonflux_inst, num_methp, canopystate_inst, filter_methp, soilstate_inst, ch4_inst, waterstate_inst, num_methc, filter_methc, bounds, waterflux_inst, temperature_inst, jwt, lake, energyflux_inst
+sub_out
+global_ro, dz, conc_o2, elai, watsat, rootr, qflx_tran_veg, grnd_ch4_cond, z, h2osoi_vol, annavg_bgnpp, t_soisno, rootfr, wtcol, ch4_prod_depth, c_atm, conc_ch4, annavg_agnpp, annsum_npp
+global_wo
+global_mod, o2_aere_depth, ch4_tran_depth, ch4_aere_depth
+global_non, energyflux_inst%canopy_cond_patch, ch4_inst%co2_aere_depth_sat_col, ch4_inst%co2_aere_depth_unsat_col, ch4_inst%ch4_oxid_depth_unsat_col, ch4_inst%ch4_oxid_depth_sat_col
+calls

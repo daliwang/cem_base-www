@@ -1,0 +1,7 @@
+sub_in, xy_3d, yz_3d, grid
+sub_out, yz_3d
+global_ro
+global_wo
+global_mod
+global_non
+calls, mp_sendirr, mp_recvirr

@@ -1,0 +1,17 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, clm3%g
+calls, ncd_io, get_curr_date, ncd_inqdlen, pftdyn_getharvest, getfil, pftdyn_getdata, get_proc_bounds, ncd_pio_openfile, ncd_inqdid, check_dim, endrun
+
+Tree height: 8
+0 , get_proc_bounds, getfil, ncd_pio_openfile, ncd_inqdid, ncd_inqdlen, check_dim, ncd_io, ncd_io, 
+1+, endrun, endrun, endrun, endrun, ncd_io, 
+2+, ncd_io, 
+3+, ncd_io, 
+4+, get_curr_date, 
+5-, pftdyn_getdata, pftdyn_getdata, pftdyn_getharvest, 
+7+, endrun, 
+5+, endrun, 

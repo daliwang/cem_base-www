@@ -1,0 +1,7 @@
+sub_in, depflx, lchnk, rxt_rates, depvel, mmr, vmr, mmr_tend, invariants, ncol, pdel, pbuf
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_area_all_p, outfld

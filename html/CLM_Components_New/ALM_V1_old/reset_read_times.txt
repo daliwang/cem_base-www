@@ -1,0 +1,9 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%read_times, read_times, NONE
+global_mod
+global_non
+calls
+readParams,reset_read_times
+class(ncdio_var_type), intent(inout) :: this

@@ -1,0 +1,8 @@
+sub_in, ice_c2_ocn, glc_c2_ocn, rof_c2_ocn, wav_c2_ocn, atm_c2_ice, infodata, atm_c2_ocn
+sub_out
+global_ro, component_get_c2x_cx
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, seq_map_init_rearrolap, seq_map_init_rcfile, shr_sys_abort, mct_aVect_init, shr_sys_flush, mct_avect_init, seq_infodata_getData, seq_comm_getData, seq_map_initvect, mct_aVect_zero
+calls_ln, seq_map_init_rcfile@267, seq_map_init_rcfile@246, shr_sys_flush@287, mct_aVect_init@216, seq_map_init_rcfile@315, seq_infodata_getData@149, mct_aVect_init@221, mct_aVect_zero@207, shr_sys_flush@330, seq_map_init_rcfile@326, seq_map_init_rcfile@294, mct_aVect_zero@192, mct_aVect_zero@217, seq_comm_getData@174, mct_aVect_init@206, mct_aVect_init@201, shr_sys_flush@319, seq_map_initvect@275, mct_aVect_zero@228, mct_aVect_init@211, shr_sys_flush@277, shr_sys_flush@308, seq_map_init_rearrolap@285, mct_aVect_zero@222, seq_map_init_rcfile@259, mct_avect_init@227, mct_aVect_zero@202, shr_sys_flush@249, mct_aVect_init@191, shr_sys_abort@196, seq_map_init_rcfile@303, mct_aVect_zero@212

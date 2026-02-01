@@ -1,0 +1,7 @@
+sub_in, oldliqwp, pbuf, state, abs_od
+sub_out, abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, pbuf_get_field

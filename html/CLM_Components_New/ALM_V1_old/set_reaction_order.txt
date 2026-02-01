@@ -1,0 +1,11 @@
+sub_param, centurybgc_vars:2, nreact:1, is_zero_order:3
+sub_out, is_zero_order
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer                      , intent(in)  :: nreact
+type(centurybgc_type)        , intent(in)  :: centurybgc_vars
+logical                      , intent(out) :: is_zero_order(nreact)

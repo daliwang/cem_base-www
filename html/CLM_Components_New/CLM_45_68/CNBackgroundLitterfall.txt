@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%lflitcn, pcs%leafc, pftcon%leafcn, pepv%bglfr, pftcon%frootcn, pcs%frootc, pft%itype
+global_wo, pnf%frootn_to_litter, pnf%leafn_to_retransn
+global_mod, pcf%frootc_to_litter, pcf%leafc_to_litter, pnf%leafn_to_litter
+global_non
+calls
+
+Tree height: 2

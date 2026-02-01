@@ -1,0 +1,7 @@
+sub_in, currentPatch, patch_site_areadis, newPatch
+sub_out, patch_site_areadis
+global_ro
+global_wo
+global_mod
+global_non
+calls

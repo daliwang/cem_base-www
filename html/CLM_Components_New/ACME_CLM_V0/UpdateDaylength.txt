@@ -1,0 +1,7 @@
+sub_in, bounds, declin
+sub_out
+global_ro, grc%lat
+global_wo, grc%prev_dayl
+global_mod, grc%dayl
+global_non, bounds%endg, bounds%begg
+calls

@@ -1,0 +1,10 @@
+sub_param, icemask_grc, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, setFilters, set_active, check_weights
+readParams,
+type(bounds_type) , intent(in) :: bounds                      ! clump bounds
+real(r8)          , intent(in) :: icemask_grc( bounds%begg: ) ! ice sheet grid coverage mask [gridcell]

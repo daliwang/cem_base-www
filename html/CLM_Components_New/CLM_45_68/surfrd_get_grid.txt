@@ -1,0 +1,21 @@
+sub_in, begg, glcfilename, filename, endg, ldomain
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, input, variable, file
+calls, ncd_io, getfil, ncd_pio_closefile, ncd_pio_openfile, domain_init, ncd_inqfdims, check_var, endrun
+
+Tree height: 12
+0 , getfil, ncd_pio_openfile, ncd_inqfdims, domain_init, check_var, 
+1+, check_var, 
+2+, endrun, 
+3+, ncd_io, 
+4+, ncd_io, 
+5+, ncd_io, 
+6-, ncd_io, 
+7+, ncd_io, 
+8+, ncd_io, ncd_io, ncd_io, ncd_pio_closefile, 
+9+, ncd_io, ncd_io, ncd_io, ncd_io, getfil, ncd_pio_openfile, ncd_io, 
+10+, endrun, endrun, ncd_pio_closefile, 
+11+, endrun, endrun, 

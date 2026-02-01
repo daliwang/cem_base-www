@@ -1,0 +1,7 @@
+sub_in, docosp_in, csat_vgrid_in, use_vgrid_in, Nlr_in, Ncolumns_in, cosp_nradsteps_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, cldice, lchnk, zdu, q, cloud, cmfmc2, phis, rhcloud, ps, landfrac, liqcldf, concld, pdel, rhu00, icecldf, sst, ncol, omga, cmfmc, cldst, clc, pmid, pbuf, dindex, ts, use_shfrc, shfrc, relhum, snowh, ocnfrac, temp
+sub_out, cldst, clc, cloud, rhcloud, concld, liqcldf, relhum, rhu00, icecldf
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat, qsat_water, outfld, get_rlat_all_p, pbuf_get_field, get_rlon_all_p

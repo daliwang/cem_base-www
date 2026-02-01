@@ -1,0 +1,11 @@
+sub_param, ldomain:3, lfsurdat:4, begg:1, endg:2
+sub_out
+global_ro| surfdata_domain%lonc, lonc, NONE| ldomain%lonc, lonc, NONE| surfdata_domain%latc, latc, NONE| ldomain%latc, latc, NONE
+global_wo
+global_mod
+global_non
+calls, ncd_pio_openfile, ncd_inqfdims, ncd_io, surfrd_veg_all, ncd_pio_closefile, endrun, domain_init, domain_clean, surfrd_special, getfil, surfrd_veg_dgvm, check_var, check_sums_equal_1
+readParams,
+integer,          intent(in) :: begg, endg
+type(domain_type),intent(in) :: ldomain     ! land domain
+character(len=*), intent(in) :: lfsurdat    ! surface dataset filename

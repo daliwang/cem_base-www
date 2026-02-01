@@ -1,0 +1,7 @@
+sub_in, mean_value, state, mmr_pointer
+sub_out, mean_value
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,17 @@
+sub_param, type2d:9, units:2, numlev:6, name:1, accum_period:5, desc:3, init_value:8, subgrid_type:7, accum_type:4
+sub_out
+global_ro| %period, period, NONE
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, get_proc_global, shr_sys_abort
+readParams,
+character(len=*), intent(in)           :: name         !field name
+character(len=*), intent(in)           :: units        !field units
+character(len=*), intent(in)           :: desc         !field description
+character(len=*), intent(in)           :: accum_type   !field type: tavg, runm, runa, ins
+integer , intent(in)                   :: accum_period !field accumulation period
+character(len=*), intent(in)           :: subgrid_type !["gridcell","landunit","column" or "pft"]
+integer , intent(in)                   :: numlev       !number of vertical levels
+real(r8), intent(in)                   :: init_value   !field initial or reset value
+character(len=*), intent(in), optional :: type2d       !level type (optional) - needed if numlev > 1

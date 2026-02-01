@@ -1,0 +1,12 @@
+sub_param, filter_soilc, phosphorusstate_vars, num_soilc, bounds
+sub_out
+global_ro, phosphorusstate_vars%totcolp_col
+global_wo, phosphorusstate_vars%begpb_col
+global_mod
+global_non, phosphorusstate_vars%sminp_col, phosphorusstate_vars%totlitp_col, phosphorusstate_vars%totsomp_col, phosphorusstate_vars%cwdp_col, phosphorusstate_vars%totpftp_col
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars

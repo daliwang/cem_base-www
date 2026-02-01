@@ -1,0 +1,27 @@
+sub_param, numf, carbonflux_vars, decay_nh4, waterstate_vars, soilstate_vars, bounds, anaerobic_frac, pH, smin_nh4_vr, smin_no3_vr, t_soisno, n2_n2o_ratio_denit, jtops, decay_no3, lbj, ubj, filter, dz, nh4_no3_ratio, pot_co2_hr
+sub_out, decay_no3, decay_nh4, nh4_no3_ratio, n2_n2o_ratio_denit
+global_ro, waterstate_vars%h2osoi_liq_col, carbonflux_vars%w_scalar_col, waterstate_vars%h2osoi_vol_col, soilstate_vars%watsat_col, soilstate_vars%bd_col, carbonflux_vars%t_scalar_col
+global_wo
+global_mod
+global_non, waterstate_vars%finundated_col
+calls
+readParams,
+type(bounds_type),      intent(in)  :: bounds
+integer,                intent(in)  :: lbj, ubj
+integer,                intent(in)  :: jtops(bounds%begc: )                                            ! top label of each column
+integer,                intent(in)  :: numf
+integer,                intent(in)  :: filter(:)
+real(r8),               intent(in)  :: dz(bounds%begc: , lbj: )
+real(r8),               intent(in)  :: pH(bounds%begc: , lbj: )                                        !pH of soil
+real(r8),               intent(in)  :: t_soisno(bounds%begc: , lbj: )                                  !soil temperature
+real(r8),               intent(in)  :: pot_co2_hr(bounds%begc: , lbj: )                                !potential aerobic heteotrophic respiration, mol CO2/m3/s
+real(r8),               intent(in)  :: anaerobic_frac(bounds%begc: , lbj: )                            !fraction of anaerobic soil
+real(r8),               intent(in)  :: smin_nh4_vr(bounds%begc: , lbj: )
+real(r8),               intent(in)  :: smin_no3_vr(bounds%begc: , lbj: )                               !soil no3 concentration [mol N/m3]
+type(waterstate_type) , intent(in)  :: waterstate_vars
+type(soilstate_type)  , intent(in)  :: soilstate_vars
+type(carbonflux_type) , intent(in)  :: carbonflux_vars
+real(r8)             ,  intent(out) :: n2_n2o_ratio_denit(bounds%begc: , lbj: )                        !ratio of n2 to n2o in denitrification
+real(r8)             ,  intent(out) :: nh4_no3_ratio(bounds%begc: , lbj: )                             !ratio of soil nh4 and no3
+real(r8)             ,  intent(out) :: decay_nh4(bounds%begc: ,lbj: )                                  !1/s, decay rate of nh4
+real(r8)             ,  intent(out) :: decay_no3(bounds%begc: ,lbj: )                                  !1/s, decay rate of no3

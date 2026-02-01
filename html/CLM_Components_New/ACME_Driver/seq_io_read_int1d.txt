@@ -1,0 +1,8 @@
+sub_in, dname, filename, idata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_closefile, pio_seterrorhandling, shr_sys_abort, seq_comm_setptrs, shr_mpi_bcast
+calls_ln, shr_mpi_bcast@1981, pio_seterrorhandling@1987, seq_comm_setptrs@1977, pio_seterrorhandling@1985, shr_sys_abort@1990, pio_closefile@2001

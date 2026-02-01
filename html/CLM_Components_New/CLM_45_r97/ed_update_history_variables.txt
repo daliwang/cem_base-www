@@ -1,0 +1,7 @@
+sub_in, firstsoilpatch, bounds, ed_Phenology_inst, canopystate_inst, ed_allsites_inst, this
+sub_out
+global_ro, fuel_eff_moist, canopy_trim, n, leaf_litter_in, balive, fuel_sav, clm_pno, FI, fuel_bulkd, currentPatch, bdead, area, SH, total_canopy_area, bstore, pft, bl, leaf_litter_out, CWD_AG_out, frac_burnt, total_tree_area, ROS_front, fuel_mef, currentCohort, CWD_AG_in, b, spread
+global_wo, litter_in, fire_fuel_bulkd, fire_area, esai, tlai, elai, fire_fuel_eff_moist, canopy_spread, fire_fuel_sav, phen_cd_status, area_trees, trimming, scorch_height, fire_intensity, nesterov_fire_danger, fire_fuel_mef, tsai, spitfire_ROS, area_plant, litter_out
+global_mod, seeds_in, gpp, seed_germination, seed_decay, sum_fuel, PFTnindivs, ED_biomass, npp, ED_bstore, PFTstorebiomass, ED_bdead, effect_wspeed, TFC_ROS, PFTleafbiomass, ED_bleaf, seed_bank, ED_balive, PFTbiomass
+global_non, bounds%endp, bounds%begp
+calls

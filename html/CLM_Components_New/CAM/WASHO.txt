@@ -1,0 +1,7 @@
+sub_in, TCKAQB, NTRACE, qt_evap, TCNION, TCMASS, CLWC, GAREA, CIWC, POFL, LPAR, HSTAR, RLS, CFR, QTTJFL, EVAPRATE, DELZ, DTSCAV, qt_rime, qt_rain, TEM, QM, qt_wash
+sub_out, QTTJFL, qt_rain, qt_rime, qt_evap, qt_wash
+global_ro
+global_wo
+global_mod
+global_non
+calls, DISGAS, WASHGAS, RAINGAS

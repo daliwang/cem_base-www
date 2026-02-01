@@ -1,0 +1,7 @@
+sub_in, fac10, fac00, colh2o, fac01, taur, colo2, laytrop, jt, indself, selffac, forfrac, colmol, colco2, jt1, jp, sfluxzen, indfor, fac11, selffrac, colch4, taug, forfac, colo3, nlayers
+sub_out, taug, taur
+global_ro
+global_wo
+global_mod
+global_non
+calls, taumol25, taumol20, taumol28, taumol21, taumol17, taumol24, taumol16, taumol23, taumol26, taumol29, taumol22, taumol27, taumol18, taumol19

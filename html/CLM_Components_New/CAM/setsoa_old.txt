@@ -1,0 +1,7 @@
+sub_in, tfld, dt, ncol, xhnm, lchnk, vmr, reaction_rates
+sub_out, vmr
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, outfld

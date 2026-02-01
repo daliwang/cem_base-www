@@ -1,0 +1,13 @@
+sub_param, filter_soilc, num_soilp, num_soilc, filter_soilp, this, bounds
+sub_out
+global_ro, this%livecrootp_storage_patch, this%leafp_patch, this%livestemp_storage_patch, this%deadcrootp_patch, this%grainp_storage_patch, this%prod10p_col, this%prod100p_col, this%livestemp_xfer_patch, this%leafp_storage_patch, this%solutionp_vr_col, this%secondp_vr_col, this%frootp_xfer_patch, this%grainp_patch, this%prod1p_col, this%livecrootp_xfer_patch, this%occlp_vr_col, this%leafp_xfer_patch, this%totpftp_col, this%grainp_xfer_patch, this%deadcrootp_xfer_patch, this%decomp_ppools_vr_col, this%frootp_patch, this%livestemp_patch, this%deadstemp_storage_patch, this%deadstemp_patch, this%retransp_patch, this%deadcrootp_storage_patch, this%totvegp_col, this%livecrootp_patch, this%seedp_col, this%primp_vr_col, this%deadstemp_xfer_patch, this%ptrunc_patch, this%labilep_vr_col, this%ppool_patch, this%frootp_storage_patch, this%ptrunc_vr_col
+global_wo, this%totpftp_patch, this%totcolp_col, this%totecosysp_col
+global_mod, this%cwdp_col, this%totsomp_col, this%primp_col, this%ptrunc_col, this%decomp_ppools_1m_col, this%sminp_col, this%occlp_col, this%dispvegp_patch, this%sminp_vr_col, this%solutionp_col, this%totsomp_1m_col, this%secondp_col, this%totlitp_col, this%decomp_ppools_col, this%totvegp_patch, this%storvegp_patch, this%labilep_col, this%totlitp_1m_col, this%totprodp_col
+global_non
+calls, p2c
+readParams,
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+integer           , intent(in) :: num_soilp       ! number of soil patches in filter
+integer           , intent(in) :: filter_soilp(:) ! filter for soil patches

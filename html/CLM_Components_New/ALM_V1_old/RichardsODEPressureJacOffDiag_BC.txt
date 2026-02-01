@@ -1,0 +1,8 @@
+sub_param, ierr:4, list_id_of_other_goveq:2, B:3, this:1
+sub_out
+global_ro| %itype, itype, NONE| %id_up, id_up, NONE| cur_cond%next, cur_cond, NONE| this%boundary_conditions%first, cur_cond, NONE| %num_connections, num_connections, NONE| %id_dn, id_dn, NONE
+global_wo
+global_mod
+global_non| cur_cond%conn_set, cur_conn_set, NONE
+calls, RichardsFlux, MatSetValuesLocal
+readParams,

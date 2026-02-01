@@ -1,0 +1,7 @@
+sub_in, fractaldim, nmonomer, radius, lqext, falpha_in, carma, lqsca, rc, rmonomer, wavelength, lasym, miertn, m
+sub_out, lqext, lasym, lqsca, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, bhmie, miess, fractal_meanfield

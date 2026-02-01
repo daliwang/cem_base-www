@@ -1,0 +1,12 @@
+sub_param, clmlevel:7, nend:6, nj:4, domain:1, ni:3, nbeg:5, isgrid2d:2
+sub_out
+global_ro
+global_wo| domain%decomped, decomped, NONE| domain%nend, nend, NONE| domain%topo, topo, NONE| domain%glcmask, glcmask, NONE| domain%latc, latc, NONE| domain%area, area, NONE| domain%nbeg, nbeg, NONE| domain%lonc, lonc, NONE| domain%mask, mask, NONE| domain%pftm, pftm, NONE| domain%ns, ns, NONE| domain%frac, frac, NONE
+global_mod| domain%nj, nj, NONE| domain%set, set, NONE| domain%clmlevel, clmlevel, NONE| domain%isgrid2d, isgrid2d, NONE| domain%ni, ni, NONE
+global_non
+calls, shr_sys_abort, domain_clean
+readParams,
+logical, intent(in) :: isgrid2d      ! true => global grid is lat/lon
+integer, intent(in) :: ni,nj         ! grid size, 2d
+integer         , intent(in), optional  :: nbeg,nend  ! beg/end indices
+character(len=*), intent(in), optional  :: clmlevel   ! grid type

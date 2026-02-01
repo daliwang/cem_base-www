@@ -1,0 +1,7 @@
+sub_in, ncol, fdot, x, f
+sub_out, fdot
+global_ro
+global_wo
+global_mod
+global_non
+calls

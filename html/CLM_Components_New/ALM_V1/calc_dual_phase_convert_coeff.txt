@@ -1,0 +1,16 @@
+sub_param, waterstate_vars, bounds, filter, ubj, numf, betrtracer_vars, jtops, lbj, tracercoeff_vars
+sub_out
+global_ro, waterstate_vars%h2osoi_liqvol_col, betrtracer_vars%is_volatile, tracercoeff_vars%aqu2equilsolidcef_col, waterstate_vars%h2osoi_icevol_col, betrtracer_vars%adsorbgroupid, betrtracer_vars%is_h2o, betrtracer_vars%tracer_group_memid, waterstate_vars%air_vol_col, betrtracer_vars%ngwmobile_tracer_groups, tracercoeff_vars%bunsencef_col, betrtracer_vars%volatilegroupid
+global_wo
+global_mod, tracercoeff_vars%gas2bulkcef_mobile_col, tracercoeff_vars%aqu2bulkcef_mobile_col
+global_non
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds                      ! bounds
+integer,                intent(in)    :: lbj, ubj                    ! lower and upper bounds, make sure they are > 0
+integer,                intent(in)    :: jtops(bounds%begc: )        ! top label of each column
+integer,                intent(in)    :: numf                        ! number of columns in column filter
+integer,                intent(in)    :: filter(:)                   ! column filter
+type(betrtracer_type),  intent(in)    :: betrtracer_vars             ! betr configuration information
+type(Waterstate_Type),  intent(in)    :: waterstate_vars             ! water state variables
+type(tracercoeff_type), intent(inout) :: tracercoeff_vars            ! structure containing tracer transport parameters

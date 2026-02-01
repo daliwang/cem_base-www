@@ -1,0 +1,11 @@
+sub_param, bounds, fileo, filei
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, col_activeo, pft_activeo, lun_activeo, col_activei, lun_activei, pft_activei, pftindx, lunindx, colindx
+calls, endrun, pio_closefile, check_dim_level, ncd_pio_openfile, interp_2d_double, pio_seterrorhandling, shr_sys_flush, interp_1d_int, interp_0d_copy, check_dim_subgrid, interp_1d_double, findMinDist
+readParams,
+character(len=*)  , intent(in) :: filei     !input  initial dataset
+character(len=*)  , intent(in) :: fileo    !output initial dataset
+type(bounds_type) , intent(in) :: bounds

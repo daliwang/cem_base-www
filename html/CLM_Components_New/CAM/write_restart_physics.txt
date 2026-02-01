@@ -1,0 +1,7 @@
+sub_in, pbuf2d, File, cam_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, write_prescribed_aero_restart, pbuf_write_restart, pio_write_darray, write_prescribed_ozone_restart, write_prescribed_ghg_restart, chem_write_restart, subcol_write_restart, get_phys_decomp, write_prescribed_volcaero_restart

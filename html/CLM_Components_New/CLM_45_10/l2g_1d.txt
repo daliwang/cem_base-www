@@ -1,0 +1,11 @@
+sub_in, ubg, ubl, lbl, larr, lbg, l2g_scale_type
+sub_out, garr
+global_ro, clm3%g%l%active, clm3%g%l%wtgcell, clm3%g%l%gridcell
+global_wo
+global_mod
+global_non, clm3%g%nlandunits, clm3%g%luni
+calls, build_scale_l2g, endrun
+
+Tree height: 4
+0 , build_scale_l2g, 
+3+, endrun, 

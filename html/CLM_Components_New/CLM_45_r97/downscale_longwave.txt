@@ -1,0 +1,7 @@
+sub_in, num_do_smb_c, filter_do_smb_c, bounds, atm2lnd_inst
+sub_out
+global_ro, forc_t_c, forc_t_g, forc_lwrad_g
+global_wo
+global_mod, forc_lwrad_c
+global_non
+calls, build_normalization, endrun

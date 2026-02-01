@@ -1,0 +1,7 @@
+sub_in, currentPatch
+sub_out
+global_ro, pft%column, col%zi, currentPatch%clm_pno
+global_wo, currentPatch%rootfr_ft
+global_mod
+global_non
+calls

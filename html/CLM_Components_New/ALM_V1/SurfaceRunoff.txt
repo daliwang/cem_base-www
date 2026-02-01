@@ -1,0 +1,17 @@
+sub_param, soilhydrology_vars, soilstate_vars, waterflux_vars, num_hydrologyc, bounds, waterstate_vars, filter_urbanc, num_urbanc, filter_hydrologyc
+sub_out
+global_ro, col%snl, soilstate_vars%wtfact_col, soilhydrology_vars%zwt_col, waterflux_vars%qflx_floodc_col, soilhydrology_vars%frost_table_col, soilhydrology_vars%moist_col, soilhydrology_vars%origflag, waterflux_vars%qflx_snow_h2osfc_col, soilhydrology_vars%max_moist_col, waterflux_vars%qflx_evap_grnd_col, soilhydrology_vars%zwt_perched_col, soilstate_vars%watsat_col, soilhydrology_vars%ice_col, col%dz, soilhydrology_vars%b_infil_col, waterstate_vars%h2osoi_ice_col
+global_wo, soilhydrology_vars%i_0_col
+global_mod, soilhydrology_vars%fracice_col, soilhydrology_vars%max_infil_col, waterstate_vars%h2osoi_liq_col, waterflux_vars%qflx_surf_col, waterflux_vars%qflx_top_soil_col, soilhydrology_vars%fsat_col, soilhydrology_vars%icefrac_col, soilhydrology_vars%fcov_col
+global_non, soilhydrology_vars%hkdepth_col, soilstate_vars%sucsat_col, soilstate_vars%bsw_col, soilstate_vars%hksat_col
+calls, endrun
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                  , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                  , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                  , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars

@@ -1,0 +1,7 @@
+sub_in, dimsizes, bfg, dtype
+sub_out, bfg
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

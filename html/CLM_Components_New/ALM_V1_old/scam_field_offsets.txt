@@ -1,0 +1,15 @@
+sub_param, posNOTonfile:7, ncid:1, found:6, dim1name:2, count:5, start:4, vardesc:3
+sub_out, start, count, found
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, shr_scam_getCloseLatLon, ncd_inqvdims
+readParams,
+class(file_desc_t), intent(inout) :: ncid         ! netcdf file id
+character(len=*)  , intent(in)    :: dim1name     ! dimension 1 name
+type(Var_desc_t)  , intent(inout) :: vardesc      ! variable descriptor
+integer           , intent(inout) :: start(:)     ! start index
+integer           , intent(inout) :: count(:)     ! count to retrieve
+logical, optional , intent(out)   :: found        ! if present return true if found
+logical, optional , intent(in)    :: posNOTonfile ! Position is NOT on this file

@@ -1,0 +1,14 @@
+sub_param, func:8, f2:5, tol:7, x:1, f1:4, x1:2, macheps:6, x2:3
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: x1, x2, f1, f2    !minimum and maximum of the variable domain to search for the solution ci_func(x1) = f1, ci_func(x2)=f2
+real(r8), intent(in) :: macheps           !machine precision
+real(r8), intent(in) :: tol               !the error tolerance
+real(r8), intent(out):: x
+real(r8), intent(in)  :: x
+real(r8), intent(out) :: f

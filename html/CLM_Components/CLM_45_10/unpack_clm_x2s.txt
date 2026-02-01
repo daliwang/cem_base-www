@@ -1,0 +1,7 @@
+sub_in, clm_x2s
+sub_out
+global_ro, itype, gridcell, landunit
+global_wo
+global_mod
+global_non
+calls

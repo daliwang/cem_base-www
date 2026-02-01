@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%id_trc_hrsoi_co2x, id_trc_hrsoi_co2x, NONE| this%id_trc_c14_co2x, id_trc_c14_co2x, NONE| this%nh2o_tracers, nh2o_tracers, NONE| this%id_trc_o17_co2x, id_trc_o17_co2x, NONE| this%id_trc_o17_o2, id_trc_o17_o2, NONE| this%id_trc_o18_o2, id_trc_o18_o2, NONE| this%nsolid_equil_tracers, nsolid_equil_tracers, NONE| this%id_trc_no, id_trc_no, NONE| this%id_trc_o2, id_trc_o2, NONE| this%id_trc_air_co2x, id_trc_air_co2x, NONE| this%id_trc_no2x, id_trc_no2x, NONE| this%id_trc_ch4, id_trc_ch4, NONE| this%ntracer_groups, ntracer_groups, NONE| this%nsolid_equil_tracer_groups, nsolid_equil_tracer_groups, NONE| this%id_trc_nh3x, id_trc_nh3x, NONE| this%nvolatile_tracer_groups, nvolatile_tracer_groups, NONE| this%id_trc_o18_co2x, id_trc_o18_co2x, NONE| this%nsolid_passive_tracers, nsolid_passive_tracers, NONE| this%id_trc_o18_h2o_ice, id_trc_o18_h2o_ice, NONE| this%is_oddstep, is_oddstep, NONE| this%id_trc_no3x, id_trc_no3x, NONE| this%id_trc_dom, id_trc_dom, NONE| this%ngwmobile_tracer_groups, ngwmobile_tracer_groups, NONE| this%id_trc_o18_h2o, id_trc_o18_h2o, NONE| this%id_trc_d_h2o, id_trc_d_h2o, NONE| this%ngwmobile_tracers, ngwmobile_tracers, NONE| this%id_trc_o17_h2o, id_trc_o17_h2o, NONE| this%nsolid_passive_tracer_groups, nsolid_passive_tracer_groups, NONE| this%id_trc_d_h2o_ice, id_trc_d_h2o_ice, NONE| this%betr_simname, betr_simname, NONE| this%id_trc_n2o, id_trc_n2o, NONE| this%id_trc_co2x, id_trc_co2x, NONE| this%id_trc_ar, id_trc_ar, NONE| this%id_trc_n2, id_trc_n2, NONE| this%ntracers, ntracers, NONE| this%id_trc_arrt_co2x, id_trc_arrt_co2x, NONE| this%nvolatile_tracers, nvolatile_tracers, NONE| this%id_trc_c13_co2x, id_trc_c13_co2x, NONE
+global_mod
+global_non
+calls
+readParams,

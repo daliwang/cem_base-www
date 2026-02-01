@@ -1,0 +1,13 @@
+sub_in, set_urb, ptr_col, long_name, fname, set_lake, avgflag, c2l_scale_type, ptr_pft, set_spec, set_nolake, p2c_scale_type, set_noglcmec, set_nourb, ptr_atm, default, ptr_gcell, ptr_lnd, l2g_scale_type, units, type1d_out, ptr_lunit
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, ptr_col, ptr_lnd, ptr_gcell, ptr_lunit, ptr_pft
+calls, get_proc_bounds, masterlist_make_active, masterlist_addfld, endrun
+
+Tree height: 28
+0 , get_proc_bounds, 
+22-, endrun, 
+25+, masterlist_addfld, 
+27-, masterlist_make_active, 

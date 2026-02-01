@@ -1,0 +1,7 @@
+sub_in, pt, delpf, !ldel2, cdxde, grid, cx3, mfy, cy3, cdyde, cdx, vc, cdy, variables, v, uc, mfx, cdydp, cdxdp, delp, u
+sub_out, uc, mfx, delpf, pt, vc, delp, cx3, mfy, cy3
+global_ro, cosp, rdx, coslon, dx, dtxe5, sinlon, dtdxe, f0, acosp, cy, cosl5, dyce, sinl5, dtdx, cose, txe5
+global_wo
+global_mod
+global_non, grid%sc, grid%se, grid%de, grid%dc
+calls, xtpv, tp2d, ytp, pft2d, tp2c

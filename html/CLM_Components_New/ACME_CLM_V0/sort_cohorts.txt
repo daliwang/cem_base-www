@@ -1,0 +1,7 @@
+sub_in, patchptr
+sub_out
+global_ro, current_patch%tallest, next_c, current_c, NULL, udata%storesmallcohort, current_c, NULL, udata%storebigcohort
+global_wo
+global_mod
+global_non, null, null, current_c%shorter, patchptr, udata%storebigcohort, udata%storesmallcohort
+calls, insert_cohort

@@ -1,0 +1,7 @@
+sub_in, fact, num_nolakec, filter_nolakec, dhsdT, bmatrix_ssw, nband, bounds, tk_h2osfc, dtime, tk, c_h2osfc, dz_h2osfc
+sub_out, bmatrix_ssw
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, bounds_clump
+sub_out
+global_ro, bounds_clump%begg
+global_wo, coh%gridcell
+global_mod
+global_non
+calls

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <title>test</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+
+            $(function()
+            {
+                $('#clickme').click(function(){
+                    alert('Im going to start processing');
+
+                    $.ajax({
+                        url: "cgi-bin/submodel_structure.py",
+                        type: "post",
+                        datatype:"json",
+                        data: {'key1':'CanopyFluxes','key2':'Photosynthesis'},
+                        success: function(response){
+                            alert(response.success);
+                            alert(response.message);
+                            alert(response.keys);
+                            alert(response.data);
+                        }
+                    });
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <button id="clickme"> click me </button>
+    </body>
+
+</html>

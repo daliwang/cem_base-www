@@ -1,0 +1,7 @@
+sub_in, lmr_z, gb_mol, ci, c, cair, je, fval, p, atm2lnd_inst, rh_can, photosyns_inst, gs_mol, oair, par_z, iv
+sub_out, fval, gs_mol
+global_ro, ko, forc_pbot, vcmax_z, bbb, tpu_z, mbb, kp_z, qe, theta_cj, kc, c3flag, cp
+global_wo
+global_mod, ap, ac, an, ag, aj
+global_non
+calls, quadratic

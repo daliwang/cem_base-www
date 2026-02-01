@@ -1,0 +1,7 @@
+sub_in, filter_urbanl, num_urbanc, bounds, surfalb_inst, num_urbanp, solarabs_inst, waterstate_inst, urbanparams_inst, filter_urbanp, num_urbanl, filter_urbanc
+sub_out
+global_ro, alb_improad_dir, coli, frac_sno, alb_perroad_dir, alb_improad_dif, ctype, alb_roof_dif, alb_roof_dir, alb_perroad_dif
+global_wo, sabs_improad_dif, fabd_sun, sabs_shadewall_dif, sabs_sunwall_dir, sabs_improad_dir, sabs_perroad_dif, ftid, albi, ftdd, ftii, sabs_perroad_dir, fabi_sha, fabi, sabs_shadewall_dir, fabd, fabi_sun, sabs_sunwall_dif, sabs_roof_dif, albd, fabd_sha, sabs_roof_dir
+global_mod, albgrd, albgri
+global_non, bounds%endl, bounds%begl, lun%wtroad_perv, lun%canyon_hwr, urbanparams_inst%alb_wall_dif, urbanparams_inst%alb_wall_dir
+calls, net_solar, SnowAlbedo, incident_direct, incident_diffuse

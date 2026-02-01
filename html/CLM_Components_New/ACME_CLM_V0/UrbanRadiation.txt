@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, filter_urbanc, filter_urbanl, num_urbanc, filter_nourbanl, energyflux_vars, solarabs_vars, surfalb_vars, urbanparams_vars, num_urbanp, filter_urbanp, temperature_vars, num_nourbanl, num_urbanl, bounds, atm2lnd_vars
+sub_out
+global_ro, urbanparams_vars%em_improad, col%itype, waterstate_vars%frac_sno_col, atm2lnd_vars%forc_lwrad_not_downscaled_grc, pft%column, pft%landunit, atm2lnd_vars%forc_solad_grc, lun%coli, temperature_vars%t_grnd_col, urbanparams_vars%em_perroad, lun%colf, pft%gridcell, lun%gridcell, urbanparams_vars%em_roof, atm2lnd_vars%forc_solai_grc
+global_wo, energyflux_vars%eflx_lwrad_net_u_patch, energyflux_vars%eflx_lwrad_out_patch, solarabs_vars%fsa_u_patch, energyflux_vars%eflx_lwrad_net_patch
+global_mod, solarabs_vars%sabs_perroad_dif_lun, solarabs_vars%sabv_patch, solarabs_vars%sabs_shadewall_dir_lun, solarabs_vars%fsa_patch, solarabs_vars%sabs_roof_dir_lun, solarabs_vars%sabg_patch, solarabs_vars%sabs_perroad_dir_lun, solarabs_vars%sabs_sunwall_dir_lun, solarabs_vars%sabs_sunwall_dif_lun, solarabs_vars%sabs_improad_dif_lun, solarabs_vars%sabs_roof_dif_lun, solarabs_vars%sabs_shadewall_dif_lun, solarabs_vars%sabs_improad_dir_lun
+global_non, temperature_vars%t_ref2m_patch, surfalb_vars%albi_patch, lun%wtroad_perv, urbanparams_vars%em_wall, bounds%begl, lun%canyon_hwr, surfalb_vars%albd_patch, atm2lnd_vars%forc_solar_grc, bounds%endl
+calls, net_longwave, get_curr_date

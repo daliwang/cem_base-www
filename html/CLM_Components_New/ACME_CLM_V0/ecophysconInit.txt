@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo, ecophyscon%tree
+global_mod, ecophyscon%z0mr, ecophyscon%evergreen, ecophyscon%lflitcn, ecophyscon%croot_stem, ecophyscon%woody, ecophyscon%taul, ecophyscon%stress_decid, ecophyscon%ffrootcn, ecophyscon%fr_flab, ecophyscon%rhol, ecophyscon%dsladlai, ecophyscon%leafcn, ecophyscon%taus, ecophyscon%c3psn, ecophyscon%deadwdcn, ecophyscon%fr_flig, ecophyscon%season_decid, ecophyscon%fcur, ecophyscon%lf_fcel, ecophyscon%dleaf, ecophyscon%flnr, ecophyscon%smpsc, ecophyscon%fstemcn, ecophyscon%displar, ecophyscon%froot_leaf, ecophyscon%livewdcn, ecophyscon%fleafcn, ecophyscon%rhos, ecophyscon%fertnitro, ecophyscon%lf_flab, ecophyscon%graincn, ecophyscon%lf_flig, ecophyscon%leaf_long, ecophyscon%fnitr, ecophyscon%stem_leaf, ecophyscon%xl, ecophyscon%fr_fcel, ecophyscon%slatop, ecophyscon%frootcn, ecophyscon%flivewd, ecophyscon%smpso, ecophyscon%dwood
+global_non
+calls

@@ -1,0 +1,9 @@
+sub_param, this, do_mpc
+sub_out
+global_ro
+global_wo, this%lid_no3_den, this%lid_ch4, this%lid_lit3_compet, this%lid_o2_aere_reac, this%lid_denit_compet, this%lid_n2, this%lid_minn_nh4_plant, this%n_loc, this%nprimvars, this%lid_som1_compet, this%lid_clay_compet, this%nom_totelms, this%lid_nitri_compet, this%lid_som2_compet, this%c_loc, this%lid_minn_no3_plant, this%lid_ar, this%lid_n2o, this%lid_nh4_mpcbuf, this%lid_nh4_nit, this%lid_co2, this%lid_som3_compet, this%nstvars, this%lid_lit2_compet, this%lid_cwd_compet, this%nreactions, this%lid_co2_hr, this%lid_minn_nh4_immob, this%ncompets, this%lid_n2o_nit, this%lid_o2_paere, this%lid_plant_compet, this%lid_o2, this%lid_nh4_supp, this%lid_minn_no3_immob, this%lid_lit1_compet
+global_mod, this%nelms, this%nom_pools
+global_non
+calls
+readParams,
+logical   , intent(in) :: do_mpc

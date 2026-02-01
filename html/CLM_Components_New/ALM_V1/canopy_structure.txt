@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %br, copyc, >currentCohort%shorter, %bstore, currentPatch%younger, currentSite%oldest_patch, copyc, %bsw, %pft, %bl, %area, %bdead
+global_wo, %NCL_p, %ncl_p
+global_mod, %prom_weight, copyc%n, %n, %canopy_layer, copyc%canopy_layer, %excl_weight, %leaf_litter, %c_area, copyc%c_area, %CWD_BG, %dbh, copyc%dbh, %root_litter, %CWD_AG, currentCohort%shorter, currentPatch%tallest
+global_non, copyc, null, currentCohort%taller, currentCohort
+calls, terminate_cohorts, copy_cohort, fuse_cohorts
+readParams,
+type(site), intent(inout), pointer   :: currentSite

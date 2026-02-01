@@ -1,0 +1,7 @@
+sub_in, sa, sx, incx, n
+sub_out, sx
+global_ro
+global_wo
+global_mod
+global_non
+calls

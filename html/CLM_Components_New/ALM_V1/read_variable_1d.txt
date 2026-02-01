@@ -1,0 +1,13 @@
+sub_param, data, this, nt
+sub_out, data
+global_ro, this%varname, this%conversion_factor
+global_wo
+global_mod
+global_non
+calls, , ncd_io, endrun, check_sums_equal_1
+readParams,read_variable_1d
+class(dyn_var_type) , intent(inout) :: this ! this object (needs to be intent(inout) because this%dynfile is intent(inout) in the ncd_io call)
+class(dyn_var_type) , intent(inout) :: this ! this object (needs to be intent(inout) because this%dynfile is intent(inout) in the ncd_io call)
+class(dyn_var_type) , intent(inout) :: this ! this object (needs to be intent(inout) because this%dynfile is intent(inout) in the ncd_io call)
+integer             , intent(in)    :: nt   ! time index to read
+real(r8)            , intent(out) :: data(:)

@@ -1,0 +1,7 @@
+sub_in, al, a6, ihigh, jhigh, ar, dm, ilow, im, lmt, jan, p, ja, jh11, jl11, jlow
+sub_out, ar, al, a6
+global_ro
+global_wo
+global_mod
+global_non
+calls

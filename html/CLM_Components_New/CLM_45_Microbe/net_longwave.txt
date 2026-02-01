@@ -1,0 +1,12 @@
+sub_in, em_perroad, t_roof, em_improad, canyon_hwr, lwup_perroad, t_perroad, em_wall, em_roof, ubl, num_urbanl, lwdown, filter_urbanl, lwup_improad, t_improad, t_shadewall, lwnet_improad, lbl, t_sunwall, wtroad_perv, lwnet_perroad
+sub_out, lwup_canyon, lwup_shadewall, lwnet_roof, lwnet_sunwall, lwnet_canyon, lwup_roof, lwnet_shadewall, lwup_sunwall
+global_ro, clm3%g%l%lps%vf_sr, clm3%g%l%lps%vf_ww, clm3%g%l%lps%vf_wr, clm3%g%l%lps%vf_rw, clm3%g%l%lps%vf_sw
+global_wo
+global_mod
+global_non
+calls, endrun
+
+Tree height: 15
+1+, endrun, 
+10+, endrun, 
+14+, endrun, 

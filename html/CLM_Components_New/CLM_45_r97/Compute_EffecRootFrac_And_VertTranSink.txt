@@ -1,0 +1,7 @@
+sub_in, num_hydrologyc, soilstate_inst, bounds, waterflux_inst, vert_tran_sink, filter_hydrologyc
+sub_out, vert_tran_sink
+global_ro, rootr_patch, qflx_tran_veg_col, qflx_tran_veg_patch
+global_wo
+global_mod, rootr_col
+global_non
+calls

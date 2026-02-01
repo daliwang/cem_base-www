@@ -1,0 +1,7 @@
+sub_in, dust_emis_fact, soil_erod_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp, lininterp_init, get_rlat_all_p, get_rlon_all_p, lininterp_finish, getfil, endrun, cam_pio_openfile

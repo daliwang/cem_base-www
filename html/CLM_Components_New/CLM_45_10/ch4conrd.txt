@@ -1,0 +1,12 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, find_nlgroup_name, mpi_bcast, relavu, endrun
+
+Tree height: 6
+0 , mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, 
+1+, find_nlgroup_name, relavu, 
+3+, endrun, 

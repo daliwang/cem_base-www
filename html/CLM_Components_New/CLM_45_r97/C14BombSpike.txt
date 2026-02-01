@@ -1,0 +1,7 @@
+sub_in, rc14_atm
+sub_out, rc14_atm
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_curr_date

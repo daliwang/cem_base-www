@@ -1,0 +1,7 @@
+sub_in, list_idx, num_name_cw, num_name, m_idx, nspec, mode_type
+sub_out, mode_type, nspec, num_name, num_name_cw
+global_ro, nmodes, idx
+global_wo
+global_mod
+global_non, ma_list
+calls, endrun

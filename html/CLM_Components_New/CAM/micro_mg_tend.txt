@@ -1,0 +1,7 @@
+sub_in, qcn, frzrdto, nrouto2, areflzo, fcsrflo, nctendo, nficeo, rndstn, mgcols, cldn, mnuccto, rercldo, deffio, qin, ncalo, precto, mnuccdo, cmeiout, precio, nevapro, praino, praio, qn, naain, rate1ord_cw2pr_st, qisedteno, mnuccro, dsouto2, qcreso, nsouto2, qrouto, bergo, effio, pint, accre_enhann, sflxo, qcsevapo, pgamrado, freqso, qvlato, errstring, psacwso, freqro, acsrflo, deltatin, relvarn, tlato, lamcrado, qvreso, evapsnowo, mnuccco, vtrmco, pdeln, msacwio, freflo, drouto2, top_lev, npccnin, reflo, effco, tnd_nsnown, qsouto2, qsouto, nlev, csrflo, qitendo, homoo, qctendo, vtrmio, prodsnowo, effco_fn, prco, prcio, rflxo, nsouto, qrouto2, re_icen, tnd_qsnown, pracso, ncaio, tn, pn, reff_raino, liqcldf, dsouto, bergso, cmeouto, qcsedteno, melto, icecldf, areflo, nrouto, meltsdto, mgncol, naconin, ncn, qisevapo, nitendo, qireso, reff_snowo, prao, nin
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls, evaporate_sublimate_precip, ice_autoconversion, size_dist_param_snow, ice_deposition_sublimation_init, contact_freezing, kk2000_liq_autoconversion, immersion_freezing, size_dist_param_liq, heterogeneous_rain_freezing, accrete_cloud_water_rain, size_dist_param_rain, qsat_water, size_dist_param_ice, snow_self_aggregation, calc_rercld, accrete_rain_snow, pack_array, bergeron_process, qsat_ice, unpack_array, accrete_cloud_ice_snow, accrete_cloud_water_snow, self_collection_rain, secondary_ice_production

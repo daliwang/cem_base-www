@@ -1,0 +1,7 @@
+sub_in, pstate, icall, pbuf, rstate
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, rad_cnst_get_gas

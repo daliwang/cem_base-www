@@ -1,0 +1,7 @@
+sub_in, index, errcode, pbuf, start, copy_if_needed, kount, col_type, field
+sub_out, pbuf, errcode
+global_ro
+global_wo, dimsizes
+global_mod
+global_non
+calls, buffer_get_field_ptr, subcol_field_copy, endrun, buffer_field_allocate

@@ -1,0 +1,18 @@
+sub_param, neq:7, ubj:3, lbj:2, bounds:1, jtops:6, filter:5, numf:4, betrtracer_vars:9, y0:11, centurybgc_vars:10, tracerstate_vars:8
+sub_out, y0
+global_ro| betrtracer_vars%id_trc_o2, id_trc_o2, NONE| betrtracer_vars%id_trc_nh3x, id_trc_nh3x, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile_col, NONE| betrtracer_vars%id_trc_ar, id_trc_ar, NONE| tracerstate_vars%tracer_conc_solid_passive_col, tracer_conc_solid_passive_col, NONE| betrtracer_vars%id_trc_ch4, id_trc_ch4, NONE| betrtracer_vars%id_trc_n2o, id_trc_n2o, NONE| betrtracer_vars%id_trc_n2, id_trc_n2, NONE| betrtracer_vars%id_trc_co2x, id_trc_co2x, NONE| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)            , intent(in) :: bounds
+integer                      , intent(in) :: lbj, ubj
+integer                      , intent(in) :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer                      , intent(in) :: numf
+integer                      , intent(in) :: filter(:)
+integer                      , intent(in) :: neq
+type(betrtracer_type)        , intent(in) :: betrtracer_vars                    ! betr configuration information
+type(tracerstate_type)       , intent(in) :: tracerstate_vars
+type(centurybgc_type)        , intent(in) :: centurybgc_vars
+real(r8)                     , intent(out):: y0(neq, bounds%begc:bounds%endc, lbj:ubj)

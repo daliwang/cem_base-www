@@ -1,0 +1,13 @@
+sub_param, num_soilc:2, phosphorusstate_vars:4, phosphorusflux_vars:5, filter_soilc:3, bounds:1
+sub_out
+global_ro| phosphorusstate_vars%totcolp_col, totcolp, NONE| phosphorusflux_vars%fire_ploss_col, col_fire_ploss, NONE| grc%londeg, londeg, NONE| grc%latdeg, latdeg, NONE| phosphorusflux_vars%dwt_ploss_col, dwt_ploss, NONE| phosphorusflux_vars%secondp_to_occlp_col, secondp_to_occlp_col, NONE| phosphorusflux_vars%pinputs_col, pinputs_col, NONE| phosphorusflux_vars%supplement_to_sminp_col, supplement_to_sminp, NONE| phosphorusstate_vars%begpb_col, col_begpb, NONE| phosphorusflux_vars%product_ploss_col, product_ploss, NONE| phosphorusflux_vars%sminp_leached_col, sminp_leached, NONE| phosphorusflux_vars%decomp_cascade_sminp_flux_col, decomp_cascade_sminp_flux_col, NONE| col%gridcell, gridcell, NONE| decomp_cascade_con%cascade_receiver_pool, cascade_receiver_pool, NONE| phosphorusflux_vars%fert_p_to_sminp_col, fert_p_to_sminp_col, NONE| phosphorusflux_vars%primp_to_labilep_col, primp_to_labilep_col, NONE
+global_wo
+global_mod| phosphorusflux_vars%poutputs_col, col_poutputs, NONE| phosphorusstate_vars%endpb_col, col_endpb, NONE| phosphorusstate_vars%errpb_col, col_errpb, NONE
+global_non| phosphorusstate_vars%totlitp_col, totlitp, NONE| phosphorusflux_vars%leafp_to_litter_patch, leafp_to_litter, NONE| phosphorusflux_vars, pf, NONE| phosphorusflux_vars%frootp_to_litter_patch, frootp_to_litter, NONE| phosphorusstate_vars%totsomp_col, totsomp, NONE| phosphorusstate_vars%cwdp_col, cwdp, NONE| phosphorusstate_vars%totpftp_col, totpftp, NONE| phosphorusflux_vars%sminp_to_plant_col, sminp_to_plant, NONE| phosphorusstate_vars%sminp_col, sminp, NONE
+calls, endrun, p2c
+readParams,
+type(bounds_type)         , intent(in)    :: bounds
+integer                   , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                   , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

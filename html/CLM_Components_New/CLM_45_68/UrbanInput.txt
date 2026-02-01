@@ -1,0 +1,14 @@
+sub_in, begg, mode, endg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, numurbl, variable, file
+calls, ncd_io, ncd_inqdlen, getfil, ncd_pio_closefile, ncd_pio_openfile, ncd_inqdid, ncd_inqfdims, endrun
+
+Tree height: 7
+2+, getfil, ncd_pio_openfile, ncd_inqdid, 
+5-, endrun, 
+6+, endrun, 
+3+, ncd_inqfdims, ncd_inqdid, ncd_inqdlen, ncd_inqdid, ncd_inqdlen, ncd_inqdid, ncd_inqdlen, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_pio_closefile, 
+4+, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, endrun, 

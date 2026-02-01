@@ -1,0 +1,12 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, shr_log_errMsg
+calls, shr_mpi_bcast, shr_strdata_create, shr_nl_find_group_name, shr_strdata_print, clm_domain_mct, relavu, endrun
+
+Tree height: 4
+0 , shr_mpi_bcast, shr_mpi_bcast, shr_mpi_bcast, shr_mpi_bcast, clm_domain_mct, shr_strdata_create, 
+1+, shr_nl_find_group_name, relavu, shr_strdata_print, 
+3+, endrun, 

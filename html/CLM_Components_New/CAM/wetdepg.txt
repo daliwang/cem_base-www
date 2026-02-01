@@ -1,0 +1,7 @@
+sub_in, t, deltat, precs, p, solconst, rain, cldc, evaps, icwmr1, tracer, cldt, evapc, scavt, cwat, icwmr2, molwt, fracis, cldv, pdel, iscavt, ncol, q, cmfdqr
+sub_out, scavt, iscavt, fracis
+global_ro
+global_wo
+global_mod
+global_non
+calls

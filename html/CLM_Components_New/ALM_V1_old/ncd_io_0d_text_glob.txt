@@ -1,0 +1,15 @@
+sub_param, data:2, nt:6, posNOTonfile:7, varname:1, flag:3, readvar:5, ncid:4
+sub_out, data
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqvid
+readParams,
+class(file_desc_t),         intent(inout) :: ncid         ! netcdf file id
+character(len=*),           intent(in)    :: flag         ! 'read' or 'write'
+character(len=*),           intent(in)    :: varname      ! variable name
+character(len=*)         ,           intent(inout) :: data ! raw data
+logical         , optional, intent(out)   :: readvar      ! was var read?
+integer         , optional, intent(in)    :: nt           ! time sample index
+logical         , optional, intent(in)    :: posNOTonfile ! position is NOT on this file

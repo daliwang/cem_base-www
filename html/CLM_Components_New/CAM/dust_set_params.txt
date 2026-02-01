@@ -1,0 +1,7 @@
+sub_in, stk_crc, dmt_grd, nbin, dmt_vwr
+sub_out, stk_crc, dmt_vwr
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

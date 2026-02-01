@@ -1,0 +1,14 @@
+sub_param, num_soilp, frootc_patch, filter_soilc, filter_soilp, this, bounds, num_soilc
+sub_out
+global_ro, pft%column, this%plant_totn_demand_flx_col
+global_wo, this%plant_minn_uptake_potential_patch, this%plant_minn_uptake_potential_col
+global_mod
+global_non
+calls, p2c
+readParams,
+type(bounds_type) , intent(in)    :: bounds
+integer           , intent(in)    :: num_soilc
+integer           , intent(in)    :: filter_soilc(:)
+integer           , intent(in)    :: num_soilp
+integer           , intent(in)    :: filter_soilp(:)
+real(r8)          , intent(in)    :: frootc_patch(bounds%begp:bounds%endp)

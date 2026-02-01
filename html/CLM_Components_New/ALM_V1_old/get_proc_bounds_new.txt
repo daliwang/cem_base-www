@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro
+global_wo| bounds%level, level, NONE| bounds%clump_index, clump_index, NONE
+global_mod| bounds%endt, endt, NONE| procinfo%endt, endt, NONE| bounds%begt, begt, NONE| procinfo%begt, begt, NONE| procinfo%begCohort, begCohort, NONE| bounds%begCohort, begCohort, NONE| bounds%begp, begp, NONE| procinfo%begp, begp, NONE| bounds%endCohort, endCohort, NONE| procinfo%endCohort, endCohort, NONE| procinfo%begl, begl, NONE| bounds%begl, begl, NONE| bounds%endl, endl, NONE| procinfo%endl, endl, NONE| bounds%begc, begc, NONE| procinfo%begc, begc, NONE| procinfo%endg, endg, NONE| bounds%endg, endg, NONE| bounds%endp, endp, NONE| procinfo%endp, endp, NONE| bounds%endc, endc, NONE| procinfo%endc, endc, NONE| procinfo%begg, begg, NONE| bounds%begg, begg, NONE
+global_non
+calls, shr_sys_abort
+readParams,
+type(bounds_type), intent(out) :: bounds ! processor bounds bounds

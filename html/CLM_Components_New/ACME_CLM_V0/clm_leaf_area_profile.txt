@@ -1,0 +1,7 @@
+sub_in, cs_t, canopystate_vars, waterstate_vars
+sub_out
+global_ro, %clm_pno, currentSite%oldest_patch, currentPatch%younger, currentCohort%taller, currentPatch%shortest, %column, waterstate_vars%snow_depth_col, %pft, EDecophyscon%crown, %area, ecophyscon%vertical_canopy_frac, %total_canopy_area, %canopy_layer, %hite, waterstate_vars%frac_sno_eff_col
+global_wo, canopystate_vars%tsai_patch, canopystate_vars%frac_veg_nosno_alb_patch, %present
+global_mod, %canopy_layer_lai, 1:currentPatch%nrad, %nrad, %treelai, %NV, %sai, %treesai, %esai_profile, !currentPatch%esai_profile, canopystate_vars%esai_patch, %tlai_profile, %canopy_area_profile, %ncan, canopystate_vars%elai_patch, %c_area, canopystate_vars%tlai_patch, %tsai_profile, waterstate_vars%snowdp_col, %canopy_area, %lai, %elai_profile, !currentPatch%elai_profile
+global_non, cs_t
+calls

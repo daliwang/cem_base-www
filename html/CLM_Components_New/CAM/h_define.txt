@@ -1,0 +1,7 @@
+sub_in, t, restart
+sub_out
+global_ro, varid, latdeg, w, londeg_st, w_staggered, mdims, latdeg_st
+global_wo
+global_mod, tape, londeg
+global_non
+calls, write_hist_coord_vars, endrun, get_rlat_all_p, write_hist_coord_attrs, get_horiz_grid_dim_d, pio_write_darray, get_phys_decomp, get_ref_date, get_horiz_grid_d, add_interp_attributes, cam_pio_createfile, sat_hist_define, get_rlon_all_p

@@ -1,0 +1,7 @@
+sub_in, carbonstate_vars, frictionvel_vars, filter_soilp, dgvs_vars, canopystate_vars, waterstate_vars, cnstate_vars, num_soilp
+sub_out
+global_ro, dgv_ecophyscon%allom3, carbonstate_vars%deadstemc_patch, cnstate_vars%farea_burned_col, ecophyscon%slatop, ecophyscon%displar, ecophyscon%dwood, cnstate_vars%harvdate_patch, ecophyscon%dsladlai, dgvs_vars%nind_patch, waterstate_vars%snow_depth_col, pft%gridcell, pft%itype, ecophyscon%woody, frictionvel_vars%forc_hgt_u_patch, dgvs_vars%fpcgrid_patch, ecophyscon%z0mr, carbonstate_vars%leafc_patch, pft%column, dgv_ecophyscon%allom2
+global_wo, canopystate_vars%frac_veg_nosno_alb_patch
+global_mod, canopystate_vars%hbot_patch, cnstate_vars%htmx_patch, canopystate_vars%htop_patch, canopystate_vars%tlai_patch, canopystate_vars%esai_patch, canopystate_vars%tsai_patch, cnstate_vars%peaklai_patch, canopystate_vars%elai_patch
+global_non
+calls

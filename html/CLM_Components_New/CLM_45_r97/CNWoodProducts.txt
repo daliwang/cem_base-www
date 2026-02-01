@@ -1,0 +1,7 @@
+sub_in, cnveg_nitrogenstate_inst, c14_cnveg_carbonstate_inst, num_soilc, filter_soilc, cnveg_nitrogenflux_inst, cnveg_carbonflux_inst, c13_cnveg_carbonflux_inst, cnveg_carbonstate_inst, c14_cnveg_carbonflux_inst, c13_cnveg_carbonstate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

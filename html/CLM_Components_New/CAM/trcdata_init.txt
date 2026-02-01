@@ -1,0 +1,7 @@
+sub_in, data_fixed_ymd, flds, datapath, filelist, filename, file, specifier, data_type, data_fixed_tod, data_cycle_yr, rmv_file
+sub_out, flds
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_time_float_from_date, specify_fields, pio_seterrorhandling, mpibcast, get_dimension, xy_interp_init, open_trc_datafile, endrun, get_model_time

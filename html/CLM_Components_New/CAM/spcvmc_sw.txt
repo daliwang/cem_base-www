@@ -1,0 +1,7 @@
+sub_in, forfrac, indself, puvcddir, puvfd, jt, jp, jt1, pbbcu, layswtch, ptaucmc, laylow, indfor, coln2o, colch4, pomga, ptaua, pnifu, ptaormc, istart, pbbfd, iout, palbd, co2mult, idelm, pasycmc, laytrop, pnicd, adjflux, tbound, pbbfu, icpr, fac00, lchnk, pbbfsu, pcldfmc, pavel, pz, pnicddir, pbbfddir, pbbcd, colh2o, puvcd, wkl, fac11, colo2, colmol, pomgcmc, fac01, pbbcddir, palbp, tavel, pasya, forfac, colco2, puvfddir, selffrac, prmu0, colo3, tz, iend, selffac, pbbfsd, iplon, pnicu, coldry, pnifddir, fac10, pnifd, nlayers
+sub_out, pnifddir, pnifd, pbbcddir, pbbcu, pnicd, pbbfsd, pbbfu, pnicu, puvcd, puvcddir, puvfddir, pbbfsu, puvfd, pnifu, pnicddir, pbbfddir, pbbcd, pbbfd
+global_ro
+global_wo
+global_mod
+global_non
+calls, taumol_sw, vrtqdr_sw, reftra_sw

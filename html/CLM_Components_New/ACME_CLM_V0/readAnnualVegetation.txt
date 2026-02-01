@@ -1,0 +1,7 @@
+sub_in, canopystate_vars, bounds
+sub_out
+global_ro, ldomain%nj, ldomain%ns, ldomain%ni, pft%gridcell
+global_wo, canopystate_vars%mlaidiff_patch, canopystate_vars%annlai_patch
+global_mod
+global_non
+calls, ncd_inqfdims, getfil, check_dim, endrun, ncd_pio_closefile, ncd_io, shr_scam_getCloseLatLon, ncd_pio_openfile

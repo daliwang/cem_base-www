@@ -1,0 +1,7 @@
+sub_in, liquid_opticalThickness, snow_opticalThickness, retrievedSize, isccpTau, pressureLayers, temp, waterSize, pressureLevels, snowSize, ice_opticalThickness, iceSize, retrievedCloudTopPressure, retrievedPhase, retrievedTau, isccpCloudTopPressure
+sub_out, retrievedSize, retrievedTau, retrievedPhase, retrievedCloudTopPressure
+global_ro
+global_wo
+global_mod
+global_non
+calls, complain_and_die

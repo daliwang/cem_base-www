@@ -1,0 +1,13 @@
+sub_param, coszen, surfalb_vars, num_vegsol, filter_vegsol, bounds
+sub_out
+global_ro, ecophyscon%xl, gridCellEdState%clmgcell, surfalb_vars%albgri_col, surfalb_vars%albgrd_col, ecophyscon%rhol, pft%column, ecophyscon%taul, pft%gridcell, gridCellEdState%esai_profile, currentPatch%younger, gridCellEdState, EDpft%ED_patch, gridCellEdState%nrad, surfalb_vars%nrad_patch, gridCellEdState%canopy_area_profile, gridCellEdState%elai_profile
+global_wo, gridCellEdState%present, surfalb_vars%ftdd_patch, surfalb_vars%ftid_patch, gridCellEdState%tr_soil_dif, gridCellEdState%fabd_sha_z, surfalb_vars%fabd_sha_z_patch, surfalb_vars%ftii_patch, gridCellEdState%fabi_sha_z, surfalb_vars%fabi_sha_z_patch, gridCellEdState%fabd_sun_z, surfalb_vars%fabd_sun_z_patch, gridCellEdState%fabi_sun_z, surfalb_vars%fabi_sun_z_patch
+global_mod, gridCellEdState%sabs_dif, surfalb_vars%albd_patch, gridCellEdState%tr_soil_dir_dif, gridCellEdState%fabd, surfalb_vars%fabd_patch, gridCellEdState%fabi, surfalb_vars%fabi_patch, gridCellEdState%sabs_dir, gridCellEdState%f_sun, gridCellEdState%tr_soil_dir, surfalb_vars%albi_patch
+global_non, surfalb_vars%fabd_sha_patch, ecophyscon%rhos, surfalb_vars%vcmaxcintsun_patch, surfalb_vars%fabi_sun_patch, surfalb_vars%vcmaxcintsha_patch, surfalb_vars%fabd_sun_patch, surfalb_vars%fabi_sha_patch, surfalb_vars%fsun_z_patch, ecophyscon%taus
+calls
+readParams,
+type(bounds_type)  , intent(in)    :: bounds                 ! bounds
+integer            , intent(in)    :: filter_vegsol(:)       ! filter for vegetated pfts with coszen>0
+integer            , intent(in)    :: num_vegsol             ! number of vegetated pfts where coszen>0
+real(r8)           , intent(in)    :: coszen( bounds%begp: ) ! cosine solar zenith angle for next time step [pft]
+type(surfalb_type) , intent(inout) :: surfalb_vars

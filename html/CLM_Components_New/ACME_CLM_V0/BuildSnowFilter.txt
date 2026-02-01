@@ -1,0 +1,7 @@
+sub_in, num_nolakec, filter_nosnowc, num_nosnowc, bounds, num_snowc, filter_snowc, filter_nolakec
+sub_out, num_snowc, num_nosnowc, filter_snowc, filter_nosnowc
+global_ro
+global_wo
+global_mod
+global_non
+calls

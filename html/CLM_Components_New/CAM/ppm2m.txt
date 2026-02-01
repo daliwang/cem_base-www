@@ -1,0 +1,7 @@
+sub_in, km, kord, delp, i2, i1, a4, iv
+sub_out, a4
+global_ro
+global_wo
+global_mod
+global_non
+calls, steepz, kmppm

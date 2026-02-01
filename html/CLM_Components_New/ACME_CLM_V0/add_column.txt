@@ -1,0 +1,7 @@
+sub_in, ci, li, wtlunit, ctype
+sub_out, ci
+global_ro
+global_wo, col%landunit, col%itype
+global_mod, col%wtlunit, lun%gridcell, col%gridcell
+global_non
+calls

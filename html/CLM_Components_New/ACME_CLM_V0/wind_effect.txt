@@ -1,0 +1,7 @@
+sub_in, currentSite, atm2lnd_vars
+sub_out
+global_ro, atm2lnd_vars%wind24_patch, currentPatch%tallest, currentCohort%shorter, currentSite%oldest_patch%clm_pno, currentPatch%area, %area, >currentSite%oldest_patch;, %c_area
+global_wo, %effect_wspeed
+global_mod, currentPatch%younger, %total_tree_area, currentPatch%total_tree_area
+global_non
+calls

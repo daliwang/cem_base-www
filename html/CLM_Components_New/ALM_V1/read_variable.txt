@@ -1,0 +1,11 @@
+sub_param, nt, this, data
+sub_out
+global_ro, this%data_shape
+global_wo
+global_mod
+global_non
+calls, endrun, read_variable_1d, read_variable_2d
+readParams,read_variable
+class(dyn_var_type) , intent(inout) :: this    ! this object
+integer             , intent(in)    :: nt      ! time index to read
+real(r8)            , intent(out)   :: data(:) ! variable holding data read from file

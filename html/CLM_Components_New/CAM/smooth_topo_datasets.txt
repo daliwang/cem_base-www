@@ -1,0 +1,7 @@
+sub_in, elem, hybrid, nets, nete, sghdyn, phis, sgh30dyn
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, smooth_phis

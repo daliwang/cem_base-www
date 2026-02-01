@@ -1,0 +1,12 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, opnfil, mpi_bcast, relavu, endrun
+
+Tree height: 4
+0 , mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, mpi_bcast, 
+1+, opnfil, relavu, 
+2+, endrun, 

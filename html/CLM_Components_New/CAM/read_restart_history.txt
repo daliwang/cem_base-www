@@ -1,0 +1,7 @@
+sub_in, File
+sub_out
+global_ro
+global_wo
+global_mod, tape
+global_non, tape
+calls, setup_interpolation_and_define_vector_compliments, cam_pio_openfile, pio_setframe, sat_hist_init, pio_seterrorhandling, shr_sys_getenv, sat_hist_define, pio_closefile, mpibcast, h_zero, get_decomp, h_inquire, add_hist_coord, getfil, endrun, strip_null, pio_read_darray, column_init

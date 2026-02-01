@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cch4%conc_o2_unsat, cws%h2osoi_vol, ccf%phr_vr, cch4%o2_decomp_depth_unsat, cps%watfc, cch4%o2_decomp_depth_sat, cps%dz, cps%cellorg, cch4%conc_o2_sat, cns%smin_no3_vr, cps%sucsat, cws%finundated, ccf%w_scalar, cps%bd, cns%smin_nh4_vr, cps%watsat, cws%h2osoi_liq, ccf%t_scalar, cps%soilpsi, cps%bsw, ces%t_soisno
+global_wo, cnf%pot_f_denit_vr, cnf%n2_n2o_ratio_denit_vr
+global_mod, cnf%anaerobic_frac, cnf%k_nitr_h2o_vr, cnf%diffus, cnf%k_nitr_vr, cnf%r_psi, cnf%smin_no3_massdens_vr, cnf%wfps_vr, cnf%k_nitr_ph_vr, cnf%soil_bulkdensity, cnf%ratio_k1, cnf%pot_f_nit_vr, cnf%fmax_denit_carbonsubstrate_vr, cnf%fr_WFPS, cnf%soil_co2_prod, cnf%ratio_no3_co2, cnf%k_nitr_t_vr, cnf%f_denit_base_vr, cnf%fmax_denit_nitrate_vr
+global_non
+calls
+
+Tree height: 4

@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, nind, woody, fpcgrid, farea_burned, dwood, gridcell, column, slatop, harvdate, snow_depth, z0mr, itype, deadstemc, allom3, forc_hgt_u_pft, leafc, displar, dsladlai, allom2
+global_wo, frac_veg_nosno_alb
+global_mod, peaklai, hbot, htmx, tsai, elai, esai, htop, tlai
+global_non
+calls

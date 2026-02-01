@@ -1,0 +1,13 @@
+sub_param, filter_soilc, num_soilc, phosphorusstate_vars, phosphorusflux_vars, cnstate_vars
+sub_out
+global_ro, phosphorusstate_vars%primp_vr_col, cnstate_vars%isoilorder
+global_wo, phosphorusflux_vars%primp_to_labilep_vr_col
+global_mod
+global_non
+calls
+readParams,
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(phosphorusstate_type), intent(in) ::  phosphorusstate_vars
+type(phosphorusflux_type) , intent(inout) :: phosphorusflux_vars

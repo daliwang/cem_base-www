@@ -1,0 +1,8 @@
+sub_in, x2g_g, s2x_g
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_comm_getdata, mct_aVect_copy, mct_aVect_setSharedIndices
+calls_ln, mct_aVect_setSharedIndices@254, seq_comm_getdata@243, mct_aVect_copy@266

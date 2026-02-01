@@ -1,0 +1,7 @@
+sub_in, num_icemecc, filter_icemecc, bounds
+sub_out
+global_ro, forc_rho, glc_topo, forc_pbot, forc_th, forc_q, forc_t, forc_rain, forc_snow
+global_wo, forc_pbot, forc_th, forc_q, forc_t, forc_rho
+global_mod, forc_rain, forc_snow
+global_non
+calls, Qsat, downscale_longwave, check_downscale_consistency

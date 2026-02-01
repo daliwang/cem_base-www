@@ -1,0 +1,7 @@
+sub_in, glcfilename, filename, ldomain
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, getfil, ncd_pio_closefile, ncd_pio_openfile, get_proc_bounds, domain_init, ncd_inqfdims, check_var, endrun

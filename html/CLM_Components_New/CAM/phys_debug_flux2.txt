@@ -1,0 +1,7 @@
+sub_in, lhflx, shflx_res, srfflx, qflx_res, taux_res, lchnk, tauy_res, lhflx_res
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

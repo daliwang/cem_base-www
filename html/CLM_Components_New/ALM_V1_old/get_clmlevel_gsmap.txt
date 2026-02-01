@@ -1,0 +1,9 @@
+sub_param, gsmap:2, clmlevel:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non| gsmap_lun_gdc2glo, gsmap, NONE| gsMap_cohort_gdc2glo, gsmap, NONE| gsmap_col_gdc2glo, gsmap, NONE| gsmap_gce_gdc2glo, gsmap, NONE| gsmap_lnd_gdc2glo, gsmap, NONE| gsmap_patch_gdc2glo, gsmap, NONE
+calls, shr_sys_abort
+readParams,
+character(len=*), intent(in) :: clmlevel     ! type of input data

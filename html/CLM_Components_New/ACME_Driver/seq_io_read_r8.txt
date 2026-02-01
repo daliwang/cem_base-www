@@ -1,0 +1,8 @@
+sub_in, dname, filename, rdata
+sub_out, rdata
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_io_read_r81d
+calls_ln, seq_io_read_r81d@2038

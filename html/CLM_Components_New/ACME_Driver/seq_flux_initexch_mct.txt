@@ -1,0 +1,8 @@
+sub_in, ocn, atm, mpicom_cplid, cplid
+sub_out
+global_ro, data, component_get_gsmap_cx, component_get_gsmap_cx
+global_wo
+global_mod
+global_non, component_get_dom_cx, component_get_dom_cx
+calls, mct_sMat_g2lMat, mct_sMat_2XgsMap, mct_avect_init, mct_gsmap_clean, shr_mpi_commrank, mct_list_init, mct_rearr_rearrange, mct_list_clean, mct_sMat_2YgsMap, mct_rearr_init, shr_mct_queryConfigFile, shr_mct_sMatReaddnc, shr_sys_abort, mct_aVect_clean, mct_sMat_SortPermute
+calls_ln, mct_sMat_g2lMat@339, mct_gsmap_clean@348, shr_mct_queryConfigFile@270, mct_gsmap_clean@349, shr_sys_abort@305, mct_sMat_g2lMat@338, mct_list_init@291, shr_sys_abort@267, mct_list_clean@296, mct_rearr_rearrange@404, mct_rearr_init@333, shr_mct_sMatReaddnc@276, mct_sMat_SortPermute@295, shr_mct_sMatReaddnc@280, shr_sys_abort@314, mct_sMat_2XgsMap@330, mct_avect_init@403, shr_sys_abort@324, mct_rearr_init@336, mct_list_init@294, mct_rearr_init@335, shr_sys_abort@412, mct_sMat_g2lMat@341, mct_list_clean@293, mct_rearr_init@334, shr_mpi_commrank@255, mct_sMat_SortPermute@292, shr_sys_abort@283, mct_aVect_clean@416, mct_sMat_g2lMat@340, mct_sMat_2YgsMap@331

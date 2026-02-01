@@ -1,0 +1,19 @@
+sub_param, trc_name, is_trc_volatile, this, trc_volatile_id, is_trc_diffusive, trc_group_id, trc_volatile_group_id, is_trc_advective, trc_id, trc_vtrans_scal, is_trc_mobile, trc_group_mem
+sub_out
+global_ro
+global_wo, this%tracernames, this%vtrans_scal, this%is_volatile, this%is_advective, this%volatilegroupid, this%volatileid, this%is_mobile, this%tracer_group_memid, this%groupid
+global_mod
+global_non
+calls
+readParams,
+integer            , intent(in) :: trc_id
+character(len=*)   , intent(in) :: trc_name
+logical            , intent(in) :: is_trc_mobile
+logical            , intent(in) :: is_trc_advective
+integer            , intent(in) :: trc_group_id
+integer            , intent(in) :: trc_group_mem
+logical, optional  , intent(in) :: is_trc_diffusive
+logical, optional  , intent(in) :: is_trc_volatile
+integer, optional  , intent(in) :: trc_volatile_id
+integer, optional  , intent(in) :: trc_volatile_group_id
+real(r8),optional  , intent(in) :: trc_vtrans_scal

@@ -1,0 +1,7 @@
+sub_in, commyz, npes_yz, npryz_y, commxy, kmyz, commnyz, npes_xy, nq, npryz_z, nprxy_x, jmyz, grid, imxy, jmxy, commdyn, nprxy_y
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, decompcreate, ghostcreate, mpirecv, parsplit, ghostfree, decompfree, mpisend, parpatterncreate

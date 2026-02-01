@@ -1,0 +1,10 @@
+sub_param, call_index:2, cs_pnt:1
+sub_out
+global_ro| %leaf_litter, leaf_litter, NONE| currentPatch%tallest;, currentCohort, NONE| currentCohort%shorter;, currentCohort, NONE| %cwd_bg, cwd_bg, NONE| %n, n, NONE| %bstore, bstore, NONE| %balive, balive, NONE| currentPatch%younger, currentPatch, NONE| currentSite%oldest_patch, currentPatch, NONE| %seed_bank, seed_bank, NONE| %root_litter, root_litter, NONE| %cwd_ag, cwd_ag, NONE| %area, area, NONE| %bdead, bdead, NONE
+global_wo
+global_mod| cs_pnt%flux_out, flux_out, NONE| cs_pnt%flux_in, flux_in, NONE| cs_pnt%old_stock, old_stock, NONE
+global_non| cs_pnt, currentSite, NONE
+calls
+readParams,
+type(site), intent(inout), target :: cs_pnt
+integer,    intent(in)            :: call_index

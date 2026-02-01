@@ -1,0 +1,31 @@
+sub_param, carbonstate_vars:8, temperature_vars:18, filter_soilp:5, num_soilp:4, cnstate_vars:6, atm2lnd_vars:13, soilstate_vars:17, num_soilc:2, filter_soilc:3, canopystate_vars:16, ch4_vars:20, bounds:1, photosyns_vars:21, waterstate_vars:14, crop_vars:19, nitrogenflux_vars:11, c13_carbonflux_vars:9, carbonflux_vars:7, phosphorusflux_vars:22, c14_carbonflux_vars:10, phosphorusstate_vars:23, nitrogenstate_vars:12, waterflux_vars:15
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNNFert, PDeposition, CNNFixation, decomp_vertprofiles, 'CNAllocation1', CNNDeposition, CNAllocation1_PlantNPDemand, nitrogenflux_vars%SetValues, c14_carbonflux_vars%SetValues, PWeathering, c13_carbonflux_vars%SetValues, carbonflux_vars%SetValues, t_startf, CNMResp, t_stopf, CNNFixation_balance, PBiochemMin_balance, PBiochemMin, phosphorusflux_vars%SetValues, CNSoyfix
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+integer                  , intent(in)    :: num_soilp         ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:)   ! filter for soil patches
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(crop_type)          , intent(in)    :: crop_vars
+type(ch4_type)           , intent(in)    :: ch4_vars
+type(photosyns_type)     , intent(in)    :: photosyns_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars

@@ -1,0 +1,10 @@
+sub_param, currentPatch, t
+sub_out
+global_ro, currentPatch%seed_germination, EDecophyscon%sapwood_ratio, udata%deltat, currentPatch%siteptr%status, EDecophyscon%hgt_min, currentPatch%area, EDecophyscon%cushion, ecophyscon%froot_leaf, currentPatch%siteptr%dstatus
+global_wo, dc%pft, dc%n, dc%laimemory, dc%dbh, dc%canopy_trim
+global_mod, dc%hite, dc%bstore, dc%balive, dc%bdead
+global_non
+calls, sort_cohorts, zero_cohort, fuse_cohorts, create_cohort
+readParams,
+integer, intent(in) :: t
+type (patch), intent(inout), pointer :: currentPatch

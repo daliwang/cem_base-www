@@ -1,0 +1,7 @@
+sub_in, EClock, x2a_a, a2x_a
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_freedecomp, mct_aVect_getRList, getfil, seq_timemgr_EClockGetData, pio_closefile, pio_seterrorhandling, mct_string_clean, pio_initdecomp, pio_read_darray, cam_pio_openfile

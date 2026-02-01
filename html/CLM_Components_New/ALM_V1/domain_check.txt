@@ -1,0 +1,9 @@
+sub_param, domain
+sub_out
+global_ro, domain%area, domain%clmlevel, domain%latc, domain%ns, domain%glcmask, domain%nj, domain%lonc, domain%ni, domain%decomped, domain%pftm, domain%nbeg, domain%mask, domain%topo, domain%set, domain%nend, domain%frac
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(domain_type),intent(in)  :: domain        ! domain datatype

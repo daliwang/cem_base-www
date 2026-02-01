@@ -1,0 +1,7 @@
+sub_in, ctot_state, isotope, diag, filter, ciso_state, ciso_flux, frax_c13, ctot_flux, num
+sub_out, ciso_flux
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

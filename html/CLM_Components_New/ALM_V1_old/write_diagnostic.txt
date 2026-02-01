@@ -1,0 +1,12 @@
+sub_param, lnd2atm_vars:4, wrtdia:2, bounds:1, nstep:3
+sub_out
+global_ro| bounds%begg:bounds%endg, endg, NONE| lnd2atm_vars%t_rad_grc, t_rad_grc, NONE
+global_wo
+global_mod
+global_non
+calls, shr_sys_flush, get_curr_time_string, mpi_reduce, endrun, get_proc_global, t_barrierf
+readParams,
+type(bounds_type)  , intent(in) :: bounds
+logical            , intent(in) :: wrtdia     !true => write diagnostic
+integer            , intent(in) :: nstep      !model time step
+type(lnd2atm_type) , intent(in) :: lnd2atm_vars

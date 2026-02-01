@@ -1,0 +1,7 @@
+sub_in, nl0, ncol, A_ql, qi0, D_ql, D_T, al_st_star, ql0, a_cu0, ql_tendout, D_nl, C_ni, A_nl, landfrac, C_ql, cld, p, ni_tendout, snowh, A_ni, qi_tendout, nl_tendout, C_qlst, D_qv, D_ni, qv_tendout, C_T, do_cldice, qilim, s_tendout, C_qv, qllim, A_T, qvadj, a_cud, qv0, C_qi, qiadj, qladj, ni0, ai_st_star, D_qi, dp, qi_st_star, dt, A_qv, lchnk, C_nl, T0, A_qi, ql_st_star, qme
+sub_out, qv0, ql_tendout, qvadj, qladj, qiadj, ni0, ai_st_star, cld, nl0, qi0, qllim, al_st_star, ql0, qi_tendout, T0, nl_tendout, qv_tendout, ql_st_star, qilim, s_tendout, qme, ni_tendout, qi_st_star
+global_ro
+global_wo
+global_mod
+global_non
+calls, astG_RHU, instratus_condensate, astG_PDF, cnst_get_ind, positive_moisture, aist_vector, qsat_water, gaussj, findsp_vc

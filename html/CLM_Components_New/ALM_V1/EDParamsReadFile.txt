@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, EDParamsRead, SFParamsRead, ncd_inqdid, ncd_pio_openfile, ncd_inqdlen, ncd_pio_closefile, getfil
+readParams,readSharedParameters

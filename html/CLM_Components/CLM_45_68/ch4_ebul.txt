@@ -1,0 +1,7 @@
+sub_in, filter_methc, jwt, num_methc, bounds, lake, sat
+sub_out
+global_ro, lake_icefrac, h2osfc, watsat, lakedepth, frac_h2osfc, forc_pbot, z, zi, t_soisno, conc_ch4_sat, conc_ch4_unsat
+global_wo
+global_mod, ch4_ebul_depth_sat, ch4_ebul_depth_unsat
+global_non, h2osoi_vol, dz, ch4_ebul_total_unsat, ch4_ebul_total_sat, ch4_aere_depth_unsat, ch4_aere_depth_sat, gridcell, ch4_oxid_depth_unsat, ch4_oxid_depth_sat
+calls, shr_assert

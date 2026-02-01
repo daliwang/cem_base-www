@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, landunit, ifspecial, landunit
+global_wo
+global_mod
+global_non
+calls, CNSetPns, CNSetCnf, CNSetPps, CNSetCcs, CNSetPnf, CNSetPcf, CNSetCps, get_proc_bounds, CNSetCcf, CNSetPepv, CNSetCns, CNSetPcs

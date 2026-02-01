@@ -1,0 +1,7 @@
+sub_in, pmid, t, ti, cpair, pint, ni, rhoi, nm, ncol
+sub_out, ti, rhoi, nm, ni
+global_ro
+global_wo
+global_mod
+global_non
+calls

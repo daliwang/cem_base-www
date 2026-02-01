@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, snow_depth, lakpoi, dz, h2osno, landunit, itype, h2osoi_liq, h2osoi_ice, landunit
+global_wo, h2osoi_vol, frac_sno
+global_mod
+global_non, p, c, g, l
+calls, ncd_io, getfil, ncd_pio_closefile, get_proc_global, shr_sys_flush, get_proc_bounds, ncd_pio_openfile, check_dim, mpi_bcast

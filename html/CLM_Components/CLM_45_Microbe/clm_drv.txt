@@ -1,0 +1,7 @@
+sub_in, rstwr, doalb, declin, rdate, nlend, nextsw_cday, declinp1
+sub_out
+global_ro, snow_depth, itype, landunit
+global_wo, frac_sno
+global_mod
+global_non, c
+calls, Biogeophysics1, CNZeroFluxes_dwt, histCNDV, SurfaceAlbedo, pftdyn_interp, NBalanceCheck, pft2col, clm_driverInit, CNEcosystemDyn, hist_update_hbuf, ch4, updateAccFlds, SLakeFluxes, decomp_vertprofiles, BeginNBalance, DustDryDep, DustEmission, hist_htapes_wrapup, write_diagnostic, interpMonthlyVeg, depvel_compute, CNFireInterp, inicPerp, SLakeTemperature, BareGroundFluxes, EcosystemDyn, Hydrology2, dynland_hwcontent, clm_map2gcell, restFile_write, CNAnnualUpdate, BeginCBalance, ndep_interp, get_curr_date, alt_calc, UrbanFluxes, BalanceCheck, get_clump_bounds, pftdyn_wbal_init, SurfaceRadiation, SLakeHydrology, CBalanceCheck, VOCEmission, BeginWaterBalance, t_startf, pftdyn_wbal, t_stopf, reweightWrapup, UrbanRadiation, CanopyFluxes, dv, pftwt_interp, Hydrology1, SnowAge_grain, get_ref_date, UrbanAlbedo, update_finundated, Biogeophysics2, pftdyn_cnbal, create_clm_s2x, endrun

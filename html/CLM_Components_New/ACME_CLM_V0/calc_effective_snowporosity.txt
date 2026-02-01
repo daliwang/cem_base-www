@@ -1,0 +1,7 @@
+sub_in, bounds, numf, lbj, h2osoi_ice, denice, eff_por, jtop, filter
+sub_out, eff_por
+global_ro, col%dz
+global_wo
+global_mod
+global_non
+calls

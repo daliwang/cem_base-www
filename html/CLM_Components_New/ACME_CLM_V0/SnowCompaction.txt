@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, temperature_vars, filter_snowc, num_snowc, bounds
+sub_out
+global_ro, waterstate_vars%h2osoi_liq_col, waterstate_vars%swe_old_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%frac_iceold_col, waterstate_vars%int_snow_col, temperature_vars%t_soisno_col, col%n_melt, col%snl, col%landunit, temperature_vars%imelt_col, waterstate_vars%frac_sno_eff_col, lun%itype
+global_wo
+global_mod, col%dz
+global_non, waterstate_vars%snow_depth_col
+calls

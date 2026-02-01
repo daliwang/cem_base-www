@@ -1,0 +1,7 @@
+sub_in, tl_in, array_in, hybrid, np1
+sub_out
+global_ro, ptrP, source, lengthP, dest, nRecvCycles, nSendCycles
+global_wo
+global_mod, tag
+global_non, pSchedule%SendCycle, pSchedule%RecvCycle, Schedule
+calls, MPI_Irecv, t_stopf, edgeVpack_kernel_stage<<<griddim6, MPI_Isend, MPI_WaitAll, t_startf, edgeVunpack_kernel_stage<<<griddim6

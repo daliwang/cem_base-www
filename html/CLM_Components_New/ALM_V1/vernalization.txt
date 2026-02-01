@@ -1,0 +1,13 @@
+sub_param, canopystate_vars, p, cnstate_vars, waterstate_vars, temperature_vars
+sub_out
+global_ro, waterstate_vars%snow_depth_col, pft%column, temperature_vars%t_ref2m_max_patch, temperature_vars%t_ref2m_patch, temperature_vars%t_ref2m_min_patch
+global_wo, cnstate_vars%gddmaturity_patch, cnstate_vars%huigrain_patch
+global_mod, cnstate_vars%vf_patch, cnstate_vars%cumvd_patch, cnstate_vars%hdidx_patch
+global_non, canopystate_vars%tlai_patch
+calls
+readParams,readCNPhenolParams
+integer                , intent(in) :: p    ! PATCH index running over
+type(canopystate_type) , intent(in) :: canopystate_vars
+type(temperature_type) , intent(in) :: temperature_vars
+type(waterstate_type)  , intent(in) :: waterstate_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars

@@ -1,0 +1,25 @@
+sub_param, hs_top_snow:5, num_nolakec:2, urbanparams_vars:11, hs_soil:6, atm2lnd_vars:10, sabg_lyr_col:9, hs_top:7, canopystate_vars:12, temperature_vars:17, solarabs_vars:15, bounds:1, filter_nolakec:3, waterstate_vars:13, energyflux_vars:16, waterflux_vars:14, dhsdT:8, hs_h2osfc:4
+sub_out, hs_soil, hs_h2osfc, hs_top_snow, sabg_lyr_col, dhsdT, hs_top
+global_ro| waterflux_vars%qflx_tran_veg_patch, qflx_tran_veg, NONE| energyflux_vars%htvp_col, htvp, NONE| energyflux_vars%eflx_heat_from_ac_lun, eflx_heat_from_ac, NONE| lun%wtlunit_roof, wtlunit_roof, NONE| energyflux_vars%eflx_traffic_lun, eflx_traffic, NONE| energyflux_vars%dlrad_patch, dlrad, NONE| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| pft%landunit, landunit, NONE| energyflux_vars%eflx_wasteheat_lun, eflx_wasteheat, NONE| waterflux_vars%qflx_ev_soil_patch, qflx_ev_soil, NONE| waterflux_vars%qflx_ev_snow_patch, qflx_ev_snow, NONE| energyflux_vars%eflx_lwrad_net_patch, eflx_lwrad_net, NONE| col%snl, snl, NONE| energyflux_vars%eflx_sh_h2osfc_patch, eflx_sh_h2osfc, NONE| waterflux_vars%qflx_ev_h2osfc_patch, qflx_ev_h2osfc, NONE| atm2lnd_vars%forc_lwrad_downscaled_col, forc_lwrad, NONE| energyflux_vars%cgrnd_patch, cgrnd, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| solarabs_vars%sabg_snow_patch, sabg_snow, NONE| solarabs_vars%sabg_soil_patch, sabg_soil, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE| waterflux_vars%qflx_evap_soi_patch, qflx_evap_soi, NONE| col%pfti, pfti, NONE| energyflux_vars%eflx_sh_soil_patch, eflx_sh_soil, NONE| energyflux_vars%eflx_sh_snow_patch, eflx_sh_snow, NONE| solarabs_vars%sabg_patch, sabg, NONE| canopystate_vars%frac_veg_nosno_patch, frac_veg_nosno, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| pft%gridcell, gridcell, NONE| temperature_vars%emg_col, emg, NONE| pft%wtcol, wtcol, NONE| solarabs_vars%sabg_lyr_patch, sabg_lyr, NONE
+global_wo| solarabs_vars%sabg_chk_patch, sabg_chk, NONE| energyflux_vars%eflx_anthro_patch, eflx_anthro, NONE
+global_mod| energyflux_vars%dgnetdT_patch, dgnetdT, NONE| energyflux_vars%eflx_wasteheat_patch, eflx_wasteheat_patch, NONE| energyflux_vars%eflx_gnet_patch, eflx_gnet, NONE| energyflux_vars%eflx_traffic_patch, eflx_traffic_patch, NONE| energyflux_vars%eflx_heat_from_ac_patch, eflx_heat_from_ac_patch, NONE
+global_non| bounds%begc, begc, NONE| bounds%endc, endc, NONE| col%z, z, NONE
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds                                    ! bounds
+integer                , intent(in)    :: num_nolakec                               ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_nolakec( : )                       ! column filter for non-lake points
+real(r8)               , intent(out)   :: hs_h2osfc( bounds%begc: )                 ! heat flux on standing water [W/m2]
+real(r8)               , intent(out)   :: hs_top_snow( bounds%begc: )               ! heat flux on top snow layer [W/m2]
+real(r8)               , intent(out)   :: hs_soil( bounds%begc: )                   ! heat flux on soil [W/m2]
+real(r8)               , intent(out)   :: hs_top (bounds%begc: )                    ! net energy flux into surface layer (col) [W/m2]
+real(r8)               , intent(out)   :: dhsdT( bounds%begc: )                     ! temperature derivative of "hs" [col]
+real(r8)               , intent(out)   :: sabg_lyr_col( bounds%begc:, -nlevsno+1: ) ! absorbed solar radiation (col,lyr) [W/m2]
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(urbanparams_type) , intent(in)    :: urbanparams_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(waterflux_type)   , intent(in)    :: waterflux_vars
+type(solarabs_type)    , intent(inout) :: solarabs_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(in)    :: temperature_vars

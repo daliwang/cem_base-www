@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, restFile_open, restFile_close, pftdyn_interp, initch4, CNiniTimeVar, get_proc_bounds, pftwt_init, timemgr_restart_io, UrbanInitTimeVar, initmicrobe, VOCEmission_init, Dustini, shr_orb_decl, interpMonthlyVeg, restFile_getfile, allocFilters, pftdyn_init, UrbanClumpInit, clm_map2gcell, readAnnualVegetation, ndep_interp, get_curr_date, iniTimeConst, hist_initFlds, UrbanInitTimeConst, timemgr_restart, initSurfAlb, CNDVEcosystemDynini, CNEcosystemDynInit, initAccClmtype, UrbanInitAero, timemgr_init, t_startf, initAccFlds, initSLake, mkarbinit, UrbanInput, t_stopf, ndep_init, reweightWrapup, restFile_read, EcosystemDynini, create_clm_s2x

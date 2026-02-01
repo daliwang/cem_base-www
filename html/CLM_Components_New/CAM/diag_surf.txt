@@ -1,0 +1,7 @@
+sub_in, cam_out, trefmxav, trefmnav, ps, cam_in
+sub_out, trefmnav, trefmxav
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, qsat

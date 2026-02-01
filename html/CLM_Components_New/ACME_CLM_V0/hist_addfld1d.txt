@@ -1,0 +1,7 @@
+sub_in, set_lake, fname, p2c_scale_type, ptr_lunit, set_spec, l2g_scale_type, set_urb, set_nourb, type1d_out, set_noglcmec, default, ptr_lnd, ptr_col, ptr_gcell, long_name, ptr_atm, units, c2l_scale_type, ptr_patch, set_nolake, avgflag
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

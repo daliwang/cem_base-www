@@ -1,0 +1,7 @@
+sub_in, grqls, ztodt, grths, grpss, grpls, grvs, grds, irow, grvhs, grpms, grtls, grtms, grus, grts, gruhs, grqms, grqs, grdpss
+sub_out, grtls, grpms, grvhs, grpls, grvs, grds, grqms, grqs, grdpss, grus, grts, gruhs, grtms, grqls, grpss, grths
+global_ro
+global_wo
+global_mod
+global_non
+calls

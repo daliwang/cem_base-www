@@ -1,0 +1,9 @@
+sub_in, filter_natvegp, num_natvegp, bounds
+sub_out
+global_ro, pftcon%dsladlai, dgv_pftcon%reinickerp, dgv_pftcon%crownarea_max, pcs%deadstemc, pftcon%slatop, pftcon%dwood, pft%gridcell, pftcon%woody, dgv_pftcon%allom1, pftcon%tree, pcs%leafcmax, pft%itype
+global_wo
+global_mod, pdgvs%fpcgrid, pdgvs%nind, pdgvs%crownarea
+global_non
+calls
+
+Tree height: 6

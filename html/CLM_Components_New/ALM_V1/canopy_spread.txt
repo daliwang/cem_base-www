@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %canopy_layer, currentSite%oldest_patch, currentPatch%younger, currentPatch%tallest, currentCohort%shorter
+global_wo
+global_mod, %c_area, !currentPatch%spread, %spread
+global_non
+calls
+readParams,canopy_spread
+type (site), intent(inout),   pointer :: currentSite

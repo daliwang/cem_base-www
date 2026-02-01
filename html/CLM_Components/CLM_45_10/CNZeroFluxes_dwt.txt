@@ -1,0 +1,7 @@
+sub_in, endp, begc, begp, endc
+sub_out
+global_ro
+global_wo, storvegn, dwt_livecrootn_to_cwdn, dwt_prod10c_gain, dwt_seedn_to_deadstem, dwt_conv_cflux, totvegn, dwt_frootc_to_litr_cel_c, totpftn, dispvegn, dwt_frootn_to_litr_cel_n, dwt_prod10n_gain, dispvegc, dwt_frootc_to_litr_lig_c, dwt_seedn_to_leaf, lf_conv_cflux, dwt_conv_nflux, dwt_seedc_to_deadstem, dwt_prod100n_gain, dwt_deadcrootc_to_cwdc, dwt_frootn_to_litr_lig_n, storvegc, dwt_prod100c_gain, dwt_deadcrootn_to_cwdn, dwt_frootc_to_litr_met_c, totpftc, dwt_frootn_to_litr_met_n, dwt_seedc_to_leaf, dwt_livecrootc_to_cwdc
+global_mod
+global_non, c
+calls

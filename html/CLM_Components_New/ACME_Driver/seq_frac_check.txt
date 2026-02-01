@@ -1,0 +1,8 @@
+sub_in, fractions, string
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_mpi_min, shr_sys_abort, shr_mpi_max, shr_mpi_sum
+calls_ln, shr_mpi_max@739, shr_mpi_sum@776, shr_mpi_max@769, shr_mpi_min@753, shr_mpi_min@768, shr_mpi_max@749, shr_mpi_min@748, shr_mpi_max@759, shr_mpi_max@754, shr_sys_abort@782, shr_mpi_max@764, shr_mpi_max@744, shr_mpi_max@774, shr_mpi_min@763, shr_mpi_min@733, shr_mpi_min@758, shr_mpi_min@773, shr_mpi_min@743, shr_mpi_max@734, shr_mpi_min@738, shr_mpi_max@777

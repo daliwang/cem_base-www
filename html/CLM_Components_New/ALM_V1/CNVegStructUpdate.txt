@@ -1,0 +1,16 @@
+sub_param, waterstate_vars, num_soilp, filter_soilp, canopystate_vars, cnstate_vars, frictionvel_vars, carbonstate_vars, dgvs_vars
+sub_out
+global_ro, dgv_ecophyscon%allom3, frictionvel_vars%forc_hgt_u_patch, waterstate_vars%snow_depth_col, ecophyscon%displar, dgv_ecophyscon%allom2, pft%gridcell, ecophyscon%slatop, ecophyscon%dwood, ecophyscon%dsladlai, pft%column, pft%itype, ecophyscon%woody, ecophyscon%z0mr, carbonstate_vars%deadstemc_patch, cnstate_vars%harvdate_patch, carbonstate_vars%leafc_patch, dgvs_vars%nind_patch, cnstate_vars%farea_burned_col, dgvs_vars%fpcgrid_patch
+global_wo, canopystate_vars%frac_veg_nosno_alb_patch
+global_mod, cnstate_vars%htmx_patch, canopystate_vars%tsai_patch, canopystate_vars%htop_patch, canopystate_vars%esai_patch, cnstate_vars%peaklai_patch, canopystate_vars%hbot_patch, canopystate_vars%elai_patch, canopystate_vars%tlai_patch
+global_non
+calls
+readParams,
+integer                , intent(in)    :: num_soilp       ! number of column soil points in pft filter
+integer                , intent(in)    :: filter_soilp(:) ! patch filter for soil points
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(frictionvel_type) , intent(in)    :: frictionvel_vars
+type(dgvs_type)        , intent(in)    :: dgvs_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars
+type(carbonstate_type) , intent(in)    :: carbonstate_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars

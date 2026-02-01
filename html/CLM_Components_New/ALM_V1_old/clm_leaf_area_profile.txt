@@ -1,0 +1,11 @@
+sub_param, cs_t:1, waterstate_vars:2, canopystate_vars:3
+sub_out
+global_ro| %column, column, NONE| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE| %total_canopy_area, total_canopy_area, NONE| %pft, pft, NONE| %canopy_layer, canopy_layer, NONE| currentSite%oldest_patch, currentPatch, NONE| currentPatch%younger, currentPatch, NONE| EDecophyscon%crown, crown, NONE| %hite, hite, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| %clm_pno, clm_pno, NONE| currentCohort%taller, currentCohort, NONE| currentPatch%shortest, currentCohort, NONE| ecophyscon%vertical_canopy_frac, vertical_canopy_frac, NONE| %area, area, NONE
+global_wo| canopystate_vars%frac_veg_nosno_alb_patch, frac_veg_nosno_alb, NONE| %present, present, NONE| canopystate_vars%tsai_patch, tsai, NONE
+global_mod| %sai, sai, NONE| %tlai_profile, tlai_profile, NONE| %tsai_profile, tsai_profile, NONE| %treesai, treesai, NONE| %c_area, c_area, NONE| 1:currentPatch%nrad, nrad, NONE| %nrad, nrad, NONE| %canopy_layer_lai, canopy_layer_lai, NONE| canopystate_vars%tlai_patch, tlai, NONE| %canopy_area_profile, canopy_area_profile, NONE| canopystate_vars%esai_patch, esai, NONE| %lai, lai, NONE| %treelai, treelai, NONE| %elai_profile, elai_profile, NONE| !currentPatch%elai_profile, elai_profile, NONE| %NV, NV, NONE| canopystate_vars%elai_patch, elai, NONE| %canopy_area, canopy_area, NONE| %ncan, ncan, NONE| %esai_profile, esai_profile, NONE| !currentPatch%esai_profile, esai_profile, NONE| waterstate_vars%snowdp_col, snowdp, NONE
+global_non| cs_t, currentSite, NONE
+calls
+readParams,
+type (site)            , intent(inout),target :: cs_t
+type(waterstate_type)  , intent(inout)        :: waterstate_vars
+type(canopystate_type) , intent(inout)        :: canopystate_vars

@@ -1,0 +1,7 @@
+sub_in, dto2la, xso2la, secchi, o2col
+sub_out, dto2la, xso2la
+global_ro
+global_wo
+global_mod
+global_non
+calls

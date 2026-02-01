@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, canyon_hwr, ht_roof, itype
+global_wo, z_0_town
+global_mod, z_d_town
+global_non
+calls, get_proc_bounds

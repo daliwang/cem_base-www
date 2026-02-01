@@ -1,0 +1,7 @@
+sub_in, ncol, conds, iscavt, q, fracis, pdel, cldv, is_strat_cloudborne, cmfdqr, cldvcu, conicw, bcscavt, icscavt, cldvst, cwat, sol_facti_in, rate1ord_cw2pr_st, isscavt, f_act_conv, sol_factii_in, sol_factic_in, bsscavt, qqcw, evapc, scavt, sol_factbi_in, cldt, evaps, tracer, sol_fact, p, sol_factiic_in, cldc, t, scavcoef, dlf, deltat, precs
+sub_out, scavt, iscavt, fracis
+global_ro
+global_wo
+global_mod
+global_non
+calls

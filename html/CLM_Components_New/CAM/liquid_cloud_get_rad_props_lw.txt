@@ -1,0 +1,7 @@
+sub_in, abs_od, state, pbuf
+sub_out, abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_get_field, gam_liquid_lw

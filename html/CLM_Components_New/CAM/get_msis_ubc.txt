@@ -1,0 +1,7 @@
+sub_in, lchunk, temp, ncol, mmr
+sub_out, mmr, temp
+global_ro
+global_wo
+global_mod
+global_non
+calls

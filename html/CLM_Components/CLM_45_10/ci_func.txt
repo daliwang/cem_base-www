@@ -1,0 +1,7 @@
+sub_in, par_z, je, cair, gb_mol, iv, p, fval, ci, g, rh_can, gs_mol, lmr_z, oair
+sub_out, fval, gs_mol
+global_ro, c3flag, mbb, ko, qe, forc_pbot, kc, tpu_z, kp_z, cp
+global_wo
+global_mod, ag, aj, ac, ap, an
+global_non
+calls, quadratic

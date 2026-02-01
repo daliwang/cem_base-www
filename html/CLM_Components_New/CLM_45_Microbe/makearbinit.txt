@@ -1,0 +1,10 @@
+sub_in, arbinit
+sub_out
+global_ro, clm3%g%l%c%landunit, clm3%g%l%c%cps%watsat, clm3%g%l%c%cps%dz, clm3%g%l%lakpoi, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%snl, clm3%g%l%c%cps%savedtke1
+global_wo, clm3%g%l%c%cps%snw_rds_top, clm3%g%l%c%cps%snw_rds, clm3%g%l%c%cps%z0mg, clm3%g%l%c%cps%sno_liq_top
+global_mod, clm3%g%l%c%cws%h2osoi_vol, clm3%g%l%c%cps%ust_lake, clm3%g%l%c%cws%lake_icefrac, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cws%h2osoi_liq
+global_non, clm3%g%l%itype, clm3%g%l%c%cws%h2osno, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%ces%t_lake
+calls, get_proc_bounds, snow_depth2levLake
+
+Tree height: 10
+1+, get_proc_bounds, snow_depth2levLake, 

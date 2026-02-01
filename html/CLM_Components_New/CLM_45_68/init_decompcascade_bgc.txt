@@ -1,0 +1,9 @@
+sub_in, bounds
+sub_out
+global_ro, cps%cellsand
+global_wo, cps%rf_decomp_cascade, decomp_cascade_con%cascade_donor_pool, decomp_cascade_con%decomp_pool_name_history, decomp_cascade_con%initial_stock, decomp_cascade_con%initial_cn_ratio, decomp_cascade_con%decomp_pool_name_short, decomp_cascade_con%decomp_pool_name_restart, cps%pathfrac_decomp_cascade, decomp_cascade_con%cascade_step_name, decomp_cascade_con%spinup_factor, decomp_cascade_con%cascade_receiver_pool, decomp_cascade_con%decomp_pool_name_long
+global_mod
+global_non, cps%cellclay
+calls
+
+Tree height: 1

@@ -1,0 +1,11 @@
+sub_param, patch_site_areadis:3, new_patch_target:2, cp_target:1
+sub_out, patch_site_areadis
+global_ro| %fire_mort, fire_mort, NONE| cp_target%area, area, NONE| new_patch_target%area, area, NONE| %bsw, bsw, NONE| %bstore, bstore, NONE| %pft, pft, NONE| currentPatch%shortest, currentCohort, NONE| currentCohort%taller, currentCohort, NONE| new_patch%shortest, currentCohort, NONE| %n, n, NONE| cp_target%disturbance_rate, disturbance_rate, NONE| cp_target%burnt_frac_litter, burnt_frac_litter, NONE| %bdead, bdead, NONE| %br, br, NONE
+global_wo
+global_mod| %flux_out, flux_out, NONE| %balive, balive, NONE| new_patch_target%leaf_litter, leaf_litter, NONE| cp_target%leaf_litter, leaf_litter, NONE| cp_target%cwd_bg, cwd_bg, NONE| new_patch_target%cwd_bg, cwd_bg, NONE| new_patch_target%cwd_ag, cwd_ag, NONE| cp_target%cwd_ag, cwd_ag, NONE| %cwd_ag_burned, cwd_ag_burned, NONE| %leaf_litter_burned, leaf_litter_burned, NONE| %bl, bl, NONE| %cfa, cfa, NONE| new_patch_target%root_litter, root_litter, NONE| cp_target%root_litter, root_litter, NONE| %c_area, c_area, NONE
+global_non| currentPatch%siteptr, currentSite, NONE| new_patch_target, new_patch, NONE| cp_target, currentPatch, NONE
+calls
+readParams,
+type(patch), intent(inout), target :: cp_target
+type(patch), intent(inout), target :: new_patch_target
+real(r8),    intent(inout)         :: patch_site_areadis

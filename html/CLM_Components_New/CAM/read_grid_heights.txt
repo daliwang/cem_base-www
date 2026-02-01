@@ -1,0 +1,7 @@
+sub_in, thermodynamic_heights, grid_type, file_unit, momentum_heights, zm_grid_fname, zt_grid_fname, nzmax
+sub_out, thermodynamic_heights, momentum_heights
+global_ro
+global_wo
+global_mod
+global_non
+calls, file_read_1d

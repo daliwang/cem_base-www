@@ -1,0 +1,7 @@
+sub_in, filter_soilp, cnstate_vars, temperature_vars, num_pcropp, num_soilp, filter_pcropp
+sub_out
+global_ro, cnstate_vars%CropRestYear, temperature_vars%gdd0_patch, temperature_vars%gdd8_patch, temperature_vars%gdd10_patch, temperature_vars%t_ref2m_patch
+global_wo
+global_mod, temperature_vars%gdd020_patch, cnstate_vars%tempavg_t2m_patch, temperature_vars%gdd820_patch, temperature_vars%gdd1020_patch
+global_non
+calls, get_curr_date

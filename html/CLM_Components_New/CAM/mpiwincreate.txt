@@ -1,0 +1,7 @@
+sub_in, base, comm, size, win
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_win_create, t_startf, endrun, mpi_win_fence, t_stopf

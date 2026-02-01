@@ -1,0 +1,7 @@
+sub_in, temperature_inst, gcell_heat, urbanparams_inst, gcell_liq, bounds, soilstate_inst, soilhydrology_inst, waterstate_inst, lakestate_inst, gcell_ice
+sub_out, gcell_ice, gcell_liq, gcell_heat
+global_ro, csol, nlev_improad, dz, watsat, snl, t_soisno, cv_roof, h2osoi_liq, h2osno, cv_wall, cv_improad, h2osoi_ice
+global_wo
+global_mod
+global_non, soilhydrology_inst%wa_col
+calls

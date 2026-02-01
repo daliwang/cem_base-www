@@ -1,0 +1,7 @@
+sub_in, export_state, import_state, EClock, comp, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_AttributeSet, shr_file_setIO, seq_timemgr_EClockGetData, ESMF_DistGridGet, read_namelist, shr_sys_abort, shr_file_getLogUnit, ESMF_AttributeGet, timemgr_check_restart, spmdinit, shr_sys_flush, memmon_reset_addr, ESMF_ArraySpecSet, cam_run1, MPI_Comm_dup, shr_file_getLogLevel, ESMF_VMGetCurrent, ESMF_ArrayGet, atm_domain_esmf, shr_file_setLogLevel, cam_cpl_indices_set, timemgr_init, atm_export, cam_init, ESMF_AttributeAdd, shr_file_setLogUnit, ESMF_StateGet, ESMF_VMGet, ESMF_StateAdd, atm_read_srfrest_esmf, get_horiz_grid_dim_d, cam_instance_init, atm_import, memmon_dump_fort

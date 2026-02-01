@@ -1,0 +1,13 @@
+sub_in, bounds
+sub_out
+global_ro, pwf_a%qflx_dew_grnd, pwf_a%qflx_prec_grnd, cwf%qflx_snow_h2osfc, cwf%qflx_glcice, pef%eflx_wasteheat_pft, pwf_a%qflx_rain_grnd, pwf_a%qflx_evap_tot, cwf%qflx_surf, gwf%qflx_ice_dynbal, cps%frac_sno_eff, a2l_downscaled_col%forc_rain, cws%h2osno_old, clm_a2l%volr, cwf%qflx_top_soil, pwf_a%qflx_snwcp_ice, pwf_a%qflx_dew_snow, cwf%qflx_sl_top_soil, pef%fsr, pef%sabg, clm_a2l%forc_solad, pwf_a%qflx_evap_grnd, pef%sabg_snow, pwf_a%qflx_irrig, cwf%qflx_h2osfc_surf, cwf%qflx_qrgwl, pwf_a%qflx_snow_grnd, cws%h2osno, pef%sabv, a2l_downscaled_col%forc_lwrad, cwf%qflx_glcice_frz, col%itype, pef%eflx_soil_grnd, cwf%qflx_floodc, cps%frac_sno, cebal%errsoi, a2l_downscaled_col%forc_snow, cps%snl, cwf%qflx_drain, lun%itype, cwf%qflx_drain_perched, cwf%qflx_runoff, cwbal%begwb, pwf_a%qflx_sub_snow, pef%eflx_lwrad_net, cwf%qflx_h2osfc_to_ice, pef%eflx_traffic_pft, grc%area, pef%sabg_chk, pwf_a%qflx_snwcp_liq, pef%eflx_heat_from_ac_pft, pef%eflx_lh_tot, pef%fsa, pef%sabg_soil, clm_a2l%forc_solai, cwbal%endwb, pef%eflx_lwrad_out, cwf%qflx_snow_melt, gwf%qflx_liq_dynbal, gef%eflx_dynbal, pef%eflx_sh_tot
+global_wo, pef%netrad
+global_mod, cws%snow_sinks, pebal%errsol, pebal%errseb, cwbal%errh2o, gwf%qflx_runoffg, cws%snow_sources, grc%tws, gwf%qflx_snwcp_iceg, gef%eflx_sh_totg, pebal%errlon, cws%errh2osno
+global_non, pwf_a%qflx_evap_soi, lun%canyon_hwr
+calls, c2g, p2g, endrun
+
+Tree height: 6
+1+, c2g, c2g, p2g, c2g, 
+3+, endrun, 
+2+, endrun, endrun, endrun, endrun, 
+3+, endrun, endrun, 

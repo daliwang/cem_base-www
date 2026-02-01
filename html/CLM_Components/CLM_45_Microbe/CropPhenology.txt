@@ -1,0 +1,7 @@
+sub_in, num_pcropp, filter_pcropp
+sub_out
+global_ro, leafcn, leaf_long, gddplant, column, itype, fertnitro, gddtsoi, a10tmin, gdd1020, t10, gridcell, tlai, t_ref2m_min, gdd020
+global_wo, offset_flag, bglfr, bgtr, lgsf, fert, hdidx, cumvd, offset_counter, onset_flag
+global_mod, vf, huileaf, gddmaturity, onset_counter, dwt_seedn_to_leaf, leafc_xfer, harvdate, huigrain, cropplant, gdd820, idop, croplive, leafn_xfer, dwt_seedc_to_leaf, fert_counter, a5tmin
+global_non
+calls, vernalization, get_curr_date

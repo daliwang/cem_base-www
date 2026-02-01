@@ -1,0 +1,7 @@
+sub_in, comment, dim3name, missing_value, flag_meanings, xtype, ifill_value, units, imissing_value, dim4name, nvalid_range, varname, ncid, long_name, dim5name, flag_values, cell_method, dim1name, dim2name, switchdim, fill_value
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqdid, ncd_defvar_bynf

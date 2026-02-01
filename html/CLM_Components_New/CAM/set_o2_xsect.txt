@@ -1,0 +1,7 @@
+sub_in, cz, z, vcol, nw, dto2, scol, xso2, wl
+sub_out, xso2, dto2
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, schu, lymana, inter3

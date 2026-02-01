@@ -1,0 +1,11 @@
+sub_param, weight, ltype, g
+sub_out
+global_ro, grc%landunit_indices
+global_wo, lun%wtgcell
+global_mod
+global_non
+calls, endrun
+readParams,
+integer , intent(in) :: g      ! grid cell index
+integer , intent(in) :: ltype  ! landunit type of interest
+real(r8), intent(in) :: weight ! new weight of this landunit

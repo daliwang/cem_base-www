@@ -1,0 +1,7 @@
+sub_in, cloud_frac, crt1, rcp2, wp4, err_code, sclrprcp, crt2, rtpthvp, thlprcp, wp2thlp, wprtp2, rcm, wpthlp2, thlpthvp, cthl2, sclrpthvp, wpsclrp2, wprtpthlp, wp2thvp, wp2sclrp, wpsclrpthlp, wprcp, wp2rtp, rtprcp, pdf_params, cthl1, wpthvp, wp2rcp, wpsclrprtp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_nan

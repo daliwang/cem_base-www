@@ -1,0 +1,7 @@
+sub_in, cparg, lchnk, mw, scco2, zkm, long, o2_vmr, zen, co2cc, do_diag, o3_vmr, o2cc, tlev, o3cc, nlev, qrs
+sub_out, qrs
+global_ro
+global_wo
+global_mod
+global_non
+calls, calc_o2srb, dgemm, slant_col, lymana, sphers, alloc_err

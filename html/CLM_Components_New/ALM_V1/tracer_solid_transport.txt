@@ -1,0 +1,19 @@
+sub_param, tracerboundarycond_vars, bounds, num_soilc, lbj, tracerstate_vars, ubj, betrtracer_vars, dz, tracerflux_vars, dtime, filter_soilc, hmconductance_col
+sub_out
+global_ro, tracerstate_vars%tracer_conc_solid_passive_col, betrtracer_vars%ngwmobile_tracer_groups, bounds%begc, betrtracer_vars%is_mobile, betrtracer_vars%ngwmobile_tracers, betrtracer_vars%nmem_max, bounds%endc, betrtracer_vars%tracer_group_memid
+global_wo
+global_mod
+global_non, tracerflux_vars%tracer_flx_netpro_vr_col, betrtracer_vars%tracernames
+calls, endrun, daxpy, DiffusTransp
+readParams,
+type(bounds_type)            , intent(in)    :: bounds
+integer                      , intent(in)    :: lbj, ubj
+integer                      , intent(in)    :: num_soilc                                   ! number of columns in column filter_soilc
+integer                      , intent(in)    :: filter_soilc(:)                             ! column filter_soilc
+type(betrtracer_type)        , intent(in)    :: betrtracer_vars
+real(r8)                     , intent(in)    :: dtime                                       ! model time step
+real(r8)                     , intent(in)    :: hmconductance_col(bounds%begc: , lbj: ,1: ) !weighted bulk conductance
+real(r8)                     , intent(in)    :: dz(bounds%begc: , lbj: )
+type(tracerboundarycond_type), intent(in)    :: tracerboundarycond_vars
+type(tracerflux_type)        , intent(in)    :: tracerflux_vars
+type(tracerstate_type)       , intent(inout) :: tracerstate_vars

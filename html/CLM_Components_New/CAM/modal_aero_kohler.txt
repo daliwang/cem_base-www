@@ -1,0 +1,7 @@
+sub_in, im, hygro, s, rdry_in, rwet_out
+sub_out, rwet_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, makoh_quartic, makoh_cubic

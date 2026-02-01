@@ -1,0 +1,7 @@
+sub_in, elem, nets, nete, zeta, hybrid
+sub_out, zeta
+global_ro
+global_wo
+global_mod
+global_non
+calls, initEdgeBuffer, t_stopf, FreeEdgeBuffer, t_startf, edgeVpack, bndry_exchangeV, edgeVunpack

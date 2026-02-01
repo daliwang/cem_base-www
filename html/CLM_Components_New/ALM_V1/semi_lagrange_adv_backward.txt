@@ -1,0 +1,25 @@
+sub_param, update_col, trcou, dtime, leaching_mass, halfdt_col, zi, inflx_top, numfl, ubj, us, dz, filter, lbn, trcin, ntrcs, inflx_bot, lbj, bounds
+sub_out, trcou, leaching_mass, halfdt_col
+global_ro
+global_wo
+global_mod
+global_non
+calls, Extra_inst%DDeallocate, cumdif, asc_sort_vec, cumsum, endrun, backward_advection, cmass_mono_smoother, pchip_interp, pchip_polycc, Extra_inst%InitAllocate
+readParams,
+type(bounds_type) , intent(in)  :: bounds                             !bounds
+integer           , intent(in)  :: lbj, ubj                          ! lbinning and ubing level indices
+integer           , intent(in)  :: lbn(bounds%begc: )                !label of the top/left boundary
+integer           , intent(in)  :: numfl
+integer           , intent(in)  :: ntrcs
+integer           , intent(in)  :: filter(:)
+real(r8)          , intent(in)  :: dtime(bounds%begc: )
+real(r8)          , intent(in)  :: zi(bounds%begc: , lbj-1: )
+real(r8)          , intent(in)  :: dz(bounds%begc: , lbj: )
+real(r8)          , intent(in)  :: inflx_top(bounds%begc: , 1: )     ! incoming tracer flow at top boundary [mol/m2/s]
+real(r8)          , intent(in)  :: inflx_bot(bounds%begc: , 1: )     !incoming tracer flow at bottom boundary
+logical           , intent(in)  :: update_col(bounds%begc: )         !indicator of active clumns
+real(r8)          , intent(in)  :: us(bounds%begc: , lbj-1: )        !convective flux defined at the boundary, positive downwards, [m/s]
+logical           , intent(out) :: halfdt_col(bounds%begc:bounds%endc)
+real(r8)          , intent(in)  :: trcin(bounds%begc: , lbj: , 1: )  !input tracer concentration
+real(r8)          , intent(out) :: trcou(bounds%begc: , lbj: , 1: )
+real(r8), optional, intent(out) :: leaching_mass(bounds%begc: , 1: ) !leaching tracer mass

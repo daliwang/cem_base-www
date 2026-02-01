@@ -1,0 +1,7 @@
+sub_in, ncol, flux, alam, co2, tv, aaj0, ho3, am, aajm, o3, hco2, djm, dj0
+sub_out, hco2, flux, ho3
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_matrices

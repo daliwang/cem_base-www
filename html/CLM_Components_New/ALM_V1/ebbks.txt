@@ -1,0 +1,15 @@
+sub_param, y0, neq, f, dt, y, ps, nprimeq
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls, daxpy
+readParams,
+real(r8), intent(in) :: y0(neq)
+real(r8), intent(in) :: f(neq)
+real(r8), intent(in) :: dt
+integer,  intent(in) :: nprimeq
+integer,  intent(in) :: neq
+real(r8), intent(out):: y(neq)
+real(r8), optional, intent(out):: ps

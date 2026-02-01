@@ -1,0 +1,13 @@
+sub_in, varname, flag, ncid, longname, readvar, data_rl, fill_value, units
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, data_rl(:,1)
+calls, ncd_io, ncd_defvar
+
+Tree height: 7
+2+, ncd_io, 
+4+, ncd_io, 
+3+, ncd_defvar, 
+1+, ncd_defvar, 

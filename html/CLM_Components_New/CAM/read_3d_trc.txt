@@ -1,0 +1,7 @@
+sub_in, vid, order, cnt, strt, file, fid, loc_arr
+sub_out, loc_arr
+global_ro
+global_wo
+global_mod
+global_non, wrk3d
+calls, lininterp_finish, get_lat_all_p, lininterp_init, xy_interp, get_rlat_all_p, get_rlon_all_p, t_startf, get_lon_all_p, endrun, lininterp, t_stopf

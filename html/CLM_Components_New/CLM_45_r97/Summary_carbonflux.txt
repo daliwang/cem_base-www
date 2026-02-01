@@ -1,0 +1,7 @@
+sub_in, isotope, soilbiogeochem_decomp_cascade_ctransfer_col, soilbiogeochem_hr_col, num_soilc, bounds, num_soilp, soilbiogeochem_lithr_col, this, filter_soilc, filter_soilp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, p2c

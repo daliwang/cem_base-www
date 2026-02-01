@@ -1,0 +1,7 @@
+sub_in, pot_highlats, pot_highlat, ihlat_bnd, pot_midlat
+sub_out, pot_highlat, pot_highlats
+global_ro
+global_wo
+global_mod
+global_non
+calls

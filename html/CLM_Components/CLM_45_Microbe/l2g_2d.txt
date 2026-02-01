@@ -1,0 +1,7 @@
+sub_in, num2d, ubg, ubl, lbl, larr, lbg, garr, l2g_scale_type
+sub_out, garr
+global_ro, wtgcell, gridcell, active
+global_wo
+global_mod
+global_non, nlandunits, luni
+calls, build_scale_l2g, endrun

@@ -1,0 +1,14 @@
+sub_param, values, gov_eqn_id, var_id, this, condition_id, auxvar_type, num_values
+sub_out
+global_ro
+global_wo, %aux_vars_ss, %aux_vars_bc
+global_mod
+global_non, this%sysofeqns
+calls, endrun
+readParams,
+PetscInt, intent(in)               :: gov_eqn_id
+PetscInt, intent(in)               :: auxvar_type
+PetscInt, intent(in)               :: var_id
+PetscInt, intent(in)               :: condition_id
+PetscInt, intent(in)               :: num_values
+PetscReal,intent(in)               :: values(:)

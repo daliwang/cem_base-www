@@ -1,0 +1,7 @@
+sub_in, setdata, ltype, gi, ci, li, glcmask, pi, nw
+sub_out, ci, li, glcmask, pi
+global_ro
+global_wo, urbpoi, lakpoi, mxy, wtlunit, glcmecpoi, glc_topo, wtgcell, wtcol, landunit, gridcell, ifspecial, column, itype
+global_mod
+global_non, c, p, l
+calls, subgrid_get_gcellinfo, endrun

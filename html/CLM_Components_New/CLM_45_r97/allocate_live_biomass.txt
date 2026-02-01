@@ -1,0 +1,7 @@
+sub_in, cc_p
+sub_out
+global_ro, balive, bdead
+global_wo, b
+global_mod
+global_non, cc_p
+calls

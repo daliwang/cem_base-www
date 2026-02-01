@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_ctrunc_col, soilbiogeochem_totsomc_col, soilbiogeochem_cwdc_col, soilbiogeochem_totlitc_col, bounds, filter_soilc, num_soilp, num_soilc, this, filter_soilp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, p2c

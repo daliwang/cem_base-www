@@ -1,0 +1,7 @@
+sub_in, pbuf2d, File, cam_out
+sub_out, cam_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pbuf_read_restart, initialize_comsrf, pio_seterrorhandling, read_prescribed_volcaero_restart, initialize_radbuffer, read_prescribed_aero_restart, pio_read_darray, subcol_read_restart, chem_read_restart, read_prescribed_ozone_restart, get_phys_decomp, read_prescribed_ghg_restart

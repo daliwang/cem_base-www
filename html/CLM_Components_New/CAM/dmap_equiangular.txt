@@ -1,0 +1,7 @@
+sub_in, b, elem, a, D
+sub_out, D
+global_ro
+global_wo
+global_mod
+global_non
+calls, vmap

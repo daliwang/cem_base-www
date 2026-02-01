@@ -1,0 +1,10 @@
+sub_in, bounds
+sub_out
+global_ro, pftcon%dsladlai, pdgvs%prec365, pftcon%slatop, pdgvs%agddtw, pepv%annsum_npp, pepv%annsum_litfall, dgv_pftcon%reinickerp, pdgvs%tmomin20, dgv_pftcon%twmax, dgv_pftcon%crownarea_max, pcs%deadstemc, pftcon%dwood, pftcon%woody, dgv_pftcon%allom1, dgv_pftcon%gddmin
+global_wo, pdgvs%greffic, pdgvs%heatstress, pdgvs%pftmayexist
+global_mod, pdgvs%fpcgrid, pcs%leafcmax, pdgvs%nind, pdgvs%crownarea
+global_non, pdgvs%agdd20, pft, dgv_pftcon%tcmin, dgv_pftcon%tcmax
+calls, endrun
+
+Tree height: 8
+5+, endrun, 

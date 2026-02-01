@@ -1,0 +1,9 @@
+sub_param, currentCohort:1
+sub_out
+global_ro| EDecophyscon%clone_alloc, clone_alloc, NONE| currentCohort%resp_acc, resp_acc, NONE| EDecophyscon%cushion, cushion, NONE| currentCohort%pft, pft, NONE| currentCohort%br, br, NONE| currentCohort%gpp_acc, gpp_acc, NONE| ecophyscon%froot_leaf, froot_leaf, NONE| currentCohort%n, n, NONE| ecophyscon%leaf_long, leaf_long, NONE| EDecophyscon%leaf_stor_priority, leaf_stor_priority, NONE| currentCohort%bl, bl, NONE| EDecophyscon%sapwood_ratio, sapwood_ratio, NONE| currentCohort%bstore, bstore, NONE| EDecophyscon%seed_alloc, seed_alloc, NONE| currentCohort%npp_acc, npp_acc, NONE| EDecophyscon%root_long, root_long, NONE
+global_wo| currentCohort%gpp, gpp, NONE| currentCohort%dhdt, dhdt, NONE| currentCohort%ddbhdt, ddbhdt, NONE| currentCohort%seed_prod, seed_prod, NONE| ecophyscon%evergreen, evergreen, NONE| currentCohort%resp, resp, NONE| currentCohort%dndt, dndt, NONE
+global_mod| currentCohort%storage_flux, storage_flux, NONE| currentCohort%hite, hite, NONE| currentCohort%npp, npp, NONE| currentCohort%dbdeaddt, dbdeaddt, NONE| %flux_in, flux_in, NONE| currentCohort%woody_turnover, woody_turnover, NONE| currentCohort%md, md, NONE| currentCohort%root_md, root_md, NONE| currentCohort%dbalivedt, dbalivedt, NONE| currentCohort%dbstoredt, dbstoredt, NONE| currentCohort%carbon_balance, carbon_balance, NONE| currentCohort%leaf_md, leaf_md, NONE
+global_non| currentCohort%siteptr, currentSite, NONE
+calls, allocate_live_biomass
+readParams,
+type(cohort),intent(inout),pointer :: currentCohort

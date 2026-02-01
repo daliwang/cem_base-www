@@ -1,0 +1,11 @@
+sub_in
+sub_out
+global_ro
+global_wo, clm3%g%aais_mask, clm3%g%gris_area, clm3%g%gindex, clm3%g%area, clm3%g%lon, clm3%g%lat, clm3%g%aais_area, clm3%g%gris_mask
+global_mod, clm3%g%latdeg, clm3%g%londeg
+global_non, clm3%g, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, set_landunit_veg_compete, set_landunit_wet_ice_lake, set_landunit_urban, clm_ptrs_check, get_proc_global, get_proc_bounds, set_landunit_crop_noncompete, clm_ptrs_compdown
+
+Tree height: 2
+0 , get_proc_global, get_proc_bounds, set_landunit_veg_compete, set_landunit_crop_noncompete, set_landunit_urban, set_landunit_urban, set_landunit_urban, set_landunit_wet_ice_lake, set_landunit_wet_ice_lake, set_landunit_wet_ice_lake, clm_ptrs_compdown, clm_ptrs_check, 
+1+, set_landunit_wet_ice_lake, 

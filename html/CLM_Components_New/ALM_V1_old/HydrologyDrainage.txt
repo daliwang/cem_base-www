@@ -1,0 +1,24 @@
+sub_param, glc2lnd_vars:11, soilstate_vars:14, waterflux_vars:16, waterstate_vars:15, num_nolakec:2, filter_urbanc:7, filter_do_smb_c:9, num_urbanc:6, soilhydrology_vars:13, filter_hydrologyc:5, atm2lnd_vars:10, temperature_vars:12, num_hydrologyc:4, filter_nolakec:3, bounds:1, num_do_smb_c:8
+sub_out
+global_ro| atm2lnd_vars%forc_flood_grc, qflx_floodg, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE| col%dz, dz, NONE| waterflux_vars%qflx_snwcp_ice_col, qflx_snwcp_ice, NONE| glc2lnd_vars%glc_dyn_runoff_routing_grc, glc_dyn_runoff_routing, NONE| atm2lnd_vars%forc_rain_downscaled_col, forc_rain, NONE| soilhydrology_vars%wa_col, wa, NONE| col%landunit, landunit, NONE| waterflux_vars%qflx_glcice_melt_col, qflx_glcice_melt, NONE| waterstate_vars%snow_persistence_col, snow_persistence, NONE| waterflux_vars%qflx_evap_tot_col, qflx_evap_tot, NONE| waterstate_vars%begwb_col, begwb, NONE| waterflux_vars%qflx_irrig_col, qflx_irrig, NONE| col%gridcell, gridcell, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| waterstate_vars%h2osno_col, h2osno, NONE| waterstate_vars%h2ocan_col, h2ocan, NONE| col%itype, ctype, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| atm2lnd_vars%forc_snow_downscaled_col, forc_snow, NONE
+global_wo| waterflux_vars%qflx_runoff_u_col, qflx_runoff_u, NONE| waterflux_vars%qflx_rsub_sat_col, qflx_rsub_sat, NONE| waterflux_vars%qflx_runoff_r_col, qflx_runoff_r, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| waterflux_vars%qflx_infl_col, qflx_infl, NONE
+global_mod| waterflux_vars%qflx_h2osfc_surf_col, qflx_h2osfc_surf, NONE| waterflux_vars%qflx_runoff_col, qflx_runoff, NONE| waterflux_vars%qflx_glcice_col, qflx_glcice, NONE| waterflux_vars%qflx_drain_col, qflx_drain, NONE| waterflux_vars%qflx_qrgwl_col, qflx_qrgwl, NONE| waterstate_vars%endwb_col, endwb, NONE| waterflux_vars%qflx_surf_col, qflx_surf, NONE| waterflux_vars%qflx_drain_perched_col, qflx_drain_perched, NONE| waterflux_vars%qflx_glcice_frz_col, qflx_glcice_frz, NONE
+global_non
+calls, pre_diagnose_soilcol_water_flux, diagnose_drainage_water_flux, CLMVICMap, Drainage
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_nolakec          ! number of column non-lake points in column filter
+integer                  , intent(in)    :: filter_nolakec(:)    ! column filter for non-lake points
+integer                  , intent(in)    :: num_hydrologyc       ! number of column soil points in column filter
+integer                  , intent(in)    :: filter_hydrologyc(:) ! column filter for soil points
+integer                  , intent(in)    :: num_urbanc           ! number of column urban points in column filter
+integer                  , intent(in)    :: filter_urbanc(:)     ! column filter for urban points
+integer                  , intent(in)    :: num_do_smb_c         ! number of bareland columns in which SMB is calculated, in column filter
+integer                  , intent(in)    :: filter_do_smb_c(:)   ! column filter for bare land SMB columns
+type(atm2lnd_type)       , intent(in)    :: atm2lnd_vars
+type(glc2lnd_type)       , intent(in)    :: glc2lnd_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(soilhydrology_type) , intent(inout) :: soilhydrology_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars

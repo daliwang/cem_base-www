@@ -1,0 +1,18 @@
+sub_param, scmlat_in:5, version_in:8, username_in:10, hostname_in:9, caseid_in:1, nsrest_in:7, single_column_in:4, ctitle_in:2, brnch_retain_casename_in:3, scmlon_in:6
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this, shr_sys_abort
+readParams,
+character(len=256), optional, intent(IN) :: caseid_in                ! case id
+character(len=256), optional, intent(IN) :: ctitle_in                ! case title
+logical,            optional, intent(IN) :: brnch_retain_casename_in ! true => allow case name to remain the
+logical,            optional, intent(IN) :: single_column_in         ! true => single column mode
+real(r8),           optional, intent(IN) :: scmlat_in                ! single column lat
+real(r8),           optional, intent(IN) :: scmlon_in                ! single column lon
+integer,            optional, intent(IN) :: nsrest_in                ! 0: initial run. 1: restart: 3: branch
+character(len=256), optional, intent(IN) :: version_in               ! model version
+character(len=256), optional, intent(IN) :: hostname_in              ! hostname running on
+character(len=256), optional, intent(IN) :: username_in              ! username running job

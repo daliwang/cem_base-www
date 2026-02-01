@@ -1,0 +1,7 @@
+sub_in, isotopeflux_vars, filter_soilc, num_soilp, carbonflux_vars, cnstate_vars, isotopestate_vars, filter_soilp, carbonstate_vars, num_soilc, isotope
+sub_out
+global_ro, col%pfti, cnstate_vars%stem_prof_patch, isotopeflux_vars%m_deadstemc_to_litter_fire_patch, cnstate_vars%croot_prof_patch, pft%wtcol, carbonstate_vars%decomp_cpools_vr_col, isotopestate_vars%decomp_cpools_vr_col, isotopeflux_vars%m_deadcrootc_to_litter_fire_patch
+global_wo
+global_mod, isotopeflux_vars%fire_mortality_c_to_cwdc_col, isotopeflux_vars%m_decomp_cpools_to_fire_vr_col, carbonflux_vars%m_decomp_cpools_to_fire_vr_col
+global_non
+calls, CIsoFluxCalc

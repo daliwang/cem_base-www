@@ -1,0 +1,10 @@
+sub_param, variable_value, var_type, this
+sub_out, variable_value
+global_ro, this%mass, this%condition_value, this%pressure, this%temperature, this%liq_sat, this%dxi_dtime, this%frac_liq_sat, this%soil_matrix_pot
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+PetscInt, intent(in)              :: var_type
+PetscReal, intent(out)            :: variable_value

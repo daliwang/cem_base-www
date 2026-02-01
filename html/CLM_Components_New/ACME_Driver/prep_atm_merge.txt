@@ -1,0 +1,8 @@
+sub_in, xao_a, x2a_a, l2x_a, fractions_a, i2x_a, o2x_a
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_avect_zero, mct_aVect_setSharedIndices, seq_comm_getdata, shr_sys_abort, mct_aVect_copy
+calls_ln, shr_sys_abort@430, mct_avect_zero@475, shr_sys_abort@441, mct_aVect_setSharedIndices@361, seq_comm_getdata@309, mct_aVect_setSharedIndices@360, mct_aVect_setSharedIndices@362, mct_aVect_setSharedIndices@363, mct_aVect_copy@535, shr_sys_abort@467, mct_aVect_copy@536, mct_aVect_copy@534, shr_sys_abort@404, shr_sys_abort@447, shr_sys_abort@417, shr_sys_abort@388, shr_sys_abort@463, shr_sys_abort@459, mct_aVect_copy@533, shr_sys_abort@455, shr_sys_abort@451

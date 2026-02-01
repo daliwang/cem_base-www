@@ -1,0 +1,21 @@
+sub_param, num_lakep:4, bounds:1, solarabs_vars:6, num_lakec:2, filter_lakec:3, filter_lakep:5, lakestate_vars:13, soilstate_vars:7, temperature_vars:12, ch4_vars:10, waterstate_vars:8, energyflux_vars:11, waterflux_vars:9
+sub_out
+global_ro| lakestate_vars%etal_col, etal, NONE| waterstate_vars%h2osno_col, h2osno, NONE| solarabs_vars%fsr_nir_i_patch, fsr_nir_i, NONE| col%z_lake, z_lake, NONE| pft%column, column, NONE| lakestate_vars%ks_col, ks, NONE| lakestate_vars%lake_raw_col, lake_raw, NONE| col%dz, dz, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| solarabs_vars%fsds_nir_d_patch, fsds_nir_d, NONE| solarabs_vars%sabg_lyr_patch, sabg_lyr, NONE| solarabs_vars%fsr_nir_d_patch, fsr_nir_d, NONE| solarabs_vars%fsds_nir_i_patch, fsds_nir_i, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| col%lakedepth, lakedepth, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| col%snl, snl, NONE| lakestate_vars%ws_col, ws, NONE| solarabs_vars%sabg_patch, sabg, NONE| col%z, z, NONE| col%dz_lake, dz_lake, NONE
+global_wo| lakestate_vars%savedtke1_col, savedtke1, NONE| waterflux_vars%qflx_snofrz_col, qflx_snofrz_col, NONE| waterstate_vars%frac_iceold_col, frac_iceold, NONE
+global_mod| ch4_vars%grnd_ch4_cond_col, grnd_ch4_cond, NONE| lakestate_vars%lake_icefrac_col, lake_icefrac, NONE| lakestate_vars%betaprime_col, beta, NONE| temperature_vars%hc_soisno_col, hc_soisno, NONE| energyflux_vars%eflx_gnet_patch, eflx_gnet, NONE| energyflux_vars%errsoi_col, errsoi, NONE| lakestate_vars%lake_icethick_col, lake_icethick, NONE| lakestate_vars%lakeresist_col, lakeresist, NONE| temperature_vars%t_lake_col, t_lake, NONE| energyflux_vars%eflx_soil_grnd_patch, eflx_soil_grnd, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| energyflux_vars%eflx_sh_tot_patch, eflx_sh_tot, NONE| temperature_vars%hc_soi_col, hc_soi, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE
+global_non
+calls, Tridiagonal, PhaseChange_Lake, SoilThermProp_Lake
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_lakec       ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_lakec(:) ! column filter for non-lake points
+integer                , intent(in)    :: num_lakep       ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_lakep(:) ! patch filter for non-lake points
+type(solarabs_type)    , intent(in)    :: solarabs_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(ch4_type)         , intent(inout) :: ch4_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(lakestate_type)   , intent(inout) :: lakestate_vars

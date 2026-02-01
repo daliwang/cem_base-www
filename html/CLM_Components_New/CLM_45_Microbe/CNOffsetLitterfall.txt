@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%lflitcn, clm3%g%l%c%p%pcf%cpool_to_leafc, clm3%g%l%c%p%pepv%offset_counter, clm3%g%l%c%p%pcs%livestemc, pftcon%leafcn, clm3%g%l%c%p%pcs%frootc, clm3%g%l%c%p%pcf%cpool_to_frootc, clm3%g%l%c%p%pepv%offset_flag, clm3%g%l%c%p%pcs%leafc, clm3%g%l%c%p%pcs%grainc, pftcon%livewdcn, pftcon%frootcn, pftcon%graincn, clm3%g%l%c%p%pcf%cpool_to_grainc, clm3%g%l%c%p%itype, clm3%g%l%c%p%pcf%cpool_to_livestemc
+global_wo, clm3%g%l%c%p%pnf%grainn_to_food, clm3%g%l%c%p%pnf%leafn_to_retransn, clm3%g%l%c%p%pnf%livestemn_to_litter, clm3%g%l%c%p%pnf%frootn_to_litter
+global_mod, clm3%g%l%c%p%pcf%livestemc_to_litter, clm3%g%l%c%p%pcf%leafc_to_litter, clm3%g%l%c%p%pepv%prev_leafc_to_litter, clm3%g%l%c%p%pcf%grainc_to_food, clm3%g%l%c%p%pepv%prev_frootc_to_litter, clm3%g%l%c%p%pnf%leafn_to_litter, clm3%g%l%c%p%pcf%frootc_to_litter
+global_non
+calls
+
+Tree height: 4

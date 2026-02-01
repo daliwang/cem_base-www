@@ -1,0 +1,13 @@
+sub_param, filter_soilc, clm_bgc_data, bounds, soilstate_vars, num_soilc
+sub_out
+global_ro, soilstate_vars%cellorg_col, soilstate_vars%sucsat_col, soilstate_vars%eff_porosity_col, soilstate_vars%hksat_col, soilstate_vars%watfc_col, soilstate_vars%bd_col, soilstate_vars%bsw_col, soilstate_vars%porosity_col, soilstate_vars%watsat_col
+global_wo, clm_bgc_data%watfc_col, clm_bgc_data%bsw_col, clm_bgc_data%eff_porosity_col, clm_bgc_data%hksat_col, clm_bgc_data%bd_col, clm_bgc_data%watsat_col, clm_bgc_data%cellorg_col, clm_bgc_data%sucsat_col, clm_bgc_data%porosity_col
+global_mod, clm_bgc_data%decomp_pool_name, decomp_cascade_con%decomp_pool_name_history, decomp_cascade_con%initial_cn_ratio, clm_bgc_data%initial_cn_ratio, clm_bgc_data%ndecomp_pools, col%z, clm_bgc_data%z, clm_bgc_data%dz, col%dz, decomp_cascade_con%floating_cn_ratio_decomp_pools, clm_bgc_data%floating_cn_ratio, clm_bgc_data%initial_cp_ratio, decomp_cascade_con%initial_cp_ratio, decomp_cascade_con%floating_cp_ratio_decomp_pools, clm_bgc_data%floating_cp_ratio
+global_non
+calls
+readParams,
+type(bounds_type)        , intent(in) :: bounds           ! bounds
+integer                  , intent(in) :: num_soilc        ! number of column soil points in column filter
+integer                  , intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(soilstate_type)     , intent(in) :: soilstate_vars
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

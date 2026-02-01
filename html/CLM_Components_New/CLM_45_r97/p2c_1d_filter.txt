@@ -1,0 +1,7 @@
+sub_in, numfc, bounds, patcharr, colarr, filterc
+sub_out, colarr
+global_ro
+global_wo
+global_mod
+global_non
+calls

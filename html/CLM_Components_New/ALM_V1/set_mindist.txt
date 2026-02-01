@@ -1,0 +1,15 @@
+sub_param, mindist_index, bego, subgrido, endo, activei, endi, activeo, begi, subgridi
+sub_out, mindist_index
+global_ro, subgrido%coslat, subgridi%coslat, subgridi%name, subgrido%lat, subgridi%lat, subgrido%topoglc, subgridi%topoglc, subgridi%lon, subgrido%lon
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+integer            , intent(in)  :: begi, endi
+integer            , intent(in)  :: bego, endo
+logical            , intent(in)  :: activei(begi:endi)
+logical            , intent(in)  :: activeo(bego:endo)
+type(subgrid_type) , intent(in)  :: subgridi
+type(subgrid_type) , intent(in)  :: subgrido
+integer            , intent(out) :: mindist_index(bego:endo)

@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, col%wtlunit, col%gridcell, col%landunit, col%itype
+global_wo, subgrid_weights_diagnostics%pct_glc_mec
+global_mod
+global_non
+calls

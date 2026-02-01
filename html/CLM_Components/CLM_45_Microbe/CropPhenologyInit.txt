@@ -1,0 +1,7 @@
+sub_in, endp, begp
+sub_out
+global_ro, latdeg, gridcell
+global_wo
+global_mod
+global_non
+calls

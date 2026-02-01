@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| >currentCohort%shorter;, shorter;, NONE| %FI, FI, NONE| %bsw, bsw, NONE| %bdead, bdead, NONE| %n, n, NONE| %bl, bl, NONE| currentSite%oldest_patch;, currentPatch, NONE| currentPatch%younger;, currentPatch, NONE
+global_wo
+global_mod| currentPatch%tallest;, currentCohort, NONE| %SH, SH, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer :: currentSite

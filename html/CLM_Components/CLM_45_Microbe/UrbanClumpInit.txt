@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro, coli, itype, colf, udenstype
+global_wo
+global_mod
+global_non, gridcell
+calls, endrun

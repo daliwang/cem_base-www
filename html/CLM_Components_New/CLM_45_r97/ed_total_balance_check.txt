@@ -1,0 +1,7 @@
+sub_in, currentSite, call_index
+sub_out
+global_ro, currentCohort, leaf_litter, bdead, cwd_ag, currentPatch, area, balive, cwd_bg, n, seed_bank, root_litter, bstore
+global_wo
+global_mod
+global_non
+calls

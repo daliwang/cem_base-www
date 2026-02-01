@@ -1,0 +1,15 @@
+sub_param, filter_soilp:5, filter_soilc:3, num_soilp:4, bounds:1, num_soilc:2, tracercoeff_vars:7, carbonflux_vars:6
+sub_out
+global_ro| carbonflux_vars%bgnpp_patch, bgnpp, NONE| pft%column, column, NONE| carbonflux_vars%agnpp_patch, agnpp, NONE
+global_wo| ch4_vars%tempavg_somhr_col, !tempavg_somhr, NONE| carbonflux_vars%annavg_bgnpp_patch, annavg_bgnpp, NONE| carbonflux_vars%annavg_agnpp_patch, annavg_agnpp, NONE| ch4_vars%tempavg_finrw_col, !tempavg_finrw, NONE
+global_mod| carbonflux_vars%tempavg_bgnpp_patch, tempavg_bgnpp, NONE| tracercoeff_vars%annsum_counter_col, annsum_counter, NONE| carbonflux_vars%tempavg_agnpp_patch, tempavg_agnpp, NONE
+global_non| ch4_vars%finundated_col, !finundated, NONE| ch4_vars%annavg_finrw_col, !annavg_finrw, NONE| ch4_vars%annavg_somhr_col, !annavg_somhr, NONE
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+integer                , intent(in)    :: num_soilp         ! number of soil points in pft filter
+integer                , intent(in)    :: filter_soilp(:)   ! patch filter for soil points
+type(Carbonflux_type)  , intent(inout) :: carbonflux_vars
+type(tracercoeff_type) , intent(inout) :: tracercoeff_vars

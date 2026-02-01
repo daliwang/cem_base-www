@@ -1,0 +1,18 @@
+sub_in, masterproc, dtime
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+
+Tree height: 12
+1-, shr_sys_abort, 
+2+, shr_sys_abort, shr_sys_abort, 
+3+, shr_sys_abort, 
+4+, shr_sys_abort, 
+5+, shr_sys_abort, 
+6+, shr_sys_abort, 
+9+, shr_sys_abort, 
+10+, shr_sys_abort, 
+11+, shr_sys_abort, 

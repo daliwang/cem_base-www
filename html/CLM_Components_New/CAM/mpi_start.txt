@@ -1,0 +1,7 @@
+sub_in, comm
+sub_out, comm
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_COMM_DUP, MPI_INITIALIZED, MPI_INIT, MPI_COMM_SIZE, MPI_COMM_RANK

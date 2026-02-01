@@ -1,0 +1,7 @@
+sub_in, is_convtran1, ind, molectype, fixed_ubc, mixtype, longname, name, fixed_ubflx, cpc, qminc, cam_outfld, mwc, readiv
+sub_out, fixed_ubflx, is_convtran1, ind, readiv, fixed_ubc, cam_outfld
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

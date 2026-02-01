@@ -1,0 +1,7 @@
+sub_in, lakestate_inst, atm2lnd_inst, sat, soilstate_inst, ch4_inst, num_methc, waterstate_inst, filter_methc, bounds, jwt, lake, temperature_inst
+sub_out
+global_ro, lakedepth, lake_icefrac, watsat, forc_pbot, t_soisno, frac_h2osfc, z, conc_ch4, h2osfc, zi
+global_wo
+global_mod, ch4_ebul_depth
+global_non, ch4_inst%ch4_oxid_depth_unsat_col, ch4_inst%ch4_oxid_depth_sat_col, ch4_inst%ch4_ebul_total_sat_col, ch4_inst%ch4_ebul_total_unsat_col, col%dz, waterstate_inst%h2osoi_vol_col, ch4_inst%ch4_aere_depth_unsat_col, ch4_inst%ch4_aere_depth_sat_col
+calls

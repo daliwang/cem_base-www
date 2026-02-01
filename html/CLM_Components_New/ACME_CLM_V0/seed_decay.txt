@@ -1,0 +1,7 @@
+sub_in, currentPatch
+sub_out
+global_ro, currentPatch%seed_bank
+global_wo, currentPatch%seed_decay
+global_mod
+global_non
+calls

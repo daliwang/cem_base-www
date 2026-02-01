@@ -1,0 +1,7 @@
+sub_in, colo2, layswtch, fac10, laytrop, fac01, colco2, wkl, laylow, pz, forfrac, pavel, selffac, colh2o, jt1, jp, fac11, fac00, coln2o, colmol, colch4, nlayers, indself, coldry, forfac, selffrac, co2mult, tbound, tz, colo3, jt, tavel, indfor
+sub_out, colo2, fac11, colch4, coln2o, colmol, layswtch, fac00, forfrac, forfac, laylow, selffrac, co2mult, fac01, colco2, fac10, laytrop, indself, jp, indfor, selffac, colo3, jt1, colh2o, jt
+global_ro
+global_wo
+global_mod
+global_non
+calls

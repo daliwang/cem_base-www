@@ -1,0 +1,7 @@
+sub_in, ntotq, pi, nprxy_y, ks, commdyn, jmxy, jmyz, nprxy_x, unit, imxy, grid, kfirst, ak, jlastxy, klast, npryz_z, nq, dt, npes_xy, ae, jord, om, commnyz, ilastxy, ifirstxy, im, kmyz, jm, commxy, jlast, km, npryz_y, npes_yz, commyz, jfirst, bk, jfirstxy
+sub_out
+global_ro
+global_wo, acosp, acosu, sinp
+global_mod, cose, cosp, sinl5, sine, cosl5, sinlon, coslon
+global_non
+calls, dynpkg_init, pftinit, spmd_vars_init, pft_cf

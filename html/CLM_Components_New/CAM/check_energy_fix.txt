@@ -1,0 +1,7 @@
+sub_in, nstep, eshflx, ptend, state
+sub_out, eshflx
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init

@@ -1,0 +1,7 @@
+sub_in, name, len, dimid, ncid
+sub_out, len
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqdid

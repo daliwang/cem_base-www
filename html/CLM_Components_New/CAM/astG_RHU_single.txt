@@ -1,0 +1,7 @@
+sub_in, orhmin, U, qv, p, Ga, landfrac, a, snowh
+sub_out, Ga, a
+global_ro
+global_wo
+global_mod
+global_non
+calls

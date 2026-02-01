@@ -1,0 +1,17 @@
+sub_param, lakestate_vars:5, urbanparams_vars:2, temperature_vars:8, soilstate_vars:3, energyflux_vars:9, waterstate_vars:6, bounds:1, waterflux_vars:7, soilhydrology_vars:4
+sub_out
+global_ro| temperature_vars%heat1_grc, heat1_grc, NONE| waterstate_vars%ice2_grc, ice2_grc, NONE| waterstate_vars%ice1_grc, ice1_grc, NONE| waterstate_vars%liq2_grc, liq2_grc, NONE| waterstate_vars%liq1_grc, liq1_grc, NONE| temperature_vars%heat2_grc, heat2_grc, NONE
+global_wo| waterflux_vars%qflx_ice_dynbal_grc, qflx_ice_dynbal_grc, NONE| waterflux_vars%qflx_liq_dynbal_grc, qflx_liq_dynbal_grc, NONE| energyflux_vars%eflx_dynbal_grc, eflx_dynbal_grc, NONE
+global_mod
+global_non
+calls, dyn_hwcontent
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+type(urbanparams_type)   , intent(in)    :: urbanparams_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(lakestate_type)     , intent(in)    :: lakestate_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(energyflux_type)    , intent(inout) :: energyflux_vars

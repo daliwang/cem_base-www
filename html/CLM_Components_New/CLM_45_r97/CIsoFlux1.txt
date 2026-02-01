@@ -1,0 +1,7 @@
+sub_in, filter_soilp, isotope, cnveg_carbonflux_inst, iso_cnveg_carbonstate_inst, iso_soilbiogeochem_carbonflux_inst, num_soilp, soilbiogeochem_carbonflux_inst, cnveg_carbonstate_inst, filter_soilc, iso_soilbiogeochem_carbonstate_inst, soilbiogeochem_state_inst, num_soilc, iso_cnveg_carbonflux_inst, soilbiogeochem_carbonstate_inst
+sub_out
+global_ro, cascade_donor_pool, decomp_cpools_vr_col
+global_wo
+global_mod, decomp_cascade_hr_vr_col, decomp_cascade_ctransfer_vr_col
+global_non, iso_soilbiogeochem_carbonstate_inst, iso_cnveg_carbonflux_inst, iso_cnveg_carbonstate_inst, iso_soilbiogeochem_carbonflux_inst, soilbiogeochem_carbonflux_inst, cnveg_carbonstate_inst, soilbiogeochem_carbonstate_inst, cnveg_carbonflux_inst
+calls, CNCIsoLitterToColumn, CIsoFluxCalc

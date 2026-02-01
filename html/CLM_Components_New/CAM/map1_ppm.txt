@@ -1,0 +1,7 @@
+sub_in, j, i2, i1, kn, itot, iv, km, jlast, kord, pe2, jfirst, q1, pe1, ng_s, ng_n, q2
+sub_out, q2
+global_ro
+global_wo
+global_mod
+global_non
+calls, ppm2m, endrun

@@ -1,0 +1,28 @@
+sub_param, canopystate_vars, doalb, dgvs_vars, phosphorusstate_vars, phosphorusflux_vars, soilstate_vars, nitrogenflux_vars, filter_soilp, num_pcropp, crop_vars, waterstate_vars, filter_soilc, num_soilc, num_soilp, cnstate_vars, nitrogenstate_vars, filter_pcropp, carbonflux_vars, temperature_vars, carbonstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNPhenologyClimate, CNStressDecidPhenology, CNBackgroundLitterfall, CropPhenology, CNCropHarvest, CNEvergreenPhenology, CNLivewoodTurnover, CNSeasonDecidPhenology, CNOnsetGrowth, CNLitterToColumn, CNOffsetLitterfall
+readParams,readCNPhenolParams
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                  , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:) ! filter for soil patches
+integer                  , intent(in)    :: num_pcropp      ! number of prog. crop patches in filter
+integer                  , intent(in)    :: filter_pcropp(:)! filter for prognostic crop patches
+logical                  , intent(in)    :: doalb           ! true if time for sfc albedo calc
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(crop_type)          , intent(inout)    :: crop_vars
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(dgvs_type)          , intent(inout) :: dgvs_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

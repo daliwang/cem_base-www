@@ -1,0 +1,7 @@
+sub_in, filter_soilp, atm2lnd_inst, temperature_inst, num_soilp, photosyns_inst, bounds, canopystate_inst, vocemis_inst
+sub_out
+global_ro, elai_p, t_veg240, forc_solai240, elai, fsun240, t_veg24, cisun_z, forc_solad24, fsun24, forc_solai24, forc_solai, cisha_z, emis_factors, forc_solad240, forc_pbot, class_number, forc_solad, t_veg, index, molec_weight, fsun
+global_wo, alpha_out, par24u_out, gammaP_out, para_out, gamma_out, gammaL_out, par24a_out, cp_out, gammaT_out, gammaA_out, par240a_out, par240u_out, gammaS_out, gammaC_out, Eopt_out, paru_out, topt_out
+global_mod, vocflx_tot, vocflx
+global_non, waterstate_inst%h2osoi_vol_col, soilstate_inst%watsat_col, soilstate_inst%bsw_col, waterstate_inst%h2osoi_ice_col, soilstate_inst%sucsat_col, soilstate_inst%clayfrac_col, soilstate_inst%sandfrac_col, meg_cmp%next_megcomp, shr_megan_linkedlist, col%dz
+calls, endrun

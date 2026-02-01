@@ -1,0 +1,7 @@
+sub_in, filter_hydrologyc, bounds, num_hydrologyc
+sub_out
+global_ro, cps%watsat, cps%dz, bounds%begg, col%gridcell, cws%h2osoi_ice
+global_wo
+global_mod
+global_non
+calls, pflotranModelResetSoilPorosity, VecGetArrayF90, VecRestoreArrayF90

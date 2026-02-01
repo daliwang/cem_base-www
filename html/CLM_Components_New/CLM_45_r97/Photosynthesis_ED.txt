@@ -1,0 +1,7 @@
+sub_in, esat_tv, canopystate_inst, atm2lnd_inst, eair, photosyns_inst, fn, cair, temperature_inst, rb, ed_allsites_inst, bounds, filterp, oair, dayl_factor
+sub_out
+global_ro, currentCohort, rootfr_ft, leafcn, NV, canopy_area_profile, forc_pbot, hite, ed_laisun_z, slatop, c3psn, tgcm, balive, ed_laisha_z, nv, treesai, br, woody, f_sun, t_veg, t_soisno, ed_parsha_z, canopy_layer, elai_profile, esai_profile, treelai, c_area, canopy_trim, n, area, btran_ft, ed_parsun_z, canopy_layer_lai, pft, NCL_p, bb_slope, total_canopy_area, laimemory, fnitr, elai, livecrootn
+global_wo, present, ts_net_uptake, npp_clm, nrad
+global_mod, gscan, bsw, resp_clm, resp_m, livestemn, ncan, froot_mr, psn_z, gpp_clm, rd, livestem_mr, gccanopy, lmrcanopy, resp_g, rscanopy, psncanopy, livecroot_mr
+global_non, pftcon%flnr, map_clmpatch_to_edpatch, canopystate_inst%tlai_patch
+calls, t_startf, quadratic, endrun, currentPatch%set_root_fraction, t_stopf

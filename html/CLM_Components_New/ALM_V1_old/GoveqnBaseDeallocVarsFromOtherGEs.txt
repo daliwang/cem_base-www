@@ -1,0 +1,9 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%nvars_needed_from_other_goveqns, nvars_needed_from_other_goveqns, NONE
+global_mod
+global_non
+calls, endrun
+readParams,
+class(goveqn_base_type), intent(inout):: this

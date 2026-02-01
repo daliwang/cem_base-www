@@ -1,0 +1,7 @@
+sub_in, ncol, aer_trn_ttl, odap_aer
+sub_out, aer_trn_ttl
+global_ro
+global_wo
+global_mod
+global_non
+calls

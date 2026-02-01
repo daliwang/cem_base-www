@@ -1,0 +1,9 @@
+sub_param, cp_pnt
+sub_out
+global_ro, %pft, EDecophyscon%seed_rain, %n, %seed_prod, cp_pnt%area, currentPatch%younger, cp_pnt, currentSite%oldest_patch, currentPatch%tallest, currentCohort%shorter
+global_wo
+global_mod, cp_pnt%seeds_in
+global_non, currentPatch%siteptr
+calls
+readParams,
+type(patch), intent(inout), target :: cp_pnt ! seeds go to these patches.

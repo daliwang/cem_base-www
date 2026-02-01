@@ -1,0 +1,7 @@
+sub_in, ie3, is1, id1, id3, Ref, name, is2, ie1, id2, is3, ie2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

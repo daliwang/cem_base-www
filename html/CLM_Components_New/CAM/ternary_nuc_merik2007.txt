@@ -1,0 +1,7 @@
+sub_in, t, j_log, rh, namm, c3, nacid, r, ntot, c2
+sub_out, j_log, nacid, namm, ntot, r
+global_ro
+global_wo
+global_mod
+global_non
+calls

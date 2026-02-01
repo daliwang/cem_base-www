@@ -1,0 +1,7 @@
+sub_in, l2x_l, x2l_l, cdata_l, NLFilename, EClock
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_file_getLogLevel, initialize2, seq_cdata_setptrs, shr_file_setLogUnit, clm_varctl_set, seq_timemgr_EClockGetData, set_nextsw_cday, mct_aVect_init, initialize1, memmon_reset_addr, mct_aVect_zero, shr_file_setLogLevel, memmon_dump_fort, seq_infodata_GetData, set_timemgr_init, shr_file_setIO, get_proc_bounds, seq_infodata_PutData, lnd_SetgsMap_mct, control_setNL, clm_cpl_indices_set, endrun, lnd_export, spmd_init, lnd_domain_mct, shr_file_getLogUnit

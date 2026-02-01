@@ -1,0 +1,7 @@
+sub_in, temperature_inst, canopystate_inst, soilstate_inst, num_soilc, soilbiogeochem_carbonflux_inst, bounds, filter_soilc, ch4_inst
+sub_out
+global_ro, soilpsi, finundated, t_soisno, o2stress_unsat, sucsat, alt_indx, o2stress_sat
+global_wo, decomp_k
+global_mod, t_scalar, w_scalar, o_scalar
+global_non
+calls, endrun

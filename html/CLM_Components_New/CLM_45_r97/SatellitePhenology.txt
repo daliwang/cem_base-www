@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, num_nolakep, bounds, filter_nolakep, canopystate_inst
+sub_out
+global_ro, frac_sno, snow_depth
+global_wo, frac_veg_nosno_alb
+global_mod, esai, tsai, elai, tlai, hbot, htop
+global_non
+calls, lai_interp

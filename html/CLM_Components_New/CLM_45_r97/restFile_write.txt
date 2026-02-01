@@ -1,0 +1,7 @@
+sub_in, noptr, file, bounds, rdate
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, restFile_close, restFile_enddef, restFile_dimset, clm_instRest, timemgr_restart_io, restFile_open, accumulRest, restFile_closeRestart, hist_restart_ncd, SubgridRest

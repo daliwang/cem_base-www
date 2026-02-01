@@ -1,0 +1,8 @@
+sub_param, auxvar, this
+sub_out
+global_ro
+global_wo
+global_mod, this%density_type, auxvar%density_type, auxvar%satParams%bc_lambda, this%satParams%bc_lambda, this%pressure_prev, auxvar%pressure_prev, auxvar%dsat_dP, this%dsat_dP, auxvar%satParams%sat_res, this%satParams%sat_res, auxvar%satParams%vg_m, this%satParams%vg_m, this%satParams%alpha, auxvar%satParams%alpha, this%satParams%vg_n, auxvar%satParams%vg_n, this%dvis_dP, auxvar%dvis_dP, this%dden_dP, auxvar%dden_dP, auxvar%frac_liq_sat, this%frac_liq_sat, auxvar%pressure, this%pressure, auxvar%condition_value, this%condition_value, this%conductance, auxvar%conductance, auxvar%temperature, this%temperature, this%dpor_dP, auxvar%dpor_dP, this%vis, auxvar%vis, auxvar%dkr_dP, this%dkr_dP, auxvar%perm, this%perm, this%satParams%sat_func_type, auxvar%satParams%sat_func_type, auxvar%por, this%por
+global_non
+calls, this%porParams%Copy, this%satParams%Copy
+readParams,

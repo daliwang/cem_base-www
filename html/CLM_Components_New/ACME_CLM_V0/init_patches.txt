@@ -1,0 +1,7 @@
+sub_in, geds_local, bounds
+sub_out
+global_ro
+global_wo, newp%patchno
+global_mod
+global_non, geds_local, newp, newp, null, null
+calls, create_patch, init_cohorts

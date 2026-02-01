@@ -1,0 +1,7 @@
+sub_in, num2d, garr, l2g_scale_type, bounds, larr
+sub_out, garr
+global_ro
+global_wo
+global_mod
+global_non
+calls, build_scale_l2g, endrun

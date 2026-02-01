@@ -1,0 +1,11 @@
+sub_param, currentPatch:1, patch_site_areadis:3, newPatch:2
+sub_out, patch_site_areadis
+global_ro| currentPatch%disturbance_rate, disturbance_rate, NONE| currentPatch%area, area, NONE| newPatch%area, area, NONE
+global_wo
+global_mod| currentPatch%seed_bank, seed_bank, NONE| newPatch%seed_bank, seed_bank, NONE| newPatch%leaf_litter, leaf_litter, NONE| currentPatch%leaf_litter, leaf_litter, NONE| newPatch%cwd_bg, cwd_bg, NONE| currentPatch%cwd_bg, cwd_bg, NONE| currentPatch%root_litter, root_litter, NONE| newPatch%root_litter, root_litter, NONE| currentPatch%cwd_ag, cwd_ag, NONE| newPatch%cwd_ag, cwd_ag, NONE| newPatch%spread, spread, NONE| currentPatch%spread, spread, NONE
+global_non
+calls
+readParams,
+type(patch),intent(in),    pointer :: currentPatch
+type(patch),intent(inout), pointer :: newPatch
+real(r8), intent(out)              :: patch_site_areadis   ! amount of land disturbed in this patch. m2

@@ -1,0 +1,7 @@
+sub_in, filter_soilp, c14_cnveg_carbonstate_inst, cnveg_nitrogenstate_inst, num_soilp, cnveg_carbonstate_inst, c13_cnveg_carbonstate_inst
+sub_out
+global_ro
+global_wo
+global_mod, livestemc_patch, livestemc_storage_patch, leafc_storage_patch, livecrootc_patch, npool_patch, deadstemc_xfer_patch, ctrunc_patch, leafc_xfer_patch, ntrunc_patch, deadcrootc_xfer_patch, deadcrootn_xfer_patch, leafn_patch, livecrootn_patch, livecrootn_xfer_patch, grainc_patch, cpool_patch, livecrootn_storage_patch, grainc_storage_patch, frootn_xfer_patch, deadstemc_patch, deadstemn_patch, grainn_xfer_patch, frootc_storage_patch, leafn_storage_patch, deadstemc_storage_patch, leafc_patch, gresp_xfer_patch, frootc_xfer_patch, xsmrpool_patch, frootn_storage_patch, livecrootc_storage_patch, retransn_patch, grainn_patch, livestemn_patch, frootc_patch, grainn_storage_patch, grainc_xfer_patch, livestemn_xfer_patch, deadcrootc_patch, leafn_xfer_patch, frootn_patch, deadcrootc_storage_patch, gresp_storage_patch, deadcrootn_storage_patch, livestemn_storage_patch, deadstemn_storage_patch, livecrootc_xfer_patch, livestemc_xfer_patch, deadstemn_xfer_patch, deadcrootn_patch
+global_non, c13_cnveg_carbonstate_inst, c14_cnveg_carbonstate_inst, cnveg_nitrogenstate_inst, cnveg_carbonstate_inst
+calls

@@ -1,0 +1,21 @@
+sub_param, num_lakep:4, frictionvel_vars:8, energyflux_vars:10, atm2lnd_vars:6, waterstate_vars:11, solarabs_vars:7, num_lakec:2, filter_lakec:3, waterflux_vars:12, lakestate_vars:13, filter_lakep:5, temperature_vars:9, bounds:1
+sub_out
+global_ro| solarabs_vars%fsds_nir_d_patch, fsds_nir_d, NONE| col%dz_lake, dz_lake, NONE| pft%column, column, NONE| solarabs_vars%sabg_lyr_patch, sabg_lyr, NONE| col%dz, dz, NONE| grc%lat, lat, NONE| lakestate_vars%lakefetch_col, lakefetch, NONE| solarabs_vars%fsr_nir_i_patch, fsr_nir_i, NONE| temperature_vars%t_lake_col, t_lake, NONE| atm2lnd_vars%forc_snow_downscaled_col, forc_snow, NONE| atm2lnd_vars%forc_th_downscaled_col, forc_th, NONE| atm2lnd_vars%forc_q_downscaled_col, forc_q, NONE| solarabs_vars%fsr_nir_d_patch, fsr_nir_d, NONE| solarabs_vars%fsds_nir_i_patch, fsds_nir_i, NONE| atm2lnd_vars%forc_u_grc, forc_u, NONE| atm2lnd_vars%forc_lwrad_downscaled_col, forc_lwrad, NONE| solarabs_vars%sabg_patch, sabg, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| col%lakedepth, lakedepth, NONE| atm2lnd_vars%forc_rain_downscaled_col, forc_rain, NONE| atm2lnd_vars%forc_t_downscaled_col, forc_t, NONE| lakestate_vars%savedtke1_col, savedtke1, NONE| atm2lnd_vars%forc_v_grc, forc_v, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| col%snl, snl, NONE| atm2lnd_vars%forc_rho_downscaled_col, forc_rho, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| col%gridcell, gridcell, NONE| pft%gridcell, gridcell, NONE| temperature_vars%t_soisno_col, t_soisno, NONE
+global_wo| lakestate_vars%ws_col, ws, NONE| solarabs_vars%sabg_chk_patch, sabg_chk, NONE| energyflux_vars%eflx_lh_grnd_patch, eflx_lh_grnd, NONE| temperature_vars%t_ref2m_patch, t_ref2m, NONE| waterstate_vars%rh_ref2m_patch, rh_ref2m, NONE| energyflux_vars%taux_patch, taux, NONE| energyflux_vars%eflx_lwrad_net_patch, eflx_lwrad_net, NONE| waterflux_vars%qflx_prec_grnd_patch, qflx_prec_grnd, NONE| lakestate_vars%lake_raw_col, lake_raw, NONE| energyflux_vars%tauy_patch, tauy, NONE| temperature_vars%t_veg_patch, t_veg, NONE| frictionvel_vars%z0qg_col, z0qg_col, NONE| waterflux_vars%qflx_snwcp_ice_patch, qflx_snwcp_ice, NONE| frictionvel_vars%z0hg_col, z0hg_col, NONE| energyflux_vars%eflx_gnet_patch, eflx_gnet, NONE| energyflux_vars%eflx_soil_grnd_patch, eflx_soil_grnd, NONE| waterflux_vars%qflx_evap_tot_patch, qflx_evap_tot, NONE| lakestate_vars%ram1_lake_patch, ram1_lake, NONE| waterflux_vars%qflx_snwcp_liq_patch, qflx_snwcp_liq, NONE| lakestate_vars%ks_col, ks, NONE
+global_mod| energyflux_vars%eflx_lwrad_out_patch, eflx_lwrad_out, NONE| energyflux_vars%eflx_lh_tot_patch, eflx_lh_tot, NONE| frictionvel_vars%z0mg_col, z0mg_col, NONE| frictionvel_vars%forc_hgt_u_patch, forc_hgt_u_patch, NONE| waterflux_vars%qflx_evap_soi_patch, qflx_evap_soi, NONE| frictionvel_vars%ram1_patch, ram1, NONE| lakestate_vars%ust_lake_col, ust_lake, NONE| frictionvel_vars%forc_hgt_t_patch, forc_hgt_t_patch, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE| frictionvel_vars%forc_hgt_q_patch, forc_hgt_q_patch, NONE| waterstate_vars%q_ref2m_patch, q_ref2m, NONE| energyflux_vars%eflx_sh_tot_patch, eflx_sh_tot, NONE| lakestate_vars%betaprime_col, betaprime, NONE
+global_non| bounds%begp, begp, NONE| bounds%endp, endp, NONE
+calls, QSat, MoninObukIni, FrictionVelocity
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_lakec         ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_lakec(:)   ! column filter for non-lake points
+integer                , intent(in)    :: num_lakep         ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_lakep(:)   ! patch filter for non-lake points
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(solarabs_type)    , intent(inout) :: solarabs_vars
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(lakestate_type)   , intent(inout) :: lakestate_vars

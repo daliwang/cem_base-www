@@ -1,0 +1,7 @@
+sub_in, pmid, ncol, datain, dataout, pin, levsiz
+sub_out, dataout
+global_ro
+global_wo
+global_mod
+global_non
+calls

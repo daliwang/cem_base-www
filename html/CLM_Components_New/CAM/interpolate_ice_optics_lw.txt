@@ -1,0 +1,7 @@
+sub_in, ncol, iciwpth, dei, abs_od
+sub_out, abs_od
+global_ro
+global_wo
+global_mod
+global_non
+calls, lininterp_finish, lininterp, lininterp_init

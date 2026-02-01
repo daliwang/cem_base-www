@@ -1,0 +1,7 @@
+sub_in, dsdh, zen, z, nid
+sub_out, nid, dsdh
+global_ro
+global_wo
+global_mod
+global_non
+calls

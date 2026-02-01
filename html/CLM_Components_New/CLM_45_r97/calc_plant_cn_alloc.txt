@@ -1,0 +1,7 @@
+sub_in, c13_cnveg_carbonflux_inst, cnveg_state_inst, this, cnveg_nitrogenflux_inst, filter_soilp, bounds, num_soilp, arepr, fpg_col, cnveg_carbonflux_inst, c14_cnveg_carbonflux_inst, aroot
+sub_out
+global_ro, grpnow, c_allometry, deadwdcn, croot_stem, woody, croplive, grperc, stem_leaf, n_allometry, flivewd, aleaf, livewdcn, graincn, availc, froot_leaf, gpp, ivt, frootcn, fpg, annsum_npp, plant_ndemand, fcur2, leafcn, astem, retransn_to_npool
+global_wo, npool_to_livecrootn_storage, cpool_to_frootc, cpool_to_leafc, npool_to_deadcrootn_storage, npool_to_leafn_storage, cpool_to_gresp_storage, npool_to_grainn, npool_to_frootn, npool_to_deadcrootn, npool_to_deadstemn, npool_to_leafn, cpool_to_livestemc, cpool_to_grainc, npool_to_livestemn_storage, cpool_to_deadcrootc, npool_to_livestemn, npool_to_frootn_storage, cpool_to_livecrootc, npool_to_livecrootn, npool_to_deadstemn_storage, cpool_to_deadstemc, npool_to_grainn_storage
+global_mod, plant_nalloc, cpool_to_livecrootc_storage, psnshade_to_cpool, cpool_to_deadstemc_storage, cpool_to_grainc_storage, cpool_to_deadcrootc_storage, cpool_to_frootc_storage, sminn_to_npool, psnsun_to_cpool, cpool_to_livestemc_storage, plant_calloc, cpool_to_leafc_storage, excess_cflux, downreg
+global_non, cnveg_state_inst%peaklai_patch
+calls

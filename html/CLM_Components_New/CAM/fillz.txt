@@ -1,0 +1,7 @@
+sub_in, im, dp, nq, i2, km, i1, q
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls

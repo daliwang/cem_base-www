@@ -1,0 +1,7 @@
+sub_in, ptend, prec_sed, cam_out, state, dlf, ustar, dt, snow_str, rliq, obklen, snow_sed, pbuf, prec_str, cam_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, carma
+calls, CARMASTATE_Get, CARMASTATE_SetBin, carma_output_diagnostics, cnst_get_ind, CARMASTATE_Destroy, CARMA_Detrain, CARMASTATE_GetGas, physics_ptend_init, CARMASTATE_Create, CARMASTATE_GetState, CARMASTATE_Step, set_dry_to_wet, CARMA_calcram, CARMA_CloudFraction, CARMA_Get, CARMA_DiagnoseBins, CARMAELEMENT_Get, CARMASTATE_GetBin, CARMA_DiagnoseBulk, CARMASTATE_CreateFromReference, pbuf_get_field, CARMAGROUP_Get, CARMASTATE_SetGas, physics_state_copy

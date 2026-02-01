@@ -1,0 +1,7 @@
+sub_in, ncol, m, rxt, sulfate, tempi, temp, ltrop, sad_total, strato_sad, invariants, tempe, mbar, pmid, relhum, cwat, ps, h2ovmr, mmr, pbuf
+sub_out, sad_total, rxt
+global_ro, sfc, dm_aer
+global_wo
+global_mod
+global_non
+calls, aero_model_surfarea, rad_cnst_get_info, comp_exp

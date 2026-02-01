@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| currentPatch%younger, currentPatch, NONE| currentSite%oldest_patch;, currentPatch, NONE| %bl, bl, NONE| currentSite%acc_NI, acc_NI, NONE| currentSite%water_memory, water_memory, NONE| %area, area, NONE| %leaf_litter, leaf_litter, NONE| %CWD_AG, CWD_AG, NONE| %n, n, NONE| currentPatch%tallest, currentCohort, NONE| currentCohort%shorter, currentCohort, NONE
+global_wo| %litter_moisture, litter_moisture, NONE
+global_mod| %sum_fuel, sum_fuel, NONE| %fuel_eff_moist, fuel_eff_moist, NONE| %fuel_mef, fuel_mef, NONE| %livegrass, livegrass, NONE| %fuel_frac, fuel_frac, NONE| %fuel_sav, fuel_sav, NONE| %fuel_bulkd, fuel_bulkd, NONE
+global_non
+calls
+readParams,
+type(site), intent(in),   pointer :: currentSite

@@ -1,0 +1,18 @@
+sub_param, num_soilp, waterstate_vars, filter_soilc, num_soilc, cnstate_vars, crop_vars, nitrogenstate_vars, filter_soilp, bounds, nitrogenflux_vars
+sub_out
+global_ro, cnstate_vars%croplive_patch, waterstate_vars%wf_col, cnstate_vars%fpg_col, nitrogenstate_vars%sminn_col, crop_vars%gddplant_patch, cnstate_vars%gddmaturity_patch, nitrogenflux_vars%plant_ndemand_patch, pft%column
+global_wo
+global_mod, nitrogenflux_vars%soyfixn_patch
+global_non, nitrogenflux_vars%soyfixn_to_sminn_col
+calls, p2c
+readParams,readCNNDynamicsParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                  , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(crop_type)          , intent(in)    :: crop_vars
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars

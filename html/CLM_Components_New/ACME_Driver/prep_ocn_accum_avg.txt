@@ -1,0 +1,8 @@
+sub_in, timer_accum
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, t_drvstopf, t_drvstartf, mct_avect_copy, mct_avect_avg
+calls_ln, t_drvstartf@385, t_drvstopf@397, mct_avect_copy@394, mct_avect_avg@389

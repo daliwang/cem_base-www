@@ -1,0 +1,8 @@
+sub_in, fractions_o, infodata, xao_o, fractions_a, ocn, atm, xao_a
+sub_out
+global_ro, component_get_c2x_cx, component_get_c2x_cx
+global_wo
+global_mod
+global_non, component_get_gsmap_cx, component_get_gsmap_cx
+calls, mct_avect_init, mct_AVect_init, mct_aVect_zero, shr_flux_atmocn, mct_rearr_rearrange, mct_aVect_init, mct_AVect_zero, mct_avect_copy, seq_infodata_GetData, shr_sys_abort, mct_avect_clean, mct_aVect_clean
+calls_ln, mct_avect_copy@823, seq_infodata_GetData@642, mct_avect_copy@822, mct_aVect_init@709, mct_aVect_init@705, mct_avect_clean@819, mct_rearr_rearrange@790, mct_aVect_zero@710, shr_flux_atmocn@696, mct_rearr_rearrange@792, mct_aVect_clean@692, mct_aVect_clean@786, mct_rearr_rearrange@764, shr_sys_abort@636, mct_AVect_zero@666, mct_avect_clean@820, mct_aVect_zero@706, mct_rearr_rearrange@671, mct_avect_clean@825, mct_avect_init@763, mct_AVect_init@663, mct_aVect_zero@708, mct_aVect_init@707, mct_AVect_init@665, mct_avect_clean@826, mct_aVect_zero@712, mct_AVect_zero@664, mct_aVect_init@711, mct_rearr_rearrange@670, mct_aVect_clean@693

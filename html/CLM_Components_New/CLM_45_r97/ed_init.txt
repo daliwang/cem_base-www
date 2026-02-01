@@ -1,0 +1,7 @@
+sub_in, ed_phenology_inst, ed_allsites_inst, waterstate_inst, bounds, ed_clm_inst, canopystate_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ed_init_sites, ed_clm_inst%ed_clm_link, ed_update_site

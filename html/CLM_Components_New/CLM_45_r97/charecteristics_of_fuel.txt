@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentCohort, n, leaf_litter, area, currentPatch, bl, CWD_AG
+global_wo, litter_moisture
+global_mod, fuel_sav, fuel_frac, livegrass, fuel_mef, fuel_eff_moist, fuel_bulkd, sum_fuel
+global_non
+calls

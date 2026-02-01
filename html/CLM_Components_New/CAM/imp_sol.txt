@@ -1,0 +1,7 @@
+sub_in, reaction_rates, lchnk, extfrc, delt, base_sol, ncol, xhnm, het_rates, ltrop
+sub_out, base_sol
+global_ro
+global_wo
+global_mod
+global_non
+calls, imp_prod_loss, nlnmat, outfld, lu_slv, indprd, lu_fac, linmat

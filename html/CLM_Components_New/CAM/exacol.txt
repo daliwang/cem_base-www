@@ -1,0 +1,7 @@
+sub_in, bflxs, pcols, pver, ktop, ncvfin, minpblh, ri, zi, ncol, kbase
+sub_out, ktop, kbase, ncvfin
+global_ro
+global_wo
+global_mod
+global_non
+calls

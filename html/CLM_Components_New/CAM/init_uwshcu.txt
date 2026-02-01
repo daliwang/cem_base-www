@@ -1,0 +1,7 @@
+sub_in, kind, ep2_in, cp_in, xlv_in, zvir_in, xlf_in, g_in, r_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, addfld, endrun

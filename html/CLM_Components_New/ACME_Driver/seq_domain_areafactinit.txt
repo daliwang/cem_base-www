@@ -1,0 +1,8 @@
+sub_in, mdl2drv, comment, samegrid, domain, drv2mdl, mpicom, iamroot
+sub_out, mdl2drv, drv2mdl
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_mpi_max, shr_sys_abort, shr_mpi_min, shr_sys_flush
+calls_ln, shr_mpi_max@775, shr_sys_abort@760, shr_mpi_min@768, shr_mpi_min@774, shr_mpi_max@769, shr_sys_flush@759

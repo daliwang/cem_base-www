@@ -1,0 +1,7 @@
+sub_in, y, sgny, sgnx, face_no, x
+sub_out, sgnx, sgny, y, x
+global_ro
+global_wo
+global_mod
+global_non
+calls

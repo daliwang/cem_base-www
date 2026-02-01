@@ -1,0 +1,7 @@
+sub_in, microsec_per_iter, nelem, np, nlev, found, cg_iters, microsec, machine
+sub_out, microsec, microsec_per_iter, cg_iters
+global_ro
+global_wo
+global_mod
+global_non
+calls

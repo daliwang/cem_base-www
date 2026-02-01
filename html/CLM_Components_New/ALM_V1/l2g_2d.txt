@@ -1,0 +1,13 @@
+sub_param, bounds, larr, l2g_scale_type, garr, num2d
+sub_out, garr
+global_ro, lun%wtgcell, lun%gridcell
+global_wo
+global_mod
+global_non
+calls, build_scale_l2g, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)  :: num2d                     ! size of second dimension
+real(r8), intent(in)  :: larr( bounds%begl: , 1: ) ! input landunit array
+real(r8), intent(out) :: garr( bounds%begg: , 1: ) ! output gridcell array
+character(len=*), intent(in) :: l2g_scale_type     ! scale factor type for averaging

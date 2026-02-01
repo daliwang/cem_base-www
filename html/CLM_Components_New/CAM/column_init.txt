@@ -1,0 +1,7 @@
+sub_in, nflds, t
+sub_out
+global_ro, londeg, londeg_st
+global_wo
+global_mod
+global_non, get_dyn_grid_parm_real1d, get_dyn_grid_parm_real1d
+calls, get_lat_all_p, getlonind, getlatind, get_lon_all_p

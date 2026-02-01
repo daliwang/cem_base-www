@@ -1,0 +1,7 @@
+sub_in, num_soilp, soilbiogeochem_nitrogenflux_inst, energyflux_inst, num_lakec, waterflux_inst, bounds, soilbiogeochem_carbonflux_inst, temperature_inst, filter_soilc, lnd2atm_inst, waterstate_inst, filter_soilp, ch4_inst, num_soilc, filter_lakec, canopystate_inst, soilstate_inst, soilhydrology_inst, atm2lnd_inst, lakestate_inst, cnveg_carbonflux_inst
+sub_out
+global_ro, zwt_perched, ch4_surf_aere_sat, ch4_oxid_depth_sat, forc_pco2, zwt0, ch4_surf_ebul_unsat, zi, conc_o2_sat, endg, f0, rootfr, ch4_oxid_depth_unsat, z, frac_h2osfc, ch4_surf_aere_unsat, begg, zwt, rootfr_col, forc_pbot, ch4_surf_diff_sat, ch4_surf_diff_unsat, ch4_prod_depth_sat, forc_po2, forc_t, ch4_surf_ebul_sat, dz, p3, conc_ch4_unsat, qflx_surf, ch4_prod_depth_unsat
+global_wo, ch4_surf_diff_lake, ch4_prod_depth_lake, conc_o2_lake, conc_ch4_lake, ch4_oxid_depth_lake, zwt_ch4_unsat, ch4_surf_ebul_lake, c_atm
+global_mod, totcolch4, qflx_surf_lag, layer_sat_lag, ch4_dfsat_flux, fsat_bef, finundated, forc_pch4, conc_ch4_sat, ch4_surf_flux_tot, finundated_lag, lake_soilc
+global_non, lnd2atm_inst%nem_grc, ch4_inst%ch4prodg_grc, ch4_inst%grnd_ch4_cond_patch, ch4_inst%ch4co2f_grc, ch4_inst%grnd_ch4_cond_col, bounds%begc, bounds%begp, bounds%endp, bounds%endc
+calls, ch4_oxid, get_jwt, ch4_tran, ch4_aere, c2g, p2c, ch4_annualupdate, ch4_ebul, endrun, ch4_prod

@@ -1,0 +1,11 @@
+sub_param, this:1, variable_value:3, var_type:2
+sub_out
+global_ro
+global_wo| this%condition_value, condition_value, NONE| this%pressure_prev, pressure_prev, NONE| this%temperature, temperature, NONE| this%pressure, pressure, NONE
+global_mod
+global_non
+calls, endrun
+readParams,
+class(rich_ode_pres_auxvar_type), intent(inout) :: this
+PetscInt, intent(in)                            :: var_type
+PetscReal, intent(in)                           :: variable_value

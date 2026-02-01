@@ -1,0 +1,7 @@
+sub_in, field_sc, field, lchnk
+sub_out, field_sc
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, subcol_get_indcol

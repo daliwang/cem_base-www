@@ -1,0 +1,10 @@
+sub_param, active_only, bounds
+sub_out
+global_ro, pft%wtcol, col%wtgcell, pft%wtgcell, lun%wtgcell, pft%landunit, col%landunit, lun%gridcell, pft%gridcell, col%gridcell, pft%wtlunit, col%wtlunit, pft%column
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds  ! bounds
+logical, intent(in) :: active_only ! true => check sum of weights just of ACTIVE children, grandchildren, etc.

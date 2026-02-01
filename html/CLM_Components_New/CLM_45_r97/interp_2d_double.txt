@@ -1,0 +1,7 @@
+sub_in, vec_dimname, bego, switchdimo, endo, activei, switchdimi, sgridindex, varname, endi, ncido, ncidi, lev_dimname, activeo, nlevo, begi, nlevi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, endrun

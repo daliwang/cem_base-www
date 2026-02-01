@@ -1,0 +1,7 @@
+sub_in, yn, fdp, idp, fb, jdp, ys, nlon, zb, kdp, xr, zt, xl, ikcnst, kdim
+sub_out, fdp
+global_ro
+global_wo
+global_mod
+global_non
+calls

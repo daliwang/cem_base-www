@@ -1,0 +1,13 @@
+sub_param, num_nolakep, bounds, waterstate_vars, canopystate_vars, filter_nolakep
+sub_out
+global_ro, waterstate_vars%frac_sno_col, pft%column, waterstate_vars%snow_depth_col
+global_wo, canopystate_vars%frac_veg_nosno_alb_patch
+global_mod, canopystate_vars%esai_patch, canopystate_vars%elai_patch, canopystate_vars%tlai_patch, canopystate_vars%htop_patch, canopystate_vars%hbot_patch, canopystate_vars%tsai_patch
+global_non
+calls, lai_interp
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakep                               ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_nolakep(bounds%endp-bounds%begp+1) ! patch filter for non-lake points
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars

@@ -1,0 +1,7 @@
+sub_in, nlev, fld_cube, interpdata, npts, fillvalue, fld
+sub_out, fld
+global_ro, interp
+global_wo
+global_mod
+global_non
+calls, abortmp

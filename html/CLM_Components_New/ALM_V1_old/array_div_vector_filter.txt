@@ -1,0 +1,16 @@
+sub_param, lbj2:3, lbj1:1, filter:7, arr2d_inout:8, fn:6, ubj1:2, ubj2:4, arr1d_in:5
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer,  intent(in) :: lbj1         !left bound of dim 1
+integer,  intent(in) :: lbj2         !left bound of dim 2
+integer,  intent(in) :: ubj1         !right bound of dim 1
+integer,  intent(in) :: ubj2         !right bound of dim 2
+real(r8), intent(in) :: arr1d_in(lbj1: )   !1d scaling factor
+integer , intent(in) :: fn
+integer , intent(in) :: filter(:)     !filter
+real(r8), intent(inout) :: arr2d_inout(lbj1: ,lbj2: ) !2d array to be scaled

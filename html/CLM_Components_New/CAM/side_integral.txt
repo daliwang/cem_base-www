@@ -1,0 +1,7 @@
+sub_in, jy_max, jsegment, nvertex, weights_eul_index, weights, y_in, !phl, x_in, jy, nreconstruction, jx, gauss_weights, etc., xgno, ygno, abscissae, &!, jx_min, ngauss, jx_max, jmax_segments, add, jy_min
+sub_out, jsegment, weights_eul_index
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_weights_gauss

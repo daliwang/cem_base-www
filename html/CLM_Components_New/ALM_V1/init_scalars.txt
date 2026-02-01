@@ -1,0 +1,8 @@
+sub_param, this
+sub_out
+global_ro
+global_wo, this%id_trc_no3x, this%id_trc_o17_o2, this%is_oddstep, this%id_trc_dom, this%id_trc_co2x, this%nsolid_equil_tracer_groups, this%id_trc_n2, this%id_trc_d_h2o, this%id_trc_n2o, this%ntracer_groups, this%nvolatile_tracer_groups, this%nvolatile_tracers, this%id_trc_air_co2x, this%id_trc_nh3x, this%id_trc_o18_o2, this%id_trc_c14_co2x, this%id_trc_o18_h2o_ice, this%id_trc_d_h2o_ice, this%id_trc_ch4, this%id_trc_ar, this%id_trc_no2x, this%ngwmobile_tracer_groups, this%id_trc_o17_co2x, this%nsolid_passive_tracers, this%id_trc_o2, this%nsolid_equil_tracers, this%nsolid_passive_tracer_groups, this%id_trc_arrt_co2x, this%id_trc_no, this%id_trc_o17_h2o, this%id_trc_c13_co2x, this%nh2o_tracers, this%ntracers, this%id_trc_o18_co2x, this%id_trc_hrsoi_co2x, this%betr_simname, this%id_trc_o18_h2o, this%ngwmobile_tracers
+global_mod
+global_non
+calls
+readParams,

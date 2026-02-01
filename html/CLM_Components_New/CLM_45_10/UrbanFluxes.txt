@@ -1,0 +1,16 @@
+sub_in, num_urbanc, filter_urbanc, filter_urbanp, ubp, nc, ubl, num_urbanl, filter_nourbanl, ubc, filter_urbanl, lbc, num_nourbanl, lbp, num_urbanp, lbl
+sub_out
+global_ro, clm3%g%l%c%cef%eflx_urban_heat, clm3%g%l%c%p%pps%forc_hgt_t_pft, clm3%g%l%c%cws%soilalpha_u, clm_a2l%forc_th, urban_clump(nc)%ht_roof, clm3%g%l%c%p%column, clm3%g%londeg, clm_a2l%forc_t, clm3%g%l%z_d_town, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%itype, clm3%g%l%pfti, clm_a2l%forc_u, urban_clump(nc)%wtlunit_roof, urban_clump(nc)%canyon_hwr, urban_clump(nc)%wtroad_perv, clm3%g%l%c%p%gridcell, clm3%g%l%c%cef%eflx_urban_ac, clm3%g%l%z_0_town, clm3%g%l%c%cws%qg, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cws%dqgdT, clm_a2l%forc_v, clm3%g%l%c%p%pps%forc_hgt_u_pft, clm_a2l%forc_rho, clm3%g%l%c%cps%htvp, clm3%g%l%npfts, clm3%g%l%c%ces%t_grnd, clm3%g%l%c%cps%snow_depth, clm3%g%l%c%cps%rootr_road_perv, clm3%g%l%lef%eflx_traffic_factor, clm3%g%l%coli, clm3%g%l%c%p%landunit, clm_a2l%forc_q, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%gridcell, clm_a2l%forc_pbot, urban_clump(nc)%wind_hgt_canyon
+global_wo, clm3%g%l%c%p%pef%eflx_sh_soil, clm3%g%l%c%p%pwf%qflx_evap_veg, clm3%g%l%lef%eflx_heat_from_ac, clm3%g%l%c%p%pwf%qflx_evap_soi, clm3%g%l%c%p%pmf%tauy, clm3%g%l%lps%t_building, clm3%g%l%c%p%pef%dlrad, clm3%g%l%c%p%pes%t_veg, clm3%g%l%c%p%pes%rh_ref2m_u, clm3%g%l%c%p%pef%eflx_sh_h2osfc, clm3%g%l%c%p%pef%cgrnd, clm3%g%l%c%p%pef%ulrad, clm3%g%l%c%p%pcf%psnsun, clm3%g%l%c%p%pmf%taux, clm3%g%l%c%p%pes%t_ref2m_u, clm3%g%l%c%p%pps%rootr, clm3%g%l%lef%eflx_traffic, clm3%g%l%c%p%pef%eflx_sh_tot_u, clm3%g%l%c%p%pps%ram1, clm3%g%l%c%p%pcf%psnsha, clm3%g%l%c%p%pef%eflx_sh_snow
+global_mod, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%lps%qaf, clm3%g%l%c%p%pes%rh_ref2m, clm3%g%l%c%p%pwf%qflx_tran_veg, clm3%g%l%c%p%pef%eflx_sh_grnd, clm3%g%l%lef%eflx_wasteheat, clm3%g%l%lps%taf, clm3%g%l%c%p%pef%cgrndl, clm3%g%l%c%p%pes%t_ref2m, clm3%g%l%c%p%pef%cgrnds, clm3%g%l%c%p%pes%q_ref2m
+global_non, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%p%pwf%qflx_evap_tot, clm3%g%l%colf, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%snl, clm3%g%l%pftf
+calls, QSat, get_curr_date, FrictionVelocity, MoninObukIni, endrun
+
+Tree height: 22
+0 , get_curr_date, 
+1-, MoninObukIni, 
+2+, FrictionVelocity, 
+7-, endrun, 
+19-, QSat, 
+19+, endrun, endrun, 
+1+, endrun, endrun, 

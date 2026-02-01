@@ -1,0 +1,42 @@
+sub_param, alb_wall_dir, sref_roof_dif, sdif_sunwall, filter_urbanl, sref_roof_dir, sref_perroad_dif, sref_perroad_dir, sdir_sunwall, alb_perroad_dif, sdif_road, alb_wall_dif, wtroad_perv, sdif_shadewall, alb_improad_dir, sref_improad_dif, sdir_shadewall, solarabs_vars, canyon_hwr, bounds, alb_roof_dif, alb_improad_dif, urbanparams_vars, sref_improad_dir, sref_sunwall_dif, sdir, sref_shadewall_dif, sref_shadewall_dir, sdif, coszen, sref_sunwall_dir, num_urbanl, alb_perroad_dir, alb_roof_dir, sdir_road
+sub_out, sref_shadewall_dif, sref_shadewall_dir, sref_roof_dif, sref_sunwall_dir, sref_improad_dir, sref_improad_dif, sref_perroad_dir, sref_roof_dir, sref_perroad_dif, sref_sunwall_dif
+global_ro, urbanparams_vars%vf_wr, urbanparams_vars%vf_sr, urbanparams_vars%vf_sw, urbanparams_vars%vf_ww, urbanparams_vars%vf_rw
+global_wo, solarabs_vars%sabs_roof_dif_lun, solarabs_vars%sabs_roof_dir_lun
+global_mod, solarabs_vars%sabs_shadewall_dif_lun, solarabs_vars%sabs_perroad_dif_lun, solarabs_vars%sabs_improad_dif_lun, solarabs_vars%sabs_improad_dir_lun, solarabs_vars%sabs_sunwall_dif_lun, solarabs_vars%sabs_perroad_dir_lun, solarabs_vars%sabs_shadewall_dir_lun, solarabs_vars%sabs_sunwall_dir_lun
+global_non
+calls, endrun
+readParams,
+type (bounds_type), intent(in) :: bounds
+integer , intent(in)    :: num_urbanl                               ! number of urban landunits
+integer , intent(in)    :: filter_urbanl(:)                         ! urban landunit filter
+real(r8), intent(in)    :: coszen             ( bounds%begl: )      ! cosine solar zenith angle [landunit]
+real(r8), intent(in)    :: canyon_hwr         ( bounds%begl: )      ! ratio of building height to street width [landunit]
+real(r8), intent(in)    :: wtroad_perv        ( bounds%begl: )      ! weight of pervious road wrt total road [landunit]
+real(r8), intent(in)    :: sdir               ( bounds%begl: , 1: ) ! direct beam solar radiation incident on horizontal surface [landunit, numrad]
+real(r8), intent(in)    :: sdif               ( bounds%begl: , 1: ) ! diffuse solar radiation on horizontal surface [landunit, numrad]
+real(r8), intent(in)    :: alb_improad_dir    ( bounds%begl: , 1: ) ! direct impervious road albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_perroad_dir    ( bounds%begl: , 1: ) ! direct pervious road albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_wall_dir       ( bounds%begl: , 1: ) ! direct  wall albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_roof_dir       ( bounds%begl: , 1: ) ! direct  roof albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_improad_dif    ( bounds%begl: , 1: ) ! diffuse impervious road albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_perroad_dif    ( bounds%begl: , 1: ) ! diffuse pervious road albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_wall_dif       ( bounds%begl: , 1: ) ! diffuse wall albedo [landunit, numrad]
+real(r8), intent(in)    :: alb_roof_dif       ( bounds%begl: , 1: ) ! diffuse roof albedo [landunit, numrad]
+real(r8), intent(in)    :: sdir_road          ( bounds%begl: , 1: ) ! direct beam solar radiation incident on road per unit incident flux [landunit, numrad]
+real(r8), intent(in)    :: sdir_sunwall       ( bounds%begl: , 1: ) ! direct beam solar radiation (per unit wall area) incident on sunlit wall per unit incident flux [landunit, numrad]
+real(r8), intent(in)    :: sdir_shadewall     ( bounds%begl: , 1: ) ! direct beam solar radiation (per unit wall area) incident on shaded wall per unit incident flux [landunit, numrad]
+real(r8), intent(in)    :: sdif_road          ( bounds%begl: , 1: ) ! diffuse solar radiation incident on road per unit incident flux [landunit, numrad]
+real(r8), intent(in)    :: sdif_sunwall       ( bounds%begl: , 1: ) ! diffuse solar radiation (per unit wall area) incident on sunlit wall per unit incident flux [landunit, numrad]
+real(r8), intent(in)    :: sdif_shadewall     ( bounds%begl: , 1: ) ! diffuse solar radiation (per unit wall area) incident on shaded wall per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_improad_dir   ( bounds%begl: , 1: ) ! direct  solar rad reflected by impervious road (per unit ground area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_perroad_dir   ( bounds%begl: , 1: ) ! direct  solar rad reflected by pervious road (per unit ground area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_improad_dif   ( bounds%begl: , 1: ) ! diffuse solar rad reflected by impervious road (per unit ground area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_perroad_dif   ( bounds%begl: , 1: ) ! diffuse solar rad reflected by pervious road (per unit ground area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_sunwall_dir   ( bounds%begl: , 1: ) ! direct solar  rad reflected by sunwall (per unit wall area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_sunwall_dif   ( bounds%begl: , 1: ) ! diffuse solar rad reflected by sunwall (per unit wall area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_shadewall_dir ( bounds%begl: , 1: ) ! direct solar  rad reflected by shadewall (per unit wall area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_shadewall_dif ( bounds%begl: , 1: ) ! diffuse solar rad reflected by shadewall (per unit wall area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_roof_dir      ( bounds%begl: , 1: ) ! direct  solar rad reflected by roof (per unit ground area) per unit incident flux [landunit, numrad]
+real(r8), intent(inout) :: sref_roof_dif      ( bounds%begl: , 1: ) ! diffuse solar rad reflected by roof (per unit ground area)  per unit incident flux [landunit, numrad]
+type(urbanparams_type), intent(in)    :: urbanparams_vars
+type(solarabs_type)   , intent(inout) :: solarabs_vars

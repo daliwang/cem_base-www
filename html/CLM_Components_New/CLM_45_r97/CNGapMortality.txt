@@ -1,0 +1,7 @@
+sub_in, cnveg_nitrogenstate_inst, dgvs_inst, leaf_prof_patch, filter_soilp, cnveg_nitrogenflux_inst, croot_prof_patch, cnveg_carbonflux_inst, num_soilc, num_soilp, cnveg_carbonstate_inst, filter_soilc, stem_prof_patch, bounds, froot_prof_patch
+sub_out
+global_ro, greffic, heatstress, ivt, woody
+global_wo
+global_mod, nind
+global_non
+calls, CNGap_PatchToColumn

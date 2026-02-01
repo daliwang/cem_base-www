@@ -1,0 +1,7 @@
+sub_in, cnveg_nitrogenflux_inst, canopystate_inst, cnveg_carbonstate_inst, filter_pcropp, cnveg_nitrogenstate_inst, waterstate_inst, crop_inst, temperature_inst, cnveg_state_inst, cnveg_carbonflux_inst, num_pcropp
+sub_out
+global_ro, leaf_long, grnfill, t_ref2m_min, fertnitro, minplanttemp, lfemerg, mxmat, gdd1020, a10tmin, leafout, hybgdd, ivt, gddmin, leafcn, gdd020, t10, hui, tlai
+global_wo, lgsf, offset_flag, hdidx, bgtr, fert, onset_flag, bglfr, cumvd, offset_counter
+global_mod, dwt_seedn_to_leaf, leafc_xfer, leafn_xfer, huileaf, idop, fert_counter, croplive, gdd820, gddmaturity, a5tmin, dwt_seedc_to_leaf, huigrain, onset_counter, vf, cropplant, harvdate
+global_non, pftcon%planttemp
+calls, get_curr_date, vernalization

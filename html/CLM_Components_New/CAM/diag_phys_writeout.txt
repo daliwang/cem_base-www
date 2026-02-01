@@ -1,0 +1,7 @@
+sub_in, psl, state
+sub_out, psl
+global_ro
+global_wo
+global_mod
+global_non
+calls, tidal_diag_write, qsat_water, qsat, constituent_burden_comp, outfld, vertinterp, cpslec

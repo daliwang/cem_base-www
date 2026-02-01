@@ -1,0 +1,7 @@
+sub_in, dpsm, omga, um1, qm1, alpha, tm1, ps, phis, vm1, psm1, etamid, beta, nlon, lat, q3, div, qfcst, v3m1, u3m1, q3m1, cwava, ztodt, dpsl, t3m1
+sub_out, ps, t3m1, q3m1, qm1, q3
+global_ro
+global_wo
+global_mod
+global_non
+calls, plevs0, outfld, omcalc, qneg3

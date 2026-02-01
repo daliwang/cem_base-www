@@ -1,0 +1,23 @@
+sub_in, filter_pcropp, filter_soilp, filter_soilc, ubc, num_soilp, num_pcropp, doalb, num_soilc, lbp, lbc, ubp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNSoilLittVertTransp, CSummary, NStateUpdate2, CNMResp, CNNFixation, CNZeroFluxes, CNPrecisionControl, CNGapMortality, CNPhenology, CStateUpdate2h, CStateUpdate3, NSummary, CNHarvest, CNFireArea, CNVegStructUpdate, t_startf, CNFireFluxes, CNGResp, CStateUpdate0, t_stopf, CStateUpdate2, CNWoodProducts, NStateUpdate2h, CStateUpdate1, NStateUpdate1, CNNDeposition, NStateUpdate3, CNDecompAlloc, CNNLeaching
+
+Tree height: 25
+0 , t_startf, CNZeroFluxes, t_stopf, t_startf, CNNDeposition, t_stopf, t_startf, CNNFixation, t_stopf, t_startf, 
+2+, CNMResp, t_stopf, t_startf, CNDecompAlloc, t_stopf, t_startf, CNPhenology, t_stopf, t_startf, CNGResp, CStateUpdate0, 
+3+, t_stopf, t_startf, 
+6+, CStateUpdate1, 
+8+, NStateUpdate1, t_startf, CNSoilLittVertTransp, t_stopf, t_startf, CNGapMortality, t_stopf, t_stopf, t_startf, 
+10+, CStateUpdate2, 
+12+, NStateUpdate2, 
+13+, CNHarvest, 
+14+, CStateUpdate2h, 
+16+, NStateUpdate2h, CNWoodProducts, CNFireArea, CNFireFluxes, CNNLeaching, t_stopf, t_startf, 
+18+, CStateUpdate3, 
+22+, NStateUpdate3, t_stopf, t_startf, CNPrecisionControl, CSummary, 
+23+, CNVegStructUpdate, 
+24+, NSummary, t_stopf, 

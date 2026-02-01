@@ -1,0 +1,11 @@
+sub_param, num_soilp, filter_soilp, cnstate_vars
+sub_out
+global_ro
+global_wo, cnstate_vars%rc14_atm_patch
+global_mod
+global_non
+calls, get_curr_date
+readParams,
+integer, intent(in) :: num_soilp       ! number of soil patches in filter
+integer, intent(in) :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type), intent(inout) :: cnstate_vars

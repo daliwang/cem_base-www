@@ -1,0 +1,7 @@
+sub_in, pbuf2d
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seasalt_init, rad_cnst_get_info, phys_getopts, pbuf_set_field, add_default, endrun, modal_aero_bcscavcoef_init, cnst_get_ind, dust_init, modal_aero_initialize, inidrydep, wetdep_init, addfld

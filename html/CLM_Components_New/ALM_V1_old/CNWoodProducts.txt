@@ -1,0 +1,20 @@
+sub_param, phosphorusstate_vars:11, carbonstate_vars:3, phosphorusflux_vars:12, c14_carbonstate_vars:5, carbonflux_vars:7, c13_carbonflux_vars:8, nitrogenflux_vars:10, num_soilc:1, nitrogenstate_vars:6, c13_carbonstate_vars:4, c14_carbonflux_vars:9, filter_soilc:2
+sub_out
+global_ro| c14_carbonflux_vars%dwt_prod10c_gain_col, dwt_prod10c_gain_col, NONE| carbonflux_vars%dwt_prod10c_gain_col, dwt_prod10c_gain_col, NONE| c13_carbonflux_vars%dwt_prod10c_gain_col, dwt_prod10c_gain_col, NONE| c14_carbonflux_vars%hrv_deadstemc_to_prod100c_col, hrv_deadstemc_to_prod100c_col, NONE| carbonflux_vars%hrv_deadstemc_to_prod100c_col, hrv_deadstemc_to_prod100c_col, NONE| c13_carbonflux_vars%hrv_deadstemc_to_prod100c_col, hrv_deadstemc_to_prod100c_col, NONE| phosphorusflux_vars%dwt_prod10p_gain_col, dwt_prod10p_gain_col, NONE| nitrogenflux_vars%hrv_deadstemn_to_prod100n_col, hrv_deadstemn_to_prod100n_col, NONE| phosphorusflux_vars%hrv_deadstemp_to_prod10p_col, hrv_deadstemp_to_prod10p_col, NONE| c14_carbonflux_vars%hrv_deadstemc_to_prod10c_col, hrv_deadstemc_to_prod10c_col, NONE| carbonflux_vars%hrv_deadstemc_to_prod10c_col, hrv_deadstemc_to_prod10c_col, NONE| c13_carbonflux_vars%hrv_deadstemc_to_prod10c_col, hrv_deadstemc_to_prod10c_col, NONE| nitrogenflux_vars%hrv_deadstemn_to_prod10n_col, hrv_deadstemn_to_prod10n_col, NONE| c13_carbonflux_vars%dwt_prod100c_gain_col, dwt_prod100c_gain_col, NONE| c14_carbonflux_vars%dwt_prod100c_gain_col, dwt_prod100c_gain_col, NONE| carbonflux_vars%dwt_prod100c_gain_col, dwt_prod100c_gain_col, NONE| phosphorusflux_vars%hrv_deadstemp_to_prod100p_col, hrv_deadstemp_to_prod100p_col, NONE| phosphorusflux_vars%dwt_prod100p_gain_col, dwt_prod100p_gain_col, NONE| nitrogenflux_vars%dwt_prod100n_gain_col, dwt_prod100n_gain_col, NONE| nitrogenflux_vars%dwt_prod10n_gain_col, dwt_prod10n_gain_col, NONE
+global_wo
+global_mod| nitrogenstate_vars%prod10n_col, prod10n_col, NONE| nitrogenstate_vars%prod100n_col, prod100n_col, NONE| c14_carbonflux_vars%prod100c_loss_col, prod100c_loss_col, NONE| carbonflux_vars%prod100c_loss_col, prod100c_loss_col, NONE| c13_carbonflux_vars%prod100c_loss_col, prod100c_loss_col, NONE| c13_carbonstate_vars%prod100c_col, prod100c_col, NONE| carbonstate_vars%prod100c_col, prod100c_col, NONE| c14_carbonstate_vars%prod100c_col, prod100c_col, NONE| c14_carbonstate_vars%prod10c_col, prod10c_col, NONE| c13_carbonstate_vars%prod10c_col, prod10c_col, NONE| carbonstate_vars%prod10c_col, prod10c_col, NONE| phosphorusflux_vars%prod100p_loss_col, prod100p_loss_col, NONE| phosphorusstate_vars%prod100p_col, prod100p_col, NONE| c14_carbonflux_vars%prod10c_loss_col, prod10c_loss_col, NONE| c13_carbonflux_vars%prod10c_loss_col, prod10c_loss_col, NONE| carbonflux_vars%prod10c_loss_col, prod10c_loss_col, NONE| nitrogenflux_vars%prod10n_loss_col, prod10n_loss_col, NONE| phosphorusstate_vars%prod10p_col, prod10p_col, NONE| nitrogenflux_vars%prod100n_loss_col, prod100n_loss_col, NONE| phosphorusflux_vars%prod10p_loss_col, prod10p_loss_col, NONE
+global_non
+calls
+readParams,
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(in) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

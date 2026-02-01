@@ -1,0 +1,7 @@
+sub_in, ncol, hno3_cond, hno3_gas, h2o_avail, hno3_avail, temp, mask, press
+sub_out, hno3_cond, hno3_gas
+global_ro
+global_wo
+global_mod
+global_non
+calls

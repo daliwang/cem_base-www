@@ -1,0 +1,7 @@
+sub_in, glcfilename, ldomain, filename, begg, endg
+sub_out
+global_ro
+global_wo, ldomain%glcmask
+global_mod, ldomain%area
+global_non
+calls, ncd_inqfdims, ncd_pio_closefile, getfil, domain_init, ncd_io, endrun, ncd_pio_openfile, check_var

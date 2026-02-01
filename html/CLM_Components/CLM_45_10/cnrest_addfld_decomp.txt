@@ -1,0 +1,7 @@
+sub_in, varname, flag, ncid, longname, readvar, data_rl, fill_value, units
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, data_rl
+calls, ncd_io, ncd_defvar

@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, pft%itype, pft%landunit, pft%wtlunit, pft%gridcell
+global_wo, subgrid_weights_diagnostics%pct_nat_pft, subgrid_weights_diagnostics%pct_cft
+global_mod
+global_non
+calls

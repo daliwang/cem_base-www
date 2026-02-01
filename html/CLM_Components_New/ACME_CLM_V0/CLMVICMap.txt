@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, numf, bounds, soilhydrology_vars, filter
+sub_out
+global_ro, soilhydrology_vars%max_moist_col, soilhydrology_vars%porosity_col, waterstate_vars%h2osoi_vol_col, soilhydrology_vars%depth_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%h2osoi_liq_col, soilhydrology_vars%vic_clm_fract_col
+global_wo
+global_mod, soilhydrology_vars%ice_col, soilhydrology_vars%moist_col, soilhydrology_vars%moist_vol_col
+global_non, col%z, col%zi, col%dz
+calls

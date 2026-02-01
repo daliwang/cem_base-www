@@ -1,0 +1,9 @@
+sub_param, this
+sub_out
+global_ro
+global_wo, this%porosityId, this%porosity_base, this%pressure_reference, this%lin_mod_slope
+global_mod
+global_non
+calls
+readParams,
+type(porosity_params_type), intent (out) :: this

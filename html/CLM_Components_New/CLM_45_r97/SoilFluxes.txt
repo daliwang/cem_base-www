@@ -1,0 +1,7 @@
+sub_in, num_nolakep, num_nolakec, waterflux_inst, energyflux_inst, filter_nolakep, atm2lnd_inst, canopystate_inst, filter_nolakec, filter_urbanl, solarabs_inst, waterstate_inst, num_urbanl, temperature_inst, bounds
+sub_out
+global_ro, t_h2osfc_bef, ulrad, frac_h2osfc, cgrnds, h2osoi_ice, frac_sno_eff, dlrad, htvp, forc_lwrad, qflx_tran_veg, h2osoi_liq, t_h2osfc, eflx_wasteheat_patch, eflx_heat_from_ac_patch, eflx_traffic_patch, sabg, xmf, c_h2osfc, frac_veg_nosno, tssbef, qflx_evap_veg, eflx_sh_veg, xmf_h2osfc, sabg_soil, cgrndl, emg, do_capsnow, t_grnd, sabg_snow
+global_wo, eflx_lh_grnd, eflx_lwrad_out_u, eflx_soil_grnd_r, eflx_lwrad_out_r, eflx_soil_grnd_u, eflx_lh_vege, eflx_lh_tot_u, qflx_evap_tot, eflx_lh_tot_r, eflx_sh_tot_r, eflx_lwrad_net_r, qflx_sub_snow, eflx_lh_vegt, eflx_sh_tot_u, qflx_evap_can
+global_mod, qflx_ev_soil, eflx_lh_tot, eflx_lwrad_out, qflx_dew_snow, qflx_snwcp_liq, qflx_dew_grnd, eflx_lwrad_net_u, errsoi_patch, eflx_soil_grnd, eflx_sh_tot, qflx_snwcp_ice, qflx_ev_snow, eflx_sh_grnd, qflx_evap_grnd, qflx_evap_soi, eflx_lwrad_net, qflx_ev_h2osfc
+global_non, waterstate_inst%frac_sno_col, energyflux_inst%errsoi_col, waterstate_inst%h2osfc_col, temperature_inst%fact_col, temperature_inst%t_soisno_col
+calls, t_startf, t_stopf, p2c

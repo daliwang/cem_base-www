@@ -1,0 +1,7 @@
+sub_in, lchnk, fldcnt, ncol, dataout, levsiz, pin, datain, pmid
+sub_out, dataout
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

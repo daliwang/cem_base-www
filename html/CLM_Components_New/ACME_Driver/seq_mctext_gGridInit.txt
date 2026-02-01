@@ -1,0 +1,8 @@
+sub_in, comp, ggrid_new
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_gsmap_cx, component_get_dom_cx, component_get_dom_cc
+calls, mct_gGrid_init, seq_comm_getinfo, seq_mctext_avExtend, mct_avect_zero
+calls_ln, mct_gGrid_init@450, seq_mctext_avExtend@444, mct_gGrid_init@447, seq_comm_getinfo@425, mct_avect_zero@451, mct_avect_zero@448

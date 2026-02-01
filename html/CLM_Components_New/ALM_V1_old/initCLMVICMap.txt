@@ -1,0 +1,10 @@
+sub_param, soilhydrology_vars:2, c:1
+sub_out
+global_ro| col%dz, dz, NONE| soilhydrology_vars%depth_col, depth, NONE
+global_wo
+global_mod| soilhydrology_vars%vic_clm_fract_col, vic_clm_fract, NONE
+global_non| col%zi, zi, NONE| col%z, z, NONE
+calls, linear_interp
+readParams,
+integer , intent(in)  :: c
+type(soilhydrology_type), intent(inout) :: soilhydrology_vars

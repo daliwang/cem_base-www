@@ -1,0 +1,15 @@
+sub_param, woody:7, alloc_froot:6, nutrient_scalar:1, laindex:3, alloc_leaf:4, water_scalar:2, alloc_stem:5
+sub_out, alloc_stem, alloc_froot, alloc_leaf
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,readCNAllocParams
+real(r8), intent(in) :: nutrient_scalar  ! scalar for nutrient availability
+real(r8), intent(in) :: water_scalar    !  scalar for water availability
+real(r8), intent(in) :: laindex      ! lai
+real(r8), intent(out) :: alloc_leaf
+real(r8), intent(out) :: alloc_stem
+real(r8), intent(out) :: alloc_froot
+real(r8), intent(in) :: woody

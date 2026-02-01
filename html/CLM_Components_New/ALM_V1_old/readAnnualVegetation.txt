@@ -1,0 +1,14 @@
+sub_param, canopystate_vars:2, bounds:1
+sub_out
+global_ro| ldomain%ns, ns, NONE| ldomain%nj, nj, NONE| ldomain%ni, ni, NONE| pft%gridcell, gridcell, NONE
+global_wo| canopystate_vars%annlai_patch, annlai, NONE| canopystate_vars%mlaidiff_patch, mlaidiff_patch, NONE
+global_mod
+global_non
+calls, ncd_inqfdims, ncd_io, check_dim, ncd_pio_openfile, getfil, ncd_pio_closefile, endrun, shr_scam_getCloseLatLon
+readParams,readAnnualVegetation
+type(bounds_type), intent(in) :: bounds
+type(canopystate_type), intent(inout) :: canopystate_vars
+type(bounds_type) , intent(in) :: bounds
+character(len=*)  , intent(in) :: fveg      ! file with monthly vegetation data
+integer           , intent(in) :: months(2) ! months to be interpolated (1 to 12)
+type(canopystate_type), intent(inout) :: canopystate_vars

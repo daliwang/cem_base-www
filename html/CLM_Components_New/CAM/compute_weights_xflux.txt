@@ -1,0 +1,7 @@
+sub_in, debug, nreconstruction, weights_lgr_index_all, jall, fvm, klev, weights_all, weights_eul_index_all
+sub_out, jall, weights_eul_index_all, weights_lgr_index_all, weights_all
+global_ro
+global_wo
+global_mod
+global_non
+calls, getdep_cellboundariesxyvec, cart2cubedspherexy, gauss_points, makefluxarea, compute_weights_cell

@@ -1,0 +1,8 @@
+sub_in, infodata, fractions_gx, lnd, fractions_wx, EClock_d, ocn, seq_SyncClock, ice, fractions_ix, atm, rof, fractions_ox, fractions_lx, glc, wav, fractions_rx, fractions_ax
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, prep_rof_get_l2racc_lx, component_get_gsmap_cx, prep_aoflux_get_xao_ox, prep_glc_get_l2gacc_lx_cnt, prep_ocn_get_x2oacc_ox, prep_rof_get_l2racc_lx_cnt, prep_ocn_get_x2oacc_ox_cnt, prep_glc_get_l2gacc_lx
+calls, shr_sys_abort, seq_io_wopen, seq_comm_getdata, seq_io_enddef, seq_timemgr_EClockGetData, seq_io_write, shr_mpi_bcast, shr_file_freeUnit, seq_io_close, seq_infodata_getData, seq_infodata_GetData, shr_cal_date2ymd
+calls_ln, seq_io_write@426, seq_infodata_GetData@416, seq_comm_getdata@330, seq_io_write@462, seq_io_write@451, seq_io_write@413, seq_timemgr_EClockGetData@421, seq_io_write@460, seq_io_write@432, seq_io_write@415, seq_io_wopen@397, seq_io_write@422, seq_io_close@511, seq_io_write@433, seq_infodata_getData@336, seq_infodata_GetData@387, seq_timemgr_EClockGetData@427, shr_sys_abort@410, seq_io_write@492, seq_io_write@453, seq_io_write@472, seq_io_write@478, shr_mpi_bcast@396, seq_io_write@474, seq_infodata_GetData@412, seq_io_write@483, seq_io_write@444, seq_timemgr_EClockGetData@358, seq_timemgr_EClockGetData@423, seq_io_write@490, seq_comm_getdata@333, seq_io_write@504, seq_io_write@437, seq_io_write@420, seq_timemgr_EClockGetData@425, shr_cal_date2ymd@359, seq_io_write@424, seq_io_write@499, seq_io_write@430, seq_timemgr_EClockGetData@429, seq_infodata_GetData@414, seq_io_write@439, seq_io_enddef@408, shr_mpi_bcast@372, seq_io_write@485, seq_timemgr_EClockGetData@419, seq_io_write@417, seq_io_write@497, shr_file_freeUnit@393, seq_io_write@476, seq_io_write@506, seq_io_write@428, seq_io_write@470

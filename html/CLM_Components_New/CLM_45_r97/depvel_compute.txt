@@ -1,0 +1,7 @@
+sub_in, atm2lnd_inst, frictionvel_inst, canopystate_inst, drydepvel_inst, waterstate_inst, photosyns_inst, bounds
+sub_out
+global_ro, annlai, ram1, rb1, forc_solad, forc_rain, forc_t, rssun, fsun, rssha, mlaidiff, h2osoi_vol, forc_q, elai, forc_psrf, vds
+global_wo, velocity
+global_mod
+global_non, waterstate_inst%snow_depth_col, atm2lnd_inst%forc_solai_grc
+calls, endrun, seq_drydep_setHCoeff

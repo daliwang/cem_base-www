@@ -1,0 +1,7 @@
+sub_in, ldim, lcid, fdim, pter, record_size
+sub_out, pter
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

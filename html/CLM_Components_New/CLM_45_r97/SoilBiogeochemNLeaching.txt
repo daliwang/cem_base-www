@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_nitrogenflux_inst, bounds, waterstate_inst, waterflux_inst, soilbiogeochem_nitrogenstate_inst, num_soilc, filter_soilc
+sub_out
+global_ro, sminn_vr, h2osoi_liq, qflx_surf, qflx_drain, smin_no3_vr
+global_wo
+global_mod, smin_no3_leached_vr, sminn_leached_vr, smin_no3_runoff_vr
+global_non
+calls

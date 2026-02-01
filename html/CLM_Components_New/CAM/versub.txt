@@ -1,0 +1,7 @@
+sub_in, cvert_bbnd, vertadvu, ftop, cvert_tbnd, vertdifd, ibbnd, pcmax, rc, cvert, itbnd, carma, vertdifu, fbot, cstate, vertadvd
+sub_out, cvert
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, hs, grid, pt, delp, pk, nx, akap, pe, cp, wz
+sub_out, pk, wz, pe
+global_ro
+global_wo
+global_mod
+global_non
+calls

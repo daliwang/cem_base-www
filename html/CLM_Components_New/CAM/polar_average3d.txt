@@ -1,0 +1,7 @@
+sub_in, nlev, field
+sub_out, field
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_reprosum_calc, get_lat_all_p

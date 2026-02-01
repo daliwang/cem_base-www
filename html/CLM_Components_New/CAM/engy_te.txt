@@ -1,0 +1,7 @@
+sub_in, engy, pdel, t, nlon, cwava, u, phis, v, w
+sub_out, engy
+global_ro
+global_wo
+global_mod
+global_non
+calls

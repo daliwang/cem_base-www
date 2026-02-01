@@ -1,0 +1,9 @@
+sub_param, NLfile:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+character(len=*), intent(IN) :: NLFile ! Namelist filename

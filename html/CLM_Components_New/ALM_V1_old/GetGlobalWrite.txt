@@ -1,0 +1,10 @@
+sub_param, clmlevel:2, decomp_index:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in) :: decomp_index
+character(len=*), intent(in) :: clmlevel

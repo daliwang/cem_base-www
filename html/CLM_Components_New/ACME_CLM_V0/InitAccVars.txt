@@ -1,0 +1,7 @@
+sub_in, this, bounds
+sub_out
+global_ro
+global_wo, this%fsd24_patch, this%prec365_patch, this%rh24_patch, this%t_mo_patch, this%fsi240_patch, this%prec10_patch, this%fsi24_patch, this%wind24_patch, this%fsd240_patch, this%prec24_patch, this%prec60_patch
+global_mod
+global_non
+calls, endrun, extract_accum_field

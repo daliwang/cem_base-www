@@ -1,0 +1,7 @@
+sub_in, temperature_inst, currentSite, atm2lnd_inst
+sub_out
+global_ro, currentPatch
+global_wo, AB, frac_burnt, fire
+global_mod
+global_non
+calls, cambial_damage_kill, fire_intensity, crown_damage, area_burnt, wind_effect, charecteristics_of_fuel, rate_of_spread, post_fire_mortality, fire_danger_index, ground_fuel_consumption, crown_scorching

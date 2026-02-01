@@ -1,0 +1,8 @@
+sub_in, infodata, lnd_c2_atm, ocn_c2_atm, ice_c2_atm
+sub_out
+global_ro, component_get_c2x_cx
+global_wo
+global_mod
+global_non
+calls, shr_sys_flush, seq_comm_getData, mct_aVect_init, seq_map_init_rcfile, mct_aVect_zero, seq_infodata_getData
+calls_ln, mct_aVect_zero@137, seq_map_init_rcfile@160, seq_map_init_rcfile@216, mct_aVect_init@146, seq_map_init_rcfile@182, seq_comm_getData@128, mct_aVect_init@141, seq_infodata_getData@109, seq_map_init_rcfile@205, shr_sys_flush@197, mct_aVect_zero@147, mct_aVect_zero@142, shr_sys_flush@175, mct_aVect_init@136, seq_map_init_rcfile@193, shr_sys_flush@209, seq_map_init_rcfile@171

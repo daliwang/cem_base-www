@@ -1,0 +1,7 @@
+sub_in, ncol, xtab, km, t, x, ytab, jm, table, out, u, y, im, ix, jy
+sub_out, jy, ix, u, out, t
+global_ro
+global_wo
+global_mod
+global_non
+calls

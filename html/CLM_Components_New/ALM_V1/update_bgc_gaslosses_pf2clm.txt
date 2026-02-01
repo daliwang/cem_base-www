@@ -1,0 +1,12 @@
+sub_param, clm_bgc_data, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, clm_pf_idata%N_molecular_weight, clm_bgc_data%frac_h2osfc_col, clm_bgc_data%forc_pco2_grc, clm_pf_idata%C_molecular_weight, clm_pf_idata%nzclm_mapped, clm_bgc_data%frac_sno_eff_col, col%gridcell, bounds%begg, clm_bgc_data%forc_pbot_not_downscaled_grc
+global_wo, clm_bgc_data%hr_vr_col, clm_bgc_data%f_ngas_denit_vr_col, clm_bgc_data%f_ngas_decomp_vr_col, clm_bgc_data%f_ngas_nitri_vr_col
+global_mod, clm_bgc_data%f_n2o_soil_vr_col, clm_bgc_data%f_n2_soil_vr_col, clm_bgc_data%f_co2_soil_vr_col
+global_non, clm_bgc_data%dz, clm_bgc_data%forc_pch4_grc
+calls, VecRestoreArrayF90, pflotranModelUpdateAqGasesfromCLM, VecGetArrayF90
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in)  :: bounds
+integer, intent(in) :: num_soilc       ! number of soil columns in filter
+integer, intent(in) :: filter_soilc(:) ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

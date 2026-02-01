@@ -1,0 +1,7 @@
+sub_in, ubg, lbp, ubp, lbg
+sub_out
+global_ro, annsum_npp, woody, gddmin, landunit, agdd20, dwood, reinickerp, gridcell, agddtw, tmomin20, tcmin, annsum_litfall, slatop, twmax, deadstemc, itype, crownarea_max, itype, allom1, dsladlai, tcmax, prec365
+global_wo, heatstress, greffic
+global_mod, pftmayexist, nind, fpcgrid, leafcmax, present, crownarea
+global_non
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, bounds, this, ed_allsites_inst
+sub_out, ed_allsites_inst
+global_ro
+global_wo
+global_mod
+global_non, ed_allsites_inst, ed_allsites_inst, null
+calls, create_patch, zero_site, zero_patch, create_cohort

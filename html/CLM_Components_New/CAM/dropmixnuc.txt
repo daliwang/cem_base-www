@@ -1,0 +1,7 @@
+sub_in, tendnd, cldn, wsub, pbuf, state, dtmicro, cldo, ptend
+sub_out, tendnd
+global_ro, pmid, ncldwtr, rpdel, zm, temp, pdel, pint
+global_wo
+global_mod
+global_non, state%omega
+calls, endrun, ccncalc, outfld, loadaer, activate_modal, rad_cnst_get_aer_mmr, pbuf_get_field, rad_cnst_get_mode_num, physics_ptend_init, explmix

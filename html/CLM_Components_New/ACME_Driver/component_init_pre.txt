@@ -1,0 +1,8 @@
+sub_in, comp, cplallcompid, ntype, infodata, cplcompid, compid
+sub_out, comp
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_infodata_getdata, seq_comm_getinfo
+calls_ln, seq_comm_getinfo@126, seq_comm_getinfo@112, seq_comm_getinfo@113, seq_comm_getinfo@123, seq_comm_getinfo@124, seq_comm_getinfo@125, seq_comm_getinfo@127, seq_infodata_getdata@111

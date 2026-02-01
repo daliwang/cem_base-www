@@ -1,0 +1,10 @@
+sub_param, var_type:2, variable_value:3, this:1
+sub_out, variable_value
+global_ro| this%pressure, pressure, NONE| this%temperature, temperature, NONE| this%condition_value, condition_value, NONE| this%sat, sat, NONE
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+PetscInt, intent(in)             :: var_type
+PetscReal, intent(out)           :: variable_value

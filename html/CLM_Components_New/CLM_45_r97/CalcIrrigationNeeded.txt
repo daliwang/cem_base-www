@@ -1,0 +1,7 @@
+sub_in, btran, bounds, rootfr, elai, t_soisno, time_prev, filter_exposedvegp, eff_porosity, num_exposedvegp, h2osoi_liq, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

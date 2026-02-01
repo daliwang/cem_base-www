@@ -1,0 +1,7 @@
+sub_in, ext_frc_specifier, airpl_emis_file, xs_long_file, euvacdat_file, sad_file, euvac_file, sulf_file, o2_xsect_file, lght_no_prd_factor, photon_file, solar_parms_file, srf_emis_specifier, xs_short_file, clim_soilw_file, sad_timing, season_wes_file, srf_emis_fixed_ymd, xactive_prates, chem_name, pbuf2d, ext_frc_fixed_ymd, ext_frc_fixed_tod, srf_emis_fixed_tod, electron_file, fstrat_list, srf_emis_type, xs_coef_file, exo_coldens_file, srf_emis_cycle_yr, depvel_file, ext_frc_type, rsf_file, fstrat_file, ext_frc_cycle_yr, tuv_xsect_file, depvel_lnd_file
+sub_out, exo_coldens_file
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_cph, solar_parms_init, airpl_src, extfrc_inti, setext_inti, imp_slv_inti, neu_wetdep_init, drydep_inti, init_mean_mass, aurora_inti, fstrat_inti, sulf_inti, init_hrates, init_strato_rates, get_solar_parms, euvac_init, exp_sol_inti, heatnirco2_init, sad_inti, clybry_fam_init, spe_init, tracer_srcs_init, strato_sad_inti, photo_inti, usrrxt_inti, euvac_set_etf, setinv_inti, srf_emissions_inti, lightning_inti, tracer_cnst_init, synoz_inti, init_airglow, gas_phase_chemdr_inti, init_mass_xforms, sethet_inti

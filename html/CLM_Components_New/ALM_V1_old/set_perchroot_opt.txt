@@ -1,0 +1,10 @@
+sub_param, perchroot_alt_global:2, perchroot_global:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+logical, intent(in) :: perchroot_global
+logical, intent(in) :: perchroot_alt_global

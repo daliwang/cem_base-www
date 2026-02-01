@@ -1,0 +1,9 @@
+sub_param, bounds:2, this:1
+sub_out
+global_ro
+global_wo| this%fsi240_patch, fsi240_patch, NONE| this%fsd24_patch, fsd24_patch, NONE| this%fsd240_patch, fsd240_patch, NONE| this%fsi24_patch, fsi24_patch, NONE
+global_mod
+global_non
+calls, init_accum_field
+readParams,
+type(bounds_type), intent(in) :: bounds

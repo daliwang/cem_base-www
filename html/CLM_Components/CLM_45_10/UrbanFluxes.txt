@@ -1,0 +1,7 @@
+sub_in, num_urbanc, filter_urbanc, filter_urbanp, ubp, nc, ubl, num_urbanl, filter_nourbanl, ubc, filter_urbanl, lbc, num_nourbanl, lbp, num_urbanp, lbl
+sub_out
+global_ro, htvp, t_grnd, londeg, z_d_town, coli, qg, urban_clump, npfts, column, itype, snow_depth, forc_hgt_u_pft, forc_t, eflx_urban_ac, forc_th, h2osoi_liq, forc_q, dqgdT, forc_u, soilalpha_u, urban_clump, urban_clump, gridcell, landunit, eflx_traffic_factor, forc_hgt_t_pft, z_0_town, gridcell, h2osoi_ice, urban_clump, t_soisno, rootr_road_perv, forc_v, forc_rho, eflx_urban_heat, urban_clump, frac_sno, pfti
+global_wo, t_ref2m_u, cgrnd, psnsun, ulrad, dlrad, qflx_evap_veg, t_ref2m, eflx_sh_h2osfc, eflx_traffic, t_veg, eflx_sh_snow, ram1, taux, eflx_sh_tot_u, psnsha, eflx_sh_soil, eflx_heat_from_ac, tauy, t_building, rootr, rh_ref2m_u, qflx_evap_soi
+global_mod, qflx_tran_veg, cgrnds, q_ref2m, qaf, cgrndl, rh_ref2m, taf, eflx_wasteheat, eflx_sh_tot, eflx_sh_grnd
+global_non, qflx_evap_tot, h2osno, colf, snl, forc_pbot, pftf
+calls, QSat, get_curr_date, FrictionVelocity, MoninObukIni, endrun

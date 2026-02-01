@@ -1,0 +1,7 @@
+sub_in, record_size, window, chunk_buffer, block_buffer
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_TYPE_INDEXED, MPI_TYPE_COMMIT, t_barrierf, mp_sendirr, mp_recvirr, get_partneroffset, mpialltoallint, mpialltoallv, altalltoallv

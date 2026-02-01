@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, domain_check, initClmtype, surfrd_get_topo, surfrd_get_data, surfrd_get_grid, decompInit_glcp, shr_sys_flush, get_proc_bounds, clm_varcon_init, ch4conrd, ncd_pio_init, init_lnd2atm_type, init_atm2lnd_type, pftconrd, t_startf, t_stopf, decompInit_lnd, UrbanInput, init_glc2lnd_type, surfrd_get_globmask, initGridCells, init_lnd2glc_type, clm_varpar_init, control_init, header

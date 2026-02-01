@@ -1,0 +1,7 @@
+sub_in, filename, domain
+sub_out
+global_ro, domain%nend, domain%nbeg
+global_wo
+global_mod
+global_non
+calls, ncd_pio_openfile, endrun, ncd_inqfdims, ncd_io, getfil, ncd_pio_closefile

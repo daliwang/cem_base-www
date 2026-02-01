@@ -1,0 +1,7 @@
+sub_in, spec_c_in, spec_a_out
+sub_out, spec_a_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

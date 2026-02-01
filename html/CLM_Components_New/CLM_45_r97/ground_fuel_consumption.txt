@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, leaf_litter, fuel_frac, livegrass, litter_moisture, sum_fuel, CWD_AG
+global_wo, tau_l, TFC_ROS
+global_mod, currentPatch, burnt_frac_litter
+global_non
+calls

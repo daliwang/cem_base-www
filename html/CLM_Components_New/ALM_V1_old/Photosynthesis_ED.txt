@@ -1,0 +1,22 @@
+sub_param, cair:7, EDbio_vars:14, filterp:3, photosyns_vars:13, dayl_factor:9, oair:6, rb:8, bounds:1, eair:5, fn:2, canopystate_vars:12, esat_tv:4, temperature_vars:11, atm2lnd_vars:10
+sub_out
+global_ro| gridCellEdState%ed_parsha_z, ed_parsha_z, NONE| gridCellEdState%area, area, NONE| canopystate_vars%elai_patch, elai, NONE| gridCellEdState%ed_parsun_z, ed_parsun_z, NONE| gridCellEdState%NCL_p, NCL_p, NONE| %canopy_trim, canopy_trim, NONE| ecophyscon%c3psn, c3psn, NONE| %treesai, treesai, NONE| gridCellEdState%ed_laisha_z, ed_laisha_z, NONE| temperature_vars%thm_patch, tgcm, NONE| gridCellEdState%f_sun, f_sun, NONE| gridCellEdState%ed_laisun_z, ed_laisun_z, NONE| %n, n, NONE| EDpft%ED_patch, ED_patch, NONE| gridCellEdState%canopy_area_profile, canopy_area_profile, NONE| gridCellEdState%btran_ft, btran_ft, NONE| gridCellEdState%esai_profile, esai_profile, NONE| %NV, NV, NONE| temperature_vars%t_veg_patch, t_veg, NONE| ecophyscon%slatop, slatop, NONE| currentPatch%tallest, currentCohort, NONE| currentCohort%shorter, currentCohort, NONE| ecophyscon%fnitr, fnitr, NONE| ecophyscon%woody, woody, NONE| %hite, hite, NONE| %laimemory, laimemory, NONE| %pft, pft, NONE| %column, column, NONE| %nv, nv, NONE| 1:currentCohort%nv, nv, NONE| %treelai, treelai, NONE| %c_area, c_area, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| gridCellEdState%canopy_layer_lai, canopy_layer_lai, NONE| gridCellEdState%elai_profile, elai_profile, NONE| %livecrootn, livecrootn, NONE| %br, br, NONE| gridCellEdState%total_canopy_area, total_canopy_area, NONE| %gridcell, gridcell, NONE| pft%gridcell, gridcell, NONE| gridCellEdState%rootfr_ft, rootfr_ft, NONE| %canopy_layer, canopy_layer, NONE| ecophyscon%froot_leaf, froot_leaf, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| EDEcophyscon%BB_slope, bb_slope, NONE| EDecophyscon%sapwood_ratio, sapwood_ratio, NONE| %balive, balive, NONE| ecophyscon%leafcn, leafcn, NONE
+global_wo| gridCellEdState%nrad, nrad, NONE| %ts_net_uptake, ts_net_uptake, NONE| gridCellEdState%present, present, NONE| %npp_clm, npp_clm, NONE
+global_mod| %resp_g, resp_g, NONE| %rd, rd, NONE| photosyns_vars%lmrcanopy_patch, lmrcanopy, NONE| EDbio_vars%GCcanopy_patch, GCcanopy, NONE| %resp_clm, resp_clm, NONE| %gscan, gscan, NONE| %livestemn, livestemn, NONE| canopystate_vars%rscanopy_patch, rscanopy, NONE| gridCellEdState%psn_z, psn_z, NONE| !currentCohort%resp_m, resp_m, NONE| %resp_m, resp_m, NONE| %livestem_mr, livestem_mr, NONE| photosyns_vars%psncanopy_patch, psncanopy, NONE| %froot_mr, froot_mr, NONE| %livecroot_mr, livecroot_mr, NONE| %gpp_clm, gpp_clm, NONE| gridCellEdState%ncan, ncan, NONE| %bsw, bsw, NONE
+global_non| currentPatch%younger, currentPatch, NONE| gridCellEdState, currentPatch, NONE| canopystate_vars%tlai_patch, tlai, NONE| ecophyscon%flnr, flnr, NONE
+calls, t_stopf, root_fraction, quadratic, t_startf, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds                      ! bounds
+integer                , intent(in)    :: fn                          ! size of pft filter
+integer                , intent(in)    :: filterp(fn)                 ! pft filter
+real(r8)               , intent(in)    :: esat_tv(bounds%begp: )      ! saturation vapor pressure at t_veg (Pa)
+real(r8)               , intent(in)    :: eair( bounds%begp: )        ! vapor pressure of canopy air (Pa)
+real(r8)               , intent(in)    :: oair( bounds%begp: )        ! Atmospheric O2 partial pressure (Pa)
+real(r8)               , intent(in)    :: cair( bounds%begp: )        ! Atmospheric CO2 partial pressure (Pa)
+real(r8)               , intent(inout) :: rb( bounds%begp: )          ! boundary layer resistance (s/m)
+real(r8)               , intent(in)    :: dayl_factor( bounds%begp: ) ! scalar (0-1) for daylength
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(canopystate_type) , intent(inout) :: canopystate_vars
+type(photosyns_type)   , intent(inout) :: photosyns_vars
+type(EDbio_type)       , intent(inout) :: EDbio_vars

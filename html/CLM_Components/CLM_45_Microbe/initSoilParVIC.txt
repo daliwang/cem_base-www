@@ -1,0 +1,7 @@
+sub_in, claycol, c, om_fraccol, sandcol
+sub_out
+global_ro, vic_clm_fract, depth
+global_wo, c_param, phi_s, max_moist, ksat
+global_mod, expt, porosity
+global_non, zi, dsmax, dz, Wsvic, ds, z, b_infil
+calls

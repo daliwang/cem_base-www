@@ -1,0 +1,15 @@
+sub_param, satParams:1, sat_res:2, ps:5, pu:6, lambda:4, smoothingRegimeSuperSat:7, alpha:3
+sub_out, smoothingRegimeSuperSat
+global_ro
+global_wo| satParams%sbc_pu, sbc_pu, NONE| satParams%bc_lambda, bc_lambda, NONE| satParams%relperm_func_type, relperm_func_type, NONE| satParams%sat_func_type, sat_func_type, NONE| satParams%sbc_ps, sbc_ps, NONE
+global_mod| satParams%sbc_b2, sbc_b2, NONE| satParams%alpha, alpha, NONE| satParams%sbc_b3, sbc_b3, NONE| satParams%sat_res, sat_res, NONE
+global_non
+calls, endrun, satParams%Init
+readParams,
+type(saturation_params_type) , intent(out) :: satParams
+PetscReal                    , intent(in)  :: sat_res
+PetscReal                    , intent(in)  :: alpha
+PetscReal                    , intent(in)  :: lambda
+PetscReal                    , intent(in)  :: ps
+PetscReal                    , intent(in)  :: pu
+logical                      , intent(out) :: smoothingRegimeSuperSat

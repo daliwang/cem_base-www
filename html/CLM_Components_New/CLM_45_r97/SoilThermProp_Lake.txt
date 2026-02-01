@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, tktopsoillay, cv, filter_lakec, temperature_inst, num_lakec, tk, bounds, soilstate_inst
+sub_out, cv, tk
+global_ro, h2osoi_ice, csol, zi, h2osoi_liq, z, tkdry, watsat, t_soisno, snl, tkmg, dz, tksatu
+global_wo
+global_mod
+global_non
+calls

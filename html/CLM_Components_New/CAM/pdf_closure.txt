@@ -1,0 +1,7 @@
+sub_in, p_in_Pa, sclrm, thlm, rtm, level, wpsclrp, #ifdef, sclrprtp, wp3, sclrp2, rtpthlp, wprtp, exner, Skw, wpthlp, sigma_sqd_w, thlp2, rtp2, GFDL, sclrpthlp, thv_ds, wp2, wm
+sub_out, 
+global_ro
+global_wo
+global_mod
+global_non
+calls, pdf_closure_check

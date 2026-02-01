@@ -1,0 +1,14 @@
+sub_param, bounds:1, filter_soilc:3, phosphorusstate_vars:5, phosphorusflux_vars:6, num_soilc:2, cnstate_vars:4
+sub_out
+global_ro| phosphorusstate_vars%decomp_ppools_vr_col, decomp_ppools_vr_col, NONE| cnstate_vars%fpi_vr_col, fpi_vr_col, NONE| cnstate_vars%fpi_p_vr_col, fpi_p_vr_col, NONE| cnstate_vars%isoilorder, isoilorder, NONE
+global_wo
+global_mod| phosphorusflux_vars%biochem_pmin_vr_col, biochem_pmin_vr_col, NONE| phosphorusflux_vars%biochem_pmin_ppools_vr_col, biochem_pmin_ppools_vr_col, NONE
+global_non| phosphorusflux_vars%biochem_pmin_col, biochem_pmin_col, NONE
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)         , intent(in)    :: cnstate_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

@@ -1,0 +1,7 @@
+sub_in, lcl, lchnk, rd, lel, grav, qstp, ncol, q, p, tl, rl, cape, pf, z, tp, t, mx, pblt, msg, cp, tpert, lon
+sub_out, qstp, mx, lon, tl, lcl, cape, tp, lel
+global_ro
+global_wo
+global_mod
+global_non
+calls, parcel_dilute

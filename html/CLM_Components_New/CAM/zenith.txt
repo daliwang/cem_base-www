@@ -1,0 +1,7 @@
+sub_in, clat, clon, calday, coszrs, ncol
+sub_out, coszrs
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_orb_decl

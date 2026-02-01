@@ -1,0 +1,14 @@
+sub_in, endp, begc, endg, begg, begl, endl, f, endc, begp, t
+sub_out
+global_ro, clmptr_rs(hpindex)%ptr
+global_wo
+global_mod, tape(t)%hlist(f)%nacs, tape(t)%hlist(f)%hbuf
+global_non, clm3%g%l%active, clm3%g%l%c%p%active, clm3%g%l%c%active
+calls, c2g, l2g, p2g, endrun
+
+Tree height: 24
+4+, l2g, 
+3+, c2g, 
+22-, endrun, 
+7+, endrun, 
+2+, p2g, 

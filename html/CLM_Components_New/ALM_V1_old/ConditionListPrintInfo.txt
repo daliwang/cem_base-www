@@ -1,0 +1,9 @@
+sub_param, list:1
+sub_out
+global_ro| cur_cond%next, cur_cond, NONE| list%first, cur_cond, NONE
+global_wo
+global_mod
+global_non
+calls, ConditionPrintInfo
+readParams,
+type(condition_list_type), intent(in) :: list

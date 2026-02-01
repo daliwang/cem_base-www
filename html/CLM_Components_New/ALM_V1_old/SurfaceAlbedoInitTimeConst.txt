@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| col%gridcell, gridcell, NONE
+global_wo
+global_mod
+global_non
+calls, getfil, ncd_pio_closefile, endrun, ncd_pio_openfile, ncd_io
+readParams,
+type(bounds_type), intent(in) :: bounds

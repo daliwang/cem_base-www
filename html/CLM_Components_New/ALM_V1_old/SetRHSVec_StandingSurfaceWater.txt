@@ -1,0 +1,21 @@
+sub_param, dtime:4, t_h2osfc:12, c_h2osfc:8, num_nolakec:2, fn_h2osfc:10, hs_h2osfc:5, t_soisno:11, dhsdT:6, filter_nolakec:3, bounds:1, dz_h2osfc:9, tk_h2osfc:7, rt:13
+sub_out, fn_h2osfc, rt
+global_ro| col%z, z, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds                      ! bounds
+integer , intent(in)  :: num_nolakec                         ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                   ! column filter for non-lake points
+real(r8), intent(in)  :: dtime                               ! land model time step (sec)
+real(r8), intent(in)  :: hs_h2osfc(bounds%begc: )            !
+real(r8), intent(in)  :: dhsdT(bounds%begc: )                ! temperature derivative of "hs" [col]
+real(r8), intent(in)  :: tk_h2osfc(bounds%begc: )            !
+real(r8), intent(in)  :: c_h2osfc( bounds%begc: )            ! heat capacity of surface water [col]
+real(r8), intent(in)  :: dz_h2osfc(bounds%begc: )            ! Thickness of standing water [m]
+real(r8), intent(out) :: fn_h2osfc (bounds%begc: )           ! heat diffusion through standing-water/soil interface [W/m2]
+real(r8), intent(in)  :: t_soisno(bounds%begc:, -nlevsno+1:) ! soil temperature (Kelvin)
+real(r8), intent(in)  :: t_h2osfc(bounds%begc:)              ! surface water temperature temperature (Kelvin)
+real(r8), intent(out) :: rt(bounds%begc:bounds%endc, 1:1 )   ! rhs vector entries

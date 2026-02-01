@@ -1,0 +1,11 @@
+sub_param, y, idim, x
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cumsum_v
+readParams,
+real(r8), dimension(:,:), intent(in)  :: x    !input array
+real(r8), dimension(:,:), intent(out) :: y    !output cum sum
+integer , optional,     intent(in)    :: idim !dimension to be summed

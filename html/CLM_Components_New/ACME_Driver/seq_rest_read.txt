@@ -1,0 +1,8 @@
+sub_in, fractions_rx, rest_file, wav, fractions_ax, atm, fractions_ix, glc, fractions_lx, fractions_ox, rof, lnd, fractions_wx, fractions_gx, ice, ocn, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, prep_ocn_get_x2oacc_ox_cnt, prep_glc_get_l2gacc_lx, prep_rof_get_l2racc_lx_cnt, prep_ocn_get_x2oacc_ox, prep_glc_get_l2gacc_lx_cnt, prep_aoflux_get_xao_ox, component_get_gsmap_cx, prep_rof_get_l2racc_lx
+calls, seq_infodata_getData, seq_comm_getdata, seq_io_read
+calls_ln, seq_comm_getdata@171, seq_io_read@230, seq_comm_getdata@169, seq_io_read@251, seq_io_read@246, seq_io_read@240, seq_io_read@245, seq_io_read@226, seq_io_read@223, seq_io_read@214, seq_io_read@208, seq_io_read@231, seq_infodata_getData@174, seq_io_read@241, seq_io_read@224, seq_io_read@197, seq_io_read@215, seq_io_read@236, seq_io_read@252, seq_io_read@201, seq_io_read@222, seq_io_read@196, seq_io_read@207, seq_io_read@235, seq_io_read@225

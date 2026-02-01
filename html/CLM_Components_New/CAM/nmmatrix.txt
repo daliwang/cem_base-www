@@ -1,0 +1,7 @@
+sub_in, zb, bm1, bmi, zcr1
+sub_out, bm1, bmi, zcr1
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, sgeev

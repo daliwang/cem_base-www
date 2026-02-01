@@ -1,0 +1,12 @@
+sub_param, ubj, bounds, this, betrtracer_vars, lbj
+sub_out
+global_ro
+global_wo, betrtracer_vars%nmem_max
+global_mod
+global_non
+calls, betrtracer_vars%Init, betrtracer_vars%set_tracer
+readParams,
+class(bgc_reaction_mock_run_type), intent(in)    :: this
+type(bounds_type)                , intent(in)    :: bounds
+integer                          , intent(in)    :: lbj, ubj
+type(BeTRtracer_type )           , intent(inout) :: betrtracer_vars

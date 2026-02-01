@@ -1,0 +1,7 @@
+sub_in, filter_nolakep, soilstate_inst, energyflux_inst, frictionvel_inst, atm2lnd_inst, waterflux_inst, bounds, temperature_inst, num_nolakep, waterstate_inst, canopystate_inst, filter_nolakec, num_nolakec
+sub_out
+global_ro, bsw, forc_q, forc_hgt_q, forc_th, rootfr_road_perv, h2osoi_liq, z_0_town, displar, frac_sno_eff, watsat, t_h2osfc, urbpoi, dz, watdry, smpmin, forc_hgt_t, z0mr, forc_hgt_u, esai, t_soisno, frac_h2osfc, frac_sno, snl, watopt, htop, forc_t, h2osoi_ice, frac_veg_nosno, elai, sucsat, z_d_town
+global_wo, emg, thv, zii, z0qg, eflx_lh_tot_r, forc_hgt_q_patch, emv, z0qv, eflx_sh_tot_r, cgrnd, tssbef, qflx_evap_tot, eflx_lh_tot, t_h2osfc_bef, eflx_sh_veg, z0hg, cgrndl, z0hv, t_grnd, cgrnds, soilalpha_u, qflx_tran_veg, eflx_lh_tot_u, forc_hgt_u_patch, beta, eflx_sh_tot, soilalpha, thm, eflx_sh_tot_u, qflx_evap_veg
+global_mod, z0mg, qg, qg_soil, dqgdT, displa, z0mv, rootr_road_perv, forc_hgt_t_patch, z0m, qg_h2osfc, qg_snow, htvp
+global_non, waterstate_inst%h2osfc_col, soilstate_inst%watfc_col, waterstate_inst%h2osno_col, atm2lnd_inst%forc_v_grc, atm2lnd_inst%forc_pbot_downscaled_col, atm2lnd_inst%forc_u_grc
+calls, QSat, calc_soilevap_stress

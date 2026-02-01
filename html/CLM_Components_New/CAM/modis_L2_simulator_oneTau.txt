@@ -1,0 +1,7 @@
+sub_in, retrievedPhase, retrievedCloudTopPressure, cloudIce, cloudWater, pressureLevels, temp, retrievedSize, isccpTau, isccpCloudTopPressure, retrievedTau, iceSize, snowSize, cloudSnow, waterSize, pressureLayers, opticalThickness
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, modis_L2_simulator_twoTaus

@@ -1,0 +1,9 @@
+sub_param, this:1, do_mpc:2
+sub_out
+global_ro
+global_wo| this%c_loc, c_loc, NONE| this%lid_nh4_nit, lid_nh4_nit, NONE| this%lid_nitri_compet, lid_nitri_compet, NONE| this%lid_lit2_compet, lid_lit2_compet, NONE| this%nreactions, nreactions, NONE| this%lid_som2_compet, lid_som2_compet, NONE| this%nom_totelms, nom_totelms, NONE| this%lid_o2_aere_reac, lid_o2_aere_reac, NONE| this%lid_lit1_compet, lid_lit1_compet, NONE| this%lid_o2_paere, lid_o2_paere, NONE| this%lid_denit_compet, lid_denit_compet, NONE| this%lid_ar, lid_ar, NONE| this%lid_minn_nh4_plant, lid_minn_nh4_plant, NONE| this%n_loc, n_loc, NONE| this%lid_cwd_compet, lid_cwd_compet, NONE| this%lid_som3_compet, lid_som3_compet, NONE| this%lid_lit3_compet, lid_lit3_compet, NONE| this%lid_ch4, lid_ch4, NONE| this%lid_minn_no3_immob, lid_minn_no3_immob, NONE| this%lid_plant_compet, lid_plant_compet, NONE| this%lid_n2, lid_n2, NONE| this%lid_no3_den, lid_no3_den, NONE| this%lid_nh4_mpcbuf, lid_nh4_mpcbuf, NONE| this%lid_co2, lid_co2, NONE| this%lid_co2_hr, lid_co2_hr, NONE| this%lid_minn_no3_plant, lid_minn_no3_plant, NONE| this%lid_som1_compet, lid_som1_compet, NONE| this%lid_o2, lid_o2, NONE| this%nprimvars, nprimvars, NONE| this%nstvars, nstvars, NONE| this%lid_n2o_nit, lid_n2o_nit, NONE| this%lid_n2o, lid_n2o, NONE| this%lid_nh4_supp, lid_nh4_supp, NONE| this%lid_minn_nh4_immob, lid_minn_nh4_immob, NONE| this%lid_clay_compet, lid_clay_compet, NONE| this%ncompets, ncompets, NONE
+global_mod| this%nelms, nelms, NONE| this%nom_pools, nom_pools, NONE
+global_non
+calls
+readParams,
+logical   , intent(in) :: do_mpc

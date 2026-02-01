@@ -1,0 +1,7 @@
+sub_in, molecwght, comp_name, class_n, factors
+sub_out, molecwght, class_n, factors
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

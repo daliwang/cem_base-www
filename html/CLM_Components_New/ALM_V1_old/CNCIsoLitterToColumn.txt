@@ -1,0 +1,12 @@
+sub_param, carbonflux_vars:4, filter_soilc:2, cnstate_vars:3, num_soilc:1
+sub_out
+global_ro| col%pfti, pfti, NONE| pft%wtcol, wtcol, NONE| ecophyscon%fr_flab, fr_flab, NONE| ecophyscon%lf_fcel, lf_fcel, NONE| ecophyscon%fr_flig, fr_flig, NONE| cnstate_vars%leaf_prof_patch, leaf_prof, NONE| ecophyscon%lf_flig, lf_flig, NONE| cnstate_vars%froot_prof_patch, froot_prof, NONE| carbonflux_vars%leafc_to_litter_patch, leafc_to_litter, NONE| pft%itype, ivt, NONE| ecophyscon%fr_fcel, fr_fcel, NONE| carbonflux_vars%frootc_to_litter_patch, frootc_to_litter, NONE| ecophyscon%lf_flab, lf_flab, NONE
+global_wo
+global_mod| carbonflux_vars%phenology_c_to_litr_lig_c_col, phenology_c_to_litr_lig_c, NONE| carbonflux_vars%phenology_c_to_litr_met_c_col, phenology_c_to_litr_met_c, NONE| carbonflux_vars%phenology_c_to_litr_cel_c_col, phenology_c_to_litr_cel_c, NONE
+global_non
+calls
+readParams,
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(carbonflux_type)  , intent(inout) :: carbonflux_vars

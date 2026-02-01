@@ -1,0 +1,10 @@
+sub_param, this, bounds
+sub_out
+global_ro
+global_wo, this%glc_dyn_runoff_routing_grc
+global_mod
+global_non
+calls
+readParams,
+class(glc2lnd_type), intent(inout) :: this
+type(bounds_type)  , intent(in) :: bounds ! bounds

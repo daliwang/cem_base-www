@@ -1,0 +1,7 @@
+sub_in, cmfmc, icwmr, cmfsl, q, qc, phis, dq, zm, cmfdqr, qpert, nstep, pmiddry, rpdeldry, t, cmflq, cnt, cmfdt, precc, rliq, pblh, pmid, rpdel, tpert, pdeldry, ncol, cnb, lchnk, pdel, ztodt
+sub_out, cmflq, icwmr, cmfsl, cmfdqr, cmfmc, cnb, cnt, precc, qc, cmfdt, rliq, dq
+global_ro
+global_wo
+global_mod
+global_non
+calls, qsat, get_lon_all_p, get_lat_all_p

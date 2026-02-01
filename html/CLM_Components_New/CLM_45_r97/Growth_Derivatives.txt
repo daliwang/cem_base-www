@@ -1,0 +1,7 @@
+sub_in, currentCohort
+sub_out
+global_ro
+global_wo
+global_mod, flux_in
+global_non, currentCohort%siteptr
+calls, allocate_live_biomass

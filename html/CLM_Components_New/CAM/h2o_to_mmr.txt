@@ -1,0 +1,7 @@
+sub_in, h2o_mmr, h2o_vmr, ncol, mbar
+sub_out, h2o_mmr
+global_ro
+global_wo
+global_mod
+global_non
+calls

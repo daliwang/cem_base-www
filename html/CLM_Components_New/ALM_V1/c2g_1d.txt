@@ -1,0 +1,13 @@
+sub_param, bounds, garr, l2g_scale_type, carr, c2l_scale_type
+sub_out, garr
+global_ro, col%wtgcell, col%gridcell, lun%canyon_hwr, col%landunit
+global_wo
+global_mod
+global_non
+calls, endrun, build_scale_l2g
+readParams,
+type(bounds_type), intent(in) :: bounds
+real(r8), intent(in)  :: carr( bounds%begc: )  ! input column array
+real(r8), intent(out) :: garr( bounds%begg: )  ! output gridcell array
+character(len=*), intent(in) :: c2l_scale_type ! scale factor type for averaging
+character(len=*), intent(in) :: l2g_scale_type ! scale factor type for averaging

@@ -1,0 +1,7 @@
+sub_in, flns, fsnt, landm, fsds, fsns, pbuf, cam_out, ztodt, cam_in, flnt, sgh30, tend, state
+sub_out, tend
+global_ro
+global_wo
+global_mod
+global_non
+calls, cam_export, radiation_tend, check_tracers_chng, aero_model_wetdep, diag_conv_tend_ini, physics_state_dealloc, clybry_fam_adj, tropopause_output, stratiform_tend, t_startf, diag_phys_writeout, microp_driver_tend, check_tracers_init, convect_shallow_tend, cnst_get_ind, physics_ptend_init, phys_getopts, outfld, clubb_tend_cam, diag_export, convect_deep_tend, dadadj, physics_state_alloc, diag_conv, physics_tend_dealloc, physics_ptend_sum, check_energy_chng, sslt_rebin_adv, physics_tend_alloc, physics_ptend_dealloc, macrop_driver_tend, microp_aero_run, check_energy_fix, physics_state_check, qneg3, modal_aero_wateruptake_dr, modal_aero_calcsize_diag, check_energy_timestep_init, pbuf_get_field, convect_deep_tend_2, t_stopf, physics_update, diag_state_b4_phys_write, subcol_ptend_copy, subcol_gen, carma_wetdep_tend, subcol_ptend_avg, carma_timestep_tend, cloud_diagnostics_calc

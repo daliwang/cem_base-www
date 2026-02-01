@@ -1,0 +1,8 @@
+sub_in, mpicom_barrier, flow, comp, run_barriers, infodata_string, timer_barrier, infodata, timer_infodata_exch, timer_comp_exch, timer_map_exch
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_drvstartf, t_drvstopf, seq_map_map, mpi_barrier, seq_infodata_exchange
+calls_ln, t_drvstartf@1313, seq_infodata_exchange@1321, seq_infodata_exchange@1317, seq_map_map@1299, mpi_barrier@1281, t_drvstopf@1325, seq_map_map@1302, t_drvstopf@1330, t_drvstopf@1307, t_drvstartf@1295, t_drvstopf@1282, t_drvstartf@1288, t_drvstartf@1280

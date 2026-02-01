@@ -1,0 +1,14 @@
+sub_param, num_h2osfc:2, waterstate_vars:4, qflx_h2osfc2topsoi:5, bounds:1, filter_h2osfc:3, no_update:6
+sub_out, qflx_h2osfc2topsoi
+global_ro| col%micro_sigma, micro_sigma, NONE| waterstate_vars%h2osno_col, h2osno, NONE| col%landunit, landunit, NONE
+global_wo| waterstate_vars%frac_sno_eff_col, frac_sno_eff, NONE
+global_mod| waterstate_vars%frac_sno_col, frac_sno, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE
+global_non
+calls
+readParams,CanopyHydrology_readnl
+type(bounds_type)     , intent(in)           :: bounds
+integer               , intent(in)           :: num_h2osfc       ! number of column points in column filter
+integer               , intent(in)           :: filter_h2osfc(:) ! column filter
+type(waterstate_type) , intent(inout)        :: waterstate_vars
+real(r8)              , intent(inout)        :: qflx_h2osfc2topsoi(bounds%begc:bounds%endc)
+integer               , intent(in), optional :: no_update        ! flag to make calculation w/o updating variables

@@ -1,0 +1,7 @@
+sub_in, s_target, smpsat, bsw, this, smp_target
+sub_out, s_target
+global_ro
+global_wo
+global_mod
+global_non
+calls

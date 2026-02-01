@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp, cnveg_carbonstate_inst, cnveg_carbonflux_inst
+sub_out
+global_ro, psnsun_to_cpool_patch, psnshade_to_cpool_patch
+global_wo
+global_mod, cpool_patch
+global_non, cnveg_carbonflux_inst, cnveg_carbonstate_inst
+calls

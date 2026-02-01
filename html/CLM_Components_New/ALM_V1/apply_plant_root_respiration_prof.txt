@@ -1,0 +1,15 @@
+sub_param, filter_soilc, rr_col_vr, ubj, rr_col, bounds, root_prof_col, num_soilc
+sub_out, rr_col_vr
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in) :: bounds                                        ! bounds
+integer           , intent(in) :: ubj
+integer           , intent(in) :: num_soilc                                     ! number of columns in column filter
+integer           , intent(in) :: filter_soilc(:)                               ! column filter
+real(r8)          , intent(in) :: rr_col(bounds%begc:bounds%endc)
+real(r8)          , intent(in) :: root_prof_col(bounds%begc:bounds%endc, 1:ubj)
+real(r8)          , intent(inout):: rr_col_vr(1,bounds%begc:bounds%endc, 1:ubj) !

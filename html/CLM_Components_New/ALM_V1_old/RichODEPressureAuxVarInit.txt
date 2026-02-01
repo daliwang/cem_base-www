@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo| this%condition_value, condition_value, NONE| this%dsat_dP, dsat_dP, NONE| this%dvis_dP, dvis_dP, NONE| this%por, por, NONE| this%vis, vis, NONE| this%satParams%vg_n, vg_n, NONE| this%conductance, conductance, NONE| this%frac_liq_sat, frac_liq_sat, NONE| this%satParams%vg_m, vg_m, NONE| this%pressure, pressure, NONE| this%density_type, density_type, NONE| this%satParams%sat_func_type, sat_func_type, NONE| this%temperature, temperature, NONE| this%pressure_prev, pressure_prev, NONE| this%dkr_dP, dkr_dP, NONE| this%satParams%alpha, alpha, NONE| this%dpor_dP, dpor_dP, NONE| this%perm, perm, NONE| this%satParams%sat_res, sat_res, NONE| this%dden_dP, dden_dP, NONE| this%satParams%bc_lambda, bc_lambda, NONE
+global_mod
+global_non
+calls, PorosityFunctionInit
+readParams,

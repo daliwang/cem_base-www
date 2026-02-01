@@ -1,0 +1,17 @@
+sub_param, pct_sand:6, cascade_matrix:9, centurybgc_vars:7, n2_n2o_ratio_denit:5, nstvars:1, cn_ratios:3, nreactions:2, nitrogen_limit_flag:8, cp_ratios:4
+sub_out, cascade_matrix, nitrogen_limit_flag
+global_ro| centurybgc_vars%lit2, lit2, NONE| centurybgc_vars%som1_dek_reac, som1_dek_reac, NONE| centurybgc_vars%lid_ar_paere, lid_ar_paere, NONE| centurybgc_vars%lid_n2o_aere_reac, lid_n2o_aere_reac, NONE| centurybgc_vars%lid_ar_aere_reac, lid_ar_aere_reac, NONE| centurybgc_vars%som2, som2, NONE| centurybgc_vars%som2_dek_reac, som2_dek_reac, NONE| centurybgc_vars%c_loc, c_loc, NONE| centurybgc_vars%lid_n2o_nit, lid_n2o_nit, NONE| centurybgc_vars%som3, som3, NONE| centurybgc_vars%lid_nh4_nit_reac, lid_nh4_nit_reac, NONE| centurybgc_vars%lit2_dek_reac, lit2_dek_reac, NONE| centurybgc_vars%lid_n2_aere_reac, lid_n2_aere_reac, NONE| centurybgc_vars%lid_co2_hr, lid_co2_hr, NONE| centurybgc_vars%lid_co2_paere, lid_co2_paere, NONE| centurybgc_vars%som1, som1, NONE| centurybgc_vars%lit3, lit3, NONE| centurybgc_vars%nelms, nelms, NONE| centurybgc_vars%lid_ch4_aere_reac, lid_ch4_aere_reac, NONE| centurybgc_vars%lid_at_rt_reac, lid_at_rt_reac, NONE| centurybgc_vars%lid_plant_minn_up_reac, lid_plant_minn_up_reac, NONE| centurybgc_vars%cwd_dek_reac, cwd_dek_reac, NONE| centurybgc_vars%lid_nh4, lid_nh4, NONE| centurybgc_vars%lid_co2_aere_reac, lid_co2_aere_reac, NONE| centurybgc_vars%lid_no3_den_reac, lid_no3_den_reac, NONE| centurybgc_vars%lid_n2_paere, lid_n2_paere, NONE| centurybgc_vars%cwd, cwd, NONE| centurybgc_vars%lid_o2_aere_reac, lid_o2_aere_reac, NONE| centurybgc_vars%lid_o2_paere, lid_o2_paere, NONE| centurybgc_vars%lid_ch4_paere, lid_ch4_paere, NONE| centurybgc_vars%lit1_dek_reac, lit1_dek_reac, NONE| centurybgc_vars%som3_dek_reac, som3_dek_reac, NONE| centurybgc_vars%lit3_dek_reac, lit3_dek_reac, NONE| centurybgc_vars%lid_n2o_paere, lid_n2o_paere, NONE| centurybgc_vars%lid_no3, lid_no3, NONE| centurybgc_vars%lit1, lit1, NONE
+global_wo
+global_mod| centurybgc_vars%primvarid, primvarid, NONE| centurybgc_vars%is_aerobic_reac, is_aerobic_reac, NONE
+global_non| centurybgc_vars%lid_ch4, lid_ch4, NONE| centurybgc_vars%lid_minn_no3_plant, lid_minn_no3_plant, NONE| centurybgc_vars%lid_o2, lid_o2, NONE| centurybgc_vars%lid_plant_minn, lid_plant_minn, NONE| centurybgc_vars%lid_nh4_nit, lid_nh4_nit, NONE| centurybgc_vars%lid_co2, lid_co2, NONE| centurybgc_vars%lid_n2o, lid_n2o, NONE| centurybgc_vars%n_loc, n_loc, NONE| centurybgc_vars%lid_minn_nh4_plant, lid_minn_nh4_plant, NONE| centurybgc_vars%lid_ar, lid_ar, NONE| centurybgc_vars%lid_minn_nh4_immob, lid_minn_nh4_immob, NONE| centurybgc_vars%lid_at_rt, lid_at_rt, NONE| centurybgc_vars%lid_minn_no3_immob, lid_minn_no3_immob, NONE| centurybgc_vars%lid_no3_den, lid_no3_den, NONE| centurybgc_vars%lid_n2, lid_n2, NONE
+calls
+readParams,
+integer                       , intent(in)  :: nstvars
+integer                       , intent(in)  :: nreactions
+type(centurybgc_type)         , intent(inout):: centurybgc_vars
+real(r8)                      , intent(in)  :: cn_ratios(centurybgc_vars%nom_pools)
+real(r8)                      , intent(in)  :: cp_ratios(centurybgc_vars%nom_pools)
+real(r8)                      , intent(in)  :: n2_n2o_ratio_denit                             !ratio of n2 to n2o during denitrification
+real(r8)                      , intent(in)  :: pct_sand
+real(r8)                      , intent(out) :: cascade_matrix(nstvars, nreactions)
+logical                       , intent(out) :: nitrogen_limit_flag(centurybgc_vars%nom_pools) !

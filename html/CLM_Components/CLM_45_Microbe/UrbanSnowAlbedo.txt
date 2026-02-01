@@ -1,0 +1,7 @@
+sub_in, ubl, ind, lbl, albsn_perroad, coszen, num_urbanl, albsn_roof, albsn_improad, filter_urbanl
+sub_out, albsn_roof, albsn_improad, albsn_perroad
+global_ro, coli, itype, h2osno, colf
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, bounds, ed_phenology_inst, waterstate_inst, canopystate_inst, ed_allsites_inst, this
+sub_out, ed_allsites_inst
+global_ro, br, currentPatch, bdead, area, tallest, bsw, begc, endc, bstore, begg, pft, hite, balive, endg
+global_wo, hbot, esai, livecrootn, patchno, lai, livestemn, elai, tlai, b, tsai
+global_mod, treelai, currentCohort, total_tree_area, clm_pno, bare_frac_area, total_canopy_area, htop, c_area
+global_non, bounds%endp, bounds%begp
+calls, this%ed_update_history_variables, currentPatch%set_root_fraction, this%ed_clm_leaf_area_profile

@@ -1,0 +1,7 @@
+sub_in, mode_idx, spec_idx, idx
+sub_out, idx
+global_ro
+global_wo
+global_mod, idx
+global_non, ma_list
+calls, endrun

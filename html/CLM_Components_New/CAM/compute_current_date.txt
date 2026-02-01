@@ -1,0 +1,7 @@
+sub_in, seconds_since_current_date, current_month, current_day, previous_year, previous_day, current_year, previous_month, seconds_since_previous_date
+sub_out, seconds_since_current_date
+global_ro
+global_wo
+global_mod
+global_non
+calls, julian2gregorian_date

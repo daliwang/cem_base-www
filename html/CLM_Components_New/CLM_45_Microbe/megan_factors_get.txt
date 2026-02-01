@@ -1,0 +1,10 @@
+sub_in, comp_name
+sub_out, molecwght, class_n, factors
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+
+Tree height: 2
+1+, endrun, 

@@ -1,0 +1,7 @@
+sub_in, dgvs_vars, bounds
+sub_out
+global_ro, pft%wtcol
+global_wo, dgvs_vars%fpcgridold_patch, dgvs_vars%fpcgrid_patch
+global_mod
+global_non
+calls

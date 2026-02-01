@@ -1,0 +1,7 @@
+sub_in, xm_tndcy, perp_wind_g, fcor, solve_type, l_implemented, perp_wind_m, xm_forcing
+sub_out, xm_tndcy
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var

@@ -1,0 +1,8 @@
+sub_in, x2i_i, r2x_i, a2x_i, flux_epbalfact, o2x_i, g2x_i
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, seq_comm_getdata, mct_aVect_setSharedIndices, mct_aVect_copy
+calls_ln, mct_aVect_setSharedIndices@281, mct_aVect_setSharedIndices@282, seq_comm_getdata@258, mct_aVect_copy@318, mct_aVect_copy@319, mct_aVect_setSharedIndices@280, mct_aVect_copy@317

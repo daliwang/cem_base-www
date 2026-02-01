@@ -1,0 +1,7 @@
+sub_in, iue, jl3, jan, jh7, jl7, jl11, jh11, p, ja, jh2, jl2, c, jlow, jh5, jl5, iord, fx, jhigh, iuw, jh3, im, isave, dm, ffsl, mfx
+sub_out, isave, fx
+global_ro
+global_wo
+global_mod
+global_non
+calls, steepxv, lmppmv, huynhv

@@ -1,0 +1,7 @@
+sub_in, isotopeflux_vars, num_soilp, filter_soilc, carbonflux_vars, cnstate_vars, isotopestate_vars, carbonstate_vars, filter_soilp, num_soilc, isotope
+sub_out
+global_ro, decomp_cascade_con%cascade_donor_pool, carbonstate_vars%decomp_cpools_vr_col, isotopestate_vars%decomp_cpools_vr_col
+global_wo
+global_mod, carbonflux_vars%decomp_cascade_ctransfer_vr_col, isotopeflux_vars%decomp_cascade_ctransfer_vr_col, isotopeflux_vars%decomp_cascade_hr_vr_col, carbonflux_vars%decomp_cascade_hr_vr_col
+global_non
+calls, CNCIsoLitterToColumn, CIsoFluxCalc

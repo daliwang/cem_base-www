@@ -1,0 +1,17 @@
+sub_param, filter_nolakep, atm2lnd_vars, frictionvel_vars, canopystate_vars, num_nolakep, bounds, dust_vars, soilstate_vars, waterstate_vars
+sub_out
+global_ro, waterstate_vars%h2osoi_ice_col, dust_vars%mbl_bsn_fct_col, waterstate_vars%h2osoi_vol_col, waterstate_vars%frac_sno_col, pft%landunit, canopystate_vars%tlai_patch, pft%column, pft%gridcell, pft%wtlunit, frictionvel_vars%fv_patch, frictionvel_vars%u10_patch, soilstate_vars%mss_frc_cly_vld_col, soilstate_vars%gwc_thr_col, canopystate_vars%tsai_patch, waterstate_vars%h2osoi_liq_col, soilstate_vars%watsat_col, atm2lnd_vars%forc_rho_downscaled_col
+global_wo
+global_mod, dust_vars%flx_mss_vrt_dst_tot_patch, dust_vars%flx_mss_vrt_dst_patch
+global_non
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakep                 ! number of column non-lake points in pft filter
+integer                , intent(in)    :: filter_nolakep(num_nolakep) ! patch filter for non-lake points
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(frictionvel_type) , intent(in)    :: frictionvel_vars
+type(dust_type)        , intent(inout) :: dust_vars

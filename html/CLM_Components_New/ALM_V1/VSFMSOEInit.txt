@@ -1,0 +1,8 @@
+sub_param, this
+sub_out
+global_ro
+global_wo, this%num_auxvars_in, this%num_auxvars_ss, this%num_auxvars_bc
+global_mod
+global_non
+calls, SOEBaseInit
+readParams,

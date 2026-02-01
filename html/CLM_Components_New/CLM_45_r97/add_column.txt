@@ -1,0 +1,7 @@
+sub_in, ci, li, ctype, wtlunit
+sub_out, ci
+global_ro
+global_wo
+global_mod
+global_non
+calls

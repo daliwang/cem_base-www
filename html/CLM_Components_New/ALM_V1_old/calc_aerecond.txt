@@ -1,0 +1,19 @@
+sub_param, temperature_vars:6, canopystate_vars:8, betrtracer_vars:7, jwt:4, rootfr:5, filter_soilp:3, carbonstate_vars:9, tracercoeff_vars:11, carbonflux_vars:10, bounds:1, num_soilp:2
+sub_out
+global_ro| tracercoeff_vars%tracer_diffusivity_air_col, tracer_diffusivity_air_col, NONE| carbonflux_vars%annavg_bgnpp_patch, annavg_bgnpp, NONE| temperature_vars%t_veg_patch, t_veg_patch, NONE| temperature_vars%t_soisno_col, t_soisno_col, NONE| betrtracer_vars%ngwmobile_tracer_groups, ngwmobile_tracer_groups, NONE| betrtracer_vars%volatilegroupid, volatilegroupid, NONE| col%gridcell, gridcell, NONE| pft%column, column, NONE| betrtracer_vars%is_volatile, is_volatile, NONE| betrtracer_vars%tracer_group_memid, tracer_group_memid, NONE| col%z, z, NONE| carbonstate_vars%frootc_patch, frootc, NONE| carbonflux_vars%annsum_npp_patch, annsum_npp, NONE| tracercoeff_vars%scal_aere_cond_col, scal_aere_cond_col, NONE| carbonflux_vars%annavg_agnpp_patch, annavg_agnpp, NONE| canopystate_vars%lbl_rsc_h2o_patch, lbl_rsc_h2o, NONE| canopystate_vars%elai_patch, elai, NONE| pft%wtcol, wtcol, NONE| tracercoeff_vars%aere_cond_col, aere_cond_col, NONE
+global_wo
+global_mod
+global_non| col%dz, dz, NONE
+calls
+readParams,
+type(bounds_type)            , intent(in)   :: bounds
+integer                      , intent(in)   :: num_soilp                 ! number of column soil points in column filter
+integer                      , intent(in)   :: filter_soilp(:)           ! column filter for soil points
+integer                      , intent(in)   :: jwt(bounds%begc: )
+real(r8)                     , intent(in)   :: rootfr(bounds%begp: ,1: ) ! fraction of roots in each soil layer
+type(temperature_type)       , intent(in)   :: temperature_vars          ! energy state variable
+type(canopystate_type)       , intent(in)   :: canopystate_vars
+type(carbonstate_type)       , intent(in)   :: carbonstate_vars
+type(carbonflux_type)        , intent(in)   :: carbonflux_vars
+type(betrtracer_type)        , intent(in)   :: betrtracer_vars            ! betr configuration information
+type(tracercoeff_type)       , intent(inout) :: tracercoeff_vars

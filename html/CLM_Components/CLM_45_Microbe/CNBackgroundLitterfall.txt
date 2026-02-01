@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, leafcn, bglfr, itype, lflitcn, frootc, frootcn, leafc
+global_wo, leafn_to_retransn, frootn_to_litter
+global_mod, frootc_to_litter, leafc_to_litter, leafn_to_litter
+global_non
+calls

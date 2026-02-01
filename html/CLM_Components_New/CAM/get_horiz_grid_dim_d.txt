@@ -1,0 +1,7 @@
+sub_in, hdim1_d, hdim2_d
+sub_out, hdim2_d, hdim1_d
+global_ro
+global_wo
+global_mod
+global_non
+calls

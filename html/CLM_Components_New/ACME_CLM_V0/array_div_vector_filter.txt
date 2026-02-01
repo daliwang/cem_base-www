@@ -1,0 +1,7 @@
+sub_in, ubj2, arr1d_in, fn, arr2d_inout, lbj1, lbj2, filter, ubj1
+sub_out, arr2d_inout
+global_ro
+global_wo
+global_mod
+global_non
+calls

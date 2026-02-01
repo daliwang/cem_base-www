@@ -1,0 +1,16 @@
+sub_param, tracerboundarycond_vars:8, this:1, bounds:2, num_soilc:3, filter_soilc:4, waterflux_vars:7, betrtracer_vars:6, dz_top:5
+sub_out
+global_ro
+global_wo| tracerboundarycond_vars%condc_toplay_col, condc_toplay_col, NONE| tracerboundarycond_vars%tracer_gwdif_concflux_top_col, tracer_gwdif_concflux_top_col, NONE| tracerboundarycond_vars%bot_concflux_col, bot_concflux_col, NONE
+global_mod
+global_non| betrtracer_vars%groupid, groupid, NONE
+calls
+readParams,
+class(bgc_reaction_mock_run_type) , intent(in) :: this                       !
+type(bounds_type)                 , intent(in) :: bounds                     !
+integer                           , intent(in) :: num_soilc                  ! number of columns in column filter_soilc
+integer                           , intent(in) :: filter_soilc(:)            ! column filter_soilc
+type(betrtracer_type)             , intent(in) :: betrtracer_vars            !
+real(r8)                          , intent(in) :: dz_top(bounds%begc: )      !
+type(waterflux_type)              , intent(in) :: waterflux_vars             !
+type(tracerboundarycond_type)     , intent(inout) :: tracerboundarycond_vars !

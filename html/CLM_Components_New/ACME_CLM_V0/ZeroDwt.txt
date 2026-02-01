@@ -1,0 +1,7 @@
+sub_in, this, bounds
+sub_out
+global_ro
+global_wo, this%dispvegn_patch, this%storvegn_patch, this%totvegn_patch, this%totpftn_patch
+global_mod
+global_non
+calls

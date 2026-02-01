@@ -1,0 +1,7 @@
+sub_in, t
+sub_out
+global_ro, nacs
+global_wo
+global_mod, hbuf
+global_non
+calls

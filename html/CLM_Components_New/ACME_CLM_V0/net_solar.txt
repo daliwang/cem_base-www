@@ -1,0 +1,7 @@
+sub_in, filter_urbanl, sdir_road, alb_perroad_dir, sref_shadewall_dif, alb_roof_dif, alb_wall_dif, sdir_sunwall, sdif, sref_perroad_dif, urbanparams_vars, sref_roof_dir, alb_wall_dir, coszen, alb_perroad_dif, sref_sunwall_dir, solarabs_vars, wtroad_perv, sdif_shadewall, sref_shadewall_dir, sref_roof_dif, sdif_sunwall, sdir, alb_improad_dif, canyon_hwr, sref_improad_dif, alb_roof_dir, alb_improad_dir, sref_sunwall_dif, bounds, num_urbanl, sref_perroad_dir, sref_improad_dir, sdir_shadewall, sdif_road
+sub_out, sref_perroad_dir, sref_improad_dir, sref_shadewall_dif, sref_improad_dif, sref_sunwall_dir, sref_sunwall_dif, sref_perroad_dif, sref_roof_dir, sref_shadewall_dir, sref_roof_dif
+global_ro, urbanparams_vars%vf_sw, urbanparams_vars%vf_sr, urbanparams_vars%vf_ww, urbanparams_vars%vf_wr, urbanparams_vars%vf_rw
+global_wo, solarabs_vars%sabs_roof_dif_lun, solarabs_vars%sabs_roof_dir_lun
+global_mod, solarabs_vars%sabs_shadewall_dir_lun, solarabs_vars%sabs_sunwall_dif_lun, solarabs_vars%sabs_shadewall_dif_lun, solarabs_vars%sabs_improad_dir_lun, solarabs_vars%sabs_sunwall_dir_lun, solarabs_vars%sabs_perroad_dir_lun, solarabs_vars%sabs_perroad_dif_lun, solarabs_vars%sabs_improad_dif_lun
+global_non
+calls, endrun

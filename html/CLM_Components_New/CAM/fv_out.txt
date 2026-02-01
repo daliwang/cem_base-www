@@ -1,0 +1,7 @@
+sub_in, pt, delp, ncdate, pe, ps, surf_state, phys_state, ptop, full_phys, tracer, ncsec, pk, grid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, tracer
+calls, gmean, shr_reprosum_calc, pmaxmin, t_startf, t_stopf, pmaxmin2, dryairm

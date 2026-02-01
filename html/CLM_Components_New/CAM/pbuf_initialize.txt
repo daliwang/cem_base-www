@@ -1,0 +1,7 @@
+sub_in, pbuf2d
+sub_out, pbuf2d
+global_ro, hdrbuffer
+global_wo
+global_mod
+global_non
+calls, endrun, pbuf2d_print, pbuf_allocate

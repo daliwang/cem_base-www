@@ -1,0 +1,16 @@
+sub_param, filter_soilp:2, carbonstate_vars:3, nitrogenflux_vars:6, nitrogenstate_vars:4, phosphorusflux_vars:8, carbonflux_vars:5, num_soilp:1, phosphorusstate_vars:7
+sub_out
+global_ro| ecophyscon%livewdcp, livewdcp, NONE| ecophyscon%deadwdcn, deadwdcn, NONE| nitrogenstate_vars%livecrootn_patch, livecrootn, NONE| ecophyscon%deadwdcp, deadwdcp, NONE| carbonstate_vars%livecrootc_patch, livecrootc, NONE| carbonstate_vars%livestemc_patch, livestemc, NONE| phosphorusstate_vars%livecrootp_patch, livecrootp, NONE| phosphorusstate_vars%livestemp_patch, livestemp, NONE| pft%itype, ivt, NONE| nitrogenstate_vars%livestemn_patch, livestemn, NONE| ecophyscon%livewdcn, livewdcn, NONE| ecophyscon%woody, woody, NONE
+global_wo| nitrogenflux_vars%livestemn_to_retransn_patch, livestemn_to_retransn, NONE| phosphorusflux_vars%livestemp_to_retransp_patch, livestemp_to_retransp, NONE| nitrogenflux_vars%livecrootn_to_retransn_patch, livecrootn_to_retransn, NONE| carbonflux_vars%livestemc_to_deadstemc_patch, livestemc_to_deadstemc, NONE| carbonflux_vars%livecrootc_to_deadcrootc_patch, livecrootc_to_deadcrootc, NONE| phosphorusflux_vars%livecrootp_to_retransp_patch, livecrootp_to_retransp, NONE
+global_mod| nitrogenflux_vars%livecrootn_to_deadcrootn_patch, livecrootn_to_deadcrootn, NONE| phosphorusflux_vars%livecrootp_to_deadcrootp_patch, livecrootp_to_deadcrootp, NONE| phosphorusflux_vars%livestemp_to_deadstemp_patch, livestemp_to_deadstemp, NONE| nitrogenflux_vars%livestemn_to_deadstemn_patch, livestemn_to_deadstemn, NONE
+global_non
+calls
+readParams,readCNPhenolParams
+integer                  , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(in)    :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

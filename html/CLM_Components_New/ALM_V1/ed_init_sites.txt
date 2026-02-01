@@ -1,0 +1,10 @@
+sub_param, bounds, geds_local
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_site_properties_bg, clm_indices, allocate_ed_datastructure, init_patches
+readParams,
+type(bounds_type),                      intent(in) :: bounds
+type(gridcell_edstate_type), target, intent(inout) :: geds_local( bounds%begg: )

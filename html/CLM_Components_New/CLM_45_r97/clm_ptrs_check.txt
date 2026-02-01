@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro, begg, begl, endp, endg, endl, begp, endc, begc
+global_wo
+global_mod
+global_non
+calls, endrun

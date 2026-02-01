@@ -1,0 +1,7 @@
+sub_in, dimid, ncid, dimexist, name
+sub_out, dimexist
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling

@@ -1,0 +1,7 @@
+sub_in, lchnk, naer2, ncol, maerosol
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

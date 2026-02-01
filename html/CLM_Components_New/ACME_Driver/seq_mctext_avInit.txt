@@ -1,0 +1,8 @@
+sub_in, comp, flow
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_c2x_cx, component_get_x2c_cx, component_get_x2c_cc, component_get_c2x_cc, component_get_gsmap_cx
+calls, seq_mctext_avCreate, seq_mctext_avExtend, seq_comm_getinfo
+calls_ln, seq_comm_getinfo@367, seq_mctext_avExtend@392, seq_mctext_avCreate@393

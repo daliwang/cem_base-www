@@ -1,0 +1,7 @@
+sub_in, klaunch, msg, pl, tpert, tp, t, qstp, ncol, tl, q, tpv, p, lcl, lchnk
+sub_out, tpv, pl, qstp, tp, lcl
+global_ro
+global_wo
+global_mod
+global_non
+calls, ientropy

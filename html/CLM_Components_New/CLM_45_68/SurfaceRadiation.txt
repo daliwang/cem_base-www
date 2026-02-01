@@ -1,0 +1,11 @@
+sub_in, filter_nourbanp, num_nourbanp, bounds
+sub_out
+global_ro, pps%albd, pps%nrad, cps%coszen, cps%frac_sno, cps%flx_absin, cps%albgri_bc, cps%albgrd, cps%albgri_pur, cps%snl, pps%albi, cps%albsod, pps%fsun_z, pps%fabi, pps%fabi_sha_z, pps%elai, cps%snow_depth, pps%ftdd, cps%albgri_oc, pps%fabd_sha_z, cps%albsnd_hst, cps%flx_absdv, cps%albgri_dst, pps%ftid, cps%albgri, cps%albgrd_oc, cps%albgrd_bc, clm_a2l%forc_solad, cps%albgrd_pur, cps%albgrd_dst, clm_a2l%forc_solai, cps%flx_absiv, pps%tlai_z, pps%fabi_sun_z, pps%fabd, cps%albsni_hst, cps%flx_absdn, pps%fabd_sun_z, pps%ftii, cps%albsoi
+global_wo, pef%fsds_nir_d_ln, pef%sfc_frc_oc_sno, pef%sfc_frc_bc_sno, pef%fsds_vis_i_ln, pef%fsr_vis_d_ln, pef%fsr_sno_ni, pef%fsr_sno_nd, pef%fsds_sno_nd, pef%parsha_z, pef%fsds_sno_ni, pef%fsds_sno_vi, pef%sfc_frc_dst_sno, pef%fsds_sno_vd, pef%fsr_nir_d, pef%fsr_vis_d, pef%fsr, pef%fsr_sno_vd, pef%fsr_sno_vi, pps%fsun, pef%parveg_ln, pef%fsr_nir_i, pef%fsr_vis_i, pef%sabg_pen, pef%parsun_z, pef%fsr_nir_d_ln, pef%fsds_vis_d_ln, pef%sfc_frc_aer_sno
+global_mod, pps%laisha, pef%sfc_frc_dst, pps%laisha_z, pef%fsa, pef%sabg_soil, pef%sabg_lyr, pef%fsds_vis_i, pef%sfc_frc_oc, pef%fsa_r, pef%sabg, pef%sabg_snow, pef%fsds_nir_i, pef%fsds_nir_d, pef%fsds_vis_d, pps%laisun_z, pef%sfc_frc_aer, pef%sfc_frc_bc, cps%sub_surf_abs_SW, pps%laisun, pef%sabv
+global_non, pps%tsai_z, pps%fabd_sun, pps%fabi_sun, pps%fabd_sha, pps%esai, pps%fabi_sha
+calls, get_curr_date, endrun
+
+Tree height: 5
+0 , get_curr_date, 
+1+, endrun, 

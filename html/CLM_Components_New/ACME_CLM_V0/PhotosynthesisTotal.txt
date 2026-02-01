@@ -1,0 +1,7 @@
+sub_in, photosyns_vars, filterp, cnstate_vars, atm2lnd_vars, fn, canopystate_vars
+sub_out
+global_ro, canopystate_vars%laisha_patch, photosyns_vars%alphapsnsha_patch, photosyns_vars%psnsun_wc_patch, photosyns_vars%psnsun_patch, atm2lnd_vars%forc_pco2_grc, cnstate_vars%rc14_atm_patch, photosyns_vars%psnsha_wp_patch, atm2lnd_vars%forc_pc13o2_grc, photosyns_vars%psnsha_patch, photosyns_vars%psnsun_wp_patch, canopystate_vars%laisun_patch, photosyns_vars%psnsha_wc_patch, photosyns_vars%alphapsnsun_patch, pft%gridcell, photosyns_vars%psnsha_wj_patch, photosyns_vars%psnsun_wj_patch
+global_wo, photosyns_vars%c13_psnsha_patch, photosyns_vars%c14_psnsun_patch, photosyns_vars%fpsn_wp_patch, photosyns_vars%fpsn_wj_patch, photosyns_vars%c14_psnsha_patch, photosyns_vars%c13_psnsun_patch, photosyns_vars%fpsn_wc_patch, photosyns_vars%fpsn_patch
+global_mod, photosyns_vars%rc13_psnsun_patch, photosyns_vars%rc13_psnsha_patch, photosyns_vars%rc13_canair_patch
+global_non, atm2lnd_vars%forc_po2_grc
+calls

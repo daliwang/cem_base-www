@@ -1,0 +1,7 @@
+sub_in, aerosol_mass, pint, n, c, Match_ps, ncol
+sub_out, aerosol_mass
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, endrun, t_startf

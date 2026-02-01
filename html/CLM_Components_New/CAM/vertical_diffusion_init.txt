@@ -1,0 +1,7 @@
+sub_in, pbuf2d
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_default, endrun, rad_cnst_get_info, pbuf_set_field, init_hb_diff, rad_cnst_get_mam_mmr_idx, addfld, init_eddy_diff, phys_getopts, rad_cnst_get_mode_num_idx, handle_errmsg, cnst_get_ind, init_tms, init_vdiff, init_molec_diff

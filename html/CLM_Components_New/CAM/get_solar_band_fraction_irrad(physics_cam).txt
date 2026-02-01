@@ -1,0 +1,7 @@
+sub_in, fractional_irradiance
+sub_out, fractional_irradiance
+global_ro
+global_wo
+global_mod
+global_non
+calls

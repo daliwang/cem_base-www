@@ -1,0 +1,7 @@
+sub_in, esat_tv, dayl_factor, rb, eair, bounds, cair, phase, fn, filterp, oair
+sub_out
+global_ro, leafcn, thm, column, t_veg, itype, laisha_z, laisun_z, parsha_z, parsun_z, t10, btran, forc_pbot, tlai_z, vcmaxcintsun, vcmaxcintsha, c3psn, fnitr, slatop, flnr, nrad, gs_mol
+global_wo, lmrsun, lmrsha, rssun, rssha, qe, psnsha_wc, psnsun_wc, psnsun_wj, psnsha_wj, ko, kc, tpu_z, rh_leaf, psnsha_wp, psnsun_wp, kp_z, alphapsnsha, alphapsnsun, cp, psnsha, psnsun, theta_cj
+global_mod, vcmax_z, bbb, c3flag, ag, mbb, aj, psnsun_z, psnsha_z, ac, gb_mol, rssun_z, rssha_z, ap, lmrsun_z, lmrsha_z, an, cisha_z, cisun_z
+global_non, gridcell
+calls, quadratic, shr_assert, hybrid, endrun

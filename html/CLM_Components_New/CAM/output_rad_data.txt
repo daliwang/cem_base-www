@@ -1,0 +1,7 @@
+sub_in, pbuf, state, landm, cam_in, coszen
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, cnst_get_ind, rad_cnst_get_aer_mmr, pbuf_get_field, rad_cnst_get_gas, outfld

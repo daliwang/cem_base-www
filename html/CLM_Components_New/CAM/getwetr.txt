@@ -1,0 +1,7 @@
+sub_in, rwet, h2o_mass, rh, igroup, h2o_vp, temp, rhopwet, rc, carma, rdry, rhopdry
+sub_out, rc, rhopwet, rwet
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,18 @@
+sub_param, sdir_shadewall:10, filter_urbanl:3, num_urbanl:2, coszen:5, sdir_road:8, sdir:7, sdir_sunwall:9, zen:6, bounds:1, canyon_hwr:4
+sub_out, sdir_shadewall, sdir_sunwall, sdir_road
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)  :: num_urbanl                          ! number of urban landunits
+integer , intent(in)  :: filter_urbanl(:)                    ! urban landunit filter
+real(r8), intent(in)  :: canyon_hwr( bounds%begl: )          ! ratio of building height to street width [landunit]
+real(r8), intent(in)  :: coszen( bounds%begl: )              ! cosine solar zenith angle [landunit]
+real(r8), intent(in)  :: zen( bounds%begl: )                 ! solar zenith angle (radians) [landunit]
+real(r8), intent(in)  :: sdir( bounds%begl: , 1: )           ! direct beam solar radiation incident on horizontal surface [landunit, numrad]
+real(r8), intent(out) :: sdir_road( bounds%begl: , 1: )      ! direct beam solar radiation incident on road per unit incident flux [landunit, numrad]
+real(r8), intent(out) :: sdir_sunwall( bounds%begl: , 1: )   ! direct beam solar radiation (per unit wall area) incident on sunlit wall per unit incident flux [landunit, numrad]
+real(r8), intent(out) :: sdir_shadewall( bounds%begl: , 1: ) ! direct beam solar radiation (per unit wall area) incident on shaded wall per unit incident flux [landunit, numrad]

@@ -1,0 +1,7 @@
+sub_in, lcid, lth, cols, gcols
+sub_out, gcols
+global_ro
+global_wo
+global_mod
+global_non
+calls

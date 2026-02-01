@@ -1,0 +1,10 @@
+sub_param, column:2, dtime:3, this:1
+sub_out
+global_ro
+global_wo| this%tracer_flx_totleached_col, tracer_flx_totleached_col, NONE
+global_mod| this%tracer_flx_ebu_col, tracer_flx_ebu_col, NONE| this%tracer_flx_can_loss_col, tracer_flx_can_loss_col, NONE| this%tracer_flx_vtrans_col, tracer_flx_vtrans_col, NONE| this%tracer_flx_dew_grnd_col, tracer_flx_dew_grnd_col, NONE| this%tracer_flx_dew_snow_col, tracer_flx_dew_snow_col, NONE| this%tracer_flx_netphyloss_col, tracer_flx_netphyloss_col, NONE| this%tracer_flx_surfrun_col, tracer_flx_surfrun_col, NONE| this%tracer_flx_netpro_col, tracer_flx_netpro_col, NONE| this%tracer_flx_snowmelt_col, tracer_flx_snowmelt_col, NONE| this%tracer_flx_top_soil_col, tracer_flx_top_soil_col, NONE| this%tracer_flx_prec_col, tracer_flx_prec_col, NONE| this%tracer_flx_h2osfc_snow_residual_col, tracer_flx_h2osfc_snow_residual_col, NONE| this%tracer_flx_tparchm_col, tracer_flx_tparchm_col, NONE| this%tracer_flx_dif_col, tracer_flx_dif_col, NONE| this%tracer_flx_surfemi_col, tracer_flx_surfemi_col, NONE| this%tracer_flx_infl_col, tracer_flx_infl_col, NONE| this%tracer_flx_sub_snow_col, tracer_flx_sub_snow_col, NONE| this%tracer_flx_drain_col, tracer_flx_drain_col, NONE| this%tracer_flx_leaching_col, tracer_flx_leaching_col, NONE
+global_non
+calls
+readParams,
+integer              , intent(in)  :: column     ! column index
+real(r8)             , intent(in)  :: dtime

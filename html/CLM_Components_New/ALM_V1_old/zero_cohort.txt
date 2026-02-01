@@ -1,0 +1,9 @@
+sub_param, cc_p:1
+sub_out
+global_ro
+global_wo| currentcohort%storage_flux, storage_flux, NONE| cc_p%resp_m, resp_m, NONE| currentcohort%gscan, gscan, NONE| currentcohort%leaf_md, leaf_md, NONE| currentcohort%md, md, NONE| currentcohort%carbon_balance, carbon_balance, NONE| currentcohort%npp_acc, npp_acc, NONE| currentcohort%ts_net_uptake, ts_net_uptake, NONE| cc_p%rd, rd, NONE| currentcohort%gpp_clm, gpp_clm, NONE| currentcohort%root_md, root_md, NONE| currentcohort%gpp, gpp, NONE| currentcohort%npp, npp, NONE| currentcohort%resp_clm, resp_clm, NONE| currentcohort%year_net_uptake, year_net_uptake, NONE| cc_p%resp_g, resp_g, NONE| cc_p%status_coh, status_coh, NONE| currentcohort%resp_acc, resp_acc, NONE| currentcohort%leaf_litter, leaf_litter, NONE| cc_p%livecroot_mr, livecroot_mr, NONE| currentcohort%cfa, cfa, NONE| cc_p%NV, NV, NONE| cc_p%froot_mr, froot_mr, NONE| currentcohort%dmort, dmort, NONE| currentcohort%seed_prod, seed_prod, NONE| cc_p%livestem_mr, livestem_mr, NONE| currentcohort%resp, resp, NONE| currentcohort%npp_clm, npp_clm, NONE| currentcohort%gpp_acc, gpp_acc, NONE| cc_p%fire_mort, fire_mort, NONE| currentcohort%treesai, treesai, NONE
+global_mod
+global_non| cc_p, currentCohort, NONE
+calls
+readParams,
+type (cohort), intent(inout), target  :: cc_p

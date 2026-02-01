@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, p, bounds, energyflux_inst, ed_allsites_inst, soilstate_inst, temperature_inst
+sub_out
+global_ro, h2osoi_liq, t_soisno, n, sucsat, bsw, h2osoi_vol, h2osoi_ice, smpso, dz, sand, rootfr_ft, gscan, pft, watsat, smpsc, currentCohort
+global_wo
+global_mod, rootr, rootr_ft, btran, btran_ft
+global_non, soilstate_inst%soilbeta_col, map_clmpatch_to_edpatch, soilstate_inst%watdry_col, soilstate_inst%watopt_col, energyflux_inst%btran2_patch, energyflux_inst%rresis_patch
+calls

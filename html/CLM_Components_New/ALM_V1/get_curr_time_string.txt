@@ -1,0 +1,9 @@
+sub_param, dateTimeString
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, chkrc, ESMF_TimeGet, ESMF_ClockGet
+readParams,
+character(len=*), intent(out) :: dateTimeString

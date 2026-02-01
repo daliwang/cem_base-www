@@ -1,0 +1,7 @@
+sub_in, a2x_a, yr_spec, x2a_a, mon_spec, sec_spec, day_spec
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_write_darray, pio_initdecomp, mct_string_clean, cam_pio_createfile, pio_closefile, mct_aVect_getRList, pio_freedecomp

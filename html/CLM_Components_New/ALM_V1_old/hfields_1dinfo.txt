@@ -1,0 +1,10 @@
+sub_param, mode:2, t:1
+sub_out
+global_ro| ldomain%ni, ni, NONE| grc%latdeg, latdeg, NONE| grc%londeg, londeg, NONE| col%landunit, landunit, NONE| pft%landunit, landunit, NONE| col%gridcell, gridcell, NONE| lun%gridcell, gridcell, NONE| pft%gridcell, gridcell, NONE| ldecomp%gdc2glo, gdc2glo, NONE| lun%itype, itype, NONE
+global_wo
+global_mod
+global_non| do, long_name='true, NONE
+calls, ncd_defvar, endrun, get_proc_bounds, ncd_io
+readParams,
+integer, intent(in) :: t                ! tape index
+character(len=*), intent(in) :: mode    ! 'define' or 'write'

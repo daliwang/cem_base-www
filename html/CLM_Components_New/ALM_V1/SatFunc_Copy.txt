@@ -1,0 +1,9 @@
+sub_param, satParams, this
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, SatFunc_Set_BC, SatFunc_Set_SBC, endrun, SatFunc_Set_VG
+readParams,
+class(saturation_params_type), intent(in) :: satParams

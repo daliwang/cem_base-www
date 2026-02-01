@@ -1,0 +1,7 @@
+sub_in, p3, p1, p0, cx, im, p2
+sub_out, cx
+global_ro
+global_wo
+global_mod
+global_non
+calls

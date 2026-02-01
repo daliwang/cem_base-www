@@ -1,0 +1,7 @@
+sub_in, clmlevel, xtype, ndims, dims, switchdim, ncid, dimids, iodnum
+sub_out, iodnum
+global_ro, %dimids
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort, get_clmlevel_gsmap, mpi_barrier, pio_initdecomp, shr_sys_flush, mct_gsmap_OP

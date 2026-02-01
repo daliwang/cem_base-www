@@ -1,0 +1,7 @@
+sub_in, lhs, nrhs, rhs, solution, ixm_matrix_condt_num, err_code
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, tridag_solve, tridag_solvex, stat_update_var_pt

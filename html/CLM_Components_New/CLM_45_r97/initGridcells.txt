@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_landunit_crop_noncompete, clm_ptrs_compdown, set_landunit_urban, clm_ptrs_check, compute_higher_order_weights, set_landunit_wet_ice_lake, set_cohort_decomp, set_landunit_veg_compete, get_clump_bounds

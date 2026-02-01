@@ -1,0 +1,7 @@
+sub_in, cdata_a, NLFilename, EClock, x2a_a, a2x_a
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, memmon_reset_addr, seq_timemgr_EClockGetData, shr_file_setLogUnit, shr_sys_abort, seq_cdata_setptrs, cam_run1, memmon_dump_fort, cam_init, atm_SetgsMap_mct, shr_file_getLogUnit, shr_sys_flush, timemgr_init, get_horiz_grid_dim_d, read_namelist, shr_file_getLogLevel, atm_import, atm_export, mct_gsmap_orderedpoints, spmdinit, shr_file_setIO, mct_aVect_zero, timemgr_check_restart, cam_instance_init, cam_cpl_indices_set, atm_read_srfrest_mct, seq_infodata_GetData, seq_infodata_PutData, atm_domain_mct, mct_aVect_init, shr_file_setLogLevel

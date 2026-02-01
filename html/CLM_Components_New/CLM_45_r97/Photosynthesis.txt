@@ -1,0 +1,7 @@
+sub_in, rb, solarabs_inst, cair, phase, btran, fn, atm2lnd_inst, photosyns_inst, canopystate_inst, filterp, surfalb_inst, oair, esat_tv, eair, bounds, dayl_factor, temperature_inst
+sub_out
+global_ro, t_veg, vcmaxcint, t10, slatop, forc_pbot, flnr, leafcn, par_z, tlai_z, nrad, tgcm, gs_mol, fnitr, lai_z, c3psn
+global_wo, cp, psn_wp, kc, qe, theta_cj, psn, kp_z, rs, tpu_z, psn_wj, ko, lmr, alphapsn, rh_leaf, psn_wc
+global_mod, ap, mbb, gb_mol, rs_z, psn_z, ac, c3flag, lmr_z, an, aj, bbb, ag, ci_z, vcmax_z
+global_non
+calls, endrun, quadratic, hybrid

@@ -1,0 +1,7 @@
+sub_in, t, fsnow, ncol, fice
+sub_out, fsnow, fice
+global_ro
+global_wo
+global_mod
+global_non
+calls

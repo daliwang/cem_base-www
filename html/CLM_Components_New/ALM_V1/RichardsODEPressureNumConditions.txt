@@ -1,0 +1,9 @@
+sub_param, cond_type, this, num_conds, cond_type_to_exclude
+sub_out, num_conds
+global_ro, this%source_sinks%first, cur_cond%next, this%boundary_conditions%first
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+PetscInt, intent(out)                    :: num_conds

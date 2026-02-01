@@ -1,0 +1,9 @@
+sub_in, declin, declinm1, bounds
+sub_out
+global_ro, grc%lat
+global_wo, gps%dayl, gps%prev_dayl
+global_mod
+global_non, bounds%begg, bounds%endg
+calls
+
+Tree height: 1

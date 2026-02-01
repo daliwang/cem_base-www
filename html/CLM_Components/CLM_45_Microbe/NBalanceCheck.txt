@@ -1,0 +1,7 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, nfix_to_sminn, begnb, dwt_nloss, smin_no3_leached, col_fire_nloss, product_nloss, som_n_leached, supplement_to_sminn, sminn_leached, ndep_to_sminn, totcoln, f_n2o_nit, smin_no3_runoff, denit
+global_wo
+global_mod, endnb, col_ninputs, errnb, col_noutputs
+global_non, fert_to_sminn, soyfixn_to_sminn
+calls, endrun

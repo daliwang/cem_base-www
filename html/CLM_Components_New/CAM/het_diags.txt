@@ -1,0 +1,7 @@
+sub_in, ncol, pdel, mmr, het_rates, lchnk
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_wght_all_p, outfld

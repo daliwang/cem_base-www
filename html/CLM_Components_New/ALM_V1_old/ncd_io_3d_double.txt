@@ -1,0 +1,14 @@
+sub_param, dim1name:3, nt:6, data:2, varname:1, flag:4, ncid:5, readvar:7
+sub_out
+global_ro
+global_wo
+global_mod
+global_non| iodesc_list, iodesc_plus, NONE
+calls, ncd_getiodesc, scam_field_offsets, pio_write_darray, pio_setframe, pio_read_darray, ncd_inqvid, shr_sys_abort
+readParams,
+class(file_desc_t), intent(inout) :: ncid         ! netcdf file id
+character(len=*) , intent(in)  :: flag            ! 'read' or 'write'
+character(len=*) , intent(in)  :: varname         ! variable name
+character(len=*) , intent(in)  :: dim1name        ! dimension 1 name
+integer, optional, intent(in)  :: nt              ! time sample index
+logical, optional, intent(out) :: readvar         ! true => variable is on initial dataset (read only)

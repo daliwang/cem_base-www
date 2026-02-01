@@ -1,0 +1,10 @@
+sub_param, varname, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncid%vars
+readParams,ncd_reset_read_times
+class(file_desc_t) , intent(inout) :: ncid    ! netcdf 'file' to operate on
+character(len=*)   , intent(in)    :: varname ! variable name

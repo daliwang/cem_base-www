@@ -1,0 +1,10 @@
+sub_in, num_lakec, filter_lakec, filter_nolakec, num_hydrologyc, bounds, filter_hydrologyc, num_nolakec
+sub_out
+global_ro, cws%zwt, cws%h2osno, cws%h2osoi_liq, cws%h2osfc, pws%h2ocan, cws%h2osoi_ice, col%itype, pws_a%h2ocan
+global_wo
+global_mod, cwbal%begwb, cws%wa
+global_non, cps%dz, lun%itype, cps%zi
+calls, p2c
+
+Tree height: 2
+0 , p2c, 

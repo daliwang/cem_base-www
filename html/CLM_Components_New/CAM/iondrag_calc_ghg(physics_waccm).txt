@@ -1,0 +1,7 @@
+sub_in, state, ptend, ncol, lchnk
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, physics_ptend_init, outfld, get_rlat_all_p

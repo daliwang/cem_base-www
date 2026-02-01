@@ -1,0 +1,9 @@
+sub_param, data_1d, soe_auxvar_type, soe_auxvar_id, var_type, this
+sub_out
+global_ro, this%num_auxvars_in, this%soe_auxvars_ss_ncells, this%soe_auxvars_bc_ncells, this%soe_auxvars_ss_offset, this%soe_auxvars_bc_offset
+global_wo
+global_mod
+global_non
+calls, this%aux_vars_in, this%aux_vars_ss, endrun, this%aux_vars_bc
+readParams,
+PetscInt, intent(in)                       :: var_type

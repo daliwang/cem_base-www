@@ -1,0 +1,15 @@
+sub_param, num_soilc, carbonstate_vars, bounds, clm_bgc_data, phosphorusstate_vars, filter_soilc, nitrogenstate_vars
+sub_out
+global_ro, clm_bgc_data%decomp_npools_vr_col, clm_bgc_data%decomp_cpools_vr_col, clm_bgc_data%decomp_ppools_vr_col
+global_wo, nitrogenstate_vars%decomp_npools_vr_col, phosphorusstate_vars%decomp_ppools_vr_col, carbonstate_vars%decomp_cpools_vr_col
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type)                   , intent(in)    :: bounds
+integer                             , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                             , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+type(carbonstate_type)              , intent(inout) :: carbonstate_vars
+type(nitrogenstate_type)            , intent(inout) :: nitrogenstate_vars
+type(phosphorusstate_type)          , intent(inout) :: phosphorusstate_vars
+type(clm_bgc_interface_data_type)   , intent(in)    :: clm_bgc_data

@@ -1,0 +1,7 @@
+sub_in, num_snowc, filter_snowc, bounds
+sub_out
+global_ro
+global_wo, z
+global_mod, zi, mss_ocpho, mss_ocphi, mss_dst1, snw_rds, mss_bcphi, h2osoi_ice, dz, t_soisno, mss_bcpho, mss_dst4, mss_dst2, snl, h2osoi_liq, mss_dst3
+global_non
+calls, Combo, endrun

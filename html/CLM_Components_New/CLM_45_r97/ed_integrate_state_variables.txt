@@ -1,0 +1,7 @@
+sub_in, waterstate_inst, temperature_inst, currentSite, soilstate_inst
+sub_out
+global_ro, dbalivedt, dseed_dt, dleaf_litter_dt, dbdeaddt, dcwd_bg_dt, droot_litter_dt, dcwd_ag_dt, ddbhdt, dbstoredt, currentPatch, clm_pno, currentCohort, dndt
+global_wo, gpp_acc, resp_acc, npp_acc
+global_mod, bstore, age, cwd_ag, root_litter, bdead, seed_bank, dbh, n, cwd_bg, balive, leaf_litter
+global_non
+calls, non_canopy_derivs, allocate_live_biomass, canopy_derivs

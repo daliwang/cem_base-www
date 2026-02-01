@@ -1,0 +1,7 @@
+sub_in, rlon, iz, month, day, grads_file, z, iunit, nvar, year, ia, fname, fdir, time, rlat, dtwrite
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_grads

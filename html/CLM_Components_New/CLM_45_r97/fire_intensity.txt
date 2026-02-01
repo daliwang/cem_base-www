@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, TFC_ROS, currentPatch, ROS_front
+global_wo, FD, FI
+global_mod, fire
+global_non
+calls

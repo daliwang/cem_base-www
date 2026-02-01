@@ -1,0 +1,7 @@
+sub_in, ur, thv, um, zldis, z0m, dthv, obu
+sub_out, obu, um
+global_ro
+global_wo
+global_mod
+global_non
+calls

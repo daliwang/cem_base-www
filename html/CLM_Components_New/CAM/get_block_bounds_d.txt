@@ -1,0 +1,7 @@
+sub_in, block_last, block_first
+sub_out, block_last, block_first
+global_ro
+global_wo
+global_mod
+global_non
+calls

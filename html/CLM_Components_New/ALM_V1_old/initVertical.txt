@@ -1,0 +1,12 @@
+sub_param, thick_roof:4, thick_wall:3, bounds:1, snow_depth:2
+sub_out
+global_ro| col%landunit, landunit, NONE| col%gridcell, gridcell, NONE
+global_wo| col%z, z, NONE| col%micro_sigma, micro_sigma, NONE| col%n_melt, n_melt, NONE
+global_mod| col%dz_lake, dz_lake, NONE| col%dz, dz, NONE| col%topo_slope, topo_slope, NONE| col%z_lake, z_lake, NONE| col%zi, zi, NONE| col%lakedepth, lakedepth, NONE| col%snl, snl, NONE| col%topo_std, topo_std, NONE
+global_non
+calls, ncd_pio_openfile, getfil, ncd_inqdlen, ncd_pio_closefile, shr_sys_abort, ncd_io
+readParams,
+type(bounds_type)   , intent(in)    :: bounds
+real(r8)            , intent(in)    :: snow_depth(bounds%begc:)
+real(r8)            , intent(in)    :: thick_wall(bounds%begl:)
+real(r8)            , intent(in)    :: thick_roof(bounds%begl:)

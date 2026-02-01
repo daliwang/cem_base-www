@@ -1,0 +1,7 @@
+sub_in, num_do_smb_c, bounds, atm2lnd_vars, filter_do_smb_c
+sub_out
+global_ro, atm2lnd_vars%forc_t_not_downscaled_grc, bounds%begg:bounds%endg, atm2lnd_vars%forc_lwrad_not_downscaled_grc, col%wtgcell, col%landunit, ldomain%topo, atm2lnd_vars%forc_t_downscaled_col, col%glc_topo, col%gridcell
+global_wo
+global_mod, atm2lnd_vars%forc_lwrad_downscaled_col
+global_non
+calls, build_normalization, endrun

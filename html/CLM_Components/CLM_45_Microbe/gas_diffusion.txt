@@ -1,0 +1,7 @@
+sub_in, filter_micbioc, num_micbioc, ubc, lbc
+sub_out
+global_ro, landunit, dz, itype, z, t_soisno
+global_wo
+global_mod, ccon_o2s_unsat, ccon_o2s_sat, ccon_co2s_unsat, ccon_h2s_sat, ccon_ch4s_unsat, ccon_ch4s_sat, ccon_co2s_sat, ccon_h2s_unsat
+global_non, fsat_pre, finundated
+calls, get_waterhead

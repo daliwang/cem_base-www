@@ -1,0 +1,7 @@
+sub_in, num2d, carr, p2c_scale_type, ubc, lbp, lbc, parr, ubp
+sub_out, carr
+global_ro, column, wtcol, active
+global_wo
+global_mod
+global_non, npfts, pfti
+calls, endrun

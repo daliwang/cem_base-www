@@ -1,0 +1,7 @@
+sub_in, lchnk, fint, t1, ncol, tint, t2, f2, f1
+sub_out, fint
+global_ro
+global_wo
+global_mod
+global_non
+calls

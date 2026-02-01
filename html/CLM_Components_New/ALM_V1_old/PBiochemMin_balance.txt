@@ -1,0 +1,15 @@
+sub_param, phosphorusflux_vars:7, num_soilc:2, phosphorusstate_vars:6, bounds:1, filter_soilc:3, nitrogenstate_vars:5, cnstate_vars:4
+sub_out
+global_ro| nitrogenstate_vars%npimbalance_patch, npimbalance, NONE| pft%wtcol, wtcol, NONE| cnstate_vars%cp_scalar, cp_scalar, NONE| ecophyscon%km_ptase, km_ptase, NONE| ecophyscon%vmax_ptase_vr, vmax_ptase_vr, NONE| cnstate_vars%cn_scalar, cn_scalar, NONE| phosphorusstate_vars%decomp_ppools_vr_col, decomp_ppools_vr_col, NONE| cnstate_vars%froot_prof_patch, froot_prof, NONE
+global_wo
+global_mod| phosphorusflux_vars%biochem_pmin_vr_col, biochem_pmin_vr, NONE| phosphorusflux_vars%biochem_pmin_ppools_vr_col, biochem_pmin_ppools_vr_col, NONE| ecophyscon%lamda_ptase, lamda_ptase, NONE
+global_non
+calls
+readParams,
+type(bounds_type)          , intent(in)    :: bounds
+integer                    , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                    , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)         , intent(in)    :: cnstate_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

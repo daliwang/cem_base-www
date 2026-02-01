@@ -1,0 +1,7 @@
+sub_in, bounds, dgvs_vars
+sub_out
+global_ro, pft%landunit, dgvs_vars%fpcgrid_patch, pft%gridcell, dgvs_vars%nind_patch
+global_wo
+global_mod
+global_non
+calls, ncd_enddef, ncd_defdim, ncd_defvar, ncd_putatt, getdatetime, get_curr_date, ncd_pio_closefile, get_ref_date, ncd_pio_createfile, ncd_io, get_curr_time, shr_sys_getenv, endrun

@@ -1,0 +1,20 @@
+sub_param, betrtracer_vars, tracercoeff_vars, tracerstate_vars, ubj, fracice_top, tracerflux_vars, filter_soilc, waterflux_vars, waterstate_vars, lbj, dz_top2, bounds, num_soilc
+sub_out
+global_ro, betrtracer_vars%is_h2o, betrtracer_vars%groupid, betrtracer_vars%is_advective, tracercoeff_vars%aqu2bulkcef_mobile_col, waterstate_vars%h2osoi_liqvol_col, waterflux_vars%qflx_surf_col, betrtracer_vars%ngwmobile_tracers
+global_wo
+global_mod, tracerstate_vars%tracer_conc_surfwater_col, tracerflux_vars%tracer_flx_surfrun_col, tracerstate_vars%tracer_conc_mobile_col
+global_non
+calls
+readParams,
+type(bounds_type),        intent(in)    :: bounds
+integer,                  intent(in)    :: lbj, ubj
+integer,                  intent(in)    :: num_soilc                               ! number of columns in column filter_soilc
+integer,                  intent(in)    :: filter_soilc(:)                         ! column filter_soilc
+real(r8),                 intent(in)    :: fracice_top(bounds%begc:bounds%endc)    ! ice fraction of topsoil
+real(r8),                 intent(in)    :: dz_top2(bounds%begc:bounds%endc, 1:ubj) ! node depth of the first 2 soil layers
+type(Waterstate_Type),    intent(in)    :: waterstate_vars
+type(waterflux_type),     intent(in)    :: waterflux_vars
+type(betrtracer_type),    intent(in)    :: betrtracer_vars                         ! betr configuration information
+type(tracercoeff_type),   intent(in)    :: tracercoeff_vars                        ! tracer phase conversion coefficients
+type(tracerflux_type),    intent(inout) :: tracerflux_vars                         ! tracer flux
+type(tracerstate_type),   intent(inout) :: tracerstate_vars                        ! tracer state variables data structure

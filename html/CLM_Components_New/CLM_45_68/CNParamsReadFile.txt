@@ -1,0 +1,13 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, readCNDecompCnParams, readCNGapMortParams, ncd_pio_closefile, readCNNitrifDenitrifParams, readCNMRespParams, ncd_pio_openfile, ncd_inqdid, readCNSoilLittVertTranspParams, readCNPhenolParams, readCNDecompParams, ncd_inqdlen, readCNAllocParams, getfil, readCNDecompBgcParams, readCNNDynamicsParams, CNParamsReadShared, readCH4Params
+
+Tree height: 3
+0 , getfil, ncd_pio_openfile, ncd_inqdid, ncd_inqdlen, CNParamsReadShared, 
+1+, readCNAllocParams, readCNDecompParams, readCNPhenolParams, readCNMRespParams, readCNNDynamicsParams, readCNGapMortParams, readCNSoilLittVertTranspParams, ncd_pio_closefile, 
+2-, readCNDecompCnParams, 
+2+, readCNDecompBgcParams, readCNNitrifDenitrifParams, readCH4Params, 

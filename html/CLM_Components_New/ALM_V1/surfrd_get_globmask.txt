@@ -1,0 +1,10 @@
+sub_param, filename, mask, nj, ni
+sub_out, mask
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_inqfdims, getfil, endrun, ncd_io, ncd_pio_openfile, ncd_pio_closefile
+readParams,
+character(len=*), intent(in)    :: filename  ! grid filename
+integer         , intent(out)   :: ni, nj    ! global grid sizes

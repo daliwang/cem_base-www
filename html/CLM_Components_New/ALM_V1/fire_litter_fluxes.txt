@@ -1,0 +1,11 @@
+sub_param, cp_target, patch_site_areadis, new_patch_target
+sub_out, patch_site_areadis
+global_ro, %pft, %bdead, new_patch_target%area, cp_target%area, %br, currentCohort%taller, new_patch%shortest, currentPatch%shortest, cp_target%burnt_frac_litter, %n, %fire_mort, cp_target%disturbance_rate, %bsw, %bstore
+global_wo
+global_mod, %cfa, cp_target%cwd_ag, new_patch_target%cwd_ag, %cwd_ag_burned, %balive, cp_target%cwd_bg, new_patch_target%cwd_bg, %c_area, new_patch_target%root_litter, cp_target%root_litter, new_patch_target%leaf_litter, cp_target%leaf_litter, %bl, %leaf_litter_burned, %flux_out
+global_non, currentPatch%siteptr, cp_target, new_patch_target
+calls
+readParams,
+type(patch), intent(inout), target :: cp_target
+type(patch), intent(inout), target :: new_patch_target
+real(r8),    intent(inout)         :: patch_site_areadis

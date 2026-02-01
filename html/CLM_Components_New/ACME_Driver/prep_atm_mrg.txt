@@ -1,0 +1,8 @@
+sub_in, fractions_ax, timer_mrg, xao_ax, infodata
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, component_get_x2c_cx
+calls, t_drvstartf, t_drvstopf, prep_atm_merge
+calls_ln, t_drvstopf@261, prep_atm_merge@258, t_drvstartf@247

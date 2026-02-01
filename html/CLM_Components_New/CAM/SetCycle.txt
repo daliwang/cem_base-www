@@ -1,0 +1,7 @@
+sub_in, Cycle, schedule, elem, Edge
+sub_out, elem
+global_ro
+global_wo
+global_mod
+global_non, Edge
+calls, abortmp

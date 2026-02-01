@@ -1,0 +1,13 @@
+sub_param, filter_natvegp, num_natvegp, dgvs_vars, bounds, carbonstate_vars
+sub_out
+global_ro, dgv_ecophyscon%crownarea_max, ecophyscon%slatop, dgv_ecophyscon%allom1, dgv_ecophyscon%reinickerp, pft%itype, carbonstate_vars%deadstemc_patch, pft%gridcell, ecophyscon%dwood, ecophyscon%tree, carbonstate_vars%leafcmax_patch, ecophyscon%woody, ecophyscon%dsladlai
+global_wo
+global_mod, dgvs_vars%crownarea_patch, dgvs_vars%nind_patch, dgvs_vars%fpcgrid_patch
+global_non
+calls
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_natvegp             ! number of naturally-vegetated patches in filter
+integer                , intent(in)    :: filter_natvegp(:)       ! patch filter for naturally-vegetated points
+type(carbonstate_type) , intent(in)    :: carbonstate_vars
+type(dgvs_type)        , intent(inout) :: dgvs_vars

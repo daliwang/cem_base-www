@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pftcon%lflitcn, pcf%cpool_to_livestemc, pcs%leafc, pftcon%leafcn, pcs%grainc, pepv%offset_counter, pcf%cpool_to_leafc, pcf%cpool_to_grainc, pcf%cpool_to_frootc, pcs%livestemc, pftcon%livewdcn, pftcon%frootcn, pftcon%graincn, pcs%frootc, pft%itype, pepv%offset_flag
+global_wo, pnf%grainn_to_food, pnf%livestemn_to_litter, pnf%frootn_to_litter, pnf%leafn_to_retransn
+global_mod, pcf%frootc_to_litter, pcf%leafc_to_litter, pnf%leafn_to_litter, pepv%prev_leafc_to_litter, pepv%prev_frootc_to_litter, pcf%grainc_to_food, pcf%livestemc_to_litter
+global_non
+calls
+
+Tree height: 4

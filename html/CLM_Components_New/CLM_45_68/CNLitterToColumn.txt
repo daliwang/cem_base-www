@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc
+sub_out
+global_ro, pcf%frootc_to_litter, col%npfts, pnf%grainn_to_food, pftcon%lf_flig, pftcon%fr_fcel, pftcon%fr_flig, pftcon%lf_flab, pftcon%fr_flab, pps%froot_prof, pftcon%lf_fcel, pnf%livestemn_to_litter, pnf%frootn_to_litter, pnf%leafn_to_litter, pcf%leafc_to_litter, pft%wtcol, pcf%grainc_to_food, pcf%livestemc_to_litter, pps%leaf_prof, col%pfti, pft%itype
+global_wo
+global_mod, cnf%phenology_n_to_litr_met_n, ccf%phenology_c_to_litr_met_c, ccf%phenology_c_to_litr_lig_c, cnf%phenology_n_to_litr_lig_n, ccf%phenology_c_to_litr_cel_c, cnf%phenology_n_to_litr_cel_n
+global_non
+calls
+
+Tree height: 4

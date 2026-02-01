@@ -1,0 +1,7 @@
+sub_in, filter_nolakec, lbc, ubc, num_nolakec
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, qflx_evap_tot, qflx_ev_snow, qflx_snwcp_ice, qflx_tran_veg, qflx_snow_grnd, qflx_ev_h2osfc, qflx_dew_grnd, qflx_rain_grnd, qflx_ev_soil, qflx_snwcp_liq, qflx_prec_grnd, h2ocan, qflx_evap_grnd, qflx_dew_snow, qflx_evap_soi, qflx_sub_snow, qflx_evap_tot, qflx_ev_snow, qflx_snwcp_ice, qflx_tran_veg, qflx_snow_grnd, qflx_ev_h2osfc, qflx_dew_grnd, qflx_rain_grnd, qflx_ev_soil, qflx_snwcp_liq, qflx_prec_grnd, h2ocan, qflx_evap_grnd, qflx_dew_snow, qflx_evap_soi, qflx_sub_snow
+calls, p2c

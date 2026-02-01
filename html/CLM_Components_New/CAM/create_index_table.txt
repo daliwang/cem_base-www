@@ -1,0 +1,7 @@
+sub_in, element_nodes, index_table
+sub_out, index_table
+global_ro
+global_wo
+global_mod
+global_non
+calls, abortmp

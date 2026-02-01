@@ -1,0 +1,7 @@
+sub_in, soilstate_inst, bounds, num_hydrologyc, num_urbanc, filter_urbanc, filter_hydrologyc, waterflux_inst, temperature_inst, waterstate_inst, soil_water_retention_curve, soilhydrology_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, soilwater_zengdecker2009

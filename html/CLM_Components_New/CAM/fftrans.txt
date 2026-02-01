@@ -1,0 +1,7 @@
+sub_in, im, q2, jp, nj, damp, jf, q1
+sub_out, q1
+global_ro
+global_wo
+global_mod
+global_non
+calls, dzfftm, dzfftm1du, fft991, zdfftm

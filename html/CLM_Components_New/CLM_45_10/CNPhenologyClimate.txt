@@ -1,0 +1,10 @@
+sub_in, num_soilp, num_pcropp, filter_pcropp, filter_soilp
+sub_out
+global_ro, clm3%g%l%c%p%pps%gdd10, clm3%g%l%c%p%pes%t_ref2m, clm3%g%l%c%p%pps%gdd8, clm3%g%l%c%p%pps%gdd0
+global_wo
+global_mod, clm3%g%l%c%p%pps%gdd1020, clm3%g%l%c%p%pps%gdd020, clm3%g%l%c%p%pepv%tempavg_t2m, clm3%g%l%c%p%pps%gdd820
+global_non, clm3%g%l%c%p%itype, clm3%g%l%c%p%gridcell
+calls, get_curr_date
+
+Tree height: 4
+1+, get_curr_date, 

@@ -1,0 +1,7 @@
+sub_in, ncol, o2, qn2p, alfa1, alfa2, cusp, mbar, flux2, flux1, pbuf, drizl, qop, do_aurora, pmid, qo2p, tn, flux3, qnp, lchnk, o1, alfa3
+sub_out, qop, qo2p, qn2p, qnp
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld, bion, pbuf_set_field, aion

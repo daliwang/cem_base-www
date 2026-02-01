@@ -1,0 +1,7 @@
+sub_in, mask, temp, h2o, sad_sage, press, lbs_vol_dens, h2so4m, ncol, h2so4_aer_dens
+sub_out, h2so4m, h2so4_aer_dens, lbs_vol_dens
+global_ro
+global_wo
+global_mod
+global_non
+calls

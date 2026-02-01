@@ -1,0 +1,10 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, clm3%g%l%c%cps%alt_indx, clm3%g%l%c%cch4%o2stress_sat, clm3%g%l%c%cps%sucsat, clm3%g%l%c%cch4%o2stress_unsat, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cws%finundated, clm3%g%l%c%cps%soilpsi
+global_wo, clm3%g%l%c%ccf%decomp_k
+global_mod, clm3%g%l%c%ccf%t_scalar, clm3%g%l%c%ccf%o_scalar, clm3%g%l%c%ccf%w_scalar
+global_non
+calls, endrun
+
+Tree height: 8
+1+, endrun, 

@@ -1,0 +1,7 @@
+sub_in, clayer, bstore, ctrim, bdead, nn, balive, status, dbh, laimemory, hite, pft, patchptr
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, patchptr%siteptr, storesmallcohort, new_cohort, storebigcohort, new_cohort, patchptr, patchptr%tallest, patchptr%shortest
+calls, zero_cohort, insert_cohort, allocate_live_biomass, nan_cohort

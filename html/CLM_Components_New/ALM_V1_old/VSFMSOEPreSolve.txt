@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro| cur_goveq%next, cur_goveq, NONE| this%goveqns, cur_goveq, NONE
+global_wo
+global_mod
+global_non
+calls, cur_goveq%GetFromSOEAuxVarsIntrn, endrun, cur_goveq%GetFromSOEAuxVarsSS, VSFMSOEUpdateAuxVarsODE, cur_goveq%GetFromSOEAuxVarsBC, cur_goveq%PreSolve, cur_goveq%UpdateAuxVars
+readParams,

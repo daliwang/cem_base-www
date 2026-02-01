@@ -1,0 +1,7 @@
+sub_in, flag, ncid
+sub_out
+global_ro, landunit, fabi, p, watsat, tlai, albgrd, itype, albgri, fabd, tsai, itype, snl
+global_wo, qflx_snow_melt, snw_rds_top, fabi_sha_z, mss_cnc_bcphi, int_snow, fabi_sun_z, irrig_rate, t_h2osfc, albgri_bc, fabd_sha, fabi_sha, mss_cnc_dst3, tsai_z, frost_table, fabi_sun, frac_h2osfc, sno_liq_top, tlai_z, albgri_oc, albgri_pur, qflx_snofrz_lyr, vcmaxcintsun, vcmaxcintsha, ncan, fabd_sha_z, fabd_sun_z, mss_cnc_dst4, mss_cnc_bcpho, mss_cnc_dst1, snw_rds, fsun_z, albgrd_dst, mss_cnc_ocphi, mss_cnc_dst2, frac_sno_eff, fabd_sun, mss_cnc_ocpho, n_irrig_steps_left, albgrd_pur, albgri_dst, albgrd_oc, albgrd_bc, nrad, zwt_perched
+global_mod, zi, h2osfc, mss_ocpho, wtgcell, mss_ocphi, mss_dst1, wtcol, mss_bcphi, h2osoi_ice, h2osoi_vol, dz, wtlunit, mss_bcpho, mss_dst4, fsun, mss_dst2, h2osoi_liq, mss_dst3, z
+global_non, c, l
+calls, ncd_io, get_proc_bounds, ncd_defvar, perturbIC, endrun

@@ -1,0 +1,35 @@
+sub_param, waterflux_vars, nitrogenstate_vars, plantsoilnutrientflux_vars, col, chemstate_vars, waterstate_vars, carbonstate_vars, carbonflux_vars, temperature_vars, lbj, bgc_reaction, num_soilc, num_soilp, bounds, tracerboundarycond_vars, nitrogenflux_vars, tracercoeff_vars, cnstate_vars, soilstate_vars, betrtracer_vars, filter_soilp, tracerstate_vars, ubj, atm2lnd_vars, canopystate_vars, tracerflux_vars, soilhydrology_vars, filter_soilc
+sub_out, soilstate_vars
+global_ro
+global_wo, chemstate_vars%soil_pH, tracerboundarycond_vars%jtops_col
+global_mod
+global_non
+calls, calc_tracer_infiltration, betr_annualupdate, tracer_solid_transport, set_phase_convert_coeff, get_zwt, set_gwdif_Rfactor, tracer_gw_transport, bgc_reaction%calc_bgc_reaction, plantsoilnutrientflux_vars%summary, set_multi_phase_diffusion, bgc_reaction%set_boundary_conditions, calc_aerecond, calc_tracer_h2osfc_snow_residual_combine, calc_tracer_surface_runoff, calc_ebullition
+readParams,
+type(bounds_type)                , intent(in)    :: bounds                     ! bounds
+integer                          , intent(in)    :: num_soilc                  ! number of columns in column filter_soilc
+integer                          , intent(in)    :: filter_soilc(:)            ! column filter_soilc
+integer                          , intent(in)    :: num_soilp
+integer                          , intent(in)    :: filter_soilp(:)            ! pft filter
+integer                          , intent(in)    :: lbj, ubj                   ! lower and upper bounds, make sure they are > 0
+type(column_type)                , intent(in)    :: col                        ! column type
+type(Waterstate_Type)            , intent(in)    :: waterstate_vars            ! water state variables
+type(soilstate_type)             , intent(in)    :: soilstate_vars             ! column physics variable
+type(temperature_type)           , intent(in)    :: temperature_vars           ! energy state variable
+type(chemstate_type)             , intent(in)    :: chemstate_vars
+type(betrtracer_type)            , intent(in)    :: betrtracer_vars            ! betr configuration information
+class(bgc_reaction_type)         , intent(in)    :: bgc_reaction
+type(atm2lnd_type)               , intent(in)    :: atm2lnd_vars
+type(soilhydrology_type)         , intent(in)    :: soilhydrology_vars
+type(cnstate_type)               , intent(inout) :: cnstate_vars
+type(canopystate_type)           , intent(in)    :: canopystate_vars
+type(carbonflux_type)            , intent(inout) :: carbonflux_vars
+type(carbonstate_type)           , intent(in)    :: carbonstate_vars
+type(nitrogenstate_type)         , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)          , intent(inout) :: nitrogenflux_vars
+type(waterflux_type)             , intent(inout) :: waterflux_vars
+type(tracerboundarycond_type)    , intent(inout) :: tracerboundarycond_vars
+type(tracercoeff_type)           , intent(inout) :: tracercoeff_vars
+type(tracerstate_type)           , intent(inout) :: tracerstate_vars
+type(tracerflux_type)            , intent(inout) :: tracerflux_vars
+type(plantsoilnutrientflux_type) , intent(inout) :: plantsoilnutrientflux_vars !

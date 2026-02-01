@@ -1,0 +1,15 @@
+sub_param, tracerflux_vars, betrtracer_vars, lbj, filter, numf, ubj, bounds, tracerstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, betr_tracer_mass_summary, tracerflux_vars%Reset
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: numf                        ! number of columns in column filter
+integer,                intent(in)    :: filter(:)                   ! column filter
+type(betrtracer_type),  intent(in)    :: betrtracer_vars             ! betr configuration information
+type(tracerstate_type), intent(inout) :: tracerstate_vars            ! tracer state variables data structure
+type(tracerflux_type) , intent(inout) :: tracerflux_vars

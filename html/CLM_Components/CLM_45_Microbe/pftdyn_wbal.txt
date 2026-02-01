@@ -1,0 +1,7 @@
+sub_in, endp, begg, begc, endg, begp, endc
+sub_out
+global_ro, npfts, landunit, pfti, wtcol, itype
+global_wo
+global_mod, h2ocan_loss, h2ocan
+global_non, c, p, l
+calls

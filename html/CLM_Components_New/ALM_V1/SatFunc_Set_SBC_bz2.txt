@@ -1,0 +1,13 @@
+sub_param, sat_res, lambda, ps, alpha, satParams
+sub_out
+global_ro
+global_wo, satParams%sbc_ps, satParams%sbc_pu, satParams%sbc_b2, satParams%sbc_b3, satParams%sat_func_type, satParams%relperm_func_type, satParams%bc_lambda
+global_mod, satParams%alpha, satParams%sat_res
+global_non
+calls, endrun, satParams%Init
+readParams,
+type(saturation_params_type) , intent(out) :: satParams
+PetscReal                    , intent(in)  :: sat_res
+PetscReal                    , intent(in)  :: alpha
+PetscReal                    , intent(in)  :: lambda
+PetscReal                    , intent(in)  :: ps

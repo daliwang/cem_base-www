@@ -1,0 +1,9 @@
+sub_param, patch_in
+sub_out
+global_ro, patch_in%area, ecophyscon%froot_leaf, patch_in%siteptr%dstatus, EDecophyscon%cushion, EDecophyscon%hgt_min, patch_in%siteptr%status, EDecophyscon%sapwood_ratio, EDecophyscon%initd
+global_wo, dc%n, dc%canopy_trim, dc%bstore, dc%dbh, dc%b
+global_mod, dc%hite, dc%bdead, dc%balive, dc%pft, dc%laimemory
+global_non, null, udata%storesmallcohort, null, udata%storebigcohort
+calls, sort_cohorts, create_cohort, fuse_cohorts
+readParams,
+type(patch), intent(inout), pointer  :: patch_in

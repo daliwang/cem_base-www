@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, radsw_init, radconstants_init, init_rad_data, radae_init, addfld, radlw_init, phys_getopts, add_default

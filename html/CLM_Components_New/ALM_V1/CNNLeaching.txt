@@ -1,0 +1,15 @@
+sub_param, nitrogenstate_vars, waterstate_vars, bounds, waterflux_vars, nitrogenflux_vars, num_soilc, filter_soilc
+sub_out
+global_ro, waterflux_vars%qflx_surf_col, nitrogenstate_vars%sminn_vr_col, col%dz, waterflux_vars%qflx_drain_col, nitrogenstate_vars%smin_no3_vr_col, waterstate_vars%h2osoi_liq_col
+global_wo
+global_mod, nitrogenflux_vars%smin_no3_leached_vr_col, nitrogenflux_vars%sminn_leached_vr_col, nitrogenflux_vars%smin_no3_runoff_vr_col
+global_non
+calls
+readParams,readCNNDynamicsParams
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars

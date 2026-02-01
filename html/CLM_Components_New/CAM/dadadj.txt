@@ -1,0 +1,7 @@
+sub_in, t, ncol, pdel, q, pint, lchnk, pmid
+sub_out, t, q
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

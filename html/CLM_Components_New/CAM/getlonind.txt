@@ -1,0 +1,7 @@
+sub_in, lonname, londeg, beglonind, inname, mlon, endlonind
+sub_out, beglonind, endlonind, lonname
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

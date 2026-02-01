@@ -1,0 +1,7 @@
+sub_in, wetrad, wtrvol, hygro, dryvol, rhdeliques, dryrad, ncol, rh, wetvol, rhcrystal, nmodes
+sub_out, wetrad, wetvol, wtrvol
+global_ro
+global_wo
+global_mod
+global_non
+calls, modal_aero_kohler

@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro, %field%num2d, %hlist
+global_wo
+global_mod
+global_non
+calls, hist_update_hbuf_field_2d, hist_update_hbuf_field_1d
+readParams,
+type(bounds_type), intent(in) :: bounds

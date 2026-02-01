@@ -1,0 +1,7 @@
+sub_in, flag, bounds, rdate, ncid
+sub_out
+global_ro, bounds%endp, bounds%begp, bounds%endl, %field%l2g_scale_type, bounds%begl, %field%p2c_scale_type, %hlist, %avgflag, %field%c2l_scale_type, bounds%endc, vardesc%varid, %field%hpindex, bounds%endg, %field%units, bounds%begc, bounds%begg
+global_wo
+global_mod, %field%num2d, %field%long_name, tape, %field%type2d, tape, %field%beg1d_out, %field%end1d_out, %field%name, %field%type1d, %field%type1d_out
+global_non
+calls, endrun, ncd_inqdlen, ncd_inqvid, ncd_pio_openfile, ncd_enddef, ncd_pio_closefile, ncd_defdim, ncd_io, ncd_defvar, getfil, get_proc_global, htape_create, strip_null

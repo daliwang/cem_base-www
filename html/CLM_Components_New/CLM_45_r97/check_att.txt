@@ -1,0 +1,7 @@
+sub_in, ncid, attrib, att_found, varid
+sub_out, att_found
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling

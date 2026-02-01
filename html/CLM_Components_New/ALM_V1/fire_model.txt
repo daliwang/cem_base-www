@@ -1,0 +1,11 @@
+sub_param, site_in, temperature_vars, atm2lnd_vars
+sub_out
+global_ro, currentPatch%older, site_in%youngest_patch
+global_wo, %frac_burnt, %fire, %AB
+global_mod
+global_non
+calls, cambial_damage_kill, fire_danger_index, area_burnt, crown_scorching, rate_of_spread, post_fire_mortality, ground_fuel_consumption, wind_effect, fire_intensity, charecteristics_of_fuel, crown_damage
+readParams,
+type (site)             , intent(inout), pointer :: site_in
+type(atm2lnd_type)      , intent(in)             :: atm2lnd_vars
+type(temperature_type)  , intent(in)             :: temperature_vars

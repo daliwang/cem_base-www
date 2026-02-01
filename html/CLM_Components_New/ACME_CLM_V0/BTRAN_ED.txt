@@ -1,0 +1,7 @@
+sub_in, soilstate_vars, p, waterstate_vars, energyflux_vars, temperature_vars
+sub_out
+global_ro, %pft, EDecophyscon%rootresist, ecophyscon%smpsc, soilstate_vars%sucsat_col, %gscan, ecophyscon%smpso, soilstate_vars%soilbeta_col, EDecophyscon%soilbeta, pft%column, waterstate_vars%h2osoi_vol_col, soilstate_vars%sandfrac_patch, %n, col%dz, pft%gridcell, EDpft%ED_patch, waterstate_vars%h2osoi_liq_col, soilstate_vars%watsat_col, waterstate_vars%h2osoi_ice_col, soilstate_vars%bsw_col, temperature_vars%t_soisno_col, gridCellEdState%rootfr_ft, currentPatch%tallest, currentCohort%shorter
+global_wo
+global_mod, gridCellEdState%rootr_ft, gridCellEdState%btran_ft, energyflux_vars%btran_patch, soilstate_vars%rootr_patch
+global_non, soilstate_vars%watdry_col, soilstate_vars%watopt_col, energyflux_vars%rresis_patch, soilstate_vars%rootfr_patch, currentPatch%younger, gridCellEdState, energyflux_vars%btran2_patch
+calls

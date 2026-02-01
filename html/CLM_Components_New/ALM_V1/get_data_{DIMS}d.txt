@@ -1,0 +1,11 @@
+sub_param, data, this, nt
+sub_out, data
+global_ro, this%data, this%data_shape
+global_wo, this%read_times
+global_mod
+global_non
+calls, shr_assert_all, shr_assert
+readParams,reset_read_times
+class(ncdio_var_type), intent(inout) :: this
+integer, intent(in) :: nt  ! time index of interest
+real(r8), intent(out) :: data{DIMSTR}

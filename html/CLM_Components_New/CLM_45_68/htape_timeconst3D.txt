@@ -1,0 +1,27 @@
+sub_in, mode, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ncd_io, c2g, shr_string_listAppend, get_proc_bounds, ncd_defvar, endrun
+
+Tree height: 26
+0 , get_proc_bounds, 
+6-, shr_string_listAppend, 
+7-, endrun, ncd_defvar, 
+8-, ncd_defvar, 
+19-, ncd_io, 
+19+, c2g, 
+20-, ncd_io, shr_string_listAppend, 
+21-, endrun, ncd_defvar, 
+22-, ncd_defvar, 
+22+, ncd_defvar, endrun, 
+23+, endrun, 
+24-, ncd_io, 
+24+, c2g, 
+25-, ncd_io, 
+25+, ncd_io, 
+20+, ncd_io, 
+8+, ncd_defvar, endrun, 
+9+, endrun, 

@@ -1,0 +1,8 @@
+sub_in, tod, timer_comp_run, infodata, comp_num, ymd, seq_flds_x2c_fluxes, seq_flds_c2x_fluxes, run_barriers, Eclock, timer_barrier, comp, comp_layout, comp_prognostic
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, esmfshr_infodata_infodata2state, ESMF_AttributeSet, ESMF_GridCompRun, mpi_barrier, esmfshr_infodata_state2infodata, mct_avect_vecmult, ESMF_StateGet, t_drvstartf, esmf2mct_copy, t_drvstopf, mct2esmf_copy
+calls_ln, ESMF_GridCompRun@1142, t_drvstopf@1109, t_drvstartf@1107, esmfshr_infodata_infodata2state@1121, ESMF_AttributeSet@1149, ESMF_StateGet@1127, mct_avect_vecmult@1165, esmfshr_infodata_state2infodata@1153, esmf2mct_copy@1161, mpi_barrier@1108, mct2esmf_copy@1136, ESMF_StateGet@1157, mct_avect_vecmult@1132, t_drvstartf@1116

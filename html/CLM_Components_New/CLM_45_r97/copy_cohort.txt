@@ -1,0 +1,7 @@
+sub_in, currentCohort, copyc
+sub_out
+global_ro
+global_wo, indexnumber
+global_mod, dbh, balive, rd, status_coh, npp_acc, fire_mort, dmort, ddbhdt, br, dbstoredt, leaf_litter, resp_m, gscan, livestemn, bsw, b, md, carbon_balance, dbalivedt, year_net_uptake, seed_prod, dndt, ts_net_uptake, npp, treelai, resp_clm, cfa, frootn, canopy_trim, crownfire_mort, bl, laimemory, prom_weight, bdead, livecroot_mr, npp_clm, pft, nv, resp_acc, canopy_layer, root_md, livestem_mr, livecrootn, gpp, n, sai, froot_mr, c_area, dhdt, leaf_md, excl_weight, gpp_clm, leaf_cost, gpp_acc, dbdeaddt, hite, resp, woody_turnover, cambial_mort, bstore, lai, resp_g, treesai, storage_flux
+global_non, o%patchptr, NULL, o%siteptr, NULL, currentCohort
+calls

@@ -1,0 +1,15 @@
+sub_param, num_methc:2, filter_methc:3, waterstate_vars:6, soilstate_vars:5, bounds:1, jwt:4, temperature_vars:7
+sub_out, jwt
+global_ro| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| soilstate_vars%watsat_col, watsat, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,readCH4Params
+type(bounds_type)      , intent(in)  :: bounds
+integer                , intent(in)  :: num_methc           ! number of column soil points in column filter
+integer                , intent(in)  :: filter_methc(:)     ! column filter for soil points
+integer                , intent(out) :: jwt( bounds%begc: ) ! index of the soil layer right above the water table (-) [col]
+type(soilstate_type)   , intent(in)  :: soilstate_vars
+type(waterstate_type)  , intent(in)  :: waterstate_vars
+type(temperature_type) , intent(in)  :: temperature_vars

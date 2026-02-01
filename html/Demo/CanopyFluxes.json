@@ -1,0 +1,2021 @@
+{
+	"links":[
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "ubg", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "ubc", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "lbg", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "lbp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "num_nolakep", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "filter_nolakep", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "lbc", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "ubp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_grnd", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun_wc", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "alphapsnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "watsat", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha_wp", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fdry", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "column", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "sabv", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_po2", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "itype", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "thm", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun_wp", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rssha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "max_dayl", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_th", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "snl", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "h2osoi_liq", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fwet", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_q", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "dqgdT", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_u", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "elai", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qg_soil", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rssun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_pco2", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "sucsat", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "z0mg", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qg_snow", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "h2osoi_vol", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_soisno", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "dleaf", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_v", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_lwrad", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "esai", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "alphapsnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_rho", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rootfr", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha_wj", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rc14_atm", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "htvp", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "altmax_indx", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "bsw", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "altmax_lastyear_indx", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "londeg", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "emg", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qg", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_h2osfc", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "decl", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "htop", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "snow_depth", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_hgt_u_pft", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "frac_h2osfc", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "frac_veg_nosno", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "laisun", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun_wj", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_pbot", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "smpso", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "thv", 
+  "t_group": "9"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "lat", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "landunit", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "gridcell", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha_wc", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "h2osoi_ice", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "laisha", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "forc_pc13o2", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "dz", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "smpsc", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "emv", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qg_h2osfc", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "frac_sno_eff", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "soilbeta", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "cgrnd", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rb1", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "ulrad", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "dlrad", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_ev_soil", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "eflx_sh_h2osfc", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rh_ref2m_r", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fpsn_wp", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "eflx_sh_snow", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "taux", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "vpdal", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fpsn_wj", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "eflx_sh_grnd", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "eflx_sh_soil", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_ev_snow", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "canopy_cond", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_ev_h2osfc", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_ref2m_r", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fpsn", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "psnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "tauy", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "grnd_ch4_cond", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "n_irrig_steps_left", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_evap_soi", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rhal", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "fpsn_wc", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "eflx_sh_veg", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rc13_psnsun", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "z0qv", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "z0hv", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rc13_psnsha", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "btran2", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_tran_veg", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "btran", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rc13_canair", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "irrig_rate", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "cgrnds", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "q_ref2m", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "displa", 
+  "t_group": "11"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "qflx_evap_veg", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_ref2m", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rresis", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "t_veg", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "dt_veg", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "z0mv", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rootr", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "ram1", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "h2ocan", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "cgrndl", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rh_ref2m", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "rhaf", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "watopt", 
+  "t_group": "7"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "watdry", 
+  "t_group": "7"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "QSat", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "FrictionVelocity", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "get_prev_date", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "Photosynthesis", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "Fractionation", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "CanopyFluxes", 
+  "type": "licensing", 
+  "target": "MoninObukIni", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "phase", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "lbp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "ubp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "fn", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "filterp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "downreg", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "itype", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "gb_mol", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "parsha_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "parsun_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "forc_pco2", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "an", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "forc_pbot", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "c3psn", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "gridcell", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "nrad", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "gs_mol", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "alphapsnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Fractionation", 
+  "type": "licensing", 
+  "target": "alphapsnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "ur", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "fm", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "ustar", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "landunit_index", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "um", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "filtern", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "displa", 
+  "t_group": "11"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "ubn", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "z0h", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp2", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "fn", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "iter", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp1", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "lbn", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "z0m", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp12m", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp22m", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "obu", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "z0q", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp22m", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "fm", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "ustar", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp1", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp12m", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "temp2", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "forc_hgt_t_pft", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "forc_hgt_q_pft", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "forc_hgt_u_pft", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "gridcell", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "pftf", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "pfti", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "u10", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "va", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "u10_clm", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "vds", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "FrictionVelocity", 
+  "type": "licensing", 
+  "target": "fv", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "ur", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "thv", 
+  "t_group": "9"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "um", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "zldis", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "z0m", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "dthv", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "obu", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "obu", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "MoninObukIni", 
+  "type": "licensing", 
+  "target": "um", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "esat_tv", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "dayl_factor", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rb", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "eair", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "cair", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "phase", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "lbp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "ubp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "oair", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "filterp", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "fn", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "leafcn", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "thm", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "t_veg", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "itype", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "laisha_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "laisun_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "parsha_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "parsun_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "t10", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "btran", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "forc_pbot", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "tlai_z", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "vcmaxcintsun", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "vcmaxcintsha", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "c3psn", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "fnitr", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "gridcell", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "slatop", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "flnr", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "nrad", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "gs_mol", 
+  "t_group": "4"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "lmrsun", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "lmrsha", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rssun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rssha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "qe", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsha_wc", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsun_wc", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsun_wj", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsha_wj", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "ko", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "kc", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "tpu_z", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rh_leaf", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsha_wp", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsun_wp", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "kp_z", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "alphapsnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "alphapsnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "cp", 
+  "t_group": "5"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsha", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsun", 
+  "t_group": "17"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "c3flag", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "ag", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "mbb", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "aj", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsun_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "psnsha_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "ac", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "gb_mol", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rssun_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "rssha_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "ap", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "lmrsun_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "lmrsha_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "an", 
+  "t_group": "18"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "cisha_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "cisun_z", 
+  "t_group": "6"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "quadratic", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "Photosynthesis", 
+  "type": "licensing", 
+  "target": "hybrid", 
+  "t_group": "1"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "qs", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "p", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "qsdT", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "T", 
+  "t_group": "2"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "es", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "esdT", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "qs", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "qsdT", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "es", 
+  "t_group": "8"
+ }, 
+ {
+  "s_group": "1", 
+  "source": "QSat", 
+  "type": "licensing", 
+  "target": "esdT", 
+  "t_group": "8"
+ }
+]
+
+}

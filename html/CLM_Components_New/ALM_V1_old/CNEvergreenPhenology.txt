@@ -1,0 +1,11 @@
+sub_param, num_soilp:1, cnstate_vars:3, filter_soilp:2
+sub_out
+global_ro| ecophyscon%leaf_long, leaf_long, NONE| ecophyscon%evergreen, evergreen, NONE| pft%itype, ivt, NONE
+global_wo| cnstate_vars%bgtr_patch, bgtr, NONE| cnstate_vars%bglfr_patch, bglfr, NONE| cnstate_vars%lgsf_patch, lgsf, NONE
+global_mod
+global_non
+calls
+readParams,readCNPhenolParams
+integer           , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer           , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type), intent(inout) :: cnstate_vars

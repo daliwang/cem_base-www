@@ -1,0 +1,7 @@
+sub_in, sitetar
+sub_out
+global_ro, %fire_mort, nc, null, udata%storesmallcohort, currentSite%youngest_patch, currentPatch%younger, currentPatch%older, currentSite%oldest_patch, udata%deltat, nc, null, udata%storebigcohort, %dmort, currentCohort%taller, currentPatch%shortest
+global_wo, %disturbance_rates, sitetar%leaf_litter_burned, nc%canopy_layer, sitetar%cwd_ag_burned
+global_mod, %disturbance_rate, %n, nc%n, %area
+global_non, new_patch, null, new_patch%tallest, NULL, currentPatch, sitetar, new_patch, null, new_patch, new_patch%shortest
+calls, insert_cohort, create_patch, fuse_cohorts, copy_cohort, average_patch_properties, terminate_cohorts, mortality_litter_fluxes, zero_patch, set_patchno, check_patch_area, sort_cohorts, zero_cohort, fire_litter_fluxes

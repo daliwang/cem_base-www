@@ -1,0 +1,11 @@
+sub_param, avoid_pnetcdf:3, fname:2, file:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+class(file_desc_t), intent(inout) :: file    ! PIO file descriptor
+character(len=*) ,  intent(in)    :: fname   ! File name to create
+logical, intent(in), optional     :: avoid_pnetcdf

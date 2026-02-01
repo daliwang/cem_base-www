@@ -1,0 +1,13 @@
+sub_param, surfalb_vars:3, waterstate_vars:2, energyflux_vars:4, bounds:1, lnd2atm_vars:5
+sub_out
+global_ro| lnd2atm_vars%eflx_lwrad_out_grc, eflx_lwrad_out_grc, NONE
+global_wo| lnd2atm_vars%t_rad_grc, t_rad_grc, NONE
+global_mod| lnd2atm_vars%h2osno_grc, h2osno_grc, NONE
+global_non
+calls, c2g, p2g
+readParams,
+type(bounds_type)     , intent(in)    :: bounds
+type(waterstate_type) , intent(in)    :: waterstate_vars
+type(surfalb_type)    , intent(in)    :: surfalb_vars
+type(energyflux_type) , intent(in)    :: energyflux_vars
+type(lnd2atm_type)    , intent(inout) :: lnd2atm_vars

@@ -1,0 +1,7 @@
+sub_in, mod_lats, mod_dists, tape, mod_lons, ncols, nfils
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, get_curr_time, get_curr_date, t_startf

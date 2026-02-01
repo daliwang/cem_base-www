@@ -1,0 +1,7 @@
+sub_in, cph_tot, rxt, vmr, lchnk, mbar, ncol, cp, kbot
+sub_out, cph_tot
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

@@ -1,0 +1,7 @@
+sub_in, f107, kp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, snoe_zmto3d, snoe_zm

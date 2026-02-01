@@ -1,0 +1,15 @@
+sub_param, phosphorusflux_vars:7, waterstate_vars:4, phosphorusstate_vars:6, num_soilc:2, waterflux_vars:5, filter_soilc:3, bounds:1
+sub_out
+global_ro| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterflux_vars%qflx_drain_col, qflx_drain, NONE| col%dz, dz, NONE| phosphorusstate_vars%solutionp_vr_col, solutionp_vr, NONE
+global_wo
+global_mod| phosphorusflux_vars%sminp_leached_vr_col, sminp_leached_vr, NONE
+global_non| waterflux_vars%qflx_surf_col, qflx_surf, NONE
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

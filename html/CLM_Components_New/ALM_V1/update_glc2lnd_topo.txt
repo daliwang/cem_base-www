@@ -1,0 +1,10 @@
+sub_param, this, bounds
+sub_out
+global_ro, col%itype, col%landunit, col%gridcell, this%topo_grc
+global_wo, col%glc_topo
+global_mod
+global_non
+calls
+readParams,
+class(glc2lnd_type), intent(in) :: this
+type(bounds_type)  , intent(in) :: bounds ! bounds

@@ -1,0 +1,7 @@
+sub_in, c
+sub_out
+global_ro, dz, depth
+global_wo
+global_mod, vic_clm_fract
+global_non, zi, z
+calls, linear_interp

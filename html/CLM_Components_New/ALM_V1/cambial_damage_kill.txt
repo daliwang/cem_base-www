@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, EDecophyscon%bark_scaler, currentPatch%tallest;, currentCohort%shorter;, %pft, %tau_l, %dbh, >currentPatch%younger;
+global_wo, %cambial_mort
+global_mod, currentSite%oldest_patch;
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer   :: currentSite

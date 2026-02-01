@@ -1,0 +1,7 @@
+sub_in, dom_o, lsize, gsMap_o
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mct_gsMap_orderedPoints, get_rlon_all_p, mct_gGrid_init, get_rlat_all_p, mct_gGrid_importRAttr, get_area_all_p, mct_gGrid_importIAttr

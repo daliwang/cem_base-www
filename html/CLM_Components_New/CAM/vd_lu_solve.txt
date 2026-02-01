@@ -1,0 +1,7 @@
+sub_in, decomp, cd_top, ntop, ncol, pver, nbot, q, pcols
+sub_out, q
+global_ro
+global_wo
+global_mod
+global_non
+calls

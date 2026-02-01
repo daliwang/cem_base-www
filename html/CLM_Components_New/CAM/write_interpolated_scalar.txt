@@ -1,0 +1,7 @@
+sub_in, decomp_type, fld, varid, File, numlev, data_type
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

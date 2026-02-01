@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro, ldecomp%gdc2glo, col%landunit, pft%landunit, pft%gridcell, lun%gridcell, col%gridcell, ldomain%ni, lun%itype, grc%londeg, grc%latdeg
+global_wo
+global_mod
+global_non, do
+calls, get_proc_bounds, ncd_io, endrun, ncd_defvar

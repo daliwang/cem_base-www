@@ -1,0 +1,9 @@
+sub_param, landunit_weights:1
+sub_out, landunit_weights
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+real(r8), intent(inout) :: landunit_weights(:)  ! weight of each landunit; this is updated in-place

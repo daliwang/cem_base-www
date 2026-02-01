@@ -1,0 +1,7 @@
+sub_in, high_bound2, low_bound, high_value2, high_value, low_value, low_bound2, low_value2, high_bound, rhs
+sub_out, rhs
+global_ro
+global_wo
+global_mod
+global_non
+calls

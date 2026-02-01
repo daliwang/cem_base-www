@@ -1,0 +1,20 @@
+sub_param, waterflux_vars:11, filter_nolakeurbanp:3, soilstate_vars:6, waterstate_vars:12, temperature_vars:10, bounds:1, energyflux_vars:9, atm2lnd_vars:4, canopystate_vars:5, ch4_vars:8, frictionvel_vars:7, num_nolakeurbanp:2
+sub_out
+global_ro| atm2lnd_vars%forc_rho_downscaled_col, forc_rho, NONE| frictionvel_vars%z0mg_col, z0mg_col, NONE| pft%column, column, NONE| waterstate_vars%qg_h2osfc_col, qg_h2osfc, NONE| atm2lnd_vars%forc_v_grc, forc_v, NONE| soilstate_vars%soilbeta_col, soilbeta, NONE| temperature_vars%beta_col, beta, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| col%zii, zii, NONE| temperature_vars%thv_col, thv, NONE| atm2lnd_vars%forc_u_grc, forc_u, NONE| col%snl, snl, NONE| waterstate_vars%qg_snow_col, qg_snow, NONE| col%dz, dz, NONE| soilstate_vars%watsat_col, watsat, NONE| waterstate_vars%qg_col, qg, NONE| waterstate_vars%qg_soil_col, qg_soil, NONE| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| frictionvel_vars%z0qg_col, z0qg_col, NONE| canopystate_vars%frac_veg_nosno_patch, frac_veg_nosno, NONE| waterstate_vars%dqgdT_col, dqgdT, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| temperature_vars%thm_patch, thm, NONE| frictionvel_vars%forc_hgt_u_patch, forc_hgt_u_patch, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| energyflux_vars%htvp_col, htvp, NONE| frictionvel_vars%z0hg_col, z0hg_col, NONE| pft%landunit, landunit, NONE| atm2lnd_vars%forc_q_downscaled_col, forc_q, NONE| atm2lnd_vars%forc_th_downscaled_col, forc_th, NONE| pft%gridcell, gridcell, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE
+global_wo| waterflux_vars%qflx_ev_snow_patch, qflx_ev_snow, NONE| energyflux_vars%eflx_sh_tot_patch, eflx_sh_tot, NONE| energyflux_vars%ulrad_patch, ulrad, NONE| energyflux_vars%taux_patch, taux, NONE| temperature_vars%t_ref2m_r_patch, t_ref2m_r, NONE| energyflux_vars%eflx_sh_snow_patch, eflx_sh_snow, NONE| ch4_vars%grnd_ch4_cond_patch, grnd_ch4_cond, NONE| frictionvel_vars%ram1_patch, ram1, NONE| waterflux_vars%qflx_ev_h2osfc_patch, qflx_ev_h2osfc, NONE| energyflux_vars%eflx_sh_h2osfc_patch, eflx_sh_h2osfc, NONE| waterflux_vars%qflx_ev_soil_patch, qflx_ev_soil, NONE| energyflux_vars%cgrnd_patch, cgrnd, NONE| waterflux_vars%qflx_evap_tot_patch, qflx_evap_tot, NONE| waterstate_vars%rh_ref2m_r_patch, rh_ref2m_r, NONE| energyflux_vars%dlrad_patch, dlrad, NONE| energyflux_vars%eflx_sh_soil_patch, eflx_sh_soil, NONE| energyflux_vars%tauy_patch, tauy, NONE
+global_mod| waterflux_vars%qflx_evap_soi_patch, qflx_evap_soi, NONE| energyflux_vars%eflx_sh_grnd_patch, eflx_sh_grnd, NONE| waterstate_vars%rh_ref2m_patch, rh_ref2m, NONE| energyflux_vars%cgrndl_patch, cgrndl, NONE| temperature_vars%t_ref2m_patch, t_ref2m, NONE| waterstate_vars%q_ref2m_patch, q_ref2m, NONE| energyflux_vars%cgrnds_patch, cgrnds, NONE
+global_non| bounds%endp, endp, NONE| bounds%begp, begp, NONE| waterstate_vars%frac_sno_col, frac_sno, NONE| atm2lnd_vars%forc_pbot_downscaled_col, forc_pbot, NONE| atm2lnd_vars%forc_t_downscaled_col, forc_t, NONE
+calls, FrictionVelocity, MoninObukIni, QSat
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakeurbanp          ! number of pft non-lake, non-urban points in pft filter
+integer                , intent(in)    :: filter_nolakeurbanp(:)    ! patch filter for non-lake, non-urban points
+type(atm2lnd_type)     , intent(in)    :: atm2lnd_vars
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(frictionvel_type) , intent(inout) :: frictionvel_vars
+type(ch4_type)         , intent(inout) :: ch4_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars

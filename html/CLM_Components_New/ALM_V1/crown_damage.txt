@@ -1,0 +1,9 @@
+sub_param, site_in
+sub_out
+global_ro, currentCohort%hite, site_in%oldest_patch, currentPatch%younger;, %SH, >currentPatch%tallest, EDecophyscon%crown, currentCohort%pft
+global_wo
+global_mod, !currentCohort%canopy_trim, currentCohort%canopy_trim, currentCohort%cfa
+global_non, currentCohort%shorter;
+calls
+readParams,rate_of_spread
+type(site), intent(in) :: site_in

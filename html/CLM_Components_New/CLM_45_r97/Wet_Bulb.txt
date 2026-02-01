@@ -1,0 +1,7 @@
+sub_in, Teq, vape, relhum, wb_it, qin, epott, Tin_1, pin
+sub_out, wb_it, epott, Teq
+global_ro
+global_wo
+global_mod
+global_non
+calls, QSat_2

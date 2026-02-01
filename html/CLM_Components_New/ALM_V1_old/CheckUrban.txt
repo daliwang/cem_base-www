@@ -1,0 +1,11 @@
+sub_param, pcturb:3, caller:4, endg:2, begg:1
+sub_out
+global_ro| urbinp%alb_roof_dir, alb_roof_dir, NONE| urbinp%wtroad_perv, wtroad_perv, NONE| urbinp%em_perroad, em_perroad, NONE| urbinp%alb_improad_dif, alb_improad_dif, NONE| urbinp%t_building_max, t_building_max, NONE| urbinp%alb_improad_dir, alb_improad_dir, NONE| urbinp%wind_hgt_canyon, wind_hgt_canyon, NONE| urbinp%em_improad, em_improad, NONE| urbinp%thick_wall, thick_wall, NONE| urbinp%ht_roof, ht_roof, NONE| urbinp%alb_perroad_dif, alb_perroad_dif, NONE| urbinp%nlev_improad, nlev_improad, NONE| urbinp%tk_roof, tk_roof, NONE| urbinp%tk_wall, tk_wall, NONE| urbinp%alb_wall_dif, alb_wall_dif, NONE| urbinp%em_wall, em_wall, NONE| urbinp%cv_roof, cv_roof, NONE| urbinp%em_roof, em_roof, NONE| urbinp%t_building_min, t_building_min, NONE| urbinp%cv_wall, cv_wall, NONE| urbinp%alb_perroad_dir, alb_perroad_dir, NONE| urbinp%alb_roof_dif, alb_roof_dif, NONE| urbinp%wtlunit_roof, wtlunit_roof, NONE| urbinp%thick_roof, thick_roof, NONE| urbinp%alb_wall_dir, alb_wall_dir, NONE
+global_wo| urbinp%canyon_hwr, canyon_hwr, NONE
+global_mod
+global_non
+calls, endrun
+readParams,
+integer         , intent(in) :: begg, endg           ! beg & end grid cell indices
+real(r8)        , intent(in) :: pcturb(begg:,:)      ! % urban
+character(len=*), intent(in) :: caller               ! identifier of caller, for more meaningful error messages

@@ -1,0 +1,7 @@
+sub_in, endi, ncido, begi, endo, dimname, minindx, activei, bego, activeo, ncidi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_mindist, set_subgrid_dist, set_subgrid_glob

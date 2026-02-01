@@ -1,0 +1,23 @@
+sub_param, nlunits:2, ncohorts:5, nlake:11, ncols:3, nurban_md:10, gi:1, ncrop:7, glcmask:15, nglacier:13, npfts:4, nurban_tbd:8, nglacier_mec:14, nurban_hd:9, nwetland:12, nveg:6
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+integer , intent(in)  :: gi                   ! grid cell index
+integer , optional, intent(out) :: nlunits    ! number of landunits
+integer , optional, intent(out) :: ncols      ! number of columns
+integer , optional, intent(out) :: npfts      ! number of pfts
+integer , optional, intent(out) :: ncohorts   ! number of cohorts
+integer , optional, intent(out) :: nveg       ! number of vegetated pfts in naturally vegetated landunit
+integer , optional, intent(out) :: ncrop      ! number of crop pfts in crop landunit
+integer , optional, intent(out) :: nurban_tbd ! number of urban pfts (columns) in urban TBD landunit
+integer , optional, intent(out) :: nurban_hd ! number of urban pfts (columns) in urban HD landunit
+integer , optional, intent(out) :: nurban_md ! number of urban pfts (columns) in urban MD landunit
+integer , optional, intent(out) :: nlake      ! number of lake pfts (columns) in lake landunit
+integer , optional, intent(out) :: nwetland   ! number of wetland pfts (columns) in wetland landunit
+integer , optional, intent(out) :: nglacier   ! number of glacier pfts (columns) in glacier landunit
+integer , optional, intent(out) :: nglacier_mec  ! number of glacier_mec pfts (columns) in glacier_mec landunit
+integer , optional, intent(in)  :: glcmask  ! = 1 if glc requires surface mass balance in this gridcell

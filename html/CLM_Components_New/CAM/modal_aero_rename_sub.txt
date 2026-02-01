@@ -1,0 +1,7 @@
+sub_in, dqqcwdt, fromwhere, dotendqqcwrn, nstep, q, lchnk, qqcw, ncol, dotendrn, is_dorename_atik, deltat, dqdt, dorename_atik, qqcwsrflx, pdel, dqqcwdt_other, nsrflx, qsrflx, dqdt_other, jsrflx_rename, loffset
+sub_out, qqcwsrflx, dqdt, dotendqqcwrn, qsrflx, dqqcwdt, dotendrn
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

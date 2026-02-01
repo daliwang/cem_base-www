@@ -1,0 +1,7 @@
+sub_in, pdel, hybi, hyai, hybm, pmid, pint, hyam, ps0, ps
+sub_out, pmid, pint, pdel
+global_ro
+global_wo
+global_mod
+global_non
+calls

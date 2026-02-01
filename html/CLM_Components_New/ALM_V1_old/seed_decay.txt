@@ -1,0 +1,9 @@
+sub_param, currentPatch:1
+sub_out
+global_ro| currentPatch%seed_bank, seed_bank, NONE
+global_wo| currentPatch%seed_decay, seed_decay, NONE
+global_mod
+global_non
+calls
+readParams,
+type(patch),intent(inout),pointer :: currentPatch ! seeds go to these patches.

@@ -1,0 +1,7 @@
+sub_in, filter_pcropp, carbonflux_vars, carbonstate_vars, nitrogenflux_vars, nitrogenstate_vars, crop_vars, waterstate_vars, canopystate_vars, num_pcropp, cnstate_vars, temperature_vars
+sub_out
+global_ro, pft%gridcell, ecophyscon%leafcn, temperature_vars%t_a10_patch, temperature_vars%gdd020_patch, ecophyscon%leaf_long, crop_vars%gddtsoi_patch, temperature_vars%t_a10min_patch, pft%itype, crop_vars%gddplant_patch, temperature_vars%t_ref2m_min_patch, canopystate_vars%tlai_patch, ecophyscon%fertnitro, temperature_vars%gdd1020_patch, pft%column
+global_wo, cnstate_vars%bgtr_patch, cnstate_vars%lgsf_patch, cnstate_vars%hdidx_patch, cnstate_vars%cumvd_patch, cnstate_vars%offset_flag_patch, cnstate_vars%onset_flag_patch, cnstate_vars%bglfr_patch, nitrogenflux_vars%fert_patch, cnstate_vars%offset_counter_patch
+global_mod, cnstate_vars%gddmaturity_patch, nitrogenstate_vars%leafn_xfer_patch, cnstate_vars%harvdate_patch, nitrogenflux_vars%dwt_seedn_to_leaf_col, temperature_vars%gdd820_patch, carbonstate_vars%leafc_xfer_patch, cnstate_vars%croplive_patch, cnstate_vars%idop_patch, temperature_vars%t_a5min_patch, cnstate_vars%huileaf_patch, nitrogenflux_vars%fert_counter_patch, carbonflux_vars%dwt_seedc_to_leaf_col, cnstate_vars%huigrain_patch, cnstate_vars%onset_counter_patch, cnstate_vars%cropplant_patch, cnstate_vars%vf_patch
+global_non
+calls, vernalization, get_curr_date

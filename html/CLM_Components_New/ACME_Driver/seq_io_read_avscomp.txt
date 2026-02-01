@@ -1,0 +1,8 @@
+sub_in, pre, filename, dname, comp, flow
+sub_out
+global_ro, component_get_gsmap_cx
+global_wo
+global_mod
+global_non
+calls, pio_closefile, pio_read_darray, mct_aVect_getRList, shr_mpi_bcast, seq_comm_setptrs, shr_sys_abort, mct_string_clean, pio_initdecomp, pio_seterrorhandling, pio_freedecomp, mct_gsmap_OrderedPoints
+calls_ln, pio_seterrorhandling@1803, seq_comm_setptrs@1790, pio_seterrorhandling@1884, pio_closefile@1903, mct_gsmap_OrderedPoints@1791, pio_seterrorhandling@1805, mct_string_clean@1816, pio_freedecomp@1902, pio_initdecomp@1860, shr_sys_abort@1808, pio_seterrorhandling@1822, mct_aVect_getRList@1814, shr_mpi_bcast@1799, pio_initdecomp@1857, shr_sys_abort@1837, pio_read_darray@1865, shr_sys_abort@1846

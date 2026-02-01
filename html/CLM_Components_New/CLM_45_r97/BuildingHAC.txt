@@ -1,0 +1,7 @@
+sub_in, urbanparams_inst, bounds, num_urbanl, heat_on, filter_urbanl, cool_on, temperature_inst
+sub_out, heat_on, cool_on
+global_ro, t_building_max, urbpoi, t_building_min
+global_wo
+global_mod, t_building
+global_non
+calls

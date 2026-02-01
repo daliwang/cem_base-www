@@ -1,0 +1,9 @@
+sub_param, patchptr
+sub_out
+global_ro, patchptr%area, %n, %bl, %pft, %bdead, %br, %bsw, nextc, currentPatch%tallest, %bstore
+global_wo
+global_mod, patchptr%CWD_BG, patchptr%CWD_AG, patchptr%leaf_litter, patchptr%root_litter
+global_non, currentCohort%shorter, currentCohort%taller, patchptr, currentCohort%taller, currentCohort%shorter, currentCohort%shorter
+calls
+readParams,
+type (patch)  , pointer, intent(inout) :: patchptr

@@ -1,0 +1,9 @@
+sub_param, currentSite
+sub_out
+global_ro, %leaf_litter, %n, currentPatch%tallest, currentCohort%shorter, %area, currentSite%acc_NI, currentSite%water_memory, currentPatch%younger, currentSite%oldest_patch;, %CWD_AG, %bl
+global_wo, %litter_moisture
+global_mod, %fuel_sav, %fuel_bulkd, %sum_fuel, %livegrass, %fuel_frac, %fuel_eff_moist, %fuel_mef
+global_non
+calls
+readParams,
+type(site), intent(in),   pointer :: currentSite

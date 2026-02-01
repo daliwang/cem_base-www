@@ -1,0 +1,13 @@
+sub_param, bounds, waterstate_vars, num_nolakec, soilstate_vars, filter_nolakec
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, soilstate_vars%soilbeta_col
+calls, calc_beta_leepielke1992, endrun
+readParams,
+type(bounds_type)     , intent(in)    :: bounds    ! bounds
+integer               , intent(in)    :: num_nolakec
+integer               , intent(in)    :: filter_nolakec(:)
+type(soilstate_type)  , intent(inout) :: soilstate_vars
+type(waterstate_type) , intent(in)    :: waterstate_vars

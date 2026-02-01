@@ -1,0 +1,14 @@
+sub_param, auxvar_type:3, condition_id:5, values:7, gov_eqn_id:2, num_values:6, var_id:4, this:1
+sub_out
+global_ro
+global_wo| %aux_vars_bc, aux_vars_bc, NONE| %aux_vars_ss, aux_vars_ss, NONE
+global_mod
+global_non| this%sysofeqns, vsfm_soe, NONE
+calls, endrun
+readParams,
+PetscInt, intent(in)               :: gov_eqn_id
+PetscInt, intent(in)               :: auxvar_type
+PetscInt, intent(in)               :: var_id
+PetscInt, intent(in)               :: condition_id
+PetscInt, intent(in)               :: num_values
+PetscReal,intent(in)               :: values(:)

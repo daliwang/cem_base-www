@@ -1,0 +1,9 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, pepv%onset_counter, pns%livecrootn_xfer, pns%deadstemn_xfer, pns%livestemn_xfer, pns%frootn_xfer, pcs%deadcrootc_xfer, pcs%deadstemc_xfer, pns%deadcrootn_xfer, pftcon%woody, pcs%livecrootc_xfer, pcs%livestemc_xfer, pns%leafn_xfer, pepv%bgtr, pepv%onset_flag, pcs%leafc_xfer, pcs%frootc_xfer
+global_wo, pnf%livestemn_xfer_to_livestemn, pcf%deadstemc_xfer_to_deadstemc, pnf%livecrootn_xfer_to_livecrootn, pcf%leafc_xfer_to_leafc, pnf%frootn_xfer_to_frootn, pnf%deadcrootn_xfer_to_deadcrootn, pnf%deadstemn_xfer_to_deadstemn, pcf%frootc_xfer_to_frootc, pnf%leafn_xfer_to_leafn, pcf%livestemc_xfer_to_livestemc, pcf%deadcrootc_xfer_to_deadcrootc, pcf%livecrootc_xfer_to_livecrootc
+global_mod
+global_non, pft%itype
+calls
+
+Tree height: 3

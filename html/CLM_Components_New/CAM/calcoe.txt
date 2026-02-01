@@ -1,0 +1,7 @@
+sub_in, adjcoe, xz, adjin, c, tt
+sub_out, adjcoe
+global_ro
+global_wo
+global_mod
+global_non
+calls

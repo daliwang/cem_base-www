@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, ab, ROS_back, area, currentPatch, FD, nf, ROS_front
+global_wo, NF
+global_mod, frac_burnt, AB
+global_non
+calls

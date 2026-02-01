@@ -1,0 +1,7 @@
+sub_in, clay, xksat, bsw, watsat, ipedof, sand, sucsat
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pedotransf_cosby1984_table4, pedotransf_noilhan_lacarrere1995, endrun, pedotransf_cosby1984_table5

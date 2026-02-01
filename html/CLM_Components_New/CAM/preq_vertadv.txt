@@ -1,0 +1,7 @@
+sub_in, eta_dot_dp_deta, v_vadv, T, T_vadv, rpdel, v
+sub_out, v_vadv, T_vadv
+global_ro
+global_wo
+global_mod
+global_non
+calls

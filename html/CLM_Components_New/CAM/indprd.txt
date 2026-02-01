@@ -1,0 +1,7 @@
+sub_in, class, prod, ncol, y, rxt, nprod, extfrc
+sub_out, prod
+global_ro
+global_wo
+global_mod
+global_non
+calls

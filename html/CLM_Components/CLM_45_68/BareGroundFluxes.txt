@@ -1,0 +1,7 @@
+sub_in, num_nolakep, filter_nolakep, bounds
+sub_out
+global_ro, htvp, t_grnd, zii, qg, t_h2osfc, watsat, thm, forc_hgt_u_pft, forc_t, forc_th, snl, h2osoi_liq, frac_veg_nosno, forc_pbot, forc_q, z0mg, dqgdT, forc_u, thv, qg_soil, h2osoi_ice, qg_snow, dz, t_soisno, beta, z0qg, forc_v, forc_rho, qg_h2osfc, z0hg, soilbeta
+global_wo, qflx_evap_tot, psnsun_wc, cgrnd, btran, psnsun, ulrad, dlrad, qflx_ev_soil, psnsha_wp, eflx_sh_h2osfc, rh_ref2m_r, fpsn_wp, t_veg, eflx_sh_snow, ram1, psnsun_wp, rssha, taux, psnsha, psnsun_wj, fpsn_wj, eflx_sh_soil, qflx_ev_snow, qflx_ev_h2osfc, t_ref2m_r, fpsn, psnsha_wc, rssun, tauy, grnd_ch4_cond, rresis, rootr, eflx_sh_tot, psnsha_wj, fpsn_wc
+global_mod, qflx_evap_soi, rh_ref2m, cgrnds, q_ref2m, eflx_sh_grnd, cgrndl, t_ref2m
+global_non, landunit, endp, frac_sno, begp
+calls, QSat, FrictionVelocity, MoninObukIni

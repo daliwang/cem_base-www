@@ -1,0 +1,27 @@
+sub_param, Rfactor, betrtracer_vars, tracercoeff_vars, dz, ubj, tracerstate_vars, filter_soilc, dtime, tracerflux_vars, transp_pathway, waterflux_vars, jtops, h2osoi_liqvol, waterstate_vars, bgc_reaction, lbj, tracerboundarycond_vars, bounds, zi, num_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, bgc_reaction%do_tracer_equilibration, do_tracer_gw_diffusion, do_tracer_advection
+readParams,
+type(bounds_type)             , intent(in)    :: bounds
+integer                       , intent(in)    :: lbj, ubj
+integer                       , intent(in)    :: num_soilc                           ! number of columns in column filter_soilc
+integer                       , intent(in)    :: filter_soilc(:)                     ! column filter_soilc
+integer                       , intent(in)    :: jtops(bounds%begc: )                ! top label of each column
+type(betrtracer_type)         , intent(in)    :: betrtracer_vars
+real(r8)                      , intent(in)    :: dz(bounds%begc: ,lbj: )             !
+real(r8)                      , intent(in)    :: zi(bounds%begc: ,lbj-1: )           !
+real(r8)                      , intent(in)    :: h2osoi_liqvol(bounds%begc: , lbj: ) !
+real(r8)                      , intent(in)    :: Rfactor(bounds%begc: ,lbj: ,1: )    !rfactor for dual diffusive transport
+integer                       , intent(in)    :: transp_pathway(2)                   !the pathway vector
+real(r8)                      , intent(in)    :: dtime                               !model time step
+type(waterflux_type)          , intent(in)    :: waterflux_vars
+type(tracerboundarycond_type) , intent(in)    :: tracerboundarycond_vars
+class(bgc_reaction_type)      , intent(in)    :: bgc_reaction
+type(tracercoeff_type)        , intent(inout) :: tracercoeff_vars
+type(tracerstate_type)        , intent(inout) :: tracerstate_vars
+type(tracerflux_type)         , intent(inout) :: tracerflux_vars
+type(Waterstate_Type)         , intent(in)    :: waterstate_vars                     ! water state variables

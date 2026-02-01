@@ -1,0 +1,7 @@
+sub_in, lvrtwgt, zb, wgt4y, hn, zt, xl, rdz, dht, dhl, wiz, sigdp, hs, lamdp, z, jdp, hb, rdphi, nlon, dphi, limdrh, dhn, xr, dhs, wgt3y, wgt1z, phidp, dz, ht, hr, dhb, ys, lhrzwgt, kdp, kdim, kkdp, dhr, wgt2z, lam, wgt4x, lbasiy, wgt1y, wgt2x, wgt1x, wgt4z, hl, wgt2y, wgt3x, yn, idp, phi, limdrv, wgt3z
+sub_out, ys, wgt3z, dhb, hr, ht, wgt1z, wgt3y, yn, dhs, wgt3x, wgt2y, wgt4z, hl, dhn, xr, wgt1x, wgt2x, wgt1y, rdphi, wgt4x, hb, wgt2z, dhr, kkdp, hs, xl, rdz, dhl, dht, zt, hn, wgt4y, zb
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, whenieq

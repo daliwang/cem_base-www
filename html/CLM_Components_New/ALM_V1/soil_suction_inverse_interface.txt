@@ -1,0 +1,13 @@
+sub_param, s_target, smpsat, this, bsw, smp_target
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+class(soil_water_retention_curve_type), intent(in) :: this
+real(r8) , intent(in)  :: smp_target ! target soil suction, negative [mm]
+real(r8) , intent(in)  :: smpsat     ! minimum soil suction, positive [mm]
+real(r8) , intent(in)  :: bsw        ! shape parameter
+real(r8) , intent(out) :: s_target   ! relative saturation at which smp = smp_target [0,1]

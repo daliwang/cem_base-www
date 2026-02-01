@@ -1,0 +1,7 @@
+sub_in, dhsdT, filter_nolakec, xmf_h2osfc, fact, ubc, num_nolakec, c_h2osfc, lbc
+sub_out, xmf_h2osfc
+global_ro, frac_h2osfc, snl, h2osoi_ice, frac_sno_eff
+global_wo, qflx_h2osfc_to_ice
+global_mod, snow_depth, h2osfc, t_soisno, h2osno, int_snow, t_h2osfc
+global_non, dz, t_h2osfc_bef, tssbef
+calls, t_startf, t_stopf

@@ -1,0 +1,18 @@
+sub_param, isotopestate_vars:9, isotopeflux_vars:8, isotope:10, num_soilc:1, cnstate_vars:5, carbonflux_vars:6, filter_soilc:2, filter_soilp:4, carbonstate_vars:7, num_soilp:3
+sub_out
+global_ro| decomp_cascade_con%cascade_donor_pool, cascade_donor_pool, NONE| isotopestate_vars%decomp_cpools_vr_col, decomp_cpools_vr_col, NONE| carbonstate_vars%decomp_cpools_vr_col, decomp_cpools_vr_col, NONE
+global_wo
+global_mod| carbonflux_vars%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr_col, NONE| isotopeflux_vars%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr_col, NONE| carbonflux_vars%decomp_cascade_ctransfer_vr_col, decomp_cascade_ctransfer_vr_col, NONE| isotopeflux_vars%decomp_cascade_ctransfer_vr_col, decomp_cascade_ctransfer_vr_col, NONE
+global_non
+calls, CIsoFluxCalc, CNCIsoLitterToColumn
+readParams,
+integer                , intent(in)    :: num_soilc       ! number of soil columns filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(cnstate_type)     , intent(in)    :: cnstate_vars
+type(carbonflux_type)  , intent(in)    :: carbonflux_vars
+type(carbonstate_type) , intent(in)    :: carbonstate_vars
+type(carbonflux_type)  , intent(inout) :: isotopeflux_vars
+type(carbonstate_type) , intent(in)    :: isotopestate_vars
+character(len=*)       , intent(in)    :: isotope         ! 'c13' or 'c14'

@@ -1,0 +1,11 @@
+sub_param, wtlunit:3, my_li:1, ctype:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, add_column
+readParams,
+integer  , intent(in)    :: my_li   ! landunit index on which this column should be placed
+integer  , intent(in)    :: ctype   ! column type
+real(r8) , intent(in)    :: wtlunit ! weight of the column relative to the land unit

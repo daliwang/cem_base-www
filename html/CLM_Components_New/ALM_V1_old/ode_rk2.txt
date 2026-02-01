@@ -1,0 +1,13 @@
+sub_param, dt:5, odefun:1, y:6, t:4, neq:3, y0:2
+sub_out, y
+global_ro
+global_wo
+global_mod
+global_non
+calls, odefun, daxpy
+readParams,
+integer,  intent(in)  :: neq
+real(r8), intent(in)  :: y0(neq)
+real(r8), intent(in)  :: t
+real(r8), intent(in)  :: dt
+real(r8), intent(out) :: y(neq)

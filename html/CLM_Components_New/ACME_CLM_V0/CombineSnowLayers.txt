@@ -1,0 +1,7 @@
+sub_in, aerosol_vars, filter_snowc, waterflux_vars, temperature_vars, waterstate_vars, bounds, num_snowc
+sub_out
+global_ro, lun%urbpoi, col%landunit
+global_wo, col%z, waterstate_vars%frac_sno_col, waterstate_vars%int_snow_col, waterflux_vars%qflx_sl_top_soil_col
+global_mod, lun%itype, aerosol_vars%mss_ocpho_col, aerosol_vars%mss_bcphi_col, waterstate_vars%snow_depth_col, aerosol_vars%mss_ocphi_col, waterstate_vars%snw_rds_col, aerosol_vars%mss_dst4_col, aerosol_vars%mss_bcpho_col, aerosol_vars%mss_dst2_col, aerosol_vars%mss_dst1_col, col%zi, col%snl, waterstate_vars%frac_sno_eff_col, col%dz, temperature_vars%t_soisno_col, aerosol_vars%mss_dst3_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%h2osno_col, waterstate_vars%h2osoi_liq_col
+global_non
+calls, Combo

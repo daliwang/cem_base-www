@@ -1,0 +1,13 @@
+sub_param, filter_soilc:2, nitrogenflux_vars:5, carbonflux_vars:4, num_soilc:1, waterflux_vars:3
+sub_out
+global_ro| waterflux_vars%qflx_tran_veg_col, qflx_tran_veg, NONE| carbonflux_vars%annsum_npp_col, cannsum_npp, NONE| carbonflux_vars%lag_npp_col, col_lag_npp, NONE| waterflux_vars%qflx_evap_veg_col, qflx_evap_veg, NONE
+global_wo| nitrogenflux_vars%nfix_to_sminn_col, nfix_to_sminn, NONE
+global_mod
+global_non
+calls
+readParams,readCNNDynamicsParams
+integer                 , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                 , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(waterflux_type)     , intent(in)    :: waterflux_vars
+type(carbonflux_type)   , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type) , intent(inout) :: nitrogenflux_vars

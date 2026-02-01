@@ -1,0 +1,7 @@
+sub_in, rhoa_wet, cstate, t, rc, rlheat, p
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

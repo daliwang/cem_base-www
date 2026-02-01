@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, pcisof%hrv_deadcrootc_to_litter, pcisof%hrv_xsmrpool_to_atm, pcisof%hrv_livestemc_xfer_to_litter, pcisof%hrv_gresp_xfer_to_litter, pcisof%hrv_livecrootc_xfer_to_litter, pcisof%hrv_deadstemc_xfer_to_litter, pcisof%hrv_leafc_xfer_to_litter, pcisof%hrv_deadstemc_to_prod100c, ccisof%harvest_c_to_litr_lig_c, pcisof%hrv_deadcrootc_storage_to_litter, ccisof%harvest_c_to_litr_cel_c, pcisof%hrv_livestemc_to_litter, ccisof%harvest_c_to_cwdc, ccisof%harvest_c_to_litr_met_c, pcisof%hrv_deadstemc_storage_to_litter, pcisof%hrv_leafc_to_litter, pcisof%hrv_gresp_storage_to_litter, pcisof%hrv_livestemc_storage_to_litter, pcisof%hrv_frootc_to_litter, pcisof%hrv_frootc_xfer_to_litter, pcisof%hrv_deadcrootc_xfer_to_litter, pcisof%hrv_livecrootc_storage_to_litter, pcisof%hrv_deadstemc_to_prod10c, pcisof%hrv_leafc_storage_to_litter, pcisof%hrv_frootc_storage_to_litter, pcisof%hrv_livecrootc_to_litter
+global_wo
+global_mod, pcisos%livestemc_storage, pcisos%xsmrpool, pcisos%livecrootc_xfer, pcisos%leafc, pcisos%deadcrootc_storage, pcisos%livestemc, pcisos%gresp_storage, pcisos%leafc_xfer, pcisos%leafc_storage, pcisos%frootc_xfer, pcisos%frootc_storage, pcisos%livecrootc, pcisos%deadstemc_storage, pcisos%deadstemc, pcisos%deadstemc_xfer, pcisos%frootc, pcisos%deadcrootc_xfer, pcisos%livestemc_xfer, ccisos%decomp_cpools_vr, pcisos%gresp_xfer, pcisos%deadcrootc, pcisos%livecrootc_storage
+global_non, clm3%g%l%c%p%pcf, clm3%g%l%c%p%pc14f, clm3%g%l%c%ccs, clm3%g%l%c%p%pc13s, clm3%g%l%c%cc13s, clm3%g%l%c%p%pc13f, clm3%g%l%c%p%pc14s, clm3%g%l%c%p%pcs, clm3%g%l%c%ccf, clm3%g%l%c%cc14s, clm3%g%l%c%cc14f, clm3%g%l%c%cc13f
+calls, endrun
+
+Tree height: 1
+0 , endrun, 

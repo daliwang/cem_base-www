@@ -1,0 +1,7 @@
+sub_in, n0, np1, qsplit, tl
+sub_out, n0, np1
+global_ro
+global_wo
+global_mod
+global_non
+calls

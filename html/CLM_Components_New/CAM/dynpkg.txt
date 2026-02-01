@@ -1,0 +1,7 @@
+sub_in, fu, flx_net, adv_state, cwava, t2, etamid, ztodt, fv, detam
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_startf, t_stopf, dyndrv, scan2, scandyn

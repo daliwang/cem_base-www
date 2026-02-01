@@ -1,0 +1,7 @@
+sub_in, no_mwi, o2_mwi, co2_mwi, o1_mwi, o3_mwi, n2_mwi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

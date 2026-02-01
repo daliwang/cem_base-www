@@ -1,0 +1,9 @@
+sub_param, cs_pnt:1
+sub_out
+global_ro| currentSite%oldest_patch, currentPatch, NONE| currentSite%youngest_patch, currentPatch, NONE| currentPatch%older, currentPatch, NONE| currentPatch%younger, currentPatch, NONE| %area, area, NONE
+global_wo
+global_mod
+global_non| cs_pnt, currentSite, NONE
+calls, fuse_2_patches
+readParams,
+type(site), target, intent(in) :: cs_pnt

@@ -1,0 +1,7 @@
+sub_in, thlp2_sfc, vp2_sfc, sclrp2_sfc, wp2_sfc, err_code, sclrprtp_sfc, rtpthlp_sfc, sclrpthlp_sfc, rtp2_sfc, up2_sfc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, check_nan

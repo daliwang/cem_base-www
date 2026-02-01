@@ -1,0 +1,7 @@
+sub_in, canyon_hwr, coszen, zen, sdir_shadewall, sdir, sdir_road, num_urbanl, bounds, sdir_sunwall, filter_urbanl
+sub_out, sdir_sunwall, sdir_shadewall, sdir_road
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

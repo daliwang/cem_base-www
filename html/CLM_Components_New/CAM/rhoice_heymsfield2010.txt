@@ -1,0 +1,7 @@
+sub_in, aratelem, igroup, rc, rhoice, carma, rho, regime
+sub_out, aratelem, rc, rho
+global_ro
+global_wo
+global_mod
+global_non
+calls

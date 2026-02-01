@@ -1,0 +1,7 @@
+sub_in, filter_nosnowc, num_snowc, filter_snowc, ubc, lbc, num_nosnowc
+sub_out
+global_ro, qflx_snwcp_ice, t_soisno, dz, h2osno, snl, h2osoi_liq, h2osoi_ice, do_capsnow, qflx_snofrz_lyr, qflx_snow_grnd, frac_sno_eff
+global_wo, dTdz_top, snw_rds_top, sno_liq_top, snot_top
+global_mod, snw_rds
+global_non, t_grnd
+calls

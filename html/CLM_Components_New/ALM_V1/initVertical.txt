@@ -1,0 +1,12 @@
+sub_param, snow_depth, bounds, thick_wall, thick_roof
+sub_out
+global_ro, col%landunit, col%gridcell
+global_wo, col%z, col%micro_sigma, col%n_melt
+global_mod, col%dz_lake, col%dz, col%lakedepth, col%z_lake, col%topo_slope, col%zi, col%snl, col%topo_std
+global_non
+calls, getfil, ncd_pio_openfile, shr_sys_abort, ncd_io, ncd_pio_closefile, ncd_inqdlen
+readParams,
+type(bounds_type)   , intent(in)    :: bounds
+real(r8)            , intent(in)    :: snow_depth(bounds%begc:)
+real(r8)            , intent(in)    :: thick_wall(bounds%begl:)
+real(r8)            , intent(in)    :: thick_roof(bounds%begl:)

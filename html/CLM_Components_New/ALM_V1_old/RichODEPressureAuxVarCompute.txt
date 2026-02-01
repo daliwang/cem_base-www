@@ -1,0 +1,8 @@
+sub_param, this:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, PorosityFunctionComputation, Viscosity, SatFunc_PressToSat, SatFunc_PressToRelPerm, Density
+readParams,

@@ -1,0 +1,10 @@
+sub_in, par_z, je, cair, gb_mol, c, iv, p, ci, rh_can, lmr_z, oair
+sub_out, fval, gs_mol
+global_ro, ppsyns%theta_cj, ppsyns%cp, ppsyns%bbb, ppsyns%qe, ppsyns%c3flag, ppsyns%tpu_z, ppsyns%vcmax_z, ppsyns%mbb, ppsyns%kp_z, a2l_downscaled_col%forc_pbot, ppsyns%kc, ppsyns%ko
+global_wo
+global_mod, ppsyns%ag, ppsyns%an, ppsyns%ac, ppsyns%ap, ppsyns%aj
+global_non
+calls, quadratic
+
+Tree height: 2
+0 , quadratic, quadratic, quadratic, 

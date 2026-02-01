@@ -1,0 +1,16 @@
+sub_param, temperature_vars, waterstate_vars, num_snowc, filter_snowc, filter_nosnowc, bounds, num_nosnowc, waterflux_vars
+sub_out
+global_ro, waterstate_vars%frac_sno_eff_col, col%dz, temperature_vars%t_soisno_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%h2osno_col, waterflux_vars%qflx_snofrz_lyr_col, waterflux_vars%qflx_snwcp_ice_col, waterstate_vars%h2osoi_liq_col, col%snl, waterstate_vars%do_capsnow_col, waterflux_vars%qflx_snow_grnd_col
+global_wo, waterstate_vars%snw_rds_top_col, temperature_vars%snot_top_col, waterstate_vars%sno_liq_top_col, temperature_vars%dTdz_top_col
+global_mod, waterstate_vars%snw_rds_col
+global_non, temperature_vars%t_grnd_col
+calls, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_snowc         ! number of column snow points in column filter
+integer                , intent(in)    :: filter_snowc(:)   ! column filter for snow points
+integer                , intent(in)    :: num_nosnowc       ! number of column non-snow points in column filter
+integer                , intent(in)    :: filter_nosnowc(:) ! column filter for non-snow points
+type(waterflux_type)   , intent(in)    :: waterflux_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(temperature_type) , intent(inout) :: temperature_vars

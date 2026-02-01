@@ -1,0 +1,7 @@
+sub_in, filter_natvegp, kyr, num_natvegp, bounds
+sub_out
+global_ro, t_mo_min, agdd
+global_wo
+global_mod, agdd20, tmomin20
+global_non, fpcgrid
+calls, Establishment, Light, BuildNatVegFilter

@@ -1,0 +1,7 @@
+sub_in, ncol, dgn_awet, isprx, m, scavcoefvol, scavcoefnum
+sub_out, scavcoefvol, scavcoefnum
+global_ro
+global_wo
+global_mod
+global_non
+calls

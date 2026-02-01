@@ -1,0 +1,7 @@
+sub_in, filter_soilp, cnveg_carbonstate_inst, num_soilp, cnveg_nitrogenflux_inst, cnveg_carbonflux_inst, cnveg_state_inst
+sub_out
+global_ro, leafc, leafcn, frootc, bglfr, lflitcn, frootcn, ivt
+global_wo, frootn_to_litter, leafn_to_retransn
+global_mod, leafn_to_litter, frootc_to_litter, leafc_to_litter
+global_non
+calls

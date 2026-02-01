@@ -1,0 +1,7 @@
+sub_in, do_aitacc_transfer_in, do_adjust_in, pbuf, deltat, state, ptend
+sub_out
+global_ro, q, pdel
+global_wo, dotend
+global_mod, dqdt, fldcw
+global_non, state%t, state%pmid
+calls, pbuf_get_field, endrun, outfld

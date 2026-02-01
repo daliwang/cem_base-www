@@ -1,0 +1,9 @@
+sub_in, num_urbanc, num_hydrologyc, bounds, filter_urbanc, filter_hydrologyc
+sub_out
+global_ro, pwf_a%qflx_dew_snow, pwf_a%qflx_dew_grnd, cps%dz, cps%z, cps%sucsat, cps%frac_h2osfc, cps%snl, cps%watsat, cps%zi, cws%qcharge, cps%bsw, ces%t_soisno, col%itype
+global_wo, cwf%qflx_drain_perched, cwf%qflx_rsub_sat, cws%zwt_perched, cwf%qflx_drain
+global_mod, cws%zwt, cws%wa, cws%h2osoi_liq, cws%h2osoi_vol, pwf_a%qflx_sub_snow, cws%h2osoi_ice, cws%frost_table
+global_non, cwf%qflx_deficit, cps%eff_porosity, cws%h2osfc, cps%hksat
+calls
+
+Tree height: 8

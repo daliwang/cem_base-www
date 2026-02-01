@@ -1,0 +1,7 @@
+sub_in, pgdall, seten, md, ed, nstep, dsubcld, dp, ncnst, mx, pguall, dqdt, icwd, icwu, eu, il1g, lchnk, jt, il2g, du, mu, ncol, domomtran, q, dt, ideep
+sub_out, seten, pgdall, dqdt, icwd, pguall, icwu
+global_ro
+global_wo
+global_mod
+global_non
+calls

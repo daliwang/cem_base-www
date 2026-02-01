@@ -1,0 +1,16 @@
+sub_in, num_urbanc, filter_urbanc, filter_urbanp, num_urbanl, filter_nourbanl, filter_urbanl, num_nourbanl, bounds, num_urbanp
+sub_out
+global_ro, a2l_not_downscaled_gcell%forc_q, a2l_not_downscaled_gcell%forc_pbot, a2l_not_downscaled_gcell%forc_th, lun%wtlunit_roof, cws%soilalpha_u, cws%h2osoi_ice, a2l_not_downscaled_gcell%forc_rho, cps%rootr_road_perv, cws%qg, cws%dqgdT, cps%snow_depth, lun%gridcell, pft%gridcell, pps%forc_hgt_u_pft, clm_a2l%forc_u, cps%htvp, pft%column, pps%forc_hgt_t_pft, lun%ht_roof, a2l_not_downscaled_gcell%forc_t, lef%eflx_traffic_factor, lun%z_d_town, bounds%begl, clm_a2l%forc_v, lun%wtroad_perv, cef%eflx_urban_ac, cws%h2osoi_liq, lun%canyon_hwr, urban_params%wind_hgt_canyon, cef%eflx_urban_heat, ces%t_soisno, lun%z_0_town, lun%pfti, ces%t_grnd, col%itype, pft%landunit
+global_wo, pef%eflx_sh_h2osfc, lef%eflx_traffic, pef%eflx_sh_snow, pef%eflx_sh_tot_u, pes%t_veg, pmf%tauy, pef%dlrad, pwf%qflx_evap_veg, pcf%psnsun, pef%cgrnd, pes%t_ref2m_u, pps%ram1, pef%eflx_sh_soil, lef%eflx_heat_from_ac, pps%rootr, lps%t_building, pef%ulrad, pcf%psnsha, pmf%taux, pes%rh_ref2m_u, pwf%qflx_evap_soi
+global_mod, pef%cgrndl, lps%taf, lef%eflx_wasteheat, pef%cgrnds, pef%eflx_sh_grnd, pes%rh_ref2m, pwf%qflx_tran_veg, pes%q_ref2m, lps%qaf, pef%eflx_sh_tot, pes%t_ref2m
+global_non, lun%coli, grc%londeg, lun%colf, cps%frac_sno, cws%h2osno, lun%npfts, pwf%qflx_evap_tot, cps%snl, bounds%endl, lun%pftf
+calls, QSat, get_curr_date, FrictionVelocity, MoninObukIni, endrun
+
+Tree height: 21
+0 , get_curr_date, 
+1-, MoninObukIni, 
+6-, endrun, 
+19-, QSat, 
+19+, endrun, endrun, 
+2+, FrictionVelocity, 
+1+, endrun, endrun, 

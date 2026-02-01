@@ -1,0 +1,8 @@
+sub_in, comp, rc
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_GridCompSetEntryPoint
+calls_ln, ESMF_GridCompSetEntryPoint@54, ESMF_GridCompSetEntryPoint@50, ESMF_GridCompSetEntryPoint@46

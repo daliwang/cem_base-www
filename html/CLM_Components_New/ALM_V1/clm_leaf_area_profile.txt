@@ -1,0 +1,11 @@
+sub_param, canopystate_vars, cs_t, waterstate_vars
+sub_out
+global_ro, EDecophyscon%crown, %total_canopy_area, %column, %hite, ecophyscon%vertical_canopy_frac, %area, %canopy_layer, waterstate_vars%frac_sno_eff_col, currentPatch%younger, currentSite%oldest_patch, %clm_pno, waterstate_vars%snow_depth_col, currentPatch%shortest, currentCohort%taller, %pft
+global_wo, %present, canopystate_vars%frac_veg_nosno_alb_patch, canopystate_vars%tsai_patch
+global_mod, %ncan, waterstate_vars%snowdp_col, %lai, canopystate_vars%tlai_patch, canopystate_vars%elai_patch, canopystate_vars%esai_patch, %sai, %nrad, 1:currentPatch%nrad, %tlai_profile, %elai_profile, !currentPatch%elai_profile, %canopy_area_profile, %NV, %canopy_layer_lai, %treesai, %treelai, !currentPatch%esai_profile, %esai_profile, %canopy_area, %c_area, %tsai_profile
+global_non, cs_t
+calls
+readParams,
+type (site)            , intent(inout),target :: cs_t
+type(waterstate_type)  , intent(inout)        :: waterstate_vars
+type(canopystate_type) , intent(inout)        :: canopystate_vars

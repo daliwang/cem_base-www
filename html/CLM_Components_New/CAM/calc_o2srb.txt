@@ -1,0 +1,7 @@
+sub_in, tsrb, tlev, nid, nlev, o2col, xscho2
+sub_out, xscho2, tsrb
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, effxs

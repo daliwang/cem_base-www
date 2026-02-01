@@ -1,0 +1,16 @@
+sub_param, filter_soilc:3, num_soilc:2, centurybgc_vars:8, tracerstate_vars:6, carbonstate_vars:4, betrtracer_vars:7, bounds:1, nitrogenstate_vars:5
+sub_out
+global_ro| centurybgc_vars%cwd, cwd, NONE| betrtracer_vars%id_trc_no3x, id_trc_no3x, NONE| tracerstate_vars%tracer_conc_solid_passive_col, tracer_conc_solid_passive, NONE| nitrogenstate_vars%decomp_npools_vr_col, decomp_npools_vr, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile, NONE| carbonstate_vars%decomp_cpools_vr_col, decomp_cpools_vr, NONE| betrtracer_vars%id_trc_nh3x, id_trc_nh3x, NONE
+global_wo| nitrogenstate_vars%sminn_vr_col, sminn_vr_col, NONE
+global_mod| nitrogenstate_vars%smin_no3_vr_col, smin_no3_vr_col, NONE| nitrogenstate_vars%smin_nh4_vr_col, smin_nh4_vr_col, NONE
+global_non| centurybgc_vars%lit2, lit2, NONE| centurybgc_vars%som2, som2, NONE| centurybgc_vars%som1, som1, NONE| centurybgc_vars%lit1, lit1, NONE| centurybgc_vars%som3, som3, NONE| centurybgc_vars%c_loc, c_loc, NONE| centurybgc_vars%nelms, nelms, NONE| centurybgc_vars%n_loc, n_loc, NONE| centurybgc_vars%lit3, lit3, NONE
+calls
+readParams,
+type(bounds_type)        , intent(in) :: bounds                ! bounds
+integer                  , intent(in) :: num_soilc             ! number of columns in column filter
+integer                  , intent(in) :: filter_soilc(:)       ! column filter
+type(tracerstate_type)   , intent(in) :: tracerstate_vars
+type(centurybgc_type)    , intent(in) :: centurybgc_vars
+type(betrtracer_type)    , intent(in) :: betrtracer_vars       ! betr configuration information
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars !

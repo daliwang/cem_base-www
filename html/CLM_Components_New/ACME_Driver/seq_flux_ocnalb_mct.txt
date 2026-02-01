@@ -1,0 +1,8 @@
+sub_in, ocn, infodata, fractions_o, xao_o
+sub_out
+global_ro, rAttr, component_get_dom_cx
+global_wo
+global_mod
+global_non
+calls, seq_infodata_GetData, seq_infodata_getData, shr_orb_decl
+calls_ln, seq_infodata_GetData@525, seq_infodata_getData@470, shr_orb_decl@529

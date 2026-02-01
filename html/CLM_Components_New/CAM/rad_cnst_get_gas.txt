@@ -1,0 +1,7 @@
+sub_in, state, pbuf, mmr, list_idx, gasname
+sub_out
+global_ro, gas
+global_wo
+global_mod
+global_non, zero_cols, state%q, gaslist
+calls, endrun, pbuf_get_field

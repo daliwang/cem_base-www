@@ -1,0 +1,7 @@
+sub_in, filter_hydrologyc, soilstate_vars, temperature_vars, num_urbanc, bounds, soilhydrology_vars, waterflux_vars, filter_urbanc, waterstate_vars, num_hydrologyc
+sub_out
+global_ro, soilhydrology_vars%hkdepth_col, soilstate_vars%hksat_col, soilstate_vars%bsw_col, col%dz, soilstate_vars%watsat_col, soilhydrology_vars%h2osfcflag, col%zi, col%z, soilhydrology_vars%max_moist_col, soilhydrology_vars%ice_col, soilhydrology_vars%moist_col, soilhydrology_vars%c_param_col, temperature_vars%t_soisno_col, soilstate_vars%hk_l_col, soilhydrology_vars%origflag, soilhydrology_vars%Wsvic_col, soilstate_vars%sucsat_col, soilhydrology_vars%ds_col, waterflux_vars%qflx_snwcp_liq_col, soilhydrology_vars%dsmax_col, soilstate_vars%eff_porosity_col, col%topo_slope
+global_wo, waterflux_vars%qflx_drain_col, waterflux_vars%qflx_qrgwl_col
+global_mod, waterflux_vars%qflx_snwcp_ice_col, soilhydrology_vars%zwt_perched_col, waterstate_vars%h2osoi_liq_col, waterstate_vars%h2osfc_col, soilhydrology_vars%icefrac_col, waterstate_vars%h2osoi_ice_col, soilhydrology_vars%wa_col, soilhydrology_vars%zwt_col, soilhydrology_vars%frost_table_col, waterflux_vars%qflx_rsub_sat_col, waterflux_vars%qflx_drain_perched_col
+global_non, soilhydrology_vars%depth_col, soilhydrology_vars%qcharge_col, col%snl, waterflux_vars%qflx_sub_snow_col, waterflux_vars%qflx_dew_grnd_col, waterflux_vars%qflx_dew_snow_col
+calls, endrun

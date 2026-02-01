@@ -1,0 +1,18 @@
+sub_param, nitrogenflux_vars, lbj, ubj, filter_soilc, num_soilc, betrtracer_vars, bounds, yf, tracerflux_vars, carbonflux_vars, centurybgc_vars
+sub_out, yf
+global_ro, carbonflux_vars%bgc_cpool_ext_inputs_vr_col, nitrogenflux_vars%bgc_npool_ext_inputs_vr_col, centurybgc_vars%n_loc, centurybgc_vars%c_loc, centurybgc_vars%nelms
+global_wo
+global_mod
+global_non, tracerflux_vars%tracer_flx_netpro_vr_col
+calls
+readParams,
+type(bounds_type)       , intent(in)    :: bounds                                                        ! bounds
+integer                 , intent(in)    :: num_soilc                                                     ! number of columns in column filter
+integer                 , intent(in)    :: filter_soilc(:)                                               ! column filter
+integer                 , intent(in)    :: lbj, ubj
+type(carbonflux_type)   , intent(in)    :: carbonflux_vars
+type(nitrogenflux_type) , intent(in)    :: nitrogenflux_vars
+type(betrtracer_type)   , intent(in)    :: betrtracer_vars                                               ! betr configuration information
+type(centurybgc_type)   , intent(in)    :: centurybgc_vars
+type(tracerflux_type)   , intent(inout) :: tracerflux_vars
+real(r8)                , intent(inout) :: yf(centurybgc_vars%nstvars, bounds%begc:bounds%endc, lbj:ubj) !

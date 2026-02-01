@@ -1,0 +1,10 @@
+sub_in, minindx, ncido, endi, bego, dimname, activeo, endo, ncidi, activei, begi
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, set_mindist, set_subgrid_dist, set_subgrid_glob
+
+Tree height: 2
+0 , set_subgrid_glob, set_subgrid_dist, set_mindist, 

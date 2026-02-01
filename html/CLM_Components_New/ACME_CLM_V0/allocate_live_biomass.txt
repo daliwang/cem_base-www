@@ -1,0 +1,7 @@
+sub_in, cc_p
+sub_out
+global_ro, currentcohort%hite, ecophyscon%froot_leaf, currentcohort%pft, cc_p%bdead, EDecophyscon%sapwood_ratio, cc_p%balive, currentcohort%balive
+global_wo, currentcohort%status_coh, currentcohort%bl, cc_p%b
+global_mod, currentcohort%laimemory, currentcohort%br, currentcohort%bsw
+global_non, cc_p
+calls

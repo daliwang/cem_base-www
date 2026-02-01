@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch, currentCohort
+global_wo, status_coh, leaf_litter
+global_mod, bl, bstore, laimemory, balive
+global_non
+calls

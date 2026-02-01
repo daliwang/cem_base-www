@@ -1,0 +1,9 @@
+sub_param, NLFilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, relavu, shr_nl_find_group_name, opnfil, shr_mpi_bcast
+readParams,CanopyHydrology_readnl
+character(len=*), intent(IN) :: NLFilename ! Namelist filename

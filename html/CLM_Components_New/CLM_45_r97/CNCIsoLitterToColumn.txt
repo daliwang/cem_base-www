@@ -1,0 +1,7 @@
+sub_in, soilbiogeochem_state_inst, iso_cnveg_carbonflux_inst, num_soilc, filter_soilc
+sub_out
+global_ro, frootc_to_litter, lf_fcel, leaf_prof, fr_flab, leafc_to_litter, lf_flig, fr_fcel, ivt, wtcol, froot_prof, fr_flig, lf_flab
+global_wo
+global_mod, phenology_c_to_litr_cel_c, phenology_c_to_litr_lig_c, phenology_c_to_litr_met_c
+global_non
+calls

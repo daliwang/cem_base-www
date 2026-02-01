@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| %pft, pft, NONE| %dbh, dbh, NONE| %tau_l, tau_l, NONE| currentCohort%shorter;, currentCohort, NONE| currentPatch%tallest;, currentCohort, NONE| EDecophyscon%bark_scaler, bark_scaler, NONE| >currentPatch%younger;, younger;, NONE
+global_wo| %cambial_mort, cambial_mort, NONE
+global_mod| currentSite%oldest_patch;, currentPatch, NONE
+global_non
+calls
+readParams,rate_of_spread
+type(site), intent(in), pointer   :: currentSite

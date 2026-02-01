@@ -1,0 +1,10 @@
+sub_in, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, pcisof%hrv_deadcrootc_to_litter, pcisof%hrv_livestemc_xfer_to_litter, pcisof%hrv_gresp_xfer_to_litter, col%npfts, pcisof%hrv_livecrootc_xfer_to_litter, pcisof%hrv_deadstemc_xfer_to_litter, pcisof%hrv_deadstemc_to_prod100c, pcisof%hrv_leafc_xfer_to_litter, pcisof%hrv_deadcrootc_storage_to_litter, pftcon%lf_flig, pftcon%fr_fcel, pftcon%fr_flig, pftcon%lf_flab, pftcon%fr_flab, pps%froot_prof, pcisof%hrv_livestemc_to_litter, pftcon%lf_fcel, pcisof%hrv_deadstemc_storage_to_litter, pcisof%hrv_leafc_to_litter, pcisof%hrv_gresp_storage_to_litter, pcisof%hrv_livestemc_storage_to_litter, pps%stem_prof, pcisof%hrv_frootc_to_litter, pps%croot_prof, pft%wtcol, pcisof%hrv_frootc_xfer_to_litter, pcisof%hrv_deadstemc_to_prod10c, pcisof%hrv_deadcrootc_xfer_to_litter, pcisof%hrv_livecrootc_storage_to_litter, pcisof%hrv_leafc_storage_to_litter, pcisof%hrv_frootc_storage_to_litter, pcisof%hrv_livecrootc_to_litter, pps%leaf_prof, col%pfti, pft%itype
+global_wo
+global_mod, ccisof%hrv_deadstemc_to_prod100c, ccisof%harvest_c_to_litr_lig_c, ccisof%hrv_deadstemc_to_prod10c, ccisof%harvest_c_to_litr_met_c, ccisof%harvest_c_to_litr_cel_c, ccisof%harvest_c_to_cwdc
+global_non, cc14f, cc13f, pc14f, pc13f
+calls, endrun
+
+Tree height: 3
+0 , endrun, 

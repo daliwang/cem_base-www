@@ -1,0 +1,7 @@
+sub_in, doalb, num_nolakep, filter_nolakep, bounds
+sub_out
+global_ro, snow_depth, frac_sno
+global_wo, frac_veg_nosno_alb
+global_mod, htop, tlai, hbot, tsai, elai, esai
+global_non
+calls

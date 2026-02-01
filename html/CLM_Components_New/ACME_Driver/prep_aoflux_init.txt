@@ -1,0 +1,8 @@
+sub_in, fractions_ox, fractions_ax, infodata
+sub_out
+global_ro, component_get_c2x_cx, component_get_c2x_cx
+global_wo
+global_mod
+global_non
+calls, mct_aVect_zero, seq_infodata_getdata, mct_aVect_init, seq_comm_getdata
+calls_ln, mct_aVect_zero@107, mct_aVect_init@113, seq_infodata_getdata@79, mct_aVect_zero@114, mct_aVect_zero@102, mct_aVect_init@101, mct_aVect_init@106, seq_comm_getdata@82

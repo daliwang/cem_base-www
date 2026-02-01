@@ -1,0 +1,8 @@
+sub_param, meshes, nmesh, vsfm_soe
+sub_out
+global_ro, goveq_richards_pres%mesh%ncells
+global_wo, ConditionNew%value, vsfm_soe%soe_auxvars_bc_ncells, vsfm_soe%aux_vars_in, vsfm_soe%soe_auxvars_bc_offset, vsfm_soe%aux_vars_bc, vsfm_soe%num_auxvars_ss, ConditionNew%itype, vsfm_soe%soe_auxvars_ss_offset, vsfm_soe%aux_vars_ss, vsfm_soe%soe_auxvars_ss_ncells, ConditionNew%name, vsfm_soe%name, ConditionNew%units, goveq_richards_pres%nvars_needed_from_other_goveqns, vsfm_soe%num_auxvars_bc, vsfm_soe%num_auxvars_in, vsfm_soe%ngoveqns, goveq_richards_pres%id_in_list, ConditionNew%region_itype
+global_mod
+global_non, ConditionNew, goveq_richards_pres
+calls, ConditionListAddCondition, goveq_richards_pres%Setup, goveq_richards_pres%AllocateAuxVars, MeshCreateConnectionSet, goveq_richards_pres%NumCellsInConditions, VecCreateSeq, goveq_richards_pres%SetDensityType, vsfm_soe%aux_vars_ss, vsfm_soe%aux_vars_bc, SOESetMeshesOfGoveqns, vsfm_soe%aux_vars_in
+readParams,

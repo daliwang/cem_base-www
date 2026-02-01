@@ -1,0 +1,7 @@
+sub_in, aero_ndx, zstar, temp, ncol, radius_nat, lchnk, timestep, press, ad, hno3_cond
+sub_out, hno3_cond
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

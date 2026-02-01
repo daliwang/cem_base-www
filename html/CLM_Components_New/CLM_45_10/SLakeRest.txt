@@ -1,0 +1,17 @@
+sub_in, flag, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, clm3%g, clm3%g%l%c%p, clm3%g%l, clm3%g%l%c
+calls, ncd_io, ncd_defvar
+
+Tree height: 11
+2+, ncd_io, 
+4+, ncd_io, 
+6+, ncd_io, 
+8+, ncd_io, 
+7+, ncd_defvar, 
+5+, ncd_defvar, 
+3+, ncd_defvar, 
+1+, ncd_defvar, 

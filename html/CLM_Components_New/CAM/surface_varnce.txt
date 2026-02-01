@@ -1,0 +1,7 @@
+sub_in, sclrp2_sfc, thlp2_sfc, upwp_sfc, wprtp_sfc, rtpthlp_sfc, wpthlp_sfc, um_sfc, err_code, vm_sfc, rtp2_sfc, vp2_sfc, sclrprtp_sfc, wp2_sfc, wpsclrp_sfc, sclrpthlp_sfc, vpwp_sfc, up2_sfc
+sub_out, vp2_sfc, wp2_sfc, sclrprtp_sfc, rtpthlp_sfc, sclrpthlp_sfc, err_code, up2_sfc, sclrp2_sfc, thlp2_sfc, rtp2_sfc
+global_ro
+global_wo
+global_mod
+global_non
+calls, surface_varnce_check

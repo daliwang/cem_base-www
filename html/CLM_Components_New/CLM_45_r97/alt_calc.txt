@@ -1,0 +1,7 @@
+sub_in, filter_soilc, num_soilc, canopystate_inst, temperature_inst
+sub_out
+global_ro, t_soisno
+global_wo, altmax_lastyear, altmax_lastyear_indx
+global_mod, altmax_indx, alt, alt_indx, altmax
+global_non
+calls, get_curr_date

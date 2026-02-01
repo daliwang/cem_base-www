@@ -1,0 +1,7 @@
+sub_in, pdelb, ps, nlon
+sub_out, pdelb
+global_ro
+global_wo
+global_mod
+global_non
+calls

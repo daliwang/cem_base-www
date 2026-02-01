@@ -1,0 +1,7 @@
+sub_in, iopfile_in, scmlat_in, scm_diurnal_avg_in, single_column_in, scm_iop_srf_prop_in, scm_relaxation_in, scm_clubb_iop_name_in, scm_crm_mode_in, scmlon_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, wrap_inq_varid, wrap_inq_dimlen, wrap_inq_dimid, shr_scam_GetCloseLatLon, wrap_open, endrun

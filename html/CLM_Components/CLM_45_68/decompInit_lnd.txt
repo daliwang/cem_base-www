@@ -1,0 +1,7 @@
+sub_in, amask, lni, lnj
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_proc_bounds, mct_gsMap_init, shr_sys_flush, endrun

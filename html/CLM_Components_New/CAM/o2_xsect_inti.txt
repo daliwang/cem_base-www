@@ -1,0 +1,7 @@
+sub_in, o2_xsect_file
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, inter_inti, inter2, cam_pio_openfile, getfil, pio_closefile

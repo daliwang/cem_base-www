@@ -1,0 +1,12 @@
+sub_param, t_K, vis, dvis_dp, p
+sub_out, dvis_dp, vis
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+PetscReal, intent(in)  :: p
+PetscReal, intent(in)  :: t_K
+PetscReal, intent(out) :: vis
+PetscReal, intent(out) :: dvis_dp

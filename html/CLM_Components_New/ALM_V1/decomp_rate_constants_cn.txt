@@ -1,0 +1,17 @@
+sub_param, num_soilc, carbonflux_vars, ch4_vars, temperature_vars, filter_soilc, cnstate_vars, soilstate_vars, bounds, canopystate_vars
+sub_out
+global_ro, canopystate_vars%alt_indx_col, temperature_vars%t_soisno_col, ch4_vars%o2stress_sat_col, ch4_vars%finundated_col, soilstate_vars%soilpsi_col, soilstate_vars%sucsat_col, ch4_vars%o2stress_unsat_col, col%dz
+global_wo
+global_mod, cnstate_vars%scalaravg_col, carbonflux_vars%w_scalar_col, carbonflux_vars%t_scalar_col, carbonflux_vars%o_scalar_col, carbonflux_vars%decomp_k_col
+global_non
+calls, get_curr_date
+readParams,readCNDecompCnParams
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                , intent(in)    :: filter_soilc(:) ! filter for soil columns
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(ch4_type)         , intent(in)    :: ch4_vars
+type(carbonflux_type)  , intent(inout) :: carbonflux_vars
+type(cnstate_type)     , intent(inout) :: cnstate_vars

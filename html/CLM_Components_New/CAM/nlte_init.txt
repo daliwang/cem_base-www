@@ -1,0 +1,7 @@
+sub_in, nlte_use_mo_in, pref_mid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, addfld, cnst_get_ind, waccm_forcing_init, nlte_fomichev_init, rad_cnst_get_info, add_default

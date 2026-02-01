@@ -1,0 +1,13 @@
+sub_param, bounds:1, filter_vegsol:2, coszen:4, num_vegsol:3, surfalb_vars:5
+sub_out
+global_ro| surfalb_vars%albgri_col, albgri, NONE| pft%gridcell, gridcell, NONE| ecophyscon%taul, taul, NONE| gridCellEdState%canopy_area_profile, canopy_area_profile, NONE| pft%column, column, NONE| surfalb_vars%nrad_patch, nrad, NONE| gridCellEdState%nrad, nrad, NONE| currentPatch%younger, currentPatch, NONE| gridCellEdState, currentPatch, NONE| ecophyscon%rhol, rhol, NONE| ecophyscon%xl, xl, NONE| gridCellEdState%esai_profile, esai_profile, NONE| EDpft%ED_patch, ED_patch, NONE| gridCellEdState%clmgcell, clmgcell, NONE| gridCellEdState%elai_profile, elai_profile, NONE| surfalb_vars%albgrd_col, albgrd, NONE
+global_wo| gridCellEdState%tr_soil_dif, tr_soil_dif, NONE| gridCellEdState%present, present, NONE| surfalb_vars%ftii_patch, ftii, NONE| gridCellEdState%fabd_sha_z, fabd_sha_z, NONE| surfalb_vars%fabd_sha_z_patch, fabd_sha_z, NONE| surfalb_vars%ftdd_patch, ftdd, NONE| surfalb_vars%ftid_patch, ftid, NONE| surfalb_vars%fabi_sun_z_patch, fabi_sun_z, NONE| gridCellEdState%fabi_sun_z, fabi_sun_z, NONE| gridCellEdState%fabi_sha_z, fabi_sha_z, NONE| surfalb_vars%fabi_sha_z_patch, fabi_sha_z, NONE| surfalb_vars%fabd_sun_z_patch, fabd_sun_z, NONE| gridCellEdState%fabd_sun_z, fabd_sun_z, NONE
+global_mod| gridCellEdState%fabd, fabd, NONE| surfalb_vars%fabd_patch, fabd, NONE| surfalb_vars%fabi_patch, fabi, NONE| gridCellEdState%fabi, fabi, NONE| surfalb_vars%albd_patch, albd, NONE| gridCellEdState%tr_soil_dir_dif, tr_soil_dir_dif, NONE| surfalb_vars%albi_patch, albi, NONE| gridCellEdState%sabs_dif, sabs_dif, NONE| gridCellEdState%f_sun, f_sun, NONE| gridCellEdState%sabs_dir, sabs_dir, NONE| gridCellEdState%tr_soil_dir, tr_soil_dir, NONE
+global_non| surfalb_vars%fabi_sun_patch, fabi_sun, NONE| surfalb_vars%vcmaxcintsun_patch, vcmaxcintsun, NONE| surfalb_vars%fsun_z_patch, fsun_z, NONE| ecophyscon%taus, taus, NONE| surfalb_vars%fabd_sun_patch, fabd_sun, NONE| ecophyscon%rhos, rhos, NONE| surfalb_vars%fabi_sha_patch, fabi_sha, NONE| surfalb_vars%vcmaxcintsha_patch, vcmaxcintsha, NONE| surfalb_vars%fabd_sha_patch, fabd_sha, NONE
+calls
+readParams,
+type(bounds_type)  , intent(in)    :: bounds                 ! bounds
+integer            , intent(in)    :: filter_vegsol(:)       ! filter for vegetated pfts with coszen>0
+integer            , intent(in)    :: num_vegsol             ! number of vegetated pfts where coszen>0
+real(r8)           , intent(in)    :: coszen( bounds%begp: ) ! cosine solar zenith angle for next time step [pft]
+type(surfalb_type) , intent(inout) :: surfalb_vars

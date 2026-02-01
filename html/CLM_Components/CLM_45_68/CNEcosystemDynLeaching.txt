@@ -1,0 +1,7 @@
+sub_in, filter_pcropp, filter_soilp, filter_soilc, bounds, num_soilp, num_pcropp, doalb, num_soilc
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CSummary, CNPrecisionControl, NSummary, CNVegStructUpdate, t_startf, t_stopf, NStateUpdate3, CNNLeaching

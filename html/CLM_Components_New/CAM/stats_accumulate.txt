@@ -1,0 +1,7 @@
+sub_in, vm, thv_ds_zt, cloud_frac_zm, pdf_params, rtp2, sclrp2, upwp, rho, vp2, rtpthlp, cloud_cover, rho_ds_zm, cloud_frac, wpsclrp, sigma_sqd_w, um, sclrm, wp3, p_in_Pa, sclrpthlp, thlp2, rcm_in_layer, rho_ds_zt, edsclrm, wm_zt, rcm, exner, thv_ds_zm, wprtp, thlm, wprcp, sclrprtp, rtm_zm, up2, wm_zm, rcm_zm, rtm, vpwp, thlm_zm, wp2, edsclrm_forcing, wpthlp, rho_zm, sclrm_forcing
+sub_out, exner
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var, stat_update_var_pt

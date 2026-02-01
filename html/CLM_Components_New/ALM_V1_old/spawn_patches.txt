@@ -1,0 +1,9 @@
+sub_param, sitetar:1
+sub_out
+global_ro| %dmort, dmort, NONE| nc, new_patch%shortest, NONE| udata%storesmallcohort, new_patch%shortest, NONE| null, new_patch%shortest, NONE| currentCohort%taller, currentCohort, NONE| currentPatch%shortest, currentCohort, NONE| %fire_mort, fire_mort, NONE| udata%deltat, deltat, NONE| currentSite%youngest_patch, currentPatch, NONE| currentSite%oldest_patch, currentPatch, NONE| currentPatch%older, currentPatch, NONE| currentPatch%younger, currentPatch, NONE| null, new_patch%tallest, NONE| nc, new_patch%tallest, NONE| udata%storebigcohort, new_patch%tallest, NONE
+global_wo| %disturbance_rates, disturbance_rates, NONE| sitetar%leaf_litter_burned, leaf_litter_burned, NONE| sitetar%cwd_ag_burned, cwd_ag_burned, NONE| nc%canopy_layer, canopy_layer, NONE
+global_mod| %disturbance_rate, disturbance_rate, NONE| %area, area, NONE| nc%n, n, NONE| %n, n, NONE
+global_non| NULL, new_patch%younger, NONE| new_patch, currentPatch%younger, NONE| sitetar, currentSite, NONE| null, nc%shorter, NONE| currentPatch, new_patch%older, NONE| null, nc%taller, NONE| new_patch%tallest, udata%storebigcohort, NONE| new_patch%shortest, udata%storesmallcohort, NONE| new_patch, currentSite%youngest_patch, NONE| new_patch, nc%patchptr, NONE
+calls, zero_cohort, terminate_cohorts, set_patchno, insert_cohort, average_patch_properties, check_patch_area, mortality_litter_fluxes, create_patch, fire_litter_fluxes, copy_cohort, sort_cohorts, fuse_cohorts, zero_patch
+readParams,
+type (site),  intent(inout), target :: sitetar

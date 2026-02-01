@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, readCNPhenolParams, readCNDecompParams, readCNAllocParams, readCH4Params, readCNAllocBetrParams, readCNMRespParams, readCNDecompBgcParams, ncd_inqdid, readCNSoilLittVertTranspParams, bgc_reaction%readParams, readCNNDynamicsParams, readCNDecompCnParams, getfil, ncd_pio_closefile, readCNNitrifDenitrifParams, ncd_pio_openfile, readCNGapMortParams, ncd_inqdlen
+readParams,readPrivateParameters

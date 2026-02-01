@@ -1,0 +1,12 @@
+sub_in, num2d, ubg, ubl, carr, lbl, ubc, lbg, c2l_scale_type, lbc, l2g_scale_type
+sub_out, garr
+global_ro, clm3%g%l%canyon_hwr, clm3%g%l%c%active, clm3%g%l%itype, clm3%g%l%c%gridcell, clm3%g%l%c%wtgcell, clm3%g%l%c%landunit, clm3%g%l%c%itype
+global_wo
+global_mod
+global_non, clm3%g%ncolumns, clm3%g%coli
+calls, build_scale_l2g, endrun
+
+Tree height: 12
+0 , build_scale_l2g, 
+9-, endrun, 
+11+, endrun, 

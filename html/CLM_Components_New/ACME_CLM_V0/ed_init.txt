@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, carbonstate_vars, nitrogenstate_vars, canopystate_vars, bounds, EDbio_vars, carbonflux_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, clm_ed_link, ed_init_sites, ed_update_sites

@@ -1,0 +1,9 @@
+sub_param, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, CNFireInit, CNPhenologyInit, C14_init_BombSpike, CNAllocationInit
+readParams,
+type(bounds_type), intent(in) :: bounds

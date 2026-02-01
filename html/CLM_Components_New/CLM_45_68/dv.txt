@@ -1,0 +1,10 @@
+sub_in, filter_natvegp, kyr, num_natvegp, bounds
+sub_out
+global_ro, pdgvs%t_mo_min, pdgvs%agdd
+global_wo
+global_mod, pdgvs%tmomin20, pdgvs%agdd20
+global_non, pdgvs%fpcgrid
+calls, Establishment, Light, BuildNatVegFilter
+
+Tree height: 2
+0 , BuildNatVegFilter, Light, Establishment, 

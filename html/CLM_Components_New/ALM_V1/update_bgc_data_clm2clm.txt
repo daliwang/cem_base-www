@@ -1,0 +1,30 @@
+sub_param, bounds, waterstate_vars, clm_bgc_data, num_soilc, phosphorusflux_vars, cnstate_vars, ch4_vars, atm2lnd_vars, soilstate_vars, temperature_vars, carbonstate_vars, num_soilp, nitrogenflux_vars, nitrogenstate_vars, phosphorusstate_vars, filter_soilp, waterflux_vars, carbonflux_vars, soilhydrology_vars, filter_soilc, energyflux_vars, soil_water_retention_curve
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, update_bgc_flux_decomp_cascade, update_bgc_flux_smin, update_bgc_flux_nitdenit
+readParams,
+type(bounds_type)           , intent(in)    :: bounds
+integer                     , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                     , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+integer                     , intent(in)    :: num_soilp         ! number of soil patches in filter
+integer                     , intent(in)    :: filter_soilp(:)   ! filter for soil patches
+type(atm2lnd_type)          , intent(in)    :: atm2lnd_vars
+type(waterstate_type)       , intent(inout) :: waterstate_vars
+type(waterflux_type)        , intent(inout) :: waterflux_vars
+type(soilstate_type)        , intent(inout) :: soilstate_vars
+type(temperature_type)      , intent(inout) :: temperature_vars
+type(soilhydrology_type)    , intent(inout) :: soilhydrology_vars
+type(energyflux_type)       , intent(inout) :: energyflux_vars
+type(cnstate_type)          , intent(inout) :: cnstate_vars
+type(carbonflux_type)       , intent(inout) :: carbonflux_vars
+type(carbonstate_type)      , intent(inout) :: carbonstate_vars
+type(nitrogenflux_type)     , intent(inout) :: nitrogenflux_vars
+type(nitrogenstate_type)    , intent(inout) :: nitrogenstate_vars
+type(phosphorusflux_type)   , intent(inout) :: phosphorusflux_vars
+type(phosphorusstate_type)  , intent(inout) :: phosphorusstate_vars
+type(ch4_type)              , intent(inout) :: ch4_vars
+class(soil_water_retention_curve_type)  , intent(in) :: soil_water_retention_curve
+type(clm_bgc_interface_data_type)       , intent(in) :: clm_bgc_data

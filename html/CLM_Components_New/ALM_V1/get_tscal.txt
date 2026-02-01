@@ -1,0 +1,11 @@
+sub_param, dt_scal, acc, rerr
+sub_out, dt_scal, acc
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+real(r8), intent(in) :: rerr        !input relative err
+real(r8), intent(out):: dt_scal     !output dt_scal, 2, 1, 0.5
+logical,  intent(out):: acc         !true or false

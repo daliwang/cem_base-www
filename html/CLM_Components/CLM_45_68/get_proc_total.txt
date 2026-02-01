@@ -1,0 +1,7 @@
+sub_in, ncols, npfts, ncells, pid, nlunits
+sub_out, ncols, npfts, ncells, nlunits
+global_ro
+global_wo
+global_mod
+global_non
+calls

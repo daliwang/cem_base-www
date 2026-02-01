@@ -1,0 +1,7 @@
+sub_in, ptend, pbuf, state, deltatin
+sub_out
+global_ro, nc, qi, qc, t, qn, pmid
+global_wo
+global_mod
+global_non, state%pdel, state%pint, state%q, state%rpdel, state%omega, state%zm
+calls, ndrop_bam_ccn, pbuf_get_field, physics_ptend_init, ndrop_bam_run, dropmixnuc, rad_cnst_get_info, rad_cnst_get_mode_num, rad_cnst_get_aer_mmr, nucleati, qsat_water, outfld

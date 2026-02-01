@@ -1,0 +1,9 @@
+sub_param, soil_top_cell_offset:5, mesh:1, region_itype:2, ncells:4, conn_set:3
+sub_out, ncells
+global_ro| mesh%dz, dz, NONE| mesh%dy, dy, NONE| mesh%nlev, nlev, NONE| mesh%dx, dx, NONE
+global_wo| ConnectionSetNew%dist_dn, dist_dn, NONE| ConnectionSetNew%dist_up, dist_up, NONE| ConnectionSetNew%area, area, NONE| ConnectionSetNew%dist_unitvec, dist_unitvec, NONE
+global_mod| mesh%ncells, ncells, NONE| ConnectionSetNew%id_dn, id_dn, NONE| ConnectionSetNew%id_up, id_up, NONE
+global_non| ConnectionSetNew, conn_set, NONE
+calls, endrun
+readParams,
+PetscInt, intent(out)             :: ncells

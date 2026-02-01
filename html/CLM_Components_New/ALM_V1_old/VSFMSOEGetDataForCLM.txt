@@ -1,0 +1,9 @@
+sub_param, this:1, data_1d:5, var_type:3, soe_auxvar_type:2, soe_auxvar_id:4
+sub_out, data_1d
+global_ro| this%num_auxvars_in, num_auxvars_in, NONE
+global_wo
+global_mod
+global_non
+calls, this%aux_vars_in, endrun
+readParams,
+PetscInt, intent(in)                       :: var_type

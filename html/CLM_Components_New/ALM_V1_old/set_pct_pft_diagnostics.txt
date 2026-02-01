@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| pft%gridcell, gridcell, NONE| pft%wtlunit, wtlunit, NONE| pft%itype, itype, NONE| pft%landunit, landunit, NONE
+global_wo| subgrid_weights_diagnostics%pct_nat_pft, pct_nat_pft, NONE| subgrid_weights_diagnostics%pct_cft, pct_cft, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds

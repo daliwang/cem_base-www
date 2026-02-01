@@ -1,0 +1,16 @@
+sub_param, bounds:2, phosphorusflux_vars:8, carbonflux_vars:6, clm_bgc_data:1, num_soilc:3, nitrogenflux_vars:7, filter_soilc:4, cnstate_vars:5
+sub_out
+global_ro| phosphorusflux_vars%fert_p_to_sminp_col, fert_p_to_sminp, NONE| phosphorusflux_vars%sminp_net_transport_vr_col, sminp_net_transport_vr, NONE| phosphorusflux_vars%plant_pdemand_vr_col, col_plant_pdemand_vr, NONE| nitrogenflux_vars%ndep_to_sminn_col, ndep_to_sminn, NONE| nitrogenflux_vars%soyfixn_to_sminn_col, soyfixn_to_sminn, NONE| nitrogenflux_vars%externaln_to_decomp_npools_col, externaln_to_decomp_npools_vr, NONE| nitrogenflux_vars%supplement_to_sminn_vr_col, supplement_to_sminn_vr, NONE| nitrogenflux_vars%nfix_to_sminn_col, nfix_to_sminn, NONE| nitrogenflux_vars%fert_to_sminn_col, fert_to_sminn, NONE| cnstate_vars%nfixation_prof_col, nfixation_prof, NONE| phosphorusflux_vars%supplement_to_sminp_vr_col, supplement_to_sminp_vr, NONE| phosphorusflux_vars%pdep_to_sminp_col, pdep_to_sminp, NONE| cnstate_vars%ndep_prof_col, ndep_prof, NONE| carbonflux_vars%externalc_to_decomp_cpools_col, externalc_to_decomp_cpools_vr, NONE| nitrogenflux_vars%no3_net_transport_vr_col, no3_net_transport_vr, NONE| nitrogenflux_vars%plant_ndemand_vr_col, col_plant_ndemand_vr, NONE| phosphorusflux_vars%externalp_to_decomp_ppools_col, externalp_to_decomp_ppools_vr, NONE
+global_wo| clm_bgc_data%externalp_to_solutionp_col, externalp_to_solutionp_col, NONE| clm_bgc_data%externalc_to_decomp_cpools_col, externalc_to_decomp_cpools_col, NONE| clm_bgc_data%plant_ndemand_vr_col, plant_ndemand_vr_col, NONE| clm_bgc_data%externalp_to_primp_col, externalp_to_primp_col, NONE| clm_bgc_data%externaln_to_nh4_col, externaln_to_nh4_col, NONE| clm_bgc_data%externalp_to_decomp_ppools_col, externalp_to_decomp_ppools_col, NONE| clm_bgc_data%plant_pdemand_vr_col, plant_pdemand_vr_col, NONE| clm_bgc_data%externalp_to_labilep_col, externalp_to_labilep_col, NONE| clm_bgc_data%sminp_net_transport_vr_col, sminp_net_transport_vr_col, NONE| clm_bgc_data%externaln_to_decomp_npools_col, externaln_to_decomp_npools_col, NONE| clm_bgc_data%no3_net_transport_vr_col, no3_net_transport_vr_col, NONE
+global_mod| phosphorusflux_vars%plant_pdemand_col, plant_pdemand_col, NONE| clm_bgc_data%plant_pdemand_col, plant_pdemand_col, NONE| clm_bgc_data%externaln_to_no3_col, externaln_to_no3_col, NONE| nitrogenflux_vars%plant_ndemand_col, plant_ndemand_col, NONE| clm_bgc_data%plant_ndemand_col, plant_ndemand_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type) , intent(in) :: bounds
+integer           , intent(in) :: num_soilc       ! number of soil columns in filter
+integer           , intent(in) :: filter_soilc(:) ! filter for soil columns
+type(cnstate_type)                  , intent(in)    :: cnstate_vars
+type(carbonflux_type)               , intent(in)    :: carbonflux_vars
+type(nitrogenflux_type)             , intent(in)    :: nitrogenflux_vars
+type(phosphorusflux_type)           , intent(in)    :: phosphorusflux_vars
+type(clm_bgc_interface_data_type)   , intent(inout) :: clm_bgc_data

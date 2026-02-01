@@ -1,0 +1,7 @@
+sub_in, dwave, rc, wave, NELEM, NBIN, NSOLUTE, do_wave_emit, NWAVE, NGAS, carma, NGROUP, LUNOPRT
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls

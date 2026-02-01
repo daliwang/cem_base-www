@@ -1,0 +1,7 @@
+sub_in, bounds, glc2lnd_vars, x2l, atm2lnd_vars
+sub_out
+global_ro, bounds%begg, ldomain%area
+global_wo, atm2lnd_vars%forc_hgt_u_grc, atm2lnd_vars%forc_pch4_grc, atm2lnd_vars%volr_grc, atm2lnd_vars%forc_th_not_downscaled_grc, atm2lnd_vars%forc_hgt_t_grc, atm2lnd_vars%forc_pc13o2_grc, glc2lnd_vars%frac_grc, glc2lnd_vars%icemask_grc, glc2lnd_vars%hflx_grc, atm2lnd_vars%forc_lwrad_not_downscaled_grc, atm2lnd_vars%forc_solar_grc, atm2lnd_vars%forc_aer_grc, atm2lnd_vars%forc_rho_not_downscaled_grc, glc2lnd_vars%topo_grc, atm2lnd_vars%forc_snow_not_downscaled_grc, atm2lnd_vars%forc_hgt_q_grc, glc2lnd_vars%icemask_coupled_fluxes_grc, atm2lnd_vars%forc_flood_grc, atm2lnd_vars%forc_rain_not_downscaled_grc, atm2lnd_vars%forc_pco2_grc, atm2lnd_vars%forc_rh_grc, atm2lnd_vars%forc_wind_grc, atm2lnd_vars%forc_po2_grc
+global_mod, atm2lnd_vars%forc_q_not_downscaled_grc, atm2lnd_vars%forc_solai_grc, atm2lnd_vars%forc_hgt_grc, atm2lnd_vars%forc_t_not_downscaled_grc, atm2lnd_vars%forc_vp_grc, atm2lnd_vars%forc_pbot_not_downscaled_grc, atm2lnd_vars%forc_u_grc, atm2lnd_vars%forc_v_grc, atm2lnd_vars%forc_solad_grc
+global_non
+calls, endrun

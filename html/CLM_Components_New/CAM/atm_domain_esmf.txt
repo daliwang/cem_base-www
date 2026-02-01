@@ -1,0 +1,7 @@
+sub_in, rc, dom
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_area_all_p, get_rlat_all_p, get_rlon_all_p, ESMF_ArrayGet

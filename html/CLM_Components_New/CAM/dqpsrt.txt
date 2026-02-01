@@ -1,0 +1,7 @@
+sub_in, limit, last, nrmax, ermax, maxerr, iord, elist
+sub_out, iord, nrmax, ermax
+global_ro
+global_wo
+global_mod
+global_non
+calls

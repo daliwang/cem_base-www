@@ -1,0 +1,7 @@
+sub_in, kfirst, ng_n, nq, im, jfirst, jlast, ng_s, km, klast, q, jm, comm
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_COMM_RANK, Ga_Get4d_r8, t_startf, Win_Finalize, Win_Close, t_stopf

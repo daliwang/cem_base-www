@@ -1,0 +1,7 @@
+sub_in, nets, hvcoord, eta_ave_w, deriv, np1, n0, compute_diagnostics, hybrid, dt2, nete, elem, nm1, qn0
+sub_out, elem
+global_ro, phi
+global_wo
+global_mod
+global_non, elem
+calls, t_startf, edgeVpack, t_stopf, edgeVunpack, bndry_exchangeV, t_barrierf, preq_vertadv, preq_omega_ps, preq_hydrostatic

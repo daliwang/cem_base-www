@@ -1,0 +1,7 @@
+sub_in, ed1_geo, lchnk, mlt, ed2_geo, pcol, epot_geo
+sub_out, epot_geo, ed2_geo, ed1_geo
+global_ro
+global_wo
+global_mod
+global_non
+calls, outfld

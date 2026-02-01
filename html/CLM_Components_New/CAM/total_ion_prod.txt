@@ -1,0 +1,7 @@
+sub_in, ncol, o2, cusp, mbar, alfa1, alfa2, flux1, flux2, drizl, do_aurora, pmid, tpions, tn, flux3, o1, alfa3, lchnk
+sub_out, tpions
+global_ro
+global_wo
+global_mod
+global_non
+calls, bion, aion

@@ -1,0 +1,7 @@
+sub_in, eff_alb, delp, cld_mult, zen_angle, clouds, srf_alb, lwc
+sub_out, cld_mult, eff_alb
+global_ro
+global_wo
+global_mod
+global_non
+calls

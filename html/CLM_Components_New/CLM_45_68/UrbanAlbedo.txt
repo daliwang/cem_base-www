@@ -1,0 +1,11 @@
+sub_in, num_urbanc, num_urbanp, filter_urbanp, filter_urbanl, num_urbanl, bounds, filter_urbanc
+sub_out
+global_ro, lun%coli, urban_params%alb_perroad_dif, urban_params%alb_wall_dif, cps%coszen, urban_params%alb_roof_dif, cps%frac_sno, pft%column, col%landunit, urban_params%alb_roof_dir, urban_params%alb_improad_dir, urban_params%alb_perroad_dir, urban_params%alb_improad_dif, lun%gridcell, lun%canyon_hwr, pft%gridcell, urban_params%alb_wall_dir, col%itype
+global_wo, lps%sabs_sunwall_dif, pps%albd, pps%fabd_sun, pps%fabi_sun, pps%ftid, lps%sabs_shadewall_dir, lps%sabs_improad_dir, lps%sabs_sunwall_dir, pps%fabi_sha, pps%fsun, lps%sabs_roof_dir, lps%sabs_shadewall_dif, pps%albi, pps%fabd, pps%fabi, lps%sabs_improad_dif, pps%ftdd, lps%sabs_roof_dif, pps%ftii, pps%fabd_sha, lps%sabs_perroad_dir, lps%sabs_perroad_dif
+global_mod, cps%albgrd, cps%albgri
+global_non, lun%wtroad_perv, lps%vf_sr, col%gridcell, lps%vf_wr, grc%lon, grc%lat, lps%vf_rw, lps%vf_sw, lps%vf_ww, bounds%begl, bounds%endl
+calls, UrbanSnowAlbedo, incident_direct, net_solar, incident_diffuse
+
+Tree height: 10
+5+, net_solar, 
+3+, incident_direct, incident_diffuse, UrbanSnowAlbedo, UrbanSnowAlbedo, 

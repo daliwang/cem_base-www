@@ -1,0 +1,7 @@
+sub_in, stats_tsamp_in, delt, stats_tout_in, nnrad_zt, nnrad_zm, nnzp, l_stats_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, stats_init_sfc, stats_init_zm, find_group_name, stats_init_zt, mpibcast, stats_zero, stats_init_rad_zm, addfld, stats_init_rad_zt, freeunit, endrun

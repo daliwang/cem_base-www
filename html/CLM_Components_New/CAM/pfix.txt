@@ -1,0 +1,7 @@
+sub_in, qp, ipx, im, cosp2, q, acap
+sub_out, ipx, qp, q
+global_ro
+global_wo
+global_mod
+global_non
+calls

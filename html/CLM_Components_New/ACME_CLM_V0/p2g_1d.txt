@@ -1,0 +1,7 @@
+sub_in, garr, c2l_scale_type, parr, p2c_scale_type, bounds, l2g_scale_type
+sub_out, garr
+global_ro, pft%gridcell, col%landunit, pft%landunit, pft%column, lun%canyon_hwr, pft%wtgcell
+global_wo
+global_mod
+global_non
+calls, build_scale_l2g, endrun

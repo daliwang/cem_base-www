@@ -1,0 +1,7 @@
+sub_in, alpha_in, gll_points, elem
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, coordinates_atomic, coreolis_init_atomic, metric_atomic

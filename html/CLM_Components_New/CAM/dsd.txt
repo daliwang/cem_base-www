@@ -1,0 +1,7 @@
+sub_in, Re, fc, D, N, p1, dmin, Q, dtype, p3, dmax, p2, nsizes, rho_a, rho_c, tc, bpm, scaled, apm
+sub_out, fc, bpm, N, scaled, apm
+global_ro
+global_wo
+global_mod
+global_non
+calls

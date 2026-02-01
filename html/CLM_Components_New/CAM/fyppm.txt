@@ -1,0 +1,7 @@
+sub_in, iv, jord, jm, dm, im, q, ng, jlast, jfirst, flux, c
+sub_out, flux
+global_ro
+global_wo
+global_mod
+global_non
+calls, lmppm, lmppmv

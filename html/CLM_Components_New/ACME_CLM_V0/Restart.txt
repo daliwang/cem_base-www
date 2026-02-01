@@ -1,0 +1,7 @@
+sub_in, ncid, flag, this, bounds
+sub_out
+global_ro, data=this%icemask_grc
+global_wo
+global_mod
+global_non
+calls, restartvar

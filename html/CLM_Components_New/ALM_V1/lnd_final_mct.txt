@@ -1,0 +1,12 @@
+sub_param, cdata_l, x2l_l, EClock, l2x_l
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, final
+readParams,
+type(ESMF_Clock) , intent(inout) :: EClock    ! Input synchronization clock from driver
+type(seq_cdata)  , intent(inout) :: cdata_l   ! Input driver data for land model
+type(mct_aVect)  , intent(inout) :: x2l_l     ! Import state to land model
+type(mct_aVect)  , intent(inout) :: l2x_l     ! Export state from land model

@@ -1,0 +1,7 @@
+sub_in, clm_mpicom, LNDID
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, mpi_gatherv, mpi_allgather, mpi_comm_size, mpi_comm_rank, mpi_get_processor_name

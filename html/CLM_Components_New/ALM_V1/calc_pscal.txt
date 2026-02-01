@@ -1,0 +1,15 @@
+sub_param, lneg, p_dt, dtime, ystate, nprimvars, pscal, d_dt
+sub_out, lneg, pscal
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,readParams
+integer,  intent(in)  :: nprimvars
+real(r8), intent(in)  :: dtime
+real(r8), intent(in)  :: ystate(1:nprimvars)
+real(r8), intent(in)  :: p_dt(1:nprimvars)
+real(r8), intent(in)  :: d_dt(1:nprimvars)
+real(r8), intent(out) :: pscal(1:nprimvars)
+logical,  intent(out) :: lneg

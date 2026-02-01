@@ -1,0 +1,7 @@
+sub_in, ed_allsites_inst, p, photosyns_inst, bounds
+sub_out
+global_ro, currentCohort, resp_clm, psncanopy, gpp_clm, npp_clm, ts_net_uptake
+global_wo, fpsn
+global_mod, resp_acc, npp_acc, year_net_uptake, gpp_acc
+global_non, map_clmpatch_to_edpatch
+calls

@@ -1,0 +1,10 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, ccbal%begcb, ccf%dwt_closs, pcf_a%gpp, pcf_a%hrv_xsmrpool_to_atm, ccf%product_closs, ccf%col_fire_closs, ccf%er, ccs%totcolc, ccf%som_c_leached
+global_wo
+global_mod, ccbal%endcb, ccbal%errcb, ccf%col_coutputs, ccf%col_cinputs
+global_non
+calls, endrun
+
+Tree height: 2
+1+, endrun, 

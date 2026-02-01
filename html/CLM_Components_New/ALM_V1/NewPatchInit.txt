@@ -1,0 +1,9 @@
+sub_param, p, this
+sub_out
+global_ro
+global_wo, this%psnsun_patch, this%c13_psnsha_patch, this%c14_psnsha_patch, this%alphapsnsun_patch, this%rc13_psnsha_patch, this%c13_psnsun_patch, this%rc13_psnsun_patch, this%alphapsnsha_patch, this%rc13_canair_patch, this%psnsha_patch, this%c14_psnsun_patch
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in) :: p

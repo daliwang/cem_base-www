@@ -1,0 +1,32 @@
+sub_param, carbonflux_vars:17, urbanparams_vars:2, glc2lnd_vars:22, c14_carbonflux_vars:19, energyflux_vars:9, nitrogenstate_vars:20, phosphorusflux_vars:24, c13_carbonflux_vars:18, phosphorusstate_vars:23, carbonstate_vars:14, dgvs_vars:13, waterstate_vars:6, cnstate_vars:12, c13_carbonstate_vars:15, c14_carbonstate_vars:16, lakestate_vars:5, photosyns_vars:11, temperature_vars:8, canopystate_vars:10, soilstate_vars:3, waterflux_vars:7, soilhydrology_vars:4, bounds_proc:1, nitrogenflux_vars:21
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, prior_weights%set_prior_weights, dyn_cnbal_patch, compute_higher_order_weights, set_subgrid_diagnostic_fields, reweight_wrapup, get_clump_bounds, dyn_ED, dyn_hwcontent_final, dyn_hwcontent_init, dynHarvest_interp, dynpft_interp, initialize_new_columns, dynCNDV_interp, update_landunit_weights, glc2lnd_vars%update_glc2lnd
+readParams,
+type(bounds_type)        , intent(in)    :: bounds_proc  ! processor-level bounds
+type(urbanparams_type)   , intent(in)    :: urbanparams_vars
+type(soilstate_type)     , intent(in)    :: soilstate_vars
+type(soilhydrology_type) , intent(in)    :: soilhydrology_vars
+type(lakestate_type)     , intent(in)    :: lakestate_vars
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(waterflux_type)     , intent(inout) :: waterflux_vars
+type(temperature_type)   , intent(inout) :: temperature_vars
+type(energyflux_type)    , intent(inout) :: energyflux_vars
+type(canopystate_type)   , intent(inout) :: canopystate_vars
+type(photosyns_type)     , intent(inout) :: photosyns_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(dgvs_type)          , intent(inout) :: dgvs_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c13_carbonstate_vars
+type(carbonstate_type)   , intent(inout) :: c14_carbonstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c13_carbonflux_vars
+type(carbonflux_type)    , intent(inout) :: c14_carbonflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(glc2lnd_type)       , intent(inout) :: glc2lnd_vars
+type(phosphorusstate_type) , intent(inout)    :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

@@ -1,0 +1,15 @@
+sub_param, sucsat_col, nlend, bounds, bsw_col, rstwr, hksat_col, watsat_col
+sub_out, bounds
+global_ro, %begtime, %ntimes
+global_wo
+global_mod
+global_non
+calls, t_stopf, shr_sys_flush, hist_do_disp, htape_timeconst3D, get_prev_date, ncd_pio_closefile, t_startf, get_curr_time, get_curr_date, htape_create, hfields_zero, ncd_enddef, ncd_pio_openfile, htape_timeconst, hfields_normalize, hfields_write
+readParams,
+logical, intent(in) :: rstwr    ! true => write restart file this step
+logical, intent(in) :: nlend    ! true => end of run on this step
+type(bounds_type) , intent(in) :: bounds
+real(r8)          , intent(in) :: watsat_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: sucsat_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: bsw_col( bounds%begc:,1: )
+real(r8)          , intent(in) :: hksat_col( bounds%begc:,1: )

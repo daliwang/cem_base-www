@@ -1,0 +1,7 @@
+sub_in, tplnke, tlayr, tint, abplnk1, ncol, emplnk, abplnk2
+sub_out, emplnk, abplnk2, abplnk1
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, g
+sub_out
+global_ro, currentPatch%tallest, currentCohort%shorter, currentPatch%younger, currentSite%oldest_patch
+global_wo, %leaf_litter, %status_coh
+global_mod, %bl, %bstore, %balive, %laimemory
+global_non, gridCellEdState
+calls

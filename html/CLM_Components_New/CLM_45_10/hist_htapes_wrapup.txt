@@ -1,0 +1,14 @@
+sub_in, rstwr, nlend
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_curr_date, get_prev_date, ncd_pio_closefile, shr_sys_flush, ncd_pio_openfile, htape_timeconst, hfields_normalize, ncd_enddef, hfields_zero, t_startf, t_stopf, hfields_write, get_curr_time, htape_timeconst3D, htape_create, hist_do_disp
+
+Tree height: 7
+0 , get_curr_date, get_curr_time, get_prev_date, 
+3-, hist_do_disp, 
+4+, hfields_normalize, t_startf, htape_timeconst, t_stopf, t_startf, hfields_write, t_stopf, hfields_zero, 
+5+, t_startf, htape_create, htape_timeconst, hfields_write, ncd_enddef, t_stopf, htape_timeconst3D, shr_sys_flush, ncd_pio_closefile, 
+6+, htape_timeconst3D, ncd_pio_openfile, 

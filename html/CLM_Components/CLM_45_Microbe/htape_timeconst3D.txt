@@ -1,0 +1,7 @@
+sub_in, mode, t
+sub_out
+global_ro, bsw, lakpoi, dz, dz_lake, z_lake, watsat, hksat, landunit, z, sucsat
+global_wo
+global_mod
+global_non, c, l
+calls, ncd_io, c2g, get_proc_bounds, shr_string_listAppend, ncd_defvar, endrun

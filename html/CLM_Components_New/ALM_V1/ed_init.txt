@@ -1,0 +1,15 @@
+sub_param, canopystate_vars, carbonflux_vars, EDbio_vars, bounds, waterstate_vars, carbonstate_vars, nitrogenstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ed_update_sites, ed_init_sites, clm_ed_link
+readParams,
+type(bounds_type)        , intent(in)    :: bounds  ! clump bounds
+type(waterstate_type)    , intent(inout) :: waterstate_vars
+type(canopystate_type)   , intent(inout) :: canopystate_vars
+type(EDbio_type)         , intent(inout) :: EDbio_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars

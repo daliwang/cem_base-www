@@ -1,0 +1,13 @@
+sub_param, filter_soilc:4, soilstate_vars:5, num_soilc:3, clm_bgc_data:1, bounds:2
+sub_out
+global_ro| soilstate_vars%porosity_col, porosity, NONE| soilstate_vars%watsat_col, watsat, NONE| soilstate_vars%watfc_col, watfc, NONE| soilstate_vars%hksat_col, hksat, NONE| soilstate_vars%sucsat_col, sucsat, NONE| soilstate_vars%bsw_col, bsw, NONE| soilstate_vars%cellorg_col, cellorg, NONE| soilstate_vars%eff_porosity_col, eff_porosity, NONE| soilstate_vars%bd_col, bd, NONE
+global_wo| clm_bgc_data%cellorg_col, cellorg_col, NONE| clm_bgc_data%watsat_col, watsat_col, NONE| clm_bgc_data%porosity_col, porosity_col, NONE| clm_bgc_data%eff_porosity_col, eff_porosity_col, NONE| clm_bgc_data%bsw_col, bsw_col, NONE| clm_bgc_data%watfc_col, watfc_col, NONE| clm_bgc_data%hksat_col, hksat_col, NONE| clm_bgc_data%sucsat_col, sucsat_col, NONE| clm_bgc_data%bd_col, bd_col, NONE
+global_mod| decomp_cascade_con%floating_cn_ratio_decomp_pools, floating_cn_ratio, NONE| clm_bgc_data%floating_cn_ratio, floating_cn_ratio, NONE| clm_bgc_data%ndecomp_pools, ndecomp_pools, NONE| clm_bgc_data%initial_cp_ratio, initial_cp_ratio, NONE| decomp_cascade_con%initial_cp_ratio, initial_cp_ratio, NONE| col%z, z, NONE| clm_bgc_data%z, z, NONE| decomp_cascade_con%decomp_pool_name_history, decomp_pool_name, NONE| clm_bgc_data%decomp_pool_name, decomp_pool_name, NONE| decomp_cascade_con%initial_cn_ratio, initial_cn_ratio, NONE| clm_bgc_data%initial_cn_ratio, initial_cn_ratio, NONE| decomp_cascade_con%floating_cp_ratio_decomp_pools, floating_cp_ratio, NONE| clm_bgc_data%floating_cp_ratio, floating_cp_ratio, NONE| col%dz, dz, NONE| clm_bgc_data%dz, dz, NONE
+global_non
+calls
+readParams,
+type(bounds_type)        , intent(in) :: bounds           ! bounds
+integer                  , intent(in) :: num_soilc        ! number of column soil points in column filter
+integer                  , intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(soilstate_type)     , intent(in) :: soilstate_vars
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

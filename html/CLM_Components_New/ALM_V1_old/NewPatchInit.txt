@@ -1,0 +1,9 @@
+sub_param, this:1, p:2
+sub_out
+global_ro
+global_wo| this%rc13_canair_patch, rc13_canair_patch, NONE| this%c14_psnsha_patch, c14_psnsha_patch, NONE| this%rc13_psnsha_patch, rc13_psnsha_patch, NONE| this%c14_psnsun_patch, c14_psnsun_patch, NONE| this%psnsun_patch, psnsun_patch, NONE| this%alphapsnsha_patch, alphapsnsha_patch, NONE| this%c13_psnsha_patch, c13_psnsha_patch, NONE| this%rc13_psnsun_patch, rc13_psnsun_patch, NONE| this%psnsha_patch, psnsha_patch, NONE| this%alphapsnsun_patch, alphapsnsun_patch, NONE| this%c13_psnsun_patch, c13_psnsun_patch, NONE
+global_mod
+global_non
+calls
+readParams,
+integer, intent(in) :: p

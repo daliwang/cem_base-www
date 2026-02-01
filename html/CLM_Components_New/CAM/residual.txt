@@ -1,0 +1,7 @@
+sub_in, name='calc_f', xstate, C, nelemd, c_ptr_to_object, fx, bind
+sub_out
+global_ro, phi
+global_wo
+global_mod
+global_non
+calls, t_barrierf, bndry_exchangeV, c_f_pointer, preq_hydrostatic, preq_omega_ps, preq_vertadv, edgeVpack, t_startf, edgeVunpack, t_stopf

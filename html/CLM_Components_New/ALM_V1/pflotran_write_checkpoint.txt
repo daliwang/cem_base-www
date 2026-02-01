@@ -1,0 +1,9 @@
+sub_param, date_stamp
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,clm_pf_readnl
+character(len=32), intent(in) :: date_stamp ! file name date stamp

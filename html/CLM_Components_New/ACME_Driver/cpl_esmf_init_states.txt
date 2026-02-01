@@ -1,0 +1,8 @@
+sub_in, c2x_cx_array, c2x_cx_state, seq_flds_c2x_fields, gsmap_cx, dom_cx_array, x2c_cx_state, c2x_cx, seq_flds_x2c_fields, dom_cx, x2c_cx_array, x2c_cx
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, ESMF_VMGetCurrent, MPI_Comm_Dup, ESMF_VMGet, ESMF_StateAdd, mct_gsMap_OrderedPoints, ESMF_AttributeSet
+calls_ln, MPI_Comm_Dup@234, ESMF_StateAdd@275, ESMF_VMGet@231, ESMF_StateAdd@272, ESMF_StateAdd@269, ESMF_AttributeSet@266, ESMF_AttributeSet@263, mct_gsMap_OrderedPoints@241, ESMF_VMGetCurrent@228, ESMF_AttributeSet@260

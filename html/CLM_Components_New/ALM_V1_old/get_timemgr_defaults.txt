@@ -1,0 +1,17 @@
+sub_param, stop_tod_out:7, ref_tod_out:5, stop_ymd_out:6, calendar_out:1, start_tod_out:3, nelapse_out:8, start_ymd_out:2, ref_ymd_out:4, dtime_out:9
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+character(len=*), optional, intent(OUT) :: calendar_out       ! Calendar type
+integer         , optional, intent(OUT) :: nelapse_out        ! Number of step (or days) to advance
+integer         , optional, intent(OUT) :: start_ymd_out      ! Start date       (YYYYMMDD)
+integer         , optional, intent(OUT) :: start_tod_out      ! Start time of day (sec)
+integer         , optional, intent(OUT) :: ref_ymd_out        ! Reference date   (YYYYMMDD)
+integer         , optional, intent(OUT) :: ref_tod_out        ! Reference time of day (sec)
+integer         , optional, intent(OUT) :: stop_ymd_out       ! Stop date        (YYYYMMDD)
+integer         , optional, intent(OUT) :: stop_tod_out       ! Stop time of day (sec)
+integer         , optional, intent(OUT) :: dtime_out          ! Time-step (sec)

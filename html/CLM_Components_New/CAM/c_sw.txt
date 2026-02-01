@@ -1,0 +1,7 @@
+sub_in, jord, uc, v, pt, delpf, u2, u, ptc, iord, delp, vc, v2, ptk, grid, tiny
+sub_out, ptc, ptk, uc, vc
+global_ro, rdxe, cye, cose, dycp, dtdx4, dtdx2, dxdt, fc, dxe, dtxe5, cosp
+global_wo
+global_mod
+global_non, grid%sinl5, grid%dc, grid%acosp, grid%coslon, grid%sc, grid%cosl5, grid%sinlon
+calls, pft2d, xtpv, tpcc, tp2c, ycc

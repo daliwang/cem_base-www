@@ -1,0 +1,7 @@
+sub_in, ut, ktoop, dpslon, ddpn, z, drhs, tm1, etadot, d, dpslat, vat, pdel, t2, logpsm1, tm2, dpsm, etamid, rpdel, nlon, qm1, phis, pbot, rpmid, fv, um1, vm1, fu, engy, omga, dpsl, vt, logpsm2, pmid, rcoslat, vpdsn
+sub_out, engy, drhs, fu, vpdsn, etadot, vat, fv, vt, dpslon, ktoop, ut, dpslat, t2, ddpn
+global_ro
+global_wo
+global_mod
+global_non
+calls

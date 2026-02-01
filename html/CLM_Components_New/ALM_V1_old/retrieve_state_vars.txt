@@ -1,0 +1,18 @@
+sub_param, centurybgc_vars:9, tracerstate_vars:11, betrtracer_vars:10, lbj:2, ubj:3, neq:7, numf:4, filter:5, yf:8, bounds:1, jtops:6
+sub_out
+global_ro| centurybgc_vars%nelms, nelms, NONE
+global_wo| tracerstate_vars%tracer_conc_solid_passive_col, tracer_conc_solid_passive_col, NONE
+global_mod
+global_non| betrtracer_vars%ngwmobile_tracers, ngwtracers, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile_col, NONE
+calls, assign_A2B
+readParams,
+type(bounds_type)       , intent(in)    :: bounds
+integer                 , intent(in)    :: lbj, ubj
+integer                 , intent(in)    :: jtops(bounds%begc:bounds%endc)            ! top label of each column
+integer                 , intent(in)    :: numf
+integer                 , intent(in)    :: filter(:)
+integer                 , intent(in)    :: neq
+type(betrtracer_type)   , intent(in)    :: betrtracer_vars                           ! betr configuration information
+type(centurybgc_type)   , intent(in)    :: centurybgc_vars
+real(r8)                , intent(in)    :: yf(neq, bounds%begc:bounds%endc, lbj:ubj) !
+type(tracerstate_type)  , intent(inout) :: tracerstate_vars

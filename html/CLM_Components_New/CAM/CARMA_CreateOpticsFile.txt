@@ -1,0 +1,7 @@
+sub_in, rc, carma
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, wrap_def_var, wrap_enddef, wrap_put_var_realx, wrap_def_dim, CARMAGROUP_Get, wrap_put_vara_text, wrap_put_att_text, CARMAELEMENT_Get, CARMA_GET, wrap_close, handle_error, wrap_create, mie, getwetr

@@ -1,0 +1,8 @@
+sub_param, this, A, snes, X, ierr, B
+sub_out
+global_ro, cur_goveq_1%next, this%goveqns
+global_wo
+global_mod
+global_non
+calls, DMCompositeRestoreAccessArray, DMCompositeGetEntriesArray, DMCompositeGetNumberDM, DMCompositeGetAccessArray, DMCompositeGetLocalISs, MatZeroEntries, MatAssemblyEnd, MatAssemblyBegin, MatGetLocalSubMatrix, ISDestroy, MatRestoreLocalSubMatrix, cur_goveq_1%Jacobian
+readParams,

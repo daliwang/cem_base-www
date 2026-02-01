@@ -1,0 +1,7 @@
+sub_in, num_lakec, filter_lakec, filter_lakep, num_lakep, bounds
+sub_out
+global_ro, t_grnd, ks, sabg, dz_lake, column, fsr_nir_d, h2osno, lakedepth, fsds_nir_d, h2osoi_liq, snl, z, etal, ws, z_lake, h2osoi_ice, dz, fsds_nir_i, lake_raw, fsr_nir_i, sabg_lyr
+global_wo, qflx_snofrz_col, eflx_grnd_lake, frac_iceold, savedtke1
+global_mod, lake_icefrac, t_soisno, lake_icethick, eflx_sh_tot, eflx_gnet, eflx_soil_grnd, hc_soisno, eflx_sh_grnd, errsoi, hc_soi, grnd_ch4_cond, t_lake
+global_non, gridcell, gridcell
+calls, Tridiagonal, PhaseChange_Lake, SoilThermProp_Lake

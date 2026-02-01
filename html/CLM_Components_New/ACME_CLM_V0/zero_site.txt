@@ -1,0 +1,7 @@
+sub_in, site_in
+sub_out
+global_ro
+global_wo, site_in%clmcolumn, site_in%clmgcell, site_in%last_n_days, site_in%istheresoil, site_in%lon, site_in%dleafoffdate, site_in%dstatus, site_in%dleafondate, site_in%gdd, site_in%acc_ni, site_in%status, site_in%leafoffdate, site_in%frac_burnt, site_in%ncd, site_in%lat, site_in%water_memory, site_in%leafondate, site_in%disturbance_rate
+global_mod, site_in%dist_type
+global_non, null, null
+calls

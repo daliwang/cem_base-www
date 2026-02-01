@@ -1,0 +1,11 @@
+sub_param, geds_local, bounds, this
+sub_out
+global_ro, bounds%begg, currentPatch%shortest, currentCohort%taller, currentSite%oldest_patch, currentPatch%younger
+global_wo
+global_mod
+global_non, geds_local
+calls
+readParams,
+class(EDRestartVectorClass), intent(inout)      :: this
+type(bounds_type),           intent(in)         :: bounds
+type(gridcell_edstate_type), target, intent(in) :: geds_local( bounds%begg: )

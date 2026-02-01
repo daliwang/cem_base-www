@@ -1,0 +1,7 @@
+sub_in, bounds
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, relavu, clm_domain_mct, shr_strdata_create, find_nlgroup_name, hist_addfld1d, shr_mpi_bcast, endrun, shr_strdata_print

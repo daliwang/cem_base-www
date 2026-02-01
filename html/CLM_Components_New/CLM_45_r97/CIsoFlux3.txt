@@ -1,0 +1,7 @@
+sub_in, isotope, filter_soilp, num_soilp, cnveg_carbonflux_inst, iso_cnveg_carbonstate_inst, filter_soilc, cnveg_carbonstate_inst, iso_soilbiogeochem_carbonstate_inst, iso_cnveg_carbonflux_inst, num_soilc, soilbiogeochem_carbonstate_inst, soilbiogeochem_state_inst
+sub_out
+global_ro, croot_prof, m_deadstemc_to_litter_fire_patch, decomp_cpools_vr_col, stem_prof, m_deadcrootc_to_litter_fire_patch
+global_wo
+global_mod, fire_mortality_c_to_cwdc_col, m_decomp_cpools_to_fire_vr_col
+global_non, iso_cnveg_carbonflux_inst, iso_cnveg_carbonstate_inst, iso_soilbiogeochem_carbonstate_inst, cnveg_carbonstate_inst, cnveg_carbonflux_inst, soilbiogeochem_carbonstate_inst
+calls, CIsoFluxCalc

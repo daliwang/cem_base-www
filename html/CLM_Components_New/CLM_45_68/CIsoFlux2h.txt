@@ -1,0 +1,10 @@
+sub_in, num_soilp, filter_soilp, num_soilc, filter_soilc, isotope
+sub_out
+global_ro, pc14f%hrv_livecrootc_to_litter, pc14f%hrv_gresp_storage_to_litter, pc14f%hrv_deadstemc_storage_to_litter, pc14f%hrv_deadcrootc_storage_to_litter, pc14f%hrv_xsmrpool_to_atm, pc14f%hrv_leafc_storage_to_litter, pc14f%hrv_leafc_xfer_to_litter, pc14f%hrv_livecrootc_xfer_to_litter, pc14f%hrv_deadstemc_xfer_to_litter, pc14f%hrv_deadstemc_to_prod10c, pc14f%hrv_frootc_to_litter, pc14f%hrv_livestemc_xfer_to_litter, pc14f%hrv_deadstemc_to_prod100c, pc14f%hrv_gresp_xfer_to_litter, pc14f%hrv_livestemc_storage_to_litter, pc14f%hrv_deadcrootc_to_litter, pc14f%hrv_deadcrootc_xfer_to_litter, pc14f%hrv_livecrootc_storage_to_litter, pc14f%hrv_frootc_xfer_to_litter, pc14f%hrv_frootc_storage_to_litter, pc14f%hrv_leafc_to_litter, pc14f%hrv_livestemc_to_litter
+global_wo
+global_mod
+global_non, pft, pc13s, pc14s, pc14f, pc13f
+calls, CNCIsoHarvestPftToColumn, CIsoFluxCalc, endrun
+
+Tree height: 1
+0 , endrun, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CIsoFluxCalc, CNCIsoHarvestPftToColumn, 

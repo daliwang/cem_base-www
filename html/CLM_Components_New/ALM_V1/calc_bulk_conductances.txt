@@ -1,0 +1,17 @@
+sub_param, dz, bounds, filter, ubj, bulkdiffus, numf, lbj, hmconductance_col, betrtracer_vars, jtops
+sub_out
+global_ro, betrtracer_vars%ntracer_groups, betrtracer_vars%tracer_group_memid, betrtracer_vars%is_mobile
+global_wo
+global_mod
+global_non, betrtracer_vars%is_volatile, betrtracer_vars%ngwmobile_tracer_groups, betrtracer_vars%volatileid
+calls, calc_interface_conductance
+readParams,
+type(bounds_type),      intent(in) :: bounds                      ! bounds
+integer,                intent(in) :: lbj, ubj                    ! lower and upper bounds, make sure they are > 0
+integer,                intent(in) :: jtops(bounds%begc: )        ! top label of each column
+integer,                intent(in) :: numf                        ! number of columns in column filter
+integer,                intent(in) :: filter(:)                   ! column filter
+type(betrtracer_type),  intent(in) :: betrtracer_vars             ! betr configuration information
+real(r8),               intent(in) :: bulkdiffus(bounds%begc: ,lbj: ,1: )  !weighted bulk diffusivity for dual-phase diffusion
+real(r8),               intent(in) :: dz(bounds%begc: , lbj: )
+real(r8),            intent(inout) :: hmconductance_col(bounds%begc: , lbj: ,1: ) !weighted bulk conductance

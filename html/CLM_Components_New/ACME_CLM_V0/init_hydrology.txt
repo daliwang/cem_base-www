@@ -1,0 +1,7 @@
+sub_in, NLFilename
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, init_soilwater_movement, init_pedof, init_soil_stress, init_rootprof

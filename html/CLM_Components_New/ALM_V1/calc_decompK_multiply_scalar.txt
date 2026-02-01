@@ -1,0 +1,21 @@
+sub_param, jtops, t_soisno, lbj, ubj, o2_bulk, finundated, filter, centurybgc_vars, numf, o2_aqu2bulkcef, carbonflux_vars, zsoi, bounds, soilstate_vars
+sub_out
+global_ro, soilstate_vars%soilpsi_col, soilstate_vars%sucsat_col
+global_wo, centurybgc_vars%depth_scalar_col, carbonflux_vars%w_scalar_col, carbonflux_vars%o_scalar_col
+global_mod, carbonflux_vars%t_scalar_col
+global_non
+calls
+readParams,
+type(bounds_type),         intent(in)  :: bounds
+integer,                   intent(in)  :: lbj, ubj
+integer,                   intent(in)  :: jtops(bounds%begc:bounds%endc)        ! top label of each column
+integer,                   intent(in)  :: numf
+integer,                   intent(in)  :: filter(:)
+real(r8),                  intent(in)  :: t_soisno(bounds%begc:bounds%endc, lbj:ubj)
+real(r8),                  intent(in)  :: o2_bulk(bounds%begc:bounds%endc,lbj:ubj)
+real(r8),                  intent(in)  :: zsoi(bounds%begc:bounds%endc, lbj:ubj)
+real(r8),                  intent(in)  :: finundated(bounds%begc:bounds%endc)
+real(r8),                  intent(in)  :: o2_aqu2bulkcef(bounds%begc:bounds%endc, lbj:ubj)
+type(soilstate_type),      intent(in)  :: soilstate_vars
+type(centurybgc_type)  , intent(inout) :: centurybgc_vars
+type(carbonflux_type)  , intent(inout) :: carbonflux_vars

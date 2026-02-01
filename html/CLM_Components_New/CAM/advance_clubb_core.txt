@@ -1,0 +1,7 @@
+sub_in, vpwp, rho_zm, wm_zt, rtm_forcing, rtm, upwp_sfc, GFDL, sclrm, vp2, p_in_Pa, um_forcing, rho_ds_zm, vpwp_sfc, rtpthlp, thlm_forcing, exner, l_implemented, um, vm_forcing, up2, wpedsclrp_sfc, edsclrm_forcing, upwp, invrs_rho_ds_zt, invrs_rho_ds_zm, dt, wp3, wprtp_sfc, fcor, thlp2, thv_ds_zt, wpthlp_sfc, wm_zm, wpsclrp_sfc, vm, rtp2, #ifdef, rho, wpthlp, thv_ds_zm, wp2, sfc_elevation, sclrm_forcing, thlm, rho_ds_zt, wprtp
+sub_out, wpthlp, vpwp, rtpthlp, wp2, up2, vp2, , thlp2, wprtp, rtp2, upwp
+global_ro
+global_wo
+global_mod
+global_non
+calls, stat_update_var, trapezoidal_rule_zt, trapezoidal_rule_zm, stat_begin_update_pt, stat_update_var_pt, advance_windm_edsclrm, surface_varnce, pdf_closure, stat_begin_update, stats_accumulate, stat_end_update_pt, advance_wp2_wp3, clip_covars_denom, advance_xm_wpxp, reportError, compute_length, compute_cloud_cover, parameterization_check, advance_sclrm_Nd_diffusion_OG, advance_xp2_xpyp, clip_rcm, stat_end_update

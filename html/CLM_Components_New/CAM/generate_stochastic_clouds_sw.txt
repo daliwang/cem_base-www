@@ -1,0 +1,7 @@
+sub_in, asmc, cld_stoch, changeSeed, nsubcol, cld, tauc, fsfc, ciwp_stoch, asmc_stoch, pmid, icld, ssac_stoch, nlay, ssac, ncol, clwp, fsfc_stoch, clwp_stoch, tauc_stoch, ciwp
+sub_out, fsfc_stoch, cld_stoch, tauc_stoch, clwp_stoch, ciwp_stoch, asmc_stoch, ssac_stoch
+global_ro
+global_wo
+global_mod
+global_non
+calls, kissvec, endrun

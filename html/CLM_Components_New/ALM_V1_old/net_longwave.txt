@@ -1,0 +1,36 @@
+sub_param, canyon_hwr:4, lwnet_shadewall:20, t_improad:12, lwnet_roof:16, wtroad_perv:5, filter_urbanl:3, bounds:1, lwnet_perroad:18, t_sunwall:14, lwup_shadewall:26, em_roof:7, num_urbanl:2, lwup_canyon:27, lwup_sunwall:25, lwup_improad:23, em_improad:8, em_perroad:9, lwnet_sunwall:19, t_perroad:13, em_wall:10, urbanparams_vars:28, lwnet_canyon:21, lwdown:6, t_shadewall:15, lwup_roof:22, t_roof:11, lwup_perroad:24, lwnet_improad:17
+sub_out, lwnet_perroad, lwnet_shadewall, lwnet_roof, lwnet_sunwall, lwnet_improad, lwup_perroad, lwup_sunwall, lwup_improad, lwup_roof, lwnet_canyon, lwup_canyon, lwup_shadewall
+global_ro| urbanparams_vars%vf_rw, vf_rw, NONE| urbanparams_vars%vf_ww, vf_ww, NONE| urbanparams_vars%vf_sw, vf_sw, NONE| urbanparams_vars%vf_sr, vf_sr, NONE| urbanparams_vars%vf_wr, vf_wr, NONE
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)  :: num_urbanl                      ! number of urban landunits
+integer , intent(in)  :: filter_urbanl(:)                ! urban landunit filter
+real(r8), intent(in)  :: canyon_hwr( bounds%begl: )      ! ratio of building height to street width [landunit]
+real(r8), intent(in)  :: wtroad_perv( bounds%begl: )     ! weight of pervious road wrt total road [landunit]
+real(r8), intent(in)  :: lwdown( bounds%begl: )          ! atmospheric longwave radiation (W/m**2) [landunit]
+real(r8), intent(in)  :: em_roof( bounds%begl: )         ! roof emissivity [landunit]
+real(r8), intent(in)  :: em_improad( bounds%begl: )      ! impervious road emissivity [landunit]
+real(r8), intent(in)  :: em_perroad( bounds%begl: )      ! pervious road emissivity [landunit]
+real(r8), intent(in)  :: em_wall( bounds%begl: )         ! wall emissivity [landunit]
+real(r8), intent(in)  :: t_roof( bounds%begl: )          ! roof temperature (K) [landunit]
+real(r8), intent(in)  :: t_improad( bounds%begl: )       ! impervious road temperature (K) [landunit]
+real(r8), intent(in)  :: t_perroad( bounds%begl: )       ! ervious road temperature (K) [landunit]
+real(r8), intent(in)  :: t_sunwall( bounds%begl: )       ! sunlit wall temperature (K) [landunit]
+real(r8), intent(in)  :: t_shadewall( bounds%begl: )     ! shaded wall temperature (K) [landunit]
+real(r8), intent(out) :: lwnet_roof( bounds%begl: )      ! net (outgoing-incoming) longwave radiation, roof (W/m**2) [landunit]
+real(r8), intent(out) :: lwnet_improad( bounds%begl: )   ! net (outgoing-incoming) longwave radiation, impervious road (W/m**2) [landunit]
+real(r8), intent(out) :: lwnet_perroad( bounds%begl: )   ! net (outgoing-incoming) longwave radiation, pervious road (W/m**2) [landunit]
+real(r8), intent(out) :: lwnet_sunwall( bounds%begl: )   ! net (outgoing-incoming) longwave radiation (per unit wall area), sunlit wall (W/m**2) [landunit]
+real(r8), intent(out) :: lwnet_shadewall( bounds%begl: ) ! net (outgoing-incoming) longwave radiation (per unit wall area), shaded wall (W/m**2) [landunit]
+real(r8), intent(out) :: lwnet_canyon( bounds%begl: )    ! net (outgoing-incoming) longwave radiation for canyon, per unit ground area (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_roof( bounds%begl: )       ! upward longwave radiation, roof (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_improad( bounds%begl: )    ! upward longwave radiation, impervious road (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_perroad( bounds%begl: )    ! upward longwave radiation, pervious road (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_sunwall( bounds%begl: )    ! upward longwave radiation (per unit wall area), sunlit wall (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_shadewall( bounds%begl: )  ! upward longwave radiation (per unit wall area), shaded wall (W/m**2) [landunit]
+real(r8), intent(out) :: lwup_canyon( bounds%begl: )     ! upward longwave radiation for canyon, per unit ground area (W/m**2) [landunit]
+type(urbanparams_type) , intent(in) :: urbanparams_vars

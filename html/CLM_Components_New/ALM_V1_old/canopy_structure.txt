@@ -1,0 +1,9 @@
+sub_param, currentSite:1
+sub_out
+global_ro| copyc, currentCohort%taller, NONE| %area, area, NONE| >currentCohort%shorter, shorter, NONE| %bsw, bsw, NONE| %bstore, bstore, NONE| %br, br, NONE| %pft, pft, NONE| copyc, currentPatch%tallest, NONE| %bl, bl, NONE| %bdead, bdead, NONE| currentSite%oldest_patch, currentPatch, NONE| currentPatch%younger, currentPatch, NONE
+global_wo| %NCL_p, NCL_p, NONE| %ncl_p, ncl_p, NONE
+global_mod| copyc%c_area, c_area, NONE| %c_area, c_area, NONE| %CWD_AG, CWD_AG, NONE| %CWD_BG, CWD_BG, NONE| %n, n, NONE| copyc%n, n, NONE| %dbh, dbh, NONE| copyc%dbh, dbh, NONE| %excl_weight, excl_weight, NONE| %leaf_litter, leaf_litter, NONE| copyc%canopy_layer, canopy_layer, NONE| %canopy_layer, canopy_layer, NONE| %prom_weight, prom_weight, NONE| %root_litter, root_litter, NONE| currentCohort%shorter, currentCohort, NONE| currentPatch%tallest, currentCohort, NONE
+global_non| null, copyc%taller, NONE| currentCohort%taller, copyc%taller, NONE| currentCohort, copyc%shorter, NONE| copyc, currentCohort%taller%shorter, NONE
+calls, terminate_cohorts, copy_cohort, fuse_cohorts
+readParams,
+type(site), intent(inout), pointer   :: currentSite

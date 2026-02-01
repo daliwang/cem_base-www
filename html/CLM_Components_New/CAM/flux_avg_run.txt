@@ -1,0 +1,7 @@
+sub_in, nstep, deltat, cam_in, state, pbuf
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, phys_debug_flux1, phys_debug_flux2, pbuf_get_field, smooth

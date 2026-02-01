@@ -1,0 +1,7 @@
+sub_in, fact, bounds, filter_nolakec, t_soisno, dhsdT, num_nolakec, hs_top, t_h2osfc, hs_top_snow, sabg_lyr_col, rt, fn
+sub_out, rt
+global_ro, col%landunit, col%z
+global_wo
+global_mod
+global_non
+calls

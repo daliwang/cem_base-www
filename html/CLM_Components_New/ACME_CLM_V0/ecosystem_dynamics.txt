@@ -1,0 +1,7 @@
+sub_in, atm2lnd_vars, temperature_vars, waterstate_vars, site_in, soilstate_vars
+sub_out
+global_ro, currentPatch%younger, site_in%oldest_patch
+global_wo
+global_mod
+global_non
+calls, terminate_cohorts, spawn_patches, phenology, sort_cohorts, integrate_state_variables, fuse_cohorts, total_balance_check, disturbance_rates, fuse_patches, fire_model, terminate_patches, recruitment

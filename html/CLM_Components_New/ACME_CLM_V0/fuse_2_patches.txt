@@ -1,0 +1,7 @@
+sub_in, rp, dp
+sub_out
+global_ro, nextc, dp%shortest
+global_wo
+global_mod, dp%burnt_frac_litter, rp%burnt_frac_litter, rp%seed_germination, dp%seed_germination, rp%sh, dp%sh, rp%ros_back, dp%ros_back, rp%ab, dp%ab, rp%fuel_bulkd, dp%fuel_bulkd, dp%seed_bank, rp%seed_bank, rp%livegrass, dp%livegrass, rp%root_litter, dp%root_litter, rp%cwd_ag, dp%cwd_ag, dp%seed_decay, rp%seed_decay, dp%fi, rp%fi, dp%btran_ft, rp%btran_ft, dp%ros_front, rp%ros_front, dp%fuel_mef, rp%fuel_mef, dp%tfc_ros, rp%tfc_ros, rp%area, dp%area, rp%nf, dp%nf, rp%tau_l, dp%tau_l, rp%sum_fuel, dp%sum_fuel, rp%fuel_eff_moist, dp%fuel_eff_moist, rp%seeds_in, dp%seeds_in, dp%fuel_sav, rp%fuel_sav, dp%age, rp%age, dp%leaf_litter, rp%leaf_litter, rp%fuel_frac, dp%fuel_frac, dp%cwd_bg, rp%cwd_bg, rp%fd, dp%fd, dp%effect_wspeed, rp%effect_wspeed, rp%frac_burnt, dp%frac_burnt
+global_non, dp%older, rp%shortest, currentCohort, dp%younger, currentCohort, udata%storebigcohort, rp%tallest, currentCohort%taller, currentCohort, udata%storesmallcohort, dp%older, rp, dp%younger
+calls, insert_cohort, patch_pft_size_profile

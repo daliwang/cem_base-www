@@ -1,0 +1,7 @@
+sub_in, rdate, file, nlend, noptr
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, SLakeRest, accumulRest, restFile_open, hist_restart_ncd, CNRest, SubgridRest, restFile_close, ch4Rest, restFile_enddef, timemgr_restart_io, BiogeophysRest, restFile_dimset, restFile_closeRestart

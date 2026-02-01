@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro
+global_wo
+global_mod| subgrid_weights_diagnostics%pct_landunit, pct_landunit, NONE| subgrid_weights_diagnostics%pct_glc_mec, pct_glc_mec, NONE| subgrid_weights_diagnostics%pct_nat_pft, pct_nat_pft, NONE| subgrid_weights_diagnostics%pct_cft, pct_cft, NONE
+global_non
+calls, hist_addfld2d
+readParams,
+type(bounds_type), intent(in) :: bounds  ! proc bounds

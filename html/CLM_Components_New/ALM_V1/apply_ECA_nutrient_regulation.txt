@@ -1,0 +1,16 @@
+sub_param, plant_frts, nitrogen_limit_flag, pct_clay, nr, reaction_rates, ystate, cascade_matrix, nprimvars
+sub_out, cascade_matrix, reaction_rates
+global_ro, centurybgc_vars%lid_nh4, centurybgc_vars%lit2, centurybgc_vars%lit1, centurybgc_vars%c_loc, centurybgc_vars%lid_plant_minn_up_reac, centurybgc_vars%som2, centurybgc_vars%lid_no3, centurybgc_vars%lit3, centurybgc_vars%som1, centurybgc_vars%lid_denit_compet, centurybgc_vars%nelms, centurybgc_vars%lid_plant_compet, centurybgc_vars%lid_no3_den_reac, centurybgc_vars%som3, centurybgc_vars%cwd, centurybgc_vars%lid_nh4_nit_reac, centurybgc_vars%lid_nitri_compet
+global_wo
+global_mod
+global_non, centurybgc_vars%lid_lit2_compet, centurybgc_vars%lid_lit3_compet, centurybgc_vars%lid_lit1_compet, centurybgc_vars%lid_cwd_compet, centurybgc_vars%lid_som1_compet, centurybgc_vars%lid_clay_compet, centurybgc_vars%lid_som2_compet, centurybgc_vars%lid_som3_compet
+calls, ecacomplex_cell_norm
+readParams,readParams
+integer , intent(in) :: nprimvars
+integer , intent(in) :: nr
+real(r8), intent(in) :: pct_clay
+logical , intent(in) :: nitrogen_limit_flag(centurybgc_vars%nom_pools)
+real(r8), intent(in) :: ystate(1:nprimvars)
+real(r8), intent(in) :: plant_frts
+real(r8), intent(inout) :: reaction_rates(1:nr)
+real(r8), intent(inout) :: cascade_matrix(1:nprimvars, 1:nr)

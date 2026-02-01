@@ -1,0 +1,7 @@
+sub_in, num_soilc, lbc, filter_soilc, ubc
+sub_out
+global_ro, decomp_cpools_sourcesink, decomp_npools_sourcesink, is_cwd, altmax_lastyear, spinup_factor, altmax
+global_wo
+global_mod, decomp_cpools_transport_tendency, decomp_npools_transport_tendency, som_diffus_coef, som_adv_coef, decomp_npools_vr, decomp_cpools_vr
+global_non
+calls, Tridiagonal, endrun

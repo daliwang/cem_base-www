@@ -1,0 +1,7 @@
+sub_in, temperature_vars, tktopsoillay, soilstate_vars, num_lakec, waterstate_vars, cv, bounds, tk, filter_lakec
+sub_out, tk, cv
+global_ro, soilstate_vars%tkdry_col, soilstate_vars%watsat_col, col%snl, waterstate_vars%h2osoi_ice_col, soilstate_vars%csol_col, col%dz, waterstate_vars%h2osoi_liq_col, col%zi, soilstate_vars%tkmg_col, soilstate_vars%tksatu_col, col%z, temperature_vars%t_soisno_col
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,12 @@
+sub_param, dsat_dP, sat, press, satParams
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, SatFunc_PcToSat_SBC, SatFunc_PcToSat_VG, SatFunc_PcToSat_BC
+readParams,
+type(saturation_params_type) , intent(in)  :: satParams
+PetscReal                    , intent(in)  :: press
+PetscReal                    , intent(out) :: sat
+PetscReal                    , intent(out) :: dsat_dP

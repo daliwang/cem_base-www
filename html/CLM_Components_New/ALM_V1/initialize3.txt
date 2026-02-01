@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro, %hydrologyc, waterstate_vars%vsfm_mass_col_1d, col%zi, bounds_proc%begc, waterstate_vars%vsfm_smpl_col_1d, waterstate_vars%soilp_col, waterflux_vars%mflx_snowlyr_col
+global_wo, waterstate_vars%h2osoi_liq_col, soilhydrology_vars%zwt_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%mflx_snowlyr_col_1d, waterstate_vars%vsfm_soilp_col_1d
+global_mod, soilstate_vars%smp_l_col
+global_non
+calls, vsfm_mpp%Restart, vsfm_mpp%sysofeqns%GetDataForCLM, t_startf, endrun, vsfm_mpp%sysofeqns%SetDtime, vsfm_mpp%sysofeqns%PreSolve, vsfm_mpp%sysofeqns%PostSolve, get_proc_bounds, PetscInitialize, t_stopf, vsfm_mpp%Setup, init_vsfm_condition_ids
+readParams,

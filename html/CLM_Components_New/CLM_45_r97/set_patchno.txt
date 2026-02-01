@@ -1,0 +1,7 @@
+sub_in, currentSite
+sub_out
+global_ro, currentPatch
+global_wo
+global_mod, patchno
+global_non
+calls

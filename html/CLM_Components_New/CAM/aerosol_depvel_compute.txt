@@ -1,0 +1,7 @@
+sub_in, ram1, nlev, ncol, vlc_trb, vlc_dry, fv, naero, diam, pmid, dns_aer, t, vlc_grv, stk_crc
+sub_out, vlc_trb, vlc_grv, vlc_dry
+global_ro
+global_wo
+global_mod
+global_non
+calls

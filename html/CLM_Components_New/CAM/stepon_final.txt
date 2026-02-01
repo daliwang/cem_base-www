@@ -1,0 +1,7 @@
+sub_in, dyn_out, dyn_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, slt_final

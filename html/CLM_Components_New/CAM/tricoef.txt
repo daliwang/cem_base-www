@@ -1,0 +1,7 @@
+sub_in, bmnm, btri, a0nm, atri, bpnm, ctri, n
+sub_out, ctri, btri, atri
+global_ro
+global_wo
+global_mod
+global_non
+calls

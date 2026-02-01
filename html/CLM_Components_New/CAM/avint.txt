@@ -1,0 +1,7 @@
+sub_in, b_in, result, xtab, ntab, ftab, a_in
+sub_out, result
+global_ro
+global_wo
+global_mod
+global_non
+calls

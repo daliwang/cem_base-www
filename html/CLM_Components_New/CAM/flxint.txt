@@ -1,0 +1,7 @@
+sub_in, flxlat, w, flx, nlon
+sub_out, flxlat
+global_ro
+global_wo
+global_mod
+global_non
+calls

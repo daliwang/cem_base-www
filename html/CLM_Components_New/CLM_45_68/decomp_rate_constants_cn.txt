@@ -1,0 +1,9 @@
+sub_in, num_soilc, filter_soilc, bounds
+sub_out
+global_ro, cps%dz, cps%alt_indx, cps%sucsat, cws%finundated, cps%soilpsi, cch4%o2stress_sat, ces%t_soisno, cch4%o2stress_unsat
+global_wo, ccf%decomp_k
+global_mod, ccf%o_scalar, ccf%t_scalar, ccf%w_scalar
+global_non
+calls
+
+Tree height: 8

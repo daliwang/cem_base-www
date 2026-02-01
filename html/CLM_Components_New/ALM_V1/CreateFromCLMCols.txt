@@ -1,0 +1,9 @@
+sub_param, endc, begc, this
+sub_out
+global_ro, col%landunit, col%zi
+global_wo, ConnectionSetNew%dist_unitvec, this%itype, ConnectionSetNew%dist_dn, this%is_active, this%z_m, ConnectionSetNew%dist_up, this%x, this%y, this%z, this%name, this%vol, ConnectionSetNew%area, this%ncells, this%z_p, this%orientation
+global_mod, ConnectionSetNew%id_up, this%nlev, this%dz, col%dz, ConnectionSetNew%id_dn, this%dy, this%dx
+global_non, ConnectionSetNew
+calls, ConnectionSetListAddSet, endrun, this%Init
+readParams,
+integer, intent(in) :: begc,endc

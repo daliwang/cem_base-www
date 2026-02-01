@@ -1,0 +1,10 @@
+sub_in
+sub_out
+global_ro
+global_wo, shr_megan_linkedlist%class_number, shr_megan_linkedlist%molec_weight, shr_megan_linkedlist%emis_factors
+global_mod
+global_non, meg_cmp%next_megcomp, shr_megan_linkedlist
+calls, megan_factors_init, megan_factors_get
+
+Tree height: 2
+1+, megan_factors_init, megan_factors_get, 

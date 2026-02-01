@@ -1,0 +1,8 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_initf, seq_timemgr_clockInit, shr_scam_checkSurface, seq_infodata_GetData, seq_timemgr_EClockGetData, seq_infodata_init, seq_infodata_putData, seq_comm_setnthreads, shr_sys_abort, shr_cal_date2ymd, seq_timemgr_clockPrint, seq_flds_set, seq_infodata_getData, t_startf, shr_map_setDopole, seq_comm_getinfo, shr_mem_init, shr_orb_params, seq_infodata_print, seq_io_cpl_init, shr_reprosum_setopts
+calls_ln, seq_comm_setnthreads@880, seq_infodata_GetData@793, shr_mem_init@768, seq_io_cpl_init@758, seq_timemgr_EClockGetData@925, seq_comm_setnthreads@877, shr_scam_checkSurface@961, seq_infodata_putData@940, seq_comm_setnthreads@883, seq_infodata_getData@956, seq_comm_setnthreads@889, seq_infodata_init@780, shr_cal_date2ymd@927, t_initf@754, shr_reprosum_setopts@850, seq_infodata_putData@970, seq_timemgr_clockInit@910, seq_comm_setnthreads@886, shr_sys_abort@863, seq_comm_setnthreads@903, seq_comm_setnthreads@898, seq_infodata_print@789, seq_infodata_putData@933, seq_flds_set@774, t_startf@761, seq_comm_setnthreads@895, seq_infodata_GetData@783, seq_comm_getinfo@959, seq_timemgr_clockPrint@916, seq_comm_setnthreads@892, shr_map_setDopole@848, seq_infodata_getData@919, shr_orb_params@930, seq_comm_setnthreads@874

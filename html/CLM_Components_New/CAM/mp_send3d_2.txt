@@ -1,0 +1,7 @@
+sub_in, j1, src, if, i1, q2, kf, jm, il, comm, km, i2, jf, j2, kl, im, dest, jl, k1, q1, k2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, Ga_Put4d_r8, t_stopf, t_startf, Win_Open, MPI_COMM_SIZE, Ga_RecvInit_r8

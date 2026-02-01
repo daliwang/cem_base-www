@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro
+global_wo| tau_soil%tau_liq, tau_liq, NONE| tau_soil%tau_gas, tau_gas, NONE
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds   !bounds

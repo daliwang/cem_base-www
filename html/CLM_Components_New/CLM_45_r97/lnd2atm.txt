@@ -1,0 +1,7 @@
+sub_in, vocemis_inst, ch4_inst, bounds, frictionvel_inst, atm2lnd_inst, energyflux_inst, dust_inst, waterstate_inst, waterflux_inst, surfalb_inst, drydepvel_inst, solarabs_inst, lnd2atm_inst, cnveg_carbonflux_inst, temperature_inst
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, p2g, lnd2atm_minimal, c2g

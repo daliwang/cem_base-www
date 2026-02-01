@@ -1,0 +1,11 @@
+sub_param, nelms, betrtracer_vars, ncid
+sub_out
+global_ro
+global_wo, decomp_cascade_con%decomp_pool_name_long, decomp_cascade_con%is_soil, decomp_cascade_con%is_metabolic, decomp_cascade_con%decomp_pool_name_short, decomp_cascade_con%decomp_pool_name_restart, decomp_cascade_con%is_litter, betrtracer_vars%tracer_solid_passive_diffus_thc_group, decomp_cascade_con%initial_cn_ratio, decomp_cascade_con%initial_stock, decomp_cascade_con%is_cellulose, decomp_cascade_con%floating_cn_ratio_decomp_pools, decomp_cascade_con%decomp_pool_name_history, decomp_cascade_con%is_cwd, decomp_cascade_con%is_lignin
+global_mod, betrtracer_vars%tracer_solid_passive_diffus_scal_group, decomp_cascade_con%spinup_factor
+global_non
+calls, ncd_io, endrun
+readParams,readCentDecompBgcParams
+type(file_desc_t)       , intent(inout) :: ncid   ! pio netCDF file id
+type(BeTRTracer_Type)   , intent(inout) :: betrtracer_vars
+integer                 , intent(in) :: nelms

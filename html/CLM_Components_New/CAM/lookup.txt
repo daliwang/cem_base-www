@@ -1,0 +1,7 @@
+sub_in, p, t, abs
+sub_out, abs
+global_ro
+global_wo
+global_mod
+global_non
+calls, locate

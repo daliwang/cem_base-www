@@ -1,0 +1,7 @@
+sub_in, qsave, delps, nlon, tdif, vdif, udif, pdel, ztodt, t, pint, v, u, klev
+sub_out, tdif, t
+global_ro
+global_wo
+global_mod
+global_non
+calls

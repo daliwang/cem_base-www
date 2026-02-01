@@ -1,0 +1,12 @@
+sub_param, num_soilc:3, bounds:2, clm_bgc_data:1, filter_soilc:4
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotranModelSetBgcRatesFromCLM, pflotranModelUpdateHSourceSink, pflotranModelGetBgcVariablesFromPF, update_soil_bgc_pf2clm, update_soil_temperature_pf2clm, pflotranModelSetSoilHbcsFromCLM, pflotranModelGetTemperatureFromPF, get_clm_bceflx, pflotranModelResetSoilPorosityFromCLM, pflotranModelSetBgcConcFromCLM, pflotranModelUpdateAqConcFromCLM, get_clm_bgc_conc, cpu_time, pflotranModelSetInternalTHStatesfromCLM, pflotranModelStepperRunTillPauseTime, get_clm_iceadj_porosity, pflotranModelUpdateFinalWaypoint, get_clm_soil_properties, get_clm_soil_th, get_clm_bgc_rate, pflotranModelSetSoilProp, pflotranModelUpdateTHfromCLM, pflotranModelGetSoilPropFromPF, get_clm_bcwflx, pflotranModelGetSaturationFromPF, pflotranModelUpdateSubsurfTCond, update_soil_moisture_pf2clm
+readParams,clm_pf_readnl
+type(bounds_type) , intent(in)  :: bounds
+integer, intent(in) :: num_soilc                  ! number of soil columns in filter
+integer, intent(in) :: filter_soilc(:)            ! filter for soil columns
+type(clm_bgc_interface_data_type), intent(inout) :: clm_bgc_data

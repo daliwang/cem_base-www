@@ -1,0 +1,10 @@
+sub_param, day:3, tod:4, offset:5, mon:2, yr:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, chkrc, ESMF_TimeGet, ESMF_TimeIntervalSet, ESMF_ClockGet
+readParams,
+integer, intent(out) ::&
+integer, optional, intent(in) :: offset  ! Offset from current time in seconds.

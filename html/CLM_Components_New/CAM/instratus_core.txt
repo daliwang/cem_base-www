@@ -1,0 +1,7 @@
+sub_in, lchnk, T0, ql_sc, Tmin, T, a_dc, icol, qv0, Tmax, ql_dc, qi_sc, qcst_crit, a_sc, snowh, qi_dc, p, landfrac, ql, qi0, qv, ql0, qi, ai_st, k
+sub_out, ql, qv, qi, T
+global_ro
+global_wo
+global_mod
+global_non
+calls, funcd_instratus

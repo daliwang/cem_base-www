@@ -1,0 +1,8 @@
+sub_param, organic:1
+sub_out, organic
+global_ro| ldomain%ns, ns, NONE| ldomain%ni, ni, NONE| ldomain%nj, nj, NONE
+global_wo
+global_mod
+global_non
+calls, endrun, ncd_inqfdims, ncd_pio_openfile, getfil, ncd_io
+readParams,

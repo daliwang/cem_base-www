@@ -1,0 +1,21 @@
+sub_param, filter_pcropp:2, temperature_vars:4, carbonstate_vars:8, nitrogenflux_vars:11, canopystate_vars:6, phosphorusstate_vars:12, num_pcropp:1, crop_vars:5, cnstate_vars:7, waterstate_vars:3, carbonflux_vars:10, phosphorusflux_vars:13, nitrogenstate_vars:9
+sub_out
+global_ro| crop_vars%gddplant_patch, hui, NONE| temperature_vars%gdd020_patch, gdd020, NONE| ecophyscon%leafcn, leafcn, NONE| temperature_vars%t_ref2m_min_patch, t_ref2m_min, NONE| ecophyscon%fertnitro, fertnitro, NONE| pft%column, column, NONE| crop_vars%gddtsoi_patch, leafout, NONE| temperature_vars%gdd1020_patch, gdd1020, NONE| pft%itype, ivt, NONE| temperature_vars%t_a10_patch, t10, NONE| ecophyscon%leafcp, leafcp, NONE| pft%gridcell, gridcell, NONE| temperature_vars%t_a10min_patch, a10tmin, NONE| ecophyscon%leaf_long, leaf_long, NONE| canopystate_vars%tlai_patch, tlai, NONE
+global_wo| nitrogenflux_vars%fert_patch, fert, NONE| cnstate_vars%offset_counter_patch, offset_counter, NONE| cnstate_vars%bglfr_patch, bglfr, NONE| cnstate_vars%bgtr_patch, bgtr, NONE| cnstate_vars%cumvd_patch, cumvd, NONE| cnstate_vars%lgsf_patch, lgsf, NONE| crop_vars%dmyield_patch, dmyield, NONE| cnstate_vars%onset_flag_patch, onset_flag, NONE| cnstate_vars%hdidx_patch, hdidx, NONE| cnstate_vars%offset_flag_patch, offset_flag, NONE| crop_vars%crpyld_patch, crpyld, NONE
+global_mod| phosphorusflux_vars%dwt_seedp_to_leaf_col, dwt_seedp_to_leaf, NONE| cnstate_vars%croplive_patch, croplive, NONE| cnstate_vars%gddmaturity_patch, gddmaturity, NONE| nitrogenstate_vars%leafn_xfer_patch, leafn_xfer, NONE| cnstate_vars%huileaf_patch, huileaf, NONE| cnstate_vars%huigrain_patch, huigrain, NONE| carbonflux_vars%dwt_seedc_to_leaf_col, dwt_seedc_to_leaf, NONE| carbonstate_vars%leafc_xfer_patch, leafc_xfer, NONE| cnstate_vars%idop_patch, idop, NONE| cnstate_vars%vf_patch, vf, NONE| nitrogenflux_vars%dwt_seedn_to_leaf_col, dwt_seedn_to_leaf, NONE| cnstate_vars%harvdate_patch, harvdate, NONE| phosphorusstate_vars%leafp_xfer_patch, leafp_xfer, NONE| cnstate_vars%onset_counter_patch, onset_counter, NONE| cnstate_vars%cropplant_patch, cropplant, NONE| temperature_vars%t_a5min_patch, a5tmin, NONE| nitrogenflux_vars%fert_counter_patch, fert_counter, NONE| temperature_vars%gdd820_patch, gdd820, NONE
+global_non
+calls, vernalization, get_curr_date
+readParams,readCNPhenolParams
+integer                  , intent(in)    :: num_pcropp       ! number of prog crop patches in filter
+integer                  , intent(in)    :: filter_pcropp                                    (:) ! filter for prognostic crop patches
+type(waterstate_type)    , intent(in)    :: waterstate_vars
+type(temperature_type)   , intent(in)    :: temperature_vars
+type(crop_type)          , intent(inout) :: crop_vars
+type(canopystate_type)   , intent(in)    :: canopystate_vars
+type(cnstate_type)       , intent(inout) :: cnstate_vars
+type(carbonstate_type)   , intent(inout) :: carbonstate_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars
+type(carbonflux_type)    , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(phosphorusstate_type) , intent(inout) :: phosphorusstate_vars
+type(phosphorusflux_type)  , intent(inout) :: phosphorusflux_vars

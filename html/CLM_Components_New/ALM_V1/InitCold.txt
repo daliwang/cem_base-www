@@ -1,0 +1,9 @@
+sub_param, this, bounds
+sub_out
+global_ro, ldomain%glcmask, bounds%endg, bounds%begg
+global_wo, this%icemask_grc, this%topo_grc, this%frac_grc, this%icemask_coupled_fluxes_grc, this%hflx_grc
+global_mod
+global_non
+calls, this%update_glc2lnd_dyn_runoff_routing
+readParams,
+type(bounds_type), intent(in) :: bounds

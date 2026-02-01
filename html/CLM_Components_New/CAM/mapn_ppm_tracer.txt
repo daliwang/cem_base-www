@@ -1,0 +1,7 @@
+sub_in, ilast, km, jlast, kord, pe2, jfirst, pe1, nq, ifirst, j, i1, i2, tracer, kn, iv
+sub_out, tracer
+global_ro
+global_wo
+global_mod
+global_non
+calls, ppm2m

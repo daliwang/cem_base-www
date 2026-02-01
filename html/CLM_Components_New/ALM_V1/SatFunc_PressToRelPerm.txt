@@ -1,0 +1,13 @@
+sub_param, satParams, frac_liq, kr, dkr_dP, press
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, SatFunc_PcToRelPerm_VG, SatFunc_PcToRelPerm_BC, endrun, SatFunc_PcToRelPerm_SBC, SatFunc_PcToRelPerm_Weibull
+readParams,
+type(saturation_params_type) , intent(in)  :: satParams
+PetscReal                    , intent(in)  :: press
+PetscReal                    , intent(in)  :: frac_liq
+PetscReal                    , intent(out) :: kr
+PetscReal                    , intent(out) :: dkr_dP

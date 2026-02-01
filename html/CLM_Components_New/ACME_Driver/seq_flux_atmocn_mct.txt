@@ -1,0 +1,8 @@
+sub_in, xao, grid, comp, infodata, c2x
+sub_out
+global_ro, rAttr, component_get_c2x_cx, c2x, component_get_c2x_cx, c2x
+global_wo
+global_mod
+global_non
+calls, shr_flux_atmocn, shr_sys_abort, seq_infodata_getData
+calls_ln, shr_sys_abort@920, shr_flux_atmocn@965, seq_infodata_getData@886

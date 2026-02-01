@@ -1,0 +1,7 @@
+sub_in, cp_target, patch_site_areadis, new_patch_target
+sub_out
+global_ro, %bl, %n, udata%deltat, cp_target%area, new_patch_target%area, %br, %bstore, %pft, %bsw, %bdead, currentCohort%taller, currentPatch%shortest
+global_wo
+global_mod, new_patch_target%root_litter, cp_target%root_litter, cp_target%leaf_litter, new_patch_target%leaf_litter, cp_target%cwd_ag, new_patch_target%cwd_ag, cp_target%canopy_mortality_woody_litter, cp_target%cwd_bg, new_patch_target%cwd_bg, %dmort, !currentCohort%dmort, cp_target%canopy_mortality_leaf_litter, cp_target%canopy_mortality_root_litter
+global_non, new_patch_target, cp_target
+calls

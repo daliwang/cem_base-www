@@ -1,0 +1,15 @@
+sub_param, filter_soilc:4, clm_bgc_data:1, carbonflux_vars:5, phosphorusflux_vars:7, bounds:2, nitrogenflux_vars:6, num_soilc:3
+sub_out
+global_ro| clm_bgc_data%phr_vr_col, phr_vr_col, NONE| clm_bgc_data%fphr_col, fphr_col, NONE
+global_wo| carbonflux_vars%phr_vr_col, phr_vr, NONE| carbonflux_vars%fphr_col, fphr, NONE
+global_mod| carbonflux_vars%decomp_cascade_ctransfer_vr_col, decomp_cascade_ctransfer_vr_col, NONE| clm_bgc_data%decomp_cascade_ctransfer_vr_col, decomp_cascade_ctransfer_vr_col, NONE| clm_bgc_data%decomp_cascade_sminp_flux_vr_col, decomp_cascade_sminp_flux_vr_col, NONE| phosphorusflux_vars%decomp_cascade_sminp_flux_vr_col, decomp_cascade_sminp_flux_vr_col, NONE| clm_bgc_data%decomp_cascade_ptransfer_vr_col, decomp_cascade_ptransfer_vr_col, NONE| phosphorusflux_vars%decomp_cascade_ptransfer_vr_col, decomp_cascade_ptransfer_vr_col, NONE| clm_bgc_data%sminn_to_denit_decomp_cascade_vr_col, sminn_to_denit_decomp_cascade_vr_col, NONE| nitrogenflux_vars%sminn_to_denit_decomp_cascade_vr_col, sminn_to_denit_decomp_cascade_vr_col, NONE| nitrogenflux_vars%decomp_cascade_sminn_flux_vr_col, decomp_cascade_sminn_flux_vr_col, NONE| clm_bgc_data%decomp_cascade_sminn_flux_vr_col, decomp_cascade_sminn_flux_vr_col, NONE| clm_bgc_data%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr_col, NONE| carbonflux_vars%decomp_cascade_hr_vr_col, decomp_cascade_hr_vr_col, NONE| clm_bgc_data%decomp_cascade_ntransfer_vr_col, decomp_cascade_ntransfer_vr_col, NONE| nitrogenflux_vars%decomp_cascade_ntransfer_vr_col, decomp_cascade_ntransfer_vr_col, NONE
+global_non
+calls
+readParams,
+type(bounds_type)           , intent(in)    :: bounds
+integer                     , intent(in)    :: num_soilc         ! number of soil columns in filter
+integer                     , intent(in)    :: filter_soilc(:)   ! filter for soil columns
+type(carbonflux_type)       , intent(inout) :: carbonflux_vars
+type(nitrogenflux_type)     , intent(inout) :: nitrogenflux_vars
+type(phosphorusflux_type)   , intent(inout) :: phosphorusflux_vars
+type(clm_bgc_interface_data_type), intent(in) :: clm_bgc_data

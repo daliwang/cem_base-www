@@ -1,0 +1,7 @@
+sub_in, aerosol_inst, filter_snowc, num_snowc, bounds, is_lake, temperature_inst, waterstate_inst
+sub_out
+global_ro, frac_sno
+global_wo, z
+global_mod, mss_bcpho, snl, mss_dst2, mss_dst4, mss_dst1, mss_ocpho, dz, h2osoi_ice, snw_rds, mss_dst3, zi, mss_bcphi, mss_ocphi, h2osoi_liq, t_soisno
+global_non
+calls, endrun, Combo

@@ -1,0 +1,10 @@
+sub_param, flag, ncid
+sub_out
+global_ro, vardesc%varid, %type1d, %val, %units, %end1d, %beg1d, %name, %desc
+global_wo
+global_mod
+global_non
+calls, ncd_io, ncd_defvar, shr_sys_abort
+readParams,
+type(file_desc_t), intent(inout) :: ncid   !netcdf unit
+character(len=*) , intent(in) :: flag   !'define','read', or 'write'

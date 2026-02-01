@@ -1,0 +1,20 @@
+sub_param, num_methc:2, energyflux_vars:11, ch4_vars:12, sat:6, soilstate_vars:8, waterstate_vars:10, bounds:1, lake:7, temperature_vars:9, jwt:4, filter_methc:3, dtime_ch4:5
+sub_out
+global_ro| ch4_vars%o2_aere_depth_sat_col, o2_aere_depth, NONE| ch4_vars%o2_aere_depth_unsat_col, o2_aere_depth, NONE| ch4_vars%ch4_prod_depth_sat_col, ch4_prod_depth, NONE| ch4_vars%ch4_prod_depth_unsat_col, ch4_prod_depth, NONE| col%snl, snl, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| ch4_vars%c_atm_grc, c_atm, NONE| waterstate_vars%h2osoi_liq_col, h2osoi_liq, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| soilstate_vars%bsw_col, bsw, NONE| waterstate_vars%h2osoi_vol_col, h2osoi_vol, NONE| grc%londeg, londeg, NONE| temperature_vars%t_grnd_col, t_grnd, NONE| soilstate_vars%cellorg_col, cellorg, NONE| col%gridcell, gridcell, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE| grc%latdeg, latdeg, NONE| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| col%dz, dz, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| soilstate_vars%watsat_col, watsat, NONE
+global_wo
+global_mod| ch4_vars%ch4_oxid_depth_unsat_col, ch4_oxid_depth, NONE| ch4_vars%ch4_oxid_depth_sat_col, ch4_oxid_depth, NONE| ch4_vars%ch4_surf_aere_sat_col, ch4_surf_aere, NONE| ch4_vars%ch4_surf_aere_unsat_col, ch4_surf_aere, NONE| ch4_vars%ch4_ebul_total_unsat_col, ch4_ebul_total, NONE| ch4_vars%ch4_ebul_total_sat_col, ch4_ebul_total, NONE| ch4_vars%conc_o2_sat_col, conc_o2, NONE| ch4_vars%conc_o2_unsat_col, conc_o2, NONE| ch4_vars%ch4_surf_ebul_unsat_col, ch4_surf_ebul, NONE| ch4_vars%ch4_surf_ebul_sat_col, ch4_surf_ebul, NONE| ch4_vars%ch4_aere_depth_unsat_col, ch4_aere_depth, NONE| ch4_vars%ch4_aere_depth_sat_col, ch4_aere_depth, NONE| ch4_vars%o2_decomp_depth_sat_col, o2_decomp_depth, NONE| ch4_vars%o2_decomp_depth_unsat_col, o2_decomp_depth, NONE| ch4_vars%grnd_ch4_cond_col, grnd_ch4_cond, NONE| ch4_vars%o2stress_unsat_col, o2stress, NONE| ch4_vars%o2stress_sat_col, o2stress, NONE| ch4_vars%o2_oxid_depth_sat_col, o2_oxid_depth, NONE| ch4_vars%o2_oxid_depth_unsat_col, o2_oxid_depth, NONE| ch4_vars%ch4stress_sat_col, ch4stress, NONE| ch4_vars%ch4stress_unsat_col, ch4stress, NONE| ch4_vars%ch4_ebul_depth_sat_col, ch4_ebul_depth, NONE| ch4_vars%ch4_ebul_depth_unsat_col, ch4_ebul_depth, NONE| ch4_vars%ch4_surf_diff_sat_col, ch4_surf_diff, NONE| ch4_vars%ch4_surf_diff_unsat_col, ch4_surf_diff, NONE| ch4_vars%conc_ch4_sat_col, conc_ch4, NONE| ch4_vars%conc_ch4_unsat_col, conc_ch4, NONE
+global_non| col%z, z, NONE| waterstate_vars%h2osno_col, h2osno, NONE| ch4_vars%co2_decomp_depth_sat_col, co2_decomp_depth, NONE| ch4_vars%co2_decomp_depth_unsat_col, co2_decomp_depth, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| col%zi, zi, NONE
+calls, endrun, Tridiagonal
+readParams,readCH4Params
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_methc           ! number of column soil points in column filter
+integer                , intent(in)    :: filter_methc(:)     ! column filter for soil points
+integer                , intent(in)    :: jwt( bounds%begc: ) ! index of the soil layer right above the water table (-) [col]
+integer                , intent(in)    :: sat                 ! 0 = unsaturated; 1 = saturated
+logical                , intent(in)    :: lake      ! function called with lake filter
+real(r8)               , intent(in)    :: dtime_ch4           ! time step for ch4 calculations
+type(soilstate_type)   , intent(in)    :: soilstate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(waterstate_type)  , intent(in)    :: waterstate_vars
+type(energyflux_type)  , intent(in)    :: energyflux_vars
+type(ch4_type)         , intent(inout) :: ch4_vars

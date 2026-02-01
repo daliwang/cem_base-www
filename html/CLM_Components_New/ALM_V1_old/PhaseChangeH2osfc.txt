@@ -1,0 +1,15 @@
+sub_param, bounds:1, num_nolakec:2, filter_nolakec:3, temperature_vars:7, waterstate_vars:5, waterflux_vars:6, dhsdT:4
+sub_out
+global_ro| temperature_vars%fact_col, fact, NONE| waterstate_vars%frac_h2osfc_col, frac_h2osfc, NONE| col%snl, snl, NONE| waterstate_vars%h2osoi_ice_col, h2osoi_ice, NONE| waterstate_vars%frac_sno_eff_col, frac_sno, NONE| temperature_vars%c_h2osfc_col, c_h2osfc, NONE
+global_wo| waterflux_vars%qflx_h2osfc_to_ice_col, qflx_h2osfc_to_ice, NONE
+global_mod| temperature_vars%t_h2osfc_col, t_h2osfc, NONE| temperature_vars%xmf_h2osfc_col, xmf_h2osfc, NONE| waterstate_vars%snow_depth_col, snow_depth, NONE| waterstate_vars%h2osno_col, h2osno, NONE| waterstate_vars%h2osfc_col, h2osfc, NONE| temperature_vars%t_soisno_col, t_soisno, NONE| waterstate_vars%int_snow_col, int_snow, NONE
+global_non| col%dz, dz, NONE
+calls, t_startf, t_stopf
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_nolakec                          ! number of column non-lake points in column filter
+integer                , intent(in)    :: filter_nolakec(:)                    ! column filter for non-lake points
+real(r8)               , intent(in)    :: dhsdT ( bounds%begc: )               ! temperature derivative of "hs" [col               ]
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+type(waterflux_type)   , intent(inout) :: waterflux_vars
+type(temperature_type) , intent(inout) :: temperature_vars

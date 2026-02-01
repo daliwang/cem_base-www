@@ -1,0 +1,7 @@
+sub_in, mod_gatscat, mod_geopk, mod_method, mod_maxirr, comm, npryzxy
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, win_init_r4, win_init_i4, mpi_start, win_init_r8, omp_start

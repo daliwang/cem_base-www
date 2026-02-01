@@ -1,0 +1,19 @@
+sub_param, nitrogenstate_vars, filter_soilp, num_soilc, crop_vars, cnstate_vars, soilstate_vars, bounds, num_soilp, filter_soilc, carbonflux_vars, carbonstate_vars
+sub_out
+global_ro, nitrogenstate_vars%sminn_vr_col, carbonstate_vars%frootc_patch, col%dz, carbonflux_vars%cpool_to_frootc_patch, pft%itype, cnstate_vars%croplive_patch, pft%column, carbonflux_vars%frootc_xfer_to_frootc_patch, cnstate_vars%huigrain_patch, col%zi, soilstate_vars%sucsat_col, pft%itype, soilstate_vars%soilpsi_col, crop_vars%gddplant_patch
+global_wo
+global_mod, soilstate_vars%rootfr_patch, soilstate_vars%root_depth_patch
+global_non, cnstate_vars%dormant_flag_patch
+calls
+readParams,
+type(bounds_type)        , intent(in)    :: bounds             ! bounds
+integer                  , intent(in)    :: num_soilc
+integer                  , intent(in)    :: filter_soilc(:)
+integer                  , intent(in)    :: num_soilp          ! number of soil pfts in filter
+integer                  , intent(in)    :: filter_soilp(:)    ! filter for soil pfts
+type(cnstate_type)       , intent(in)    :: cnstate_vars
+type(carbonstate_type)   , intent(in)    :: carbonstate_vars
+type(carbonflux_type)    , intent(in)    :: carbonflux_vars
+type(nitrogenstate_type) , intent(in)    :: nitrogenstate_vars !
+type(crop_type)          , intent(in)    :: crop_vars
+type(soilstate_type)     , intent(inout) :: soilstate_vars

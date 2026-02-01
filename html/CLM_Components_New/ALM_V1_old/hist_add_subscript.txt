@@ -1,0 +1,10 @@
+sub_param, name:1, dim:2
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun
+readParams,
+character(len=*), intent(in) :: name ! name of subscript
+integer         , intent(in) :: dim  ! dimension of subscript

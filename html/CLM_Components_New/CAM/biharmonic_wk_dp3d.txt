@@ -1,0 +1,7 @@
+sub_in, dptens, nets, elem, ptens, edge3, deriv, vtens, hybrid, nete, nt
+sub_out, vtens
+global_ro, rspheremv
+global_wo
+global_mod
+global_non
+calls, t_stopf, t_startf, bndry_exchangeV, edgeVpack, edgeVunpack

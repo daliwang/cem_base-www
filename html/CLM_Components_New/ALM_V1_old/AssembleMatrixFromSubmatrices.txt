@@ -1,0 +1,20 @@
+sub_param, bmatrix_soil:7, bmatrix_snow:5, nband:4, num_nolakec:2, bmatrix_soil_snow:10, bmatrix_soil_ssw:11, bmatrix_ssw_soil:9, bmatrix:12, bmatrix_snow_soil:8, bounds:1, bmatrix_ssw:6, filter_nolakec:3
+sub_out, bmatrix
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(bounds_type), intent(in) :: bounds                                                 ! bounds
+integer , intent(in)  :: num_nolakec                                                    ! number of column non-lake points in column filter
+integer , intent(in)  :: filter_nolakec(:)                                              ! column filter for non-lake points
+integer , intent(in)  :: nband                                                          ! number of bands of the tridigonal matrix
+real(r8), intent(in)  :: bmatrix_snow(bounds%begc:bounds%endc,nband,-nlevsno:-1      )  ! block-diagonal matrix for snow layers
+real(r8), intent(in)  :: bmatrix_ssw(bounds%begc:bounds%endc,nband,       0:0       )   ! block-diagonal matrix for standing surface water
+real(r8), intent(in)  :: bmatrix_soil(bounds%begc:bounds%endc,nband,       1:nlevgrnd)  ! block-diagonal matrix for soil layers
+real(r8), intent(in)  :: bmatrix_snow_soil(bounds%begc:bounds%endc,nband,-1:-1)         ! off-diagonal matrix for snow-soil interaction
+real(r8), intent(in)  :: bmatrix_ssw_soil(bounds%begc:bounds%endc,nband, 0:0 )          ! off-diagonal matrix for standing surface water-soil interaction
+real(r8), intent(in)  :: bmatrix_soil_snow(bounds%begc:bounds%endc,nband, 1:1 )         ! off-diagonal matrix for soil-snow interaction
+real(r8), intent(in)  :: bmatrix_soil_ssw(bounds%begc:bounds%endc,nband, 1:1 )          ! off-diagonal matrix for soil-standing surface water interaction
+real(r8), intent(out) :: bmatrix(bounds%begc: , 1:,-nlevsno: )                          ! full matrix used in numerical solution of temperature

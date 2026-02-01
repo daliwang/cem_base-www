@@ -1,0 +1,7 @@
+sub_in, dtime_ch4, filter_methc, bounds, temperature_inst, jwt, lake, energyflux_inst, sat, soilstate_inst, ch4_inst, num_methc, waterstate_inst
+sub_out
+global_ro, c_atm, bsw, h2osfc, ch4_prod_depth, h2osoi_ice, t_grnd, o2_aere_depth, snl, cellorg, frac_h2osfc, h2osoi_vol, h2osoi_liq, t_h2osfc, t_soisno, watsat, dz
+global_wo
+global_mod, ch4stress, ch4_aere_depth, o2stress, ch4_surf_ebul, grnd_ch4_cond, o2_oxid_depth, ch4_ebul_total, ch4_ebul_depth, conc_ch4, ch4_surf_aere, conc_o2, ch4_surf_diff, ch4_oxid_depth, o2_decomp_depth
+global_non, waterstate_inst%snow_depth_col, waterstate_inst%h2osno_col, col%z, col%zi, ch4_inst%co2_decomp_depth_unsat_col, ch4_inst%co2_decomp_depth_sat_col
+calls, endrun, Tridiagonal

@@ -1,0 +1,7 @@
+sub_in, waterstate_vars, temperature_vars, is_lake, aerosol_vars, filter_snowc, num_snowc, bounds
+sub_out
+global_ro, waterstate_vars%frac_sno_eff_col
+global_wo, col%z
+global_mod, aerosol_vars%mss_ocpho_col, aerosol_vars%mss_bcphi_col, aerosol_vars%mss_ocphi_col, waterstate_vars%snw_rds_col, aerosol_vars%mss_dst4_col, aerosol_vars%mss_bcpho_col, aerosol_vars%mss_dst2_col, aerosol_vars%mss_dst1_col, col%zi, col%snl, col%dz, temperature_vars%t_soisno_col, aerosol_vars%mss_dst3_col, waterstate_vars%h2osoi_ice_col, waterstate_vars%h2osoi_liq_col
+global_non
+calls, endrun, Combo

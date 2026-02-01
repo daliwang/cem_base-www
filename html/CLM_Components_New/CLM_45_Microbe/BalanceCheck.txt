@@ -1,0 +1,13 @@
+sub_in, ubg, ubl, lbl, ubc, lbg, lbp, lbc, ubp
+sub_out
+global_ro, clm3%g%gwf%qflx_ice_dynbal, clm3%g%l%c%cwf%qflx_h2osfc_to_ice, clm3%g%l%c%cws%h2osno_old, clm3%g%l%c%cwf%qflx_qrgwl, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_ice, clm3%g%area, clm3%g%l%c%p%active, clm3%g%l%c%cwf%pwf_a%qflx_dew_snow, clm_a2l%volr, clm3%g%l%c%cwf%pwf_a%qflx_sub_snow, clm3%g%gwf%qflx_liq_dynbal, clm3%g%l%c%gridcell, clm3%g%l%c%p%pef%sabg_soil, clm3%g%l%c%p%pef%eflx_lwrad_net, clm_a2l%forc_solad, clm3%g%l%c%cwf%qflx_sl_top_soil, clm3%g%l%c%p%pef%eflx_lwrad_out, clm3%g%l%c%p%pef%eflx_traffic_pft, clm3%g%l%c%cps%do_capsnow, clm3%g%l%c%cwf%pwf_a%qflx_evap_grnd, clm3%g%l%c%cps%frac_sno, clm3%g%l%c%cwf%pwf_a%qflx_rain_grnd, clm3%g%l%c%cebal%errsoi, clm3%g%l%c%p%pef%eflx_heat_from_ac_pft, clm3%g%l%c%cwbal%endwb, clm3%g%l%c%cwf%pwf_a%qflx_snow_grnd, clm3%g%l%c%cps%frac_sno_eff, clm3%g%l%c%cwf%pwf_a%qflx_snwcp_liq, clm3%g%l%c%cwf%pwf_a%qflx_evap_tot, clm3%g%l%c%cwf%qflx_h2osfc_surf, clm3%g%l%c%cwbal%begwb, clm3%g%l%c%p%pef%fsr, clm3%g%l%c%cws%h2osno, clm3%g%l%c%p%pef%sabg_chk, clm3%g%l%c%cwf%pwf_a%qflx_prec_grnd, clm3%g%l%c%p%column, clm3%g%l%c%cwf%qflx_floodc, clm3%g%l%c%landunit, clm3%g%l%c%itype, clm3%g%l%c%p%pef%sabv, clm3%g%l%c%p%pef%sabg_snow, clm3%g%l%c%p%pef%fsa, clm3%g%gef%eflx_dynbal, clm3%g%l%c%cwf%qflx_glcice_frz, clm3%g%l%c%cwf%qflx_glcice, clm3%g%l%c%cwf%pwf_a%qflx_dew_grnd, clm3%g%l%c%cwf%qflx_snow_h2osfc, clm3%g%l%c%p%pef%eflx_sh_tot, clm3%g%l%c%cwf%qflx_irrig, clm3%g%l%c%cwf%qflx_snow_melt, clm3%g%l%c%p%pef%sabg, clm3%g%l%c%cwf%qflx_drain, clm3%g%l%c%p%gridcell, clm_a2l%forc_snow, clm3%g%l%c%p%pef%eflx_lh_tot, clm_a2l%forc_solai, clm3%g%l%c%p%pef%eflx_soil_grnd, clm3%g%l%c%cwf%qflx_drain_perched, clm3%g%l%itype, clm3%g%l%c%active, clm3%g%l%c%cwf%qflx_surf, clm3%g%l%c%p%pef%eflx_wasteheat_pft, clm_a2l%forc_rain, clm3%g%l%c%p%landunit, clm3%g%l%c%cps%snl, clm_a2l%forc_lwrad
+global_wo, clm3%g%l%c%p%pebal%errseb, clm3%g%l%c%p%pef%netrad
+global_mod, clm3%g%gwf%qflx_snwcp_iceg, clm3%g%gef%eflx_sh_totg, clm3%g%gwf%qflx_runoffg, clm3%g%l%c%cws%snow_sinks, clm3%g%l%c%cwbal%errh2o, clm3%g%l%c%cws%snow_sources, clm3%g%l%c%cws%errh2osno, clm3%g%tws, clm3%g%l%c%p%pebal%errsol, clm3%g%l%c%p%pebal%errlon
+global_non, clm3%g%l%canyon_hwr, clm3%g%l%c%cwf%qflx_runoff, clm3%g%l%c%cwf%pwf_a%qflx_evap_soi, clm3%g%l%c%cwf%qflx_top_soil
+calls, c2g, p2g, endrun
+
+Tree height: 5
+3+, endrun, 
+2+, endrun, c2g, c2g, p2g, c2g, 
+3+, endrun, endrun, endrun, 
+4+, endrun, endrun, 

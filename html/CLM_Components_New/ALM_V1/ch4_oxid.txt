@@ -1,0 +1,18 @@
+sub_param, ch4_vars, temperature_vars, jwt, soilstate_vars, sat, num_methc, waterstate_vars, lake, bounds, filter_methc
+sub_out
+global_ro, ch4_vars%conc_o2_unsat_col, ch4_vars%conc_o2_sat_col, ch4_vars%conc_ch4_sat_col, ch4_vars%conc_ch4_unsat_col, soilstate_vars%smp_l_col, soilstate_vars%watsat_col, waterstate_vars%h2osoi_vol_col, temperature_vars%t_soisno_col
+global_wo, ch4_vars%o2_oxid_depth_unsat_col, ch4_vars%o2_oxid_depth_sat_col
+global_mod, ch4_vars%ch4_oxid_depth_unsat_col, ch4_vars%ch4_oxid_depth_sat_col
+global_non, ch4_vars%co2_oxid_depth_unsat_col, ch4_vars%co2_oxid_depth_sat_col, ch4_vars%o2_decomp_depth_sat_col, ch4_vars%o2_decomp_depth_unsat_col
+calls
+readParams,readCH4Params
+type(bounds_type)      , intent(in) :: bounds
+integer                , intent(in) :: num_methc           ! number of column soil points in column filter
+integer                , intent(in) :: filter_methc(:)     ! column filter for soil points
+integer                , intent(in) :: jwt( bounds%begc: ) ! index of the soil layer right above the water table (-) [col]
+integer                , intent(in) :: sat                 ! 0 = unsaturated; 1 = saturated
+logical                , intent(in) :: lake                ! function called with lake filter
+type(waterstate_type)  , intent(in) :: waterstate_vars
+type(soilstate_type)   , intent(in) :: soilstate_vars
+type(temperature_type) , intent(in) :: temperature_vars
+type(ch4_type)         , intent(in) :: ch4_vars

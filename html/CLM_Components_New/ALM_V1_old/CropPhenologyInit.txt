@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro| pft%gridcell, gridcell, NONE
+global_wo
+global_mod
+global_non
+calls
+readParams,readCNPhenolParams
+type(bounds_type), intent(in) :: bounds

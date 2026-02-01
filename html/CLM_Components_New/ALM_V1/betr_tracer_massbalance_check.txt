@@ -1,0 +1,15 @@
+sub_param, tracerflux_vars, betrtracer_vars, filter, lbj, ubj, numf, bounds, tracerstate_vars
+sub_out
+global_ro, betrtracer_vars%ntracers, tracerflux_vars%tracer_flx_netpro_col, tracerstate_vars%end_tracer_molarmass_col, betrtracer_vars%ngwmobile_tracers, tracerstate_vars%beg_tracer_molarmass_col, tracerflux_vars%tracer_flx_netphyloss_col
+global_wo
+global_mod, tracerstate_vars%errtracer_col
+global_non, betrtracer_vars%tracernames, betrtracer_vars%is_mobile, tracerflux_vars%tracer_flx_infl_col
+calls, betr_tracer_mass_summary, endrun, tracerflux_vars%flux_summary, tracerflux_vars%Temporal_average, tracerflux_vars%flux_display
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: numf             ! number of columns in column filter
+integer,                intent(in)    :: filter(:)        ! column filter
+type(betrtracer_type),  intent(in)    :: betrtracer_vars  ! betr configuration information
+type(tracerflux_type),  intent(inout) :: tracerflux_vars
+type(tracerstate_type), intent(inout) :: tracerstate_vars ! tracer state variables data structure

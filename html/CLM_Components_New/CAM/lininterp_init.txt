@@ -1,0 +1,7 @@
+sub_in, yin, extrap_method, nout, cyclicmin, nin, cyclicmax, yout, interp_wgts
+sub_out
+global_ro
+global_wo
+global_mod, wgtn, jjp, jjm, wgts
+global_non
+calls, endrun

@@ -1,0 +1,7 @@
+sub_in, pout, nlev, arrin, ncold, pmid, ncol, arrout
+sub_out, arrout
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun

@@ -1,0 +1,18 @@
+sub_param, energyflux_vars:6, bounds:1, soil_water_retention_curve:10, filterp:4, soilstate_vars:7, nlevgrnd:2, waterstate_vars:9, fn:3, temperature_vars:8, canopystate_vars:5
+sub_out, nlevgrnd
+global_ro| bounds%begp:bounds%endp, endp, NONE
+global_wo
+global_mod
+global_non
+calls, normalize_unfrozen_rootfr, endrun, calc_root_moist_stress_clm45default
+readParams,
+type(bounds_type)      , intent(in)    :: bounds   !bounds
+integer                , intent(in)    :: nlevgrnd
+integer                , intent(in)    :: fn
+integer                , intent(in)    :: filterp(:)
+type(canopystate_type) , intent(in)    :: canopystate_vars
+type(energyflux_type)  , intent(inout) :: energyflux_vars
+type(soilstate_type)   , intent(inout) :: soilstate_vars
+type(temperature_type) , intent(in)    :: temperature_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+class(soil_water_retention_curve_type), intent(in) :: soil_water_retention_curve

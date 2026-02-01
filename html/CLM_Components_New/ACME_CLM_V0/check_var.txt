@@ -1,0 +1,7 @@
+sub_in, print_err, varname, vardesc, ncid, readvar
+sub_out, readvar
+global_ro
+global_wo
+global_mod
+global_non
+calls, pio_seterrorhandling

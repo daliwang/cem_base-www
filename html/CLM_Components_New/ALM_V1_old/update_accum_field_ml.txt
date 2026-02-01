@@ -1,0 +1,10 @@
+sub_param, name:1, field:2, nstep:3
+sub_out
+global_ro| %period, period, NONE| %val, val, NONE| %numlev, numlev, NONE| %acctype, acctype, NONE| %beg1d, beg1d, NONE| %end1d, end1d, NONE
+global_wo
+global_mod
+global_non
+calls, shr_sys_abort
+readParams,
+character(len=*), intent(in) :: name       !field name
+integer , intent(in) :: nstep              !time step index

@@ -1,0 +1,7 @@
+sub_in, soilstate_inst, num_lakec, bounds, lakestate_inst, waterstate_inst, temperature_inst, num_lakep, filter_lakec, num_shlakenosnowc, atm2lnd_inst, aerosol_inst, energyflux_inst, filter_shlakesnowc, waterflux_inst, num_shlakesnowc, filter_shlakenosnowc, filter_lakep
+sub_out, aerosol_inst
+global_ro, t_grnd, do_capsnow, qflx_evap_tot, qflx_floodg, pcolumn, forc_snow, forc_rain, dz_lake, qflx_evap_soi, watsat, forc_t, pgridcell
+global_wo, snw_rds, qflx_dew_grnd_col, qflx_rain_grnd_col, qflx_h2osfc_surf, qflx_snwcp_ice_col, qflx_drain_perched, qflx_floodc, qflx_snwcp_liq_col, qflx_runoff, qflx_rsub_sat, dTdz_top, sno_liq_top, frac_iceold, snw_rds_top, qflx_prec_grnd_col, h2osno_top, qflx_evap_tot_col, qflx_dew_snow_col, zi, frac_sno_eff, qflx_sub_snow_col, qflx_surf, z, snot_top, qflx_top_soil, qflx_evap_grnd_col, qflx_infl
+global_mod, begwb, t_lake, eflx_snomelt, qflx_snow_grnd_col, h2osno, h2osoi_vol, dz, eflx_gnet, t_soisno, h2osoi_ice, eflx_grnd_lake, qflx_snow_melt, snowliq, snowice, qflx_sl_top_soil, eflx_sh_tot, snow_depth, qflx_snwcp_liq, qflx_snomelt, qflx_dew_snow, eflx_sh_grnd, qflx_sub_snow, qflx_dew_grnd, qflx_snwcp_ice, eflx_soil_grnd, lake_icefrac, snl, qflx_rain_grnd, qflx_prec_grnd, qflx_qrgwl, qflx_evap_grnd, qflx_snow_grnd_patch, h2osoi_liq, endwb, qflx_drain
+global_non, col%landunit, bounds%begc, col%gridcell, bounds%endc
+calls, BuildSnowFilter, DivideSnowLayers, CombineSnowLayers, waterstate_inst%Reset, aerosol_inst%Reset, SnowCompaction, SnowWater

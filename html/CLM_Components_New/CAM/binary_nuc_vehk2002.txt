@@ -1,0 +1,7 @@
+sub_in, radius_cluster, rateloge, cnum_h2so4, so4vol, temp, ratenucl, cnum_tot, rh
+sub_out, ratenucl, radius_cluster, cnum_tot
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,7 @@
+sub_in, flag, hno3_avail, h2o_avail, lchnk, ncol, h2so4m, hno3_cond, temper, is_chem, wts, converged, press, ch2so4, mask
+sub_out, ch2so4, wts, converged, hno3_cond
+global_ro
+global_wo
+global_mod
+global_non
+calls

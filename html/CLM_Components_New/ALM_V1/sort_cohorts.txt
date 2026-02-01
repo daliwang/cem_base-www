@@ -1,0 +1,9 @@
+sub_param, patchptr
+sub_out
+global_ro, current_patch%tallest, next_c, current_c, udata%storebigcohort, NULL, NULL, current_c, udata%storesmallcohort
+global_wo
+global_mod
+global_non, null, null, udata%storebigcohort, current_c%shorter, patchptr, udata%storesmallcohort
+calls, insert_cohort
+readParams,
+type(patch) , target, intent(inout)  :: patchptr

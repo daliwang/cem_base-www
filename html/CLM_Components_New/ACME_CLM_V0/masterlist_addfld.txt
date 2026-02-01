@@ -1,0 +1,7 @@
+sub_in, type2d, no_snow_behavior, c2l_scale_type, fname, num2d, long_name, type1d_out, avgflag, type1d, p2c_scale_type, l2g_scale_type, hpindex, units
+sub_out
+global_ro, bounds%begp, bounds%endp, bounds%endc, bounds%begl, bounds%begg, bounds%begc, bounds%endl, bounds%endg
+global_wo
+global_mod
+global_non
+calls, get_proc_global, get_proc_bounds, endrun

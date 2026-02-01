@@ -1,0 +1,7 @@
+sub_in, p, this
+sub_out
+global_ro
+global_wo, this%c14_psnsun_patch, this%rc13_psnsha_patch, this%psnsun_patch, this%rc13_psnsun_patch, this%c13_psnsun_patch, this%c14_psnsha_patch, this%alphapsnsha_patch, this%psnsha_patch, this%rc13_canair_patch, this%alphapsnsun_patch, this%c13_psnsha_patch
+global_mod
+global_non
+calls

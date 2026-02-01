@@ -1,0 +1,7 @@
+sub_in, A_fnc, lower_threshold, upper_threshold, l_upper_thresh, f_diff, l_lower_thresh, B_fnc
+sub_out, B_fnc, A_fnc
+global_ro
+global_wo
+global_mod
+global_non
+calls

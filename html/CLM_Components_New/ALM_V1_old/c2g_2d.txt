@@ -1,0 +1,14 @@
+sub_param, garr:4, bounds:1, c2l_scale_type:5, l2g_scale_type:6, carr:3, num2d:2
+sub_out, garr
+global_ro| col%landunit, landunit, NONE| lun%canyon_hwr, canyon_hwr, NONE| col%gridcell, gridcell, NONE| col%wtgcell, wtgcell, NONE
+global_wo
+global_mod
+global_non
+calls, endrun, build_scale_l2g
+readParams,
+type(bounds_type), intent(in) :: bounds
+integer , intent(in)  :: num2d                     ! size of second dimension
+real(r8), intent(in)  :: carr( bounds%begc: , 1: ) ! input column array
+real(r8), intent(out) :: garr( bounds%begg: , 1: ) ! output gridcell array
+character(len=*), intent(in) :: c2l_scale_type     ! scale factor type for averaging
+character(len=*), intent(in) :: l2g_scale_type     ! scale factor type for averaging

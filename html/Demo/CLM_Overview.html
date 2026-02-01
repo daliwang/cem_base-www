@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<title>CLM Structure Overview</title>
+<html>
+	<style>
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 13px Times New Roman;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 15px Times New Roman;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+h1{
+	font: 30px Arial;
+}
+
+h2{
+	font: 20px Arial;
+}
+
+h3{
+	font: 15px Times New Roman;
+}
+
+
+.alignleft {
+	float: left;
+	color:white;
+	font: 13px Arial;
+}
+.alignright {
+	float: right;
+	color:white;
+	font: 13px Arial;
+}
+
+.inner {
+  fill: #ccc;
+  stroke: #000;
+  stroke-dasharray: 3, 4;
+}
+
+.graph
+{
+	border :1px solid black;
+}
+
+
+.legend
+{
+	border :1px solid black;
+}
+
+</style>
+<body>
+
+<div class="whole" style="width:1201px">
+
+<div class="header" style="background-color:#003333;height:150px">
+<h1 style="margin-bottom:0;color:white;text-align:center;">A Web-based Visual Analytic System for Understanding the CLM Structure</h1>
+<h2 style="margin-bottom:0;color:white;text-align:center;">CLM <span style="color: blue;">Structure Overview</span></h2>
+<h3 style="margin-bottom:0;color:white;text-align:center;">Click on the nodes to expand or collapse.</h3>
+
+
+<a href="CanopyFluxes.html" class="alignleft">
+	Switch to CLM CanopyFluxes submodel
+</a>         
+
+
+<a href="CLM_Comparison.html" class="alignright">
+	Switch to CLM Inter-version Comparison
+</a>  
+
+
+
+</div>
+
+<div class="legend" style="background-color:white;width:200px;height:550px;float:left;">
+
+
+<script src="lib/d3.min.js"></script>
+<script>
+		
+		var width = 200,
+    		height = 550;
+		
+		var svg1 = d3.select("div.legend").
+							append("svg").
+							attr("width",width).
+							attr("height",height);
+		
+		/*
+		var rectangle = svg1.append("rect")
+		.attr("x", 0)
+		.attr("y", 0)
+		.attr("height", height)
+		.attr("width", width)
+		.attr("fill","none")
+		.style("stroke", "black")
+		.style("stroke-width","1.5px");
+		*/
+		
+		
+		
+		//Adding the legend
+		var text=svg1.append("text");
+		var textLabels=text
+			.attr("x", 5)
+			.attr("y", 30)
+			.text("Legend")
+			.style("font-family", "Times New Roman")
+			.style("font-size", "20px")
+			.style("font-weight", "bold")
+			.style("fill", "black");
+							
+
+         
+         var circle_index=[0,1];
+         var circle_x=[15,15];
+         var circle_y=[60,90];
+         var circle_r=[8,8];
+         var circle_color=["lightsteelblue","yellow"];
+           		
+         var circles= svg1.selectAll("circle").data(circle_index).enter().append("circle");
+          
+          
+         circles.attr("cx",function(d) {return circle_x[d];})
+          	.attr("cy",function(d) {return circle_y[d];})
+          	.attr("r",function(d) {return circle_r[d];})
+          	.style("fill",function(d) {return circle_color[d];})
+          	.style("stroke", "steelblue")
+          	.style("stroke-width","1.5px");
+         
+         
+         
+         var text_index=[0,1,2];
+         var text_x=[-1,15,15];
+         var text_y=[-1,60,90];
+         var text_r=[-1,6,6];
+         var text_name=["legend","Expandable Node","New Model Development"];
+         var texts= svg1.selectAll("text").data(text_index).enter().append("text");
+          
+         texts
+         	.attr("x", function(d) {return text_x[d]+20;})
+			.attr("y", function(d) {return text_y[d]+text_r[d];})
+			.text(function(d) {return text_name[d];})
+			.style("font-family", "Times New Roman")
+			.style("font-size", "15px")
+			.style("fill", "black");
+	
+
+
+</script>
+
+</div>
+
+<div class="graph" style="background-color:white;width:996px;height:550px;float:left;">
+	<script src="lib/d3.min.js"></script>
+
+   		<script>
+
+   		
+   			var margin = {top: 10, right: 120, bottom: 20, left: 40},
+            width = 996 - margin.right - margin.left,
+            height = 550 - margin.top - margin.bottom;
+    
+
+var svg = d3.select("div.graph").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	
+	/*
+    var rectangle = svg.append("rect")
+		.attr("x", 0)
+		.attr("y", 0)
+		.attr("width", width + margin.right + margin.left )
+		.attr("height", height + margin.top + margin.bottom)
+		.attr("fill","none")
+		.style("stroke", "black")
+		.style("stroke-width","1.5px");
+	
+	*/
+
+	
+	
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree()
+    .size([height,width]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+
+d3.json("clm_overview.json", function(error, flare) {
+  root = flare;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+  root.children.forEach(collapse);
+  update(root);
+});
+
+d3.select(self.frameElement).style("height", "800px");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { 
+  	if(d.name=="Fractionation" || d.name=="FrictionVelocity" || d.name=="MoninObukIni" || d.name=="Photosynthesis"|| d.name=="QSat") {d.y = d.depth * 170;}
+  	else {d.y = d.depth * 120;}
+   });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click);
+
+  nodeEnter.append("circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 8.5)
+      .style("fill", function(d) 
+      { 
+      	if(d.name=="ch4, n2o, microbeCN") {return "yellow";}
+      	else {return d._children ? "lightsteelblue" : "#fff"; }
+      }
+      	
+      );
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      });
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+
+
+</script>
+	
+</div>
+
+
+</div>
+
+</body>
+</html>

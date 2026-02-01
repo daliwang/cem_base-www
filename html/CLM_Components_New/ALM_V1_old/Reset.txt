@@ -1,0 +1,9 @@
+sub_param, this:1, column:2
+sub_out
+global_ro
+global_wo| this%snw_rds_col, snw_rds_col, NONE
+global_mod
+global_non
+calls
+readParams,
+integer , intent(in)   :: column     ! column index

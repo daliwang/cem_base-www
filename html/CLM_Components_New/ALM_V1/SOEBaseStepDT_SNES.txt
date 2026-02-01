@@ -1,0 +1,9 @@
+sub_param, dt, converged, ierr, soe
+sub_out, converged
+global_ro
+global_wo
+global_mod, soe%cumulative_newton_iterations, soe%time, soe%cumulative_linear_iterations
+global_non
+calls, SNESGetLinearSolveIterations, SNESSolve, soe%SetDtime, soe%PostSolve, SNESGetIterationNumber, SNESGetConvergedReason, VecCopy, soe%PreSolve
+readParams,
+PetscBool,intent(out)      :: converged

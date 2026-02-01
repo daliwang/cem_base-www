@@ -1,0 +1,7 @@
+sub_in, ip, par_z, je, x, x1, iv, f1, f2, oair, x2, ig, gb_mol, cair, rh_can, gs_mol, lmr_z, tol
+sub_out, x
+global_ro
+global_wo
+global_mod
+global_non
+calls, ci_func, endrun

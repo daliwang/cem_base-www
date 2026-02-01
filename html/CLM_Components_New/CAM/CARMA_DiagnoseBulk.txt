@@ -1,0 +1,7 @@
+sub_in, pbuf, tnd_qsnow, rliq, icol, dt, cstate, prec_sed, carma, tnd_nsnow, snow_sed, ptend, state, rc, prec_str, re_ice, cam_out, snow_str
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, CARMASTATE_GetBin

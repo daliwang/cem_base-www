@@ -1,0 +1,9 @@
+sub_param, bounds:1
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, pflotran_not_available, interface_init
+readParams,clm_pf_readnl
+type(bounds_type), intent(in) :: bounds  ! bounds

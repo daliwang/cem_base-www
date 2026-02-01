@@ -1,0 +1,8 @@
+sub_in, xao_ox, fractions_ox, infodata, timer_mrg
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, x2o_ox_inst, component_get_x2c_cx
+calls, t_drvstartf, t_drvstopf, mct_aVect_accum, prep_ocn_merge, mct_avect_avg, seq_infodata_GetData, mct_aVect_zero
+calls_ln, mct_aVect_zero@435, mct_aVect_accum@461, mct_avect_avg@468, t_drvstopf@471, prep_ocn_merge@456, seq_infodata_GetData@423, t_drvstartf@426

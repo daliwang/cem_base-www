@@ -1,0 +1,7 @@
+sub_in, temperature_inst, soilstate_inst, bounds, energyflux_inst, fn, soil_water_retention_curve, nlevgrnd, rootfr_unf, filterp, waterstate_inst
+sub_out
+global_ro, watsat, t_soisno, smpso, sucsat, smpsc, h2osoi_vol, eff_porosity, rootfr, bsw, h2osoi_liqvol
+global_wo
+global_mod, rresis, btran2, rootr, btran
+global_non
+calls, soil_water_retention_curve%soil_suction

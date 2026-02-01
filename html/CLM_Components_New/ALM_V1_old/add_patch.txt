@@ -1,0 +1,12 @@
+sub_param, ptype:3, wtcol:4, pi:1, ci:2
+sub_out, pi
+global_ro
+global_wo| pft%column, column, NONE| pft%mxy, mxy, NONE| pft%itype, itype, NONE
+global_mod| pft%wtcol, wtcol, NONE| pft%gridcell, gridcell, NONE| col%gridcell, gridcell, NONE| col%landunit, landunit, NONE| pft%landunit, landunit, NONE
+global_non
+calls
+readParams,
+integer  , intent(inout) :: pi    ! input value is index of last patch added; output value is index of this newly-added patch
+integer  , intent(in)    :: ci    ! column index on which this patch should be placed (assumes this column has already been created)
+integer  , intent(in)    :: ptype ! patch type
+real(r8) , intent(in)    :: wtcol ! weight of the patch relative to the column

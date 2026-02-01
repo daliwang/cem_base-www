@@ -1,0 +1,21 @@
+sub_param, filter_soilc, waterflux_vars, soil_water_retention_curve, energyflux_vars, waterstate_vars, clm_bgc_data, bounds, canopystate_vars, temperature_vars, soilstate_vars, num_soilc, ch4_vars, atm2lnd_vars
+sub_out
+global_ro, ch4_vars%finundated_col, waterstate_vars%h2osoi_ice_col, waterflux_vars%qflx_ev_h2osfc_col, atm2lnd_vars%forc_pbot_not_downscaled_grc, ch4_vars%o2stress_sat_col, temperature_vars%t_grnd_col, soilstate_vars%soilpsi_col, col%pfti, waterstate_vars%frac_sno_eff_col, ch4_vars%o2_decomp_depth_unsat_col, waterflux_vars%qflx_top_soil_col, energyflux_vars%htvp_col, soilstate_vars%rootfr_col, energyflux_vars%eflx_soil_grnd_patch, pft%wtcol, ch4_vars%o2_decomp_depth_sat_col, ch4_vars%o2stress_unsat_col, energyflux_vars%eflx_bot_col, waterstate_vars%frac_h2osfc_col, waterflux_vars%qflx_evap_soi_col, ch4_vars%conc_o2_sat_col, atm2lnd_vars%forc_pch4_grc, waterstate_vars%h2osoi_liq_col, energyflux_vars%eflx_gnet_patch, temperature_vars%t_soisno_col, atm2lnd_vars%forc_pco2_grc, waterflux_vars%qflx_tran_veg_col, canopystate_vars%alt_indx_col, waterflux_vars%qflx_sub_snow_col, ch4_vars%conc_o2_unsat_col, waterstate_vars%h2osoi_vol_col
+global_wo, clm_bgc_data%conc_o2_sat_col, clm_bgc_data%h2osoi_ice_col, clm_bgc_data%qflx_sub_snow_col, clm_bgc_data%conc_o2_unsat_col, clm_bgc_data%t_grnd_col, clm_bgc_data%t_soisno_col, clm_bgc_data%qflx_tran_veg_col, clm_bgc_data%o2_decomp_depth_unsat_col, clm_bgc_data%frac_h2osfc_col, clm_bgc_data%qflx_ev_h2osfc_col, clm_bgc_data%finundated_col, clm_bgc_data%forc_pch4_grc, clm_bgc_data%qflx_evap_soi_col, clm_bgc_data%htvp_col, clm_bgc_data%h2osoi_vol_col, clm_bgc_data%frac_sno_eff_col, clm_bgc_data%qflx_top_soil_col, clm_bgc_data%o2stress_unsat_col, clm_bgc_data%soilpsi_col, clm_bgc_data%h2osoi_liq_col, clm_bgc_data%o2stress_sat_col, clm_bgc_data%eflx_bot_col, clm_bgc_data%forc_pco2_grc, clm_bgc_data%alt_indx_col, clm_bgc_data%rootfr_col, clm_bgc_data%o2_decomp_depth_sat_col, clm_bgc_data%forc_pbot_not_downscaled_grc
+global_mod, clm_bgc_data%eflx_gnet_col, clm_bgc_data%eflx_soil_grnd_col
+global_non, col%gridcell, col%active, col%zi, col%dz, col%wtgcell
+calls
+readParams,
+type(bounds_type)        , intent(in) :: bounds           ! bounds
+integer                  , intent(in) :: num_soilc        ! number of column soil points in column filter
+integer                  , intent(in) :: filter_soilc(:)  ! column filter for soil points
+type(atm2lnd_type)       , intent(in) :: atm2lnd_vars
+type(soilstate_type)     , intent(in) :: soilstate_vars
+type(waterstate_type)    , intent(in) :: waterstate_vars
+type(waterflux_type)     , intent(in) :: waterflux_vars
+type(temperature_type)   , intent(in) :: temperature_vars
+type(energyflux_type)    , intent(in) :: energyflux_vars
+type(canopystate_type)   , intent(in) :: canopystate_vars
+type(ch4_type)           , intent(in) :: ch4_vars
+class(soil_water_retention_curve_type)  , intent(in)    :: soil_water_retention_curve
+type(clm_bgc_interface_data_type)       , intent(inout) :: clm_bgc_data

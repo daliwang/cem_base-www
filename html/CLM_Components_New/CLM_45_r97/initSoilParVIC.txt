@@ -1,0 +1,7 @@
+sub_in, sandcol, soilhydrology_inst, claycol, om_fraccol, c
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

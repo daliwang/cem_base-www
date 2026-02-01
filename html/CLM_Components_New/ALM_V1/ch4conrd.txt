@@ -1,0 +1,8 @@
+sub_param
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, relavu, shr_nl_find_group_name, endrun, mpi_bcast
+readParams,

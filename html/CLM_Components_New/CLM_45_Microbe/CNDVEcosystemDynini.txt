@@ -1,0 +1,10 @@
+sub_in
+sub_out
+global_ro
+global_wo, clm3%g%l%c%p%pdgvs%crownarea, clm3%g%l%c%p%pdgvs%present, clm3%g%gdgvs%tmomin20, clm3%g%l%c%p%pcs%leafcmax, clm3%g%gdgvs%agdd20, clm3%g%l%c%p%pdgvs%t_mo_min, clm3%g%l%c%p%pdgvs%nind
+global_mod
+global_non, clm3%g, clm3%g%l%c%p
+calls, get_proc_bounds
+
+Tree height: 1
+0 , get_proc_bounds, 

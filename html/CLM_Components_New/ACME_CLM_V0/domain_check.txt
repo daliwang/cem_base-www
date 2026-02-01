@@ -1,0 +1,7 @@
+sub_in, domain
+sub_out
+global_ro, domain%set, domain%mask, domain%ni, domain%nend, domain%frac, domain%glcmask, domain%area, domain%nj, domain%pftm, domain%decomped, domain%latc, domain%nbeg, domain%clmlevel, domain%lonc, domain%topo, domain%ns
+global_wo
+global_mod
+global_non
+calls

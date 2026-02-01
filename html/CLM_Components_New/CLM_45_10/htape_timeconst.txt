@@ -1,0 +1,15 @@
+sub_in, mode, t
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, clm3%g%l, clm3%g%l%c
+calls, ncd_io, getdatetime, get_curr_date, ncd_defvar, get_curr_time, get_proc_bounds, ncd_putatt, get_ref_date
+
+Tree height: 5
+3+, get_proc_bounds, ncd_io, ncd_io, ncd_io, ncd_io, 
+4-, ncd_io, ncd_io, 
+4+, ncd_io, ncd_io, 
+2+, ncd_defvar, ncd_defvar, ncd_defvar, get_ref_date, ncd_defvar, ncd_putatt, ncd_putatt, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, get_curr_time, get_curr_date, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, ncd_io, getdatetime, ncd_io, ncd_io, 
+3-, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 
+3+, ncd_io, ncd_io, ncd_io, ncd_io, ncd_putatt, ncd_putatt, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, ncd_defvar, 

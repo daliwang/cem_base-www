@@ -1,0 +1,7 @@
+sub_in, rrtmg_levs, aer_lw_abs, ncol, lu, flnt, flns, fldsc, flntc, flwds, qrlc, flut, flutc, fcnl, tauc_lw, qrl, lchnk, cld, pmid, flnsc, r_state, ld, fnl
+sub_out, qrlc, flnsc, flut, ld, fnl, fcnl, flutc, qrl, lu, flns, flnt, fldsc, flwds, flntc
+global_ro
+global_wo
+global_mod
+global_non
+calls, rrtmg_lw, mcica_subcol_lw, t_startf, t_stopf, outfld

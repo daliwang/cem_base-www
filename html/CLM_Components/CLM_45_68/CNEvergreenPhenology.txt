@@ -1,0 +1,7 @@
+sub_in, num_soilp, filter_soilp
+sub_out
+global_ro, itype, leaf_long, evergreen
+global_wo, bglfr, bgtr, lgsf
+global_mod
+global_non
+calls

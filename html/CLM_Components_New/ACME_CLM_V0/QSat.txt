@@ -1,0 +1,7 @@
+sub_in, es, qs, qsdT, p, esdT, T
+sub_out, esdT, es, qs, qsdT
+global_ro
+global_wo
+global_mod
+global_non
+calls

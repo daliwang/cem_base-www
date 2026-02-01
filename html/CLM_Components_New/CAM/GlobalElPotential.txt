@@ -1,0 +1,7 @@
+sub_in
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, highlat_adjust, pot_latsmo2, pot_latsmo, prep_weimer, highlat_getbnd, bnd_sinus, pot_lonsmo, interp_poten, efield_mid

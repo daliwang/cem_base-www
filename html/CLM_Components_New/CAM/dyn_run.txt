@@ -1,0 +1,7 @@
+sub_in, rc, dyn_state
+sub_out, rc
+global_ro
+global_wo
+global_mod
+global_non
+calls, prim_run_subcycle

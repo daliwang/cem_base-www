@@ -1,0 +1,7 @@
+sub_in, coslam, dlam, qxr, vxr, qxl, vxl, adv_state, uxr, uxl, sinlam
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, limdx, t_startf, extyv, t_stopf, cubxdr, extx, extys

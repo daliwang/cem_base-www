@@ -1,0 +1,7 @@
+sub_in, jt1, rat_h2och4, fac01, colo2, rat_h2on2o_1, selffac, plankbnd, indminor, indfor, colch4, fac10, scaleminor, rat_h2oco2_1, fac11, colh2o, coln2o, rat_n2oco2, colco, laytrop, rat_h2oo3, forfrac, rat_o3co2, rat_h2och4_1, coldry, minorfrac, planklay, nlayers, rat_h2oo3_1, indself, scaleminorn2, colbrd, jt, fac00, rat_o3co2_1, selffrac, rat_n2oco2_1, planklev, pavel, fracs, jp, colco2, rat_h2on2o, forfac, taug, rat_h2oco2, colo3, wx
+sub_out, taug, fracs
+global_ro
+global_wo
+global_mod
+global_non
+calls, taugb5, taugb16, taugb11, taugb6, taugb15, taugb12, taugb3, taugb13, taugb1, taugb8, taugb9, taugb14, taugb7, taugb10, taugb2, taugb4

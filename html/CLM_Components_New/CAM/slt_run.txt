@@ -1,0 +1,7 @@
+sub_in, grt2, grlps2, grfu1, grfu, grfu2, grt1, grfv, grfv2, detam, grfv1, grq2, etamid, grlps1, adv_state, lnpssld, ztodt, prhssld, grq1, cwava
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, da_coupling, t_stopf, scanslt_aft, t_startf, scanslt_bft, extyv, bndexch, t_barrierf, extys, scanslt_fft, ad_coupling, extx

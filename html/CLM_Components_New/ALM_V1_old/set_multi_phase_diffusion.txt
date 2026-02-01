@@ -1,0 +1,20 @@
+sub_param, bounds:1, chemstate_vars:11, tracercoeff_vars:13, jtops:4, filter:6, soilstate_vars:7, ubj:3, lbj:2, numf:5, waterstate_vars:8, betrtracer_vars:12, canopystate_vars:9, temperature_vars:10
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, calc_bulk_conductances, calc_gaseous_diffusion_soil_tortuosity, calc_bulk_diffusivity, calc_aqueous_diffusion_soil_tortuosity
+readParams,
+type(bounds_type)       , intent(in) :: bounds  ! bounds
+integer                 , intent(in) :: lbj, ubj             ! lower and upper bounds, make sure they are > 0
+integer                 , intent(in) :: jtops(bounds%begc: ) ! top label of each column
+integer                 , intent(in) :: numf                 ! number of columns in column filter
+integer                 , intent(in) :: filter(:)            ! column filter
+type(betrtracer_type)   , intent(in) :: betrtracer_vars      ! betr configuration information
+type(Waterstate_Type)   , intent(in) :: waterstate_vars          ! water state variables
+type(soilstate_type)    , intent(in) :: soilstate_vars          ! physical state variables
+type(temperature_type)  , intent(in) :: temperature_vars          ! energy state variable
+type(canopystate_type)  , intent(in) :: canopystate_vars
+type(chemstate_type)    , intent(in) :: chemstate_vars        ! chemistry state variable
+type(tracercoeff_type)  , intent(inout) :: tracercoeff_vars ! structure containing tracer transport parameters

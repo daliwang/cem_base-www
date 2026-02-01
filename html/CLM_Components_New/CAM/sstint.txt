@@ -1,0 +1,7 @@
+sub_in, ncid_sst, prev_timestep
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_perp_date, get_timeinterp_factors, bnddyi, get_curr_date, infld, endrun, shr_scam_GetCloseLatLon

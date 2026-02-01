@@ -1,0 +1,7 @@
+sub_in, this, bounds
+sub_out
+global_ro, this%forc_rh_grc, this%forc_solad_grc, pft%gridcell, this%forc_wind_grc, this%forc_rain_downscaled_col, pft%column, this%forc_solai_grc, this%forc_t_downscaled_col, this%forc_snow_downscaled_col
+global_wo, this%t_mo_patch
+global_mod, this%t_mo_min_patch
+global_non
+calls, update_accum_field, extract_accum_field, endrun

@@ -1,0 +1,7 @@
+sub_in, num_soilc, cnstate_vars, filter_soilc, nitrogenflux_vars, carbonflux_vars
+sub_out
+global_ro, carbonflux_vars%livestemc_to_litter_patch, nitrogenflux_vars%livestemn_to_litter_patch, col%pfti, carbonflux_vars%frootc_to_litter_patch, nitrogenflux_vars%frootn_to_litter_patch, ecophyscon%fr_flig, ecophyscon%lf_flab, cnstate_vars%leaf_prof_patch, carbonflux_vars%grainc_to_food_patch, ecophyscon%fr_flab, pft%wtcol, carbonflux_vars%leafc_to_litter_patch, pft%itype, ecophyscon%lf_fcel, ecophyscon%lf_flig, nitrogenflux_vars%grainn_to_food_patch, nitrogenflux_vars%leafn_to_litter_patch, cnstate_vars%froot_prof_patch, ecophyscon%fr_fcel
+global_wo
+global_mod, carbonflux_vars%phenology_c_to_litr_lig_c_col, carbonflux_vars%phenology_c_to_litr_met_c_col, nitrogenflux_vars%phenology_n_to_litr_met_n_col, nitrogenflux_vars%phenology_n_to_litr_cel_n_col, nitrogenflux_vars%phenology_n_to_litr_lig_n_col, carbonflux_vars%phenology_c_to_litr_cel_c_col
+global_non
+calls

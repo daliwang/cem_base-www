@@ -1,0 +1,7 @@
+sub_in, vid, ncid, dimids, ndims, name, xtype
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

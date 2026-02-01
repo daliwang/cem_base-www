@@ -1,0 +1,13 @@
+sub_param, ncidi:1, dimname:3, dimleno:5, ncido:2, dimleni:4
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(file_desc_t) , intent(inout) :: ncidi
+type(file_desc_t) , intent(inout) :: ncido
+character(len=*)  , intent(in)    :: dimname
+integer           , intent(out)   :: dimleni
+integer           , intent(out)   :: dimleno

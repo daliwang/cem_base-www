@@ -1,0 +1,17 @@
+sub_param, this, bounds, nitrogenstate_vars, geds_local, canopystate_vars, EDbio_vars, carbonstate_vars, carbonflux_vars, waterstate_vars
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, this%printDataInfoLL, this%printDataInfoVector, ed_init_sites, ed_update_sites, this%createPatchCohortStructure, this%convertCohortVectorToList, this%printIoInfoLL, clm_ed_link
+readParams,
+class(EDRestartVectorClass) , intent(inout)         :: this
+type(bounds_type)           , intent(in)            :: bounds
+type(gridcell_edstate_type) , target, intent(inout) :: geds_local( bounds%begg: )
+type(waterstate_type)       , intent(inout)         :: waterstate_vars
+type(canopystate_type)      , intent(inout)         :: canopystate_vars
+type(EDbio_type)            , intent(inout)         :: EDbio_vars
+type(carbonstate_type)      , intent(inout)         :: carbonstate_vars
+type(nitrogenstate_type)    , intent(inout)         :: nitrogenstate_vars
+type(carbonflux_type)       , intent(inout)         :: carbonflux_vars

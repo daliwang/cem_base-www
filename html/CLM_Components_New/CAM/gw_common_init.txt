@@ -1,0 +1,7 @@
+sub_in, dc_in, pgwv_in, cref_in, ktop_in, alpha_in, fcrit2_in, errstring, rair_in, tau_0_ubc_in, kbotbg_in, nbot_molec_in, pver_in, do_molec_diff_in, kwv_in, gravit_in
+sub_out, errstring
+global_ro
+global_wo
+global_mod
+global_non
+calls

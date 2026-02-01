@@ -1,0 +1,7 @@
+sub_in, history_aero_optics_out, history_eddy_out, history_amwg_out, atm_dep_flux_out, do_clubb_sgs_out, radiation_scheme_out, state_debug_checks_out, history_aerosol_out, conv_water_in_rad_out, history_waccm_out, deep_scheme_out, history_budget_out, prog_modal_aero_out, macrop_scheme_out, eddy_scheme_out, use_subcol_microp_out, do_tms_out, shallow_scheme_out, microp_scheme_out, history_budget_histfile_num_out, history_vdiag_out, cam_chempkg_out
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls

@@ -1,0 +1,12 @@
+sub_param, dkr_dP, satParams, pc, kr
+sub_out, dkr_dP, kr
+global_ro, satParams%sat_res, satParams%vg_n, satParams%alpha, satParams%vg_m
+global_wo
+global_mod
+global_non
+calls
+readParams,
+type(saturation_params_type) , intent(in)  :: satParams
+PetscReal                    , intent(in)  :: pc
+PetscReal                    , intent(out) :: kr
+PetscReal                    , intent(out) :: dkr_dP

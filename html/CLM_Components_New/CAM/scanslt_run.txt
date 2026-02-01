@@ -1,0 +1,7 @@
+sub_in, etadot, ztodt, adv_state, cwava, etamid, detam
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, t_stopf, da_coupling, t_startf, bndexch, sltb1, ad_coupling, t_barrierf, grdini, sltini

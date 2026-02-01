@@ -1,0 +1,7 @@
+sub_in, pref_edge
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, phys_getopts, addfld, add_default, zm_convi, alloc_err

@@ -1,0 +1,14 @@
+sub_param, filter_soilc, filter_soilp, nitrogenflux_vars, num_soilp, num_soilc, nitrogenstate_vars
+sub_out
+global_ro, nitrogenflux_vars%m_frootn_storage_to_litter_patch, nitrogenflux_vars%gap_mortality_n_to_cwdn_col, nitrogenflux_vars%m_livestemn_xfer_to_litter_patch, nitrogenflux_vars%m_leafn_xfer_to_litter_patch, nitrogenflux_vars%gap_mortality_n_to_litr_cel_n_col, nitrogenflux_vars%m_deadcrootn_xfer_to_litter_patch, nitrogenflux_vars%m_livecrootn_storage_to_litter_patch, nitrogenflux_vars%m_leafn_storage_to_litter_patch, nitrogenflux_vars%gap_mortality_n_to_litr_met_n_col, nitrogenflux_vars%m_frootn_xfer_to_litter_patch, nitrogenflux_vars%m_leafn_to_litter_patch, nitrogenflux_vars%m_livestemn_storage_to_litter_patch, nitrogenflux_vars%m_frootn_to_litter_patch, nitrogenflux_vars%m_deadcrootn_storage_to_litter_patch, nitrogenflux_vars%m_deadstemn_storage_to_litter_patch, nitrogenflux_vars%m_deadcrootn_to_litter_patch, nitrogenflux_vars%gap_mortality_n_to_litr_lig_n_col, nitrogenflux_vars%m_deadstemn_to_litter_patch, nitrogenflux_vars%m_livecrootn_xfer_to_litter_patch, nitrogenflux_vars%m_retransn_to_litter_patch, nitrogenflux_vars%m_livecrootn_to_litter_patch, nitrogenflux_vars%m_livestemn_to_litter_patch, nitrogenflux_vars%m_deadstemn_xfer_to_litter_patch
+global_wo
+global_mod, nitrogenstate_vars%deadcrootn_storage_patch, nitrogenstate_vars%deadstemn_xfer_patch, nitrogenstate_vars%frootn_storage_patch, nitrogenstate_vars%leafn_storage_patch, nitrogenstate_vars%decomp_npools_vr_col, nitrogenstate_vars%deadstemn_storage_patch, nitrogenstate_vars%leafn_patch, nitrogenstate_vars%frootn_patch, nitrogenstate_vars%livestemn_storage_patch, nitrogenstate_vars%livecrootn_xfer_patch, nitrogenstate_vars%frootn_xfer_patch, nitrogenstate_vars%livecrootn_storage_patch, nitrogenstate_vars%deadcrootn_xfer_patch, nitrogenstate_vars%retransn_patch, nitrogenstate_vars%leafn_xfer_patch, nitrogenstate_vars%livecrootn_patch, nitrogenflux_vars%bgc_npool_ext_inputs_vr_col, nitrogenstate_vars%livestemn_patch, nitrogenstate_vars%deadstemn_patch, nitrogenstate_vars%deadcrootn_patch, nitrogenstate_vars%livestemn_xfer_patch
+global_non, nitrogenstate_vars, nitrogenflux_vars
+calls
+readParams,
+integer                  , intent(in)    :: num_soilc       ! number of soil columns in filter
+integer                  , intent(in)    :: filter_soilc(:) ! filter for soil columns
+integer                  , intent(in)    :: num_soilp       ! number of soil patches in filter
+integer                  , intent(in)    :: filter_soilp(:) ! filter for soil patches
+type(nitrogenflux_type)  , intent(inout) :: nitrogenflux_vars
+type(nitrogenstate_type) , intent(inout) :: nitrogenstate_vars

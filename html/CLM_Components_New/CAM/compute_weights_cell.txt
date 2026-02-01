@@ -1,0 +1,7 @@
+sub_in, jmax_segments, jy_min, jx_max, jcollect, ycell_in, abscissae, ngauss, jx_min, ygno, xgno, gauss_weights, tmp, jx, nreconstruction, jy, xcell_in, jy_max, weights, weights_eul_index
+sub_out, tmp, weights, jcollect
+global_ro
+global_wo
+global_mod
+global_non
+calls, side_integral, collect, compute_inner_line_integrals_lat

@@ -1,0 +1,11 @@
+sub_in, filter_nolakec, ubc, num_nolakec, lbc
+sub_out, cv, tk_h2osfc, tk
+global_ro, clm3%g%l%lps%cv_roof, clm3%g%l%lps%tk_improad, clm3%g%l%lps%tk_wall, clm3%g%l%c%cws%h2osno, clm3%g%l%c%cps%z, clm3%g%l%c%cps%tkmg, clm3%g%l%c%landunit, clm3%g%l%c%cps%tkdry, clm3%g%l%c%cws%h2osoi_liq, clm3%g%l%c%cps%watsat, clm3%g%l%lps%tk_roof, clm3%g%l%c%cws%h2osfc, clm3%g%l%c%cps%dz, clm3%g%l%c%ces%t_soisno, clm3%g%l%c%cps%csol, clm3%g%l%lps%cv_wall, clm3%g%l%itype, clm3%g%l%c%cps%zi, clm3%g%l%lps%cv_improad, clm3%g%l%c%cps%snl, clm3%g%l%c%cws%h2osoi_ice, clm3%g%l%c%cps%frac_sno_eff
+global_wo
+global_mod, clm3%g%l%c%itype
+global_non, clm3%g%l%lps%nlev_improad, clm3%g%l%c%cps%tksatu
+calls, t_startf, t_stopf
+
+Tree height: 20
+0 , t_startf, 
+17-, t_stopf, 

@@ -1,0 +1,7 @@
+sub_in, ncid
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, endrun, check_att, ncd_getatt, get_curr_date, get_rest_date

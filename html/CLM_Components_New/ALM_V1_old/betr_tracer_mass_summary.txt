@@ -1,0 +1,15 @@
+sub_param, lbj:2, betrtracer_vars:6, ubj:3, tracerstate_vars:7, numf:4, filter:5, tracer_molarmass_col:8, bounds:1
+sub_out, tracer_molarmass_col
+global_ro| betrtracer_vars%nsolid_passive_tracers, nsolid_passive_tracers, NONE| betrtracer_vars%ngwmobile_tracers, ngwmobile_tracers, NONE| tracerstate_vars%tracer_conc_solid_passive_col, tracer_conc_solid_passive, NONE| betrtracer_vars%is_adsorb, is_adsorb, NONE| tracerstate_vars%tracer_conc_solid_equil_col, tracer_conc_solid_equil, NONE| betrtracer_vars%adsorbid, adsorbid, NONE| tracerstate_vars%tracer_conc_mobile_col, tracer_conc_mobile, NONE| col%dz, dz, NONE
+global_wo
+global_mod
+global_non| betrtracer_vars%ntracers, ntracers, NONE
+calls
+readParams,
+type(bounds_type),      intent(in)    :: bounds
+integer,                intent(in)    :: lbj, ubj
+integer,                intent(in)    :: numf                        ! number of columns in column filter
+integer,                intent(in)    :: filter(:)                   ! column filter
+type(betrtracer_type) , intent(in)    :: betrtracer_vars             ! betr configuration information
+type(tracerstate_type), intent(inout) :: tracerstate_vars            ! tracer state variables data structure
+real(r8)              , intent(inout) :: tracer_molarmass_col(bounds%begc:bounds%endc, 1:betrtracer_vars%ntracers)

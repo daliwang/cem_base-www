@@ -1,0 +1,7 @@
+sub_in, currentPatch
+sub_out
+global_ro, currentCohort%taller, currentPatch%shortest
+global_wo
+global_mod
+global_non
+calls, Growth_Derivatives

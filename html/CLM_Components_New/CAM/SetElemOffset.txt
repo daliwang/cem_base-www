@@ -1,0 +1,7 @@
+sub_in, elem, par, GlobalUniqueColsP
+sub_out, elem, GlobalUniqueColsP
+global_ro
+global_wo
+global_mod
+global_non
+calls, MPI_Allreduce

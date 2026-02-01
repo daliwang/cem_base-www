@@ -1,0 +1,26 @@
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 11px Times New Roman;
+}
+
+text {
+  font: 8px Times New Roman;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+.inner {
+  fill: #ccc;
+  stroke: #000;
+  stroke-dasharray: 3, 4;
+}

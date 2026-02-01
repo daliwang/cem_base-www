@@ -1,0 +1,12 @@
+sub_param, ldomain, begg, endg, filename, glcfilename
+sub_out
+global_ro
+global_wo, ldomain%glcmask
+global_mod, ldomain%area
+global_non
+calls, ncd_pio_closefile, domain_init, endrun, check_var, getfil, ncd_io, ncd_pio_openfile, ncd_inqfdims
+readParams,
+integer          ,intent(in)    :: begg, endg
+type(domain_type),intent(inout) :: ldomain   ! domain to init
+character(len=*) ,intent(in)    :: filename  ! grid filename
+character(len=*) ,optional, intent(in) :: glcfilename ! glc mask filename

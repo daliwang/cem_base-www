@@ -1,0 +1,11 @@
+sub_param, list, name, index
+sub_out, index
+global_ro
+global_wo
+global_mod
+global_non
+calls
+readParams,
+character(len=*), intent(in) :: list(max_flds)  ! input list of names, possibly ":" delimited
+character(len=max_namlen), intent(in) :: name   ! name to be searched for
+integer, intent(out) :: index                   ! index of "name" in "list"

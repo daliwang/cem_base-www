@@ -1,0 +1,15 @@
+sub_param, num_snowc, bounds, is_lake, temperature_vars, waterstate_vars, filter_snowc, aerosol_vars
+sub_out
+global_ro, waterstate_vars%frac_sno_eff_col
+global_wo, col%z
+global_mod, aerosol_vars%mss_bcpho_col, aerosol_vars%mss_ocphi_col, aerosol_vars%mss_dst4_col, aerosol_vars%mss_dst2_col, temperature_vars%t_soisno_col, aerosol_vars%mss_ocpho_col, aerosol_vars%mss_dst3_col, col%snl, aerosol_vars%mss_dst1_col, waterstate_vars%h2osoi_liq_col, col%dz, col%zi, aerosol_vars%mss_bcphi_col, waterstate_vars%snw_rds_col, waterstate_vars%h2osoi_ice_col
+global_non
+calls, Combo, endrun
+readParams,
+type(bounds_type)      , intent(in)    :: bounds
+integer                , intent(in)    :: num_snowc       ! number of column snow points in column filter
+integer                , intent(in)    :: filter_snowc(:) ! column filter for snow points
+type(aerosol_type)     , intent(inout) :: aerosol_vars
+type(temperature_type) , intent(inout) :: temperature_vars
+type(waterstate_type)  , intent(inout) :: waterstate_vars
+logical                , intent(in)    :: is_lake  !TODO - this should be examined and removed in the future

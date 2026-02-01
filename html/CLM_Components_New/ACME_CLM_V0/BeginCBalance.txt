@@ -1,0 +1,7 @@
+sub_in, bounds, num_soilc, filter_soilc, carbonstate_vars
+sub_out
+global_ro, carbonstate_vars%totcolc_col
+global_wo, carbonstate_vars%begcb_col
+global_mod
+global_non
+calls

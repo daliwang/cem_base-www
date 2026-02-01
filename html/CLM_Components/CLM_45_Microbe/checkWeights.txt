@@ -1,0 +1,7 @@
+sub_in, nc, active_only
+sub_out
+global_ro, wtlunit, wtgcell, active, gridcell, landunit, wtcol, column
+global_wo
+global_mod
+global_non, p, c, g, l
+calls, get_clump_bounds, endrun

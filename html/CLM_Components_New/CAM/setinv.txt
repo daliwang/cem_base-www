@@ -1,0 +1,7 @@
+sub_in, h2ovmr, ncol, tfld, invariants, pbuf, pmid, vmr, lchnk
+sub_out, invariants
+global_ro
+global_wo
+global_mod
+global_non
+calls, get_cnst_data, outfld

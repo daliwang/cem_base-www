@@ -1,0 +1,7 @@
+sub_in, memorder_in, ncnst, column_in, hdim1, iodesc, fileorder_in, nlev, hdim2, dtype
+sub_out
+global_ro
+global_wo
+global_mod
+global_non, get_column_ldof, get_dyn_ldof
+calls, pio_initdecomp, t_startf, find_iodesc, t_stopf

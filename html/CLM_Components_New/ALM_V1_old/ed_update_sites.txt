@@ -1,0 +1,10 @@
+sub_param, geds_local:2, bounds:1
+sub_out
+global_ro| currentPatch%younger, currentPatch, NONE| currentSite%oldest_patch, currentPatch, NONE
+global_wo
+global_mod
+global_non| geds_local, currentSite, NONE
+calls, canopy_spread, canopy_structure, terminate_cohorts, total_balance_check, trim_canopy
+readParams,
+type(bounds_type), intent(in) :: bounds  ! clump bounds
+type(gridcell_edstate_type), target, intent(inout) :: geds_local( bounds%begg: )

@@ -1,0 +1,7 @@
+sub_in, ustar, ocnfrac, v, kbfs, cldn, zi, z, bge, wstar, u, thv, ncol, pblh, obklen
+sub_out, bge, pblh, wstar
+global_ro
+global_wo
+global_mod
+global_non
+calls

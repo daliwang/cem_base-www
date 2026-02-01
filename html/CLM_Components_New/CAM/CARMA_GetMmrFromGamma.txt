@@ -1,0 +1,7 @@
+sub_in, rc, nic, lambda, r, qic, carma, rmass, mmr, dr, mu
+sub_out, rc, mmr
+global_ro
+global_wo
+global_mod
+global_non
+calls

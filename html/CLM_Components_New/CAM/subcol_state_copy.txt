@@ -1,0 +1,7 @@
+sub_in, state_sc, state
+sub_out
+global_ro
+global_wo
+global_mod
+global_non
+calls, subcol_state_field_copy, subcol_state_hdrinit, endrun
